@@ -1,0 +1,253 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language brazilian
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Author
+
+\size small
+MPMICRO
+\end_layout
+
+\begin_layout Title
+Super Exercício
+\end_layout
+
+\begin_layout Date
+junho de 2010
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Este exercício envolve a maior parte dos conceitos ministrados durante o
+ primeiro semestre de 2010 em MPMICRO.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tem-se dois controles remotos com dois botões cada um.
+ Tem-se dois dispositivos que podem ser acessados por um destes controles.
+ Estes dispositivos possuem dois LEDs.
+ Cada controle remoto possui um código de 8 bits que o identifica.
+ Cada dispositivo irá responder somente a um dos controles.
+ Assim, se for pressionado o botão 1 do controle A, acenderá somente o LED
+ 1 do dispositivo A.
+ Se for pressionado o botão 2 do controle A, acenderá somente o LED 2 do
+ dispositivo A.
+ Igual é o comportamento entre o controle B e o dispositivo B.
+ Considere que apenas um botão de um dos controles será apertado por vez.
+ Também, considere que tudo encontra-se no mesmo ambiente.
+ As transmissões ocorrem via infra-vermelho.
+ Elaborar a máquina de estados com topologia orientada à memória que implementa
+ o circuito detector dos dispositivos, para reconhecer o código e acender
+ o LED correspondente.
+ Ainda, projetar, completamente, todo o circuito.
+ Considere ter disponíveis memórias PROM 
+\begin_inset Formula $16\times4$
+\end_inset
+
+ e 
+\emph on
+latches
+\emph default
+ de 4 bits, com carregamento sensível à borda.
+ Realizar a simulação, por meio de carta de tempo, de ambos os circuitos
+ receptores (do dispositivo A e do B) para o caso de se pressionar o botão
+ 1 do controle A.
+ Os bits de código são transmitidos um a um e, logo após estes, dois bits
+ que indicam qual o botão pressionado -- o primeiro, para o botão 1 e o
+ segundo para o 2.
+ Considerar que quando o botão for pressionado, tem-se nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+ e, quando solto, 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+.
+ E, antes da transmissão do código, será enviado um bit com nível lógico
+ 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+ para indicar o início da transmissão.
+ O código dos dispositivos são os seguintes:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features booktabs="true">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+dispositivo receptor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+código
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+10011100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+01001011
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A freqüência do relógio (
+\emph on
+clock
+\emph default
+) de ambos os controles e dispositivos é a mesma.
+ Considerar que, nos receptores, o relógio é adequadamente sincronizado
+ com os dados recebidos por meio de um circuito próprio (não é necessário
+ projetar este circuito).
+ O sincronismo ocorre na recepção do bit 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+, enviado antes do código.
+\end_layout
+
+\end_body
+\end_document
