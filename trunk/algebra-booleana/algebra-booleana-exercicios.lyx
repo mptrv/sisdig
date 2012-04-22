@@ -1,0 +1,344 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Álgebra Booleana
+\begin_inset Newline newline
+\end_inset
+
+-- Exercícios --
+\end_layout
+
+\begin_layout Standard
+O exercício 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Simplifique-ao-máximo"
+
+\end_inset
+
+ abaixo foi extraído da referência 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+.
+ A resolução de seus itens encontra-se nesta referência (com excessão do
+ item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:personalizado"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Simplifique ao máximo as expressões abaixo.
+ Lembre-se de utilizar a lógica 
+\emph on
+ou-exclusivo
+\emph default
+ quando possível, para maior simplificação.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Simplifique-ao-máximo"
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S=ABC+A\bar{C}+A\bar{B}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:ne-ini"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=(AB\bar{C})(\bar{A}+\bar{B}+\bar{C})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=(A+B+C)(\bar{A}+\bar{B}+C)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=(\overline{\overline{AC}+B+D})+C(\overline{ACD})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\overline{(A+B)\cdot C}+\overline{D\cdot(C+B)}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:ne-fim"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\bar{A}\bar{B}C+\bar{A}BC+\bar{A}B\bar{C}+ABC+AB\bar{C}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:nou-ini"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\bar{A}B+A\bar{B}+AB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\overline{\bar{X}\bar{Y}\bar{Z}\cdot(X+Y+\bar{Z})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\bar{X}(X+Y)+\bar{Z}+ZY$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=(A+\bar{B}+AB)(A+\bar{B})(\bar{A}B)$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:nou-fim"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=(A+\bar{B}+A\bar{B})(AB+\bar{A}C+BC)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=(AB+C+D)(C+\bar{D})(C+\bar{D}+E)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\bar{A}B(\bar{D}+D\bar{C})+(A+\bar{A}CD)\cdot B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V=(W+X+Y)\cdot(W+\bar{X}+Y)\cdot(\bar{Y}+Z)\cdot(W+Z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Y=\bar{A}\bar{B}\bar{C}\bar{D}+\bar{A}B\bar{C}\bar{D}+\bar{A}\bar{B}\bar{C}D+\bar{A}B\bar{C}D+A\bar{B}\bar{C}\bar{D}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:personalizado"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Implemente os itens de 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:ne-ini"
+
+\end_inset
+
+ a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:ne-fim"
+
+\end_inset
+
+ utilizando apenas portas NE.
+\end_layout
+
+\begin_layout Enumerate
+Implemente os itens de 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:nou-ini"
+
+\end_inset
+
+ a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:nou-fim"
+
+\end_inset
+
+ utilizando apenas portas NOU.
+\end_layout
+
+\begin_layout Enumerate
+Implemente os demais itens com a menor quantidade possível de portas.
+ Considere, inclusive, as portas com inversão na entrada (estas seriam uma
+ única porta).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "William 2000"
+key "key-1"
+
+\end_inset
+
+
+\emph on
+Guest Book
+\emph default
+.
+ 
+\series bold
+\emph on
+Circuitos Digitais
+\series default
+.
+ William 2000.
+ 
+\emph default
+Disponível em: 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://200.19.92.57/wschui/goodbit/Boole.htm"
+target "http://200.19.92.57/wschui/goodbit/Boole.htm"
+
+\end_inset
+
+.
+ Acessado em 22-04-2012.
+\end_layout
+
+\end_body
+\end_document
