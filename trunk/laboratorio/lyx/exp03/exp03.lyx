@@ -1,0 +1,848 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 479
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.1499999999999999
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE102 - Fundamentos de Circuitos Digitais
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\shape italic
+Portas Lógicas
+\end_layout
+
+\begin_layout Author
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{fancy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Itemize
+Comprovar experimentalmente as operações das portas lógicas AND, NAND, OR
+ e NOR.
+\end_layout
+
+\begin_layout Itemize
+Conhecer as características físicas e elétricas dos circuitos integrados
+ CIs 7400, 7402, 7408 e 7432.
+\end_layout
+
+\begin_layout Section
+Conceitos
+\end_layout
+
+\begin_layout Standard
+A tabela abaixo ilustra as portas lógicas utilizadas no experimento e suas
+ respectivas funções digitais.
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 1.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Portas lógicas com respectivas expressões booleanas e tabelas verdade.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Portas-lógicas-com"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Standard
+Para a análise funcional das portas lógicas AND (E), NAND (NE), OR (OU),
+ NOR (NOU) serão realizados ensaios lógicos a cada uma delas.
+ Os ensaios consistirão na obtenção de suas tabelas verdade, testes de algumas
+ equivalências entre portas e análise com entrada flutuante.
+\end_layout
+
+\begin_layout Section
+Relação de Materiais
+\end_layout
+
+\begin_layout Itemize
+1 Painel Digital didático para desenvolvimento
+\end_layout
+
+\begin_layout Itemize
+CIs: 7400, 7402, 7408 e 7432
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de corte
+\end_layout
+
+\begin_layout Itemize
+1 Espátula para remoção de CI
+\end_layout
+
+\begin_layout Itemize
+1 Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Fios rígidos para proto-board
+\end_layout
+
+\begin_layout Section
+Parte Prática
+\end_layout
+
+\begin_layout Subsection
+Operações lógicas do CI 7408 (AND)
+\end_layout
+
+\begin_layout Standard
+a) Fixe o CI 7408 (AND) adequadamente na matriz de contatos (proto-board)
+ do Painel Digital de estudo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CI 7408.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b) Alimente o circuito integrado: 5V no terminal 14 e 0V (GND – terra) no
+ terminal 7.
+ ATENÇÃO: NÃO utilize, para essa finalidade, as tensões de +12V ou -12V
+ disponibilizadas no painel de estudos, pois, nessas condições, o circuito
+ integrado será danificado (QUEIMADO)!
+\end_layout
+
+\begin_layout Standard
+c) Escolha uma das 4 portas AND do CI 7408 para iniciar seu estudo, por
+ exemplo, a porta acessível pelos terminais 1 e 2 como entrada e 3 como
+ saída.
+ 
+\end_layout
+
+\begin_layout Standard
+d) Acople uma chave reversora em cada uma das duas entradas da porta escolhida,
+ de modo a gerar níveis lógicos (0 ou 1) independentes, nesses terminais.
+\end_layout
+
+\begin_layout Standard
+e) Meça os valores analógicos dos dois níveis lógicos gerados pelas chaves,
+ obtendo as constantes NLB (nível lógico baixo) e NLA (nível lógico alto).
+ Para tanto, utilize o multímetro selecionado como voltímetro CC.
+ 
+\end_layout
+
+\begin_layout Standard
+f) Na saída da porta, acople um dos leds sinalizadores, de modo que possa
+ ser visualizado o nível resultante: 0 corresponde apagado e 1 aceso.
+ Nota: para este procedimento, também poderia ser utilizado o voltímetro
+ CC, o qual apresentaria o valor da tensão analógica do nível lógico corresponde
+nte.
+ 
+\end_layout
+
+\begin_layout Standard
+g) Efetue todas as combinações das entradas (00,01,10e11) e verifique as
+ respostas binárias na saída.
+\end_layout
+
+\begin_layout Subsection
+Operações lógicas do CI 7400 (NAND)
+\end_layout
+
+\begin_layout Standard
+Repita todos os procedimentos realizados anteriormente, agora com o CI 7400.
+ Observe que, neste caso, torna-se possível a simples substituição, visto
+ que o posicionamento dos terminais das entradas e saídas das portas é o
+ mesmo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CI 7400.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Operações lógicas do CI 7432 (OR)
+\end_layout
+
+\begin_layout Standard
+Seguindo o mesmo padrão experimental anterior, efetue o ensaio para o CI
+ 7432.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 4.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CI 7432.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Operações lógicas do CI 7402 (NOR)
+\end_layout
+
+\begin_layout Standard
+Repita para o CI 7402.
+ ATENÇÃO: observe que agora há alteração nos posicionamentos dos terminais,
+ logo deverá ser montado um novo circuito.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 5.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CI 7402.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equivalência entre portas lógicas – obtenção de porta lógica inversora
+\end_layout
+
+\begin_layout Standard
+Desconecte as chaves das entradas da porta NOR e interligue os dois terminais
+ de entrada.
+ Com essa ligação, obtém-se o equivalente a uma porta inversora (NOT).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Porta NOT a partir de uma porta NOR.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a) Conecte uma chave na entrada A e obtenha a respectiva resposta na saída
+ S.
+\end_layout
+
+\begin_layout Subsection
+Análise de porta lógica TTL com entrada flutuante
+\end_layout
+
+\begin_layout Standard
+Verifique o estado lógico da saída de uma porta NOR nas seguintes condições:
+ (i) as duas entradas flutuantes (em aberto, sem qualquer tipo de conexão),
+ (ii) com apenas uma das entradas ligadas ao GND e (iii) com apenas uma
+ das entradas ligadas ao Vcc = +5V.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Relatório: Portas Lógicas
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 7.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+1.
+ Verificação experimental das operações lógicas AND (CI 7408) e NAND (CI7400)
+ 
+\end_layout
+
+\begin_layout Standard
+Os CIS foram alimentados com as tensões analógicas de 0 e 5V, aplicadas
+ respectivamente nos pinos _____ e _____.
+ Após os circuitos integrados serem devidamente alimentados, foram realizados
+ os testes lógicos a cada um deles.
+ Para tanto, foi utilizado como nível lógico 0 (NLB) a tensão analógica
+ de ____ V e como nível lógico 1 (NLA) a tensão analógica de ____ V, gerando
+ as respectivas tabelas resultantes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 8.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 9.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+2.
+ Verificação experimental das operações lógicas OR (CI 7432) e NOR (CI 7402)
+\end_layout
+
+\begin_layout Standard
+Utilizou-se de procedimentos semelhantes aos da etapa anterior para a determinaç
+ão das tabelas verdade OR e NOR, cujos resultados são apresentados a seguir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 10.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 11.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+3.
+ Obtenção de porta lógica inversora 
+\end_layout
+
+\begin_layout Standard
+A porta lógica inversora do estudo foi obtida a partir de uma porta NOR,
+ conectando suas duas entradas entre si (“curto-circuitando” as entradas)
+ e garantindo o mesmo sinal lógico em ambas as entradas.
+ Desta forma são eliminadas as linhas intermediárias centrais da tabela
+ verdade.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 12.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+4.
+ Ensaio com entradas flutuantes
+\end_layout
+
+\begin_layout Standard
+Foram verificados os estados lógicos da saída S de uma porta lógica NOR,
+ segundo situações com entradas desconectadas (em aberto ou flutuante).
+ A tabela a seguir resume os experimentos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 13.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O que podemos concluir, pela tabela acima, em relação à função NOR, o que
+ ocorre estabelecendo-se alguma das entradas em aberto?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lista de Material
+\end_layout
+
+\begin_layout Itemize
+Placa padrão 10 x 5 cm
+\end_layout
+
+\begin_layout Itemize
+Caixa com fios
+\end_layout
+
+\begin_layout Itemize
+Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+Alicate de corte
+\end_layout
+
+\begin_layout Itemize
+Ferro de solda, com suporte e esponja
+\end_layout
+
+\begin_layout Itemize
+Copinho com um pouco de água
+\end_layout
+
+\begin_layout Itemize
+Estanho
+\end_layout
+
+\begin_layout Itemize
+Sugador
+\end_layout
+
+\begin_layout Itemize
+3x Resistores de 330 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ / 
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+ W
+\end_layout
+
+\begin_layout Itemize
+3x LEDs
+\end_layout
+
+\end_body
+\end_document
