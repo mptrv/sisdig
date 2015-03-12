@@ -1,0 +1,512 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{indentfirst}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.1499999999999999
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE102 - Fundamentos de Circuitos Digitais
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\shape italic
+Técnicas de Soldagem
+\end_layout
+
+\begin_layout Date
+2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{fancy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tópicos envolvidos
+\end_layout
+
+\begin_layout Itemize
+Placas para circuitos eletrônicos:
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+placas padrão (diversas configurações);
+\end_layout
+
+\begin_layout Itemize
+placas de circuito impresso (por corrosão ou fresagem, esta, mecânica ou
+ a 
+\emph on
+laser
+\emph default
+).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O elemento de solda (estanho)
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+liga;
+\end_layout
+
+\begin_layout Itemize
+fluxo.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O ferro de solda:
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+esponja umedecida;
+\end_layout
+
+\begin_layout Itemize
+aquecimento;
+\end_layout
+
+\begin_layout Itemize
+limpeza da ponta;
+\end_layout
+
+\begin_layout Itemize
+potências de ferro.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O processo de soldagem:
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+aquecimento da ilha e terminal;
+\end_layout
+
+\begin_layout Itemize
+sequência do processo: aquecer, estanhar, retirar o ferro;
+\end_layout
+
+\begin_layout Itemize
+como reconhecer uma boa solda;
+\end_layout
+
+\begin_layout Itemize
+o que é solda fria.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Cuidados durante a soldagem:
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+superaquecimento (descolamento da ilha, queima do componente eletrônico);
+\end_layout
+
+\begin_layout Itemize
+curtos;
+\end_layout
+
+\begin_layout Itemize
+quanto ao corte do excesso dos terminais.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Elementos de ligação:
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+por solda (em placas padrão apenas);
+\end_layout
+
+\begin_layout Itemize
+por fios na parte superior (
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+jumpers
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+);
+\end_layout
+
+\begin_layout Itemize
+por fios na parte inferior;
+\end_layout
+
+\begin_layout Itemize
+por trilhas (em placas de circuito impresso).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Preparação dos fios:
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+uso de ferramentas adequadas;
+\end_layout
+
+\begin_layout Itemize
+alicates de bico e de corte: formas de manuseio;
+\end_layout
+
+\begin_layout Itemize
+quanto ao corte: cuidados consigo e com os outros;
+\end_layout
+
+\begin_layout Itemize
+desencapamento: procedimento e cuidados; uso do alicate de bico como auxílio;
+\end_layout
+
+\begin_layout Itemize
+identificação e como evitar o cisalhamento.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+O sugador:
+\end_layout
+
+
+\begin_deeper
+\begin_layout Itemize
+função;
+\end_layout
+
+\begin_layout Itemize
+como operar;
+\end_layout
+
+\begin_layout Itemize
+cuidados de armazenamento.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Standard
+Para a parte experimental, é aconselhado que os itens abaixo seja realizado
+ por todos os integrantes da equipe.
+\end_layout
+
+\begin_layout Subsection
+Montagem de Circuito
+\end_layout
+
+\begin_layout Standard
+O circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Circuito-a-montar."
+
+\end_inset
+
+ aciona um LED.
+ Seguindo as orientações do professor, realize sua montagem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename led.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito a montar: acionamento de LED.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-a-montar."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Treinos Adicionais
+\end_layout
+
+\begin_layout Standard
+Para treinar um pouco mais os conceitos e práticas envolvidas com as técnicas
+ de soldagem, realizar, livremente, os itens a seguir:
+\end_layout
+
+\begin_layout Enumerate
+Corte e desencapamento de fios.
+\end_layout
+
+\begin_layout Enumerate
+Pontos de solda nas ilhas.
+\end_layout
+
+\begin_layout Enumerate
+Solda de fios transpassados pela parte superior da placa.
+\end_layout
+
+\begin_layout Enumerate
+Solda de fios transpassados pela parte inferior da placa.
+\end_layout
+
+\begin_layout Enumerate
+Solda de componentes (resistores).
+\end_layout
+
+\begin_layout Subsection
+Desafio
+\end_layout
+
+\begin_layout Standard
+Montar três conjuntos iguais ao da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Circuito-a-montar."
+
+\end_inset
+
+ de forma a ocupar a menor área possível da placa padrão, além de ser esteticame
+nte agradável.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lista de Material
+\end_layout
+
+\begin_layout Itemize
+Placa padrão 10 x 5 cm
+\end_layout
+
+\begin_layout Itemize
+Caixa com fios
+\end_layout
+
+\begin_layout Itemize
+Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+Alicate de corte
+\end_layout
+
+\begin_layout Itemize
+Ferro de solda, com suporte e esponja
+\end_layout
+
+\begin_layout Itemize
+Copinho com um pouco de água
+\end_layout
+
+\begin_layout Itemize
+Estanho
+\end_layout
+
+\begin_layout Itemize
+Sugador
+\end_layout
+
+\begin_layout Itemize
+3x Resistores de 330 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ / 
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+ W
+\end_layout
+
+\begin_layout Itemize
+3x LEDs
+\end_layout
+
+\end_body
+\end_document
