@@ -1,0 +1,380 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\shape italic
+LÓGICA DIGITAL CIRCUITOS COMBINACIONAIS
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Objetivos:
+\series default
+ Desenvolver as habilidades necessárias para o projeto e implementação de
+ circuitos combinacionais.
+\end_layout
+
+\begin_layout Section
+Material e equipamentos utilizados:
+\end_layout
+
+\begin_layout Itemize
+"Display" 7 segmentos, anodo comum, FND 507;
+\end_layout
+
+\begin_layout Itemize
+Circuito integrado (NAND) 7400 (4x);
+\end_layout
+
+\begin_layout Itemize
+Circuito integrado (NOT) 7404 (4x);
+\end_layout
+
+\begin_layout Itemize
+Circuito integrado (NOR) 7402 (4x);
+\end_layout
+
+\begin_layout Itemize
+Resistor 560
+\begin_inset Formula $\varOmega$
+\end_inset
+
+; 0,33
+\begin_inset Formula $W$
+\end_inset
+
+ (10x);
+\end_layout
+
+\begin_layout Itemize
+Osciloscópio;
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital;
+\end_layout
+
+\begin_layout Itemize
+Conjunto de montagem para circuitos digitais com "proto board";
+\end_layout
+
+\begin_layout Itemize
+Fios para as conexões;
+\end_layout
+
+\begin_layout Section
+Considerações iniciais:
+\end_layout
+
+\begin_layout Standard
+Esta experiência tem por finalidade exercitar o projeto, implementação e
+ testes de um circuito destinado a converter números binários para ativar
+ os terminais de um display de sete segmentos.
+ Por convenção, os segmentos de um display genérico são representados pelos
+ caracteres a,b,c,d,e,f e g.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:\"Display\"-de-7-segmentos"
+
+\end_inset
+
+ ilustra a pinagem de um "display" de sete segmentos típico.
+ Convém registrar que "an" corresponde ao anodo comum a todos os segmentos
+ luminosos e que a ativação do terminal "ponto" ilumina o ponto decimal
+ à direita do dígito.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+"Display" de 7 segmentos típicos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:\"Display\"-de-7-segmentos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A associação de cada segmento do display com as representações de "a" e
+ "g" é padronizada segundo a disposição da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Associação-de-caracteres"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Associação de caracteres "a" a "g" com os trechos do display de sete segmentos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Associação-de-caracteres"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma importante informação referente ao acionamento dos dígitos do "display"
+ consiste nas técnicas de conexão dos terminais às portas lógicas.
+ Note-se que a ativação dos dígitos ocorre quando a saída lógica está em
+ nível "0".
+ Convém incluir, entre cada terminal do "display" de 7 segmentos e a saída
+ da porta lógica destinada aos pontos "a", "b", "c", etc., resistores de
+ 560 
+\begin_inset Formula $\varOmega$
+\end_inset
+
+ , como indica a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Interligação-dos-circuitos"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interligação dos circuitos externos com o display de 7 segmentos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Interligação-dos-circuitos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Efetuadas as principais considerações referentes ao "display" em si, os
+ próximos passos consistem em:
+\end_layout
+
+\begin_layout Enumerate
+Elaborar as tabelas da verdade e os mapas de Karnaugh associados com o objetivo
+ de determinar as funções lógicas correspondentes a casa segmentos do "display"
+ (de "a" até "g").
+ Para tanto, considerar representação apenas dos dígitos decimais de "0"
+ a "7", vinculados respectivamente às entradas binárias "000" a "111".
+\end_layout
+
+\begin_layout Enumerate
+Deduzir as funções lógicas (reduzidas) a partir dos mapas de Karnaugh.
+\end_layout
+
+\begin_layout Enumerate
+Transformar as funções obtidas no item (2) com o objetivo de descrever os
+ circuitos com a utilização apenas de portas NAND e NOR.
+\end_layout
+
+\begin_layout Enumerate
+Elaborar o circuito elétrico correspondente ao item (3).
+\end_layout
+
+\begin_layout Enumerate
+Montar o circuito em "proto board".
+ Conferir cuidadosamente todas as conexões.
+\end_layout
+
+\begin_layout Enumerate
+Testar todas as funções lógicas.
+\end_layout
+
+\begin_layout Standard
+Uma interessante sugestão antes de iniciar o item (5) consiste em montar
+ e testar os circuitos associados ao acionamento de um segmento por vez.
+ Assim agindo, os eventuais problemas relacionados às conexões correspondentes
+ à lógica de ativação de um dado segmento podem ser corrigidos, garantindo-se
+ a correta operação de uma etapa antes de migrar para o acionamento do segmento
+ seguinte.
+\end_layout
+
+\begin_layout Section
+Referências Bibliográficas:
+\end_layout
+
+\begin_layout Enumerate
+Ercegovac, M.
+ et al.
+ Introdução aos Sistemas Digitais, Porto Alegre: Bookman, 2000.
+\end_layout
+
+\begin_layout Enumerate
+TTL databook, Texas Instruments.
+\end_layout
+
+\begin_layout Enumerate
+Helfrick, A.
+ et al.
+ Instrumentação eletrônica moderna e técnicas de medição, Rio de Janeiro:
+ Prentice Hall do Brasil, 1994.
+\end_layout
+
+\end_body
+\end_document

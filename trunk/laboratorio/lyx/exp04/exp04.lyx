@@ -1,0 +1,724 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\shape italic
+Multiplexadores
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Itemize
+Verificar experimentalmente o princípio de funcionamento de um circuito
+ multiplexador 
+\end_layout
+
+\begin_layout Itemize
+Sintetizar uma função lógica por meio de um CI multiplexador
+\end_layout
+
+\begin_layout Section
+Conceito
+\end_layout
+
+\begin_layout Subsection
+Multiplexador - MUX
+\end_layout
+
+\begin_layout Standard
+A operação de multiplexação trata o direcionamento selecionado de um sinal
+ de entrada, dentre n sinais, para um sinal de saída, onde a seleção é estabelec
+ida por variáveis de controle ou variáveis de seleção.
+ No caso de sistemas digitais, o circuito multiplexador irá conectar eletronicam
+ente um bit de entrada selecionado pela palavra binária de controle ao bit
+ de saída.
+ A figura abaixo apresenta uma analogia entre uma chave de seleção analógica
+ e um circuito multiplexador digital, ambos com 4 entradas de informação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Funcionamento e ilustração de um multiplexador.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como é possível perceber, a quantidade de saídas do multiplexador é fixa,
+ ou seja, um bit de saída para os n bits de entrada.
+ Já a quantidade de variáveis m de controle (seleção) irá depender da quantidade
+ de bits do canal de entrada, como a seleção é feita em base binária, logo:
+ n=
+\begin_inset Formula $2^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Multiplexador de 2 canais
+\end_layout
+
+\begin_layout Standard
+A seguir será apresentado a simbologia e a tabela verdade de um multiplexador
+ de 2 canais, sendo que, neste caso, é necessário apenas 1 bit como variável
+ de seleção.
+ A partir da tabela verdade é extraída sua expressão e na sequência sua
+ realização eletrônica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Em ordem: simbologia e tabela verdade de um multiplexador de 2 canais, sua
+ expressão e realização eletrônica.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Aplicação de sintetização de expressão Booleana com multiplexador
+\end_layout
+
+\begin_layout Standard
+A partir de circuitos multiplexadores, é possível efetuar a realização eletrônic
+a de expressões lógicas.
+ 
+\end_layout
+
+\begin_layout Standard
+Como exemplo, seja a expressão de três variáveis S( A, B, C) = 
+\begin_inset Formula $\sum$
+\end_inset
+
+m(0, 1, 3, 6) que também pode ser representada na forma S = 
+\begin_inset Formula $\bar{A}$
+\end_inset
+
+.
+\begin_inset Formula $\bar{B}$
+\end_inset
+
+.
+\begin_inset Formula $\bar{C}$
+\end_inset
+
++
+\begin_inset Formula $\bar{A}$
+\end_inset
+
+.
+\begin_inset Formula $\bar{B}$
+\end_inset
+
+.C +
+\begin_inset Formula $\bar{A}$
+\end_inset
+
+.B.C + A.B.
+\begin_inset Formula $\bar{C}$
+\end_inset
+
+, é possível implementá-la com multiplexador em dois modos: 
+\end_layout
+
+\begin_layout Enumerate
+Com multiplexador de 8 canais, pois as 3 variáveis (A, B e C) serão associadas
+ às variáveis de seleção, gerando as 8 combinações necessárias ou; 
+\end_layout
+
+\begin_layout Enumerate
+com multiplexador de 4 canais mais uma porta lógica auxiliar.
+ 
+\end_layout
+
+\begin_layout Standard
+Sendo a opção 2, sua implementação será:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela verdade e implementação da opção 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notas:
+\end_layout
+
+\begin_layout Itemize
+Na expressão, a variável A é a mais significativa e, portanto, deve ser
+ conectada ao bit de seleção B do multiplexador, que é o mais significativo
+ deste dispositivo.
+ Semelhantemente deve-se tomar os cuidados devidos com as demais variáveis
+ da expressão, B e C; 
+\end_layout
+
+\begin_layout Itemize
+Para melhor entendimento, a tabela verdade pode ser apresentada no formato
+ a seguir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 4.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela verdade melhor apresentada, com comentários.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Itemize
+Será construído um multiplexador de dois canais, com portas lógicas, de
+ modo que seja possível selecionar um entre dois sinais digitais variantes
+ diferentes.
+ 
+\end_layout
+
+\begin_layout Itemize
+Será implementada uma expressão lógica de três variáveis utilizando um circuito
+ integrado multiplexador.
+\end_layout
+
+\begin_layout Section
+Relação de materiais
+\end_layout
+
+\begin_layout Itemize
+1 Painel Digital didático para desenvolvimento 
+\end_layout
+
+\begin_layout Itemize
+1 Osciloscópio 
+\end_layout
+
+\begin_layout Itemize
+1 Gerador de funções com onda pulsante TTL 
+\end_layout
+
+\begin_layout Itemize
+CIs: 7404, 7408, 7432, 74153 
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de bico 
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de corte 
+\end_layout
+
+\begin_layout Itemize
+1 Espátula para remoção de CI 
+\end_layout
+
+\begin_layout Itemize
+Fios rígidos para proto-board 
+\end_layout
+
+\begin_layout Itemize
+2 cabos banana-banana 
+\end_layout
+
+\begin_layout Itemize
+3 cabos para osciloscópio com garra jacaré
+\end_layout
+
+\begin_layout Section
+Parte prática
+\end_layout
+
+\begin_layout Subsection
+Construção de circuito multiplexador
+\end_layout
+
+\begin_layout Standard
+a) Efetue a montagem do circuito abaixo com os CIs que achar mais adequados,aten
+tando-se às conexões adequadas das alimentações dos circuitos integrados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 5.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito a ser montado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b) Alimente o sistema e obtenha a tabela verdade da saída Y em função de
+ todas as combinações das entradas E1, E0 e A.
+\end_layout
+
+\begin_layout Standard
+c) Ligue os dois geradores de funções e utilize a saída TTL.
+ Observação: a saída convencional (50Ω) do gerador possui onda quadrada,
+ no entanto, com nível negativo, o que pode danificar os CIs (queimar)!
+\end_layout
+
+\begin_layout Standard
+d) Interligue os negativos dos geradores juntamente com o negativo (TERRA
+ ou GND) do painel digital.
+ Com o osciloscópio ajuste as frequências respectivamente em 1kHz (1ms)
+ e 5kHz 200us).
+\end_layout
+
+\begin_layout Standard
+e) Acrescente nas entradas E1 e E0 os geradores de função ajustados, o osciloscó
+pio na saída Y.
+ e uma chave de seleção na entrada A.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 6.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ilustração da montagem.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+f) Observe no osciloscópio as respostas dos sinais, segundo a variável de
+ seleção.
+\end_layout
+
+\begin_layout Subsection
+Implementação de expressão lógica com MUX
+\end_layout
+
+\begin_layout Standard
+a) Utilize o circuito integrado 74153 para implementar a expressão lógica
+ já apresentada: S(A, B, C) = ∑ m(0, 1, 3, 6 ).
+ Atente-se à alimentação deste CI, Vcc=+5V no pino 16 e GND=0V no pino 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 7.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ilustração do circuito integrado 74153.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+b) Alimente o sistema e obtenha a tabela verdade da saída S em função de
+ todas as combinações das entradas A, B e C.
+ A partir da tabela verdade, obtenha a expressão de S.
+\end_layout
+
+\begin_layout Section*
+Relatório: MULTIPLEXADOR
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 8.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Circuito multiplexador
+\end_layout
+
+\begin_layout Standard
+A tabela abaixo mostra na coluna S os níveis lógicos obtidos na saída do
+ multiplexador de dois canais, durante a realização dos ensaios.
+ A partir da tabela foi obtida a expressão de S.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 9.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+S = ..........................................
+\end_layout
+
+\begin_layout Standard
+Conclusão: _____________________________________________________________________
+________________________
+\end_layout
+
+\begin_layout Standard
+Ligando os geradores de funções respectivamente nas entradas E1 e E0, foi
+ possível verificar a resposta na saída S, que em função do posicionamento
+ da chave seletora em A, apresentou o seguinte comportamento: __________________
+____________________________________________________________
+\end_layout
+
+\begin_layout Subsection*
+Implementação de expressão lógica com MUX
+\end_layout
+
+\begin_layout Standard
+Após ensaios com o circuito proposto, foi obtida a tabela verdade abaixo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 10.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analisando os resultados, é possível concluir que ______________________________
+________________________________________________
+\end_layout
+
+\end_body
+\end_document
