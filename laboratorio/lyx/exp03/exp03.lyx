@@ -130,20 +130,6 @@ thepage
 Portas Lógicas
 \end_layout
 
-\begin_layout Author
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Date
 2015
 \end_layout
@@ -169,13 +155,20 @@ Objetivos
 \end_layout
 
 \begin_layout Itemize
-Comprovar experimentalmente as operações das portas lógicas AND, NAND, OR
- e NOR.
+Comprovar, experimentalmente, as operações das portas lógicas 
+\emph on
+AND, NAND, OR 
+\emph default
+e
+\emph on
+ NOR
+\emph default
+.
 \end_layout
 
 \begin_layout Itemize
-Conhecer as características físicas e elétricas dos circuitos integrados
- CIs 7400, 7402, 7408 e 7432.
+Conhecer as características físicas e elétricas dos Circuitos Integrados
+ 7400, 7402, 7408 e 7432.
 \end_layout
 
 \begin_layout Section
@@ -183,20 +176,25 @@ Conceitos
 \end_layout
 
 \begin_layout Standard
-A tabela abaixo ilustra as portas lógicas utilizadas no experimento e suas
- respectivas funções digitais.
-\begin_inset Separator parbreak
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Portas-lógicas-com"
+
 \end_inset
 
-
+ ilustra as portas lógicas utilizadas no experimento e suas res\SpecialChar \-
+pec\SpecialChar \-
+ti\SpecialChar \-
+vas
+ funções digitais.
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -213,7 +211,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Portas lógicas com respectivas expressões booleanas e tabelas verdade.
+Portas lógicas com respectivas expressões booleanas e Tabelas Verdade.
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Portas-lógicas-com"
@@ -238,68 +236,79 @@ Metodologia
 \end_layout
 
 \begin_layout Standard
-Para a análise funcional das portas lógicas AND (E), NAND (NE), OR (OU),
- NOR (NOU) serão realizados ensaios lógicos a cada uma delas.
- Os ensaios consistirão na obtenção de suas tabelas verdade, testes de algumas
+Para a análise funcional das portas lógicas 
+\emph on
+AND
+\emph default
+ (E), 
+\emph on
+NAND
+\emph default
+ (NE), 
+\emph on
+OR
+\emph default
+ (OU) e 
+\emph on
+NOR
+\emph default
+ (NOU) serão realizados ensaios lógicos a cada uma delas.
+ Os ensaios consistirão na obtenção de suas Tabelas Verdade, testes de algumas
  equivalências entre portas e análise com entrada flutuante.
 \end_layout
 
-\begin_layout Section
-Relação de Materiais
-\end_layout
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
 
-\begin_layout Itemize
-1 Painel Digital didático para desenvolvimento
-\end_layout
 
-\begin_layout Itemize
-CIs: 7400, 7402, 7408 e 7432
-\end_layout
-
-\begin_layout Itemize
-1 Alicate de bico
-\end_layout
-
-\begin_layout Itemize
-1 Alicate de corte
-\end_layout
-
-\begin_layout Itemize
-1 Espátula para remoção de CI
-\end_layout
-
-\begin_layout Itemize
-1 Multímetro digital
-\end_layout
-
-\begin_layout Itemize
-Fios rígidos para proto-board
 \end_layout
 
 \begin_layout Section
-Parte Prática
+Parte Experimental
 \end_layout
 
 \begin_layout Subsection
-Operações lógicas do CI 7408 (AND)
+Operações Lógicas do CI 7408 (
+\emph on
+AND
+\emph default
+)
 \end_layout
 
-\begin_layout Standard
-a) Fixe o CI 7408 (AND) adequadamente na matriz de contatos (proto-board)
- do Painel Digital de estudo.
-\end_layout
+\begin_layout Enumerate
+Fixe o Circuito Integrado (CI) 7408 (
+\emph on
+AND
+\emph default
+) adequadamente na matriz de contatos (
+\emph on
+proto-board
+\emph default
+) do Painel Digital de estudo.
+ O circuito lógico interno deste CI está ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:CI-7408"
 
-\begin_layout Standard
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figura 2.png
+	scale 50
 
 \end_inset
 
@@ -311,7 +320,9 @@ status collapsed
 
 \begin_layout Plain Layout
 CI 7408.
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CI-7408"
 
 \end_inset
 
@@ -323,56 +334,205 @@ CI 7408.
 
 \end_layout
 
-\begin_layout Standard
-b) Alimente o circuito integrado: 5V no terminal 14 e 0V (GND – terra) no
- terminal 7.
- ATENÇÃO: NÃO utilize, para essa finalidade, as tensões de +12V ou -12V
- disponibilizadas no painel de estudos, pois, nessas condições, o circuito
- integrado será danificado (QUEIMADO)!
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-c) Escolha uma das 4 portas AND do CI 7408 para iniciar seu estudo, por
- exemplo, a porta acessível pelos terminais 1 e 2 como entrada e 3 como
- saída.
+\begin_layout Enumerate
+Alimente o circuito integrado: 
+\series bold
++5V
+\series default
+ no terminal 
+\series bold
+14
+\series default
+ e 
+\series bold
+0V
+\series default
+ (GND -- 
+\emph on
+ground --
+\emph default
+ terra) no terminal 
+\series bold
+7
+\series default
+.
+ 
+\series bold
+ATENÇÃO! NÃO utilize
+\series default
+, para essa finalidade, as tensões de 
+\series bold
++12V
+\series default
+ ou 
+\series bold
+-12V
+\series default
+ disponibilizadas no painel de estudos, pois, nessas condições, 
+\series bold
+o circuito integrado será danificado (QUEIMADO)!
+\end_layout
+
+\begin_layout Enumerate
+Escolha uma das 4 portas 
+\emph on
+AND
+\emph default
+ do CI 7408 para iniciar o estudo; por exemplo, a porta acessível pelos
+ terminais 1 e 2 como entrada e 3 como saída.
  
 \end_layout
 
-\begin_layout Standard
-d) Acople uma chave reversora em cada uma das duas entradas da porta escolhida,
- de modo a gerar níveis lógicos (0 ou 1) independentes, nesses terminais.
+\begin_layout Enumerate
+Acople uma chave reversora em cada uma das duas entradas da porta escolhida,
+ de modo a gerar níveis lógicos (
+\emph on
+0
+\emph default
+ ou 
+\emph on
+1
+\emph default
+) independentes nesses terminais.
 \end_layout
 
-\begin_layout Standard
-e) Meça os valores analógicos dos dois níveis lógicos gerados pelas chaves,
- obtendo as constantes NLB (nível lógico baixo) e NLA (nível lógico alto).
- Para tanto, utilize o multímetro selecionado como voltímetro CC.
+\begin_layout Enumerate
+Na saída da porta, acople um dos LEDs sinalizadores, de modo que possa ser
+ visualizado o nível resultante: 
+\emph on
+0
+\emph default
+ corresponde a 
+\emph on
+apagado 
+\emph default
+e 
+\emph on
+1
+\emph default
+, a 
+\emph on
+aceso
+\emph default
+.
  
-\end_layout
-
-\begin_layout Standard
-f) Na saída da porta, acople um dos leds sinalizadores, de modo que possa
- ser visualizado o nível resultante: 0 corresponde apagado e 1 aceso.
- Nota: para este procedimento, também poderia ser utilizado o voltímetro
+\emph on
+Nota: para este procedimento, também poderia ser utilizado o voltímetro
  CC, o qual apresentaria o valor da tensão analógica do nível lógico corresponde
 nte.
+
+\emph default
  
 \end_layout
 
-\begin_layout Standard
-g) Efetue todas as combinações das entradas (00,01,10e11) e verifique as
- respostas binárias na saída.
+\begin_layout Enumerate
+Efetue todas as combinações das entradas (
+\emph on
+00
+\emph default
+, 
+\emph on
+01
+\emph default
+, 
+\emph on
+10
+\emph default
+ e 
+\emph on
+11
+\emph default
+) e verifique as respostas binárias na saída, anotando-as na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Função-AND"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 8.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função 
+\emph on
+AND
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Função-AND"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Operações lógicas do CI 7400 (NAND)
+Operações Lógicas do CI 7400 (NAND)
 \end_layout
 
 \begin_layout Standard
 Repita todos os procedimentos realizados anteriormente, agora com o CI 7400.
- Observe que, neste caso, torna-se possível a simples substituição, visto
- que o posicionamento dos terminais das entradas e saídas das portas é o
- mesmo.
+ Observe que, neste caso, torna-se possível a simples substituição do CI,
+ visto que o posicionamento dos terminais das entradas e saídas das portas
+ é o mesmo.
+ O circuito lógico interno deste CI está ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:CI-7400"
+
+\end_inset
+
+.
+ Anote os resultados na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Função-NAND"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -380,12 +540,13 @@ Repita todos os procedimentos realizados anteriormente, agora com o CI 7400.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figura 3.png
+	scale 50
 
 \end_inset
 
@@ -397,10 +558,71 @@ status collapsed
 
 \begin_layout Plain Layout
 CI 7400.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CI-7400"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 9.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função 
+\emph on
+NAND
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Função-NAND"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -410,12 +632,28 @@ CI 7400.
 \end_layout
 
 \begin_layout Subsection
-Operações lógicas do CI 7432 (OR)
+Operações Lógicas do CI 7432 (OR)
 \end_layout
 
 \begin_layout Standard
 Seguindo o mesmo padrão experimental anterior, efetue o ensaio para o CI
  7432.
+ O circuito lógico interno deste CI está ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:CI-7432"
+
+\end_inset
+
+.
+ Anote os resultados na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Função-OR"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -423,12 +661,13 @@ Seguindo o mesmo padrão experimental anterior, efetue o ensaio para o CI
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figura 4.png
+	scale 50
 
 \end_inset
 
@@ -440,10 +679,71 @@ status collapsed
 
 \begin_layout Plain Layout
 CI 7432.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CI-7432"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 10.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função 
+\emph on
+OR
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Função-OR"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -453,13 +753,40 @@ CI 7432.
 \end_layout
 
 \begin_layout Subsection
-Operações lógicas do CI 7402 (NOR)
+Operações Lógicas do CI 7402 (NOR)
 \end_layout
 
 \begin_layout Standard
-Repita para o CI 7402.
- ATENÇÃO: observe que agora há alteração nos posicionamentos dos terminais,
- logo deverá ser montado um novo circuito.
+Repita o item anterior para o CI 7402.
+ 
+\series bold
+ATENÇÃO!
+\series default
+ Observe que agora 
+\series bold
+há alteração
+\series default
+ nos posicionamentos dos terminais: 
+\series bold
+logo deverá ser montado um novo circuito
+\series default
+.
+ O circuito lógico interno deste CI está ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:CI-7402"
+
+\end_inset
+
+.
+ Anote os resultados na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Função-NOR"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -467,12 +794,13 @@ Repita para o CI 7402.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figura 5.png
+	scale 50
 
 \end_inset
 
@@ -484,10 +812,71 @@ status collapsed
 
 \begin_layout Plain Layout
 CI 7402.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CI-7402"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 11.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função 
+\emph on
+NOR
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Função-NOR"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -497,27 +886,42 @@ CI 7402.
 \end_layout
 
 \begin_layout Subsection
-Equivalência entre portas lógicas – obtenção de porta lógica inversora
+Equivalência entre Portas Lógicas – Obtenção de Porta Lógica Inversora
 \end_layout
 
-\begin_layout Standard
-Desconecte as chaves das entradas da porta NOR e interligue os dois terminais
- de entrada.
- Com essa ligação, obtém-se o equivalente a uma porta inversora (NOT).
- 
-\end_layout
+\begin_layout Enumerate
+Desconecte as chaves das entradas da porta 
+\emph on
+NOR
+\emph default
+ e interligue os dois terminais de entrada, como ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Porta-NOT"
 
-\begin_layout Standard
+\end_inset
+
+.
+ Com essa ligação, obtém-se o equivalente a uma porta inversora (
+\emph on
+NOT
+\emph default
+).
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figura 6.png
+	scale 50
 
 \end_inset
 
@@ -529,7 +933,9 @@ status collapsed
 
 \begin_layout Plain Layout
 Porta NOT a partir de uma porta NOR.
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Porta-NOT"
 
 \end_inset
 
@@ -541,44 +947,35 @@ Porta NOT a partir de uma porta NOR.
 
 \end_layout
 
-\begin_layout Standard
-a) Conecte uma chave na entrada A e obtenha a respectiva resposta na saída
- S.
-\end_layout
-
-\begin_layout Subsection
-Análise de porta lógica TTL com entrada flutuante
-\end_layout
-
-\begin_layout Standard
-Verifique o estado lógico da saída de uma porta NOR nas seguintes condições:
- (i) as duas entradas flutuantes (em aberto, sem qualquer tipo de conexão),
- (ii) com apenas uma das entradas ligadas ao GND e (iii) com apenas uma
- das entradas ligadas ao Vcc = +5V.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section*
-Relatório: Portas Lógicas
-\end_layout
+\begin_layout Enumerate
+Conecte uma chave na entrada A e obtenha a respectiva resposta na saída
+ S, anotando os resultados na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Função-NOT"
 
-\begin_layout Standard
-\begin_inset Float figure
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Figura 7.png
+	filename Figura 12.png
 	scale 50
 
 \end_inset
@@ -586,39 +983,22 @@ status collapsed
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-1.
- Verificação experimental das operações lógicas AND (CI 7408) e NAND (CI7400)
- 
-\end_layout
-
-\begin_layout Standard
-Os CIS foram alimentados com as tensões analógicas de 0 e 5V, aplicadas
- respectivamente nos pinos _____ e _____.
- Após os circuitos integrados serem devidamente alimentados, foram realizados
- os testes lógicos a cada um deles.
- Para tanto, foi utilizado como nível lógico 0 (NLB) a tensão analógica
- de ____ V e como nível lógico 1 (NLA) a tensão analógica de ____ V, gerando
- as respectivas tabelas resultantes.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 8.png
-	scale 70
+Função 
+\emph on
+NOT
+\emph default
+ a partir de 
+\emph on
+NOR
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Função-NOT"
 
 \end_inset
 
@@ -628,147 +1008,87 @@ status collapsed
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Análise de Porta Lógica TTL com Entrada Flutuante
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
+Verifique o estado lógico da saída de uma porta 
+\emph on
+NOR
+\emph default
+ nas seguintes condições, anotando os resultados na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:TTL-entrada-flutuante"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+as duas entradas flutuantes (em 
+\emph on
+aberto
+\emph default
+, sem qualquer tipo de conexão)
+\end_layout
+
+\begin_layout Enumerate
+com apenas uma das entradas ligadas ao GND e a outra flutuante
+\end_layout
+
+\begin_layout Enumerate
+com apenas uma das entradas ligadas ao Vcc e a outra flutuante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 9.png
-	scale 70
-
-\end_inset
-
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-2.
- Verificação experimental das operações lógicas OR (CI 7432) e NOR (CI 7402)
-\end_layout
-
-\begin_layout Standard
-Utilizou-se de procedimentos semelhantes aos da etapa anterior para a determinaç
-ão das tabelas verdade OR e NOR, cujos resultados são apresentados a seguir.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 10.png
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 11.png
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-3.
- Obtenção de porta lógica inversora 
-\end_layout
-
-\begin_layout Standard
-A porta lógica inversora do estudo foi obtida a partir de uma porta NOR,
- conectando suas duas entradas entre si (“curto-circuitando” as entradas)
- e garantindo o mesmo sinal lógico em ambas as entradas.
- Desta forma são eliminadas as linhas intermediárias centrais da tabela
- verdade.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 12.png
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-4.
- Ensaio com entradas flutuantes
-\end_layout
-
-\begin_layout Standard
-Foram verificados os estados lógicos da saída S de uma porta lógica NOR,
- segundo situações com entradas desconectadas (em aberto ou flutuante).
- A tabela a seguir resume os experimentos.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Figura 13.png
-	scale 70
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Função 
+\emph on
+NOR
+\emph default
+, em CI da família TTL, com entrada flutuante.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:TTL-entrada-flutuante"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -781,8 +1101,86 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-O que podemos concluir, pela tabela acima, em relação à função NOR, o que
- ocorre estabelecendo-se alguma das entradas em aberto?
+O que se conclui, pela tabela acima, em relação à função NOR, ao se deixar
+ alguma das entradas em aberto?
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "25col%"
+height_special "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Desafios
+\end_layout
+
+\begin_layout Enumerate
+Quais os valores analógicos dos dois níveis lógicos (
+\emph on
+nível lógico alto
+\emph default
+ e 
+\emph on
+nível lógico baixo
+\emph default
+) gerados pelas chaves reversoras? E os obtidos nas saídas dos CIs? 
+\emph on
+Dica: utilizar o multímetro na função de voltímetro CC.
+ 
+\end_layout
+
+\begin_layout Enumerate
+É também possível obter uma função 
+\emph on
+NOT
+\emph default
+ a partir de uma porta 
+\emph on
+NAND
+\emph default
+?
 \end_layout
 
 \begin_layout Standard
@@ -797,11 +1195,11 @@ Lista de Material
 \end_layout
 
 \begin_layout Itemize
-Placa padrão 10 x 5 cm
+Painel Digital didático para desenvolvimento
 \end_layout
 
 \begin_layout Itemize
-Caixa com fios
+CIs: 1x 7400, 1x 7402, 1x 7408 e 1x 7432
 \end_layout
 
 \begin_layout Itemize
@@ -813,35 +1211,17 @@ Alicate de corte
 \end_layout
 
 \begin_layout Itemize
-Ferro de solda, com suporte e esponja
+Espátula para remoção de CI
 \end_layout
 
 \begin_layout Itemize
-Copinho com um pouco de água
+Multímetro digital
 \end_layout
 
 \begin_layout Itemize
-Estanho
-\end_layout
-
-\begin_layout Itemize
-Sugador
-\end_layout
-
-\begin_layout Itemize
-3x Resistores de 330 
-\begin_inset Formula $\Omega$
-\end_inset
-
- / 
-\begin_inset Formula $\nicefrac{1}{8}$
-\end_inset
-
- W
-\end_layout
-
-\begin_layout Itemize
-3x LEDs
+Fios rígidos para 
+\emph on
+proto-board
 \end_layout
 
 \end_body
