@@ -1,10 +1,13 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
 \lyxformat 474
 \begin_document
 \begin_header
 \textclass article
 \begin_preamble
 \usepackage{indentfirst}
+
+% Espaço vertical para tabelas ('struts').
+\newcommand{\espv}[1][4]{\rule[#1ex]{0pt}{0pt}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -49,6 +52,7 @@ customHeadersFooters
 \use_package cancel 1
 \use_package esint 1
 \use_package mathdots 1
+\use_package mathtools 1
 \use_package mhchem 1
 \use_package stackrel 1
 \use_package stmaryrd 1
@@ -1102,49 +1106,42 @@ name "tab:TTL-entrada-flutuante"
 \begin_layout Standard
 O que se conclui, pela tabela acima, em relação à função NOR, ao se deixar
  alguma das entradas em aberto?
+\begin_inset VSpace medskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \noindent
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "25col%"
-height_special "none"
-status open
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="100col%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Phantom Phantom
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\end_layout
 
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
+\backslash
+espv[25]
 \end_layout
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
