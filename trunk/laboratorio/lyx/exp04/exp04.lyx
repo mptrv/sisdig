@@ -3289,7 +3289,6 @@ status collapsed
 	filename cis/7404.png
 	lyxscale 50
 	height 3cm
-	rotateAngle 90
 
 \end_inset
 
@@ -3324,7 +3323,6 @@ status collapsed
 \begin_inset Graphics
 	filename cis/7408.png
 	height 3cm
-	rotateAngle 90
 
 \end_inset
 
@@ -3350,6 +3348,13 @@ status collapsed
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -3359,7 +3364,6 @@ status collapsed
 \begin_inset Graphics
 	filename cis/7432.png
 	height 3cm
-	rotateAngle 90
 
 \end_inset
 
