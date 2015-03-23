@@ -6,8 +6,16 @@
 \begin_preamble
 \usepackage{indentfirst}
 
+% Fração do total da altura do texto para alocação de flutuantes na parte inferior da página.
+\renewcommand{\bottomfraction}{0.5}
+
 % Espaço vertical para tabelas ('struts').
 \newcommand{\espv}[1][4]{\rule[#1ex]{0pt}{0pt}}
+
+% 'Strutp' - Espaço vertical pré-definido personalizado para o ambiente tabular ou quadros.
+% Nota: já existe o comando '\strut'.
+% Ref.: http://en.wikibooks.org/wiki/LaTeX/Rules_and_Struts
+\newcommand{\strutp}[1]{\rule[-0.3\baselineskip]{0pt}{#1}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -34,7 +42,7 @@ customHeadersFooters
 \bibtex_command default
 \index_command default
 \paperfontsize 12
-\spacing other 1.1499999999999999
+\spacing other 1.15
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -138,6 +146,22 @@ Multiplexadores
 2015
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{fancy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Objetivos
 \end_layout
@@ -156,16 +180,33 @@ Conceito
 \end_layout
 
 \begin_layout Subsection
-Multiplexador -- MUX
+Multiplexador
 \end_layout
 
 \begin_layout Standard
-A operação de multiplexação trata o direcionamento de um sinal de entrada
- selecionado, dentre 
+O 
+\emph on
+Multiplexador 
+\emph default
+também é conhecido por 
+\emph on
+MULTIPLEX 
+\emph default
+ou, simplesmente, 
+\emph on
+MUX
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+A operação de multiplexação direciona um dos canais de entrada, selecionado
+ dentre 
 \begin_inset Formula $n$
 \end_inset
 
- sinais, para um sinal de saída, em que a seleção é estabelecida por 
+ canais, para um canal de saída.
+ A seleção é estabelecida por 
 \emph on
 variáveis de controle 
 \emph default
@@ -174,8 +215,15 @@ ou
 variáveis de seleção
 \emph default
 .
- No caso de sistemas digitais, o circuito multiplexador irá conectar eletronicam
-ente um bit de entrada selecionado pela palavra binária de controle ao bit
+ No caso de sistemas digitais, o circuito multiplexador irá conectar, eletronica
+mente, um 
+\emph on
+bit
+\emph default
+ da entrada selecionada pela palavra binária de controle ao 
+\emph on
+bit
+\emph default
  de saída.
  A 
 \begin_inset CommandInset ref
@@ -185,12 +233,16 @@ reference "fig:Comparação-chave-analógica-mux"
 \end_inset
 
  apresenta uma analogia entre uma chave de seleção analógica e um circuito
- multiplexador digital, ambos com 4 entradas de informação.
+ mul\SpecialChar \-
+ti\SpecialChar \-
+ple\SpecialChar \-
+xa\SpecialChar \-
+dor digital, ambos com 4 entradas de informação (4 canais de
+ entrada).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -211,6 +263,7 @@ status open
 
 \begin_layout Plain Layout
 Comparação entre chave de seleção analógica e o multiplex.
+ Adicionalmente, note-se o símbolo utilizado para representar o multiplex.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Comparação-chave-analógica-mux"
@@ -231,17 +284,17 @@ name "fig:Comparação-chave-analógica-mux"
 \end_layout
 
 \begin_layout Standard
-Como é possível perceber, a quantidade de saídas do multiplexador é fixa,
- ou seja, um bit de saída para os
-\begin_inset Formula $n$
-\end_inset
-
- bits de entrada.
+Como é possível perceber, a quantidade de saídas do multiplexador é fixa
+ -- há apenas um canal de saída.
  Já a quantidade de variáveis 
 \begin_inset Formula $m$
 \end_inset
 
- de controle (seleção) irá depender da quantidade de bits do canal de entrada.
+ de controle (seleção) irá depender da quantidade de canais de entrada 
+\begin_inset Formula $n$
+\end_inset
+
+.
  Uma vez que a seleção é feita em base binária:
 \end_layout
 
@@ -268,23 +321,42 @@ reference "fig:mux-2-canais"
 
 \end_inset
 
-, é apresentada a simbologia e a Tabela Verdade de um multiplexador de 2
- canais, para o qual é necessário apenas 1 bit como variável de seleção,
- e, ainda na mesma figura, a correspondente expressão lógica e circuito.
+, é apresentado o circuito interno (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-interno-mux-2-canais"
+
+\end_inset
+
+) e o símbolo (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Símbolo-mux-2-canais"
+
+\end_inset
+
+) de um multiplexador de 2 canais de entrada.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
+placement bh
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Figura 2.png
-	scale 50
+	filename mux-2-canais-circuito-interno.png
+	height 3cm
 
 \end_inset
 
@@ -295,8 +367,77 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Em ordem: simbologia e tabela verdade de um multiplexador de 2 canais, sua
- expressão lógica e o circuito.
+Circuito interno.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-interno-mux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename mux-2-canais-simbolo.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Símbolo.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Símbolo-mux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Multiplexador de 2 canais de entrada.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:mux-2-canais"
@@ -316,53 +457,18 @@ name "fig:mux-2-canais"
 
 \end_layout
 
-\begin_layout Subsubsection
-Aplicação de Sintetização de Expressão Booleana com Multiplexador
-\end_layout
-
 \begin_layout Standard
-A partir de circuitos multiplexadores, é possível efetuar a realização eletrônic
-a de expressões lógicas.
- 
-\end_layout
-
-\begin_layout Standard
-Como exemplo, seja a expressão de três variáveis 
-\begin_inset Formula $S(A,\,B,\,C)=\sum(0,\,1,\,3,\,6)$
-\end_inset
-
- (que é equivalente a escrever 
-\begin_inset Formula $S=\bar{A}\cdot\bar{B}\cdot\bar{C}+\bar{A}\cdot\bar{B}\cdot C+\bar{A}\cdot B\cdot C+A\cdot B\cdot\bar{C}$
-\end_inset
-
-).
- 
-\family typewriter
-Pode-se
-\family default
- implementá-la com multiplexador em dois modos: 
-\end_layout
-
-\begin_layout Enumerate
-Com multiplexador de 8 canais, pois as 3 variáveis (A, B e C) serão associadas
- às variáveis de seleção, gerando as 8 combinações necessárias; ou
-\end_layout
-
-\begin_layout Enumerate
-com multiplexador de 4 canais mais uma porta lógica auxiliar.
- 
-\end_layout
-
-\begin_layout Standard
-A implementação pelo modo
-\begin_inset space ~
-\end_inset
-
-1 é direta.
- Já a implementação pelo modo 2 ficaria da forma ilustrada pela 
+A Tabela Verdade, que retrata a operação do circuito, encontra-se na 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:circuito-mux-modo-2"
+reference "tab:Tabela-Verdade-resumida-mux-2-canais"
+
+\end_inset
+
+, a qual, de forma equivalente, pode ser representada como a da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-detalhada-mux-2-canais"
 
 \end_inset
 
@@ -370,16 +476,1173 @@ reference "fig:circuito-mux-modo-2"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
+\align center
+\begin_inset Float table
+placement h
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade resumida.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-resumida-mux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade detalhada.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-detalhada-mux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade para o multiplexador de 2 canais de entrada.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-mux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tanto a partir do circuito interno quanto a partir da Tabela Verdade, é
+ possível obter a expressão lógica que rege o funcionamento do multiplexador:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\bar{A}\,E0+A\,E1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Sintetização de Expressão Booleana com Multiplexador
+\end_layout
+
+\begin_layout Standard
+Os circuitos multiplixadores possuem uma infinidade de aplicações.
+ Uma delas é a possibilidade de implementar expressões lógicas.
+ 
+\end_layout
+
+\begin_layout Standard
+Como exemplo, seja a expressão de três variáveis:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note-se que, dado o conceito de 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+mintermos
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, a mesma expressão pode ser representada por 
+\begin_inset Formula $S(A,\,B,\,C)=\sum m(0,\,1,\,3,\,6)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\bar{A}\,\bar{B}\,\bar{C}+\bar{A}\,\bar{B}\,C+\bar{A}\,B\,C+A\,B\,\bar{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P
+\family typewriter
+ode-se
+\family default
+ implementá-la com multiplexador por meio de dois métodos: 
+\end_layout
+
+\begin_layout Description
+Método
+\begin_inset space ~
+\end_inset
+
+direto: utilizando-se multiplexador com quantidade de variáveis de seleção
+ (
+\begin_inset Formula $N_{S}$
+\end_inset
+
+) igual à quantidade de variáveis da expressão (
+\begin_inset Formula $N_{E}$
+\end_inset
+
+) --- ou seja, 
+\begin_inset Formula $N_{S}=N_{E}$
+\end_inset
+
+; no caso do exemplo, emprega-se um multiplexador com 
+\series bold
+três
+\series default
+ variáveis de seleção e, portanto, 8 canais de entrada.
+\end_layout
+
+\begin_layout Description
+Método
+\begin_inset space ~
+\end_inset
+
+alternativo: utilizando-se multiplexador com quantidade de va\SpecialChar \-
+ri\SpecialChar \-
+á\SpecialChar \-
+veis de
+ seleção (
+\begin_inset Formula $N_{S}$
+\end_inset
+
+) igual à quantidade de variáveis da expressão (
+\begin_inset Formula $N_{E}$
+\end_inset
+
+) menos 1 --- ou seja, 
+\begin_inset Formula $N_{S}=N_{E}-1$
+\end_inset
+
+; no caso do exemplo, emprega-se um multiplexador com 
+\series bold
+duas
+\series default
+ variáveis de seleção e, portanto, 4 canais de entrada; este método tem
+ a vantagem de economizar em 
+\begin_inset Quotes eld
+\end_inset
+
+tamanho
+\begin_inset Quotes erd
+\end_inset
+
+ de multiplexador, mas pode requisitar portas lógicas adicionais.
+\end_layout
+
+\begin_layout Standard
+A implementação pelo
+\emph on
+ método direto
+\emph default
+ é trivial: as variáveis da expressão são conectadas às variáveis de seleção,
+ obedecendo a ordem de significância, e as entradas são conectadas a níveis
+ lógicos 
+\emph on
+0
+\emph default
+ e 
+\emph on
+1
+\emph default
+ conforme o resultado desejado para cada combinação das variáveis da expressão.
+\end_layout
+
+\begin_layout Standard
+Já a implementação pelo 
+\emph on
+método alternativo
+\emph default
+ requer uma análise adicional, como ilustrado pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-para-metodo-alternativo"
+
+\end_inset
+
+ e pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:circuito-para-metodo-alternativo"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade para implementação de lógica utilizando-se multiplexador
+ segundo a técnica do 
+\emph on
+método alternativo
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-para-metodo-alternativo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename Figura 3.png
+	filename mux-metodo-alternativo-implementacao.png
 	scale 50
 
 \end_inset
@@ -391,11 +1654,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tabela verdade e implementação lógica utilizando-se MUX segundo a técnica
- do modo 2.
+Implementação de lógica utilizando-se multiplexador segundo a técnica do
+ 
+\emph on
+método alternativo
+\emph default
+.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:circuito-mux-modo-2"
+name "fig:circuito-para-metodo-alternativo"
 
 \end_inset
 
@@ -417,7 +1684,7 @@ Para melhor entendimento, a Tabela Verdade pode ser apresentada em um formato
  mais explicativo, como vê-se na 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:Tabela-Verdade-modo-2"
+reference "tab:Tabela-Verdade-modo-2"
 
 \end_inset
 
@@ -425,17 +1692,576 @@ reference "fig:Tabela-Verdade-modo-2"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
+\begin_inset Float table
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename Figura 4.png
-	scale 60
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entradas
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Saída
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comentários
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=1$
+\end_inset
+
+, qualquer que seja o valor de 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=0$
+\end_inset
+
+, se 
+\begin_inset Formula $C=0$
+\end_inset
+
+; 
+\begin_inset Formula $S=1$
+\end_inset
+
+, se 
+\begin_inset Formula $C=1$
+\end_inset
+
+; ou seja, 
+\begin_inset Formula $S=C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=0$
+\end_inset
+
+, qualquer que seja o valor de 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S=1$
+\end_inset
+
+, se 
+\begin_inset Formula $C=0$
+\end_inset
+
+; 
+\begin_inset Formula $S=0$
+\end_inset
+
+, se 
+\begin_inset Formula $C=1$
+\end_inset
+
+; ou seja, 
+\begin_inset Formula $S=\bar{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -446,11 +2272,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tabela Verdade com comentários a respeito da técnica utilizada pelo modo
- 2.
+Tabela Verdade com comentários a respeito da técnica utilizada pelo 
+\emph on
+método alternativo
+\emph default
+.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Tabela-Verdade-modo-2"
+name "tab:Tabela-Verdade-modo-2"
 
 \end_inset
 
@@ -477,11 +2306,84 @@ tivo deste dispositivo.
 
 \begin_layout Section
 Metodologia
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Itemize
+Será construído um multiplexador de dois canais de entrada, com portas lógicas,
+ de modo que seja possível selecionar um entre dois sinais digitais diferentes.
+ 
+\end_layout
+
+\begin_layout Itemize
+Será implementada uma expressão lógica de duas variáveis utilizando um circuito
+ integrado multiplexador.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Subsection
+Construção de Circuito Multiplexador
+\end_layout
+
+\begin_layout Enumerate
+Efetue a montagem do circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mux-2canais-experimental"
+
+\end_inset
+
+ com os CIs que considerar mais convenientes, 
+\series bold
+atentando-se às conexões adequadas das alimentações
+\series default
+ 
+\series bold
+destes
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Continuar a partir daqui.
+\align center
+\begin_inset Graphics
+	filename mux-2-canais-circuito-interno.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Multiplex de 2 canais de entrada, 1 variável de seleção e 1 canal de saída.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mux-2canais-experimental"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -489,32 +2391,975 @@ Continuar a partir daqui.
 
 \end_layout
 
-\begin_layout Itemize
-Será construído um multiplexador de dois canais, com portas lógicas, de
- modo que seja possível selecionar um entre dois sinais digitais variantes
- diferentes.
- 
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Será implementada uma expressão lógica de três variáveis utilizando um circuito
- integrado multiplexador.
+\begin_layout Enumerate
+Alimente o sistema e obtenha a Tabela Verdade da saída Y em função de todas
+ as combinações das entradas E1, E0 e A, completando a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-para-mux-2-canais-experimental"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0.5cm">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade para o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mux-2canais-experimental"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-para-mux-2-canais-experimental"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Qual a expressão lógica que representa o funcionamento do circuito multiplexador
+ implementado?
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="100line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[4]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+O que se conclui, ao se analisar a saída para cada combinação das entradas?
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="100line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[15]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Implementação de Expressão Lógica com MUX
+\end_layout
+
+\begin_layout Standard
+Utilizando o circuito integrado 74153, apresentado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Circuito-integrado-74153"
+
+\end_inset
+
+, pretende-se implementar a seguinte expressão lógica:
+\begin_inset Formula 
+\[
+S=\bar{A}B+A\bar{B}
+\]
+
+\end_inset
+
+
+\series bold
+Observações:
+\end_layout
+
+\begin_layout Enumerate
+Atente-se à alimentação deste CI: Vcc=+5V no pino 16 e GND=0V no pino 8.
+\end_layout
+
+\begin_layout Enumerate
+Há o sinal de STROBE, com a função de habilitar o funcionamento do MUX.
+ De acordo com o esquema, ele deve ser conectado no nível lógico 
+\emph on
+0
+\emph default
+ para a habilitação.
+ (Por quê?)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement b
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figura 7.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito integrado 74153.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-integrado-74153"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para a implementação, executar as etapas:
+\end_layout
+
+\begin_layout Enumerate
+Desenhe a Tabela Verdade correspondente à expressão lógica, completando
+ a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-experimental"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade para 
+\begin_inset Formula $S=\bar{A}B+A\bar{B}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-experimental"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Desenhar o esquema elétrico do circuito que implementa a função, utilizando
+ o CI 74153.
+\series bold
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="100line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[40]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Montar e alimentar o circuito e confrontar os resultados experimentais com
+ os esperados.
+\end_layout
+
+\begin_layout Subsection
+Referências de CIs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+74
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Desafios
+\end_layout
+
+\begin_layout Enumerate
+O CI 74153 pode ser utilizado para implementar funções lógicas com três
+ variáveis pelo 
+\emph on
+método direto
+\emph default
+? Exemplifique a resposta procurando implementar a função:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\bar{A}BC+\bar{A}B\bar{C}+A\bar{B}C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Implementar a função acima utilizando o CI 74153 pelo 
+\emph on
+método alternativo
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Por meio de um circuito multiplexador, é possível implementar uma 
+\series bold
+\emph on
+lógica programável
+\series default
+\emph default
+? Apresente um exemplo, mesmo que de forma bastante rudimentar.
+ (
+\emph on
+Dica: primeiro deve-se entender o que significa 
+\begin_inset Quotes eld
+\end_inset
+
+lógica programável
+\begin_inset Quotes erd
+\end_inset
+
+.
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Relação de materiais
+Lista de Material
 \end_layout
 
 \begin_layout Itemize
 1 Painel Digital didático para desenvolvimento 
-\end_layout
-
-\begin_layout Itemize
-1 Osciloscópio 
-\end_layout
-
-\begin_layout Itemize
-1 Gerador de funções com onda pulsante TTL 
 \end_layout
 
 \begin_layout Itemize
@@ -539,285 +3384,6 @@ Fios rígidos para proto-board
 
 \begin_layout Itemize
 2 cabos banana-banana 
-\end_layout
-
-\begin_layout Itemize
-3 cabos para osciloscópio com garra jacaré
-\end_layout
-
-\begin_layout Section
-Parte prática
-\end_layout
-
-\begin_layout Subsection
-Construção de circuito multiplexador
-\end_layout
-
-\begin_layout Standard
-a) Efetue a montagem do circuito abaixo com os CIs que achar mais adequados,aten
-tando-se às conexões adequadas das alimentações dos circuitos integrados.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 5.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito a ser montado.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-b) Alimente o sistema e obtenha a tabela verdade da saída Y em função de
- todas as combinações das entradas E1, E0 e A.
-\end_layout
-
-\begin_layout Standard
-c) Ligue os dois geradores de funções e utilize a saída TTL.
- Observação: a saída convencional (50Ω) do gerador possui onda quadrada,
- no entanto, com nível negativo, o que pode danificar os CIs (queimar)!
-\end_layout
-
-\begin_layout Standard
-d) Interligue os negativos dos geradores juntamente com o negativo (TERRA
- ou GND) do painel digital.
- Com o osciloscópio ajuste as frequências respectivamente em 1kHz (1ms)
- e 5kHz 200us).
-\end_layout
-
-\begin_layout Standard
-e) Acrescente nas entradas E1 e E0 os geradores de função ajustados, o osciloscó
-pio na saída Y.
- e uma chave de seleção na entrada A.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 6.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ilustração da montagem.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-f) Observe no osciloscópio as respostas dos sinais, segundo a variável de
- seleção.
-\end_layout
-
-\begin_layout Subsection
-Implementação de expressão lógica com MUX
-\end_layout
-
-\begin_layout Standard
-a) Utilize o circuito integrado 74153 para implementar a expressão lógica
- já apresentada: S(A, B, C) = ∑ m(0, 1, 3, 6 ).
- Atente-se à alimentação deste CI, Vcc=+5V no pino 16 e GND=0V no pino 8.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 7.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ilustração do circuito integrado 74153.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-b) Alimente o sistema e obtenha a tabela verdade da saída S em função de
- todas as combinações das entradas A, B e C.
- A partir da tabela verdade, obtenha a expressão de S.
-\end_layout
-
-\begin_layout Section*
-Relatório: MULTIPLEXADOR
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 8.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Circuito multiplexador
-\end_layout
-
-\begin_layout Standard
-A tabela abaixo mostra na coluna S os níveis lógicos obtidos na saída do
- multiplexador de dois canais, durante a realização dos ensaios.
- A partir da tabela foi obtida a expressão de S.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 9.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-S = ..........................................
-\end_layout
-
-\begin_layout Standard
-Conclusão: _____________________________________________________________________
-________________________
-\end_layout
-
-\begin_layout Standard
-Ligando os geradores de funções respectivamente nas entradas E1 e E0, foi
- possível verificar a resposta na saída S, que em função do posicionamento
- da chave seletora em A, apresentou o seguinte comportamento: __________________
-____________________________________________________________
-\end_layout
-
-\begin_layout Subsection*
-Implementação de expressão lógica com MUX
-\end_layout
-
-\begin_layout Standard
-Após ensaios com o circuito proposto, foi obtida a tabela verdade abaixo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 10.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Analisando os resultados, é possível concluir que ______________________________
-________________________________________________
 \end_layout
 
 \end_body
