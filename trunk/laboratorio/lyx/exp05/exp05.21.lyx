@@ -1021,6 +1021,179 @@ name "fig:Circuitos-de-entrada"
 
 \end_layout
 
+\begin_layout Standard
+As chaves apresentadas no esquema elétrico podem ser implementadas com,
+ por exemplo, 
+\emph on
+microswitch 
+\emph default
+ou 
+\emph on
+reed switch
+\emph default
+, apresentadas na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Exemplos-de-chaves"
+
+\end_inset
+
+.
+ Note-se, no caso da 
+\emph on
+microswitch
+\emph default
+, a presença dos terminais C--NA--NF (na figura, em inglês, COM--NO--NC,
+ ou seja, 
+\emph on
+commom, normally open, normally closed
+\emph default
+); ainda, de acordo com as definições na 
+\series bold
+Tabela de Associação
+\series default
+, deve-se utilizar no projeto os terminais C e NA.
+ (O que aconteceria se fosse utilizado C e NF?)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename microswitch.png
+	lyxscale 40
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Microswitch.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Microswitch"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename reedswitch.png
+	lyxscale 40
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Reed switch.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Reed-switch"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplos de chaves.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Exemplos-de-chaves"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 Circuito de Saída
 \end_layout
@@ -1163,7 +1336,6 @@ status open
 
 \begin_layout Plain Layout
 
-\color cyan
 }
 \end_layout
 
@@ -1262,7 +1434,7 @@ espv[25]
 \end_layout
 
 \begin_layout Section
-Proposta
+Parte Experimental
 \end_layout
 
 \begin_layout Standard
@@ -1285,6 +1457,22 @@ Contexto
 \begin_layout Enumerate
 Alterar este circuito a fim de manter a sirene acionada mesmo que a porta
  e a janela voltem a ficar fechadas no instante seguinte ao disparo do alarme.
+\end_layout
+
+\begin_layout Section
+Desafio
+\end_layout
+
+\begin_layout Standard
+Como fazer para soar o 
+\emph on
+buzzer
+\emph default
+, disponível no Painel Digital do laboratório, quando o sinal 
+\family sans
+As 
+\family default
+for ativado?
 \end_layout
 
 \begin_layout Standard
