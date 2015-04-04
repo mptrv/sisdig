@@ -1,9 +1,26 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 479
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{indentfirst}
+
+% Fração do total da altura do texto para alocação de flutuantes na parte inferior da página.
+\renewcommand{\bottomfraction}{0.5}
+
+% Espaço vertical para tabelas ('struts').
+\newcommand{\espv}[1][4]{\rule[#1ex]{0pt}{0pt}}
+
+% 'Strutp' - Espaço vertical pré-definido personalizado para o ambiente tabular ou quadros.
+% Nota: já existe o comando '\strut'.
+% Ref.: http://en.wikibooks.org/wiki/LaTeX/Rules_and_Struts
+\newcommand{\strutp}[1]{\rule[-0.3\baselineskip]{0pt}{#1}}
+\end_preamble
 \use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
@@ -24,10 +41,19 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
-\spacing single
-\use_hyperref false
-\papersize default
+\paperfontsize 12
+\spacing other 1.15
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
 \use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
@@ -45,7 +71,7 @@
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
-\suppress_date true
+\suppress_date false
 \justification true
 \use_refstyle 1
 \index Index
@@ -59,7 +85,7 @@
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -69,136 +95,152 @@
 
 \begin_body
 
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE102 - Fundamentos de Circuitos Digitais
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Title
 
 \shape italic
-LÓGICA DIGITAL CIRCUITOS COMBINACIONAIS
+\emph on
+Aplicação de Circuito Lógico Combinacional
+\begin_inset Newline newline
+\end_inset
+
+
+\emph default
+
+\begin_inset Quotes eld
+\end_inset
+
+Decodificador BCD--7 Segmentos
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+2015
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{fancy}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 
 \series bold
-Objetivos:
-\series default
- Desenvolver as habilidades necessárias para o projeto e implementação de
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Desenvolver as habilidades necessárias para o projeto e implementação de
  circuitos combinacionais.
 \end_layout
 
 \begin_layout Section
-Material e equipamentos utilizados:
-\end_layout
-
-\begin_layout Itemize
-"Display" 7 segmentos, anodo comum, FND 507;
-\end_layout
-
-\begin_layout Itemize
-Circuito integrado (NAND) 7400 (4x);
-\end_layout
-
-\begin_layout Itemize
-Circuito integrado (NOT) 7404 (4x);
-\end_layout
-
-\begin_layout Itemize
-Circuito integrado (NOR) 7402 (4x);
-\end_layout
-
-\begin_layout Itemize
-Resistor 560
-\begin_inset Formula $\varOmega$
-\end_inset
-
-; 0,33
-\begin_inset Formula $W$
-\end_inset
-
- (10x);
-\end_layout
-
-\begin_layout Itemize
-Osciloscópio;
-\end_layout
-
-\begin_layout Itemize
-Multímetro digital;
-\end_layout
-
-\begin_layout Itemize
-Conjunto de montagem para circuitos digitais com "proto board";
-\end_layout
-
-\begin_layout Itemize
-Fios para as conexões;
-\end_layout
-
-\begin_layout Section
-Considerações iniciais:
+Considerações Iniciais
 \end_layout
 
 \begin_layout Standard
 Esta experiência tem por finalidade exercitar o projeto, implementação e
  testes de um circuito destinado a converter números binários para ativar
- os terminais de um display de sete segmentos.
+ os terminais de um 
+\emph on
+display
+\emph default
+ de sete segmentos.
+\end_layout
+
+\begin_layout Standard
+Cada segmento do 
+\emph on
+display
+\emph default
+ é constuído por um LED (
+\emph on
+Light Emitter Diode
+\emph default
+ -- Diodo Emissor de Luz).
  Por convenção, os segmentos de um display genérico são representados pelos
- caracteres a,b,c,d,e,f e g.
- A 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:\"Display\"-de-7-segmentos"
-
-\end_inset
-
- ilustra a pinagem de um "display" de sete segmentos típico.
- Convém registrar que "an" corresponde ao anodo comum a todos os segmentos
- luminosos e que a ativação do terminal "ponto" ilumina o ponto decimal
- à direita do dígito.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figura 1.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-"Display" de 7 segmentos típicos
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:\"Display\"-de-7-segmentos"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A associação de cada segmento do display com as representações de "a" e
- "g" é padronizada segundo a disposição da 
+ caracteres 
+\emph on
+a
+\emph default
+, 
+\emph on
+b
+\emph default
+, 
+\emph on
+c
+\emph default
+, 
+\emph on
+d
+\emph default
+, 
+\emph on
+e
+\emph default
+, 
+\emph on
+f
+\emph default
+ e 
+\emph on
+g
+\emph default
+, conforme a associação padronizada apresentada pela 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Associação-de-caracteres"
@@ -229,7 +271,25 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Associação de caracteres "a" a "g" com os trechos do display de sete segmentos
+Associação de caracteres 
+\emph on
+a
+\emph default
+ a 
+\emph on
+g
+\emph default
+ com os segmentos do 
+\emph on
+display
+\emph default
+ de sete segmentos.
+ Note-se também a presença do ponto decimal (
+\emph on
+pd
+\emph default
+).
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Associação-de-caracteres"
@@ -250,17 +310,71 @@ name "fig:Associação-de-caracteres"
 \end_layout
 
 \begin_layout Standard
-Uma importante informação referente ao acionamento dos dígitos do "display"
- consiste nas técnicas de conexão dos terminais às portas lógicas.
- Note-se que a ativação dos dígitos ocorre quando a saída lógica está em
- nível "0".
- Convém incluir, entre cada terminal do "display" de 7 segmentos e a saída
- da porta lógica destinada aos pontos "a", "b", "c", etc., resistores de
- 560 
-\begin_inset Formula $\varOmega$
-\end_inset
+Convém registrar que podem existir 
+\emph on
+displays 
+\emph default
+do tipo 
+\series bold
+anodo comum
+\series default
+ ou 
+\series bold
+catodo comum
+\series default
+.
+ O 
+\emph on
+display 
+\emph default
+tipo
+\emph on
+ anodo comum 
+\emph default
+significa que há apenas um terminal de anodo disponibilizado no dispositivo
+ e este é comum a todos os segmentos luminosos.
+ De forma análoga, tem-se o 
+\emph on
+catodo comum
+\emph default
+, no qual há apenas um terminal catodo em comum com todos os segmentos luminosos.
+\end_layout
 
- , como indica a 
+\begin_layout Standard
+Uma importante informação referente ao acionamento dos dígitos do 
+\emph on
+display
+\emph default
+ consiste nas técnicas de conexão dos terminais às portas lógicas.
+ Note-se que a ativação dos segmentos ocorre quando a saída lógica está
+ em nível 
+\emph on
+0
+\emph default
+, para 
+\emph on
+displays anodo comum
+\emph default
+, e 
+\emph on
+1
+\emph default
+, para 
+\emph on
+displays catado comum
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Quando um segmento for acionado, deve-se incluir um resistor em série com
+ cada segmento, a fim de limitar a corrente que circula pelos correspondentes
+ LEDs e, assim, evitar que ele se queime.
+ Esta situação é ilustrada para o caso do 
+\emph on
+display anodo comum
+\emph default
+ na 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Interligação-dos-circuitos"
@@ -291,7 +405,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Interligação dos circuitos externos com o display de 7 segmentos
+Resistores colocados em série com os segmentos do 
+\emph on
+display
+\emph default
+ para limitar a corrente do LED correspondente.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Interligação-dos-circuitos"
@@ -356,6 +475,10 @@ Uma interessante sugestão antes de iniciar o item (5) consiste em montar
 \end_layout
 
 \begin_layout Section
+Desafio
+\end_layout
+
+\begin_layout Section
 Referências Bibliográficas:
 \end_layout
 
@@ -374,6 +497,41 @@ Helfrick, A.
  et al.
  Instrumentação eletrônica moderna e técnicas de medição, Rio de Janeiro:
  Prentice Hall do Brasil, 1994.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lista de Material
+\end_layout
+
+\begin_layout Itemize
+1 Painel Digital didático para desenvolvimento 
+\end_layout
+
+\begin_layout Itemize
+CIs: 2x 7400, 2x 7402, 1x 7404
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de corte 
+\end_layout
+
+\begin_layout Itemize
+1 Espátula para remoção de CI
+\end_layout
+
+\begin_layout Itemize
+Fios rígidos para proto-board
 \end_layout
 
 \end_body
