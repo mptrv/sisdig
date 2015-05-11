@@ -1,0 +1,775 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 479
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size larger
+ETE102 -- Fundamentos de Circuitos Digitais
+\size default
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Projeto 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Profª Alessandra Dutra Coelho
+\begin_inset Newline newline
+\end_inset
+
+Prof° Ângelo Sebastião Zanini
+\begin_inset Newline newline
+\end_inset
+
+Profº José Carlos de Souza Júnior
+\begin_inset Newline newline
+\end_inset
+
+Profº Marcelo Porto Trevizan
+\begin_inset Newline newline
+\end_inset
+
+Profº Murilo Zanini de Carvalho
+\begin_inset Newline newline
+\end_inset
+
+Profº Wânderson de Oliveira Assis
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+Primeiro Semestre de 2015
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+Desenvolver o projeto e implementar o circuito de um 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+dado digital
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+com dois dígitos de 0 a 9.
+\end_layout
+
+\begin_layout Section
+Prazo para Entrega
+\end_layout
+
+\begin_layout Standard
+O projeto deverá ser apresentado na própria aula de laboratório, conforme
+ as datas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios da segunda-feira: 08.06.2015
+\end_layout
+
+\begin_layout Itemize
+Laboratórios da quarta-feira: 10.06.2015
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios da segunda-feira: 08.06.2015
+\end_layout
+
+\begin_layout Itemize
+Laboratórios da terça-feira: 09.06.2015
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\emph on
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+Não serão aceitos projetos entregues fora do prazo.
+\end_layout
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+A pontuação será atribuída apenas aos presentes na data de entrega.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Descritivo do Projeto
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Descritivo-do-Projeto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O 
+\emph on
+Dado Digital
+\emph default
+ consiste de um contador de 00 a 99, em alta frequência, que será paralisado
+ ao se pressionar um botão, simulando o sorteio.
+ Caso os dígitos exibidos forem iguais, uma lâmpada deverá acender.
+ Ao se pressionar o botão novamente, a contagem é liberada.
+\end_layout
+
+\begin_layout Standard
+Logo que o circuito for energizado, a contagem deve estar parada em 00,
+ situação que deixará a lâmpada acesa.
+\end_layout
+
+\begin_layout Standard
+A lâmpada só poderá acender quando a contagem for paralisada -- ela não
+ deverá piscar durante a contagem.
+\end_layout
+
+\begin_layout Standard
+A essência do projeto é utilizar dois contadores em década, com decodificadores
+ para 7 segmentos, de forma a exibir os valores nos 
+\emph on
+displays
+\emph default
+.
+ Por meio de um circuito comparador de magnitude, poderá ser detectada a
+ situação de igualdade dos dígitos e, assim, acionar um micro-relé de 5V,
+ permitindo ligar uma lâmpada de 12V.
+\end_layout
+
+\begin_layout Standard
+O esboço do circuito esperado encontra-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Esboço-do-leiaute"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Salienta-se que o leiaute apresentado na figura é apenas um esboço -- os
+ componentes podem ser reposicionados a critério de cada equipe.
+\end_layout
+
+\end_inset
+
+ Notem-se:
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para a fonte de alimentação de 5V.
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para a fonte de alimentação de 12V.
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para o gerador de 
+\emph on
+clock
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Dois 
+\emph on
+diplays
+\emph default
+ de 7-segmentos.
+\end_layout
+
+\begin_layout Itemize
+Um botão (
+\series bold
+Sortear
+\series default
+) do tipo 
+\emph on
+pushbutton
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Um conector do tipo 
+\emph on
+terminal em bloco com parafuso
+\emph default
+ de duas vias.
+\end_layout
+
+\begin_layout Standard
+A lâmpada será conectada no terminal em bloco com parafuso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename projeto-dado-digital-esboco-circuito.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esboço do leiaute do circuito esperado para o 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esboço-do-leiaute"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Orientações Complementares
+\end_layout
+
+\begin_layout Itemize
+O projeto deverá ser desenvolvido com base no descritivo apresentado na
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Descritivo-do-Projeto"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+O projeto é em equipe: obrigatoriamente, a mesma equipe das aulas de laboratório.
+\end_layout
+
+\begin_layout Itemize
+Todo o material deverá ser adquirido pelo grupo, com exceção da fonte de
+ alimentação, do gerador de 
+\emph on
+clock
+\emph default
+ e da lâmpada de 12V.
+\end_layout
+
+\begin_layout Itemize
+Pode-se utilizar a fonte de alimentação do próprio laboratório.
+\end_layout
+
+\begin_layout Itemize
+Pode-se utilizar o gerador de funções do laboratório como fonte de 
+\emph on
+clock
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+A tensão de alimentação nominal do circuito lógico deverá ser 5V.
+\end_layout
+
+\begin_layout Itemize
+No esquema elétrico, indicar o número da pinagem de cada componente.
+\end_layout
+
+\begin_layout Itemize
+O botão 
+\series bold
+Sortear
+\series default
+ deverá ser do tipo 
+\emph on
+pushbutton
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+A montagem do circuito se dará em 
+\series bold
+\emph on
+placa padrão
+\series default
+\emph default
+, também conhecida como 
+\emph on
+placa universal
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Os componentes deverão ser soldados na placa.
+ 
+\emph on
+Antes de soldá-los, fazer um estudo para encontrar uma boa disposição
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Considerar os detalhes de como obter um bom ponto de solda e de como bem
+ utilizar o ferro de solda.
+\end_layout
+
+\begin_layout Itemize
+Realizar a interconecção entre os terminais dos componentes por meio de
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+trilha de solda
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ (se possível e para pequenas distâncias), ou por meio de 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+fios finos
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, por baixo da placa, com apenas as pontas desencapadas, ou por meio de
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+fios finos
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, por cima da placa, numa configuração conhecida como 
+\emph on
+jumpers
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Para a afixação dos CIs, 
+\series bold
+utilizar soquetes de CI
+\series default
+ de tamanho apropriado.
+\end_layout
+
+\begin_layout Itemize
+A implementação do gerador de 
+\emph on
+clock
+\emph default
+ (por meio do CI 555, por exemplo) é facultativa aos grupos que o quiserem
+ implementar.
+\end_layout
+
+\begin_layout Itemize
+No horário de funcionamento do Amoxarifado de Eletrônica, poderá ser emprestado
+ o material necessário para solda, assim como disponibilizada uma sala para
+ o trabalho.
+\end_layout
+
+\begin_layout Itemize
+No Moodle, há um fórum criado para discussões a respeito deste projeto,
+ envolvendo, por exemplo, dicas e sugestões para sua confecção e que podem
+ ser postadas pelos próprios alunos.
+\end_layout
+
+\begin_layout Section
+Critérios de Avaliação
+\end_layout
+
+\begin_layout Standard
+Os critérios de avaliação por item são:
+\end_layout
+
+\begin_layout Enumerate
+Esquema elétrico: 
+\series bold
+2,0
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Apresentação do esquema elétrico 
+\bar under
+completo
+\bar default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Pode ser desenhado à mão ou em CAD.
+\end_layout
+
+\end_inset
+
+ no dia da apresentação do projeto: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Identificação de todas as pinagens no esquema elétrico: 
+\series bold
+1,0
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Implementação do circuito: 
+\series bold
+6,5
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Elementos mínimos -- bornes, 
+\emph on
+displays
+\emph default
+, botão, conector para lâmpada: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Contagem de 00 a 99 operante (sem decodificação): 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Decodificação e exibição no 
+\emph on
+display
+\emph default
+: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Operação do botão 
+\series bold
+Sortear
+\series default
+:
+\series bold
+ 1,0
+\end_layout
+
+\begin_layout Enumerate
+Comparação: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Acionamento do micro-relé e da lâmpada: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Implementação e operação do POR (
+\emph on
+Power-On Reset
+\emph default
+): 
+\series bold
+1,0
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Entornos: 
+\series bold
+1,5
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Uso de soquete para CIs: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Estética do circuito final: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Qualidade das soldas: 
+\series bold
+0,5
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Bônus: 
+\series bold
++1,5
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Implementação de gerador de 
+\emph on
+clock
+\emph default
+ próprio: 
+\series bold
++1,5
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A pontuação máxima é de 
+\series bold
+10,0
+\series default
+ pontos.
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+As equipes que obtiverem pontuação menor que 8,0 poderão ir para a 
+\begin_inset Quotes eld
+\end_inset
+
+repescagem
+\begin_inset Quotes erd
+\end_inset
+
+, na qual a nota do projeto será 80% da pontuação obtida na nova avaliação.
+\end_layout
+
+\end_body
+\end_document
