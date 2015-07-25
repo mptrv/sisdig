@@ -1,0 +1,755 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{indentfirst}
+
+% Para personalização das "seções" do documento.
+\usepackage{titlesec}
+
+% Fração do total da altura do texto para alocação de flutuantes na parte inferior da página.
+\renewcommand{\bottomfraction}{0.5}
+
+% Espaço vertical para tabelas ('struts').
+\newcommand{\espv}[1][4]{\rule[#1ex]{0pt}{0pt}}
+
+% 'Strutp' - Espaço vertical pré-definido personalizado para o ambiente tabular ou quadros.
+% Nota: já existe o comando '\strut'.
+%   Ref.: http://en.wikibooks.org/wiki/LaTeX/Rules_and_Struts
+\newcommand{\strutp}[1]{\rule[-0.3\baselineskip]{0pt}{#1}}
+
+% Numeração das seções sem incluir o capítulo.
+\renewcommand{\thesection}{\arabic{section}}
+
+% Personalização dos capítulos.
+%   Ref.: http://tex.stackexchange.com/questions/94729/how-to-customize-chapter-heading-style
+\titleformat{\chapter}[display]
+  {\normalsize \huge}%
+  {\centering\large\textsc{Experiência}\hspace{1ex}\thechapter}%
+  {10 pt}%
+  {\centering\LARGE}[\thispagestyle{fancy}]%
+
+% Reprodução do texto do capítulo, via rótulo.
+%  (Talvez não seja necessário utilizar este recurso.)
+\newcommand{\txcap}[1]{%
+    \begin{center}      
+        \textcolor{red}{\textsc{Experiência}}~\ref{#1}\\
+        \nameref{#1}      
+   \end{center}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.15
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch corpo
+\selected 1
+\filename_suffix 0
+\color #e5dcd3
+\end_branch
+\branch decodificador
+\selected 1
+\filename_suffix 1
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename imagens/logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE102 - Fundamentos de Circuitos Digitais
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Experiências de Laboratório de
+\begin_inset Newline newline
+\end_inset
+
+ Fundamentos de Circuitos Digitais e Analógicos
+\end_layout
+
+\begin_layout Date
+2015
+\end_layout
+
+\begin_layout Part
+Digitais
+\end_layout
+
+\begin_layout Chapter
+Lógica com\SpecialChar \ldots{}
+
+\end_layout
+
+\begin_layout Standard
+Lógica com\SpecialChar \ldots{}
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch decodificador
+status open
+
+\begin_layout Chapter
+
+\shape italic
+\emph on
+Aplicação de Circuito Lógico Combinacional
+\begin_inset Newline newline
+\end_inset
+
+
+\emph default
+
+\begin_inset Quotes eld
+\end_inset
+
+Decodificador BCD--7 Segmentos
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Decodificador-BCD-Sete-Seg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch corpo
+status open
+
+\begin_layout Section
+
+\series bold
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Desenvolver as habilidades necessárias para o projeto e implementação de
+ circuitos combinacionais.
+\end_layout
+
+\begin_layout Section
+Considerações Iniciais
+\end_layout
+
+\begin_layout Standard
+Esta experiência tem por finalidade exercitar o projeto, implementação e
+ testes de um circuito destinado a converter números binários para ativar
+ os terminais de um 
+\emph on
+display
+\emph default
+ de sete segmentos.
+\end_layout
+
+\begin_layout Standard
+Cada segmento do 
+\emph on
+display
+\emph default
+ é constuído por um LED (
+\emph on
+Light Emitter Diode
+\begin_inset space ~
+\end_inset
+
+
+\emph default
+--
+\begin_inset space ~
+\end_inset
+
+Diodo Emissor de Luz).
+ Por convenção, os segmentos de um 
+\emph on
+display
+\emph default
+ genérico são representados pelos caracteres 
+\emph on
+a
+\emph default
+, 
+\emph on
+b
+\emph default
+, 
+\emph on
+c
+\emph default
+, 
+\emph on
+d
+\emph default
+, 
+\emph on
+e
+\emph default
+, 
+\emph on
+f
+\emph default
+ e 
+\emph on
+g
+\emph default
+, conforme a associação padronizada apresentada pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Associação-de-caracteres"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp06-Figura 2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Associação de caracteres 
+\emph on
+a
+\emph default
+ a 
+\emph on
+g
+\emph default
+ com os segmentos do 
+\emph on
+display
+\emph default
+ de sete segmentos.
+ Note-se também a presença do ponto decimal (
+\emph on
+pd
+\emph default
+).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Associação-de-caracteres"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Convém registrar que podem existir 
+\emph on
+displays 
+\emph default
+do tipo 
+\series bold
+anodo comum
+\series default
+ ou 
+\series bold
+catodo comum
+\series default
+.
+ O 
+\emph on
+display 
+\emph default
+tipo
+\emph on
+ anodo comum 
+\emph default
+possui apenas um terminal de anodo disponibilizado no dispositivo e este
+ é comum a todos os segmentos luminosos.
+ De forma análoga, tem-se o 
+\emph on
+catodo comum
+\emph default
+, no qual há apenas um terminal catodo em comum com todos os segmentos luminosos.
+\end_layout
+
+\begin_layout Standard
+Uma importante informação referente ao acionamento dos dígitos do 
+\emph on
+display
+\emph default
+ consiste nas técnicas de conexão dos terminais às portas lógicas.
+ Note-se que a ativação dos segmentos ocorre quando a saída lógica está
+ em nível 
+\emph on
+0
+\emph default
+, para 
+\emph on
+displays anodo comum
+\emph default
+, e 
+\emph on
+1
+\emph default
+, para 
+\emph on
+displays catado comum
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Quando um segmento for acionado, deve-se incluir um resistor em série com
+ cada segmento, a fim de limitar a corrente que circula pelos correspondentes
+ LEDs e, assim, evitar que ele se queime.
+ Esta situação é ilustrada para o caso do 
+\emph on
+display anodo comum
+\emph default
+ na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Interligação-dos-circuitos"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp06-Figura 3.png
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resistores colocados em série com os segmentos de 
+\emph on
+display anodo comum
+\emph default
+ para limitar a corrente do LED correspondente.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Interligação-dos-circuitos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Standard
+Efetuadas as principais considerações referentes ao 
+\emph on
+display
+\emph default
+ em si, os pró\SpecialChar \-
+xi\SpecialChar \-
+mos passos consistem em:
+\end_layout
+
+\begin_layout Enumerate
+Elaborar as tabelas da verdade e os mapas de Karnaugh associados com o objetivo
+ de determinar as funções lógicas correspondentes a cada segmento (de 
+\emph on
+a
+\emph default
+ a 
+\emph on
+g
+\emph default
+).
+ Para tanto, considerar a representação apenas dos dígitos decimais de 
+\series bold
+0
+\series default
+ a 
+\series bold
+3
+\series default
+, vinculados, respectivamente, às entradas binárias de 
+\series bold
+00
+\series default
+ a 
+\series bold
+11
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Deduzir as funções lógicas (reduzidas) a partir dos mapas de Karnaugh.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Deduzir-as-funções"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Transformar as funções obtidas no item 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "enu:Deduzir-as-funções"
+
+\end_inset
+
+ com o objetivo de descrever os circuitos com a utilização apenas de portas
+ NAND ou NOR.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Transformar-as-funções-em-nand-nor"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Elaborar o circuito elétrico correspondente ao item 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "enu:Transformar-as-funções-em-nand-nor"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Montar o circuito em 
+\emph on
+protoboard
+\emph default
+.
+ Conferir cuidadosamente todas as conexões.
+ 
+\emph on
+Note-se que o 
+\emph default
+display
+\emph on
+ fornecido no Painel Digital não necessita de resistores, pois tal detalhe
+ já é tratado pelo circuito interno do painel.
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Montar-o-circuito"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Testar todas as funções lógicas.
+\end_layout
+
+\begin_layout Standard
+Uma interessante sugestão, antes de iniciar o item 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "enu:Montar-o-circuito"
+
+\end_inset
+
+, consiste em montar e testar os circuitos associados ao acionamento de
+ um segmento por vez.
+ Assim agindo, os eventuais problemas relacionados às conexões correspondentes
+ à lógica de ativação de um dado segmento podem ser corrigidos, garantindo-se
+ a correta operação de uma etapa antes de migrar para o acionamento do segmento
+ seguinte.
+\end_layout
+
+\begin_layout Section
+Desafio
+\end_layout
+
+\begin_layout Standard
+Projetar um decodificador BCD--7 Segmentos para dígitos decimais de 0 a
+ 7, utilizando-se apenas portas NAND.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Material
+\end_layout
+
+\begin_layout Itemize
+1 Painel Digital didático para desenvolvimento 
+\end_layout
+
+\begin_layout Itemize
+CIs: 2x 7400, 2x 7402
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+1 Alicate de corte 
+\end_layout
+
+\begin_layout Itemize
+1 Espátula para remoção de CI
+\end_layout
+
+\begin_layout Itemize
+Fios rígidos para proto-board
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch corpo
+status open
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Ercegovac, M.
+ et al.
+ 
+\emph on
+Introdução aos sistemas digitais
+\emph default
+.
+ Porto Alegre: Bookman, 2000.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Texas Instruments.
+ 
+\emph on
+TTL databook
+\emph default
+.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Helfrick, A.
+ et al.
+ 
+\emph on
+Instrumentação eletrônica moderna e técnicas de medição
+\emph default
+.
+ Rio de Janeiro: Prentice Hall do Brasil, 1994.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Analógicos
+\end_layout
+
+\end_body
+\end_document
