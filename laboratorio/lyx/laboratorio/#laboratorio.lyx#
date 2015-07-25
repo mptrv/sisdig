@@ -29,16 +29,7 @@
   {\normalsize \huge}%
   {\centering\large\textsc{Experiência}\hspace{1ex}\thechapter}%
   {10 pt}%
-  {\centering\LARGE}[\thispagestyle{fancy}]%
-
-% Reprodução do texto do capítulo, via rótulo.
-%  (Talvez não seja necessário utilizar este recurso.)
-\newcommand{\txcap}[1]{%
-    \begin{center}      
-        \textcolor{red}{\textsc{Experiência}}~\ref{#1}\\
-        \nameref{#1}      
-   \end{center}
-}
+  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]%
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -100,9 +91,19 @@ customHeadersFooters
 \branch corpo
 \selected 1
 \filename_suffix 0
-\color #faf0e6
+\color #e5dcd3
 \end_branch
 \branch decodificador
+\selected 1
+\filename_suffix 1
+\color #faf0e6
+\end_branch
+\branch logica-com-rele
+\selected 1
+\filename_suffix 1
+\color #faf0e6
+\end_branch
+\branch bibliografia
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -133,7 +134,7 @@ customHeadersFooters
 \shape smallcaps
 \size larger
 \begin_inset Graphics
-	filename imagens/logo-imt.png
+	filename logo-imt.png
 	lyxscale 10
 	height 4ex
 
@@ -153,6 +154,10 @@ ETE102 - Fundamentos de Circuitos Digitais
 \end_layout
 
 \begin_layout Right Footer
+\begin_inset Branch corpo
+status open
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -161,6 +166,11 @@ status open
 
 \backslash
 thepage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -184,13 +194,2474 @@ Experiências de Laboratório de
 Digitais
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch logica-com-rele
+status open
+
 \begin_layout Chapter
-Lógica com\SpecialChar \ldots{}
+
+\shape italic
+Lógica com Relés e Introdução aos Comandos Automáticos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch corpo
+status open
+
+\begin_layout Standard
+\align center
+
+\size small
+\emph on
+(adaptado do original do professor Clóvis Fisher)
+\end_layout
+
+\begin_layout Section
+Introdução
+\end_layout
+
+\begin_layout Standard
+A automação de 
+\emph on
+Processos
+\emph default
+ consiste na substituição da atividade humana em tarefas repetitivas por
+ um conjunto de equipamentos eletro-eletrônicos, mecânicos e/ou químicos,
+ visando aumentar a produtividade, assegurar maior reprodutividade e, consequent
+emente, a melhoria da qualidade e a redução dos custos dos produtos industrializ
+ados, tornando-os mais competitivos no mercado.
+ Trata-se de uma área multidisciplinar da engenharia, exigindo que o profissiona
+l possua, em geral, conhecimentos de eletrônica, eletricidade, mecânica
+ e química, bem como visão organizacional e sistêmica bastante apurada e
+ muita criatividade.
+ O trabalho que segue apresenta o caso da automação de um processo de perfuração
+ de peças, exigindo, no caso, conhecimentos de mecânica, eletricidade e
+ eletrônica.
+ Serão apresentados conceitos elementares de 
+\emph on
+Circuitos Sequenciais com Relés
+\emph default
+ e depois como utilizar esta tecnologia para se alcançar o objetivo proposto.
+ O método apresentado possibilita que o aluno projete sistemas semelhantes
+ ou até mais complexos de automação.
+\end_layout
+
+\begin_layout Section
+O Relé
+\end_layout
+
+\begin_layout Standard
+É um dispositivo eletromecânico constituído por um ou mais contatos que
+ podem ser comutados entre aberto e fechado por meio de uma corrente elétrica
+ aplicada a uma bobina.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Funcionamento-do-relé"
+
+\end_inset
+
+ ilustra um relé de um contato duplo (
+\emph on
+NA -- Normalmente Aberto e NF -- Normalmente Fechado
+\emph default
+) nos estados não acionado 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:Rele-Estado-não-acionado"
+
+\end_inset
+
+ e acionado 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:Rele-Estado-acionado"
+
+\end_inset
+
+.
+ Note que a situação NA é mantida pela ação de uma mola! Se a corrente I
+ for nula 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:Rele-Estado-não-acionado"
+
+\end_inset
+
+, o contato NF fica fechado e o NA, aberto.
+ Ao aplicar-se uma corrente 
+\begin_inset Formula $I=I_{B}$
+\end_inset
+
+ na bobina 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:Rele-Estado-acionado"
+
+\end_inset
+
+, surge uma força magnética 
+\begin_inset Formula $F_{MAG}$
+\end_inset
+
+ que movimenta o contato central de modo que o contato NF passa para aberto
+ e o contato NA, para fechado.
+ O contato NA pode ser, então, utilizado para acionar e o NF para desacionar
+ um equipamento elétrico, ou mesmo outro relé.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../exp01/rele-desenergizado.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estado não acionado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rele-Estado-não-acionado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../exp01/rele-energizado.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estado acionado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Rele-Estado-acionado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Funcionamento do relé.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Funcionamento-do-relé"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-Lógica com\SpecialChar \ldots{}
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Símbolos-de-relés"
+
+\end_inset
+
+, ilustra os símbolos elétricos do relé, para confecção de diagramas elétricos.
+ Nestes símbolos, o retângulo representa a bobina.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../exp01/Figura 2.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Símbolos de relés.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Símbolos-de-relés"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Circuito Memória com Relé
+\end_layout
+
+\begin_layout Standard
+O circuito a ser analisado encontra-se ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Contato-selo"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Contato-selo"
+
+\end_inset
+
+, denominado 
+\emph on
+Circuito de Retenção 
+\emph default
+ou
+\emph on
+ Circuito de Memória com Relés
+\emph default
+.
+ Supõe-se que o relé esteja inicialmente desacionado, implicando que a chave
+ 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+ esteja aberta (NA).
+ As chaves S e R são do tipo NA e NF, respectivamente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 3.png
+	scale 75
+	rotateAngle -0.1
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito a ser analisado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Contato-selo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ao se pressionar a chave S, surgirá uma corrente elétrica devido à presença
+ da fonte 
+\begin_inset Formula $V_{0}$
+\end_inset
+
+ e devido ao fato de as chaves S (NA) e R (NF) estarem em série com a bobina
+ de 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ao ser percorrido pela corrente, o relé provoca o fechamento da chave 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+, que está em paralelo com S, de tal modo que ao soltar-se a chave S, a
+ corrente de acionamento do relé continua a circular, agora através das
+ chaves 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+ e R.
+ Este estado acionado é estável e é denominado SET (
+\emph on
+acionado 
+\emph default
+em inglês).
+ Esta operação encontra-se ilustrada na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Acionamento-rele-selo"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Acionamento-rele-selo"
+
+\end_inset
+
+.
+ A chave 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+ é conhecida como 
+\emph on
+contato selo
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-rele-selo-a.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Acionamento do relé, levando-o ao estado SET.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Acionamento-do-relé-estado-set"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-rele-selo-b.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Efeito do contato selo, para manter o relé acionado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Efeito-do-contato-selo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Acionamento do relé com selo.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Acionamento-rele-selo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para desacionar-se o relé, colocando-o no estado estável RESET (
+\emph on
+desacionado
+\emph default
+ em inglês), basta pressionar-se a chave R, provocando assim a interrupção
+ da corrente que mantinha o relé acionado.
+ É claro que a chave S deve estar solta, pois senão, ao liberarmos a chave
+ R, o sistema é levado ao estado SET novamente.
+ Esta operação está ilustrada na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Desacionamento-rele-selo"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Acionamento-rele-selo"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-rele-selo-c.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pressionamento da chave R.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Desacionamento-rele-selo-chave-r"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-rele-selo-d.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Abertura do contato selo após interrupção da corrente no relé.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Desacionamento-rele-sele-quebra-selo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Desacionamento de relé com selo.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Desacionamento-rele-selo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A maneira pela qual este circuito foi apresentado também é denominada 
+\emph on
+Diagrama de Contatos 
+\emph default
+ou 
+\emph on
+Diagrama de Relés
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Sistema Automático de Furação
+\end_layout
+
+\begin_layout Standard
+O conjunto de perfuração está esquematizado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Conjunto-perfuracao-repouso"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Conjunto-perfuracao-repouso"
+
+\end_inset
+
+, cor\SpecialChar \-
+res\SpecialChar \-
+pon\SpecialChar \-
+den\SpecialChar \-
+do à situação de repouso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement bp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 8.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conjunto de perfuração na situação de repouso.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Conjunto-perfuracao-repouso"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ao dar-se a partida no processo de perfuração (
+\family sans
+comando
+\family default
+ 
+\family sans
+INÍCIO
+\family default
+), é acionado o
+\emph on
+ Motor da Furadeira
+\emph default
+ (
+\family sans
+MF = 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+acionado
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\family default
+).
+ Neste momento, deve-se avançar a furadeira.
+ Para tanto, injeta-se ar comprimido na 
+\emph on
+Conexão 1
+\emph default
+ do 
+\emph on
+Cilindro Pneumático
+\emph default
+, o que é realizado com o acionamento da válvula pneumática devido à passagem
+ de corrente elétrica 
+\begin_inset Formula $i_{B}$
+\end_inset
+
+ na sua bobina, conforme ilustrado pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Conjunto-de-perfuração-cilindro-acionado"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Conjunto-de-perfuração-cilindro-acionado"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement p
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 9.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conjunto de perfuração com cilindro pneumático acionado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Conjunto-de-perfuração-cilindro-acionado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ao ser atingida a extremidade inferior do cilindro, o 
+\emph on
+sensor Fim de Curso Inferior 
+\emph default
+(
+\family sans
+FCI
+\family default
+) é acionado, dando origem à última etapa do processo, recuando a furadeira.
+ Isto é realizado injetando-se ar comprimido na 
+\emph on
+Conexão 2
+\emph default
+ por meio da válvula pneumática.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Conjunto-perfuração-FCI"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Conjunto-perfuração-FCI"
+
+\end_inset
+
+, ilustra o momento quando o conjunto de perfuração encontra o 
+\emph on
+Fim de Curso Inferior 
+\emph default
+e a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Conjunto-de-perfuração-recuando"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Conjunto-de-perfuração-recuando"
+
+\end_inset
+
+, o recuo do conjunto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement p
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 10.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conjunto de perfuração com sensor de 
+\emph on
+Fim de Curso Inferior
+\emph default
+ ativado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Conjunto-perfuração-FCI"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement p
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 11.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conjunto de perfuração recuando.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Conjunto-de-perfuração-recuando"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O processo é finalizado quando o sensor de
+\emph on
+ Fim de Curso Superior 
+\emph default
+(
+\family sans
+FCS
+\family default
+) for acionado, provocando o desacionamento do 
+\emph on
+Motor da Furadeira 
+\emph default
+(
+\family sans
+MF = 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+desligado
+\family default
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+) e colocando o processo à espera de um novo comando 
+\family sans
+INÍCIO
+\family default
+, como foi ilustrado pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Conjunto-perfuracao-repouso"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Conjunto-perfuracao-repouso"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Este processo pode ser descrito segundo um método gráfico denominado GRAFCET,
+ conforme ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:GRAFCET."
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:GRAFCET."
+
+\end_inset
+
+, cuja finalidade é a de documentar, numa forma funcional, todas as etapas
+ do processo e as transições entre estas etapas provocadas pelo acionamento
+ das variáveis de entrada (ex.: 
+\family sans
+INICIO
+\family default
+, 
+\family sans
+FCS
+\family default
+, 
+\family sans
+FCI
+\family default
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 12.png
+	lyxscale 25
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+GRAFCET para o processo de perfuração.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:GRAFCET."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Após concluído o processo de perfuração, o sistema permanecerá em repouso
+ na 
+\emph on
+Etapa 1
+\emph default
+ (
+\family sans
+Estado Inicial
+\family default
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+A ideia agora é de se construir um circuito elétrico que possa realizar
+ este processo de furação de modo automático.
+ Apesar de ser um problema aparentemente complicado, o circuito final é
+ bastante simples.
+\end_layout
+
+\begin_layout Standard
+Em termos de
+\emph on
+ Diagrama de Relés
+\emph default
+, o qual possibilita a realização prática desta operação, o 
+\emph on
+Circuito de Controle 
+\emph default
+resultante é o ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Circuito-de-controle."
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Circuito-de-controle."
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+\begin_inset VSpace medskip
+\end_inset
+
+Não se assuste!
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O circuito nada mais é do que uma “triplicação” do circuito já conhecido
+ da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Contato-selo"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Contato-selo"
+
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 13.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito de controle do processo de perfuração automática.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-de-controle."
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Circuito-de-controle."
+
+\end_inset
+
+, tem-se: 
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+RESET
+\family default
+: Chave de partida da máquina
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+INICIO
+\family default
+: Comando de início de furação
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+FCS
+\family default
+: Fim de curso superior
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+FCI
+\family default
+: Fim de curso inferior
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+RL1
+\family default
+, 
+\family sans
+RL2
+\family default
+, 
+\family sans
+RL3
+\family default
+: Relés ou contatos dos relés
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+AF
+\family default
+: Válvula eletro-pneumática que comanda o avanço da furadeira
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+MF
+\family default
+: Motor da furadeira
+\end_layout
+
+\begin_layout Standard
+Os símbolos das chaves utilizadas estão ilustrados na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Símbolos-das-chaves."
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Símbolos-das-chaves."
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 14.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Símbolos das chaves.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Símbolos-das-chaves."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ao ser ligado, o circuito de controle se encontra, em termos de chaves abertas
+ ou fechadas, como ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Circuito-de-controle.-1"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Circuito-de-controle.-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 15.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito de controle.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-de-controle.-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste circuito, observa-se que a furadeira está recuada, pois 
+\family sans
+FCS
+\family default
+ está fechada.
+ Mas o Relé 1 não está acionado, o que não possibilita o inicio da furação.
+\end_layout
+
+\begin_layout Standard
+Para se acionar o Relé 1, deve-se pressionar a chave 
+\family sans
+RESET
+\family default
+ (somente deve ser pressionada ao se ligar a máquina).
+\end_layout
+
+\begin_layout Standard
+O resultado desta operação está ilustrado nas figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Relé-1-acionado"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Resultado-da-operação.-1"
+
+\end_inset
+
+, onde o Relé 1 acionado está representado pelo retângulo hachurado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 16.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relé 1 acionado após pressionamento de 
+\family sans
+RESET
+\family default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Relé-1-acionado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 17.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\family sans
+RESET
+\family default
+ liberado, mas o contato selo mantém o Relé 1 acionado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Resultado-da-operação.-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A seguir, inicia-se a furação acionando-se a chave 
+\family sans
+INÍCIO
+\family default
+, o que energiza o Relé 2, como ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Início-da-furação."
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Início-da-furação."
+
+\end_inset
+
+.
+ Um instante depois, o Relé 1 é desacionado, como mostrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Desacionamento-do-Relé"
+
+\end_inset
+
+.
+ Este efeito de um relé desacionar, permitir ou impedir o acionamento de
+ outro relé chama-se de 
+\emph on
+intertravamento
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 18.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Início da furação, após pressionado 
+\family sans
+INÍCIO
+\family default
+.
+ Note-se o acionamento de 
+\family sans
+MF
+\family default
+ e 
+\family sans
+AF
+\family default
+ e o Relé 1 ainda energizado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Início-da-furação."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 19.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Desacionamento do Relé 1 pelo 
+\emph on
+intertravamento
+\emph default
+ com o Relé 2, imediatamente após o acionamento deste.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Desacionamento-do-Relé"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observe também que, ao ser acionado o Relé 2, o 
+\emph on
+Motor da Furadeira 
+\emph default
+(
+\family sans
+MF
+\family default
+) e o comando eletro-pneumático 
+\emph on
+Avanço da Furadeira 
+\emph default
+(
+\family sans
+AF
+\family default
+) são acionados, resultando no desligamento da chave 
+\family sans
+FCS
+\family default
+.
+ O avanço prossegue até se atingir o 
+\emph on
+Fim de Curso Inferior 
+\emph default
+(
+\family sans
+FCI
+\family default
+), o qual, quando pressionado pelo carro da furadeira, aciona o Relé 3,
+ como mostrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Relé-3-acionado"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Relé-3-acionado"
+
+\end_inset
+
+.
+ O Relé 3, por sua vez, desaciona o Relé 2, resultando no recuo da furadeira,
+ como indicado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Recuo-da-furadeira."
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Recuo-da-furadeira."
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 20.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\family sans
+FCI
+\family default
+ atingido, provocando o acionamento do Relé 3.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Relé-3-acionado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 21.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relé 2 desacionado pelo 
+\emph on
+intertravamento 
+\emph default
+com o Relé 3, provocando o recuo da furadeira.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Recuo-da-furadeira."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O recuo do carro da furadeira prossegue até se atingir a chave 
+\emph on
+Fim de Curso Superior
+\emph default
+, a qual, ao ser pressionada, provoca o acionamento do Relé 1, como mostrado
+ na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Acionamento-do-Relé"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Acionamento-do-Relé"
+
+\end_inset
+
+.
+ O Relé 1, por sua vez, desaciona o Relé 3 pelo 
+\emph on
+intertravamento
+\emph default
+, como indicado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Desacionamento-do-Relé-3"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Desacionamento-do-Relé-3"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 22.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reacionamento do Relé 1, após recuo da furadeira e pressionamento do 
+\family sans
+FCS
+\family default
+.
+ Note-se que a chave 
+\family sans
+RL3
+\family default
+ (NA), no ramo do Relé 1, encontra-se fechada, pois o Relé 3 está acionado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Acionamento-do-Relé"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 23.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Desacionamento do Relé 3 pelo 
+\emph on
+intertravamento
+\emph default
+ com o Relé 1.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Desacionamento-do-Relé-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consequentemente, o 
+\emph on
+Motor da Furadeira
+\emph default
+ (
+\family sans
+MF
+\family default
+) e o 
+\emph on
+Avanço da Furadeira
+\emph default
+ (
+\family sans
+AF
+\family default
+) são desacionados, reestabelecendo a situação de repouso.
+ O 
+\emph on
+Circuito de Controle 
+\emph default
+permanece, então, à espera de um novo 
+\emph on
+Comando de Início de Furação
+\emph default
+ (chave 
+\family sans
+INÍCIO
+\family default
+), como ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Relé-1-acionado"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Relé-1-acionado"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Por fim, note-se, ainda, a existência de outros 
+\emph on
+intertravamentos
+\emph default
+, de forma que os Relés 1, 2 e 3 não podem ser acionados sem que antes os
+ Relés 3, 1 e 2, respectivamente, estejam acionados (com exceção da situação
+ inicial ao energizar-se o circuito, em que a chave 
+\family sans
+RESET
+\family default
+ quebra o primeiro intertravamento).
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\series bold
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+É muito importante seguir as orientações da
+\emph default
+ Parte Experimental
+\emph on
+, pois diversos detalhes poderão ser salientados em adição às exposições
+ do professor.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Verificação do Funcionamento do Relé
+\end_layout
+
+\begin_layout Standard
+Para verificar o funcionamento e uma aplicação do relé, monte o circuito
+ ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:relé-lâmpada"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement b
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-rele-lampada.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Utilização do relé para acionar uma lâmpada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:relé-lâmpada"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para a montagem, serão disponibilizados os materiais apresentados na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:modulos-montagem-relé"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:modulos-montagem-relé"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 6.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Módulos utilizados para a montagem dos circuitos com relés.
+ De cima para baixo, tem-se a 
+\emph on
+Fonte de Alimentação
+\emph default
+, o 
+\emph on
+Painel de Chaves
+\emph default
+,
+\emph on
+ 
+\emph default
+com um conjunto de quatro chaves NA/NF, e o 
+\emph on
+Painel de Relés
+\emph default
+, com um conjunto de quatro relés, cada um com quatro chaves NA/NF.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:modulos-montagem-relé"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nesta mesma figura, trace as ligações entre as partes de forma a atingir
+ o efeito descrito pelo circuito.
+ Não esqueça de acrescentar a lâmpada e mais uma fonte para ela!
+\end_layout
+
+\begin_layout Standard
+Em seguida, monte fisicamente o circuito e observe que, ao ser pressionada
+ a chave no Painel de Chaves, o relé é acionado e a lâmpada acende.
+ Notar que também acende o LED ao lado do relé.
+ Ainda, ao se soltar a chave, o relé é desacionado e a lâmpada apaga.
+\end_layout
+
+\begin_layout Subsection
+Montagem do Circuito Memória / Uso do Contato Selo
+\end_layout
+
+\begin_layout Standard
+O circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:relé-lâmpada"
+
+\end_inset
+
+ precisa manter a chave pressionada para a lâmpada ficar acesa.
+ Modifique-o de forma a manter a lâmpada acesa mesmo se a chave for solta.
+ Ainda, acrescente mais uma chave de forma a permitir apagar a lâmpada.
+ Para tanto, considere o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Contato-selo"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Contato-selo"
+
+\end_inset
+
+, como referência.
+ Note que não será necessário desmontar tudo! Utilize a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:modulos-montagem-relé-2"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:modulos-montagem-relé-2"
+
+\end_inset
+
+, para realizar as ligações entre as partes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 7.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Módulos utilizados para montagem de circuitos com relés.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:modulos-montagem-relé-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observe que ao ser acionada a Chave S, o relé fica acionado, permanecendo
+ nesta situação até que se pressione a Chave R, colocando-o no estado desacionad
+o.
+ Os outros contatos do relé não utilizados para a lógica podem ser empregados
+ para acionar uma carga, como um motor, ou uma lâmpada.
+\end_layout
+
+\begin_layout Subsection
+Montagem do Circuito Sequenciador
+\end_layout
+
+\begin_layout Standard
+Com base no esquema ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Circuito-Sequenciador."
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:Circuito-Sequenciador."
+
+\end_inset
+
+, implemente o circuito sequenciador.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp01-Figura 24.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito Sequenciador.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-Sequenciador."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Após a montagem, verifique o funcionamento do circuito, acionando primeiro
+ a chave 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+, depois a chave 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ e, por último, a chave 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+.
+ Note que a sequência deve 
+\bar under
+obrigatoriamente
+\bar default
+ ser esta (por quê?).
+\end_layout
+
+\begin_layout Subsection
+Questão: Máquina de Perfuração Automática
+\end_layout
+
+\begin_layout Standard
+É possível, utilizando-se este circuito, obter-se um comando sequencial
+ para uma máquina de perfuração automática? Que alterações seriam necessárias
+ para tal finalidade?
+\end_layout
+
+\begin_layout Subsection
+Desafios
+\end_layout
+
+\begin_layout Description
+Desafio
+\begin_inset space ~
+\end_inset
+
+1 Alterar o esquema elétrico para acrescentar um quarto estágio na sequência.
+\end_layout
+
+\begin_layout Description
+Desafio
+\begin_inset space ~
+\end_inset
+
+2 Alterar o esquema elétrico de forma que, ao pressionar 
+\family sans
+INÍCIO
+\family default
+ em qualquer estágio, acione-se o primeiro estágio (Relé 1).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Material
+\end_layout
+
+\begin_layout Enumerate
+Fonte de alimentação com dois canais.
+\end_layout
+
+\begin_layout Enumerate
+Painel de chaves.
+\end_layout
+
+\begin_layout Enumerate
+Painel de relés.
+\end_layout
+
+\begin_layout Enumerate
+1x Lâmpada 12V.
+\end_layout
+
+\begin_layout Enumerate
+22x Cabos banana-banana curtos.
+\end_layout
+
+\begin_layout Enumerate
+4x Cabos banana-banana longos.
+\end_layout
+
+\begin_layout Enumerate
+2x Cabos banana-jacaré longos.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -677,6 +3148,15 @@ CIs: 2x 7400, 2x 7402
 Fios rígidos para proto-board
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch bibliografia
+status open
+
 \begin_layout Standard
 \begin_inset Branch corpo
 status open
@@ -691,7 +3171,7 @@ status open
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-1"
+key "key-1-1"
 
 \end_inset
 
@@ -708,7 +3188,7 @@ Introdução aos sistemas digitais
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-2"
+key "key-2-1"
 
 \end_inset
 
@@ -723,7 +3203,7 @@ TTL databook
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-3"
+key "key-3-1"
 
 \end_inset
 
