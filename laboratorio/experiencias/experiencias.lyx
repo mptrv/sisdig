@@ -28,9 +28,6 @@
 % Forma alternativa para alterar o espaçamento entre linhas de tabela.
 \newcommand{\esptab}[1][1.5]{\renewcommand\arraystretch{#1}}
 
-% Numeração das seções sem incluir o capítulo.
-\renewcommand{\thesection}{\arabic{section}}
-
 % Personalização dos capítulos.
 %   Ref.: http://tex.stackexchange.com/questions/94729/how-to-customize-chapter-heading-style
 \titleformat{\chapter}[display]
@@ -38,6 +35,14 @@
   {\centering\large\textsc{Experiência}\hspace{1ex}\thechapter}%
   {10 pt}%
   {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]%
+
+% Personalização das numeração dos elementos.
+%   Numeração das seções.
+\renewcommand{\thesection}{\arabic{section}}
+%   Numeração das figuras.
+\renewcommand{\thefigure}{\arabic{figure}}
+%  Numeração das tabelas.
+\renewcommand{\thetable}{\arabic{table}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -18053,8 +18058,7 @@ resistência
 \end_layout
 
 \begin_layout Standard
-Quanto ao processo de fabricação dos resistores convencionais, existem os
- seguintes tipos:
+Quanto ao processo de fabricação dos resistores, existem os seguintes tipos:
 \end_layout
 
 \begin_layout Itemize
@@ -18081,7 +18085,8 @@ reference "fig:resistor-película-carbono"
 
 \end_inset
 
- ilustra a construção interna do resistor de película de carbono.
+ ilustra um exemplo, relativo à construção interna do resistor de película
+ de carbono.
 \end_layout
 
 \begin_layout Standard
@@ -18186,12 +18191,14 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/tipos-de-resistores#1.jpg
+	height 7cm
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename imagens/tipos-de-resistores#2.jpg
+	height 7cm
 
 \end_inset
 
@@ -18247,7 +18254,7 @@ tolerância
 \begin_layout Standard
 Normalmente, a indicação do valor da resistência e da tolerância é feita
  por um conjunto de quatro faixas coloridas a partir da faixa mais próxima
- à extremidade, conforme descrito pela 
+ à extremidade, conforme esquematizado na 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Faixas-resistores"
@@ -18259,6 +18266,7 @@ reference "fig:Faixas-resistores"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement bh
 wide false
 sideways false
 status open
@@ -18316,9 +18324,29 @@ reference "tab:codigos-cores-resistores"
 
 \begin_layout Standard
 \begin_inset Float table
+placement h
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Números associados às cores dos códigos dos resistores.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:codigos-cores-resistores"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -18332,10 +18360,10 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="2">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18355,11 +18383,11 @@ Número
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Preto
+Preto (PR)
 \end_layout
 
 \end_inset
@@ -18375,11 +18403,11 @@ Preto
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Marrom
+Marrom (MA)
 \end_layout
 
 \end_inset
@@ -18395,11 +18423,11 @@ Marrom
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Vermelho
+Vermelho (VM)
 \end_layout
 
 \end_inset
@@ -18415,11 +18443,11 @@ Vermelho
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Laranja
+Laranja (LA)
 \end_layout
 
 \end_inset
@@ -18435,11 +18463,11 @@ Laranja
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Amarelo
+Amarelo (AM)
 \end_layout
 
 \end_inset
@@ -18455,11 +18483,11 @@ Amarelo
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Verde
+Verde (VD)
 \end_layout
 
 \end_inset
@@ -18475,11 +18503,11 @@ Verde
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Azul
+Azul (AZ)
 \end_layout
 
 \end_inset
@@ -18495,11 +18523,11 @@ Azul
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Violeta
+Violeta (VI)
 \end_layout
 
 \end_inset
@@ -18515,11 +18543,11 @@ Violeta
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Cinza
+Cinza (CZ)
 \end_layout
 
 \end_inset
@@ -18535,11 +18563,11 @@ Cinza
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Branco
+Branco (BR)
 \end_layout
 
 \end_inset
@@ -18588,12 +18616,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="2">
+<lyxtabular version="3" rows="4" columns="3">
 <features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18606,18 +18635,28 @@ Cor
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tolerância (%)
+Tol.
+ (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mult.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sem Cor
+Ouro (OU)
 \end_layout
 
 \end_inset
@@ -18626,18 +18665,30 @@ Sem Cor
 \begin_inset Text
 
 \begin_layout Plain Layout
-20
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times10^{-1}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Prata
+Prata (PT)
 \end_layout
 
 \end_inset
@@ -18651,13 +18702,25 @@ Prata
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Ouro
+\begin_inset Formula $\times10^{-2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sem Cor
 \end_layout
 
 \end_inset
@@ -18666,7 +18729,16 @@ Ouro
 \begin_inset Text
 
 \begin_layout Plain Layout
-5
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+---
 \end_layout
 
 \end_inset
@@ -18683,31 +18755,8 @@ Ouro
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cores para identificação da talerância.
+Cores para identificação da talerância e multiplicador menor que 1.
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Números associados às cores dos códigos dos resistores.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:codigos-cores-resistores"
 
 \end_inset
 
@@ -18716,10 +18765,6 @@ name "tab:codigos-cores-resistores"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -18762,21 +18807,34 @@ Exemplos de valor de resistências para código de cores:
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="8" columns="6">
 <features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
 <row>
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
-\begin_inset Formula $4700 Ω ou 4k7 Ω \pm10\%$
+\begin_layout Plain Layout
+\begin_inset Formula $4700\,Ω$
 \end_inset
 
+ ou 
+\begin_inset Formula $4\mathrm{k}7\,\Omega$
+\end_inset
 
+ (
+\begin_inset Formula $\pm10\%$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -18784,23 +18842,245 @@ Exemplos de valor de resistências para código de cores:
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
+\begin_layout Plain Layout
 \begin_inset Formula $\rightarrow$
 \end_inset
 
- amarelo---violeta---vermelho---prata
+
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AM
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VI
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VM
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PT
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
- 
-\begin_inset Formula $\rightarrow\:47\cdot10^{2}\,\pm\,10\%=4700\,\Omega\,\pm\,10\%$
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{4}$
 \end_inset
 
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{7}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times10^{\mathbf{2}}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm\mathbf{10\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -18811,11 +19091,19 @@ Exemplos de valor de resistências para código de cores:
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
+\begin_layout Plain Layout
 \begin_inset Formula $200\,\Omega$
 \end_inset
 
+ ou 
+\begin_inset Formula $200\mathrm{R}$
+\end_inset
 
+ (
+\begin_inset Formula $\pm5\%$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -18823,23 +19111,245 @@ Exemplos de valor de resistências para código de cores:
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
+\begin_layout Plain Layout
 \begin_inset Formula $\rightarrow$
 \end_inset
 
- vermelho---preto---marrom---ouro
+
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VM
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PR
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MA
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OU
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
- 
-\begin_inset Formula $\rightarrow\:20\cdot10^{1}\,\pm\,5\%=200\,\Omega\,\pm\,5\%$
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{2}$
 \end_inset
 
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{0}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times10^{\mathbf{1}}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm\mathbf{5\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -18850,8 +19360,19 @@ Exemplos de valor de resistências para código de cores:
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
+\begin_layout Plain Layout
+\begin_inset Formula $3,3\,\mathrm{M}\Omega$
+\end_inset
 
+ ou 
+\begin_inset Formula $3\mathrm{M}3\,\Omega$
+\end_inset
+
+ (
+\begin_inset Formula $\pm20\%$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -18859,21 +19380,187 @@ Exemplos de valor de resistências para código de cores:
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
+\begin_layout Plain Layout
 \begin_inset Formula $\rightarrow$
 \end_inset
 
- laranja---laranja---verde
+
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LA
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LA
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VD
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+xxx
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Description
- 
-\begin_inset Formula $\rightarrow\:33\cdot10^{5}\,\pm\,20\%=3,3\cdot10^{6}\,\Omega\,\pm\,20\%$
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{3}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{3}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times10^{\mathbf{5}}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm\mathbf{20\%}$
 \end_inset
 
 
@@ -18904,18 +19591,83 @@ Exemplos de códigos de cores para valores de resistências:
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="3">
+<lyxtabular version="3" rows="8" columns="6">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
+<column alignment="center" valignment="top" width="0pt" special="c@{}">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-marrom---preto---vermelho---ouro
+MA
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PR
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VM
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -18924,7 +19676,117 @@ marrom---preto---vermelho---ouro
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\rightarrow\:10.10^{2}\,\pm\,5\%=1\,\mathrm{k}\Omega\pm5\%$
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{1}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{0}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times10^{\mathbf{2}}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm\mathbf{5\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad\rightarrow$
 \end_inset
 
 
@@ -18936,15 +19798,7 @@ marrom---preto---vermelho---ouro
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\rightarrow$
-\end_inset
-
- variação de 
-\begin_inset Formula $950\,Ω$
-\end_inset
-
- a 
-\begin_inset Formula $1050\,Ω$
+\begin_inset Formula $1\,\mathrm{k}\Omega\pm5\%$
 \end_inset
 
 
@@ -18954,11 +19808,47 @@ marrom---preto---vermelho---ouro
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-vermelho---violeta---amarelo---prata
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -18967,7 +19857,197 @@ vermelho---violeta---amarelo---prata
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\rightarrow27.10^{4}\,\pm\,10\%=270\,\mathrm{k}\Omega\pm10\%$
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VM
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VI
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AM
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{2}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{7}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times10^{\mathbf{4}}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm\mathbf{10\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad\rightarrow$
 \end_inset
 
 
@@ -18979,18 +20059,271 @@ vermelho---violeta---amarelo---prata
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\rightarrow$
+\begin_inset Formula $270\,\mathrm{k}\Omega\pm10\%$
 \end_inset
 
- variação de 
-\begin_inset Formula $243\,\mathrm{k}Ω$
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LA
+\begin_inset space ~
 \end_inset
 
- a 
-\begin_inset Formula $297\,\mathrm{k}Ω$
+---
+\begin_inset space ~
 \end_inset
 
- 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LA
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PT
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OU
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{3}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbf{3}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times10^{\mathbf{-2}}$
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pm\mathbf{5\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad\rightarrow$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0,33\,\Omega\pm5\%$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -20353,11 +21686,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
-	filename ../analogicos/Experimento 1 e 2/1° Exp/ExerciciosResistores.png
+	filename imagens/ExerciciosResistores.png
 	lyxscale 50
-	scale 50
+	width 100text%
 
 \end_inset
 
