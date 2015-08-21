@@ -22492,7 +22492,7 @@ Multímetros
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -22523,7 +22523,7 @@ Seu princípio consiste na interação entre um campo magnético criado por
 \end_layout
 
 \begin_layout Standard
-O galvanômetro é, por si só, um mili-amperímetro ou micro-amperímetro possuindo
+O galvanômetro é, por si só, um miliamperímetro ou microamperímetro possuindo
  polaridade em funão do sentido da corrente na sua bobina.
  A fig.
  apresenta um desenho ilustrativo de um galvanômetro.
@@ -23153,6 +23153,796 @@ tml
 
 \end_layout
 
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Subsection
+Levantamento das Características do Galvanômetro
+\end_layout
+
+\begin_layout Subsubsection*
+Medida da Corrente de Fim de Escala do Galvanômetro 
+\end_layout
+
+\begin_layout Enumerate
+Monte o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-circ-corrente-fde"
+
+\end_inset
+
+, adotando 
+\begin_inset Formula $R_{s}=4\mathrm{k}7\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Ajuste a fonte de tensão para 
+\begin_inset Formula $0\,V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Aumente gradativamente a tensão da fonte até obter a deflexão de fim de
+ escala no galvanômetro.
+\end_layout
+
+\begin_layout Enumerate
+Neste ponto, anote a tensão (
+\begin_inset Formula $E$
+\end_inset
+
+) e a corrente (
+\begin_inset Formula $I_{g(máx)}$
+\end_inset
+
+), a qual é a 
+\emph on
+corrente de fim de escala
+\emph default
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Formula $E$
+\end_inset
+
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $I_{g(máx)}$
+\end_inset
+
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito6.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para determinação da 
+\emph on
+corrente de fundo de escala
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-circ-corrente-fde"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Medida da Resistência Interna do Galvanômetro
+\end_layout
+
+\begin_layout Enumerate
+Monte o circuito da fig., mantendo os valores de 
+\begin_inset Formula $E$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{s}$
+\end_inset
+
+ determinado do tópico anterior.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Com a chave aberta, a deflexão no galvanômetro corresponde à corrente
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{g}=\frac{E}{R_{g}+R_{s}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+e, admitindo que 
+\begin_inset Formula $R_{g}\ll R_{s}$
+\end_inset
+
+, pode-se dizer:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{g}=\frac{E}{R_{s}}
+\]
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Fechando a chave, ajuste 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ até que a indicação no galvanômetro seja a 
+\series bold
+metade
+\series default
+ da anterior.
+ Nesta situação, como a corrente é a metade da corrente de fundo de escala,
+ pode-se afirmar
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Por quê?
+\end_layout
+
+\end_inset
+
+ que
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{p}=R_{g}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+desde que 
+\begin_inset Formula $R_{g}\ll R_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Anote o valor de 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Formula $R_{p}=R_{g}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.3.
+ Obtido o valor de 
+\begin_inset Formula $R_{g}$
+\end_inset
+
+, verifique se vale a hipótese de que 
+\begin_inset Formula $R_{g}\ll R_{s}$
+\end_inset
+
+, mostrando os cálculos abaixo.
+ Senão, repita a medida com valor maior de 
+\begin_inset Formula $R_{s}$
+\end_inset
+
+.
+ Comente e compare os resultados.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito7.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para determinação da 
+\emph on
+resistência interna
+\emph default
+ do galvanômetro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-circ-det-ri"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Construção de um Miliamperímetro 
+\end_layout
+
+\begin_layout Enumerate
+Construa um miliamperímetro com fundo de escala de 100 mA.
+ Para isso, use o seguinte circuito com 
+\emph on
+Shunt de Ayrton
+\emph default
+, calculando-se 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
+ A resistência equivalente do miliamperímetro será 
+\begin_inset Formula $(R_{1}+R_{g})\sslash R_{2}$
+\end_inset
+
+.
+ Adote para ela o valor de 100 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito8.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito proposto para o miliamperímetro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-cir-miliamperimetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Monte o circuito anterior.
+\end_layout
+
+\begin_layout Enumerate
+Acople-o a uma fonte por meio de uma resistência 
+\begin_inset Formula $R_{f}$
+\end_inset
+
+ (sugestão: 
+\begin_inset Formula $R_{f}=100\Omega$
+\end_inset
+
+), de forma a obterem-se correntes de 0 a 100 mA, conforme ilustrado na
+ fig.
+ (note-se a presença do multímetro comercial na escala de corrente).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito9.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Montagem para aferição do miliamperímetro construído.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Adotando-se o multímetro comercial na escala de corrente como padrão, calibre
+ o miliamperímetro, variando E de forma a obter correntes de 20 em 20 mA,
+ e preecha a tabela.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{multímetro\,comercial}$
+\end_inset
+
+ (mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{miliamperímetro\,construído}$
+\end_inset
+
+ (mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desvio (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+3.
+ CONSTRUÇÃO DE UM VOLTÍMETRO 
+\end_layout
+
+\begin_layout Standard
+3.1.
+ Construa um voltímetro para 20V, corrente contínua, utilizando o galvanômetro
+ fornecido e calcule o resistor série Rm.
+ Faça a aferição da escala comparando as indicações do galvanômetro com
+ as de um multímetro utilizado como padrão.
+ Escolha 5 pontos de aferição entre 0 e 20 V.
+ Lembre-se que uma característica importante do voltímetro é sua sensibilidade
+ definida em 
+\begin_inset Formula $\varOmega$
+\end_inset
+
+/V: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=Rv/Vfimdeescala$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calcule a sensibilidade S do voltímetro construído e faça os comentários
+ deste resultado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename tmp/Tabela1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -23221,6 +24011,10 @@ W: 1x (
 
 , 
 \begin_inset Formula $6\mathrm{k}8\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $10\mathrm{k}\Omega$
 \end_inset
 
 )
@@ -23318,7 +24112,7 @@ Com a fonte de tensão E DESLIGADA, monte o circuito mostrado no esquema
 \begin_layout Subsubsection
 
 \series medium
-Chame o professor para certificar que o mili-amperímetro está devidamente
+Chame o professor para certificar que o miliamperímetro está devidamente
  conectado no circuito (Ponta de prova VERMELHA = ENTRADA e PRETA = SAÍDA),
  de modo a obter o valor positivo da corrente.
  
