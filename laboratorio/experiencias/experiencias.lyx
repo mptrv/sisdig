@@ -182,7 +182,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -22507,9 +22507,9 @@ Galvanômetro de Bobina Móvel
 \end_layout
 
 \begin_layout Standard
-Seu princípio consiste na interação entre um campo magnético criado por
- imã permandente e um campo magnético criado por uma bobina móvel sujeita
- a uma corrente 
+Seu princípio de funcionamento consiste na interação entre um campo magnético
+ criado por imã permandente e um campo magnético criado por uma bobina móvel
+ sujeita a uma corrente 
 \begin_inset Formula $I$
 \end_inset
 
@@ -22523,10 +22523,20 @@ Seu princípio consiste na interação entre um campo magnético criado por
 \end_layout
 
 \begin_layout Standard
-O galvanômetro é, por si só, um miliamperímetro ou microamperímetro possuindo
+O galvanômetro é, por si só, um miliamperímetro ou microamperímetro, possuindo
  polaridade em funão do sentido da corrente na sua bobina.
- A fig.
- apresenta um desenho ilustrativo de um galvanômetro.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-galvanometro"
+
+\end_inset
+
+ apresenta um desenho ilustrativo de um galvanômetro do tipo 
+\emph on
+D'Arsonval
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -22534,6 +22544,17 @@ O galvanômetro é, por si só, um miliamperímetro ou microamperímetro possuin
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-Figura 1.PNG
+	lyxscale 75
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -22577,15 +22598,23 @@ Voltímetro
 \end_inset
 
  para limitar a corrente na bobina.
+ A finalidade é a de medir tensões entre dois pontos de um circuito qualquer.
 \end_layout
 
 \begin_layout Standard
-A fig.
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-voltimetro"
+
+\end_inset
+
  apresenta o 
 \series bold
 modelo elétrico
 \series default
- de um galvanômetro juntamente com a resistência multiplicadora.
+ de um galvanômetro, juntamente com a resistência multiplicadora para a
+ construção de um voltímetro.
 \end_layout
 
 \begin_layout Standard
@@ -22593,6 +22622,16 @@ modelo elétrico
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito1.PNG
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -22603,7 +22642,12 @@ Circuito para projeto de um voltímetro a partir de um galvanômetro.
 \series bold
 modelo elétrico 
 \series default
-do galvanômetro seguido da resistência multiplicadora.
+do galvanômetro (destacado pelo retângulo pontinhado) seguido da resistência
+ multiplicadora 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:mult-voltimetro"
@@ -22698,8 +22742,8 @@ for a corrente necessária para defletir o ponteiro do galvanômetro.
 \begin_inset Formula $R_{m}$
 \end_inset
 
- de valor elevado e, assim, diminuindo-se a interferência no circuito ao
- qual está sendo executada a medida.
+ de valor elevado e, assim, diminuir a interferência no circuito onde é
+ executada a medida.
  
 \end_layout
 
@@ -22738,7 +22782,7 @@ R_{v}=R_{m}+R_{g}
 \end_layout
 
 \begin_layout Standard
-e:
+sendo:
 \end_layout
 
 \begin_layout Standard
@@ -22770,6 +22814,13 @@ Logo, dada a sensibilidade do voltímetro, pode-se determinar o valor da
 \end_inset
 
  necessário para uma dada escala.
+ Ou, por outro lado, data a sensibilidade do voltímetro, pode-se determinar
+ a 
+\emph on
+resistência interna 
+\emph default
+do voltímetro e, assim, prever o quanto o ele influenciará no circuito a
+ ser medido.
 \end_layout
 
 \begin_layout Section
@@ -23890,52 +23941,445 @@ Desvio (%)
 
 \end_layout
 
-\begin_layout Part*
-3.
- CONSTRUÇÃO DE UM VOLTÍMETRO 
+\begin_layout Subsection
+Construção de um Voltímetro 
 \end_layout
 
-\begin_layout Standard
-3.1.
- Construa um voltímetro para 20V, corrente contínua, utilizando o galvanômetro
- fornecido e calcule o resistor série Rm.
- Faça a aferição da escala comparando as indicações do galvanômetro com
- as de um multímetro utilizado como padrão.
- Escolha 5 pontos de aferição entre 0 e 20 V.
- Lembre-se que uma característica importante do voltímetro é sua sensibilidade
- definida em 
-\begin_inset Formula $\varOmega$
-\end_inset
-
-/V: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $S=Rv/Vfimdeescala$
+\begin_layout Enumerate
+Construa um voltímetro para 20V, corrente contínua, utilizando o galvanômetro
+ fornecido.
+ Considere o circuito abaixo como referência.
+\begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Calcule a sensibilidade S do voltímetro construído e faça os comentários
- deste resultado.
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename tmp/Tabela1.PNG
+	filename imagens/multimetro-circuito1.PNG
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para construção de um voltímetro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-construção-de-voltímetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calcule o resistor série 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Formula $R_{m}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Faça a aferição da escala comparando as indicações do galvanômetro com as
+ de um multímetro comercial utilizado como padrão.
+ Para tanto, escolha 5 pontos de aferição entre 0 e 20 V e preencha a tabela
+ seguinte.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{multímetro\,comercial}$
+\end_inset
+
+ (V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{galvanômetro}$
+\end_inset
+
+ (mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{voltímetro\,construído}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desvio (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lembrando-se que uma característica importante do voltímetro é sua sensibilidade
+, definida em 
+\begin_inset Formula $\Omega$
+\end_inset
+
+/V, calcule a sensibilidade 
+\begin_inset Formula $S$
+\end_inset
+
+ do voltímetro construído e faça os comentários deste resultado.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\frac{R_{v}}{V_{FDE}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+em que 
+\begin_inset Formula $V_{FDE}$
+\end_inset
+
+ é a tensão de fim de escala.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
 \end_layout
 
 \end_inset
