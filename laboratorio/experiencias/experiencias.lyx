@@ -187,7 +187,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -25396,13 +25396,405 @@ Faça comentários a respeito deste experimento e seus resultados.
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
+\begin_layout Section
+Objetivos.
+\end_layout
+
 \begin_layout Standard
+- Familiarização prática com Lei de Ohm;
+\end_layout
+
+\begin_layout Section
+Introdução Teórica.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+2.1.
+ Lei de Ohm.
+\end_layout
+
+\begin_layout Standard
+Ao se aplicar uma diferença de potencial V a um condutor de eletricidade,
+ como por exemplo um fio metálico, surge uma corrente elétrica neste condutor.
+ A corrente produzida por esta diferença de potencial depende de propriedades
+ físicas e da geometria deste condutor, que podem ser modeladas por uma
+ resistência à passagem desta corrente elétrica.
+ 
+\end_layout
+
+\begin_layout Standard
+Esta resistência é definida pela expressão: 
+\begin_inset Formula $R=\frac{V}{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde a unidade de V é p volt(V), de I é o ampére (A) e de R é o ohm (
+\begin_inset Formula $\varOmega$
+\end_inset
+
+).
+ A unidade de resistência elétrica o ohm (
+\begin_inset Formula $\varOmega$
+\end_inset
+
+) foi atribuída em homenagem a Georg Simon Ohm (1787 – 1854), por seu magnífico
+ trabalho “The Galvanic Chain, Mathematically Treated” publicado em 1827,
+ envolvendo a Lei de Ohm.
+\end_layout
+
+\begin_layout Standard
+Embora a eq.
+ 1 seja de vasta aplicação, ela expressa uma RELAÇÃO LINEAR entre a corrente
+ elétrica e a voltagem aplicada, como ilustrado na fig.
+ 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/leiohm-grafico1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fig.
+ 1.
+ Relação linear entre i e v, para um dispositivo tipo resistor de 1kΩ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Infelizmente, os fenômenos físicos são não lineares em quase sua totalidade,
+ e ao aumentar-se a voltagem aplicada ao condutor, nota-se um aquecimento
+ deste (Efeito Joule), o que acarreta o aumento da resistência elétrica
+ para o caso de metais, cujo efeito é uma relação não linear entre i e v,
+ que pode ser observado na curva ilustrada pela fig.
+ 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/leiohm-grafico2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fig.
+ 2.
+ Relação não linear entre i e vc, para o caso de uma lâmpada incandescente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quando existe uma relação não linear entre i e v, a solução de um circuito
+ elétrico pode se tornar muito complicada.
+ O que fazer quase se está diante de um problema desta natureza?
+\end_layout
+
+\begin_layout Standard
+A abordagem a ser tomada para resolver este problema é a de se adotar um
+ MODELO LINEAR para um fenômeno não linear.
+ É claro que se comete um erro quando se adota um modelo, mas se este erro
+ for pequeno, ou até mesmo desprezível para a faixa de tensões e correntes
+ envolvidas, os resultados previstos pelos cálculos teóricos produzem resultados
+ práticos satisfatórios.
+ 
+\end_layout
+
+\begin_layout Standard
+Resumindo, a Lei de Ohm expressa uma relação linear, ideal, entre i e v
+ para um determinado bipolo, sendo esta relação uma idealização, um modelo
+ para uma relação mais complexa.
+ Esta relação é válida para uma determinada faixa de valores de tensão,
+ de corrente e consequentemente de potência dissipada pelo dispositivo.
+\end_layout
+
+\begin_layout Subsubsection
+2.2.
+ Bipolo Ôhmico e Bipolo Não Ôhmico 
+\end_layout
+
+\begin_layout Standard
+Todo dispositivo que possui dois terminais de acesso, aos quais pode-se
+ aplicar uma determinada voltagem dando origem a uma corrente elétrica,
+ denomina-se BIPOLO.
+ 
+\end_layout
+
+\begin_layout Standard
+Um bipolo cuja relação entre i e v pode ser linear para a faixa de operação
+ especificada, é denominado de BIPOLO ÔHMICO ou BIPOLO LINEAR.
+ Pode-se citar como exemplo de Bipolo Ôhmico um resistor de baixa potência,
+ operando em condições de pouco aquecimento.
+ 
+\end_layout
+
+\begin_layout Standard
+Um bipolo cuja relação entre i e v é não linear para a faixa de operação
+ especificada, é denominado de BIPOLO NÃO ÔHMICO ou BIPOLO NÃO LINEAR.
+ Pode-se citar como exemplo de Bipolo Ôhmico uma lâmpada incandescente,
+ ou mesmo uma junção semicondutora.
+\end_layout
+
+\begin_layout Section
+Parte Experimental.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+3.1.
+ Bipolo Ôhmico e Lei de Ohm.
+ 
+\end_layout
+
+\begin_layout Standard
+Montar o circuito ilustrado na fig.
+ 3.
+ Observar que as escalas dos multímetros devem ser ajustadas de modo a suportar
+ as tensões e correntes máximas do experimento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/leiohm-circuito1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fig.
+ 3.
+ Montagem para avaliar-se a Lei de Ohm.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Então, preencher a tabela abaixo, variando-se o valor da tensão da fonte
+ de alimentação de bancada:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/leiohm-tabela1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela 1.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Elaborar então num mesmo gráfico em Papel Milimetrado, as curvas i x v para
+ os 4 resistores ensaiados.
+\end_layout
+
+\begin_layout Subsubsection
+3.2.
+ Bipolo Não Ôhmico.
+ 
+\end_layout
+
+\begin_layout Standard
+Montar então o circuito ilustrado na fig.
+ 4, o qual envolve uma lâmpada incandescente de baixa potência.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/leiohm-circuito2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fig.
+ 4.
+ Montagem para avaliar-se a não linearidade de um Bipolo Não Ôhmico.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Preencher a tabela ilustrada abaixo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/leiohm-tabela2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e, então elaborar numa outra folha de Papel Milimetrado, a curva i x v para
+ a lâmpada em questão.
+\end_layout
+
+\begin_layout Subsubsection
+3.3.
+ Conclusões.
+\end_layout
+
+\begin_layout Standard
+Tecer os comentários pertinentes ao experimento realizado!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/leiohm-linhas.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
