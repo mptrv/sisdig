@@ -23980,10 +23980,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
 \align center
 \begin_inset Graphics
 	filename imagens/multimetro-circuito9.PNG
-	height 5cm
+	height 6cm
 	BoundingBox 0bp 0bp 715bp 268bp
 
 \end_inset
