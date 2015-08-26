@@ -187,7 +187,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -23070,23 +23070,26 @@ reference "fig:mult-varias-escalas"
 \end_layout
 
 \begin_layout Standard
+\noindent
 \align center
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/multimetro-circuito4.PNG
-	width 45text%
+	height 5cm
+	BoundingBox 20bp 20bp 465bp 310bp
+	clip
 
 \end_inset
 
@@ -23119,13 +23122,16 @@ Voltímetro.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/multimetro-circuito5.PNG
 	width 45text%
+	height 5.5cm
+	BoundingBox 15bp 10bp 370bp 310bp
+	clip
 
 \end_inset
 
@@ -23531,14 +23537,7 @@ Medida da Resistência Interna do Galvanômetro
 \end_layout
 
 \begin_layout Enumerate
-Monte o circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-circ-det-ri"
-
-\end_inset
-
-, mantendo os valores de 
+Mantendo o circuito e os valores de 
 \begin_inset Formula $E$
 \end_inset
 
@@ -23546,7 +23545,18 @@ reference "fig:mult-circ-det-ri"
 \begin_inset Formula $R_{s}$
 \end_inset
 
- determinados no tópico anterior.
+ determinados no tópico anterior, acrescente uma resistência 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ em paralelo com o galvanômetro, de acordo com a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-circ-det-ri"
+
+\end_inset
+
+.
 \begin_inset Newline newline
 \end_inset
 
@@ -23591,6 +23601,11 @@ Circuito para determinação da
 resistência interna
 \emph default
  do galvanômetro.
+ Note-se o uso da 
+\series bold
+década resistiva
+\series default
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:mult-circ-det-ri"
@@ -23625,8 +23640,15 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Notar que, com a chave aberta, a deflexão no galvanômetro corresponde à
- corrente
+Notar que, 
+\series bold
+sem 
+\begin_inset Formula $\mathbf{R_{p}}$
+\end_inset
+
+
+\series default
+, a deflexão no galvanômetro corresponde à corrente
 \begin_inset Newline newline
 \end_inset
 
@@ -23662,7 +23684,16 @@ I_{g}=\frac{E}{R_{s}}
 \end_layout
 
 \begin_layout Enumerate
-Fechando a chave, ajuste 
+
+\series bold
+Ao acrescentar 
+\begin_inset Formula $\mathbf{R_{p}}$
+\end_inset
+
+
+\series default
+, a corrente no galvanômetro diminuirá.
+ Assim, ajuste 
 \begin_inset Formula $R_{p}$
 \end_inset
 
@@ -23773,12 +23804,11 @@ status open
 \end_inset
 
 , mostrando os cálculos abaixo.
- Senão, repita a medida com valor maior de 
-\begin_inset Formula $R_{s}$
+ Para tanto, basta verificar se 
+\begin_inset Formula $\frac{R_{s}}{R_{g}}\gg1$
 \end_inset
 
 .
- Comente e compare os resultados.
 \begin_inset ERT
 status open
 
@@ -23929,6 +23959,20 @@ reference "fig:mult-aferição-miliamperimetro"
 \end_inset
 
 
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 placement H
 wide false
@@ -23939,7 +23983,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/multimetro-circuito9.PNG
-	width 60text%
+	height 5cm
+	BoundingBox 0bp 0bp 715bp 268bp
 
 \end_inset
 
@@ -23962,6 +24007,20 @@ name "fig:mult-aferição-miliamperimetro"
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -24697,7 +24756,7 @@ Desafios
 
 \begin_layout Enumerate
 Especificar as características de um galvanômetro (
-\begin_inset Formula $I_{g}$
+\begin_inset Formula $I_{g(máx)}$
 \end_inset
 
  e 
