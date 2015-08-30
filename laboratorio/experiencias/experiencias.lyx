@@ -187,7 +187,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -17974,7 +17974,7 @@ Analógicos
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -22475,7 +22475,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -24901,12 +24901,12 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
-\begin_layout Title
+\begin_layout Chapter
 
 \series bold
-Medidas Elétricas - Resistência Variável – 1a Lei de Ohm 
+Medidas Elétricas e Resistência Variável
 \end_layout
 
 \begin_layout Part*
@@ -24919,63 +24919,150 @@ Efetuar medidas de tensão e corrente, verificando as respectivas polaridades.
 
 \begin_layout Itemize
 Conhecer um resistor variável e utilizá-lo para a verificação experimental
- da Primeira Lei de Ohm.
+ da 
+\emph on
+Primeira Lei de Ohm
+\emph default
+.
  
 \end_layout
 
 \begin_layout Section
 
 \series bold
-MEDIDAS ELÉTRICAS
-\series default
- 
+Medidas Elétricas
 \end_layout
 
 \begin_layout Standard
-Este experimento visa mostrar ao aluno a importância da análise dos sentidos
- das tensões e correntes em um circuito corrente contínua.
- 
+Medições de resistência, por meio de ohmímetro, já foram tratadas em outro
+ experimento -- 
+\begin_inset Quotes eld
+\end_inset
+
+Resistores
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+Para realizar medições de tensão e corrente, deve-se observar os seguintes
+ detalhes:
+\end_layout
 
+\begin_layout Description
+Medição
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+Tensão: utiliza-se o voltímetro, conectando as 
+\emph on
+pontas de prova
+\emph default
+ do instrumento em 
 \series bold
-Medidas de correntes
+paralelo 
+\series default
+com os pontos onde deseja-se saber a tensão.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Description
+Medição
+\begin_inset space ~
+\end_inset
 
-\series medium
-Inicialmente, com a fonte de tensão E desconectada de qualquer elemento
- externo à ela, ligue-a e ajuste para 10,0V.
- 
+de
+\begin_inset space ~
+\end_inset
+
+Corrente: utiliza-se o amperímetro, conectando as 
+\emph on
+pontas de prova
+\emph default
+ do instrumento em 
+\series bold
+série
+\series default
+ com o ramo onde deseja-se saber a corrente.
 \end_layout
 
-\begin_layout Subsubsection
-
-\series medium
-Com a fonte de tensão E DESLIGADA, monte o circuito mostrado no esquema
- elétrico da figura1.
- 
+\begin_layout Standard
+Em especial, para a 
+\series bold
+medição de corrente
+\series default
+, salienta-se que deve-se 
+\series bold
+abrir 
+\series default
+o circuito original para ser possível conectar o amperímetro em série.
 \end_layout
 
-\begin_layout Subsubsection
-
-\series medium
-Chame o professor para certificar que o miliamperímetro está devidamente
- conectado no circuito (Ponta de prova VERMELHA = ENTRADA e PRETA = SAÍDA),
- de modo a obter o valor positivo da corrente.
- 
+\begin_layout Standard
+Ainda, chama-se a atenção para:
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Quotation
 
-\series medium
-Concluídos os itens anteriores, ligue a fonte de tensão E e obtenha o valor
- da corrente If (corrente total do circuito ou corrente gerada pela fonte).
- O resultado deve ser apresentado com 3 algarísmos significativos e a devida
- unidade de corrente elétrica.
- 
+\family typewriter
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+Na Engenharia, a adequada escolha das referências é muito importante.
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\emph on
+As medições só fazem sentido quando estão de acordo com as referências.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por isso, é necessário observar onde conectar os polos positivos e negativos
+ da ponta de prova dos instrumentos.
+\end_layout
+
+\begin_layout Section
+Resistência Variável -- Potenciômetro 
+\end_layout
+
+\begin_layout Standard
+Há diversos dispositivos que apresentam resistência variável com base em
+ algum evento físico.
+\end_layout
+
+\begin_layout Standard
+O potenciômero trata-se de um resistor variável.
+ Utiliza como elemento resistivo uma trilha de filme de carvão sobre uma
+ placa isolante, com dois terminais nos extremos desta trilha, e um cursor
+ deslizante, que é o terceiro terminal e responsável pela variação da resistênci
+a em função de seu posicionamento
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+O evento físico aqui é o movimento mecânico exercido sobre o cursor
+\end_layout
+
+\end_inset
+
+.
+ Este cursor pode ser angular ou linear.
+ Na fig., apresenta-se um potenciômetro angular.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -24983,7 +25070,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../analogicos/Experimento 1 e 2/2° Exp/G:/Monitoria/2° Semestre/2° Exp/CircuitoEletrico.PNG
+	filename ../analogicos/Experimento 1 e 2/2° Exp/G:/Monitoria/2° Semestre/2° Exp/Potenciometro.PNG
 
 \end_inset
 
@@ -24992,155 +25079,296 @@ status open
 
 \end_inset
 
-If = _________
-\end_layout
-
-\begin_layout Subsubsection
-
-\series medium
-A seguir desligue a fonte de tensão e repita os procedimentos anteriores
- para medidas das correntes I1, I2 e I3.
-\end_layout
-
-\begin_layout Paragraph
-
-\series medium
-I1=__________ ( 
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- ) 
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- I2 = __________ (
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- ) 
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- I3 = __________ (
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- ) 
-\end_layout
-
-\begin_layout Subsubsection
-
-\series medium
-1.1.6.
- Faça as seguintes verificações de consistência: 
-\end_layout
-
-\begin_layout Subsubsection
-
-\series medium
-If = I1 + I2 
-\begin_inset Formula $\rightarrow$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Subsubsection
-
-\series medium
-If = I3 
-\begin_inset Formula $\rightarrow$
-\end_inset
-
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Section
+Parte Experimental
+\end_layout
 
-\series medium
-Teça comentários a respeito dos resultados obtidos.
- O que ocorreria caso as polaridades utilizadas para as medidas das correntes
- estivessem invertidas? 
+\begin_layout Standard
+Este experimento visa treinar a prática de medições de tensão e corrente
+ e mostrar a importância da análise dos sentidos das tensões e correntes
+ em um circuito corrente contínua.
 \end_layout
 
 \begin_layout Subsection
 
 \series bold
-Medidas de tensões
+Medições de corrente
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Enumerate
 
 \series medium
-Mantenha o circuito da figura 1 e meça as tensões Vf (tensão da fonte),
- VR1 (tensão no resistor R1), VR2, VR3 e VR4, com o voltímetro devidamente
- polarizado, de modo que os resultados sejam positivos.
- Apresente seus resultados: 
+Inicialmente, ajuste a fonte de tensão 
+\begin_inset Formula $E$
+\end_inset
+
+ para 10 V.
+ Para esta etapa, ela deverá estar desconectada de qualquer circuito.
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Enumerate
 
 \series medium
+Com a fonte de tensão 
+\begin_inset Formula $E$
+\end_inset
+
+ DESLIGADA, monte o circuito mostrado no esquema elétrico da fig.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+Chame o professor para certificar que o miliamperímetro está devidamente
+ conectado no circuito (ponta de prova VERMELHA 
+\begin_inset Formula $\longrightarrow$
+\end_inset
+
+ ENTRADA; ponta de prova PRETA 
+\begin_inset Formula $\longrightarrow$
+\end_inset
+
+ SAÍDA), de modo a obter o valor positivo da corrente.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+Concluídos os itens anteriores
+\series medium
+\bar default
+, ligue a fonte de tensão 
+\begin_inset Formula $E$
+\end_inset
+
+ e obtenha o valor da corrente 
+\begin_inset Formula $I_{f}$
+\end_inset
+
+ (corrente total do circuito ou corrente gerada pela fonte).
+ O resultado deve ser apresentado com 3 algarismos significativos e a devida
+ unidade de corrente elétrica.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/CircuitoEletrico.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{f}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+A seguir desligue a fonte de tensão e repita os procedimentos anteriores
+ para medir as correntes 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{3}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $I_{1}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Formula $I_{2}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Formula $I_{3}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+Faça as seguintes verificações de consistência, provando a igualdade:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series medium
+\begin_inset Formula $I_{f}=I_{1}+I_{2}\longrightarrow$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "5cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+\begin_inset Formula $I_{f}=I_{3}=\longrightarrow$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "5cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series medium
+Teça comentários a respeito dos resultados obtidos.
+ O que ocorreria caso as polaridades utilizadas para as medições das correntes
+ estivessem invertidas?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+
+\backslash
+caixaresp[7]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Medições de Tensão
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+Mantenha o circuito da fig.
+ e meça as tensões 
+\begin_inset Formula $V_{f}$
+\end_inset
+
+ (tensão da fonte), 
+\begin_inset Formula $V_{R1}$
+\end_inset
+
+ (tensão sobre o resistor 
+\begin_inset Formula $R1$
+\end_inset
+
+), 
+\begin_inset Formula $V_{R2}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{R3}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{R4}$
+\end_inset
+
+ com o voltímetro devidamente polarizado, de modo que os resultados sejam
+ positivos.
+ Apresente os resultados:
+\begin_inset Newline newline
+\end_inset
+
 Vf = __________ (
 \begin_inset Formula $ $
 \end_inset
@@ -25202,11 +25430,9 @@ Vf = __________ (
 \end_inset
 
 ) 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Paragraph
-
-\series medium
 VR3 = __________ (
 \begin_inset Formula $ $
 \end_inset
@@ -25246,68 +25472,65 @@ VR3 = __________ (
 )
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Enumerate
 
 \series medium
-Faça as verificações: 
+Faça as verificações, provando as igualdades:
 \end_layout
 
-\begin_layout Paragraph
+\begin_deeper
+\begin_layout Enumerate
 
 \series medium
-Vf = VR1 + VR2 + VR4 
-\begin_inset Formula $\rightarrow$
+\begin_inset Formula $V_{f}=V_{R1}+V_{R2}+V_{R4}\longrightarrow$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "5cm"
+height "1pt"
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Enumerate
 
 \series medium
-VR2 = VR3 
-\begin_inset Formula $\rightarrow$
+\begin_inset Formula $V_{R2}=V_{R3}\longrightarrow$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "5cm"
+height "1pt"
+
 \end_inset
 
  
 \end_layout
 
-\begin_layout Subsubsection
+\end_deeper
+\begin_layout Enumerate
 
 \series medium
 Teça comentários a respeito dos resultados obtidos.
- O que ocorreria caso as polaridades utilizadas para as medidas das tensões
- estivessem invertidas? 
-\end_layout
-
-\begin_layout Section
-POTENCIÔMETRO 
-\end_layout
-
-\begin_layout Standard
-Trata-se de um resistor variável.
- Utiliza como elemento resistivo uma trilha de filme de carvão sobre uma
- placa isolante com dois terminais nos extremos desta trilha, e um cursor
- deslizante que é o terceiro terminal e responsável pela variação da resistência
- em função de seu posicionamento.
- Este cursor pode ser angular ou linear.
- Abaixo, esquema de um potenciômetro angular.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+ O que ocorreria caso as polaridades utilizadas para as medições das tensões
+ estivessem invertidas?
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../analogicos/Experimento 1 e 2/2° Exp/G:/Monitoria/2° Semestre/2° Exp/Potenciometro.PNG
 
-\end_inset
+\series medium
 
-
+\backslash
+caixaresp[7]
 \end_layout
 
 \end_inset
@@ -25316,7 +25539,7 @@ status open
 \end_layout
 
 \begin_layout Section
-VERIFICAÇÃO EXPERIMENTAL DA PRIMEIRA LEI DE OHM 
+Verificação Experimental da Primeira Lei de Ohm
 \end_layout
 
 \begin_layout Subsection
