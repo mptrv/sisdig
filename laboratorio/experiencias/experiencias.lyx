@@ -17974,7 +17974,7 @@ Analógicos
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -22475,7 +22475,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -23851,7 +23851,7 @@ Shunt de Ayrton
 
 .
  A resistência equivalente do miliamperímetro será 
-\begin_inset Formula $(R_{1}+R_{g})\sslash R_{2}$
+\begin_inset Formula $(R_{1}+R_{g})\parallel R_{2}$
 \end_inset
 
 .
@@ -24881,13 +24881,15 @@ Plaqueta de montagem
 \begin_inset Quotes eld
 \end_inset
 
-Multímetro
+Universal
 \begin_inset Quotes erd
 \end_inset
 
 
-\emph default
-.
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
 \end_layout
 
 \end_inset
@@ -24897,11 +24899,7 @@ Multímetro
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status collapsed
-
-\begin_layout Standard
-\begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -24909,12 +24907,20 @@ status collapsed
 Medidas Elétricas e Resistência Variável
 \end_layout
 
-\begin_layout Part*
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Section
 OBJETIVOS
 \end_layout
 
 \begin_layout Itemize
-Efetuar medidas de tensão e corrente, verificando as respectivas polaridades.
+Efetuar medidas de tensão e corrente, verificando as respectivas po\SpecialChar \-
+la\SpecialChar \-
+ri\SpecialChar \-
+da\SpecialChar \-
+des.
 \end_layout
 
 \begin_layout Itemize
@@ -25052,14 +25058,48 @@ a em função de seu posicionamento
 status open
 
 \begin_layout Plain Layout
-O evento físico aqui é o movimento mecânico exercido sobre o cursor
+O evento físico aqui é o movimento mecânico exercido sobre o cursor.
 \end_layout
 
 \end_inset
 
 .
  Este cursor pode ser angular ou linear.
- Na fig., apresenta-se um potenciômetro angular.
+ Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-Potenciômetro-angular"
+
+\end_inset
+
+, apresenta-se um potenciômetro angular.
+ Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-Vários-tipos-de-pot"
+
+\end_inset
+
+, são apresentados vários tipos de potenciômetros e 
+\emph on
+trimpots
+\emph default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Potenciômetros de montagem sobre placa, sem haste, normalmente utilizados
+ para ajustes de pontos de trabalho (
+\emph on
+set point
+\emph default
+), mas sem acesso ao usuário final.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -25069,8 +25109,78 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../analogicos/Experimento 1 e 2/2° Exp/G:/Monitoria/2° Semestre/2° Exp/Potenciometro.PNG
+	filename imagens/medidas-eletricas-potenciometro.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Potenciômetro angular: desenho interno, símbolo, componente.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:medidas-eletricas-Potenciômetro-angular"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/tipos-de-potenciometros-e-trimpots#1.jpg
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Vários tipos de potenciômetros e 
+\emph on
+trimpots
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:medidas-eletricas-Vários-tipos-de-pot"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -25089,13 +25199,73 @@ Parte Experimental
 \begin_layout Standard
 Este experimento visa treinar a prática de medições de tensão e corrente
  e mostrar a importância da análise dos sentidos das tensões e correntes
- em um circuito corrente contínua.
+ em um circuito de corrente contínua.
 \end_layout
 
 \begin_layout Subsection
 
 \series bold
 Medições de corrente
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:medidas-eletricas-Medições-de-corrente"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Considere o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-Circuito"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/medidas-eletricas-circuito.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para medições de corrente e tensão.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:medidas-eletricas-Circuito"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -25116,8 +25286,14 @@ Com a fonte de tensão
 \begin_inset Formula $E$
 \end_inset
 
- DESLIGADA, monte o circuito mostrado no esquema elétrico da fig.
- 
+ DESLIGADA, monte o circuito mostrado no esquema elétrico da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-Circuito"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -25146,7 +25322,11 @@ Concluídos os itens anteriores
 \begin_inset Formula $E$
 \end_inset
 
- e obtenha o valor da corrente 
+ e meça, com o 
+\series bold
+multímetro analógico
+\series medium
+, o valor da corrente 
 \begin_inset Formula $I_{f}$
 \end_inset
 
@@ -25154,23 +25334,6 @@ Concluídos os itens anteriores
  O resultado deve ser apresentado com 3 algarismos significativos e a devida
  unidade de corrente elétrica.
 \begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/CircuitoEletrico.PNG
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -25210,6 +25373,10 @@ A seguir desligue a fonte de tensão e repita os procedimentos anteriores
 \end_inset
 
 .
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -25291,7 +25458,7 @@ height "1pt"
 \begin_layout Enumerate
 
 \series medium
-\begin_inset Formula $I_{f}=I_{3}=\longrightarrow$
+\begin_inset Formula $I_{f}=I_{3}\longrightarrow$
 \end_inset
 
  
@@ -25318,7 +25485,6 @@ status open
 
 \begin_layout Plain Layout
 
-\series medium
 
 \backslash
 caixaresp[7]
@@ -25333,12 +25499,25 @@ caixaresp[7]
 
 \series bold
 Medições de Tensão
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:medidas-eletricas-Medições-de-Tensão"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 
 \series medium
-Mantenha o circuito da fig.
+Mantenha o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-Circuito"
+
+\end_inset
+
  e meça as tensões 
 \begin_inset Formula $V_{f}$
 \end_inset
@@ -25348,7 +25527,7 @@ Mantenha o circuito da fig.
 \end_inset
 
  (tensão sobre o resistor 
-\begin_inset Formula $R1$
+\begin_inset Formula $R_{1}$
 \end_inset
 
 ), 
@@ -25363,113 +25542,109 @@ Mantenha o circuito da fig.
 \begin_inset Formula $V_{R4}$
 \end_inset
 
- com o voltímetro devidamente polarizado, de modo que os resultados sejam
+ com o voltímetro de\SpecialChar \-
+vi\SpecialChar \-
+da\SpecialChar \-
+men\SpecialChar \-
+te polarizado, de modo que os resultados sejam
  positivos.
- Apresente os resultados:
+ A\SpecialChar \-
+pre\SpecialChar \-
+sen\SpecialChar \-
+te os resultados:
 \begin_inset Newline newline
 \end_inset
 
-Vf = __________ (
-\begin_inset Formula $ $
-\end_inset
 
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-) 
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- VR1 = __________ (
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-) 
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- VR2 = __________ (
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
-) 
 \begin_inset Newline newline
 \end_inset
 
-VR3 = __________ (
-\begin_inset Formula $ $
+
+\begin_inset Formula $V_{f}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
 \end_inset
 
 
-\begin_inset Formula $ $
+\begin_inset space \quad{}
 \end_inset
 
 
-\begin_inset Formula $ $
+\begin_inset Formula $V_{R1}=$
 \end_inset
 
- ) 
-\begin_inset Formula $ $
-\end_inset
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
 
-
-\begin_inset Formula $ $
-\end_inset
-
-
-\begin_inset Formula $ $
-\end_inset
-
- VR4 = __________ (
-\begin_inset Formula $ $
 \end_inset
 
 
-\begin_inset Formula $ $
+\begin_inset space \quad{}
 \end_inset
 
 
-\begin_inset Formula $ $
+\begin_inset Formula $V_{R2}=$
 \end_inset
 
-)
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $V_{R3}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Formula $V_{R4}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -25527,6 +25702,672 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+caixaresp[7]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Verificação Experimental da Primeira Lei de Ohm
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+Monte o circuito mostrado no esquema elétrico da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-Circuito-potenciometro"
+
+\end_inset
+
+, no qual 
+\begin_inset Formula $R$
+\end_inset
+
+ é um potenciômetro de 
+\begin_inset Formula $4\mathrm{k}7\Omega$
+\end_inset
+
+ (resistência máxima do potenciômetro).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/medidas-eletricas-circuito-potenciometro.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series medium
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para estudo do potenciômetro e comprovação da 
+\emph on
+1ª Lei de Ohm
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:medidas-eletricas-Circuito-potenciometro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+Com 
+\begin_inset Formula $R$
+\end_inset
+
+ (potenciômetro) desconectado do circuito, ajuste seu valor inicialmente
+ para 
+\begin_inset Formula $500\,\Omega$
+\end_inset
+
+ (
+\begin_inset Formula $R_{desejado}$
+\end_inset
+
+).
+ Após o ajuste, conecte-o ao circuito e meça a corrente 
+\begin_inset Formula $I_{medida}$
+\end_inset
+
+ e a tensão 
+\begin_inset Formula $V_{medida}$
+\end_inset
+
+, anotando os valores na tabela que segue.
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+Repita o item anterior para os valores de 
+\begin_inset Formula $R$
+\end_inset
+
+ apresentados na tabela, preenchendo-a.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{desejado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{utilizado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{medido}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{medido}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{calculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erro
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(A)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series medium
+Faça comentários a respeito do 
+\series bold
+erro observado
+\series medium
+ e da 
+\series bold
+variação da tensão e corrente
+\series medium
+ no potênciometro, conforme a 
+\series default
+variação de sua resistência
+\series medium
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
 \series medium
 
 \backslash
@@ -25538,138 +26379,91 @@ caixaresp[7]
 
 \end_layout
 
-\begin_layout Section
-Verificação Experimental da Primeira Lei de Ohm
-\end_layout
-
-\begin_layout Subsection
-
-\series medium
-Monte o circuito mostrado no esquema elétrico da figura 1, onde R é um potenciôm
-etro de 4k7
-\begin_inset Formula $\varOmega$
-\end_inset
-
- (valor máximo da resistência variável).
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../analogicos/Experimento 1 e 2/2° Exp/G:/Monitoria/2° Semestre/2° Exp/Figura2.PNG
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\series medium
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Figura 1
+\begin_layout Section*
+Lista de Materiais
 \end_layout
 
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Multímetro analógico
+\end_layout
+
+\begin_layout Itemize
+Caixa de resistências (década resistiva)
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 3x (
+\begin_inset Formula $100\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $330\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $1\mathrm{k}\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $2\mathrm{k}2\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $3\mathrm{k}3\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $6\mathrm{k}8\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $10\mathrm{k}\Omega$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Potenciômetro: 1x 
+\begin_inset Formula $4\mathrm{k}7\Omega$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Subsection
-
-\series medium
-Com R (potenciômetro) desconectado do circuito, ajuste seu valor inicialmente
- para 500
-\begin_inset Formula $\varOmega$
-\end_inset
-
- (R desejado).
- Após ajustar, conecte-o ao circuito e meça a corrente I e a tensão V.
- 
-\end_layout
-
-\begin_layout Subsection
-
-\series medium
-Repita o item anterior para os valores de R mostrados na tabela 1, preenchendo-a
- simultaneamente.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename ../analogicos/Experimento 1 e 2/2° Exp/G:/Monitoria/2° Semestre/2° Exp/Tabela1.PNG
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tabela 1
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\series medium
-A cada medida, determine o valor de R, utilizando a 1a lei de Ohm: 
-\begin_inset Formula $R_{calculado}$
-\end_inset
-
-
-\begin_inset Formula $=V_{medido}/I_{medido}$
-\end_inset
-
-.
- Preencha a coluna com cálculo do erro: Erro (%) 
-\begin_inset Formula $|\frac{valor\,teórico-valor\,medido}{valor\,teórico}|\,x\,100$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\series medium
-Faça comentários a respeito deste experimento e seus resultados.
- 
-\end_layout
-
-\end_inset
-
-
+\begin_layout Itemize
+Cabos banana-banana
 \end_layout
 
 \end_inset
@@ -25679,7 +26473,7 @@ Faça comentários a respeito deste experimento e seus resultados.
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
@@ -26099,8 +26893,242 @@ status collapsed
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Standard
+\begin_layout Title
+Lei de Kirchhoff
+\end_layout
 
+\begin_layout Part*
+OBJETIVO 
+\end_layout
+
+\begin_layout Standard
+Verificar experimentalmente as duas leis de Kirchhoff.
+\end_layout
+
+\begin_layout Section*
+1.
+ LEI DOS NÓS 
+\end_layout
+
+\begin_layout Standard
+1.1.
+ Monte o circuito esquematizado ao lado.
+ Para E1, utilize a fonte ajustável da bancada.
+ As fontes E2 e E3 devem ser “construídas” associando-se pilhas de 1,5V
+ (inicialmente desconectadas dos suportes).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../tmp/Exp 4 e 6/4° Exp/imagens/lei-de-kirchhoff-circuito1.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../tmp/Exp 4 e 6/4° Exp/imagens/lei-de-kirchhoff-circuito2.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1.2.
+ Com as fontes ligadas, meça todas as correntes nos ramos, considerando
+ os respectivos sinais (atente-se às polarizações dos instrumentos) e comprove
+ a primeira lei de Kirchhoff: “a soma algébrica das correntes em um nó é
+ zero”.
+ 
+\end_layout
+
+\begin_layout Standard
+I1 = _______________ 
+\end_layout
+
+\begin_layout Standard
+I2 = __________________ 
+\end_layout
+
+\begin_layout Standard
+I3 = _______________ 
+\end_layout
+
+\begin_layout Standard
+I1+ I2 + I3 = ___________ 
+\end_layout
+
+\begin_layout Standard
+Observação: considere os sinais das correntes obtidas.
+\end_layout
+
+\begin_layout Standard
+Comentários: 
+\end_layout
+
+\begin_layout Section*
+2.
+ LEI DAS MALHAS 
+\end_layout
+
+\begin_layout Standard
+2.1.
+ Ainda no circuito do item 1, note que este possui 3 malhas: (1) interna
+ do lado esquerdo (R1 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ E1 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ E2 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ R2); 
+\end_layout
+
+\begin_layout Standard
+(2) interna do lado direito (R2 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ E2 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ E3 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ R3) ; 
+\end_layout
+
+\begin_layout Standard
+(3) externa (R1 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ E1 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ E3 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ R3).
+\end_layout
+
+\begin_layout Standard
+2.2.
+ A cada uma das malhas, meça todas as tensões e comprove a segunda lei de
+ Kirchhoff: “a soma algébrica das tensões em uma malha é zero”.
+ Lembre-se que devem ser considerados os respectivos sinais das tensões.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../tmp/Exp 4 e 6/4° Exp/imagens/lei-de-kirchhoff-circuito3.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Malha (1): VR1= ___________ VE1= ___________ VE2= ___________ VR2= ____________
+ 
+\end_layout
+
+\begin_layout Standard
+Verificação da 2a lei: 
+\end_layout
+
+\begin_layout Standard
+Malha (2): VR2= ___________ VE2= ___________ VE3= ___________ VR3= ____________
+ 
+\end_layout
+
+\begin_layout Standard
+Verificação da 2a lei: Comentários: 
+\end_layout
+
+\begin_layout Standard
+Comentários: 
 \end_layout
 
 \end_inset
@@ -26121,8 +27149,777 @@ status collapsed
 \begin_inset Branch cm-corpo
 status open
 
+\begin_layout Title
+PONTE DE WHEATSTONE 
+\end_layout
+
+\begin_layout Section*
+1.
+ Objetivos.
+ 
+\end_layout
+
+\begin_layout Standard
+-Familiarização experimental com a Ponte de Wheatstone; 
+\end_layout
+
+\begin_layout Standard
+-Utilização desta ponte para determinação da resistência de resistores.
+\end_layout
+
+\begin_layout Section*
+2.
+ Introdução Teórica.
+ 
+\end_layout
+
+\begin_layout Standard
+A Ponte de Wheatstone consiste em um arranjo de resistores, fonte de alimentação
+ e detector (o qual pode ser um voltímetro ou um amperímetro), conforme
+ ilustrado pela fig.
+ 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../tmp/Exp 4 e 6/6° Exp/G:/Monitoria/2° Semestre/6° Exp/imagens/ponte-de-wheatstone-circuito-ponte.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Ponte de Wheatstone
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Para que a ponte esteja em equilíbrio, a tensão entre os terminais A e B
+ deve ser nula, implicando em:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V{}_{r1}=V_{r3}$
+\end_inset
+
+ (1a) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{r2}=V_{r4}$
+\end_inset
+
+ (1b)
+\end_layout
+
+\begin_layout Standard
+Aplicando-se o conceito de divisor de tensões para determinar-se 
+\begin_inset Formula $V_{r2}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{r4}$
+\end_inset
+
+ por exemplo: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{r2}=V*\frac{R_{2}}{R_{1}+R_{2}}$
+\end_inset
+
+(2a) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{r4}=V*\frac{R_{4}}{R_{3}+R_{4}}$
+\end_inset
+
+ (2b)
+\end_layout
+
+\begin_layout Standard
+No equilíbrio, igualando-se (2a) com (2b):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V*\frac{R_{2}}{R_{1}+R_{2}}=V*\frac{R_{4}}{R_{3}+R_{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{R_{2}}{R_{1}+R_{2}}=\frac{R_{4}}{R_{3}+R_{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{2}R_{3}+R_{2}R_{4}=R_{4}R_{1}+R_{4}R_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+e, finalmente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{2}R_{3}=R_{4}R_{1}$
+\end_inset
+
+(3) 
+\end_layout
+
+\begin_layout Standard
+Ou seja, no equilíbrio, os produtos em cruz dos valores dos resistores devem
+ ser iguais.
+ 
+\end_layout
+
+\begin_layout Standard
+Uma das aplicações da Ponte de Wheatstone é para medir-se o valor desconhecido
+ de um resistor, a partir dos valores dos outros três resistores da ponte.
+ A fig.
+ 2 ilustra tal procedimento.
+ Nesta figura, determina-se por: 
+\begin_inset Formula $R_{x}=\frac{R_{1}}{R_{2}}R_{p}$
+\end_inset
+
+(4)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../tmp/Exp 4 e 6/6° Exp/G:/Monitoria/2° Semestre/6° Exp/imagens/ponte-de-wheatstone-circuito-ponte2.PNG
+	rotateAngle 1
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Ponte de Wheatstone utilizada para medir-se um resistor.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste Circuito, deve-se variar o valor de 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ até que a ponte seja equilibrada.
+ É óbvio que se desejar uma medida precisa de 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+, deve-se ter 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ também com valores precisos e um potenciômetro 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ com uma escala precisamente relacionada com a resistência apresentada.
+\end_layout
+
+\begin_layout Section*
+3.
+ Parte experimental.
+ 
+\end_layout
+
+\begin_layout Standard
+Montar o circuito a seguir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../tmp/Exp 4 e 6/6° Exp/G:/Monitoria/2° Semestre/6° Exp/imagens/ponte-de-wheatstone-circuito-ponte3.PNG
+	rotateAngle 0.6
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Ponte de Wheatstone.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ajustar a década resistiva de modo a obter-se a tensão Vd a mínima possível.
+\end_layout
+
 \begin_layout Standard
 
+\series bold
+Por medida de segurança, ajustar a escala do voltímetro Vd em um valor elevado
+ (3v por exemplo) para evitar danos ao instrumento.
+ A seguir, quando a tensão for se tornando menor devido à tentativa de equilibra
+r-se a ponte, mudar a escala para valores menores, de modo a aumentar a
+ sensibilidade e obter-se um valor de Vd o mais próximo possível de zero.
+ 
+\end_layout
+
+\begin_layout Standard
+Preencher a Tabela 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+330
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{D}écada$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Tabela 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Retirar, agora, 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ e substituir por resistores de “valores desconhecidos”, isto é, valores
+ reais desconhecidos (pode-se verificar os valores deste resistores a partir
+ das cores marcadas).
+ Utilizar 5 valores diferentes, um de cada vez, e preencher a Tabela 2.
+\end_layout
+
+\begin_layout Standard
+Tomar o cuidado de medir os valores de 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ e de 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ com um multímetro digital para utilizá-los na eq.
+ (4).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top" width="3cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{array}{c}
+R_{X}\\
+(Valor\,Nominal)
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{Década}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{array}{c}
+R_{X}\\
+determinado\\
+pela\,eq\,(4)
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\begin{array}{c}
+R_{X}\\
+determinado\\
+pela\,multímetro
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Tabela 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As medidas de 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ (multímetro) devem ser realizadas com um ohmímetro digital de preferência,
+ para comparação com valores obtidos para 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ através
+\lang english
+ da ponte.
+ 
 \end_layout
 
 \end_inset
