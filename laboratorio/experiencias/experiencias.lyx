@@ -119,7 +119,7 @@ customHeadersFooters
 \justification true
 \use_refstyle 1
 \branch cm-corpo
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #e5dcd3
 \end_branch
@@ -159,7 +159,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -249,7 +249,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -304,7 +304,7 @@ caixaresp}[1][10]{%
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top" width="100col%">
+<column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -349,55 +349,6 @@ status open
 
 \end_layout
 
-\begin_layout Left Header
-
-\shape smallcaps
-\size larger
-\begin_inset Graphics
-	filename logo-imt.png
-	lyxscale 10
-	height 4ex
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Right Header
-
-\shape smallcaps
-ETE102 - Fundamentos de Circuitos Digitais
-\end_layout
-
-\begin_layout Center Footer
-
-\end_layout
-
-\begin_layout Right Footer
-\begin_inset Branch cm-corpo
-status collapsed
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
 status collapsed
@@ -432,6 +383,55 @@ Digitais
 
 \end_layout
 
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE102 - Fundamentos de Circuitos Digitais
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch dg-logica-com-rele
 status collapsed
@@ -459,7 +459,7 @@ Lógica com Relés
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -2957,7 +2957,7 @@ Técnicas de Soldagem
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Tópicos envolvidos
@@ -3335,7 +3335,7 @@ Portas Lógicas
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -4415,7 +4415,7 @@ Multiplexadores e Demultiplexadores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -4427,7 +4427,8 @@ Verificar experimentalmente o princípio de funcionamento de um circuito
 \end_layout
 
 \begin_layout Itemize
-Sintetizar uma função lógica por meio de um CI multiplexador.
+Verificar experimentalmente o princípio de funcionamento de um circuito
+ demultiplexador.
 \end_layout
 
 \begin_layout Section
@@ -4500,7 +4501,7 @@ dor digital, ambos com 4 entradas de informação (4 canais de
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4605,7 +4606,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4647,7 +4648,7 @@ name "fig:Circuito-interno-mux-2-canais"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4739,7 +4740,7 @@ status open
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4854,7 +4855,7 @@ name "tab:Tabela-Verdade-resumida-mux-2-canais"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -5280,7 +5281,7 @@ Tanto a partir do circuito interno quanto a partir da Tabela Verdade, é
 \begin_layout Standard
 \begin_inset Formula 
 \[
-S=\bar{A}\,E0+A\,E1
+Y=A\,E1+\bar{A}\,E0
 \]
 
 \end_inset
@@ -6541,10 +6542,734 @@ name "tab:Tabela-Verdade-modo-2"
 
 \begin_layout Standard
 Note-se que, na expressão, a variável A é a mais significativa e, portanto,
- deve ser conectada ao bit de seleção B do multiplexador, que é o mais significa
+ deve ser conectada ao bit de seleção B do mul\SpecialChar \-
+ti\SpecialChar \-
+ple\SpecialChar \-
+xa\SpecialChar \-
+dor, que é o mais significa
 tivo deste dispositivo.
  Semelhantemente, deve-se tomar os cuidados devidos com as demais variáveis
  da expressão, B e C.
+\end_layout
+
+\begin_layout Subsection
+Demultiplexador
+\end_layout
+
+\begin_layout Standard
+O 
+\emph on
+Demultiplexador 
+\emph default
+também é conhecido por 
+\emph on
+DEMULTIPLEX 
+\emph default
+ou, simplesmente, 
+\emph on
+DEMUX
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+O circuito demultiplexador possui comportamento oposto ao mul\SpecialChar \-
+ti\SpecialChar \-
+ple\SpecialChar \-
+xa\SpecialChar \-
+dor:
+ há apenas uma entrada, a qual será ligada eletronicamente a uma das saídas,
+ conforme a escolha realizada por meio das variáveis de seleção.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Comparação-chave-analógica-demux"
+
+\end_inset
+
+ apresenta uma analogia entre uma chave de seleção analógica e um circuito
+ de\SpecialChar \-
+mul\SpecialChar \-
+ti\SpecialChar \-
+ple\SpecialChar \-
+xa\SpecialChar \-
+dor digital, ambos com 4 saídas de informação (4 canais de
+ saída).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp04-demux-conceito.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparação entre chave de seleção analógica e o demultiplex.
+ Adicionalmente, note-se o símbolo utilizado para representar o demultiplex.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Comparação-chave-analógica-demux"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como é possível perceber, a quantidade de entradas do demultiplexador é
+ fixa -- há apenas um canal de entrada.
+ Já a quantidade de variáveis 
+\begin_inset Formula $m$
+\end_inset
+
+ de controle (seleção) irá depender da quantidade de canais de saída 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Uma vez que a seleção é feita em base binária:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+n=2^{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Demultiplexador de 2 Canais
+\end_layout
+
+\begin_layout Standard
+Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:demux-2-canais"
+
+\end_inset
+
+, é apresentado o circuito interno (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-interno-demux-2-canais"
+
+\end_inset
+
+) e o símbolo (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Símbolo-demux-2-canais"
+
+\end_inset
+
+) de um demultiplexador de 2 canais de saída.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement bh
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp04-demux-circ-2-canais.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito interno.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-interno-demux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp04-demux-2-canais-simbolo.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Símbolo.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Símbolo-demux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Demultiplexador de 2 canais de saída.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:demux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Tabela Verdade, que retrata a operação do circuito, encontra-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-resumida-demux-2-canais"
+
+\end_inset
+
+, a qual, de forma equivalente, pode ser representada como a da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-detalhada-demux-2-canais"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade resumida.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-resumida-demux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade detalhada.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-detalhada-demux-2-canais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade para o demultiplexador de 2 canais de saída.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-mux-2-canais-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tanto a partir do circuito interno quanto a partir da Tabela Verdade, é
+ possível obter as expressões lógicas que regem o funcionamento do demultiplexad
+or:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+Y1=A\,E\\
+Y0=\bar{A}\,E
+\end{cases}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -6552,14 +7277,21 @@ Metodologia
 \end_layout
 
 \begin_layout Itemize
-Será construído um multiplexador de dois canais de entrada, com portas lógicas,
- de modo que seja possível selecionar um entre dois sinais digitais diferentes.
- 
+Será construído um 
+\series bold
+multiplexador
+\series default
+ de dois canais de entrada, com portas lógicas, de modo que seja possível
+ selecionar, na saída, um entre dois sinais de entrada diferentes.
 \end_layout
 
 \begin_layout Itemize
-Será implementada uma expressão lógica de duas variáveis utilizando um circuito
- integrado multiplexador.
+Será construído um 
+\series bold
+demultiplexador
+\series default
+ de dois canais de saída, com portas lógicas, de modo que seja possível
+ disponibilizar em uma, dentre duas saídas, um determinado sinal de entrada.
 \end_layout
 
 \begin_layout Standard
@@ -6641,7 +7373,7 @@ name "fig:mux-2canais-experimental"
 
 \begin_layout Enumerate
 Alimente o sistema e obtenha a Tabela Verdade da saída Y em função de todas
- as combinações das entradas E1, E0 e A, completando a 
+ as combinações das entradas A, E1 e E0, completando a 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "tab:Tabela-Verdade-para-mux-2-canais-experimental"
@@ -6649,10 +7381,6 @@ reference "tab:Tabela-Verdade-para-mux-2-canais-experimental"
 \end_inset
 
 .
-\begin_inset Newline newline
-\end_inset
-
-
 \begin_inset Newline newline
 \end_inset
 
@@ -7141,8 +7869,611 @@ espv[15]
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Implementação de Expressão Lógica com MUX
+Construção de Circuito Demultiplexador
+\end_layout
+
+\begin_layout Enumerate
+Efetue a montagem do circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:demux-2canais-experimental"
+
+\end_inset
+
+ com os CIs que considerar mais convenientes, 
+\series bold
+atentando-se às conexões adequadas das alimentações
+\series default
+ 
+\series bold
+destes
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp04-demux-circ-2-canais.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Demultiplex de 2 canais de saída, 1 variável de seleção e 1 canal de entrada.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:demux-2canais-experimental"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Alimente o sistema e obtenha a Tabela Verdade das saídas Y1 e Y0 em função
+ de todas as combinações das entradas A e E, completando a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-para-demux-2-canais-experimental"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade para o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:demux-2canais-experimental"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-para-demux-2-canais-experimental"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Quais as expressões lógicas que representam o funcionamento do circuito
+ demultiplexador implementado?
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="100line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[6]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+O que se conclui, ao se analisar as saídas para cada combinação das entradas?
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="100line%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[15]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Referências de CIs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/cis/7404.png
+	lyxscale 50
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+7404
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/cis/7408.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+7408
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/cis/7432.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+7432
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuitos integrados de referência.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Montagem Extra: Implementação de Expressão Lógica com MUX
 \end_layout
 
 \begin_layout Standard
@@ -7472,7 +8803,7 @@ status open
 
 
 \backslash
-espv[40]
+espv[10]
 \end_layout
 
 \end_inset
@@ -7493,155 +8824,6 @@ espv[40]
 \begin_layout Enumerate
 Montar e alimentar o circuito e confrontar os resultados experimentais com
  os esperados.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Referências de CIs
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/cis/7404.png
-	lyxscale 50
-	height 3cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-7404
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/cis/7408.png
-	height 3cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-7408
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/cis/7432.png
-	height 3cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-7432
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuitos integrados de referência.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -7698,13 +8880,6 @@ lógica programável
 .
 \emph default
 )
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -7776,7 +8951,7 @@ Alarme de Invasão
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Contexto
@@ -9129,7 +10304,7 @@ name "chap:Decodificador-BCD-Sete-Seg"
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 
@@ -9533,9 +10708,92 @@ reference "enu:Montar-o-circuito"
 Desafio
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Projetar um decodificador BCD--7 Segmentos para dígitos decimais de 0 a
  7, utilizando-se apenas portas NAND.
+\end_layout
+
+\begin_layout Enumerate
+Considere os seguintes fatores: a) uma porta NAND TTL do CI 74LS00 pode
+ fornecer até 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,4}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+ ou drenar até 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+; b) um 
+\emph on
+display 
+\emph default
+necessita de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+ em cada segmento para apresentar um brilho adequado; c) num certo 
+\emph on
+Painel Digital
+\emph default
+ 
+\emph on
+Didático
+\emph default
+, há um 
+\emph on
+display
+\emph default
+ anodo comum.
+ O que existe no interior do painel de forma que, quando uma determinada
+ saída da porta NAND for ligada a uma correspondente entrada de segmento
+ do 
+\emph on
+display
+\emph default
+, o segmento acende com um brilho 
+\bar under
+adequado
+\bar default
+ no nível lógico 
+\emph on
+\bar under
+1
+\emph default
+\bar default
+?
 \end_layout
 
 \begin_layout Section*
@@ -9602,7 +10860,7 @@ Osciloscópio I
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 
@@ -10403,7 +11661,7 @@ Lista de Material
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -10420,14 +11678,18 @@ Portas Lógicas Schmitt Trigger
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
 \end_layout
 
 \begin_layout Standard
-Compreender o comportamento de portas lógicas com entradas "schmitt trigger".
+Compreender o comportamento de portas lógicas com entradas 
+\emph on
+schmitt trigger
+\emph default
+.
 \end_layout
 
 \begin_layout Section
@@ -10435,7 +11697,11 @@ Motivações
 \end_layout
 
 \begin_layout Enumerate
-O que é uma porta lógica com entradas "schmitt trigger"?
+O que é uma porta lógica com entradas 
+\emph on
+schmitt trigger
+\emph default
+?
 \end_layout
 
 \begin_layout Enumerate
@@ -10451,6 +11717,649 @@ Quais os exemplos de aplicação?
 \end_layout
 
 \begin_layout Section
+Referências para Consulta
+\end_layout
+
+\begin_layout Standard
+Os seguintes manuais podem ser consultados para buscar respostas às perguntas
+ anteriores:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://pdf.datasheetcatalog.com/datasheets/90/109357_DS.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://pdf.datasheetcatalog.com/datasheet/motorola/MC14093BD.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://pdf.datasheetcatalog.com/datasheets/270/109356_DS.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Procedimentos Experimentais
+\end_layout
+
+\begin_layout Subsection
+Ponto de Comutação
+\end_layout
+
+\begin_layout Enumerate
+Montar o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Esquema-elétrico-com"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp08-Figura 1.jpg
+	lyxscale 40
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico com 7400.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esquema-elétrico-com"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Variar o potenciômetro 
+\bar under
+lentamente
+\bar default
+ e observar o comportamento do LED.
+ Dar 
+\bar under
+especial atenção
+\bar default
+ à faixa de tensão entre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+SI{0,8}{
+\backslash
+V}}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+SI{2,0}{
+\backslash
+V}}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Descreva o que ocorreu:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[6]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Substituir o CI 7400 pelo 4093, de forma a obter o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Esquema-elétrico-com-1"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp08-Figura 2.jpg
+	lyxscale 40
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico com 4093.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esquema-elétrico-com-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Repetir a variação do potenciômetro, 
+\bar under
+lentamente
+\bar default
+.
+ Em relação ao outro circuito, o que ocorreu? Descreva abaixo:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[6]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comportamento das Bordas
+\end_layout
+
+\begin_layout Enumerate
+Montar o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:schmitt-distorcao-recuperacao"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp08-Figura 3.png
+	lyxscale 40
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico para exemplo de aplicação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:schmitt-distorcao-recuperacao"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No esquema elétrico, note-se:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\bar under
+Fonte de informação
+\bar default
+: simula a geração de uma informação digital qualquer a ser transmitida
+ por um determinado canal (010101\SpecialChar \ldots{}
+).
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+Distorção no Canal
+\bar default
+: simula a distorção que ocorre na informação digital transmitida pelo canal.
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+Recepção da Informação
+\bar default
+: usa o comportamento 
+\emph on
+schmitt trigger
+\emph default
+ para recuperar a informação transmitida e que foi distorcida pelo canal;
+ no contexto, a informação digital é: 
+\bar under
+010101\SpecialChar \ldots{}
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Com o auxílio de um osciloscópio, observe o sinal nos pontos entitulados
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\bar under
+CH1
+\bar default
+
+\begin_inset Quotes erd
+\end_inset
+
+e 
+\begin_inset Quotes eld
+\end_inset
+
+
+\bar under
+CH2
+\bar default
+
+\begin_inset Quotes erd
+\end_inset
+
+ na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:schmitt-distorcao-recuperacao"
+
+\end_inset
+
+, observando os detalhes da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:schmitt-Osciloscópio-e-conectores"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp08-Figura 4.jpg
+	lyxscale 40
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Osciloscópio e conectores.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:schmitt-Osciloscópio-e-conectores"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\bar under
+
+\begin_inset Newline newline
+\end_inset
+
+Nota
+\bar default
+: caso possua dificuldades na operação do osciloscópio, solicite a ajuda
+ do professor para os coretos ajustes.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ajustes básicos sugeridos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Base
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+tempo: 1ms/DIV
+\end_layout
+
+\begin_layout Itemize
+Escala
+\begin_inset space ~
+\end_inset
+
+de
+\begin_inset space ~
+\end_inset
+
+tensão: 5V/DIV
+\end_layout
+
+\begin_layout Itemize
+Sincronismo: CH1
+\end_layout
+
+\begin_layout Itemize
+Exibição: DUAL
+\end_layout
+
+\begin_layout Itemize
+Acoplamento: DC
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\noindent
+Reproduza abaixo os sinais observados:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename imagens/exp08-Figura 5.jpg
+	lyxscale 40
+	width 100line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\noindent
+Substituir, agora, o 4093 pelo 7400 e anotar, novamente, as formas de onda.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename imagens/exp08-Figura 5.jpg
+	lyxscale 40
+	width 100line%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Quanto aos sinais observados, pegunta-se:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ao considerar o sinal 
+\begin_inset Quotes eld
+\end_inset
+
+transmitido
+\begin_inset Quotes erd
+\end_inset
+
+ e o 
+\begin_inset Quotes eld
+\end_inset
+
+recebido
+\begin_inset Quotes erd
+\end_inset
+
+, pode-se dizer que são coerentes? Por quê?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[8]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Comparando-se os sinais 
+\begin_inset Quotes eld
+\end_inset
+
+recebidos
+\begin_inset Quotes erd
+\end_inset
+
+ pelo 4093 e 7400, há alguma diferença? Onde?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[8]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
 Lista de Materiais
 \end_layout
 
@@ -10499,83 +12408,23 @@ Espátula
 \end_layout
 
 \begin_layout Itemize
-CI: 1x7400
+CIs: 1x 7400; 1x 4093
 \end_layout
 
 \begin_layout Itemize
-CI: 1x4093
-\end_layout
-
-\begin_layout Itemize
-Capacitor: 1x 150nF
-\end_layout
-
-\begin_layout Itemize
-Resistor: 1x1k
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Potenciômetro: 1x4k7
-\begin_inset Formula $\varOmega$
-\end_inset
-
-(lin.)
-\end_layout
-
-\begin_layout Section
-Procedimentos Experimentais
-\end_layout
-
-\begin_layout Subsection
-Parte 1
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-a) 
-\series default
-Montar o circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Esquema-elétrico-com"
-
-\end_inset
-
-:
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+Capacitor: 1x 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp08-Figura 1.jpg
-
-\end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema elétrico com 7400.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Esquema-elétrico-com"
-
-\end_inset
-
-
+\backslash
+SI{150}{
+\backslash
+nano
+\backslash
+F}
 \end_layout
 
 \end_inset
@@ -10583,116 +12432,20 @@ name "fig:Esquema-elétrico-com"
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-b) 
-\series default
-Variar o potenciômetro 
-\bar under
-lentamente
-\bar default
- e observar o comportamento do LED.
- Dar 
-\bar under
-especial atenção
-\bar default
- à faixa de tensão entre 
-\bar under
-0,8 V
-\bar default
- e 
-\bar under
-2,0 V
-\bar default
-.
- 
-\end_layout
-
-\begin_layout Standard
-Descreva o que ocorreu:
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-c) 
-\series default
-Substituir o CI 7400 pelo 4093, de forma a obter o circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Esquema-elétrico-com-1"
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+\begin_layout Itemize
+Resistor: 1x 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp08-Figura 2.jpg
-	scale 40
-
-\end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema elétrico com 4093.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Esquema-elétrico-com-1"
-
-\end_inset
-
-
+\backslash
+SI{1}{
+\backslash
+kilo
+\backslash
+ohm}
 \end_layout
 
 \end_inset
@@ -10700,305 +12453,23 @@ name "fig:Esquema-elétrico-com-1"
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-d) 
-\series default
-Repetir a variação do potenciômetro, 
-\bar under
-lentamente
-\bar default
-.
- Em relação ao outro circuito, o que ocorreu? Descreva abaixo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Parte 2
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-a) 
-\series default
-Montar o circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Esquema-elétrico-para"
-
-\end_inset
-
-.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+\begin_layout Itemize
+Potenciômetro: 1x 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp08-Figura 3.jpg
-	scale 30
-
-\end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema elétrico para exemplo de aplicação.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Esquema-elétrico-para"
-
-\end_inset
-
-
+\backslash
+SI{4k7}{
+\backslash
+ohm}
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-b) 
-\series default
-No esquema elétrico, note-se:
-\end_layout
-
-\begin_layout Itemize
-
-\bar under
-Fonte de informação
-\bar default
-: simula a geração de uma informação digital qualquer a ser transmitida
- por um determinado canal (010101...).
-\end_layout
-
-\begin_layout Itemize
-
-\bar under
-Distorção no Canal
-\bar default
-: simula a distorção que ocorre na informação digital transmitida pelo canal.
-\end_layout
-
-\begin_layout Itemize
-
-\bar under
-Recepção da Informação
-\bar default
-: usa o comportamento "schmitt trigger" para recuperar a informação transmitida
- e que foi distorcida pelo canal; no contexto, a informação digital é: 
-\bar under
-010101...
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-c) 
-\series default
-Com o auxílio de um osciloscópio, observe o sinal nos pontos entitulados
- "
-\bar under
-CH1
-\bar default
-"e "
-\bar under
-CH2
-\bar default
-".
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/exp08-Figura 4.jpg
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Osciloscópio e conectores.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\bar under
-Nota
-\bar default
-: não é o objetivo estudar a operação do osciloscópio nesse momento; portanto,
- solicite a ajuda do professor para os coretos ajustes, caso sinta dificuldade.
-\end_layout
-
-\begin_layout Standard
-Ajustes básicos sugeridos:
-\end_layout
-
-\begin_layout Itemize
-Base de tempo: 1ms/DIV
-\end_layout
-
-\begin_layout Itemize
-Escala de tensão: 5V/DIV
-\end_layout
-
-\begin_layout Itemize
-Sincronismo: CH1
-\end_layout
-
-\begin_layout Itemize
-Exibição: DUAL
-\end_layout
-
-\begin_layout Itemize
-Acoplamento: DC
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-d) 
-\series default
-Reproduza abaixo os sinais observados:
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/exp08-Figura 5.jpg
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
-e)
-\series default
- Os sinais observados são coerentes? Por quê? Responda abaixo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 5cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ (lin.)
 \end_layout
 
 \end_inset
@@ -11025,7 +12496,7 @@ Flip-Flops RS
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -14144,7 +15615,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -14162,7 +15633,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch dg-motor-passos
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -14179,7 +15650,7 @@ Motor de Passos
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -16200,7 +17671,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -16291,7 +17762,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -17994,6 +19465,55 @@ Analógicos
 
 \end_layout
 
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE103 - Fundamentos de Circuitos Analógicos
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch an-resistores
 status collapsed
@@ -18013,7 +19533,7 @@ Resistores e Associação de Resistores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -22514,7 +24034,7 @@ Multímetros
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -24931,7 +26451,7 @@ Medidas Elétricas e Resistência Variável
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 OBJETIVOS
@@ -26527,7 +28047,7 @@ Bipolos Lineares e Não Lineares
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -28682,7 +30202,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Title
 Lei de Kirchhoff
@@ -28938,7 +30458,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Title
 PONTE DE WHEATSTONE 
@@ -29729,7 +31249,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -29751,7 +31271,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -29773,7 +31293,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -29795,7 +31315,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -29826,7 +31346,7 @@ Analógicos -- Experimentos Extras
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
