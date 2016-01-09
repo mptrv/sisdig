@@ -12,6 +12,12 @@
 % Unidades do SI.
 \usepackage{siunitx}
 
+% Informações sobre o leiaute da página.
+%   Modo de uso elementar: dentro de flutuante de figura, chamar
+%      \currentpage
+%      \pagedesign
+%\usepackage{layouts}
+
 % Fração do total da altura do texto para alocação de flutuantes na parte inferior da página.
 \renewcommand{\bottomfraction}{0.5}
 
@@ -60,6 +66,11 @@
 
 % Personalização para unidades SI (por siunitx}.
 \sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
+
+% Correção do altura do cabeçalho.
+%   Necessário pois alguns pacotes, como 'pdfpages' ou o que oferece os comandos "oval",
+%   parece que reconfiguram a altura do cabeçalho.
+\setlength{\headheight}{34pt}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -124,12 +135,12 @@ customHeadersFooters
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-logica-com-rele
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -144,12 +155,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -164,7 +175,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -179,12 +190,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-multiplex
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -350,6 +361,19 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+===== DIGITAIS =====
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch cm-textos-extras
 status collapsed
 
@@ -434,7 +458,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch dg-logica-com-rele
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -2889,13 +2913,6 @@ Propor algumas lógicas a mais com relés?
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -2905,31 +2922,31 @@ Propor algumas lógicas a mais com relés?
 Lista de Material
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Fonte de alimentação com dois canais.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Painel de chaves.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Painel de relés.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 1x Lâmpada 12V.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 22x Cabos banana-banana curtos.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 4x Cabos banana-banana longos.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 2x Cabos banana-jacaré longos.
 \end_layout
 
@@ -2940,7 +2957,7 @@ Painel de relés.
 
 \begin_layout Standard
 \begin_inset Branch dg-tecnicas-soldagem
-status collapsed
+status open
 
 \begin_layout Chapter
 \begin_inset Quotes eld
@@ -3141,7 +3158,11 @@ Parte Experimental
 \end_layout
 
 \begin_layout Standard
-Para a parte experimental, é aconselhado que os itens abaixo seja realizado
+Para a parte experimental, é aconselhado que os itens abaixo sejam re\SpecialChar \-
+a\SpecialChar \-
+li\SpecialChar \-
+za\SpecialChar \-
+dos
  por todos os integrantes da equipe.
 \end_layout
 
@@ -3247,13 +3268,6 @@ reference "fig:Circuito-a-montar."
 nte agradável.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -3318,7 +3332,7 @@ Sugador
 
 \begin_layout Standard
 \begin_inset Branch dg-portas-logicas
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -4296,7 +4310,7 @@ status open
 
 
 \backslash
-espv[25]
+espv[10]
 \end_layout
 
 \end_inset
@@ -4345,13 +4359,6 @@ NAND
 ?
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -4398,7 +4405,7 @@ proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-multiplex
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -5362,7 +5369,7 @@ direto: utilizando-se multiplexador com quantidade de variáveis de seleção
 \begin_inset Formula $N_{E}$
 \end_inset
 
-) --- ou seja, 
+) -- ou seja, 
 \begin_inset Formula $N_{S}=N_{E}$
 \end_inset
 
@@ -5390,7 +5397,7 @@ veis de
 \begin_inset Formula $N_{E}$
 \end_inset
 
-) menos 1 --- ou seja, 
+) menos 1 -- ou seja, 
 \begin_inset Formula $N_{S}=N_{E}-1$
 \end_inset
 
@@ -8473,7 +8480,9 @@ Circuitos integrados de referência.
 \end_layout
 
 \begin_layout Subsection
-Montagem Extra: Implementação de Expressão Lógica com MUX
+Montagem Extra: Implementação de Expressão Ló\SpecialChar \-
+gi\SpecialChar \-
+ca com MUX
 \end_layout
 
 \begin_layout Standard
@@ -8926,7 +8935,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-alarme-invasao
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -9085,6 +9094,19 @@ name "tab:Tabela-de-Associação"
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
 <features rotate="0" booktabs="true" tabularvalignment="middle">
@@ -9161,18 +9183,6 @@ Sp
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-espv[3]
-\end_layout
-
-\end_inset
-
 sensor da porta
 \end_layout
 
@@ -9211,18 +9221,6 @@ Sj
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-espv[3]
-\end_layout
-
-\end_inset
-
 sensor da janela
 \end_layout
 
@@ -9261,18 +9259,6 @@ Chad
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-espv[3]
-\end_layout
-
-\end_inset
-
 chave de ativar/desativar
 \end_layout
 
@@ -9414,6 +9400,17 @@ sirene ativada
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -9634,7 +9631,7 @@ reference "fig:Circuitos-de-entrada"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
+placement h
 wide false
 sideways false
 status open
@@ -9656,7 +9653,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagens/exp05-Figura 3.png
 	lyxscale 40
-	height 5cm
+	height 4cm
 
 \end_inset
 
@@ -9698,7 +9695,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagens/exp05-Figura 4.png
 	lyxscale 40
-	height 5cm
+	height 4cm
 
 \end_inset
 
@@ -9743,7 +9740,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagens/exp05-Figura 5.png
 	lyxscale 40
-	height 5cm
+	height 4cm
 
 \end_inset
 
@@ -10165,7 +10162,7 @@ status open
 
 
 \backslash
-espv[25]
+espv[10]
 \end_layout
 
 \end_inset
@@ -10225,13 +10222,6 @@ As
 for ativado?
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -10272,7 +10262,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-decodificador
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -10796,13 +10786,6 @@ adequado
 ?
 \end_layout
 
-\begin_layout Section*
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -10833,7 +10816,9 @@ CIs: 2x 7400, 2x 7402
 \end_layout
 
 \begin_layout Itemize
-Fios rígidos para proto-board
+Fios rígidos para 
+\emph on
+protoboard
 \end_layout
 
 \end_inset
@@ -12472,6 +12457,18 @@ ohm}
  (lin.)
 \end_layout
 
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename anexos/schmitt-trigger-manuscrito.pdf
+	lyxscale 50
+	extra LaTeX "pages={8-11}, noautoscale"
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -12479,7 +12476,7 @@ ohm}
 
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -12655,6 +12652,29 @@ name "fig:Flip-flop-RS-NOR"
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade do funcionamento do flip-flop RS com portas 
+\emph on
+NOR
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-FF-RS-NOR"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -12944,29 +12964,6 @@ Erro lógico
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tabela Verdade do funcionamento do flip-flop RS com portas 
-\emph on
-NOR
-\emph default
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Tabela-Verdade-FF-RS-NOR"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -13237,6 +13234,29 @@ placement h
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade do funcionamento do flip-flop RS síncrono com portas 
+\emph on
+N
+\emph default
+AND.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-FF-RS-NAND-Sincr"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -13567,29 +13587,6 @@ Erro lógico
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tabela Verdade do funcionamento do flip-flop RS síncrono com portas 
-\emph on
-N
-\emph default
-AND.
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Tabela-Verdade-FF-RS-NAND-Sincr"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -15564,13 +15561,6 @@ espv[5]
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -15632,8 +15622,30 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch dg-motor-passos
+\begin_inset Branch dg-contador-assincrono
+status collapsed
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
 status open
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg-motor-passos
+status collapsed
 
 \begin_layout Chapter
 
@@ -19445,6 +19457,19 @@ Terminada esta etapa final, foi possível obter a seguinte conclusão:
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+===== ANALÓGICOS =====
 \end_layout
 
 \end_inset
