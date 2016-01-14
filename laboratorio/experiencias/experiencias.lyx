@@ -9,6 +9,9 @@
 % Para personalização das "seções" do documento.
 \usepackage{titlesec}
 
+%Formas de onda digitais.
+\usepackage{tikz-timing}
+
 % Unidades do SI.
 \usepackage{siunitx}
 
@@ -135,12 +138,12 @@ customHeadersFooters
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-logica-com-rele
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -155,12 +158,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -170,17 +173,17 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -190,12 +193,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-multiplex
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -260,6 +263,11 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-projeto
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch dg-contador-sincrono
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -458,7 +466,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch dg-logica-com-rele
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -2957,7 +2965,7 @@ Painel de relés.
 
 \begin_layout Standard
 \begin_inset Branch dg-tecnicas-soldagem
-status open
+status collapsed
 
 \begin_layout Chapter
 \begin_inset Quotes eld
@@ -3332,7 +3340,7 @@ Sugador
 
 \begin_layout Standard
 \begin_inset Branch dg-portas-logicas
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -4405,7 +4413,7 @@ proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-multiplex
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -8935,7 +8943,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-alarme-invasao
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -10262,7 +10270,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-decodificador
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -11646,7 +11654,7 @@ Lista de Material
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -12476,7 +12484,7 @@ ohm}
 
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -15601,14 +15609,846 @@ CI: 1x 7400
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-assincrono
-status collapsed
+status open
+
+\begin_layout Chapter
+Contadores Assíncronos e
+\begin_inset Newline newline
+\end_inset
+
+ Divisores de Frequência
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Standard
+\begin_layout Section
+Objetivos
+\end_layout
 
+\begin_layout Itemize
+Estudar os contadores assíncronos sob a ótica de divisor de frequência.
+\end_layout
+
+\begin_layout Itemize
+Implementar um divisor de frequência.
+\end_layout
+
+\begin_layout Section
+Contadores Assíncronos
+\end_layout
+
+\begin_layout Standard
+Os contadores assíncronos são construídos pela ligação em 
+\begin_inset Quotes eld
+\end_inset
+
+cascata
+\begin_inset Quotes erd
+\end_inset
+
+ de vários 
+\emph on
+flip-flops
+\emph default
+ do tipo JK, D ou T.
+ Ligar em 
+\begin_inset Quotes eld
+\end_inset
+
+cascata
+\begin_inset Quotes erd
+\end_inset
+
+ significa que o 
+\emph on
+clock
+\emph default
+ do 
+\emph on
+flip-flop
+\emph default
+ seguinte é obtido pela saída do 
+\emph on
+flip-flop 
+\emph default
+anterior.
+ O desenho da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-assíncrono-0-a-7"
+
+\end_inset
+
+ ilustra um exemplo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador assíncrono de 0 a 7 (em binário, de 
+\begin_inset Formula $000_{2}$
+\end_inset
+
+ a 
+\begin_inset Formula $111_{2}$
+\end_inset
+
+).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Contador-assíncrono-0-a-7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note-se que o gerador de sinal de 
+\emph on
+clock 
+\emph default
+é conectado no primeiro 
+\emph on
+flip-flop
+\emph default
+, cuja saída é o 
+\emph on
+bit
+\emph default
+ menos significativo (
+\series bold
+LSB
+\series default
+ -- 
+\emph on
+Least Significant Bit
+\emph default
+).
+ A saída do último 
+\emph on
+flip-flop
+\emph default
+ é o 
+\emph on
+bit
+\emph default
+ mais significativo (
+\series bold
+MSB
+\series default
+ -- 
+\emph on
+Most Significant Bit
+\emph default
+).
+\end_layout
+
+\begin_layout Section
+Divisores de Frequência
+\end_layout
+
+\begin_layout Standard
+Todo contador, independentemente de ser assíncrono ou síncrono, é, por consequeê
+ncia, um divisor de frequência.
+\end_layout
+
+\begin_layout Standard
+A divisão se observa ao comparar uma das saídas do contador com o sinal
+ de 
+\emph on
+clock 
+\emph default
+da entrada.
+ Assim, conforme o interesse da divisão a ser realizada, projeta-se o contador.
+\end_layout
+
+\begin_layout Standard
+Considerando-se o exemplo da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-assíncrono-0-a-7"
+
+\end_inset
+
+, tem-se a carta de tempos da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Carta-de-tempos-0-a-7"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carta de tempos para o contador da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-assíncrono-0-a-7"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Carta-de-tempos-0-a-7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na carta de tempos, percebe-seque 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+ possui metade da frequência do 
+\emph on
+clock
+\emph default
+, 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ possui metade da frequência de 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+ e 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ metade da de 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+.
+ Ainda, 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ possui 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+ da frequência do 
+\emph on
+clock
+\emph default
+ e 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+.
+ Portanto, de acordo com a saída escolhida, tem-se disponível uma determinada
+ divisão: 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+ ou 
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Num caso mais genério, pode-se ter um contador não múltiplo da potência
+ de 2, como o da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-de-0-a-4"
+
+\end_inset
+
+, cuja carta de tempos está na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Carta-de-tempos-0-a-4"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador de 0 a 4.
+ Note-se que, ao ocorrer o avanço para o estado 5, rapidamente o contador
+ retorna a 0.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Contador-de-0-a-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carta de tempos para o contador da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-de-0-a-4"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Carta-de-tempos-0-a-4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparando-se 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $ck$
+\end_inset
+
+, na carta de tempos, nitidamente observa-se a necessidade de 5 pulsos de
+ 
+\begin_inset Formula $ck$
+\end_inset
+
+ para 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ dar um pulso.
+ Em outras palavras, há 5 períodos de 
+\begin_inset Formula $ck$
+\end_inset
+
+ para 1 período de 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+.
+ Portanto, o contador ilustrado é um divisor de frequência por 5.
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Enumerate
+Montar o contador assíncrono de 0 a 7 do circuito a seguir.
+\end_layout
+
+\begin_layout Enumerate
+Ajustar a frequência do gerador de pulsos para 
+\begin_inset Formula $\SI{1}{\Hz}$
+\end_inset
+
+ e observar a contagem no decodificar BCD-7 Segmentos do Painel Digital.
+\end_layout
+
+\begin_layout Enumerate
+Ajustar a frequência do gerador de pulsos para 
+\begin_inset Formula $\SI{1}{\kilo\Hz}$
+\end_inset
+
+.
+ No osciloscópio, observar, em CH1, os pulsos do gerador e, em CH2, cada
+ uma das saídas do contador, preenchendo os campos abaixo.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{ck}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-0.3ex"
+width "1cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{Q_{0}}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-0.3ex"
+width "1cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{Q_{1}}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-0.3ex"
+width "1cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{Q_{2}}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-0.3ex"
+width "1cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dfrac{f_{Q_{0}}}{f_{ck}}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-0.3ex"
+width "1cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dfrac{f_{Q_{1}}}{f_{ck}}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-0.3ex"
+width "1cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dfrac{f_{Q_{1}}}{f_{ck}}=$
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-0.3ex"
+width "1cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Montar o contador assíncrono de 0 a 5 do circuito a seguir.
+\end_layout
+
+\begin_layout Enumerate
+Ajustar a frequência do gerador de pulsos para 
+\begin_inset Formula $\SI{1}{\kilo\Hz}$
+\end_inset
+
+.
+ Traçar a carta de tempos envolvendo 
+\begin_inset Formula $ck$
+\end_inset
+
+ e 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+.
+ Qual o valor da razão 
+\begin_inset Formula $\frac{f_{Q_{2}}}{f_{ck}}$
+\end_inset
+
+?
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{3}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & 12S 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& 12S 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
 \end_layout
 
 \end_inset
@@ -15621,8 +16461,62 @@ status open
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Painel Digital
+\end_layout
+
+\begin_layout Itemize
+Ociloscópio
+\end_layout
+
+\begin_layout Itemize
+Gerador de funções
+\end_layout
+
+\begin_layout Itemize
+2x cabos BNC-jacaré
+\end_layout
+
+\begin_layout Itemize
+1x cabo BNC-BNC
+\end_layout
+
+\begin_layout Itemize
+Caixa com fios
+\end_layout
+
+\begin_layout Itemize
+Alicate de corte
+\end_layout
+
+\begin_layout Itemize
+Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+Espátula
+\end_layout
+
+\begin_layout Itemize
+CIs: 1x 7400; 2x 7474
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-\begin_inset Branch dg-contador-assincrono
+\begin_inset Branch dg-contador-sincrono
 status collapsed
 
 \begin_layout Standard
@@ -28050,7 +28944,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status collapsed
+status open
 
 \begin_layout Chapter
 Lei de Ohm
