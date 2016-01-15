@@ -11,6 +11,8 @@
 
 %Formas de onda digitais.
 \usepackage{tikz-timing}
+\usetikztiminglibrary{clockarrows}
+\usetikztiminglibrary{overlays}
 
 % Unidades do SI.
 \usepackage{siunitx}
@@ -15691,6 +15693,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-assinc-0-a-7.png
+
+\end_inset
+
 
 \end_layout
 
@@ -15815,6 +15823,142 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/falling arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & [timing/c/rising arrows] 24{C} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_0}$	& C 11{2C} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_1}$	& 3C 5{4C} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& 7C 2{8C} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -15938,6 +16082,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-assinc-0-a-4.png
+
+\end_inset
+
 
 \end_layout
 
@@ -15978,6 +16128,143 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/falling arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & [timing/c/rising arrows] 24{C} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_0}$	& C 2{4{2C} O{;[gray][timing/slope=0] .1H .1L;}{.2L} 1.8L} 2C C
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_1}$	& 3C 2{2{4C} 2L} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& 7C 2C 8C 2C 5C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -16053,6 +16340,30 @@ Parte Experimental
 
 \begin_layout Enumerate
 Montar o contador assíncrono de 0 a 7 do circuito a seguir.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-assinc-0-a-7.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -16060,7 +16371,7 @@ Ajustar a frequência do gerador de pulsos para
 \begin_inset Formula $\SI{1}{\Hz}$
 \end_inset
 
- e observar a contagem no decodificar BCD-7 Segmentos do Painel Digital.
+ e observar a contagem no decodificador BCD--7 Segmentos do Painel Digital.
 \end_layout
 
 \begin_layout Enumerate
@@ -16071,28 +16382,14 @@ Ajustar a frequência do gerador de pulsos para
 .
  No osciloscópio, observar, em CH1, os pulsos do gerador e, em CH2, cada
  uma das saídas do contador, preenchendo os campos abaixo.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Phantom Phantom
+\begin_inset Float table
+placement H
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="4">
 <features rotate="0" tabularvalignment="middle">
@@ -16303,15 +16600,6 @@ height "1pt"
 \end_inset
 
 
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -16321,6 +16609,26 @@ status open
 
 \begin_layout Enumerate
 Montar o contador assíncrono de 0 a 5 do circuito a seguir.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-assinc-0-a-4.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -16423,7 +16731,9 @@ itshape,
 
 \begin_layout Plain Layout
 
-	${}^{ck}$	 & 12S 
+	$
+\backslash
+tiny{{}^{ck}}$	 & 12S 
 \backslash
 
 \backslash
@@ -16432,7 +16742,9 @@ itshape,
 
 \begin_layout Plain Layout
 
-	${}^{Q_2}$	& 12S 
+	$
+\backslash
+tiny{{}^{Q_2}}$	& 12S 
 \backslash
 
 \backslash
@@ -28944,7 +29256,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status open
+status collapsed
 
 \begin_layout Chapter
 Lei de Ohm
