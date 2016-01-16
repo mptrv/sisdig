@@ -2929,7 +2929,7 @@ Propor algumas lógicas a mais com relés?
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
@@ -3284,7 +3284,7 @@ nte agradável.
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
@@ -4375,7 +4375,7 @@ NAND
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
@@ -8907,7 +8907,7 @@ lógica programável
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
@@ -10238,7 +10238,7 @@ for ativado?
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
@@ -10802,7 +10802,7 @@ adequado
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
@@ -11398,7 +11398,7 @@ Medida de Período e de Frequência.
 \end_layout
 
 \begin_layout Section
-Parte Experimental.
+Parte Experimental
 \end_layout
 
 \begin_layout Standard
@@ -11646,7 +11646,7 @@ Desenho2.png
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \end_inset
@@ -11763,7 +11763,7 @@ http://pdf.datasheetcatalog.com/datasheets/270/109356_DS.pdf
 \end_layout
 
 \begin_layout Section
-Procedimentos Experimentais
+Parte Experimental
 \end_layout
 
 \begin_layout Subsection
@@ -13648,7 +13648,7 @@ Será elaborada a Tabela Verdade e realizada a comparação com o conteúdo
 \end_layout
 
 \begin_layout Section
-Parte Prática
+Parte Experimental
 \end_layout
 
 \begin_layout Subsection
@@ -15577,7 +15577,7 @@ espv[5]
 \end_layout
 
 \begin_layout Section*
-Lista de Material
+Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
@@ -15696,6 +15696,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cont-assinc-0-a-7.png
+	scale 75
 
 \end_inset
 
@@ -15784,8 +15785,8 @@ Divisores de Frequência
 \end_layout
 
 \begin_layout Standard
-Todo contador, independentemente de ser assíncrono ou síncrono, é, por consequeê
-ncia, um divisor de frequência.
+Todo contador, independentemente de ser assíncrono ou síncrono, é, por natureza,
+ um divisor de frequência.
 \end_layout
 
 \begin_layout Standard
@@ -15994,7 +15995,7 @@ name "fig:cont-assinc-Carta-de-tempos-0-a-7"
 \end_layout
 
 \begin_layout Standard
-Na carta de tempos, percebe-seque 
+Na carta de tempos, percebe-se que 
 \begin_inset Formula $Q_{0}$
 \end_inset
 
@@ -16085,6 +16086,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cont-assinc-0-a-4.png
+	scale 75
 
 \end_inset
 
@@ -16095,7 +16097,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Contador de 0 a 4.
+Contador de 0 a 4 (em binário, de 
+\begin_inset Formula $000_{2}$
+\end_inset
+
+ a 
+\begin_inset Formula $100_{2}$
+\end_inset
+
+).
  Note-se que, ao ocorrer o avanço para o estado 5, rapidamente o contador
  retorna a 0.
 \begin_inset CommandInset label
@@ -16280,6 +16290,17 @@ reference "fig:cont-assinc-Contador-de-0-a-4"
 \end_inset
 
 .
+ Perceba-se que 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+ apresenta um pulso com duração de alguns nanosegundos antes de ser zerado,
+ no quinto pulso de 
+\emph on
+clock
+\emph default
+.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:cont-assinc-Carta-de-tempos-0-a-4"
@@ -16309,29 +16330,37 @@ Comparando-se
 \end_inset
 
  e 
-\begin_inset Formula $ck$
-\end_inset
-
+\emph on
+clock
+\emph default
 , na carta de tempos, nitidamente observa-se a necessidade de 5 pulsos de
  
-\begin_inset Formula $ck$
-\end_inset
-
+\emph on
+clock
+\emph default
  para 
 \begin_inset Formula $Q_{2}$
 \end_inset
 
  dar um pulso.
  Em outras palavras, há 5 períodos de 
-\begin_inset Formula $ck$
-\end_inset
-
+\emph on
+clock
+\emph default
  para 1 período de 
 \begin_inset Formula $Q_{2}$
 \end_inset
 
 .
- Portanto, o contador ilustrado é um divisor de frequência por 5.
+ Portanto, o contador de 0 a 4 ilustrado é um divisor de frequência por
+ 5.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -16339,7 +16368,7 @@ Parte Experimental
 \end_layout
 
 \begin_layout Enumerate
-Montar o contador assíncrono de 0 a 7 do circuito a seguir.
+Montar o contador assíncrono de 0 a 7 do circuito a seguir:
 \begin_inset Float figure
 placement H
 wide false
@@ -16608,7 +16637,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Enumerate
-Montar o contador assíncrono de 0 a 5 do circuito a seguir.
+Montar o contador assíncrono de 0 a 4 do circuito a seguir.
 \begin_inset Float figure
 placement H
 wide false
@@ -16773,6 +16802,61 @@ end{tikztimingtable}
 
 \end_layout
 
+\begin_layout Section
+Desafio
+\end_layout
+
+\begin_layout Standard
+Na carta de tempos da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Carta-de-tempos-0-a-4"
+
+\end_inset
+
+, a saída 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ possui um ciclo de trabalho
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+O ciclo de trabalho é definido como 
+\begin_inset Formula $\tau=\dfrac{\Delta t_{H}}{T}$
+\end_inset
+
+, em que 
+\begin_inset Formula $\Delta t_{H}$
+\end_inset
+
+ é o tempo em nível alto e 
+\begin_inset Formula $T$
+\end_inset
+
+ é o período da forma de onda.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\tau<50\%$
+\end_inset
+
+.
+ Ou seja, o tempo em nível alto é menor que o tempo em nível baixo.
+ Pede-se projetar um divisor de frequência de 
+\begin_inset Formula $\nicefrac{1}{10}$
+\end_inset
+
+ de forma que a saída possua ciclo de trabalho 
+\begin_inset Formula $\tau=50\%$
+\end_inset
+
+.
+\end_layout
+
 \end_inset
 
 
@@ -16820,6 +16904,30 @@ Espátula
 
 \begin_layout Itemize
 CIs: 1x 7400; 2x 7474
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename anexos/7400.pdf
+	lyxscale 50
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename anexos/7474.pdf
+	lyxscale 50
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -17871,7 +17979,7 @@ Fios de ligação;
 \end_layout
 
 \begin_layout Section
-Parte experimental
+Parte Experimental
 \end_layout
 
 \begin_layout Standard
@@ -18876,6 +18984,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
 \end_layout
 
 \end_inset
