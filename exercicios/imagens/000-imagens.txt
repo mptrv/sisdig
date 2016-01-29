@@ -1,0 +1,2 @@
+As imagens do documento residirão aqui. Os fontes das imagens residirão em
+"imagens-fontes".

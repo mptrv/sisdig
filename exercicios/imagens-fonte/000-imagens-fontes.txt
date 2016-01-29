@@ -1,0 +1,2 @@
+As imagens-fontes, ou seja, fontes utilizadas para a GERAÇÃO da imagem final,
+residirão aqui. As imagens finais a serem utilizadas no documento residirão em "imagens".
