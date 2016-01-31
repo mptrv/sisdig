@@ -185,7 +185,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -10838,7 +10838,7 @@ protoboard
 
 \begin_layout Standard
 \begin_inset Branch dg-osciloscopio-i
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -10846,7 +10846,7 @@ status collapsed
 \begin_inset Quotes eld
 \end_inset
 
-Osciloscópio I
+Introdução ao Osciloscópio
 \begin_inset Quotes erd
 \end_inset
 
@@ -10860,11 +10860,11 @@ status open
 \begin_layout Section
 
 \series bold
-Objetivos.
+Objetivos
 \end_layout
 
 \begin_layout Itemize
-Familiarização com o Osciloscópio;
+Familiarização com o Osciloscópio.
 \end_layout
 
 \begin_layout Itemize
@@ -10873,32 +10873,22 @@ Observação de formas de onda, medidas de amplitude, intervalos de tempo,
 \end_layout
 
 \begin_layout Section
-Introdução Teórica.
+O Osciloscópio
 \end_layout
 
 \begin_layout Standard
 \align left
-O Osciloscópio é um instrumento de muita utilidade em medidas elétricas,
- servindo também para análise de qualquer grandeza física sempre que estas
- puderem ser convertidas em grandezas elétricas.
- Sua operação é baseada no deslocamento de um feixe de elétrons, o qual
- provoca um ponto luminoso numa tela frontal com uma escala.
- Como a massa de um elétron é extremamente pequena (
-\begin_inset Formula $M_{eo}=9,1*10^{-31}Kg$
-\end_inset
-
-) , pode-se deslocar este ponto com altíssima velocidade, possibilitando
- analisar-se sinais com variação extremamente rápida.
-\end_layout
-
-\begin_layout Subsection
-O tubo de Raios Catódicos.
+O osciloscópio é um instrumento que permite visualizar grandezas elétricas
+ em forma gráfica, numa tela.
+ Por isso, ele apresenta muita utilidade na análise de qualquer grandeza
+ física sempre que estas puderem ser convertidas em grandezas elétricas.
 \end_layout
 
 \begin_layout Standard
-O elemento básico de um osciloscópio é Tubo de Raios Catódicos e está ilustrado
- na fig.
- 1.
+Os primeiros osciloscópios construído foram os análogicos, mas atualmente
+ é muito comum o uso dos osciloscópios digitais.
+ A figura ...
+ ilustra um exemplo de cada tipo.
 \end_layout
 
 \begin_layout Standard
@@ -10908,14 +10898,184 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-analogico-minipa-mo-1251.jpg
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tubo de Raios Catódicos.
+Osciloscópio analógico.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-digital-tektronix-tds210.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Osciloscópio digital.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplos de osciloscópio.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Exemplos-de-osciloscópio"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste material, a abordagem será focada no 
+\series bold
+osciloscópio analógico
+\series default
+, mas todos os conceitos são também válidos para o 
+\series bold
+osciloscópio digital
+\series default
+, com exceção da forma como a imagem é denhada na tela.
+\end_layout
+
+\begin_layout Section
+O Osciloscópio Analógico
+\end_layout
+
+\begin_layout Standard
+\align left
+A operação do osciloscópio analógico é baseada no deslocamento de um feixe
+ de elétrons, o qual provoca um ponto luminoso numa tela frontal com uma
+ escala.
+ Como a massa de um elétron é extremamente pequena (
+\begin_inset Formula $m_{eo}=\SI{9,1e-31}{\kg}$
+\end_inset
+
+) , pode-se deslocar este ponto com altíssima velocidade, possibilitando
+ analisar-se sinais com variação extremamente rápida.
+\end_layout
+
+\begin_layout Subsection
+O Tubo de Raios Catódicos
+\end_layout
+
+\begin_layout Standard
+O elemento básico de um osciloscópio é o 
+\series bold
+Tubo de Raios Catódicos
+\series default
+, o qual encontra-se ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Tubo-de-Raios-catodicos"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-tubo-de-raios-catodicos.png
+	lyxscale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tubo de Raios Catódicos empregado num osciloscópio.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Tubo-de-Raios-catodicos"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -10930,28 +11090,99 @@ Tubo de Raios Catódicos.
 
 \begin_layout Standard
 Neste tubo, em cujo interior cria-se vácuo, um feixe de elétrons é emitido
- do Cátodo K devido ao aquecimento pelo Filamento F (efeito termiônico),
- acelerado e focalizado pelos Ânodos de Aceleração A1 e A2, e o Anel de
- Focalização AF.
+ do 
+\series bold
+Catodo K
+\series default
+ devido ao aquecimento pelo 
+\series bold
+Filamento F
+\series default
+ (efeito termiônico), acelerado pelos 
+\series bold
+Anodos de Aceleração 
+\begin_inset Formula $\mathbf{A_{1}}$
+\end_inset
+
+
+\series default
+ e 
+\series bold
+
+\begin_inset Formula $\mathbf{A_{2}}$
+\end_inset
+
+
+\series default
+ e focalizado pelo 
+\series bold
+Anel de Focalização AF
+\series default
+.
 \end_layout
 
 \begin_layout Standard
-A intensidade deste feixe é controlada pela Grade de Controle G situada
- entre o Cátodo K e o primeiro ânodo de Aceleração A1.
+A intensidade deste feixe é controlada pela 
+\series bold
+Grade de Controle G
+\series default
+ situada entre o 
+\series bold
+Catodo K
+\series default
+ e o primeiro 
+\series bold
+Anodo de Aceleração 
+\series default
+
+\begin_inset Formula $\mathbf{A_{1}}$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-Após o Segundo Ânodo de Aceleração A2, o feixe de elétrons passa por dois
- pares de Placas Defletoras que têm por finalidade desviar o feixe verticalmente
- – Pv1 e Pv2 – e horizontalmente – Ph1 e Ph2.
+Após o segundo 
+\series bold
+Anodo de Aceleração 
+\series default
+
+\begin_inset Formula $\mathbf{A_{2}}$
+\end_inset
+
+, o feixe de elétrons passa por dois pares de 
+\series bold
+Placas Defletoras
+\series default
+ que têm por finalidade desviar o feixe verticalmente -- 
+\begin_inset Formula $\mathbf{P_{v1}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathbf{P_{v2}}$
+\end_inset
+
+ -- e horizontalmente – 
+\begin_inset Formula $\mathbf{P_{h1}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathbf{P_{h2}}$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
 Próximo à tela, existe um revestimento de grafite depositado no vidro, que
  tem por função promover uma pós aceleração no feixe, correspondendo ao
- terminal Ânodo de Alta tensão.
+ terminal 
+\series bold
+Anodo de Alta Tensão
+\series default
+ (diversas vezes, referenciado como MAT -- Muita Alta Tensão).
 \end_layout
 
 \begin_layout Standard
@@ -10962,41 +11193,88 @@ Quando o feixe de elétrons incide na tela, provoca o aparecimento de um
 \end_layout
 
 \begin_layout Standard
-Um ponto fundamental a ser observado é que dentro de certos limites, o desvio
- do ponto luminoso na tela do tubo é proporcional à tensão aplicada entre
- as placas.
- Isto quer dizer que se y representar o desvio do ponto luminoso na tela
- do tubo, e Vy a tensão aplicada entre as placas Pv1 e Pv2, então vale a
- relação:
+Um ponto fundamental a ser observado é que, dentro de certos limites, o
+ desvio do ponto luminoso na tela do tubo é proporcional à tensão aplicada
+ entre as placas.
+ Isto quer dizer que se 
+\begin_inset Formula $y$
+\end_inset
+
+ representar o desvio vertical do ponto luminoso na tela do tubo e 
+\begin_inset Formula $V_{y}$
+\end_inset
+
+ for a tensão aplicada entre as placas 
+\begin_inset Formula $\mathbf{P_{v1}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathbf{P_{v2}}$
+\end_inset
+
+, então vale a relação:
 \end_layout
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $y=K_{y}*V_{y}$
+\begin_inset Formula $y=K_{y}\cdot V_{y}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Analogamente, se x é a deflexão no sentido horizontal e Vx a tensão aplicada
- entre as placas Ph1 e Ph2, tem-se que: 
+\noindent
+em que 
+\begin_inset Formula $K_{y}$
+\end_inset
+
+ é uma constante de proporcionalidade.
+\end_layout
+
+\begin_layout Standard
+Analogamente, se 
+\begin_inset Formula $x$
+\end_inset
+
+ for a deflexão no sentido horizontal e 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ for a tensão aplicada entre as placas 
+\begin_inset Formula $\mathbf{P_{h1}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathbf{P_{h2}}$
+\end_inset
+
+, tem-se: 
 \end_layout
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $x=K_{x}*V_{x}$
+\begin_inset Formula $x=K_{x}\cdot V_{x}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\noindent
+em que 
+\begin_inset Formula $K_{x}$
+\end_inset
+
+ é uma constante de proporcionalidade.
 \end_layout
 
 \begin_layout Subsection
-Diagrama de Blocos de um Osciloscópio Básico e Princípio de Funcionamento
+Diagrama em Blocos de um Osciloscópio Básico e Princípio de Funcionamento
 \end_layout
 
 \begin_layout Standard
-Este Diagrama de Blocos está ilustrado na fig.
+O Diagrama em Blocos de um osciloscópio está ilustrado na fig.
  2.
 \end_layout
 
@@ -11007,14 +11285,29 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-.
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-diagrama-em-blocos.png
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de Blocos de um Osciloscópio Básico
+Diagrama em Blocos de um osciloscópio básico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Diagrama-em-Blocos"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11028,26 +11321,26 @@ Diagrama de Blocos de um Osciloscópio Básico
 \end_layout
 
 \begin_layout Standard
-Supondo-se a aplicação na Entrada Vertical um sinal 
-\begin_inset Formula $V_{v}=V_{v}(t)$
+Suponha-se a aplicação, na Entrada Vertical, de um sinal 
+\begin_inset Formula $V_{v}(t)$
 \end_inset
 
- variável com o tempo, e um sinal nulo na Entrada Horizontal.
+ variável com o tempo e um sinal nulo na Entrada Horizontal.
  O sinal vertical passa pelo bloco Atenuadores Verticais, sendo então amplificad
 o pelo Amplificador Vertical e aplicado às Placas de Deflexão Vertical 
 \begin_inset Formula $P_{v1}$
 \end_inset
 
-e 
+ e 
 \begin_inset Formula $P_{v2}$
 \end_inset
 
  .
  Se este sinal vertical possuir como forma de onda uma senóide 
-\begin_inset Formula $V_{v}=V_{m}sen(2f\pi t)$
+\begin_inset Formula $V_{v}(t)=V_{m}\sin(2\pi f\cdot t)$
 \end_inset
 
- como ilustrado na fig.
+, como ilustrado na fig.
  3 (a), o feixe eletrônico será defletido para cima e para baixo.
  Para uma frequência f baixa (da ordem de Hz), observa-se o ponto luminoso
  deslocando-se para cima e para baixo.
@@ -15611,7 +15904,7 @@ CI: 1x 7400
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-assincrono
-status open
+status collapsed
 
 \begin_layout Chapter
 Contadores Assíncronos e
