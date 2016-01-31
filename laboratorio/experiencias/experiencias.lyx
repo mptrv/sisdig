@@ -11322,7 +11322,7 @@ name "fig:osc-Diagrama-em-Blocos"
 
 \begin_layout Standard
 Suponha-se a aplicação, na Entrada Vertical, de um sinal 
-\begin_inset Formula $V_{v}(t)$
+\begin_inset Formula $v_{v}(t)$
 \end_inset
 
  variável com o tempo e um sinal nulo na Entrada Horizontal.
@@ -11337,50 +11337,32 @@ o pelo Amplificador Vertical e aplicado às Placas de Deflexão Vertical
 
  .
  Se este sinal vertical possuir como forma de onda uma senóide 
-\begin_inset Formula $V_{v}(t)=V_{m}\sin(2\pi f\cdot t)$
+\begin_inset Formula $v_{v}(t)=V_{m}\sin(2\pi f\cdot t)$
 \end_inset
 
-, como ilustrado na fig.
- 3 (a), o feixe eletrônico será defletido para cima e para baixo.
- Para uma frequência f baixa (da ordem de Hz), observa-se o ponto luminoso
- deslocando-se para cima e para baixo.
- Mas para o caso de frequência alta (da ordem de KHz), devido a rapidez
- do movimento e à persistência da Iuminosidade na tela, aparecerá uma linha
- vertical contínua.
- 
-\end_layout
+, como ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Forma-de-onda-senoidal"
 
-\begin_layout Standard
-Contudo, se for aplicado à Entrada Horizontal uma tensão tipo Dente de Serra
- como a ilustrada na fig.
- 3.
- (b), o movimento resultante do feixe será uma deflexão senoidal na vertical
- composto com um deslocamento com velocidade constante na horizontal devido
- à presença da tensão tipo dente de serra.
- 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-A tensão dente de serra pode ser gerada internamente no osciloscópio pelo
- bloco Gerador de Varredura e aplicada ao Amplificador Horizontal.
- 
-\end_layout
+, o feixe eletrônico será defletido para cima e para baixo.
+ Para uma frequência 
+\begin_inset Formula $f$
+\end_inset
 
-\begin_layout Standard
-A composição dos movimentos resultará na figura de uma senóide na tela do
- Tubo de Raios Catódicos, possibilitando a visualização da forma de onda
- do sinal aplicado na Entrada Vertical (no caso, um sinal senoidal).
- 
-\end_layout
+ baixa (da ordem de 
+\begin_inset Formula $\si{\Hz}$
+\end_inset
 
-\begin_layout Standard
-Para obter-se uma figura estacionária na tela, deve-se ter sincronismo entre
- o sinal a ser analisado (o aplicado na entrada vertical) e o dente de serra.
- Uma maneira de se efetuar este sincronismo seria variar-se a frequência
- do dente de serra de modo a torná-la submúltipla da frequência do sinal
- analisado, até a figura para na tela.
- Porém, ao variar-se a frequência do dente de serra, seria perdida a calibração
- no tempo para o eixo horizontal.
+), observa-se o ponto luminoso deslocando-se para cima e para baixo.
+ Mas, para o caso de frequência alta (da ordem de 
+\begin_inset Formula $\si{\kHz}$
+\end_inset
+
+), devido à rapidez do movimento e à persistência da luminosidade na tela,
+ aparecerá uma linha vertical contínua.
  
 \end_layout
 
@@ -11391,11 +11373,30 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-senoide.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Formas de Onda tipo Senoidal e Tipo Dente de Serra
-\end_layout
+Forma de onda senoidal.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Forma-de-onda-senoidal"
 
 \end_inset
 
@@ -11405,6 +11406,168 @@ Formas de Onda tipo Senoidal e Tipo Dente de Serra
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-dente-de-serra.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Forma de onda dente de serra.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Forma-de-onda-dente-de-serra"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Formas de onda tipo senoidal e tipo dente de serra.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Formas-de-onda"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Contudo, se for aplicado à Entrada Horizontal uma tensão tipo Dente de Serra,
+ como a ilustrada na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Forma-de-onda-dente-de-serra"
+
+\end_inset
+
+, o movimento resultante do feixe será uma deflexão senoidal na vertical
+ composto com o deslocamento a velocidade constante na horizontal, devido
+ à presença da tensão tipo dente de serra.
+ Esta composição é ilustrada na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Composição-senoide-dente-de-serra"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-composicao-senoide-dente-de-serra.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Composição entre o sinal senoidal, aplicado na Entrada Vertical, e o dente
+ de serra, aplicado à Entrada Horizontal.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Composição-senoide-dente-de-serra"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A tensão dente de serra pode ser gerada internamente no osciloscópio pelo
+ bloco Gerador de Varredura e aplicada ao Amplificador Horizontal.
+\end_layout
+
+\begin_layout Standard
+A composição dos movimentos resultará na figura de uma senóide na tela do
+ Tubo de Raios Catódicos, possibilitando a visualização da forma de onda
+ do sinal aplicado na Entrada Vertical (no caso, um sinal senoidal).
+ 
+\end_layout
+
+\begin_layout Standard
+Para obter-se uma figura estacionária na tela, deve-se ter 
+\series bold
+sincronismo
+\series default
+ entre o sinal a ser analisado (o aplicado na entrada vertical) e o dente
+ de serra.
+ Uma maneira de se efetuar este sincronismo seria variar-se a frequência
+ do dente de serra de modo a torná-la submúltipla da frequência do sinal
+ analisado, até a figura parar na tela.
+ Porém, ao variar-se a frequência do dente de serra, seria perdida a calibração
+ no tempo para o eixo horizontal.
+ 
 \end_layout
 
 \begin_layout Standard
