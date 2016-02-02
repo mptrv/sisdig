@@ -170,7 +170,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -11567,39 +11567,22 @@ sincronismo
  analisado, até a figura parar na tela.
  Porém, ao variar-se a frequência do dente de serra, seria perdida a calibração
  no tempo para o eixo horizontal.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 Com o objetivo de manter a figura estacionária na tela e também manter calibrada
  a varredura horizontal, que está relacionada com a variação do dente de
- serra com o tempo, os osciloscópios dispõe de um Circuito de Disparo, ou
- Circuito de trigger, que dispara o dente de serra automaticamente, sempre
- que o sinal analisado cruzar um determinado nível, como ilustrado na fig.
- 5.
+ serra com o tempo, os osciloscópios dispõem de um Circuito de Disparo,
+ ou Circuito de Trigger, que dispara o dente de serra, automaticamente,
+ sempre que o sinal analisado cruzar um determinado nível, como ilustrado
+ na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Exemplo-de-disparo-do-trigger"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -11607,6 +11590,17 @@ Com o objetivo de manter a figura estacionária na tela e também manter calibra
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-exemplo-disparo-trigger.png
+	lyxscale 25
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -11614,6 +11608,13 @@ status open
 \begin_layout Plain Layout
 Exemplo de disparo de varredura por meio do Circuito de Trigger e imagem
  do sinal na tela do osciloscópio.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Exemplo-de-disparo-do-trigger"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11627,29 +11628,43 @@ Exemplo de disparo de varredura por meio do Circuito de Trigger e imagem
 \end_layout
 
 \begin_layout Standard
-Com o objetivo de evitar um risco na rela quando do retorno do feixe para
+Com o objetivo de evitar um risco na tela quando do retorno do feixe para
  a extremidade esquerda da tela, aguardando um novo pulso de disparo da
- Tensão tipo Dente de Serra, o feixe é “apagado” neste intervalo de tempo.
- Nos osciloscópios, é comum ter-se a possibilidade de disparar o sincronismo
+ tensão tipo Dente de Serra, o feixe é “apagado” neste intervalo de tempo.
+\end_layout
+
+\begin_layout Standard
+Nos osciloscópios, é comum ter-se a possibilidade de disparar o sincronismo
  a partir: 
 \end_layout
 
 \begin_layout Itemize
-Do sinal sendo analisado 
+do sinal em análise
 \end_layout
 
 \begin_layout Itemize
-De um sinal de sincronismo externo 
+de um sinal de sincronismo externo 
 \end_layout
 
 \begin_layout Itemize
-Da rede elétrica
+da rede elétrica
 \end_layout
 
 \begin_layout Standard
 Para os dois primeiros casos, pode-se ainda ajustar o Nível de Trigger,
- por meio de um potenciômetro(LEVEL).
+ por meio de um potenciômetro (LEVEL).
  
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Painel-elementar-de-osciloscopio"
+
+\end_inset
+
+ ilustra o painel de um osciloscópio com tubo de raios catódicos de 2 canais.
 \end_layout
 
 \begin_layout Standard
@@ -11659,10 +11674,28 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-painel-elementar.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Imagem de um osciloscópio
+Painel elementar de um osciloscópio.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Painel-elementar-de-osciloscopio"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11676,9 +11709,8 @@ Imagem de um osciloscópio
 \end_layout
 
 \begin_layout Standard
-Dentre os diversos controles presentes neste painel, convém observar neste
- painel, os seguintes ajustes e entradas.
- 
+Dentre os diversos controles presentes neste painel, convém observar os
+ seguintes ajustes e entradas:
 \end_layout
 
 \begin_layout Enumerate
@@ -11729,9 +11761,13 @@ A escala vertical geralmente é calibrada em volts por divisão (V/div) e
 \begin_layout Standard
 As posições vertical e horizontal da forma de onda podem ser ajustadas sem
  afetar o valor da amplitude.
- Porém, é importante que o ajuste fino (vernier) do controle de sensibilidade
- (V/div) esteja na posição calibrada (CAL).
  
+\series bold
+Porém, é importante que o ajuste fino (
+\emph on
+vernier
+\emph default
+) do controle de sensibilidade (V/div) esteja na posição calibrada (CAL).
 \end_layout
 
 \begin_layout Standard
@@ -11739,6 +11775,14 @@ Para esta medida, o Valor de Pico da forma de onda é medido em relação à
  linha central da tela, sendo necessário que o feixe tenha sido previamente
  centrado para que este valor corresponda ao centro da forma de onda.
  Caso contrário, será mais confiável fazer a medida do Valor Pico a Pico.
+ Observar a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Medidas-de-Tensão"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -11748,14 +11792,27 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-.
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-medida-de-tensao.png
+	lyxscale 30
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Medidas de Tensão de Pico e de Tensão Pico a Pico.
+Medidas de tensão de pico e de tensão pico a pico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Medidas-de-Tensão"
+
+\end_inset
+
  
 \end_layout
 
@@ -11772,7 +11829,6 @@ Medidas de Tensão de Pico e de Tensão Pico a Pico.
 \begin_layout Standard
 Observar a existência de subdivisões nos eixos centrais da tela, as quais
  tem a função de melhorar e facilitar as medidas.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -11781,9 +11837,20 @@ Medidas de Intervalos de Tempo
 
 \begin_layout Standard
 Usando o valor das bases de tempo do dente de serra do Gerador de Varredura
- do osciloscópio e a escala horizontal da tela, podemos efetuar a medida
- direta de intervalos de tempo, desde que o ajuste fino da chave de tempo
- esteja na posição calibrada(CAL).
+ do osciloscópio e a escala horizontal da tela pode-se efetuar a medida
+ direta de intervalos de tempo, 
+\series bold
+desde que o ajuste fino da chave de tempo esteja na posição calibrada (CAL).
+
+\series default
+ Observar a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Medida-de-intervalo-de-tempo"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -11793,14 +11860,33 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-medida-de-intervalo-de-tempo.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Medida de intervalo de Tempo, neste caso, da duração 
+Medida de intervalo de tempo.
+ No caso ilustrado, da duração 
 \begin_inset Formula $\varDelta t$
 \end_inset
 
  de um pulso.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Medida-de-intervalo-de-tempo"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11814,17 +11900,29 @@ Medida de intervalo de Tempo, neste caso, da duração
 \end_layout
 
 \begin_layout Subsubsection
-Medidas de Frequência.
+Medidas de Frequência
 \end_layout
 
 \begin_layout Standard
 Usando as escalas calibradas de tempo do osciloscópio também é possível
  calcular a frequência para o caso de sinais periódicos.
  Para tanto é necessário usar a escala de varredura horizontal calibrada
- (vernier na posição CAL) de modo a medir o tempo gasto para completar um
- ciclo do sinal observado (um período) e então calcular a frequência pela
- relação 
+ (
+\emph on
+vernier
+\emph default
+ na posição CAL) de modo a medir o tempo gasto para completar um ciclo do
+ sinal observado (um período) e então calcular a frequência pela relação
+ 
 \begin_inset Formula $f=\frac{1}{T}$
+\end_inset
+
+.
+ Observar a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Medida-de-Período-e-frequencia"
+
 \end_inset
 
 .
@@ -11837,10 +11935,28 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-medida-de-periodo.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Medida de Período e de Frequência.
+Medida de período e de frequência.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:osc-Medida-de-Período-e-frequencia"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11857,87 +11973,162 @@ Medida de Período e de Frequência.
 Parte Experimental
 \end_layout
 
-\begin_layout Standard
-3.1 Com o acompanhamento do professor, ligar o Osciloscópio no modo X-Y.
+\begin_layout Subsection
+Identificação de Controles
+\end_layout
+
+\begin_layout Enumerate
+Com o acompanhamento do professor, ligar o Osciloscópio no modo X-Y.
  Após o aquecimento do filamento, deverá aparecer um ponto luminoso na tela.
- 
 \end_layout
 
-\begin_layout Standard
-Verificar a função dos controles de luminosidade (Intensity), foco (FOCUS),
- Posição Horizontal e Vertical.
- Procurar verificar as funções dos elementos do diagrama de blocos.
- 
+\begin_layout Enumerate
+Verificar a função dos controles de luminosidade (
+\emph on
+Intensity
+\emph default
+), foco (
+\emph on
+Focus
+\emph default
+), posição horizontal e vertical.
+ Procurar associar as funções aos elementos do diagrama em blocos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Posicionar então o ponto luminoso no centro da tela.
- 
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quotation
 
 \series bold
+\size large
+\emph on
 Obs.: Não deixar o ponto luminoso com brilho excessivo, pois poderá danificar
  a camada de composto de fósforo no interior do tubo!
 \end_layout
 
-\begin_layout Standard
-3.2 Localizar a Entrada Horizontal e aplicar a esta um sinal senoidal de
- 1Hz proveniente de um Gerador Senoidal (que pode ser um Gerador de Áudio
- ou de Funções).
- 
+\end_deeper
+\begin_layout Subsection
+Deslocamento do Feixe na Horizontal
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:osc-Deslocamento-do-Feixe-horizontal"
+
+\end_inset
+
+
 \end_layout
 
+\begin_layout Enumerate
+Localizar a Entrada Horizontal e aplicar a esta um sinal senoidal de 
+\begin_inset Formula $\SI{1}{\Hz}$
+\end_inset
+
+ proveniente de um Gerador Senoidal (que pode ser um Gerador de Áudio ou
+ de Funções).
+\end_layout
+
+\begin_layout Enumerate
+Posicionar a chave de entrada (indicada por DC-GND-AC) em DC.
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-A chave de entrada (indicada por DC-GND-AC) deve estar em DC, pois em GND,
- o sinal de entrada não é aplicado à entrada, sendo aplicado a esta 0V,
- e em AC, estará sendo colocado um capacitor de desacoplamento DC em série
- com sinal de entrada, o que acarretaria numa distorção do mesmo.
- Variar a escala deste canal por meio da chave seletora V/div correspondente,
+Em GND, o sinal de entrada não é aplicado à entrada, sendo aplicado a esta
+ 0V e, em AC, será colocado um capacitor de desacoplamento DC em série com
+ sinal de entrada, o que acarretaria numa distorção do mesmo.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Variar a escala deste canal por meio da chave seletora V/div correspondente,
  observando o efeito deste controle.
  
 \end_layout
 
-\begin_layout Standard
-Tentar entender o que está ocorrendo através do Diagrama de Blocos.
+\begin_layout Enumerate
+Tentar entender o que está ocorrendo através do Diagrama em Blocos.
 \end_layout
 
-\begin_layout Standard
-Ajustar a tensão de pico da senóide em 1V por meio do osciloscópio!
+\begin_layout Enumerate
+Ajustar a tensão de pico da senóide em 
+\begin_inset Formula $\SI{1}{\V}$
+\end_inset
+
+, por meio do osciloscópio!
 \end_layout
 
-\begin_layout Standard
-3.3 Repetir os procedimentos do item 2 para o Canal Vertical.
+\begin_layout Subsection
+Deslocamento do Feixe na Vertical
 \end_layout
 
-\begin_layout Standard
-3.4 Mantendo ainda o Gerador Senoidal com frequência 
-\begin_inset Formula $f=10Hz$
+\begin_layout Enumerate
+Repetir os procedimentos da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sub:osc-Deslocamento-do-Feixe-horizontal"
+
+\end_inset
+
+ para o Canal Vertical.
+\end_layout
+
+\begin_layout Subsection
+Gerador de Varredura
+\end_layout
+
+\begin_layout Enumerate
+Mantendo ainda o gerador de funções com a frequência 
+\begin_inset Formula $\SI{1}{\Hz}$
 \end_inset
 
  ligado ao vertical, colocar a Chave Seletora de Varredura SWEEP/DIV em
- uma das posições ms/div, utilizando sincronismo interno (TRIGGER SOURCE
- = CH1).
- Agora, está sendo aplicado a tensão dente de serra proveniente do Gerador
- de Varredura, interno ao osciloscópio.
+ uma das posições 
+\begin_inset Formula $\si{\ms\per\text{{div}}}$
+\end_inset
+
+, utilizando sincronismo interno (TRIGGER SOURCE 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ CH1).
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+Agora, é aplicada a tensão dente de serra proveniente do Gerador de Varredura
+ interno ao osciloscópio.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Anotar a forma de onda na tela a seguir e medir a tensão pico a pico do
  sinal senoidal, utilizando-se a escala da tela e o valor VOLTS/DIV da escala
  do seletor do canal CH1.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Desenho.png
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-grade.png
+	lyxscale 30
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -11945,35 +12136,56 @@ Desenho.png
 
 \end_layout
 
-\begin_layout Standard
-3.5.
- Aumentar gradualmente a frequência do Gerador Senoidal e observar o que
+\begin_layout Enumerate
+Aumentar gradualmente a frequência do Gerador Senoidal e observar o que
  ocorre com o ponto luminoso.
- 
 \end_layout
 
-\begin_layout Standard
-3.6 Ajustar a frequência do Gerador Senoidal para 
-\begin_inset Formula $f=1KHz$
+\begin_layout Subsection
+Observação de Sinal
+\end_layout
+
+\begin_layout Enumerate
+Ajustar a frequência do gerador senoidal para 
+\begin_inset Formula $\SI{1}{\kHz}$
 \end_inset
 
 .
- Ajustar a chave Seletora de Varredura SWEEP/DIV e o Nível de Trigger (LEVEL)
+\end_layout
+
+\begin_layout Enumerate
+Ajustar a chave Seletora de Varredura SWEEP/DIV e o Nível de Trigger (LEVEL)
  de modo a obter uma senóide parada na tela.
- Observar o que ocorre quando comuta-se a chave SLOPE +/- e quando variar-se
- o Nível de Trigger(LEVEL).
- Anotar a forma de onda na tela a seguir.
- 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+Observar o que ocorre quando comuta-se a chave SLOPE 
+\begin_inset Formula $+/-$
+\end_inset
+
+ e quando varia-se o Nível de Trigger (LEVEL).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Anotar a forma de onda na tela a seguir.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
-Desenho.png
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-grade.png
+	lyxscale 30
+	width 90text%
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -11981,24 +12193,38 @@ Desenho.png
 
 \end_layout
 
-\begin_layout Standard
-3.7 Mudar a fonte de sincronismo para Rede(LINE), e ajustar a frequência
- do Gerador Senoidal para 
-\begin_inset Formula $f=60Hz$
+\begin_layout Subsection
+Efeito do 
+\emph on
+Trigger
+\end_layout
+
+\begin_layout Enumerate
+Mudar a fonte de sincronismo (
+\emph on
+Trigger
+\emph default
+)
+\emph on
+ 
+\emph default
+para Rede (LINE) e ajustar a frequência do gerador senoidal para 
+\begin_inset Formula $\SI{60}{\Hz}$
 \end_inset
 
 .
- Explicar por que não se consegue parar a figura na tela.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_layout Enumerate
+Explicar por que não se consegue parar a figura na tela.
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-linhas.png 
+
+
+\backslash
+caixaresp
 \end_layout
 
 \end_inset
@@ -12006,25 +12232,42 @@ linhas.png
 
 \end_layout
 
-\begin_layout Standard
-3.8.
- Desligar a entrada vertical do osciloscópio do Gerador Senoidal e ligar
+\begin_layout Subsection
+(Extra) Observação da Tensão da Rede Elétrica
+\end_layout
+
+\begin_layout Enumerate
+Desligar a entrada vertical do osciloscópio do gerador senoidal e ligar
  ao secundário de um transformador fornecido, conectando o primário deste
  à rede elétrica.
- A tensão apresentada pelo secundário deste transformador corresponde à
- da rede elétrica reduzida por um fator de transformação.
- Anotar a forma de onda da tensão do secundário deste transformador, que
- corresponde aproximadamente à forma de onda da rede elétrica.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+A tensão apresentada pelo secundário deste transformador corresponde à da
+ rede elétrica reduzida por um fator de transformação.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Anotar a forma de onda da tensão do secundário deste transformador, que
+ corresponde, aproximadamente, à forma de onda da rede elétrica.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-Desenho.png
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-grade-2.png
+	lyxscale 30
+	width 90text%
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -12032,25 +12275,39 @@ Desenho.png
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Medir o período da tensão exibida e calcular a frequência da rede, cujo
  valor nominal é 
-\begin_inset Formula $f=60Hz$
+\begin_inset Formula $\SI{60}{\Hz}$
 \end_inset
 
 .
- Aproveitar para medir os valores de pico e de pico a pico da tensão do
- secundário deste transformador.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-linhas.png 
+
+
+\backslash
+caixaresp[4]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Aproveitar para medir os valores de pico e de pico a pico da tensão do secundári
+o deste transformador.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[4]
 \end_layout
 
 \end_inset
@@ -12059,28 +12316,19 @@ linhas.png
 \end_layout
 
 \begin_layout Section
-Questões.
+Questões
 \end_layout
 
-\begin_layout Standard
-4.1.
- O osciloscópio pode ser empregado para medir tensões constantes? Como?
-\end_layout
-
-\begin_layout Standard
-4.2.
- Como seria a figura vista na tela se não houvesse o apagamento de retorno?
- Exemplifique com a figura de uma tela para o caso de um sinal senoidal.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+\begin_layout Enumerate
+O osciloscópio pode ser empregado para medir tensões constantes? Como?
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Desenho2.png
+
+
+\backslash
+caixaresp
 \end_layout
 
 \end_inset
@@ -12088,12 +12336,50 @@ Desenho2.png
 
 \end_layout
 
-\begin_layout Standard
-4.3.
- Se desejar-se observar uma forma de onda de frequência baixa, ajusta-se
+\begin_layout Enumerate
+Como seria a figura vista na tela se não houvesse o apagamento de retorno?
+ Exemplifique com a figura de uma tela para o caso de um sinal senoidal.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio-grade.png
+	lyxscale 30
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Se desejar-se observar uma forma de onda de frequência baixa, ajusta-se
  a varredura para um tempo de varredura reduzido também.
  Nota-se que a figura na tela cintila.
- Qual a explicação para este fenômeno? 
+ Qual a explicação para este fenômeno?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -12103,6 +12389,26 @@ Desenho2.png
 
 \begin_layout Section*
 Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Osciloscópio
+\end_layout
+
+\begin_layout Itemize
+Gerador de funções
+\end_layout
+
+\begin_layout Itemize
+3x Cabos BNC-banana
+\end_layout
+
+\begin_layout Itemize
+1x Cabo BNC-BNC
+\end_layout
+
+\begin_layout Itemize
+1x Trafo 127V/9V
 \end_layout
 
 \end_inset
