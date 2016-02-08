@@ -184,7 +184,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -204,7 +204,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-motor-passos
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -10852,7 +10852,7 @@ protoboard
 
 \begin_layout Standard
 \begin_inset Branch dg-osciloscopio-i
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -10869,7 +10869,7 @@ Introdução ao Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 
@@ -17770,7 +17770,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-motor-passos
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -17778,7 +17778,7 @@ status collapsed
 \begin_inset Quotes eld
 \end_inset
 
-Motor de Passos
+Motor de Passo
 \begin_inset Quotes erd
 \end_inset
 
@@ -17794,7 +17794,7 @@ Objetivos
 \end_layout
 
 \begin_layout Itemize
-Familiarização com o dispositivo
+Familiarização com o motor de passo.
 \end_layout
 
 \begin_layout Itemize
@@ -17806,37 +17806,44 @@ Introdução teórica
 \end_layout
 
 \begin_layout Subsection
-Motores de passo
+Motores de Passo
 \end_layout
 
 \begin_layout Standard
 O motor de passo é um tipo especial de motor síncrono polifásico otimizado
  para aplicações que envolvam controle de posição em malha aberta.
- Normalmente ele é acionado por um circuito digital que fornece a alimentação
- das diversas fases na sequencia adequada.
- A cada combinação das possíveis excitações para as diversas fases do estator
- correspondente a um passo, ou seja, uma posição angular estável e bem definida
- para o rotor, sendo que o passo angular é determinado pelo numero de polos
- presentes no estator e no rotor.
+ Normalmente, ele é acionado por um circuito digital que fornece a alimentação
+ das diversas fases na sequência adequada.
+ Cada combinação das possíveis excitações para as diversas fases do estator
+ corresponde a um passo, ou seja, uma posição angular estável e bem definida
+ para o rotor.
+ O passo angular é determinado pelo número de polos presentes no estator
+ e no rotor.
  Os motores típicos têm enrolamentos trifásicos ou tetrafásicos e o rotor
- pode ser do tipo de relutância variável ou imã permanente, usualmente colocado
- na posição axial com placas ferromagnéticas finais para formarem os polos.
+ pode ser do tipo relutância variável ou imã permanente, usualmente colocado
+ na posição axial com placas ferromagnéticas finais para formarem os polos,
+ conforme ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mdp-Rotor"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float figure
-placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
-Registradores De Deslocamento
 \begin_inset Graphics
 	filename imagens/exp10-motor_passo_1.png
-	scale 40
+	lyxscale 60
+	width 60text%
 	clip
 	rotateOrigin center
 
@@ -17849,7 +17856,14 @@ Registradores De Deslocamento
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rotor de um motor de passos com imã permanente axial
+Rotor de um motor de passos com imã permanente axial.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mdp-Rotor"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -17863,15 +17877,20 @@ Rotor de um motor de passos com imã permanente axial
 \end_layout
 
 \begin_layout Standard
-Tomando o motor tetrafásico esquematizado pela Fig 2, pode-se determinar
- a sequencia de acionamento para cada uma das fases.
+Tomando o motor tetrafásico esquematizado pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mdp-Esquema-construtivo"
+
+\end_inset
+
+, pode-se determinar a sequência de acionamento para cada uma das fases.
  
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -17880,7 +17899,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/exp10-motor_pass_2.png
-	scale 50
+	lyxscale 60
+	width 60text%
 
 \end_inset
 
@@ -17888,6 +17908,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Esquema construtivo simplificado de um motor de passos tetrafásico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mdp-Esquema-construtivo"
+
+\end_inset
+
 
 \end_layout
 
@@ -17904,80 +17931,114 @@ status open
 \begin_layout Standard
 Supondo que o terminal N (neutro) é comum aos quatro enrolamentos e que
  os sentidos das correntes são tais que haja atração do polo norte e repulsão
- do polo sul do rotor, uma das possíveis sequências é dada pela tabela a
- seguir: 
+ do polo sul do rotor, uma das possíveis sequências é dada pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:mdp-Sequência-de-acionamento-uma-fase"
+
+\end_inset
+
+, na qual “1” significa corrente ligada e “0” significa corrente desligada
+ no respectivo enrolamento.
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float table
-placement H
 wide false
 sideways false
-status open
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sequência de acionamento do motor de passo -- uma fase por passo.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:mdp-Sequência-de-acionamento-uma-fase"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Ângulo 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
+\emph on
+Corrente em
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 (graus)
 \end_layout
 
@@ -17987,41 +18048,49 @@ Corrente
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Na
+
+\emph on
+Na
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Nb
+
+\emph on
+Nb
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Nc
+
+\emph on
+Nc
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Nd
+
+\emph on
+Nd
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18030,7 +18099,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18039,7 +18108,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18048,7 +18117,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18057,7 +18126,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18068,7 +18137,7 @@ em Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18077,7 +18146,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18086,7 +18155,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18095,7 +18164,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18104,7 +18173,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18115,7 +18184,7 @@ em Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18124,7 +18193,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18133,7 +18202,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18142,7 +18211,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18151,7 +18220,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18162,7 +18231,7 @@ em Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18171,7 +18240,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18180,7 +18249,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18189,7 +18258,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18198,7 +18267,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18221,81 +18290,107 @@ em Nd
 \end_layout
 
 \begin_layout Standard
-onde “1” significa corrente ligada e “0” significa corrente desligada no
- respectivo enrolamento.
+Outra sequência de combinações possíveis seria a da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:mdp-Sequência-de-acionamento-duas-fases"
+
+\end_inset
+
+.
+ Neste caso, com o mesmo passo, obtém-se um torque maior do que o obtido
+ no caso anterior por um fator igual a 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sequência de acionamento do motor de passo -- duas fases por passo.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:mdp-Sequência-de-acionamento-duas-fases"
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Outra sequência de combinações possíveis seria 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-\align center
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Ângulo 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
+\emph on
+Corrente em
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Corrente 
+
 \end_layout
 
 \end_inset
@@ -18306,6 +18401,8 @@ Corrente
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 (graus)
 \end_layout
 
@@ -18315,7 +18412,9 @@ Corrente
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Na
+
+\emph on
+Na
 \end_layout
 
 \end_inset
@@ -18324,7 +18423,9 @@ em Na
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Nb
+
+\emph on
+Nb
 \end_layout
 
 \end_inset
@@ -18333,7 +18434,9 @@ em Nb
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Nc
+
+\emph on
+Nc
 \end_layout
 
 \end_inset
@@ -18342,14 +18445,16 @@ em Nc
 \begin_inset Text
 
 \begin_layout Plain Layout
-em Nd
+
+\emph on
+Nd
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18358,7 +18463,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18367,7 +18472,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18376,7 +18481,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18385,7 +18490,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18396,7 +18501,7 @@ em Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18405,7 +18510,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18414,7 +18519,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18423,7 +18528,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18432,7 +18537,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18443,7 +18548,7 @@ em Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18452,7 +18557,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18461,7 +18566,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18470,7 +18575,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18479,7 +18584,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18490,7 +18595,7 @@ em Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18499,7 +18604,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18508,7 +18613,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18517,7 +18622,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18526,7 +18631,7 @@ em Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18549,38 +18654,37 @@ em Nd
 \end_layout
 
 \begin_layout Standard
-Neste caso, com o mesmo passo, obtém-se um torque maior do que o obtido
- no caso anterior de um fator igual a 
-\begin_inset Formula $\sqrt{2}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Observe que para fazer com que o rotor gire no sentido reverso, basta inverter
- a sequência de acionamento, e mudando a frequência de chaveamento altera-se
- a velocidade angular do rotor, que pode inclusive ser nula.
+Observe-se que, para fazer com que o rotor gire no sentido reverso, basta
+ inverter a sequência de acionamento, e mudando a frequência de chaveamento,
+ altera-se a velocidade angular do rotor, que pode inclusive ser nula.
  
 \end_layout
 
 \begin_layout Standard
-A característica de conjugado versus frequência de motores de passo tem
- o aspecto da 
+A característica de conjugado 
+\emph on
+versus
+\emph default
+ frequência em motores de passo tem o aspecto da 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:gráfico"
+reference "fig:mdp-Conjugado-versus-frequência"
 
 \end_inset
 
-, onde fpm é a frequência máxima de partida e fmg é a frequência máxima
- de giro.
+, onde 
+\begin_inset Formula $f_{mp}$
+\end_inset
+
+ é a frequência máxima de partida e 
+\begin_inset Formula $f_{mg}$
+\end_inset
+
+ é a frequência máxima de giro.
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -18589,7 +18693,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/exp10-Grafico_exp_11.png
-	scale 70
+	width 75text%
 
 \end_inset
 
@@ -18597,9 +18701,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Conjugado 
+\emph on
+versus
+\emph default
+ frequência em motores de passo.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:gráfico"
+name "fig:mdp-Conjugado-versus-frequência"
 
 \end_inset
 
@@ -18617,14 +18726,14 @@ name "fig:gráfico"
 \end_layout
 
 \begin_layout Standard
-Com o aumento da velocidade angular, o motor pode fornecer menos conjugado
+Com o aumento da velocidade angular, o motor pode fornecer menos conjugado,
  já que o rotor tem menos tempo para mover a carga de uma posição para a
  próxima conforme a configuração das correntes no estator é alterada.
  A faixa de partida é aquela em que a posição da carga segue os pulsos sem
  perder passos.
  A faixa de giro é aquela na qual a velocidade da carga apenas segue a frequênci
 a de pulsos sem perder passos, mas não pode partir, parar ou inverter.
- O ponto de conjugado máximo é máximo conjugado de retenção de uma carga
+ O ponto de conjugado máximo é o máximo conjugado de retenção de uma carga
  imóvel com o motor alimentado.
  
 \end_layout
@@ -18635,17 +18744,17 @@ Acionamento de motores de passo
 
 \begin_layout Standard
 As tabelas obtidas para os exemplos anteriores mostram que é possível obter
- a sequencia de acionamentos para os enrolamentos, através de circuitos
- lógicos sequenciais, projetados de tal modo a gerar a sequencia adequada
- para o modo específico de operação do motor.
+ a sequência de acionamentos para os enrolamentos através de circuitos lógicos
+ sequenciais, projetados de tal modo a gerar a sequência adequada para o
+ modo específico de operação do motor.
  Outra alternativa seria a utilização de microcontroladores ou microprocessadore
 s para esta tarefa.
 \end_layout
 
 \begin_layout Standard
-A partir das saídas digitais (por exemplo TTL) realiza-se o chaveamento
+A partir das saídas digitais (por exemplo TTL), realiza-se o chaveamento
  das correntes nos enrolamentos, através de circuitos de interface, que
- traduzam um nível lógico na condição de corrente correspondente, ou seja,
+ traduzem um nível lógico na condição de corrente correspondente, ou seja,
  enrolamento alimentado ou não alimentado.
 \end_layout
 
@@ -18653,7 +18762,7 @@ A partir das saídas digitais (por exemplo TTL) realiza-se o chaveamento
 O circuito da 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:Circuito-sequencial"
+reference "fig:mdp-Interface-acionamento"
 
 \end_inset
 
@@ -18663,18 +18772,20 @@ reference "fig:Circuito-sequencial"
 uração; os resistores tem a função de limitar a corrente de base de modo
  a respeitar a corrente máxima de base para o transistor utilizado, mas
  permitindo uma corrente suficiente para garantir a saturação; a tensão
- de alimentação (indicada como +Vcc) deve ser escolhida de forma a produzir
- uma corrente de enrolamento compatível com as especificações do motor utilizado
-; os diodos tem a função de servir como um caminho para a corrente no instante
- em que o transistor muda de saturação para corte, quando então a energia
- magnética armazenada será dissipada, evitando sobretensões induzidas.
+ de alimentação (indicada como 
+\begin_inset Formula $+V_{CC}$
+\end_inset
+
+) deve ser escolhida de forma a produzir uma corrente de enrolamento compatível
+ com as especificações do motor utilizado; os diodos tem a função de servir
+ como um caminho para a corrente no instante em que o transistor muda de
+ saturação para corte, quando então a energia magnética armazenada será
+ dissipada, evitando sobretensões reversas induzidas.
  
 \end_layout
 
 \begin_layout Standard
-\align center
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -18691,10 +18802,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Circuito sequencial
+Interface para acionamento de motores de passo.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Circuito-sequencial"
+name "fig:mdp-Interface-acionamento"
 
 \end_inset
 
@@ -18712,100 +18823,37 @@ name "fig:Circuito-sequencial"
 \end_layout
 
 \begin_layout Standard
-Observe que no circuito da 
+Observe-se que, no circuito da 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "fig:Circuito-sequencial"
+reference "fig:mdp-Interface-acionamento"
 
 \end_inset
 
- a tensão de alimentação do motor (indicado como +Vcc) é independente da
- alimentação dos circuitos digitais, permitindo inclusive a escolha de valores
- diferenciados para cada uma.
+, a tensão de alimentação do motor (indicado como 
+\begin_inset Formula $+V_{CC}$
+\end_inset
+
+) é independente da alimentação dos circuitos digitais, permitindo inclusive
+ a escolha de valores diferenciados para cada uma.
  O único ponto comum é aquele indicado pelo símbolo de “terra”, que neste
  caso corresponde ao polo negativo das alimentações; note também que para
  haver independência entre as duas alimentações é necessário que o inversor
- tenha saída do tipo coletor aberto.
+ tenha saída do tipo 
+\emph on
+coletor aberto
+\emph default
+.
  
-\end_layout
-
-\begin_layout Section
-Lista de material
-\end_layout
-
-\begin_layout Itemize
-Painel Digital; 
-\end_layout
-
-\begin_layout Itemize
-Painel “Driver”; 
-\end_layout
-
-\begin_layout Itemize
-Motor de passos 1,8º, 1A por fase;
-\end_layout
-
-\begin_layout Itemize
-Fonte 5V; 
-\end_layout
-
-\begin_layout Itemize
-Fonte 0 a 25V; 
-\end_layout
-
-\begin_layout Itemize
-Resistores 1k
-\begin_inset Formula $\Omega$
-\end_inset
-
- (4x) 
-\end_layout
-
-\begin_layout Itemize
-7406; 
-\end_layout
-
-\begin_layout Itemize
-7486; 
-\end_layout
-
-\begin_layout Itemize
-74191; 
-\end_layout
-
-\begin_layout Itemize
-Osciloscópio de dois canais; 
-\end_layout
-
-\begin_layout Itemize
-Multímetro; 
-\end_layout
-
-\begin_layout Itemize
-Gerador de funções; 
-\end_layout
-
-\begin_layout Itemize
-Fios de ligação; 
 \end_layout
 
 \begin_layout Section
 Parte Experimental
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-\color black
-4.1
-\series default
-\color inherit
- Considerando que a sequência de acionamento do motor utilizado é dada pela
- seguinte tabela
-\end_layout
-
-\begin_layout Standard
-\align center
+\begin_layout Enumerate
+Considerar que a sequência de acionamento do motor utilizado é dada pela
+ seguinte tabela: 
 \begin_inset Float table
 placement H
 wide false
@@ -18816,53 +18864,63 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 PASSO
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Na
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nb
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\emph on
 Nc
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
+Nb
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
 Nd
 \end_layout
 
@@ -18870,7 +18928,7 @@ Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18879,7 +18937,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18888,7 +18946,16 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18897,16 +18964,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18917,7 +18975,7 @@ Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18926,16 +18984,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18944,27 +18993,36 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18973,7 +19031,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18982,7 +19040,16 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18991,16 +19058,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19011,7 +19069,7 @@ Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19020,16 +19078,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19038,20 +19087,29 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
 \end_layout
 
 \end_inset
@@ -19069,19 +19127,31 @@ Nd
 
 \end_layout
 
-\begin_layout Standard
-Projete e construa um circuito sequencial que forneça tal sequência, tanto
+\begin_layout Enumerate
+Projetar e construir um circuito sequencial que forneça tal sequência, tanto
  no sentido direito como no sentido reverso, ou seja, que haja a possibilidade
  de inverter a rotação do motor através de uma chave.
- Note que o circuito deve possuir quatro estados distintos e, portanto,
- pode ser implementado a partir de um contador binário de 2 bits associado
- a um circuito “decodificador”; o circuito decodificador terá a incumbência
- de receber a saída binária fornecida pelo contador e fornecer o formato
- adequado para o acionamento dos enrolamentos, ou seja:
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-\align center
+Notar que o circuito deve possuir quatro estados distintos e, portanto,
+ pode ser implementado a partir de um 
+\series bold
+contador binário de 2 bits associado a um circuito “decodificador”
+\series default
+; o circuito decodificador terá a incumbência de receber a saída binária
+ do contador e fornecer o formato adequado para o acionamento dos enrolamentos,
+ conforme mostrado pela tabela abaixo.
+ Notar ainda que, alternativamente, po\SpecialChar \-
+de\SpecialChar \-
+ri\SpecialChar \-
+a-se utilizar 
+\series bold
+um registrador de deslocamento de 4 bits
+\series default
+.
+ 
 \begin_inset Float table
 placement H
 wide false
@@ -19091,120 +19161,155 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="6">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<lyxtabular version="3" rows="6" columns="7">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="0.25cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Entrada
+
+\emph on
+Entradas
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Entrada
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Saída
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Saída
+
+\emph on
+Saídas
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Saída
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Saída
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Q1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Q0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
 Na
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Nb
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Nc
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\emph on
 Nd
 \end_layout
 
@@ -19212,7 +19317,7 @@ Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19221,7 +19326,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19230,7 +19335,16 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19239,16 +19353,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19257,7 +19362,16 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19268,7 +19382,7 @@ Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19277,7 +19391,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19286,7 +19400,25 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19295,7 +19427,16 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19304,7 +19445,18 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19313,7 +19465,43 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19324,7 +19512,7 @@ Nd
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19333,7 +19521,34 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19342,7 +19557,7 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -19351,85 +19566,11 @@ Nd
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
 \end_layout
 
 \end_inset
@@ -19459,13 +19600,20 @@ decodificador
  utilize apenas portas OU-EXCLUSIVO.
 \end_layout
 
+\end_deeper
+\begin_layout Enumerate
+Monte o circuito completo, conforme as figuras abaixo.
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-\align center
+CUIDADO! Não se esqueça de que são necessárias duas fontes distintas: uma
+ de 5V para os circuitos TTL e outra de 6V para alimentar o motor!!!
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -19478,314 +19626,175 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Gerador de funções
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\color black
-4.2
-\series default
-\color inherit
- Monte o circuito completo.
- CUIDADO: não se esqueça de que são necessárias duas fontes distintas: uma
- de 5V para os circuitos TTL e outra de 6V para alimentar o motor!!!
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\color black
-4.3
-\series default
-\color inherit
- Verifique o funcionamento do circuito, observando se o circuito digital
- fornece a sequência adequada.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-\color black
-4.4
-\series default
-\color inherit
- Determine a máxima frequência de clock e a correspondente frequência angular
- do rotor, que pode ser utilizada sem que haja escorregamento (perda de
- passos).
- Aumente a frequeência e observe o que ocorre com a rotação do motor.
- Explique.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Questionário
-\end_layout
-
-\begin_layout Subsection
-Relatório
-\end_layout
-
-\begin_layout Subparagraph
-
-\series bold
-\color black
-5.1.1
-\series default
-\color inherit
- Relate todas as medidas efetuadas bem como seus resultados.
- Os gráficos devem ser cotados!!!
-\end_layout
-
-\begin_layout Subparagraph
-
-\series bold
-\color black
-5.1.2
-\series default
-\color inherit
- Quais são as características mais importantes para os diodos e transistores
- utilizados, e de que maneira elas afetam o desempenho do circuito?
-\end_layout
-
-\begin_layout Subparagraph
-
-\series bold
-\color black
-5.1.3
-\series default
-\color inherit
- No lugar fo 7406 poderia ter sido utilizado o 7404? Porque? Esquematize
- a seção relevante do circuito.
-\end_layout
-
-\begin_layout Subsection
-Pesquisa
-\end_layout
-
-\begin_layout Subparagraph
-
-\series bold
-\color black
-5.2.1
-\series default
-\color inherit
- Descreva as aplicações típicas para motores de passo.
-\end_layout
-
-\begin_layout Section
-Referências
-\end_layout
-
-\begin_layout Enumerate
-Fitzgerald, A.
- E.
- ; Kingsley Jr.
- , C ; Kusko, A.
- : 
-\series bold
-\color black
-MÁQUINAS ELÉTRICAS
-\series default
-\color inherit
-, Editora McGraw-Hill do Brasil Ltda., São Paulo, 1975.
-\end_layout
-
-\begin_layout Enumerate
-Philips : 
-\series bold
-TTL Logic Series Data Book
-\series default
- , Netherlands , 1986.
-\end_layout
-
-\begin_layout Enumerate
-Texas Instruments : 
-\series bold
-Power Products Data Book
-\series default
- , Dallas 1985.
-\end_layout
-
-\begin_layout Enumerate
-National Semiconductor , 
-\series bold
-http://www.national.com
-\series default
- .
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp10-datasheet1.png
-	scale 80
-	rotateOrigin rightBottom
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp10-datasheet2.png
-	scale 80
-	rotateAngle -0.5
-	rotateOrigin rightBottom
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp10-datasheet3.png
-	scale 80
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp10-datasheet4.png
-	scale 80
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp10-datasheet5.png
-	scale 80
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
-\align left
+\align center
 \begin_inset Graphics
-	filename imagens/exp10-datasheet6.png
-	scale 80
+	filename imagens/motor-de-passo-esquema-de-ligacao.png
+	height 50theight%
 
 \end_inset
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Verifique o funcionamento do circuito, observando se o circuito digital
+ fornece a sequência adequada.
+\end_layout
+
+\begin_layout Enumerate
+
+\color black
+D
+\color inherit
+etermine a máxima frequência de 
+\emph on
+clock
+\emph default
+ e a correspondente frequência angular do rotor, que pode ser utilizada
+ sem que haja escorregamento (perda de passos).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Aumente a frequência e observe o que ocorre com a rotação do motor.
+ Explique.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Desafios
+\end_layout
+
+\begin_layout Enumerate
+Quais são as aplicações típicas para motores de passo? Pesquisar.
+\end_layout
+
+\begin_layout Enumerate
+No lugar do 7406, poderia ter sido utilizado o 7404? Por quê? Esquematize
+ a seção relevante do circuito.
+\end_layout
+
+\begin_layout Enumerate
+Quais são as características mais importantes para os diodos e transistores
+ utilizados e de que maneira elas afetam o desempenho do circuito.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Fitzgerald, A.
+ E.; Kingsley Jr., C; Kusko, A.
+ 
+\series bold
+\color black
+Máquinas Elétricas
+\series default
+\color inherit
+.
+ Editora McGraw-Hill do Brasil Ltda., São Paulo, 1975.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Philips.
+ 
+\series bold
+TTL Logic Series Data Book
+\series default
+.
+ Netherlands, 1986.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Texas Instruments.
+ 
+\series bold
+Power Products Data Book
+\series default
+.
+ Dallas 1985.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset External
+	template PDFPages
+	filename anexos/7486.pdf
+	lyxscale 25
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7404.pdf
+	lyxscale 25
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/74191.pdf
+	lyxscale 25
+	extra LaTeX "pages={1,4,5}"
 
 \end_inset
 
@@ -19799,6 +19808,78 @@ status open
 
 \begin_layout Section*
 Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Osciloscópio
+\end_layout
+
+\begin_layout Itemize
+Gerador de funções
+\end_layout
+
+\begin_layout Itemize
+Fonte de 5V 
+\end_layout
+
+\begin_layout Itemize
+Fonte 0 a 25V
+\end_layout
+
+\begin_layout Itemize
+Painel Digital
+\end_layout
+
+\begin_layout Itemize
+Multímetro
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Driver
+\emph default
+ para motor de passos
+\end_layout
+
+\begin_layout Itemize
+Motor de passos de 
+\begin_inset Formula $\SI{1,8}{\degree}$
+\end_inset
+
+, 
+\begin_inset Formula $\SI{1}{\A}$
+\end_inset
+
+ por fase
+\end_layout
+
+\begin_layout Itemize
+Fios de ligação
+\end_layout
+
+\begin_layout Itemize
+Alicate de corte
+\end_layout
+
+\begin_layout Itemize
+Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+Espátula
+\end_layout
+
+\begin_layout Itemize
+Resistores: 4x 
+\begin_inset Formula $\SI{1}{\kilo\ohm}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+CIs: 1x 7406; 1x 7486; 1x 74191
 \end_layout
 
 \end_inset
