@@ -76,6 +76,20 @@
 %   Necessário pois alguns pacotes, como 'pdfpages' ou o que oferece os comandos "oval",
 %   parece que reconfiguram a altura do cabeçalho.
 \setlength{\headheight}{34pt}
+
+% Redefinição e definição de funções matemáticas.
+\renewcommand{\sin}{\ensuremath{\,\mathrm{sen}}}
+\renewcommand{\tan}{\ensuremath{\,\mathrm{tg}}}
+\renewcommand{\csc}{\ensuremath{\,\mathrm{cossec}}}
+\renewcommand{\tanh}{\ensuremath{\,\mathrm{tgh}}}
+\renewcommand{\arcsin}{\ensuremath{\,\mathrm{arcsen}}}
+\renewcommand{\arctan}{\ensuremath{\,\mathrm{arctg}}}
+\newcommand{\arcsec}{\ensuremath{\,\mathrm{arcsec}}}
+\newcommand{\arccot}{\ensuremath{\,\mathrm{arccotg}}}
+\newcommand{\arccsc}{\ensuremath{\,\mathrm{arccossec}}}
+\newcommand{\sech}{\ensuremath{\,\mathrm{sech}}}
+\newcommand{\csch}{\ensuremath{\,\mathrm{cossech}}}
+\newcommand{\cotanh}{\ensuremath{\,\mathrm{cotg}}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -10877,7 +10891,7 @@ O Osciloscópio
 \end_layout
 
 \begin_layout Standard
-\align left
+\align block
 O osciloscópio é um instrumento que permite visualizar grandezas elétricas
  em forma gráfica, numa tela.
  Por isso, ele apresenta muita utilidade na análise de qualquer grandeza
@@ -10885,19 +10899,18 @@ O osciloscópio é um instrumento que permite visualizar grandezas elétricas
 \end_layout
 
 \begin_layout Standard
-Os primeiros osciloscópios construído foram os análogicos, mas atualmente
+\align block
+Os primeiros osciloscópios construídos foram os análogicos, mas atualmente
  é muito comum o uso dos osciloscópios digitais.
- A figura ...
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Exemplos-de-osciloscópio"
+
+\end_inset
+
  ilustra um exemplo de cada tipo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+ 
 \begin_inset Float figure
 wide false
 sideways false
@@ -10905,8 +10918,16 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/osciloscopio-analogico-minipa-mo-1251.jpg
+	width 75text%
 
 \end_inset
 
@@ -10935,15 +10956,17 @@ Osciloscópio analógico.
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio-digital-tektronix-tds210.jpg
+	width 75text%
 
 \end_inset
 
@@ -11008,7 +11031,7 @@ osciloscópio analógico
 \series bold
 osciloscópio digital
 \series default
-, com exceção da forma como a imagem é denhada na tela.
+, com exceção da forma como a imagem é desenhada na tela.
 \end_layout
 
 \begin_layout Section
@@ -11016,7 +11039,7 @@ O Osciloscópio Analógico
 \end_layout
 
 \begin_layout Standard
-\align left
+\align block
 A operação do osciloscópio analógico é baseada no deslocamento de um feixe
  de elétrons, o qual provoca um ponto luminoso numa tela frontal com uma
  escala.
@@ -11024,7 +11047,7 @@ A operação do osciloscópio analógico é baseada no deslocamento de um feixe
 \begin_inset Formula $m_{eo}=\SI{9,1e-31}{\kg}$
 \end_inset
 
-) , pode-se deslocar este ponto com altíssima velocidade, possibilitando
+), pode-se deslocar este ponto com altíssima velocidade, possibilitando
  analisar-se sinais com variação extremamente rápida.
 \end_layout
 
@@ -11058,6 +11081,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-tubo-de-raios-catodicos.png
 	lyxscale 60
+	width 100text%
 
 \end_inset
 
@@ -11177,7 +11201,7 @@ Placas Defletoras
 
 \begin_layout Standard
 Próximo à tela, existe um revestimento de grafite depositado no vidro, que
- tem por função promover uma pós aceleração no feixe, correspondendo ao
+ tem por função promover uma pós-aceleração no feixe, correspondendo ao
  terminal 
 \series bold
 Anodo de Alta Tensão
@@ -11274,8 +11298,14 @@ Diagrama em Blocos de um Osciloscópio Básico e Princípio de Funcionamento
 \end_layout
 
 \begin_layout Standard
-O Diagrama em Blocos de um osciloscópio está ilustrado na fig.
- 2.
+O Diagrama em Blocos de um osciloscópio está ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:osc-Diagrama-em-Blocos"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -11373,6 +11403,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -11383,6 +11414,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-senoide.png
 	lyxscale 50
+	width 45text%
 
 \end_inset
 
@@ -11421,6 +11453,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-dente-de-serra.png
 	lyxscale 50
+	width 45text%
 
 \end_inset
 
@@ -11508,6 +11541,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-composicao-senoide-dente-de-serra.png
 	lyxscale 50
+	width 100text%
 
 \end_inset
 
@@ -11519,7 +11553,7 @@ status open
 
 \begin_layout Plain Layout
 Composição entre o sinal senoidal, aplicado na Entrada Vertical, e o dente
- de serra, aplicado à Entrada Horizontal.
+ de serra, aplicado na Entrada Horizontal.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:osc-Composição-senoide-dente-de-serra"
@@ -11573,9 +11607,12 @@ sincronismo
 Com o objetivo de manter a figura estacionária na tela e também manter calibrada
  a varredura horizontal, que está relacionada com a variação do dente de
  serra com o tempo, os osciloscópios dispõem de um Circuito de Disparo,
- ou Circuito de Trigger, que dispara o dente de serra, automaticamente,
- sempre que o sinal analisado cruzar um determinado nível, como ilustrado
- na 
+ ou Circuito de 
+\emph on
+Trigger
+\emph default
+, que dispara o dente de serra, automaticamente, sempre que o sinal analisado
+ cruzar um determinado nível, como ilustrado na 
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:osc-Exemplo-de-disparo-do-trigger"
@@ -11596,6 +11633,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-exemplo-disparo-trigger.png
 	lyxscale 25
+	height 90theight%
 
 \end_inset
 
@@ -11606,8 +11644,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de disparo de varredura por meio do Circuito de Trigger e imagem
- do sinal na tela do osciloscópio.
+Exemplo de disparo de varredura por meio do Circuito de 
+\emph on
+Trigger
+\emph default
+ e imagem do sinal na tela do osciloscópio.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:osc-Exemplo-de-disparo-do-trigger"
@@ -11628,7 +11669,7 @@ name "fig:osc-Exemplo-de-disparo-do-trigger"
 \end_layout
 
 \begin_layout Standard
-Com o objetivo de evitar um risco na tela quando do retorno do feixe para
+Com o objetivo de evitar um risco na tela, quando do retorno do feixe para
  a extremidade esquerda da tela, aguardando um novo pulso de disparo da
  tensão tipo Dente de Serra, o feixe é “apagado” neste intervalo de tempo.
 \end_layout
@@ -11678,6 +11719,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-painel-elementar.png
 	lyxscale 30
+	width 75text%
 
 \end_inset
 
@@ -11796,6 +11838,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-medida-de-tensao.png
 	lyxscale 30
+	width 45theight%
 
 \end_inset
 
@@ -11827,8 +11870,8 @@ name "fig:osc-Medidas-de-Tensão"
 \end_layout
 
 \begin_layout Standard
-Observar a existência de subdivisões nos eixos centrais da tela, as quais
- tem a função de melhorar e facilitar as medidas.
+Ainda, note-se a existência de subdivisões nos eixos centrais da tela, as
+ quais têm a função de melhorar e facilitar as medidas.
 \end_layout
 
 \begin_layout Subsection
@@ -11837,7 +11880,7 @@ Medidas de Intervalos de Tempo
 
 \begin_layout Standard
 Usando o valor das bases de tempo do dente de serra do Gerador de Varredura
- do osciloscópio e a escala horizontal da tela pode-se efetuar a medida
+ do osciloscópio e a escala horizontal da tela, pode-se efetuar a medida
  direta de intervalos de tempo, 
 \series bold
 desde que o ajuste fino da chave de tempo esteja na posição calibrada (CAL).
@@ -11864,6 +11907,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-medida-de-intervalo-de-tempo.png
 	lyxscale 30
+	width 45theight%
 
 \end_inset
 
@@ -11906,14 +11950,16 @@ Medidas de Frequência
 \begin_layout Standard
 Usando as escalas calibradas de tempo do osciloscópio também é possível
  calcular a frequência para o caso de sinais periódicos.
- Para tanto é necessário usar a escala de varredura horizontal calibrada
- (
+ Para tanto, 
+\series bold
+é necessário usar a escala de varredura horizontal calibrada (
 \emph on
 vernier
 \emph default
- na posição CAL) de modo a medir o tempo gasto para completar um ciclo do
- sinal observado (um período) e então calcular a frequência pela relação
- 
+ na posição CAL)
+\series default
+, de modo a medir o tempo gasto para completar um ciclo do sinal observado
+ (um período) e então calcular a frequência pela relação 
 \begin_inset Formula $f=\frac{1}{T}$
 \end_inset
 
@@ -11939,6 +11985,7 @@ status open
 \begin_inset Graphics
 	filename imagens/osciloscopio-medida-de-periodo.png
 	lyxscale 30
+	width 45theight%
 
 \end_inset
 
@@ -12014,7 +12061,7 @@ Obs.: Não deixar o ponto luminoso com brilho excessivo, pois poderá danificar
 Deslocamento do Feixe na Horizontal
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:osc-Deslocamento-do-Feixe-horizontal"
+name "sec:osc-Deslocamento-do-Feixe-horizontal"
 
 \end_inset
 
@@ -12068,7 +12115,7 @@ Deslocamento do Feixe na Vertical
 Repetir os procedimentos da 
 \begin_inset CommandInset ref
 LatexCommand formatted
-reference "sub:osc-Deslocamento-do-Feixe-horizontal"
+reference "sec:osc-Deslocamento-do-Feixe-horizontal"
 
 \end_inset
 
@@ -12080,12 +12127,12 @@ Gerador de Varredura
 \end_layout
 
 \begin_layout Enumerate
-Mantendo ainda o gerador de funções com a frequência 
+Mantendo ainda o gerador de funções com a frequência de 
 \begin_inset Formula $\SI{1}{\Hz}$
 \end_inset
 
- ligado ao vertical, colocar a Chave Seletora de Varredura SWEEP/DIV em
- uma das posições 
+ ligado ao vertical, desativar o Modo X-Y e colocar a Chave Seletora de
+ Varredura SWEEP/DIV em uma das posições 
 \begin_inset Formula $\si{\ms\per\text{{div}}}$
 \end_inset
 
@@ -12105,6 +12152,11 @@ Agora, é aplicada a tensão dente de serra proveniente do Gerador de Varredura
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Aumentar gradualmente a frequência do Gerador Senoidal e observar o que
+ ocorre com o ponto luminoso.
+\end_layout
+
 \begin_layout Enumerate
 Anotar a forma de onda na tela a seguir e medir a tensão pico a pico do
  sinal senoidal, utilizando-se a escala da tela e o valor VOLTS/DIV da escala
@@ -12127,18 +12179,9 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Enumerate
-Aumentar gradualmente a frequência do Gerador Senoidal e observar o que
- ocorre com o ponto luminoso.
 \end_layout
 
 \begin_layout Subsection
@@ -12158,16 +12201,18 @@ Ajustar a chave Seletora de Varredura SWEEP/DIV e o Nível de Trigger (LEVEL)
  de modo a obter uma senóide parada na tela.
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
+\begin_layout Enumerate
 Observar o que ocorre quando comuta-se a chave SLOPE 
 \begin_inset Formula $+/-$
 \end_inset
 
- e quando varia-se o Nível de Trigger (LEVEL).
+ e quando varia-se o Nível de 
+\emph on
+Trigger
+\emph default
+ (LEVEL).
 \end_layout
 
-\end_deeper
 \begin_layout Enumerate
 Anotar a forma de onda na tela a seguir.
 \begin_inset Float figure
@@ -12261,7 +12306,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/osciloscopio-grade-2.png
+	filename imagens/osciloscopio-grade.png
 	lyxscale 30
 	width 90text%
 
@@ -12343,14 +12388,14 @@ Como seria a figura vista na tela se não houvesse o apagamento de retorno?
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/osciloscopio-grade.png
+	filename imagens/osciloscopio-grade-2.png
 	lyxscale 30
-	width 90text%
+	height 7cm
 
 \end_inset
 
@@ -12365,7 +12410,11 @@ status collapsed
 \begin_layout Enumerate
 Se desejar-se observar uma forma de onda de frequência baixa, ajusta-se
  a varredura para um tempo de varredura reduzido também.
- Nota-se que a figura na tela cintila.
+ Nota-se que a figura na tela 
+\bar under
+cintila
+\bar default
+.
  Qual a explicação para este fenômeno?
 \begin_inset ERT
 status open
