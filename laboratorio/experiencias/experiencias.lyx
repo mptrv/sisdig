@@ -18251,6 +18251,161 @@ schmitt-trigger
 
 \end_layout
 
+\begin_layout Standard
+Quando um circuito é energizado, ele necessita de um determinado tempo mínimo
+ (
+\begin_inset Formula $\Delta t_{mín}$
+\end_inset
+
+) para atingir o estado quiescente de todas as saídas de todas as portas
+ lógicas e 
+\emph on
+flip-flops
+\emph default
+.
+ Considerando-se a equação de carga do capacitor e as características da
+ porta 
+\emph on
+schimmit-trigger
+\emph default
+, pode-se realizar a seguinte dedução para se determinar o produto RC:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{c}(t)=V_{CC}\,(1-e^{\nicefrac{-t}{RC}})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+após 
+\begin_inset Formula $\Delta t_{mín}$
+\end_inset
+
+, tem-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+v_{c}(\Delta t_{mín}) & = & V_{T+(mín)}\\
+V_{T+(mín)} & = & V_{CC}\,(1-e^{\nicefrac{-\Delta t_{mín}}{RC}})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+e, portanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RC=\dfrac{\Delta t_{mín}}{\ln\left(\dfrac{V_{CC}}{V_{CC}-V_{T+(mín)}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\noindent
+em
+\begin_inset space ~
+\end_inset
+
+que:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V_{T+(mín)}$
+\end_inset
+
+: tensão de entrada mínima de limiar positivo, a partir da qual a porta
+ 
+\emph on
+schmitt-trigger
+\emph default
+ irá interpretar nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+ na entrada.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+: tensão de alimentação do circuito RC e da porta 
+\emph on
+schmitt-trigger.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Por exemplo, considerando-se 
+\begin_inset Formula $\Delta t_{mín}=\SI{30}{\ms}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{CC}=\SI{5}{\V}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{T+(mín)}=\SI{2,75}{\V}$
+\end_inset
+
+, tem-se 
+\begin_inset Formula $RC=\SI{37,6}{\ms}$
+\end_inset
+
+.
+ E, adotando-se 
+\begin_inset Formula $R=\SI{10}{\kilo\ohm}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Este valor, da ordem de dezenas de quilo ohms, tem o objetivo de diminuir
+ a corrente máxima drenada pelo circuito no instante da energização.
+\end_layout
+
+\end_inset
+
+, chega-se a 
+\begin_inset Formula $C=\SI{3,76}{\micro\F}$
+\end_inset
+
+, levando a um valor comercial de 
+\begin_inset Formula $C=\SI{4,7}{\micro\F}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Desafios
 \end_layout
