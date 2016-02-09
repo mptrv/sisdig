@@ -204,7 +204,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-motor-passos
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -284,7 +284,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -514,7 +514,20 @@ status open
 
 \size small
 \emph on
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\size small
+\emph on
 (adaptado do original do professor Clóvis Fisher)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -10869,7 +10882,7 @@ Introdução ao Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 
@@ -16422,7 +16435,7 @@ CI: 1x 7400
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-assincrono
-status collapsed
+status open
 
 \begin_layout Chapter
 Contadores Assíncronos e
@@ -17748,15 +17761,582 @@ CIs: 1x 7400; 2x 7474
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-sincrono
-status collapsed
+status open
+
+\begin_layout Chapter
+Contadores Síncronos e Registradores de Deslocamento
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Itemize
+Estudar os contadores síncronos sob a ótica dos registradores de deslocamento.
+\end_layout
+
+\begin_layout Itemize
+Implementar um circuito de 
+\emph on
+Power-On Reset
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Contadores Síncronos
+\end_layout
+
 \begin_layout Standard
+Os contadores síncronos diferem-se dos assíncronos pelo fato do pulso de
+ 
+\emph on
+clock
+\emph default
+ ser simultâneo a todos os 
+\emph on
+flip-flops
+\emph default
+ do contador e, assim, as saídas destes 
+\emph on
+flip-flops
+\emph default
+ são atualizadas ao mesmo tempo.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Flip-flops-recebendo-pulso"
+
+\end_inset
+
+ apresenta a topologia do pulso de 
+\emph on
+clock
+\emph default
+ simultâneo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Flip-flops
+\emph default
+ recebendo pulso de 
+\emph on
+clock
+\emph default
+ simultaneamente, o que caracteriza o contandor síncrono.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Flip-flops-recebendo-pulso"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Certamente, o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Flip-flops-recebendo-pulso"
+
+\end_inset
+
+ não irá realizar qualquer contagem, pois nada foi estipulado para as entradas
+ dos 
+\emph on
+flip-flops
+\emph default
+.
+ Torna-se evidente, portanto, que há a necessidade de um circuito lógico
+ para alimentá-las, mas de forma que o próximo valor da contagem seja determinad
+o com base no atual.
+ Ainda, como trata-se de um circuito que será projetado, pode-se, para cada
+ valor atual, definir um futuro sem a obrigatoriedade de ser um número consecuti
+vo.
+ Ou seja, pode-se criar uma contagem com qualquer sequência numérica.
+\end_layout
+
+\begin_layout Standard
+A fig.
+ apresenta um 
+\emph on
+Diagrama de Estados
+\emph default
+, o qual mapeia a sequência numérica de contagem de um determinado contador
+ síncrono, e a fig.
+ contém o circuito que o implementa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Estados.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Diagrama-de-Estados-contador"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico do circuito.
+ Note-se que os pulsos de 
+\emph on
+clock
+\emph default
+ são simultâneos a todos o 
+\emph on
+flip-flops
+\emph default
+ e que as entradas destes são provenientes de um circuito lógico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Esquema-elétrico-contador"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de contador síncrono.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Exemplo-de-contador"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O projeto do circuito lógico deve tomar o 
+\emph on
+estado atual
+\emph default
+ como entrada e o 
+\emph on
+estado futuro
+\emph default
+ será a saída.
+ Estado atual é o valor atual da contagem e estado futuro é o próximo valor.
+\end_layout
+
+\begin_layout Section
+Registradores de Deslocamento
+\end_layout
+
+\begin_layout Standard
+Os registradores de deslocamento, na realidade, são um caso particular de
+ contador síncrono.
+ Nesses, a entrada de cada 
+\emph on
+flip-flop
+\emph default
+ é a saída do 
+\emph on
+flip-flop
+\emph default
+ anterior.
+ Quando os pulsos de 
+\emph on
+clock 
+\emph default
+são aplicados, tem-se o efeito de um 
+\emph on
+bit
+\emph default
+, presente na entrada do primeiro 
+\emph on
+flip-flop
+\emph default
+, ser deslocado para os demais.
+\end_layout
+
+\begin_layout Standard
+A fig.
+ apresenta um registrador de deslocamento de 3 
+\emph on
+bits
+\emph default
+ e a fig.
+ demonstra um exemplo de deslocamento de 
+\emph on
+bit
+\emph default
+ por meio da carta de tempos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico do circuito.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Esquema-elétrico-reg-desloc"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carta de tempos com demonstração do deslocamento de um 
+\emph on
+bit
+\emph default
+ aplicado à entrada do primeiro 
+\emph on
+flip-flop
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Carta-de-tempos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de registrador de deslocamento de 3 
+\emph on
+bits
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Exemplo-de-registrador-desloc"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Power-On Reset
+\end_layout
+
+\begin_layout Standard
+Muitas vezes, ao se energizar um circuito, é conveniente definir o 
+\emph on
+estado inicial
+\emph default
+ dos contadores, sejam síncronos ou assíncronos.
+ Este processo é conhecido como 
+\emph on
+Power-On Reset
+\emph default
+ (POR), ou seja, 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+redefinir ao energizar
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Existem diversas variantes de circuitos para implementação do POR, sendo
+ uma a esquematizada na fig.
+ Nesta figura, nota-se um circuito RC, cuja curva de carga do capacitor
+ é apresentada na fig., e uma porta 
+\emph on
+schmitt-trigger
+\emph default
+, cuja função é conformar a tensão sobre o capacitor para níveis lógicos
+ bem definidos.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A corrente drenada pela entrada da porta 
+\emph on
+schmitt-trigger 
+\emph default
+é muito pequena, quando comparada com a corrente que passa pelo circuito
+ RC, e, portanto, o circuito RC praticamente não sofre nenhuma influência
+ da porta.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Desafios
+\end_layout
+
+\begin_layout Enumerate
+Quais as vantagens do contador síncrono em relação ao assíncrono?
+\end_layout
+
+\begin_layout Enumerate
+Quais as desvantagens do contador síncrono em relação ao assíncrono?
+\end_layout
+
+\begin_layout Enumerate
+reg.
+ desl.
+ ff.
+ ideais...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Painel Digital
+\end_layout
+
+\begin_layout Itemize
+Ociloscópio
+\end_layout
+
+\begin_layout Itemize
+Gerador de funções
+\end_layout
+
+\begin_layout Itemize
+2x cabos BNC-jacaré
+\end_layout
+
+\begin_layout Itemize
+1x cabo BNC-BNC
+\end_layout
+
+\begin_layout Itemize
+Caixa com fios
+\end_layout
+
+\begin_layout Itemize
+Alicate de corte
+\end_layout
+
+\begin_layout Itemize
+Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+Espátula
+\end_layout
+
+\begin_layout Itemize
+CIs: 1x 7400; 2x 7474
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename anexos/7400.pdf
+	lyxscale 50
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename anexos/7474.pdf
+	lyxscale 50
+	extra LaTeX "pages={1}"
 
 \end_inset
 
@@ -17770,7 +18350,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-motor-passos
-status open
+status collapsed
 
 \begin_layout Chapter
 
