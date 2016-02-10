@@ -17830,6 +17830,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-topologia-clock.png
+
+\end_inset
+
 
 \end_layout
 
@@ -17917,7 +17923,17 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-diagrama-de-estados.png
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -17948,7 +17964,7 @@ name "fig:csinc-Diagrama-de-Estados-contador"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -17964,6 +17980,7 @@ clock
 flip-flops
 \emph default
  e que as entradas destes são provenientes de um circuito lógico.
+ O estado inicial é definido pelo circuito de POR, descrito mais adiante.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:csinc-Esquema-elétrico-contador"
@@ -18406,6 +18423,426 @@ Este valor, da ordem de dezenas de quilo ohms, tem o objetivo de diminuir
 .
 \end_layout
 
+\begin_layout Standard
+O circuito mostrado na fig.
+ produz um sinal POR que permanece em nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+ por 
+\begin_inset Formula $\Delta t_{mín}$
+\end_inset
+
+ segundos e depois estabiliza-se em 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+ indefinidamente.
+ Caso seja desejado um sinal de POR com comportamento inverso, ou seja,
+ um 
+\begin_inset Formula $\mathrm{\overline{POR}}$
+\end_inset
+
+, tem-se duas alternativas: inverter o sinal de POR, ou utilizar o circuito
+ da fig., cujo valor de RC poderá ser calculado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RC=\dfrac{\Delta t_{mín}}{\ln\left(\dfrac{V_{CC}}{V_{T-(máx)}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\noindent
+em
+\begin_inset space ~
+\end_inset
+
+que:
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V_{T-(máx)}$
+\end_inset
+
+: tensão de entrada máxima de limiar negativo, abaixo da qual a porta 
+\emph on
+schmitt-trigger
+\emph default
+ irá interpretar nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+ na entrada.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Enumerate
+Deseja-se implementar um registrador de deslocamento para fornecer a sequência
+ apresentada na tabela abaixo.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Qa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Qb
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Qc
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Qd
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+O circuito a ser utilizado é o que segue.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No circuito apresentado, perceba-se que o 
+\begin_inset Formula $\mathrm{\overline{POR}}$
+\end_inset
+
+ irá garantir que 
+\begin_inset Formula $Q_{a}$
+\end_inset
+
+ e 
+\begin_inset Formula $Q_{b}$
+\end_inset
+
+ iniciam-se em 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+, enquanto 
+\begin_inset Formula $Q_{c}$
+\end_inset
+
+ e 
+\begin_inset Formula $Q_{d}$
+\end_inset
+
+, em 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Por meio de botão do Painel Digital, aplicar pulsos consecutivos de 
+\emph on
+clock 
+\emph default
+e observar o deslocamento cíclico de ambos os 
+\emph on
+bits
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Traçar a correspondente carta de tempos.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[10]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Desligar e ligar o circuito e verificar o estado inicial novamente.
+\end_layout
+
+\begin_layout Enumerate
+Remover o circuito de POR, desligar e ligar várias vezes o circuito e verificar
+ os estados inicias.
+ Descrever o observado.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Desafios
 \end_layout
@@ -18419,10 +18856,41 @@ Quais as desvantagens do contador síncrono em relação ao assíncrono?
 \end_layout
 
 \begin_layout Enumerate
-reg.
- desl.
- ff.
- ideais...
+Os 
+\emph on
+flip-flops
+\emph default
+ 
+\bar under
+reais
+\bar default
+ possuem um tempo de atraso na propagação do 
+\emph on
+clock
+\emph default
+, ou seja, tem-se um tempo entre a aplicação do 
+\emph on
+clock
+\emph default
+ e a alteração da saída 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ Caso os 
+\emph on
+flip-flops
+\emph default
+ fossem 
+\bar under
+ideais
+\bar default
+, ou seja, caso este tempo de atraso fosse nulo, o registrador de deslocamento
+ iria operar conforme descrito?
+\end_layout
+
+\begin_layout Enumerate
+Citar 3 aplicações distintas para o registrador de deslocamento.
 \end_layout
 
 \end_inset
@@ -19634,7 +20102,7 @@ Na
 \begin_layout Plain Layout
 
 \emph on
-Nc
+Nb
 \end_layout
 
 \end_inset
@@ -19645,7 +20113,7 @@ Nc
 \begin_layout Plain Layout
 
 \emph on
-Nb
+Nc
 \end_layout
 
 \end_inset
