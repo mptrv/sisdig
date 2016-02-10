@@ -265,6 +265,121 @@ Contadores Assíncronos e Síncronos
 \end_layout
 
 \begin_layout Enumerate
+
+\lang english
+Elaborar o circuito lógico de um contador de 2 a 5, cíclico: a) assíncrono,
+ com flip-flops tipo D; b) síncrono, com flip-flops tipo T.
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Tem-se um oscilador a cristal que gera uma onda quadrada com frequência
+ de 1MHz.
+ Deseja-se obter um trem de pulsos com frequêca de 50 kHz.
+ Projetar um circuito digital para esta finalidade.
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+\lang english
+Desafio
+\bar default
+: Completar ou alterar o circuito do execício 2 a fim de que o resultado
+ da saída seja uma onda quadrada, ou seja, tempo em nivel lógico alto igual
+ ao tempo em nível lógico baixo, durante um período.
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Projetar um contador síncrono que atenda ao diagrama de estados abaixo,
+ utilizando flip-flops tipo JK.
+\lang brazilian
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Ex4flipflop.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 Enunciado do exercício 1\SpecialChar \ldots{}
 
 \begin_inset Float figure
