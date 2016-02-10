@@ -267,6 +267,12 @@ Contadores Assíncronos e Síncronos
 \begin_layout Enumerate
 
 \lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:exercicio1"
+
+\end_inset
+
 Elaborar o circuito lógico de um contador de 2 a 5, cíclico: a) assíncrono,
  com flip-flops tipo D; b) síncrono, com flip-flops tipo T.
 \lang brazilian
@@ -358,7 +364,128 @@ status open
 
 
 \begin_inset Graphics
-	filename Ex4flipflop.png
+	filename Ex4contadores.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:Desafio:ex5"
+
+\end_inset
+
+Desafio
+\bar default
+\lang brazilian
+: Projetar um contador síncrono crescente/decrescente manual, cíclico de
+ 0 a 7.
+ 
+\bar under
+Dica
+\bar default
+: deverá existir uma entrada adicional 
+\bar under
+Dir
+\bar default
+ que indicará o sentido de contagem.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Projetar um contador assíncrono com flip-flops tipo JK, decrescente, de
+ 24 a 2, cíclico, com contagem apenas de números pares.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Alterar o circuito do exercício 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:Desafio:ex5"
+
+\end_inset
+
+ para que a direção de contagem seja alterada automaticamente quando os
+ limites inferior e superior forem atingidos.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Projetar um contador síncrono com flip-flops tipo JK que atenda ao seguinte
+ diagrama de estados:
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename exercicio8contadores.png
 	scale 50
 
 \end_inset
@@ -380,47 +507,9 @@ caixaresp
 \end_layout
 
 \begin_layout Enumerate
-Enunciado do exercício 1\SpecialChar \ldots{}
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Box ovalbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "60col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\align center
-Exemplo de como posicionar uma figura logo na sequência do texto.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Enunciado do exercício 2\SpecialChar \ldots{}
-
+Para um contador assíncrono decrescente cíclico de 7 a 0, implementado com
+ flip-flops tipo D, traçar a carta de tempos considerando os tempos de atraso
+ de propagação e indicar a sequência de contagem incluindo os valores espúrios.
 \begin_inset ERT
 status open
 
@@ -434,6 +523,74 @@ caixaresp
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+O contador do exercício 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:exercicio1"
+
+\end_inset
+
+ é um divisor de frequêcia por quanto no máximo?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Em
+\bar default
+ 
+\bar under
+todos
+\bar default
+ 
+\bar under
+os
+\bar default
+ 
+\bar under
+exercícios
+\bar default
+, 
+\bar under
+após
+\bar default
+ 
+\bar under
+a
+\bar default
+ 
+\bar under
+impementação
+\bar default
+, 
+\bar under
+realizar
+\bar default
+ 
+\bar under
+a
+\bar default
+ 
+\bar under
+simulação
+\bar default
+.
 \end_layout
 
 \begin_layout Standard
