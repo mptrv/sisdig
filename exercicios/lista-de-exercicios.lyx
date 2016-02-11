@@ -273,34 +273,16 @@ name "enu:exercicio1"
 
 \end_inset
 
+
+\lang brazilian
 Elaborar o circuito lógico de um contador de 2 a 5, cíclico: a) assíncrono,
  com flip-flops tipo D; b) síncrono, com flip-flops tipo T.
-\lang brazilian
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
-
-\lang english
 Tem-se um oscilador a cristal que gera uma onda quadrada com frequência
  de 1MHz.
- Deseja-se obter um trem de pulsos com frequêca de 50 kHz.
- Projetar um circuito digital para esta finalidade.
-\lang brazilian
-
+ Deseja-se obter um trem de pulsos com frequêca de 
 \begin_inset ERT
 status open
 
@@ -308,47 +290,28 @@ status open
 
 
 \backslash
-caixaresp
+SI{50}{hHz}
 \end_layout
 
 \end_inset
 
-
+.
+ Projetar um circuito digital para esta finalidade.
 \end_layout
 
 \begin_layout Enumerate
 
 \bar under
-\lang english
 Desafio
 \bar default
 : Completar ou alterar o circuito do execício 2 a fim de que o resultado
  da saída seja uma onda quadrada, ou seja, tempo em nivel lógico alto igual
  ao tempo em nível lógico baixo, durante um período.
-\lang brazilian
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
-
-\lang english
 Projetar um contador síncrono que atenda ao diagrama de estados abaixo,
  utilizando flip-flops tipo JK.
-\lang brazilian
-
 \begin_inset Float figure
 placement H
 wide false
@@ -364,21 +327,8 @@ status open
 
 
 \begin_inset Graphics
-	filename Ex4contadores.png
-	scale 45
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
+	filename imagens/Ex4contadores.png
+	scale 60
 
 \end_inset
 
@@ -395,9 +345,10 @@ name "enu:Desafio:ex5"
 
 \end_inset
 
+
+\lang brazilian
 Desafio
 \bar default
-\lang brazilian
 : Projetar um contador síncrono crescente/decrescente manual, cíclico de
  0 a 7.
  
@@ -409,37 +360,11 @@ Dica
 Dir
 \bar default
  que indicará o sentido de contagem.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
 Projetar um contador assíncrono com flip-flops tipo JK, decrescente, de
  24 a 2, cíclico, com contagem apenas de números pares.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -452,19 +377,6 @@ reference "enu:Desafio:ex5"
 
  para que a direção de contagem seja alterada automaticamente quando os
  limites inferior e superior forem atingidos.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -485,21 +397,8 @@ status open
 
  
 \begin_inset Graphics
-	filename exercicio8contadores.png
+	filename imagens/exercicio8contadores.png
 	scale 50
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
 
 \end_inset
 
@@ -510,19 +409,6 @@ caixaresp
 Para um contador assíncrono decrescente cíclico de 7 a 0, implementado com
  flip-flops tipo D, traçar a carta de tempos considerando os tempos de atraso
  de propagação e indicar a sequência de contagem incluindo os valores espúrios.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -534,19 +420,6 @@ reference "enu:exercicio1"
 \end_inset
 
  é um divisor de frequêcia por quanto no máximo?
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
