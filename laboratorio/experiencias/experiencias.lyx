@@ -18198,7 +18198,7 @@ status collapsed
 \noindent
 \align center
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -18477,6 +18477,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-power-on-reset.png
+	width 30text%
+
+\end_inset
+
 
 \end_layout
 
@@ -18488,6 +18495,18 @@ Exemplo de circuito de
 \emph on
 Power-On Reset
 \emph default
+, com 
+\emph on
+reset
+\emph default
+ em nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
 .
 \begin_inset CommandInset label
 LatexCommand label
@@ -18519,6 +18538,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-power-on-reset-tensao-capacitor.png
+	width 60text%
+
+\end_inset
+
 
 \end_layout
 
@@ -18780,13 +18806,74 @@ schmitt-trigger
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-power-on-reset-0.png
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de circuito de 
+\emph on
+Power-On Reset
+\emph default
+, com 
+\emph on
+reset
+\emph default
+ em nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Exemplo-de-circuito-por-0"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Parte Experimental
 \end_layout
 
 \begin_layout Enumerate
 Deseja-se implementar um registrador de deslocamento para fornecer a sequência
- apresentada na tabela abaixo.
+ apresentada pela tabela e correspondente carta de tempos abaixo.
 \begin_inset Float table
 placement H
 wide false
@@ -18796,12 +18883,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="4">
+<lyxtabular version="3" rows="5" columns="5">
 <features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
@@ -18809,7 +18897,10 @@ status open
 \begin_layout Plain Layout
 
 \emph on
-Qa
+\begin_inset Formula $Q_{3}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18820,7 +18911,10 @@ Qa
 \begin_layout Plain Layout
 
 \emph on
-Qb
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18831,7 +18925,10 @@ Qb
 \begin_layout Plain Layout
 
 \emph on
-Qc
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18842,7 +18939,177 @@ Qc
 \begin_layout Plain Layout
 
 \emph on
-Qd
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" mroffset="1ex" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.35}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/falling arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & [timing/c/rising arrows] 12{C} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_3}$	& H LLLL HHHH LLL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& H HHLL LLHH HHL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_1}$	& L HHHH LLLL HHH 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_0}$	& L LLHH HHLL LLH 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18885,40 +19152,11 @@ Qd
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
 \end_layout
 
 \end_inset
@@ -18938,6 +19176,53 @@ Qd
 \begin_inset Text
 
 \begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 0
 \end_layout
 
@@ -18957,6 +19242,15 @@ Qd
 
 \begin_layout Plain Layout
 1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -18995,6 +19289,15 @@ Qd
 
 \begin_layout Plain Layout
 1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -19021,10 +19324,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-reg-desl-experiencia.png
+	width 100text%
 
-\end_layout
+\end_inset
 
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -19039,11 +19345,11 @@ No circuito apresentado, perceba-se que o
 \end_inset
 
  irá garantir que 
-\begin_inset Formula $Q_{a}$
+\begin_inset Formula $Q_{3}$
 \end_inset
 
  e 
-\begin_inset Formula $Q_{b}$
+\begin_inset Formula $Q_{2}$
 \end_inset
 
  iniciam-se em 
@@ -19055,11 +19361,11 @@ No circuito apresentado, perceba-se que o
 \end_inset
 
 , enquanto 
-\begin_inset Formula $Q_{c}$
+\begin_inset Formula $Q_{1}$
 \end_inset
 
  e 
-\begin_inset Formula $Q_{d}$
+\begin_inset Formula $Q_{0}$
 \end_inset
 
 , em 
@@ -19221,25 +19527,22 @@ Espátula
 \end_layout
 
 \begin_layout Itemize
-CIs: 1x 7400; 2x 7474
-\end_layout
-
-\begin_layout Standard
-\begin_inset External
-	template PDFPages
-	filename anexos/7400.pdf
-	lyxscale 50
-	extra LaTeX "pages={1}"
-
-\end_inset
-
-
+CIs: 1x 4093; 2x 7474
 \end_layout
 
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename anexos/7474.pdf
+	lyxscale 50
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/4093.pdf
 	lyxscale 50
 	extra LaTeX "pages={1}"
 
