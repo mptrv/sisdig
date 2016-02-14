@@ -90,6 +90,10 @@
 \newcommand{\sech}{\ensuremath{\,\mathrm{sech}}}
 \newcommand{\csch}{\ensuremath{\,\mathrm{cossech}}}
 \newcommand{\cotanh}{\ensuremath{\,\mathrm{cotg}}}
+
+% HIFENIZAÇÃO -- CORREÇÕES
+%   Para outros detalhes, ver: https://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Hyphenation.
+\hyphenation{co-nhe-ci-do}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -154,12 +158,12 @@ customHeadersFooters
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-logica-com-rele
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -174,47 +178,47 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-motor-passos
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-multiplex
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -457,7 +461,7 @@ ETE102 - Fundamentos de Circuitos Digitais
 
 \begin_layout Right Footer
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -482,7 +486,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch dg-logica-com-rele
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -507,7 +511,7 @@ Lógica com Relés
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -2994,7 +2998,7 @@ Painel de relés.
 
 \begin_layout Standard
 \begin_inset Branch dg-tecnicas-soldagem
-status collapsed
+status open
 
 \begin_layout Chapter
 \begin_inset Quotes eld
@@ -3011,7 +3015,7 @@ Técnicas de Soldagem
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Tópicos envolvidos
@@ -3369,7 +3373,7 @@ Sugador
 
 \begin_layout Standard
 \begin_inset Branch dg-portas-logicas
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -3386,7 +3390,7 @@ Portas Lógicas
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -4442,7 +4446,7 @@ proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-multiplex
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -4459,7 +4463,7 @@ Multiplexadores e Demultiplexadores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -8972,7 +8976,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-alarme-invasao
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -8997,7 +9001,7 @@ Alarme de Invasão
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Contexto
@@ -10299,7 +10303,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-decodificador
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -10331,7 +10335,7 @@ name "chap:Decodificador-BCD-Sete-Seg"
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 
@@ -10865,7 +10869,7 @@ protoboard
 
 \begin_layout Standard
 \begin_inset Branch dg-osciloscopio-i
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -12480,7 +12484,7 @@ Gerador de funções
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -12497,7 +12501,7 @@ Portas Lógicas Schmitt Trigger
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -13292,6 +13296,10 @@ ohm}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename anexos/schmitt-trigger-manuscrito.pdf
@@ -13308,9 +13316,14 @@ ohm}
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -13327,7 +13340,7 @@ Flip-Flops RS
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -16447,7 +16460,7 @@ Contadores Assíncronos e
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -17731,6 +17744,10 @@ CIs: 1x 7400; 2x 7474
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename anexos/7400.pdf
@@ -17759,17 +17776,26 @@ CIs: 1x 7400; 2x 7474
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch dg-contador-sincrono
 status open
 
 \begin_layout Chapter
-Contadores Síncronos e Registradores de Deslocamento
+Contadores Síncronos e
+\begin_inset Newline newline
+\end_inset
+
+Registradores de Deslocamento
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -17805,7 +17831,7 @@ flip-flops
 \emph on
 flip-flops
 \emph default
- são atualizadas ao mesmo tempo.
+ são atualizadas praticamente ao mesmo tempo.
 \end_layout
 
 \begin_layout Standard
@@ -17896,17 +17922,30 @@ o com base no atual.
  Ainda, como trata-se de um circuito que será projetado, pode-se, para cada
  valor atual, definir um futuro sem a obrigatoriedade de ser um número consecuti
 vo.
- Ou seja, pode-se criar uma contagem com qualquer sequência numérica.
+ Ou seja, tem-se a liberdade de criar uma contagem com qualquer sequência
+ numérica.
 \end_layout
 
 \begin_layout Standard
-A fig.
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Diagrama-de-Estados-contador"
+
+\end_inset
+
  apresenta um 
 \emph on
 Diagrama de Estados
 \emph default
 , o qual mapeia a sequência numérica de contagem de um determinado contador
- síncrono, e a fig.
+ síncrono, e a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Esquema-elétrico-contador-completo"
+
+\end_inset
+
  contém o circuito que o implementa.
 \end_layout
 
@@ -18032,7 +18071,7 @@ flip-flops
  O estado inicial é definido pelo circuito de POR, descrito mais adiante.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:csinc-Esquema-elétrico-contador-1"
+name "fig:csinc-Esquema-elétrico-contador-completo"
 
 \end_inset
 
@@ -18053,7 +18092,7 @@ name "fig:csinc-Esquema-elétrico-contador-1"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Exemplo de contador síncrono.
+Exemplo de contador síncrono completo.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:csinc-Exemplo-de-contador"
@@ -18122,12 +18161,24 @@ flip-flop
 \end_layout
 
 \begin_layout Standard
-A fig.
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Esquema-elétrico-reg-desloc"
+
+\end_inset
+
  apresenta um registrador de deslocamento de 3 
 \emph on
 bits
 \emph default
- e a fig.
+ e a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Carta-de-tempos"
+
+\end_inset
+
  demonstra um exemplo de deslocamento de 
 \emph on
 bit
@@ -18444,9 +18495,23 @@ redefinir ao energizar
 
 \begin_layout Standard
 Existem diversas variantes de circuitos para implementação do POR, sendo
- uma a esquematizada na fig.
+ uma a esquematizada na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Exemplo-de-circuito-por"
+
+\end_inset
+
+.
  Nesta figura, nota-se um circuito RC, cuja curva de carga do capacitor
- é apresentada na fig., e uma porta 
+ é apresentada na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Curva-de-carga-capacitor-por"
+
+\end_inset
+
+, e uma porta 
 \emph on
 schmitt-trigger
 \emph default
@@ -18480,7 +18545,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cont-sinc-power-on-reset.png
-	width 30text%
+	width 35text%
+	rotateOrigin leftBottom
 
 \end_inset
 
@@ -18499,7 +18565,11 @@ Power-On Reset
 \emph on
 reset
 \emph default
- em nível lógico 
+ em nível lógico
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Quotes eld
 \end_inset
 
@@ -18541,7 +18611,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cont-sinc-power-on-reset-tensao-capacitor.png
-	width 60text%
+	width 75text%
 
 \end_inset
 
@@ -18593,7 +18663,11 @@ flip-flops
 \emph on
 schimmit-trigger
 \emph default
-, pode-se realizar a seguinte dedução para se calcular o produto RC:
+, pode-se realizar a seguinte dedução para se calcular o produto 
+\begin_inset Formula $RC$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -18613,7 +18687,7 @@ após
 \begin_inset Formula $\Delta t_{mín}$
 \end_inset
 
-, tem-se:
+, pode-se:
 \end_layout
 
 \begin_layout Standard
@@ -18728,11 +18802,33 @@ Este valor, da ordem de dezenas de quilo ohms, tem o objetivo de diminuir
 \begin_inset Formula $C=\SI{4,7}{\micro\F}$
 \end_inset
 
-.
+ (e um 
+\begin_inset Formula $\Delta t_{mín}$
+\end_inset
+
+ final de 
+\begin_inset Formula $\SI{37,5}{\ms}$
+\end_inset
+
+).
+ A curva, da já citada 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Curva-de-carga-capacitor-por"
+
+\end_inset
+
+, salienta o par tensão-tempo conforme estes cálculos.
 \end_layout
 
 \begin_layout Standard
-O circuito mostrado na fig.
+O circuito mostrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Exemplo-de-circuito-por"
+
+\end_inset
+
  produz um sinal POR que permanece em nível lógico 
 \begin_inset Quotes eld
 \end_inset
@@ -18754,13 +18850,30 @@ O circuito mostrado na fig.
 \end_inset
 
  indefinidamente.
- Caso seja desejado um sinal de POR com comportamento inverso, ou seja,
- um 
+ Caso seja desejado um sinal POR com comportamento inverso, ou seja, um
+ 
 \begin_inset Formula $\mathrm{\overline{POR}}$
 \end_inset
 
 , tem-se duas alternativas: inverter o sinal de POR, ou utilizar o circuito
- da fig., cujo valor de RC poderá ser calculado por:
+ da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Exemplo-de-circuito-por-0"
+
+\end_inset
+
+, cujo valor de RC poderá ser calculado por
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Sugetão: procure deduzir esta equação.
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -18816,7 +18929,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/cont-sinc-power-on-reset-0.png
-	width 30text%
+	width 35text%
 
 \end_inset
 
@@ -18835,7 +18948,11 @@ Power-On Reset
 \emph on
 reset
 \emph default
- em nível lógico 
+ em nível lógico
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Quotes eld
 \end_inset
 
@@ -19384,7 +19501,7 @@ Por meio de botão do Painel Digital, aplicar pulsos consecutivos de
 \emph on
 clock 
 \emph default
-e observar o deslocamento cíclico de ambos os 
+e observar o deslocamento cíclico dos 
 \emph on
 bits
 \emph default
@@ -19392,7 +19509,11 @@ bits
 \end_layout
 
 \begin_layout Enumerate
-Traçar a correspondente carta de tempos.
+Quantos pulsos de 
+\emph on
+clock
+\emph default
+ são necessários para haver repetição da sequência?
 \begin_inset ERT
 status open
 
@@ -19400,7 +19521,7 @@ status open
 
 
 \backslash
-caixaresp[10]
+caixaresp[3]
 \end_layout
 
 \end_inset
@@ -19415,7 +19536,7 @@ Desligar e ligar o circuito e verificar o estado inicial novamente.
 \begin_layout Enumerate
 Remover o circuito de POR, desligar e ligar várias vezes o circuito e verificar
  os estados inicias.
- Descrever o observado.
+ Descrever o observado e justificar.
 \begin_inset ERT
 status open
 
@@ -19495,22 +19616,6 @@ Painel Digital
 \end_layout
 
 \begin_layout Itemize
-Ociloscópio
-\end_layout
-
-\begin_layout Itemize
-Gerador de funções
-\end_layout
-
-\begin_layout Itemize
-2x cabos BNC-jacaré
-\end_layout
-
-\begin_layout Itemize
-1x cabo BNC-BNC
-\end_layout
-
-\begin_layout Itemize
 Caixa com fios
 \end_layout
 
@@ -19529,6 +19634,10 @@ Espátula
 \begin_layout Itemize
 CIs: 1x 4093; 2x 7474
 \end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
 
 \begin_layout Standard
 \begin_inset External
@@ -19556,9 +19665,14 @@ CIs: 1x 4093; 2x 7474
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch dg-motor-passos
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -21507,6 +21621,10 @@ Quais são as características mais importantes para os diodos e transistores
  utilizados e de que maneira elas afetam o desempenho do circuito.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
@@ -21557,32 +21675,6 @@ Power Products Data Book
 .
  Dallas 1985.
 \end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset External
-	template PDFPages
-	filename anexos/7486.pdf
-	lyxscale 25
-	extra LaTeX "pages={1}"
-
-\end_inset
-
-
-\begin_inset External
-	template PDFPages
-	filename anexos/7404.pdf
-	lyxscale 25
-	extra LaTeX "pages={1}"
-
-\end_inset
-
-
-\begin_inset External
-	template PDFPages
-	filename anexos/74191.pdf
-	lyxscale 25
-	extra LaTeX "pages={1,4,5}"
 
 \end_inset
 
@@ -21670,6 +21762,47 @@ Resistores: 4x
 CIs: 1x 7406; 1x 7486; 1x 74191
 \end_layout
 
+\begin_layout Standard
+\align center
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset External
+	template PDFPages
+	filename anexos/7486.pdf
+	lyxscale 25
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7404.pdf
+	lyxscale 25
+	extra LaTeX "pages={1}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/74191.pdf
+	lyxscale 25
+	extra LaTeX "pages={1,4,5}"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -21681,7 +21814,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -21772,7 +21905,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -23514,7 +23647,7 @@ ETE103 - Fundamentos de Circuitos Analógicos
 
 \begin_layout Right Footer
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -23556,7 +23689,7 @@ Resistores e Associação de Resistores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -28057,7 +28190,7 @@ Multímetros
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -30474,7 +30607,7 @@ Medidas Elétricas e Resistência Variável
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 OBJETIVOS
@@ -32070,7 +32203,7 @@ Bipolos Lineares e Não Lineares
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -34225,7 +34358,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Title
 Lei de Kirchhoff
@@ -34481,7 +34614,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Title
 PONTE DE WHEATSTONE 
@@ -35272,7 +35405,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 
@@ -35294,7 +35427,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 
@@ -35316,7 +35449,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 
@@ -35338,7 +35471,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 
