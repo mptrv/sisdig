@@ -163,11 +163,12 @@ customHeadersFooters
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 239966243 "mptrev" 
 \end_header
 
 \begin_body
@@ -275,14 +276,68 @@ name "enu:exercicio1"
 
 
 \lang brazilian
-Elaborar o circuito lógico de um contador de 2 a 5, cíclico: a) assíncrono,
- com flip-flops tipo D; b) síncrono, com flip-flops tipo T.
+Elaborar o circuito lógico de um contador de 2 a 5, cíclico:
+\change_inserted 239966243 1455798905
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\change_deleted 239966243 1455798909
+ a) 
+\change_unchanged
+assíncrono, com flip-flops tipo D;
+\change_inserted 239966243 1455798913
+
 \end_layout
 
 \begin_layout Enumerate
+
+\change_deleted 239966243 1455798915
+ b) 
+\change_unchanged
+síncrono, com flip-flops tipo T.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
 Tem-se um oscilador a cristal que gera uma onda quadrada com frequência
- de 1MHz.
- Deseja-se obter um trem de pulsos com frequêca de 
+ de 
+\change_deleted 239966243 1455798952
+1MHz
+\change_inserted 239966243 1455798954
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 239966243 1455798968
+
+
+\backslash
+SI{1}{
+\backslash
+MHz}
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ Deseja-se obter um trem de pulsos com frequê
+\change_inserted 239966243 1455798926
+n
+\change_unchanged
+c
+\change_inserted 239966243 1455798927
+i
+\change_unchanged
+a de 
 \begin_inset ERT
 status open
 
@@ -290,13 +345,32 @@ status open
 
 
 \backslash
-SI{50}{hHz}
+SI{50}{
+\change_deleted 239966243 1455798930
+h
+\change_inserted 239966243 1455798978
+
+\backslash
+k
+\change_unchanged
+Hz}
 \end_layout
 
 \end_inset
 
 .
  Projetar um circuito digital para esta finalidade.
+\change_inserted 239966243 1455799019
+
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:cont-assinc-sinc-divisor"
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Enumerate
@@ -304,14 +378,43 @@ SI{50}{hHz}
 \bar under
 Desafio
 \bar default
-: Completar ou alterar o circuito do execício 2 a fim de que o resultado
- da saída seja uma onda quadrada, ou seja, tempo em nivel lógico alto igual
- ao tempo em nível lógico baixo, durante um período.
+: Completar ou alterar o circuito do execício 
+\change_deleted 239966243 1455799023
+2
+\change_inserted 239966243 1455799034
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:cont-assinc-sinc-divisor"
+
+\end_inset
+
+
+\change_unchanged
+ a fim de que o resultado da saída seja uma onda quadrada, ou seja, tempo
+ em n
+\change_deleted 239966243 1455799042
+i
+\change_inserted 239966243 1455799042
+í
+\change_unchanged
+vel lógico alto igual ao tempo em nível lógico baixo, durante um período.
 \end_layout
 
 \begin_layout Enumerate
-Projetar um contador síncrono que atenda ao diagrama de estados abaixo,
- utilizando flip-flops tipo JK.
+Projetar um contador síncrono que atenda ao 
+\change_deleted 239966243 1455799063
+d
+\change_inserted 239966243 1455799063
+D
+\change_unchanged
+iagrama de 
+\change_deleted 239966243 1455799063
+e
+\change_inserted 239966243 1455799063
+E
+\change_unchanged
+stados abaixo, utilizando flip-flops tipo JK.
 \begin_inset Float figure
 placement H
 wide false
@@ -321,14 +424,17 @@ status open
 \begin_layout Plain Layout
 \align center
 
-\end_layout
+\change_inserted 239966243 1455799084
+\begin_inset Graphics
+	filename imagens/ex4contadores.png
+	scale 56
 
 \end_inset
 
 
-\begin_inset Graphics
-	filename imagens/ex4contadores.png
-	scale 56
+\change_unchanged
+
+\end_layout
 
 \end_inset
 
@@ -356,8 +462,10 @@ Desafio
 Dica
 \bar default
 : deverá existir uma entrada adicional 
+\series bold
 \bar under
 Dir
+\series default
 \bar default
  que indicará o sentido de contagem.
 \end_layout
@@ -381,7 +489,25 @@ reference "enu:Desafio:ex5"
 
 \begin_layout Enumerate
 Projetar um contador síncrono com flip-flops tipo JK que atenda ao seguinte
- diagrama de estados:
+ 
+\change_deleted 239966243 1455799723
+d
+\change_inserted 239966243 1455799723
+D
+\change_unchanged
+iagrama de 
+\change_deleted 239966243 1455799727
+e
+\change_inserted 239966243 1455799727
+E
+\change_unchanged
+stados
+\change_inserted 239966243 1455799731
+ abaixo.
+\change_deleted 239966243 1455799732
+:
+\change_unchanged
+
 \begin_inset Float figure
 placement H
 wide false
@@ -391,11 +517,7 @@ status open
 \begin_layout Plain Layout
 \align center
 
-\end_layout
-
-\end_inset
-
- 
+\change_inserted 239966243 1455799201
 \begin_inset Graphics
 	filename imagens/ex8contadores.png
 	scale 56
@@ -403,12 +525,35 @@ status open
 \end_inset
 
 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Enumerate
 Para um contador assíncrono decrescente cíclico de 7 a 0, implementado com
  flip-flops tipo D, traçar a carta de tempos considerando os tempos de atraso
- de propagação e indicar a sequência de contagem incluindo os valores espúrios.
+ de propagação e indicar a sequência de contagem incluindo os valores espúrios
+\change_inserted 239966243 1455799245
+ (
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+glitches
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+)
+\change_unchanged
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -419,11 +564,19 @@ reference "enu:exercicio1"
 
 \end_inset
 
- é um divisor de frequêcia por quanto no máximo?
+ é um divisor de frequê
+\change_inserted 239966243 1455799395
+n
+\change_unchanged
+cia por quanto no máximo?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quotation
 
+\family typewriter
+\series bold
+\size large
+\emph on
 \bar under
 Em
 \bar default
