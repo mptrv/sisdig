@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 479
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -48,6 +48,11 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\branch prazo
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -82,7 +87,11 @@ ETE102 -- Fundamentos de Circuitos Digitais
 \begin_inset Newline newline
 \end_inset
 
-Projeto 
+
+\emph on
+Projeto
+\emph default
+ 
 \emph on
 
 \begin_inset Quotes eld
@@ -93,6 +102,12 @@ Dado Digital
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\size larger
+--- Roteiro Preliminar ---
 \end_layout
 
 \begin_layout Author
@@ -112,10 +127,6 @@ Profº Marcelo Porto Trevizan
 \begin_inset Newline newline
 \end_inset
 
-Profº Murilo Zanini de Carvalho
-\begin_inset Newline newline
-\end_inset
-
 Profº Wânderson de Oliveira Assis
 \begin_inset Newline newline
 \end_inset
@@ -124,7 +135,7 @@ Profº Wânderson de Oliveira Assis
 \end_layout
 
 \begin_layout Date
-Primeiro Semestre de 2015
+Primeiro Semestre de 2016
 \end_layout
 
 \begin_layout Section
@@ -146,6 +157,13 @@ dado digital
 \emph default
 com dois dígitos de 0 a 9.
 \end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+\begin_inset Branch prazo
+status collapsed
 
 \begin_layout Section
 Prazo para Entrega
@@ -252,6 +270,11 @@ Não serão aceitos projetos entregues fora do prazo.
 \series bold
 \emph on
 A pontuação será atribuída apenas aos presentes na data de entrega.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -734,7 +757,7 @@ Qualidade das soldas:
 \begin_layout Enumerate
 Bônus: 
 \series bold
-+1,5
++1,0
 \end_layout
 
 \begin_deeper
@@ -760,7 +783,7 @@ A pontuação máxima é de
 \begin_layout Quotation
 
 \emph on
-As equipes que obtiverem pontuação menor que 8,0 poderão ir para a 
+As equipes que obtiverem pontuação menor que 8,5 poderão ir para a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -768,7 +791,7 @@ repescagem
 \begin_inset Quotes erd
 \end_inset
 
-, na qual a nota do projeto será 80% da pontuação obtida na nova avaliação.
+, na qual a nota do projeto será 85% da pontuação obtida na nova avaliação.
 \end_layout
 
 \end_body
