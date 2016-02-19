@@ -629,6 +629,25 @@ Os critérios de avaliação por item são:
 \end_layout
 
 \begin_layout Enumerate
+Primeira pré-apresentação: 
+\series bold
+10,0 (peso 1,0)
+\end_layout
+
+\begin_layout Enumerate
+Segunda pré-apresentação: 
+\series bold
+10,0 (peso 1,0)
+\end_layout
+
+\begin_layout Enumerate
+Apresentação final: 
+\series bold
+10,0 (peso 8,0)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
 Esquema elétrico: 
 \series bold
 2,0
@@ -768,9 +787,10 @@ clock
 \emph default
  próprio: 
 \series bold
-+1,5
++1,0
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 A pontuação máxima é de 
@@ -783,7 +803,7 @@ A pontuação máxima é de
 \begin_layout Quotation
 
 \emph on
-As equipes que obtiverem pontuação menor que 8,5 poderão ir para a 
+As equipes que obtiverem pontuação menor que 8,0 poderão ir para a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -791,7 +811,7 @@ repescagem
 \begin_inset Quotes erd
 \end_inset
 
-, na qual a nota do projeto será 85% da pontuação obtida na nova avaliação.
+, na qual a nota do projeto será 80% da pontuação obtida na nova avaliação.
 \end_layout
 
 \end_body
