@@ -153,7 +153,7 @@ customHeadersFooters
 \justification true
 \use_refstyle 1
 \branch cm-corpo
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #e5dcd3
 \end_branch
@@ -208,7 +208,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-motor-passos
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -16451,11 +16451,20 @@ CI: 1x 7400
 status open
 
 \begin_layout Chapter
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
 Contadores Assíncronos e
 \begin_inset Newline newline
 \end_inset
 
  Divisores de Frequência
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -17786,11 +17795,20 @@ status open
 status open
 
 \begin_layout Chapter
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
 Contadores Síncronos e
 \begin_inset Newline newline
 \end_inset
 
 Registradores de Deslocamento
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -19068,7 +19086,6 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-\align center
 \begin_inset space \quad{}
 \end_inset
 
