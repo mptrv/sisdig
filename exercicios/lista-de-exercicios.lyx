@@ -597,8 +597,34 @@ thepage
 \end_layout
 
 \begin_layout Chapter
+Lista de Exercício
+\end_layout
+
+\begin_layout Enumerate
+Determine a corrente I nos circuitos abaixo.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/Ex1aAnalogicos.png
+
+\end_inset
+
 
 \end_layout
 
+\end_inset
+
+ Resultado: Ur= 3
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
