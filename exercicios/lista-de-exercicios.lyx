@@ -606,13 +606,32 @@ Determine a corrente I nos circuitos abaixo.
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagens/Ex1aAnalogicos.png
 	scale 80
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
