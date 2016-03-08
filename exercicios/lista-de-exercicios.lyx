@@ -602,28 +602,34 @@ Lista de Exercício
 
 \begin_layout Enumerate
 Determine a corrente I nos circuitos abaixo.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/Ex1aAnalogicos.png
-	scale 80
+	width 45text%
 
 \end_inset
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -634,25 +640,29 @@ status open
 
 \end_layout
 
-\begin_layout Enumerate
+\end_inset
+
+
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/ex1bAnalogicos.png
-	scale 80
+	width 45text%
 
 \end_inset
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 
@@ -663,6 +673,15 @@ status open
 
 \end_layout
 
-\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
