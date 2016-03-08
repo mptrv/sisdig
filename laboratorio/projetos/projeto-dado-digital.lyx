@@ -49,6 +49,11 @@
 \justification true
 \use_refstyle 1
 \branch prazo
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch preliminar
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -102,12 +107,23 @@ Dado Digital
 \end_inset
 
 
+\begin_inset Branch preliminar
+status open
+
+\begin_layout Standard
+
+\emph on
 \begin_inset Newline newline
 \end_inset
 
 
 \size larger
 --- Roteiro Preliminar ---
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
@@ -128,10 +144,6 @@ Profº Marcelo Porto Trevizan
 \end_inset
 
 Profº Wânderson de Oliveira Assis
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Date
@@ -159,19 +171,20 @@ com dois dígitos de 0 a 9.
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-\emph on
 \begin_inset Branch prazo
-status collapsed
+status open
 
 \begin_layout Section
-Prazo para Entrega
+Prazos para Entrega
 \end_layout
 
 \begin_layout Standard
 O projeto deverá ser apresentado na própria aula de laboratório, conforme
- as datas:
+ as datas nas seções a seguir.
+\end_layout
+
+\begin_layout Subsection
+Primeira Pré-apresentação
 \end_layout
 
 \begin_layout Standard
@@ -200,11 +213,7 @@ Diurno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios da segunda-feira: 08.06.2015
-\end_layout
-
-\begin_layout Itemize
-Laboratórios da quarta-feira: 10.06.2015
+Laboratórios na segunda-feira: 28.03.2016
 \end_layout
 
 \end_deeper
@@ -216,11 +225,187 @@ Noturno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios da segunda-feira: 08.06.2015
+Laboratórios na quarta-feira: 30.03.2016
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Segunda Pré-apresentação
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Laboratórios da terça-feira: 09.06.2015
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na segunda-feira: 02.05.2016
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na quarta-feira: 04.05.2016
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Apresentação Final
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na segunda-feira: 06.06.2016
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na quarta-feira: 08.06.2016
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Repescagem
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na segunda-feira: 27.06.2016
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na quarta-feira: 29.06.2016
 \end_layout
 
 \end_deeper
@@ -592,7 +777,7 @@ jumpers
 \end_layout
 
 \begin_layout Itemize
-Para a afixação dos CIs, 
+Para a fixação dos CIs, 
 \series bold
 utilizar soquetes de CI
 \series default
@@ -614,14 +799,604 @@ No horário de funcionamento do Amoxarifado de Eletrônica, poderá ser empresta
  o trabalho.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 No Moodle, há um fórum criado para discussões a respeito deste projeto,
  envolvendo, por exemplo, dicas e sugestões para sua confecção e que podem
  ser postadas pelos próprios alunos.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama em Blocos
+\end_layout
+
+\begin_layout Standard
+O Diagrama em Blocos do projeto proposto encontra-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Diagrama-em-Blocos-dado-digital"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename diagrama-em-blocos.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama em Blocos do projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-em-Blocos-dado-digital"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cronograma de Referência
+\end_layout
+
+\begin_layout Standard
+Um cronograma detalhado de referência é apresentado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Cronograma-de-referencia-dado-digital"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cronograma detalhado de referência para o desenvolvimento do projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+ ao longo das semanas.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Cronograma-de-referencia-dado-digital"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="2">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Período
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Atividade/Bloco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+07/03 a 13/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comprar componentes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+14/03 a 20/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar conectores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+21/03 a 27/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projetar, testar e soldar os comparadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+28/03 e 30/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Primeira pré-apresentação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+28/03 a 08/04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar decodificadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+18/04 a 24/04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar os 
+\emph on
+displays
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+25/04 a 01/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Testar decodificação com 
+\emph on
+displays
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+02/05 e 04/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Segunda pré-apresentação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+02/05 a 08/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projetar, testar e soldar botão e entornos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+09/05 a 15/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e testar 
+\emph on
+driver 
+\emph default
+da lâmpada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+16/05 a 22/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar contadores, interligando-o aos demais blocos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+23/05 a 29/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e interligar o circuito de POR
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+30/05 a 05/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Finalizações e testes do circuito completo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementação do bônus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+06/06 e 08/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Apresentação final
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+06/06 a 26/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Correções para a repescagem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color red
+27/06 e 29/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color red
+Repescagem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Critérios de Avaliação
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size large
+\emph on
+Nota: para as pré-apresentações, deve-se entregar o trecho do circuito solicitad
+o já soldado na placa padrão.
 \end_layout
 
 \begin_layout Standard
