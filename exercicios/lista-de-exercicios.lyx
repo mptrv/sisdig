@@ -683,5 +683,11 @@ status open
 
 \end_layout
 
+\begin_layout Enumerate
+Determine as tensões e correntes indicadas nos circuitos.
+ Determine também as potências dissipadas em cada resistor e a potência
+ fornecida pela fonte.
+\end_layout
+
 \end_body
 \end_document
