@@ -901,7 +901,7 @@ reference "tab:Cronograma-de-referencia-dado-digital"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -916,6 +916,12 @@ Dado Digital
 \end_inset
 
  ao longo das semanas.
+ 
+\emph on
+(Note-se que é apenas uma referência: as datas a serem obrigatoriamente
+ cumpridas são as das linhas em azul.)
+\emph default
+
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Cronograma-de-referencia-dado-digital"
@@ -1395,8 +1401,8 @@ Critérios de Avaliação
 \family typewriter
 \size large
 \emph on
-Nota: para as pré-apresentações, deve-se entregar o trecho do circuito solicitad
-o já soldado na placa padrão.
+Nota: para as pré-apresentações, o professor de laboratório dará as corresponden
+tes orientações.
 \end_layout
 
 \begin_layout Standard
