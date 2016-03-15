@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.18>
 <Properties>
-  <View=0,0,800,800,1,0,0>
+  <View=0,0,881,800,1,0,0>
   <Grid=10,10,1>
   <DataSet=setas.dat>
   <DataDisplay=setas.dpl>
@@ -33,4 +33,7 @@
   <Line 430 410 30 0 #000000 0 1>
   <Text 440 390 12 #000000 0 "I=?">
   <Arrow 460 410 0 30 20 8 #000000 0 1 0>
+  <EArc 450 170 10 60 1897 2129 #000000 0 1>
+  <Arrow 450 180 10 -20 20 8 #000000 0 1 0>
+  <Text 420 170 12 #000000 0 "V_{R1}">
 </Paintings>

@@ -35,5 +35,5 @@
 <Paintings>
   <Arrow 410 310 -60 0 20 8 #000000 0 1 0>
   <Text 370 320 12 #000000 0 "1 mA">
-  <Text 540 200 11 #000000 0 "Resultado:\nU=1,29\nPdR1=0,47 mW\nPdR1=0,82 mW\nPf=1,29 mW">
+  <Text 540 200 11 #000000 0 "Resultado:\nU=1,29\nPd_{R1}=0,47 mW\nPd_{R1}=0,82 mW\nP_{f}=1,29 mW">
 </Paintings>
