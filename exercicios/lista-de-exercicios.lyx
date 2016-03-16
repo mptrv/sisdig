@@ -816,7 +816,7 @@ status open
 (a)
 \begin_inset Graphics
 	filename imagens/Ex3aAnalogicos.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -832,7 +832,7 @@ status open
 (b)
 \begin_inset Graphics
 	filename imagens/Ex3bAnalogicos.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -879,7 +879,7 @@ status open
 (c)
 \begin_inset Graphics
 	filename imagens/Ex3cAnalogicos.png
-	scale 55
+	scale 65
 
 \end_inset
 
@@ -905,5 +905,286 @@ status open
 
 \end_layout
 
+\begin_layout Enumerate
+Dado o circuito de referência:
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/Ex4Analogicos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{V_{f}=}$
+\end_inset
+
+
+ 
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3,5}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{f}=}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{V_{g}=}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{24}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Resultado: R = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{410}{
+\backslash
+ohm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{V_{f}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2,2}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{f}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{150}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{V_{g}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Resultado: R=
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+ohm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Projete um circuito para ligar 3 LEDs simultaneamente com 
+\begin_inset Formula $\mathrm{V_{f}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3,5}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{I_{f}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{50}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+.
+ Assuma fonte disponível de 
+\begin_inset Formula $\mathrm{V_{g}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Resultado: 
+\begin_inset Formula $\mathrm{R}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{56,6667}{
+\backslash
+ohm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
