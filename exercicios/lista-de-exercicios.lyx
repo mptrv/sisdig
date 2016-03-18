@@ -914,9 +914,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/Ex4Analogicos.png
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -937,10 +938,7 @@ status open
 \begin_inset Formula $\mathrm{V_{f}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1183,6 +1181,136 @@ ohm}
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Analise o circuito a seguir e determine a tensão V e as correntes 
+\begin_inset Formula $\mathrm{I_{1}}$
+\end_inset
+
+e 
+\begin_inset Formula $\mathrm{I_{2}}$
+\end_inset
+
+.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/Ex6Analogicos.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Por análise de malha 
+\end_layout
+
+\begin_layout Enumerate
+Por análise nodal
+\end_layout
+
+\begin_layout Standard
+Resultado: 
+\begin_inset Formula $\mathrm{V=}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{15}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{1}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{6}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{2}}=$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{3}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
