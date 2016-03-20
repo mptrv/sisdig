@@ -606,7 +606,7 @@ Determine a corrente I nos circuitos abaixo.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -691,7 +691,7 @@ Determine as tensões e correntes indicadas nos circuitos.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -747,7 +747,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -796,7 +796,7 @@ Determine todas as tensões e correntes indicadas nos circuitos.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -860,7 +860,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -911,7 +911,7 @@ Dado o circuito de referência:
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1198,7 +1198,7 @@ e
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1311,6 +1311,241 @@ A}
 \end_inset
 
 .
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine a corrente no resistor 
+\begin_inset Formula $\mathrm{R_{3}}$
+\end_inset
+
+ do circuito abaixo:
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Ex7Analogicos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Por análise de malha.
+\end_layout
+
+\begin_layout Enumerate
+Por análise nodal
+\end_layout
+
+\begin_layout Standard
+Resultado: 
+\begin_inset Formula $\mathrm{I_{3}}=$
+\end_inset
+
+
+ 
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1,25}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Determine as tensões 
+\begin_inset Formula $\mathrm{V_{1}}$
+\end_inset
+
+
+ e 
+\lang brazilian
+
+\begin_inset Formula $\mathrm{V_{2}}$
+\end_inset
+
+ no circuito.
+
+ 
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Ex8Analogicos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Por análise de malha.
+\end_layout
+
+\begin_layout Enumerate
+Por análise nodal
+\end_layout
+
+\begin_layout Standard
+Resultado: 
+\begin_inset Formula $\mathrm{V_{1}}=$
+\end_inset
+
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{48}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\lang brazilian
+
+\begin_inset Formula $\mathrm{V_{2}}=$
+\end_inset
+
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{24}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+Determine a corrente na carga 
+\lang brazilian
+
+\begin_inset Formula $\mathrm{R_{L}}$
+\end_inset
+
+ do circuito.
+ Assuma que
+ 
+\lang brazilian
+
+\begin_inset Formula $\mathrm{R_{L}}$
+\end_inset
+
+ é variável (portanto obtenha a correte em função de 
+\begin_inset Formula $\mathrm{R_{L}}$
+\end_inset
+
+).
+ 
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Ex9Analogicos.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Por análise de malha.
+\end_layout
+
+\begin_layout Enumerate
+Por análise nodal
+\end_layout
+
+\begin_layout Standard
+Resultado: 
+\begin_inset Formula $\mathrm{I_{L}}=\frac{15}{(R_{L}+5)}$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
