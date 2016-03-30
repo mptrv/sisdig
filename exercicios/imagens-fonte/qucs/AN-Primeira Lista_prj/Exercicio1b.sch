@@ -40,5 +40,5 @@
   <Line 460 160 40 0 #000000 0 1>
   <Arrow 500 160 0 30 20 8 #000000 0 1 0>
   <Text 480 140 12 #000000 0 "I=?">
-  <Text 300 270 12 #000000 0 "Resultado:\nUr=-5V\nI=-5mA\n(Indica que a corrente flui no \nsentido oposto ao mostrado)">
+  <Text 300 270 12 #000000 0 "Resultado:\nUr= -5V\nI= -5mA\n(Indica que a corrente flui no \nsentido oposto ao mostrado)">
 </Paintings>

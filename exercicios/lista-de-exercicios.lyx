@@ -788,6 +788,290 @@ status collapsed
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Resultados: 
+\end_layout
+
+\begin_layout Standard
+(a) 
+\begin_inset Formula $\mathrm{I}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,2}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{U_{R1}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1,2}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{U_{R2}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,8}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d_{R1}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,24}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d_{R2}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,16}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{f}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,4}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b)
+\begin_inset Formula $\mathrm{I}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{U_{R1}}=\mathrm{U_{R2}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d_{R1}}}=\mathrm{P_{d_{R2}}}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,144}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{f}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,288}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c) 
+\begin_inset Formula $\mathrm{U}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1,29}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d_{R1}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,47}{
+\backslash
+mW}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d_{R2}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,82}{
+\backslash
+mW}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{f}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1,29}{
+\backslash
+mW}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Determine todas as tensões e correntes indicadas nos circuitos.
  Determine também as potências dissipadas em cada resistor e a formada pela
@@ -796,11 +1080,7 @@ Determine todas as tensões e correntes indicadas nos circuitos.
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -905,6 +1185,404 @@ status collapsed
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Desafio:
+\end_layout
+
+\begin_layout Standard
+(a) 
+\begin_inset Formula $\mathrm{I_{T}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{1}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1,2}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{2}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0,8}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d1}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{28,8}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d2}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{19,2}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{f}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{48}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) 
+\begin_inset Formula $\mathrm{U_{R1}}=\mathrm{U_{R2}}=\mathrm{U}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{T}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2,25}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d1}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{d2}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{12,5}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{f}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{22,5}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c) 
+\begin_inset Formula $\mathrm{I_{T}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{14,8}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{U_{R1}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4,89}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{U_{R2}}=\mathrm{U_{R3}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{4,11}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{1}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{6,05}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{I_{1}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{8,75}{
+\backslash
+mA}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{R_{1}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{72,3}{
+\backslash
+mW}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{R_{2}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{24,9}{
+\backslash
+mW}
+\end_layout
+
+\end_inset
+
+;
+\begin_inset Formula $\mathrm{P_{R_{3}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{36,0}{
+\backslash
+mW}
+\end_layout
+
+\end_inset
+
+; 
+\begin_inset Formula $\mathrm{P_{f}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{133,2}{
+\backslash
+W}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Dado o circuito de referência:
 \begin_inset Float table
@@ -1364,10 +2042,7 @@ Resultado:
 \begin_inset Formula $\mathrm{I_{3}}=$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1391,15 +2066,11 @@ Determine as tensões
 \begin_inset Formula $\mathrm{V_{1}}$
 \end_inset
 
-
  e 
-\lang brazilian
-
 \begin_inset Formula $\mathrm{V_{2}}$
 \end_inset
 
  no circuito.
-
  
 \begin_inset Float table
 placement H
@@ -1445,7 +2116,6 @@ Resultado:
 \begin_inset Formula $\mathrm{V_{1}}=$
 \end_inset
 
-
  
 \begin_inset ERT
 status open
@@ -1462,11 +2132,8 @@ V}
 \end_inset
 
 ; 
-\lang brazilian
-
 \begin_inset Formula $\mathrm{V_{2}}=$
 \end_inset
-
 
  
 \begin_inset ERT
@@ -1488,18 +2155,12 @@ V}
 
 \end_deeper
 \begin_layout Enumerate
-
 Determine a corrente na carga 
-\lang brazilian
-
 \begin_inset Formula $\mathrm{R_{L}}$
 \end_inset
 
  do circuito.
- Assuma que
- 
-\lang brazilian
-
+ Assuma que 
 \begin_inset Formula $\mathrm{R_{L}}$
 \end_inset
 
