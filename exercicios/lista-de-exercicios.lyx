@@ -606,7 +606,7 @@ Determine a corrente I nos circuitos abaixo.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -747,11 +747,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -795,10 +791,10 @@ Resultados:
 
 \begin_layout Standard
 (a) 
-\begin_inset Formula $\mathrm{I}=$
+\begin_inset Formula $\mathrm{I=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -814,10 +810,10 @@ A}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{U_{R1}}=$
+\begin_inset Formula $\mathrm{U_{R1}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -833,10 +829,10 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{U_{R2}}=$
+\begin_inset Formula $\mathrm{U_{R2}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -852,10 +848,10 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d_{R1}}}=$
+\begin_inset Formula $\mathrm{P_{d_{R1}}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -871,10 +867,10 @@ W}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d_{R2}}}=$
+\begin_inset Formula $\mathrm{P_{d_{R2}}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -890,10 +886,10 @@ W}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{f}}=$
+\begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -913,10 +909,10 @@ W}
 
 \begin_layout Standard
 (b)
-\begin_inset Formula $\mathrm{I}=$
+\begin_inset Formula $\mathrm{I=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -932,10 +928,10 @@ mA}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{U_{R1}}=\mathrm{U_{R2}}=$
+\begin_inset Formula $\mathrm{U_{R1}=}\mathrm{U_{R2}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -951,10 +947,10 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d_{R1}}}=\mathrm{P_{d_{R2}}}$
+\begin_inset Formula $\mathrm{P_{d_{R1}}=}\mathrm{P_{d_{R2}}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -970,9 +966,12 @@ W}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{f}}=$
+\begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -993,9 +992,12 @@ W}
 
 \begin_layout Standard
 (c) 
-\begin_inset Formula $\mathrm{U}=$
+\begin_inset Formula $\mathrm{U=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1012,9 +1014,12 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d_{R1}}}=$
+\begin_inset Formula $\mathrm{P_{d_{R1}}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1031,10 +1036,10 @@ mW}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d_{R2}}}=$
+\begin_inset Formula $\mathrm{P_{d_{R2}}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1050,10 +1055,10 @@ mW}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{f}}=$
+\begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1074,13 +1079,13 @@ mW}
 \end_deeper
 \begin_layout Enumerate
 Determine todas as tensões e correntes indicadas nos circuitos.
- Determine também as potências dissipadas em cada resistor e a formada pela
- fonte.
+ Determine também as potências dissipadas em cada resistor e a fornecida
+ pela fonte.
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -1096,7 +1101,7 @@ status open
 (a)
 \begin_inset Graphics
 	filename imagens/Ex3aAnalogicos.png
-	scale 65
+	scale 70
 
 \end_inset
 
@@ -1112,7 +1117,7 @@ status open
 (b)
 \begin_inset Graphics
 	filename imagens/Ex3bAnalogicos.png
-	scale 65
+	scale 70
 
 \end_inset
 
@@ -1143,10 +1148,6 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
 <features rotate="0" tabularvalignment="middle">
@@ -1159,7 +1160,7 @@ status collapsed
 (c)
 \begin_inset Graphics
 	filename imagens/Ex3cAnalogicos.png
-	scale 65
+	scale 70
 
 \end_inset
 
@@ -1187,15 +1188,15 @@ status collapsed
 
 \begin_deeper
 \begin_layout Standard
-Desafio:
+Resultados:
 \end_layout
 
 \begin_layout Standard
 (a) 
-\begin_inset Formula $\mathrm{I_{T}}=$
+\begin_inset Formula $\mathrm{I_{T}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1211,10 +1212,10 @@ A}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{I_{1}}=$
+\begin_inset Formula $\mathrm{I_{1}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1230,10 +1231,10 @@ A}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{I_{2}}=$
+\begin_inset Formula $\mathrm{I_{2}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1249,9 +1250,12 @@ A}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d1}}=$
+\begin_inset Formula $\mathrm{P_{d1}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1268,10 +1272,10 @@ W}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d2}}=$
+\begin_inset Formula $\mathrm{P_{d2}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1287,10 +1291,10 @@ W}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{f}}=$
+\begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1310,9 +1314,12 @@ W}
 
 \begin_layout Standard
 (b) 
-\begin_inset Formula $\mathrm{U_{R1}}=\mathrm{U_{R2}}=\mathrm{U}=$
+\begin_inset Formula $\mathrm{U_{R1}=}\mathrm{U_{R2}}=\mathrm{U}=$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1329,9 +1336,12 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{I_{T}}=$
+\begin_inset Formula $\mathrm{I_{T}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1348,9 +1358,12 @@ A}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d1}}=$
+\begin_inset Formula $\mathrm{P_{d1}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1367,9 +1380,12 @@ W}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{d2}}=$
+\begin_inset Formula $\mathrm{P_{d2}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1386,9 +1402,12 @@ W}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{f}}=$
+\begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1409,10 +1428,10 @@ W}
 
 \begin_layout Standard
 (c) 
-\begin_inset Formula $\mathrm{I_{T}}=$
+\begin_inset Formula $\mathrm{I_{T}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1428,10 +1447,10 @@ mA}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{U_{R1}}=$
+\begin_inset Formula $\mathrm{U_{R1}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1447,10 +1466,10 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{U_{R2}}=\mathrm{U_{R3}}=$
+\begin_inset Formula $\mathrm{U_{R2}=}\mathrm{U_{R3}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1466,10 +1485,10 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{I_{1}}=$
+\begin_inset Formula $\mathrm{I_{1}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1479,16 +1498,16 @@ status open
 \backslash
 SI{6,05}{
 \backslash
-A}
+mA}
 \end_layout
 
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{I_{1}}=$
+\begin_inset Formula $\mathrm{I_{2}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1504,10 +1523,10 @@ mA}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{R_{1}}}=$
+\begin_inset Formula $\mathrm{P_{R_{1}}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1523,10 +1542,10 @@ mW}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{R_{2}}}=$
+\begin_inset Formula $\mathrm{P_{R_{2}}=}$
 \end_inset
 
-
+ 
 \begin_inset ERT
 status open
 
@@ -1542,9 +1561,12 @@ mW}
 \end_inset
 
 ;
-\begin_inset Formula $\mathrm{P_{R_{3}}}=$
+\begin_inset Formula $\mathrm{P_{R_{3}}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1561,9 +1583,12 @@ mW}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{P_{f}}=$
+\begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
+
+ 
+\lang brazilian
 
 \begin_inset ERT
 status open
@@ -1574,7 +1599,7 @@ status open
 \backslash
 SI{133,2}{
 \backslash
-W}
+mW}
 \end_layout
 
 \end_inset
@@ -1589,13 +1614,13 @@ Dado o circuito de referência:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/Ex4Analogicos.png
-	scale 55
+	scale 60
 
 \end_inset
 
@@ -1763,7 +1788,7 @@ status open
 
 
 \backslash
-SI{12}{
+SI{63,3}{
 \backslash
 ohm}
 \end_layout
@@ -1796,7 +1821,7 @@ V}
 \end_inset
 
  e 
-\begin_inset Formula $\mathrm{I_{f}}=$
+\begin_inset Formula $\mathrm{I_{f}=}$
 \end_inset
 
  
@@ -1816,7 +1841,7 @@ mA}
 
 .
  Assuma fonte disponível de 
-\begin_inset Formula $\mathrm{V_{g}}=$
+\begin_inset Formula $\mathrm{V_{g}=}$
 \end_inset
 
  
@@ -1851,7 +1876,7 @@ status open
 
 
 \backslash
-SI{56,6667}{
+SI{56,67}{
 \backslash
 ohm}
 \end_layout
@@ -1876,11 +1901,7 @@ e
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1895,7 +1916,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename imagens/Ex6Analogicos.png
-	scale 55
+	scale 60
 
 \end_inset
 
@@ -1931,7 +1952,7 @@ Por análise nodal
 \end_layout
 
 \begin_layout Standard
-Resultado: 
+Resultados: 
 \begin_inset Formula $\mathrm{V=}$
 \end_inset
 
@@ -1951,7 +1972,7 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{I_{1}}=$
+\begin_inset Formula $\mathrm{I_{1}=}$
 \end_inset
 
  
@@ -1970,7 +1991,7 @@ A}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{I_{2}}=$
+\begin_inset Formula $\mathrm{I_{2}=}$
 \end_inset
 
  
@@ -2002,17 +2023,13 @@ Determine a corrente no resistor
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/Ex7Analogicos.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -2039,7 +2056,7 @@ Por análise nodal
 
 \begin_layout Standard
 Resultado: 
-\begin_inset Formula $\mathrm{I_{3}}=$
+\begin_inset Formula $\mathrm{i_{3}=}$
 \end_inset
 
  
@@ -2076,17 +2093,13 @@ Determine as tensões
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/Ex8Analogicos.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -2112,8 +2125,8 @@ Por análise nodal
 \end_layout
 
 \begin_layout Standard
-Resultado: 
-\begin_inset Formula $\mathrm{V_{1}}=$
+Resultados: 
+\begin_inset Formula $\mathrm{V_{1}=}$
 \end_inset
 
  
@@ -2132,7 +2145,7 @@ V}
 \end_inset
 
 ; 
-\begin_inset Formula $\mathrm{V_{2}}=$
+\begin_inset Formula $\mathrm{V_{2}=}$
 \end_inset
 
  
@@ -2180,7 +2193,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/Ex9Analogicos.png
-	scale 50
+	scale 65
 
 \end_inset
 
