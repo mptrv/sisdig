@@ -153,17 +153,17 @@ customHeadersFooters
 \justification true
 \use_refstyle 1
 \branch cm-corpo
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-logica-com-rele
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -178,32 +178,32 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -213,12 +213,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-multiplex
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -228,22 +228,22 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -288,7 +288,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -461,7 +461,7 @@ ETE102 - Fundamentos de Circuitos Digitais
 
 \begin_layout Right Footer
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -486,7 +486,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch dg-logica-com-rele
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -511,7 +511,7 @@ Lógica com Relés
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -2998,7 +2998,7 @@ Painel de relés.
 
 \begin_layout Standard
 \begin_inset Branch dg-tecnicas-soldagem
-status open
+status collapsed
 
 \begin_layout Chapter
 \begin_inset Quotes eld
@@ -3015,7 +3015,7 @@ Técnicas de Soldagem
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Tópicos envolvidos
@@ -3373,7 +3373,7 @@ Sugador
 
 \begin_layout Standard
 \begin_inset Branch dg-portas-logicas
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -3390,7 +3390,7 @@ Portas Lógicas
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -4446,7 +4446,7 @@ proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-multiplex
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -4463,7 +4463,7 @@ Multiplexadores e Demultiplexadores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -8976,7 +8976,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-alarme-invasao
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -9001,7 +9001,7 @@ Alarme de Invasão
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Contexto
@@ -10303,7 +10303,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-decodificador
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -10335,7 +10335,7 @@ name "chap:Decodificador-BCD-Sete-Seg"
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 
@@ -10869,7 +10869,7 @@ protoboard
 
 \begin_layout Standard
 \begin_inset Branch dg-osciloscopio-i
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -12484,7 +12484,7 @@ Gerador de funções
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -12501,7 +12501,7 @@ Portas Lógicas Schmitt Trigger
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -13323,7 +13323,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -13340,7 +13340,7 @@ Flip-Flops RS
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -16448,7 +16448,7 @@ CI: 1x 7400
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-assincrono
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -16469,7 +16469,7 @@ Contadores Assíncronos e
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -17792,7 +17792,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-sincrono
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -17813,7 +17813,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -19689,7 +19689,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-motor-passos
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -21831,7 +21831,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -21922,7 +21922,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -23664,7 +23664,7 @@ ETE103 - Fundamentos de Circuitos Analógicos
 
 \begin_layout Right Footer
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -23689,7 +23689,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -23706,7 +23706,7 @@ Resistores e Associação de Resistores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -28190,7 +28190,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -28207,7 +28207,7 @@ Multímetros
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -30614,7 +30614,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -30624,10 +30624,10 @@ Medidas Elétricas e Resistência Variável
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
-OBJETIVOS
+Objetivos
 \end_layout
 
 \begin_layout Itemize
@@ -32198,7 +32198,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status collapsed
+status open
 
 \begin_layout Chapter
 Lei de Ohm
@@ -32220,7 +32220,7 @@ Bipolos Lineares e Não Lineares
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -34375,10 +34375,10 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Title
-Lei de Kirchhoff
+Leis de Kirchhoff
 \end_layout
 
 \begin_layout Part*
@@ -34631,7 +34631,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Title
 PONTE DE WHEATSTONE 
@@ -35375,8 +35375,6 @@ pela\,multímetro
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Tabela 2
 \end_layout
 
@@ -35400,9 +35398,7 @@ As medidas de
 \begin_inset Formula $R_{x}$
 \end_inset
 
- através
-\lang english
- da ponte.
+ através da ponte.
  
 \end_layout
 
@@ -35422,10 +35418,364 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
+
+\begin_layout Title
+Instrumentos para Laboratório de Eletrônica
+\end_layout
+
+\begin_layout Section*
+Objetivos.
+ 
+\end_layout
+
+\begin_layout Standard
+Verificar experimentalmente a utilização e funcionamento dos seguintes dispositi
+vos: 
+\end_layout
+
+\begin_layout Itemize
+osciloscópio para medida de tensão e tempo de sinais periódicos; 
+\end_layout
+
+\begin_layout Itemize
+gerador de funções senoidais, triangulares e quadradas;
+\end_layout
+
+\begin_layout Section*
+PARTE EXPERIMENTAL I - Estudo dos Instrumentos
+\end_layout
+
+\begin_layout Section*
+1.
+ Osciloscópio
+\end_layout
+
+\begin_layout Standard
+1.1.
+ Utilizaremos nesta experiência o osciloscópio para efetuar medidas de tensão
+ e período de sinais provenientes do gerador de funções.
+ Para isso, ligue o instrumento e juntamente com o professor verifique os
+ itens relacionados abaixo e anote suas características:
+\end_layout
+
+\begin_layout Itemize
+Possui 2 canais de entrada de sinal: [ 
+\begin_inset Formula $\,$
+\end_inset
+
+] 1 e 2 [
+\begin_inset Formula $\,$
+\end_inset
+
+ ] A e B 
+\end_layout
+
+\begin_layout Itemize
+Seletor da escala de tensão: mínimo = _______ máximo = ________ (coloque
+ as unidades) 
+\end_layout
+
+\begin_layout Itemize
+Seletor da escala de tempos: mínimo = _______ máximo = ________ (coloque
+ as unidades) 
+\end_layout
+
+\begin_layout Itemize
+Entrada de Calibração: tensão = _______ período = _______ (coloque as unidades)
+\end_layout
+
+\begin_layout Standard
+1.2.
+ A primeira leitura que iremos executar será a da Entrada de Calibração.
+ Escolha um dos canais de leitura e encoste o positivo da ponta de prova
+ no ponto de calibração.
+ Ajuste as escalas de tensão e tempo para obter o melhor sinal (de modo
+ que ocupe o máximo da tela nas duas dimensões).
+ A seguir, copie o gráfico obtido no quadro abaixo, anote as medidas dos
+ dois eixos e obtenha os resultados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/7° Exp/imagens/imagem-osciloscopio.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Imagem osciloscópio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escala de tensão (pp): ________ [ ] 
+\end_layout
+
+\begin_layout Standard
+Escala de tempo: ________ [ ] 
+\end_layout
+
+\begin_layout Standard
+Divisões vertical: _________ 
+\end_layout
+
+\begin_layout Standard
+Divisões horizontal: _________ 
+\end_layout
+
+\begin_layout Standard
+Resultados: 
+\end_layout
+
+\begin_layout Standard
+Valor da tensão (pp): ________ [ ] 
+\end_layout
+
+\begin_layout Standard
+Período: ________ [ ] 
+\end_layout
+
+\begin_layout Standard
+Frequência: ________ [ ]
+\end_layout
 
 \begin_layout Standard
 
+\shape italic
+Observação: a notação pp indica valor de pico-a-pico, ou seja, a amplitude
+ total da forma de onda, do menor ponto negativo ao maior ponto positivo.
+\end_layout
+
+\begin_layout Part*
+2.
+ GERADOR DE FUNÇÕES
+\end_layout
+
+\begin_layout Standard
+2.1.
+ Este instrumento fornece, dentre outras, as funções básicas: senoidal,
+ triangular e quadrada.
+ Verifique juntamente com o professor as principais características do instrumen
+to: terminal de saída da função, seleção do tipo de função, amplitude e
+ frequência (ou período).
+\end_layout
+
+\begin_layout Part*
+3.
+ MEDIDAS BÁSICAS COM O OSCILOSCÓPIO
+\end_layout
+
+\begin_layout Standard
+3.1.
+ Escolha um canal de entrada do osciloscópio (1 ou 2) e conecte na saída
+ do gerador de funções.
+ Atenção: devem ser respeitadas as polaridades (+ e -).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/7° Exp/imagens/gerador-e-osciloscopio.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Gerador de função com osciloscópio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.2.
+ Faça os ajustes especificados abaixo no gerador de funções e execute as
+ respectivas medidas com o osciloscópio.
+ Os resultados devem ser expressos de forma semelhante ao item 1.2, ou seja,
+ contendo esboço da forma de onda, escalas utilizadas, valores das divisões,
+ valor pico-apico das tensões, período e frequência.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Senoidal
+\begin_inset Formula $\begin{cases}
+2Vpp\,x\,100Hz\\
+5Vpp\,x\,1200Hz
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Triangular
+\begin_inset Formula $\begin{cases}
+0,5Vpp\,x\,1kHz\\
+10Vpp\,x\,10kHz\\
+1,5Vpp\,x\,200Hz
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quadrada
+\begin_inset Formula $\begin{cases}
+5Vpp\,x\,1Hz\\
+12Vpp\,x\,800Hz
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+4.
+ LISTA DE MATERIAIS
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+EMC402
+\series default
+ - Instrumentos Eletrônicos, Divisores de Tensão em CC e CA, Comparador
+ Analógico de Tensões
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1 Multímetro Digital 
+\end_layout
+
+\begin_layout Standard
+1 Proto-Board 
+\end_layout
+
+\begin_layout Standard
+1 Osciloscópio duplo canal com dois cabos 
+\end_layout
+
+\begin_layout Standard
+1 Fonte ajustável 0-30V 
+\end_layout
+
+\begin_layout Standard
+1 Fonte fixa 12V Cabos Banana-Banana 
+\end_layout
+
+\begin_layout Standard
+1 Gerador de sinais 
+\end_layout
+
+\begin_layout Standard
+1 CI LM339 
+\end_layout
+
+\begin_layout Standard
+1 Potenciômetro de 4k7 
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2 Resistores de 1k 
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2 Resistores de 1k5
+\begin_inset Formula $\varOmega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+1 Resistor de 2k2 
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1 Resistor de 4k7
+\begin_inset Formula $\varOmega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+1 Alicate de Bico 
+\end_layout
+
+\begin_layout Standard
+1 Alicate de Corte Fios para proto-board
 \end_layout
 
 \end_inset
@@ -35444,10 +35794,1463 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
+
+\begin_layout Title
+Teorema da superposição Teoremas de Thévenin e de Norton
+\end_layout
+
+\begin_layout Part*
+1.
+ Objetivos.
+\end_layout
+
+\begin_layout Standard
+-Familiarização prática com o Teorema da Superposição e os Teoremas de Thévenin
+ e de Norton
+\end_layout
+
+\begin_layout Section*
+2.
+ Introdução Teórica.
+ 
+\end_layout
+
+\begin_layout Subsection*
+2.1.
+ Teorema da Superposição.
+ 
+\end_layout
+
+\begin_layout Standard
+Este teorema, que em alguns textos é referenciado como Princípio da Superposição
+, pode ser enunciado como segue: 
+\end_layout
+
+\begin_layout Standard
+“Um Circuito Linear contendo várias fontes independentes, de tensão e/ou
+ de corrente, poder ter suas tensões nodais e correntes de ramos, que são
+ as respostas, determinadas pela 
+\series bold
+superposição das respostas para cada fonte agindo separadamente, sendo as
+ demais fontes desativadas”.
+ 
+\end_layout
+
+\begin_layout Standard
+Entende-se por 
+\series bold
+fontes desativadas
+\series default
+ como sendo: 
+\end_layout
 
 \begin_layout Standard
 
+\series bold
+-Curto Circuito
+\series default
+ para 
+\series bold
+Fontes de Tensão Independentes
+\series default
+ (V = 0V) 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+-Circuito Aberto
+\series default
+ para 
+\series bold
+Fontes de Corrente Independentes
+\series default
+ (I = 0A)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lembrar que as Fontes Dependentes são devem ser desativadas!
+\end_layout
+
+\begin_layout Standard
+Como exemplo, aplica-se este teorema ao circuito da fig.
+ 1, onde deseja-se determinas a tensão 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem01.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema da Superposição
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como este circuito apresenta 3 fontes independentes, inicia-se a análise
+ ativando-se a fonte 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ e desativando-se as fontes 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{3}$
+\end_inset
+
+, como ilustrado na fig.
+ 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem02.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ ativada, 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{3}$
+\end_inset
+
+ desativadas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Determina-se 
+\begin_inset Formula $V_{xa}$
+\end_inset
+
+ (fazer os cálculos):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{xa}$
+\end_inset
+
+= _________
+\end_layout
+
+\begin_layout Standard
+Agora, determinar-se 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ para o caso de 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ ativada, 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{3}$
+\end_inset
+
+ desativadas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem03.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ ativada, 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{3}$
+\end_inset
+
+ desativadas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{xb}$
+\end_inset
+
+ = ________
+\end_layout
+
+\begin_layout Standard
+Finalmente, determina-se 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ para o caso de 
+\begin_inset Formula $V_{3}$
+\end_inset
+
+ ativada, 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ desativadas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem04.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $V_{3}$
+\end_inset
+
+ ativada, 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ desativadas.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{xc}$
+\end_inset
+
+= ________
+\end_layout
+
+\begin_layout Standard
+A tensão 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ é então determinada pela soma das respostas obtidas, pois o circuito é
+ linear: 
+\begin_inset Formula $V_{x}=V_{xa}+V_{xb}+V_{xc}=\;\;\;\;\;\;\;\;\;\;\;=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2.2.
+ Teorema de Thévenin.
+ 
+\end_layout
+
+\begin_layout Standard
+O Teorema de Thévenin pode ser enunciado como a seguir: 
+\end_layout
+
+\begin_layout Standard
+“Dado um 
+\series bold
+Circuito Linear qualquer
+\series default
+, este pode ser separado em dois subcircuitos A e B conectados por fios
+ de resistência desprezível.
+ Definindo-se 
+\series bold
+
+\begin_inset Formula $V_{oc}$
+\end_inset
+
+ como sendo a tensão de circuito aberto
+\series default
+ que aparece nos terminais de A e quando B.
+ Então, todas as tensões e correntes de B ficam inalteradas se o circuito
+ A para B.
+ Então, todas as tensões e correntes de B ficam inalteradas se o circuito
+ A for substituído por uma 
+\series bold
+fonte de tensão independente 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+
+\begin_inset Formula $=V_{oc}$
+\end_inset
+
+ em série com um resistor 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+
+\series default
+ que é determinado como sendo a resistência “vista” a partir dos terminais
+ de A com todas as fontes independentes deste subcircuito 
+\series bold
+desativadas
+\series default
+.”
+\end_layout
+
+\begin_layout Standard
+A fig.
+ 5 ilustra um circuito igual ao da fig.
+ 1 como exemplo de aplicação deste teorema.
+ Nesta mesma figura, estão ilustradas a separação deste circuito nos dois
+ subcircuitos A e B.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem05.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Thévenin.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O subcircuito A é então reduzido à tensão 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+ em série com 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+ é determinado como sendo a tensão apresentada pelos terminais de A em aberto,
+ e 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+ é calculado como sendo a resistência apresentada pelos terminais de A com
+ todas as fontes independentes inativas.
+ Então, o subcircuito A pode ser substituído como ilustrado na fig.
+ 6.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem06-1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a)Determinação de 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem06-2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b)Determinação de 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem06-3.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do teorema de Thévenin.
+ Determinar 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+ como exercício.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c)Circuito Equivalente de Thévenin para o Subcircuito A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem07.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Thévenin (continuação).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d)Determinação de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ utilizando o Equivalente de Thévenin para o Subcircuito A
+\end_layout
+
+\begin_layout Standard
+A tensão 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ nos terminais de A resulta então (notar que deve ser o mesmo valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ obtido para o Teorema da Superposição!)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{x}$
+\end_inset
+
+= ________
+\end_layout
+
+\begin_layout Subsection*
+2.3.Teorema de Norton.
+\end_layout
+
+\begin_layout Standard
+O teorema de Norton pode ser enunciado como a seguir: 
+\end_layout
+
+\begin_layout Standard
+“Dado um 
+\series bold
+Circuito Linear qualquer
+\series default
+, este pode ser separado em dois subcircuitos A e B conectados por fios
+ de resistência desprezível.
+ Definindo-se 
+\series bold
+
+\begin_inset Formula $i_{sc}$
+\end_inset
+
+ como sendo a corrente de curto circuito
+\series default
+ que aparece nos terminais de A quando B for substituída por um curto circuito
+ de modo que nenhuma tensão seja fornecida por A.
+ Então, todas as tensões e correntes de B ficam inalteradas se o circuito
+ A for substituído por uma 
+\series bold
+fonte de corrente independente 
+\begin_inset Formula $I_{n}\,=\,i_{sc}$
+\end_inset
+
+ em paralelo com um resistor 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+
+\series default
+ que é determinado como sendo a resistência “vista” a partir dos terminais
+ de A com todas as fontes independentes deste subcircuito 
+\series bold
+desativadas
+\series default
+.”
+\end_layout
+
+\begin_layout Standard
+Notar que 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+ é determinado da mesma maneira que 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+, resultando que 
+\begin_inset Formula $R_{n}=R_{th}$
+\end_inset
+
+.
+ Como exemplo de aplicação, recorre-se à fig.
+ 8, determinando-se In como ilustrado na fig.
+ 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem08-1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+(a)Determinação de 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem08-2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (b)Determinação de 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem08-3.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Norton.
+ Determinar 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+ como exercício.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+(c)Circuito Equivalente de Norton para o Subcircuito A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem09.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Norton (continuação).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (d)Determinação de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ utilizando o Equivalente de Thévenin para o Subcircuito A 
+\end_layout
+
+\begin_layout Standard
+A partir da fig.
+ 9, determina-se 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ (mais uma vez, deve ser igual a 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ do exemplo para o teorema da superposição e para o teorema de Thévenin!)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{x}$
+\end_inset
+
+= ___________
+\end_layout
+
+\begin_layout Section*
+3.
+ Parte Experimental.
+ 
+\end_layout
+
+\begin_layout Subsection*
+3.1.
+ Teorema da Superposição.
+ 
+\end_layout
+
+\begin_layout Standard
+Montar o circuito ilustrado na fig.
+ 10, semelhante ao analisado na introdução teórica.
+ Medir 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{xa}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{xb}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{xc}$
+\end_inset
+
+ para os 4 circuitos indicados, e verificar o Teorema da Superposição.
+\end_layout
+
+\begin_layout Standard
+(a)Determinação de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ : 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ = ___________
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem10-1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b)Determinação de 
+\begin_inset Formula $V_{xa}$
+\end_inset
+
+: 
+\begin_inset Formula $V_{xa}$
+\end_inset
+
+ = __________
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem10-2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c)Determinação de 
+\begin_inset Formula $V_{xb}$
+\end_inset
+
+ : 
+\begin_inset Formula $V_{xb}$
+\end_inset
+
+ = ___________
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem10-3.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema da Superposição
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d)Determinação de 
+\begin_inset Formula $V_{xc}$
+\end_inset
+
+ : 
+\begin_inset Formula $V_{xc}$
+\end_inset
+
+ = _________
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem11.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema da Superposição (continuação)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{xa}$
+\end_inset
+
++ 
+\begin_inset Formula $V_{xb}$
+\end_inset
+
+ + 
+\begin_inset Formula $V_{xc}$
+\end_inset
+
+ = ________ = _____
+\end_layout
+
+\begin_layout Standard
+Comentários:
+\end_layout
+
+\begin_layout Subsection*
+3.2.
+ Teorema de Thévenin.
+ 
+\end_layout
+
+\begin_layout Standard
+Montar o circuito ilustrado na fig.
+ 11 (o mesmo da fig.
+ 10).
+ Medida de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ : 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ = __________
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem12.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Thévenin.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Determinar 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+ segundo a fig.
+ 13.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem13-1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem13-2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Determinação de 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+ e de 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituir o subcircuito A pela fonte de bancada ajustada em 
+\begin_inset Formula $V_{th}$
+\end_inset
+
+ volts em série com a Década de Resistores ajustada em 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+, segundo a fig.
+ 11.
+ e medir o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+, comparando-o com o valor medido anteriormente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem14.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Thévenin.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+3.3.
+ Teorema de Norton.
+ 
+\end_layout
+
+\begin_layout Standard
+Determinar agora, o Equivalente de Norton para o subcircuito A da fig.
+ 15, conforme ilustrado na fig.
+ 16.
+ Medida de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ : 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ = _________
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem15.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Norton.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Determinar 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+ segundo a fig.
+ 16.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem16-1.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem16-2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Determinação de 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ e de 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituir o subcircuito A pela Fonte de Bancada em série com um miliamperímetro
+, e estes dois elementos em paralelo com a Década de Resistores ajustada
+ em 
+\begin_inset Formula $R_{n}$
+\end_inset
+
+, segundo a fig.
+ 17.
+ Ajustar a Fonte de Tensão de modo a medir-se uma corrente igual a 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+ no miliamperímetro.
+ Esta fonte em série com o miliamperímetro simula uma Fonte Independente
+ de corrente.
+ Medir o valor a 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+, comparando-o com o valor medido anteriormente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem17.PNG
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Aplicação do Teorema de Norton.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tecer no espaço a seguir, comentários pertinentes a esta experiência, como
+ diferenças entre os resultados calculados e os medidos experimentalmente.
+ 
 \end_layout
 
 \end_inset
@@ -35462,11 +37265,11 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -35484,11 +37287,11 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iii
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -35508,6 +37311,2878 @@ status collapsed
 \begin_inset Branch an-osciloscopio-iv
 status collapsed
 
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Title
+OSCILOSCOPIO – PARTE II
+\end_layout
+
+\begin_layout Title
+MEDIDAS DE AMPLITUDE E DEFASAGEM
+\end_layout
+
+\begin_layout Standard
+Evidentemente que este sofisticado instrumento, não foi feito apenas com
+ o objetivo de se visualizar as formas de onda em um circuito, ele tem o
+ objetivo de nos oferecer medidas com relevante precisão, daquilo que se
+ está observando.
+ Mas para que isso seja possível, o usuário deverá estar bastante ciente
+ das condições de ajuste em que o aparelho se encontra naquele instante.
+ Ou seja qualquer desatenção ou má operação pode induzir o usuário a graves
+ erros, contrariando até as leis da física.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Portanto, toda vez que ligamos o instrumento, é instrumento, é imperioso
+ que verifiquemos todos os controles do osciloscópio e o coloquemos em condições
+ mínimas de operação.
+ Ou seja, verificar posicionamento do ponto ou traço e ajusta-lo na tela,
+ verificar controles como o de Expansão se está fechado, aplicarmos a onda
+ quadrada e referência e checarmos se confere a amplitude a frequência.
+ 
+\end_layout
+
+\begin_layout Section*
+Medida de sinal DC
+\end_layout
+
+\begin_layout Standard
+Estando tudo OK inicialmente, verificaremos que ao aplicarmos um sinal DC,
+ o ponto outro traço se deslocará na vertical, parando em outra posição.
+ Para efetuarmos a leitura, basta contamos de quantas divisões foi o deslocament
+o e multiplicarmos pelo valor Volts/Div do seletor de ganho vertical.
+\end_layout
+
+\begin_layout Standard
+Ou seja: 
+\begin_inset Formula $\frac{Volts}{Div}*Div=Volts$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Medida de sinal alternado
+\end_layout
+
+\begin_layout Standard
+Para sabermos os valores de pico ou pico a pico de um sinal periódico, basta
+ contar o número de divisões e também multiplicar pelo valor do seletor
+ de ganho vertical.
+ 
+\end_layout
+
+\begin_layout Standard
+Utilizando a chave AC/DC aqui, podemos também medir o valor da componente
+ DC se ela existir.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Para medirmos o período do sinal, basta ajustarmos a varredura horizontal
+ de tal forma que possamos identificar o período do sinal, e então contarmos
+ quantas divisões ocupa o mesmo e multiplicarmos pelo valor apontado no
+ seletor de varredura.
+ Ou seja: 
+\begin_inset Formula $\frac{Tempo}{Div}Div*Div=Tempo$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Para medirmos a frequência, basta aplicarmos:
+\begin_inset Formula $f=\frac{1}{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Medida de Corrente
+\end_layout
+
+\begin_layout Standard
+A impediência de entrada de um osciloscópio, deve ser bastante alta, o que
+ impede que o mesmo seja ligado em serie nos circuitos sob análise.
+ Para contornar tal fato, o que se faz quando necessário é uma medida indireta,
+ através da queda de tensão em um resistor.
+\end_layout
+
+\begin_layout Section*
+Medidas de defasagem
+\end_layout
+
+\begin_layout Standard
+Pode ser feita através de medida direta, quando se tem um osciloscópio duplo
+ traço, ou através das figuras de Lissajous, como veremos mais adiante.
+\begin_inset Newline newline
+\end_inset
+
+No caso de osciloscópio duplo traço, medirmos diretamente a defasagem em
+ tempo entre eles, e através de elementar regra de três calcular a defasagem
+ em graus.
+\end_layout
+
+\begin_layout Standard
+Período T ---------- 360°
+\end_layout
+
+\begin_layout Standard
+Defas.
+ t ------------ x
+\end_layout
+
+\begin_layout Section*
+Figuras de Lissajous
+\end_layout
+
+\begin_layout Standard
+O método das figuras de Lissajous, é muito útil quando se deseja verificar
+ e medir a defasagem entre dois sinais, além de permitir estabelecer relação
+ entre frequências de dois sinais.
+\begin_inset Newline newline
+\end_inset
+
+A composição gráfica de dois movimentos oscilatórios, um na horizontal e
+ outro na vertical, resulta na Figura de Lissajous, como podemos ver a seguir:
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/figura-de-lissajous.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dessa figura podemos observar a relação entre as frequências dos dois sinais,
+ contando o numero de vezes que a figura toca numa linha imaginaria que
+ tangencia toda a figura.
+ 
+\end_layout
+
+\begin_layout Standard
+Ou seja: 4 vezes na vertical e duas vezes na horizontal.
+ 
+\end_layout
+
+\begin_layout Standard
+Como: 
+\begin_inset Formula $\frac{Fv}{Fh}=\frac{Nh}{Nv}$
+\end_inset
+
+ temos que:
+\begin_inset Formula $\frac{Fv}{Fh}=\frac{2}{4}$
+\end_inset
+
+ ou 
+\begin_inset Formula $Fh=2Fv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde: 
+\end_layout
+
+\begin_layout Standard
+Fv = freq.
+ na entrada vertical 
+\end_layout
+
+\begin_layout Standard
+Fh = freq.
+ na entrada horizontal 
+\end_layout
+
+\begin_layout Standard
+Nn = num.
+ de tangencias na horizontal 
+\end_layout
+
+\begin_layout Standard
+Nv = num.
+ de tangencia na vertical 
+\end_layout
+
+\begin_layout Standard
+Como podemos concluir, podemos medir frequências desconhecidas se aplicarmos
+ esta numa entrada com outra de valor conhecido na outra entrada.
+ 
+\end_layout
+
+\begin_layout Standard
+Para dois sinais de mesma frequência, podemos medir a defasagem entre eles
+ também utilizando o método de Lissajous, como vemos: 
+\end_layout
+
+\begin_layout Standard
+Vamos supor dois sinais senoidais de mesma frequência, porem defasados e
+ aplicados na entrada vertical Vv e na Horizontal Vh.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vh=Vm*sen(wt)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vv=Vm*sen(wt+\Delta\phi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/figura-de-lissajous2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observando a figura temos:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula $Vv=Vm*sen(wt+\Delta\phi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde 
+\begin_inset Formula $Vvm=b$
+\end_inset
+
+ e para 
+\begin_inset Formula $t=0\;Vv=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Portanto: 
+\begin_inset Formula $a=bsen(w*0+\Delta\phi)$
+\end_inset
+
+ ou 
+\begin_inset Formula $a=bsen(\Delta\phi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Portanto: 
+\begin_inset Formula $\Delta\phi=arcsen(\frac{a}{b})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para facilitar : 
+\begin_inset Formula $\Delta\phi=arcsen(\frac{2a}{2b})$
+\end_inset
+
+ou 
+\begin_inset Formula $\Delta=arcsen(\frac{a}{b})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Parte Prática
+\end_layout
+
+\begin_layout Standard
+Material : 
+\end_layout
+
+\begin_layout Standard
+Osciloscópio 
+\end_layout
+
+\begin_layout Standard
+1 - Capacitor 82nF 
+\end_layout
+
+\begin_layout Standard
+Gerador de sinais 
+\end_layout
+
+\begin_layout Standard
+1 – resistor 1k
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fonte DC variável placa de montagem 
+\end_layout
+
+\begin_layout Standard
+Multímetro 
+\end_layout
+
+\begin_layout Standard
+8 cabos 
+\end_layout
+
+\begin_layout Standard
+Traffo 110/6v 
+\end_layout
+
+\begin_layout Standard
+Cabos p/ osciloscópio 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Procedimento:
+\end_layout
+
+\begin_layout Standard
+1.
+ Ligue o osciloscópio e ajuste os controles de foco e brilho, sem satura-los,
+ para não danificar o material fluorescente.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ Acionando o gerador de varredura, faça surgir na tela um traço horizontal,
+ e com ajuda dos posicionadores coloque o traço em coincidência com uma
+ das linhas desenhadas na tela, para que essa linha seja referencia de tensão
+ zero.
+ 
+\end_layout
+
+\begin_layout Standard
+3.
+ Ajuste a fonte de tensão com o voltímetro para os valores especificados
+ no quadro, e meça com o osciloscópio, anotando a posição do atenuador vertical,
+ o numero de divisões do deslocamento e o resultado.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/fonte-ajustavel.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E(v)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pos.
+ Atenuador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+num.
+ de divisões
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V medido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ Medidas de amplitude de tensões AC
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/gerador-de-funcao.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.1.
+ Coloque o controle de varredura do osciloscópio na posição em que o ponto
+ na tela se desloque o mais lentamente possível, mas sem para-lo, e aplique
+ um sinal senoidal de 1hz com o nível máximo, e observe a tela do osciloscópio.
+ 
+\end_layout
+
+\begin_layout Standard
+4.2.
+ Aumente gradualmente a frequência do gerador e observe o que ocorre com
+ o ponto na tela do osciloscópio.
+ Explique e justifique o que ocorre.
+\end_layout
+
+\begin_layout Standard
+4.3.
+ Ajuste o gerador senoidal para a freq.
+ de 100khz, deixando o nível a meio curso e desligue o gerador de varredura
+ (posição Ext), do osciloscópio.
+ Meça e anote o Valor de pico e o Valor de Pico a Pico.
+ 
+\end_layout
+
+\begin_layout Standard
+5.
+ Medindo frequências 
+\end_layout
+
+\begin_layout Standard
+Com o nível do gerador no máximo, complete o quadro abaixo: 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Senóide 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Freq.
+ gerador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pos.
+ varredura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Num.
+ divisões
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Periodo T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Freq.
+ medida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 Hz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Quadrada 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Freq.
+ gerador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pos.
+ varredura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Num.
+ divisões
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Periodo T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Freq.
+ medida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+250 Hz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,2 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Triangular
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Freq.
+ gerador
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pos.
+ varredura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Num.
+ divisões
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Periodo T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Freq.
+ medida
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1050 Hz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+70 kHz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.1- Verificação da chave AC/DC
+\end_layout
+
+\begin_layout Standard
+Com atenção, montar o circuito abaixo e explicar, justificar e desenhar
+ o que ocorre quando acinamos a chave AC/DC
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/gerador-de-funcao+fonte.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+6.
+ Ajustar o gerador de funções para um sinal senoidal de 60hz, e utilizando
+ o voltímetro ajuste o nível de saída para as tensões indicadas no quando.
+ Para cada ajuste de nível, medi r o valor de pico e pico a pico, visualizado
+ no osciloscópio e em seguida calcular com esses dados o respectivo valor
+ eficaz.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vef.
+ do voltímetro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vpp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vef.
+ calculado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+7.
+ Medida de frequência e fase por Lissajous 
+\end_layout
+
+\begin_layout Standard
+7.1.
+ Conecte na entrada vertical do osciloscópio, o gerador de funções ajustado
+ para saída senoidal com amplitude máxima, e conecte na entrada horizontal
+ o secundário do traffo, conforme ilustração; e feche a varredura.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/gerador-de-funcao+osciloscopio.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Variando a frequência do gerador conforme a tabela, anote a fig.
+ de Lissajous e determine a relação de frequências.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fh (Hz)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fv (Hz)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+figura
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nh
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nv
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nh/Nv
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+240
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ Monte o circuito abaixo: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/circuito-RC.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a) Desenhe as formas de onda e encontre a defasagem entre os sinais.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/grafico-desenho.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+BT = ________ ND = ________ T= ________ 
+\begin_inset Formula $\Delta$
+\end_inset
+
+T = ________ 
+\begin_inset Formula $\theta$
+\end_inset
+
+= ________
+\end_layout
+
+\begin_layout Standard
+b) Feche a varredura (posição X-Y) e desenhe a figura de Lissajous e através
+ desta encontre a defasagem entre os sinais.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/grafico-desenho.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2a = ________ 2b = ________ 
+\begin_inset Formula $\theta$
+\end_inset
+
+= ________
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-textos-extras
+status open
+
 \begin_layout Part
 Analógicos -- Experimentos Extras
 \end_layout
@@ -35519,7 +40194,7 @@ Analógicos -- Experimentos Extras
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
