@@ -228,17 +228,17 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -248,7 +248,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -23689,7 +23689,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -28190,7 +28190,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -30614,7 +30614,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -34371,46 +34371,42 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status collapsed
+status open
+
+\begin_layout Chapter
+Leis de Kirchhoff
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Title
-Leis de Kirchhoff
+\begin_layout Section
+Objetivo
 \end_layout
 
-\begin_layout Part*
-OBJETIVO 
+\begin_layout Itemize
+Verificar experimentalmente as duas leis de Kirchhoff
 \end_layout
 
-\begin_layout Standard
-Verificar experimentalmente as duas leis de Kirchhoff.
-\end_layout
-
-\begin_layout Section*
-1.
- LEI DOS NÓS 
+\begin_layout Section
+Lei dos Nós 
 \end_layout
 
 \begin_layout Standard
-1.1.
- Monte o circuito esquematizado ao lado.
+2.2.1 Monte o circuito esquematizado abaixo.
  Para E1, utilize a fonte ajustável da bancada.
  As fontes E2 e E3 devem ser “construídas” associando-se pilhas de 1,5V
  (inicialmente desconectadas dos suportes).
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../tmp/Exp 4 e 6/4° Exp/imagens/lei-de-kirchhoff-circuito1.PNG
+	filename imagens/lei-de-kirchhoff-circuito1.PNG
 	scale 50
 
 \end_inset
@@ -34436,11 +34432,11 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../tmp/Exp 4 e 6/4° Exp/imagens/lei-de-kirchhoff-circuito2.PNG
+	filename imagens/lei-de-kirchhoff-circuito2.PNG
 	scale 50
 
 \end_inset
@@ -34466,8 +34462,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-1.2.
- Com as fontes ligadas, meça todas as correntes nos ramos, considerando
+2.2.2 Com as fontes ligadas, meça todas as correntes nos ramos, considerando
  os respectivos sinais (atente-se às polarizações dos instrumentos) e comprove
  a primeira lei de Kirchhoff: “a soma algébrica das correntes em um nó é
  zero”.
@@ -34475,7 +34470,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-I1 = _______________ 
+I1 = __________________
 \end_layout
 
 \begin_layout Standard
@@ -34483,7 +34478,7 @@ I2 = __________________
 \end_layout
 
 \begin_layout Standard
-I3 = _______________ 
+I3 = __________________
 \end_layout
 
 \begin_layout Standard
@@ -34498,15 +34493,17 @@ Observação: considere os sinais das correntes obtidas.
 Comentários: 
 \end_layout
 
-\begin_layout Section*
-2.
- LEI DAS MALHAS 
+\begin_layout Section
+Lei das Malhas 
 \end_layout
 
 \begin_layout Standard
 2.1.
- Ainda no circuito do item 1, note que este possui 3 malhas: (1) interna
- do lado esquerdo (R1 
+ Ainda no circuito do item 1, note que este possui 3 malhas: 
+\end_layout
+
+\begin_layout Standard
+(1) interna do lado esquerdo (R1 
 \begin_inset Formula $\rightarrow$
 \end_inset
 
@@ -34562,13 +34559,14 @@ Comentários:
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../tmp/Exp 4 e 6/4° Exp/imagens/lei-de-kirchhoff-circuito3.PNG
+	filename imagens/lei-de-kirchhoff-circuito3.PNG
 	scale 50
 
 \end_inset
@@ -34594,8 +34592,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Malha (1): VR1= ___________ VE1= ___________ VE2= ___________ VR2= ____________
- 
+Malha (1): VR1= ___________ VE1= ___________ 
+\end_layout
+
+\begin_layout Standard
+VE2= ___________ VR2= ____________ 
 \end_layout
 
 \begin_layout Standard
@@ -34603,12 +34604,15 @@ Verificação da 2a lei:
 \end_layout
 
 \begin_layout Standard
-Malha (2): VR2= ___________ VE2= ___________ VE3= ___________ VR3= ____________
- 
+Malha (2): VR2= ___________ VE2= ___________ 
 \end_layout
 
 \begin_layout Standard
-Verificação da 2a lei: Comentários: 
+VE3= ___________ VR3= ____________ 
+\end_layout
+
+\begin_layout Standard
+Verificação da 2a lei:
 \end_layout
 
 \begin_layout Standard
@@ -40194,7 +40198,7 @@ Analógicos -- Experimentos Extras
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
