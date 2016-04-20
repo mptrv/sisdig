@@ -34402,54 +34402,13 @@ Lei dos Nós
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/lei-de-kirchhoff-circuito1.PNG
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename imagens/lei-de-kirchhoff-circuito2.PNG
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
+	scale 53
 
 \end_inset
 
@@ -34467,6 +34426,26 @@ status collapsed
  a primeira lei de Kirchhoff: “a soma algébrica das correntes em um nó é
  zero”.
  
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/lei-de-kirchhoff-circuito2.PNG
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -34491,6 +34470,10 @@ Observação: considere os sinais das correntes obtidas.
 
 \begin_layout Standard
 Comentários: 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -34498,8 +34481,7 @@ Lei das Malhas
 \end_layout
 
 \begin_layout Standard
-2.1.
- Ainda no circuito do item 1, note que este possui 3 malhas: 
+2.3.1 Ainda no circuito do item 1, note que este possui 3 malhas: 
 \end_layout
 
 \begin_layout Standard
@@ -34551,9 +34533,8 @@ Lei das Malhas
 \end_layout
 
 \begin_layout Standard
-2.2.
- A cada uma das malhas, meça todas as tensões e comprove a segunda lei de
- Kirchhoff: “a soma algébrica das tensões em uma malha é zero”.
+2.3.2 A cada uma das malhas, meça todas as tensões e comprove a segunda lei
+ de Kirchhoff: “a soma algébrica das tensões em uma malha é zero”.
  Lembre-se que devem ser considerados os respectivos sinais das tensões.
 \end_layout
 
@@ -34565,21 +34546,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/lei-de-kirchhoff-circuito3.PNG
 	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \end_inset
 
