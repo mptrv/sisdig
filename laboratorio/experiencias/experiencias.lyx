@@ -28190,7 +28190,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -30614,7 +30614,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -32198,7 +32198,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status open
+status collapsed
 
 \begin_layout Chapter
 Lei de Ohm
@@ -34393,8 +34393,8 @@ Verificar experimentalmente as duas leis de Kirchhoff
 Lei dos Nós 
 \end_layout
 
-\begin_layout Standard
-2.2.1 Monte o circuito esquematizado abaixo.
+\begin_layout Enumerate
+Monte o circuito esquematizado abaixo.
  Para E1, utilize a fonte ajustável da bancada.
  As fontes E2 e E3 devem ser “construídas” associando-se pilhas de 1,5V
  (inicialmente desconectadas dos suportes).
@@ -34420,9 +34420,9 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-2.2.2 Com as fontes ligadas, meça todas as correntes nos ramos, considerando
- os respectivos sinais (atente-se às polarizações dos instrumentos) e comprove
+\begin_layout Enumerate
+Com as fontes ligadas, meça todas as correntes nos ramos, considerando os
+ respectivos sinais (atente-se às polarizações dos instrumentos) e comprove
  a primeira lei de Kirchhoff: “a soma algébrica das correntes em um nó é
  zero”.
  
@@ -34448,28 +34448,69 @@ status open
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-I1 = __________________
+I1 = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-I2 = __________________ 
+I2 = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-I3 = __________________
+I3 = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-I1+ I2 + I3 = ___________ 
+I1+ I2 + I3 = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 Observação: considere os sinais das correntes obtidas.
 \end_layout
 
 \begin_layout Standard
-Comentários: 
+Comentários:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -34480,10 +34521,11 @@ Comentários:
 Lei das Malhas 
 \end_layout
 
-\begin_layout Standard
-2.3.1 Ainda no circuito do item 1, note que este possui 3 malhas: 
+\begin_layout Enumerate
+Ainda no circuito do item 1, note que este possui 3 malhas: 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 (1) interna do lado esquerdo (R1 
 \begin_inset Formula $\rightarrow$
@@ -34532,9 +34574,10 @@ Lei das Malhas
  R3).
 \end_layout
 
-\begin_layout Standard
-2.3.2 A cada uma das malhas, meça todas as tensões e comprove a segunda lei
- de Kirchhoff: “a soma algébrica das tensões em uma malha é zero”.
+\end_deeper
+\begin_layout Enumerate
+A cada uma das malhas, meça todas as tensões e comprove a segunda lei de
+ Kirchhoff: “a soma algébrica das tensões em uma malha é zero”.
  Lembre-se que devem ser considerados os respectivos sinais das tensões.
 \end_layout
 
@@ -34562,11 +34605,62 @@ status open
 \end_layout
 
 \begin_layout Standard
-Malha (1): VR1= ___________ VE1= ___________ 
+Malha (1): 
+\begin_inset Formula $\mathrm{V}_{\mathrm{R1}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{V}_{\mathrm{E1}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-VE2= ___________ VR2= ____________ 
+\begin_inset Formula $\mathrm{V}_{\mathrm{E}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{V}_{\mathrm{R2}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -34574,11 +34668,62 @@ Verificação da 2a lei:
 \end_layout
 
 \begin_layout Standard
-Malha (2): VR2= ___________ VE2= ___________ 
+Malha (2): 
+\begin_inset Formula $\mathrm{V}_{\mathrm{R2}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{V}_{\mathrm{E2}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-VE3= ___________ VR3= ____________ 
+\begin_inset Formula $\mathrm{V}_{\mathrm{E3}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{V}_{\mathrm{R3}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -34592,6 +34737,64 @@ Comentários:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+3 Pilhas de 1,5V
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Multímetro analógico
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $820\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $1\mathrm{k}\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $2\mathrm{k}2\Omega$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
 \end_layout
 
 \end_inset
