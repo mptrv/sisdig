@@ -34386,7 +34386,7 @@ Objetivo
 \end_layout
 
 \begin_layout Itemize
-Verificar experimentalmente as duas leis de Kirchhoff
+Verificar experimentalmente as duas leis de Kirchhoff.
 \end_layout
 
 \begin_layout Section
@@ -34423,8 +34423,15 @@ status open
 \begin_layout Enumerate
 Com as fontes ligadas, meça todas as correntes nos ramos, considerando os
  respectivos sinais (atente-se às polarizações dos instrumentos) e comprove
- a primeira lei de Kirchhoff: “a soma algébrica das correntes em um nó é
- zero”.
+ a 
+\emph on
+Primeira Lei de Kirchhoff
+\emph default
+: 
+\emph on
+“a soma algébrica das correntes em um nó é zero”
+\emph default
+.
  
 \begin_inset Float figure
 placement H
@@ -34448,41 +34455,48 @@ status open
 
 \end_layout
 
-\begin_deeper
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Standard
 I1 = 
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "3cm"
 height "1pt"
 
 \end_inset
 
 
-\end_layout
+\begin_inset space \qquad{}
+\end_inset
 
-\begin_layout Standard
 I2 = 
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "3cm"
 height "1pt"
 
 \end_inset
 
 
-\end_layout
+\begin_inset space \qquad{}
+\end_inset
 
-\begin_layout Standard
 I3 = 
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "3cm"
 height "1pt"
 
+\end_inset
+
+
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -34492,22 +34506,45 @@ height "1pt"
 I1+ I2 + I3 = 
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "3cm"
 height "1pt"
 
 \end_inset
 
 
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
-\end_deeper
 \begin_layout Standard
-Observação: considere os sinais das correntes obtidas.
+\align center
+
+\emph on
+\bar under
+Observação
+\bar default
+: considere os sinais das correntes obtidas.
 \end_layout
 
 \begin_layout Standard
+\noindent
 Comentários:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -34522,7 +34559,8 @@ Lei das Malhas
 \end_layout
 
 \begin_layout Enumerate
-Ainda no circuito do item 1, note que este possui 3 malhas: 
+Ainda se referindo ao circuito anterior, note que este possui 3 malhas:
+ 
 \end_layout
 
 \begin_deeper
@@ -34576,8 +34614,15 @@ Ainda no circuito do item 1, note que este possui 3 malhas:
 
 \end_deeper
 \begin_layout Enumerate
-A cada uma das malhas, meça todas as tensões e comprove a segunda lei de
- Kirchhoff: “a soma algébrica das tensões em uma malha é zero”.
+A cada uma das malhas, meça todas as tensões e comprove a 
+\emph on
+Segunda Lei de Kirchhoff
+\emph default
+: 
+\emph on
+“a soma algébrica das tensões em uma malha é zero”
+\emph default
+.
  Lembre-se que devem ser considerados os respectivos sinais das tensões.
 \end_layout
 
@@ -34604,31 +34649,48 @@ status open
 
 \end_layout
 
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Malha
+\begin_inset space ~
+\end_inset
+
+(1):
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-Malha (1): 
 \begin_inset Formula $\mathrm{V}_{\mathrm{R1}}=$
 \end_inset
 
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
 \end_inset
 
- 
+
+\begin_inset space \qquad{}
+\end_inset
+
+
 \begin_inset Formula $\mathrm{V}_{\mathrm{E1}}=$
 \end_inset
 
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
+\end_inset
+
+
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -34641,20 +34703,24 @@ height "1pt"
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
 \end_inset
 
- 
+
+\begin_inset space \qquad{}
+\end_inset
+
+
 \begin_inset Formula $\mathrm{V}_{\mathrm{R2}}=$
 \end_inset
 
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
@@ -34663,35 +34729,70 @@ height "1pt"
 
 \end_layout
 
+\end_deeper
 \begin_layout Standard
-Verificação da 2a lei: 
+Verificação da 
+\emph on
+Segunda Lei de Kirchhoff
+\emph default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Malha
+\begin_inset space ~
+\end_inset
+
+(2):
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-Malha (2): 
 \begin_inset Formula $\mathrm{V}_{\mathrm{R2}}=$
 \end_inset
 
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
 \end_inset
 
- 
+
+\begin_inset space \qquad{}
+\end_inset
+
+
 \begin_inset Formula $\mathrm{V}_{\mathrm{E2}}=$
 \end_inset
 
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
+\end_inset
+
+
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -34704,20 +34805,24 @@ height "1pt"
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
 \end_inset
 
- 
+
+\begin_inset space \qquad{}
+\end_inset
+
+
 \begin_inset Formula $\mathrm{V}_{\mathrm{R3}}=$
 \end_inset
 
  
 \begin_inset CommandInset line
 LatexCommand rule
-offset "0.5ex"
+offset "0ex"
 width "2cm"
 height "1pt"
 
@@ -34726,12 +34831,48 @@ height "1pt"
  
 \end_layout
 
+\end_deeper
 \begin_layout Standard
-Verificação da 2a lei:
+Verificação da 
+\emph on
+Segunda Lei de Kirchhoff
+\emph default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Comentários: 
+\noindent
+Comentários:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -34748,15 +34889,37 @@ Fonte CC de 0 a 30V
 \end_layout
 
 \begin_layout Itemize
-3 Pilhas de 1,5V
-\end_layout
-
-\begin_layout Itemize
 Multímetro digital
 \end_layout
 
 \begin_layout Itemize
 Multímetro analógico
+\end_layout
+
+\begin_layout Itemize
+3x pilhas grandes (tipo D) de 1,5 V
+\end_layout
+
+\begin_layout Itemize
+Suporte para as pilhas
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
 \end_layout
 
 \begin_layout Itemize
@@ -34777,24 +34940,6 @@ W: 1x (
 \end_inset
 
 )
-\end_layout
-
-\begin_layout Itemize
-Plaqueta de montagem 
-\emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-Universal
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Cabos banana-banana
 \end_layout
 
 \end_inset
