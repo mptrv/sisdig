@@ -253,7 +253,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -28190,7 +28190,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -30614,7 +30614,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -34949,28 +34949,27 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status collapsed
+status open
+
+\begin_layout Chapter
+Ponte de Wheatstone
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Title
-PONTE DE WHEATSTONE 
-\end_layout
-
-\begin_layout Section*
-1.
+\begin_layout Section
  Objetivos.
  
 \end_layout
 
-\begin_layout Standard
--Familiarização experimental com a Ponte de Wheatstone; 
+\begin_layout Itemize
+Familiarização experimental com a Ponte de Wheatstone; 
 \end_layout
 
-\begin_layout Standard
--Utilização desta ponte para determinação da resistência de resistores.
+\begin_layout Itemize
+Utilização desta ponte para determinação da resistência de resistores.
 \end_layout
 
 \begin_layout Section*
@@ -34988,20 +34987,20 @@ A Ponte de Wheatstone consiste em um arranjo de resistores, fonte de alimentaç�
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../tmp/Exp 4 e 6/6° Exp/G:/Monitoria/2° Semestre/6° Exp/imagens/ponte-de-wheatstone-circuito-ponte.PNG
+	filename imagens/ponte-de-wheatstone-circuito-ponte.PNG
+	scale 70
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -35026,17 +35025,25 @@ Para que a ponte esteja em equilíbrio, a tensão entre os terminais A e B
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V{}_{r1}=V_{r3}$
+\begin_inset Formula 
+\begin{equation}
+V{}_{r1}=V_{r3}
+\end{equation}
+
 \end_inset
 
- (1a) 
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V_{r2}=V_{r4}$
+\begin_inset Formula 
+\begin{equation}
+V_{r2}=V_{r4}
+\end{equation}
+
 \end_inset
 
- (1b)
+
 \end_layout
 
 \begin_layout Standard
@@ -35052,17 +35059,25 @@ Aplicando-se o conceito de divisor de tensões para determinar-se
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V_{r2}=V*\frac{R_{2}}{R_{1}+R_{2}}$
+\begin_inset Formula 
+\begin{equation}
+V_{r2}=V\cdot\frac{R_{2}}{R_{1}+R_{2}}
+\end{equation}
+
 \end_inset
 
-(2a) 
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V_{r4}=V*\frac{R_{4}}{R_{3}+R_{4}}$
+\begin_inset Formula 
+\begin{equation}
+V_{r4}=V\cdot\frac{R_{4}}{R_{3}+R_{4}}
+\end{equation}
+
 \end_inset
 
- (2b)
+
 \end_layout
 
 \begin_layout Standard
@@ -35070,21 +35085,33 @@ No equilíbrio, igualando-se (2a) com (2b):
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V*\frac{R_{2}}{R_{1}+R_{2}}=V*\frac{R_{4}}{R_{3}+R_{4}}$
+\begin_inset Formula 
+\begin{equation}
+V\cdot\frac{R_{2}}{R_{1}+R_{2}}=V\cdot\frac{R_{4}}{R_{3}+R_{4}}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{R_{2}}{R_{1}+R_{2}}=\frac{R_{4}}{R_{3}+R_{4}}$
+\begin_inset Formula 
+\begin{equation}
+\frac{R_{2}}{R_{1}+R_{2}}=\frac{R_{4}}{R_{3}+R_{4}}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R_{2}R_{3}+R_{2}R_{4}=R_{4}R_{1}+R_{4}R_{2}$
+\begin_inset Formula 
+\begin{equation}
+R_{2}R_{3}+R_{2}R_{4}=R_{4}R_{1}+R_{4}R_{2}
+\end{equation}
+
 \end_inset
 
 
@@ -35095,10 +35122,14 @@ e, finalmente:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $R_{2}R_{3}=R_{4}R_{1}$
+\begin_inset Formula 
+\begin{equation}
+R_{2}R_{3}=R_{4}R_{1}
+\end{equation}
+
 \end_inset
 
-(3) 
+
 \end_layout
 
 \begin_layout Standard
@@ -35112,22 +35143,29 @@ Uma das aplicações da Ponte de Wheatstone é para medir-se o valor desconhecid
  de um resistor, a partir dos valores dos outros três resistores da ponte.
  A fig.
  2 ilustra tal procedimento.
- Nesta figura, determina-se por: 
-\begin_inset Formula $R_{x}=\frac{R_{1}}{R_{2}}R_{p}$
+ Nesta figura, determina-se por:
+\begin_inset Formula 
+\begin{equation}
+R_{x}=\frac{R_{1}}{R_{2}}R_{p}
+\end{equation}
+
 \end_inset
 
-(4)
+ 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../tmp/Exp 4 e 6/6° Exp/G:/Monitoria/2° Semestre/6° Exp/imagens/ponte-de-wheatstone-circuito-ponte2.PNG
+	filename imagens/ponte-de-wheatstone-circuito-ponte2.PNG
+	scale 60
 	rotateAngle 1
 
 \end_inset
@@ -35196,8 +35234,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../tmp/Exp 4 e 6/6° Exp/G:/Monitoria/2° Semestre/6° Exp/imagens/ponte-de-wheatstone-circuito-ponte3.PNG
+	filename imagens/ponte-de-wheatstone-circuito-ponte3.PNG
+	scale 60
 	rotateAngle 0.6
 
 \end_inset
