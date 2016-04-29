@@ -248,7 +248,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -30614,7 +30614,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -34371,7 +34371,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status open
+status collapsed
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -34960,7 +34960,7 @@ Ponte de Wheatstone
 status open
 
 \begin_layout Section
- Objetivos.
+Objetivos.
  
 \end_layout
 
@@ -34981,8 +34981,14 @@ Utilização desta ponte para determinação da resistência de resistores.
 \begin_layout Standard
 A Ponte de Wheatstone consiste em um arranjo de resistores, fonte de alimentação
  e detector (o qual pode ser um voltímetro ou um amperímetro), conforme
- ilustrado pela fig.
- 1:
+ ilustrado pela figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figura1wheat"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -34996,7 +35002,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/ponte-de-wheatstone-circuito-ponte.PNG
-	scale 70
+	scale 80
 
 \end_inset
 
@@ -35008,6 +35014,13 @@ status open
 \lang english
 Ponte de Wheatstone
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Figura1wheat"
 
 \end_inset
 
@@ -35141,13 +35154,26 @@ Ou seja, no equilíbrio, os produtos em cruz dos valores dos resistores devem
 \begin_layout Standard
 Uma das aplicações da Ponte de Wheatstone é para medir-se o valor desconhecido
  de um resistor, a partir dos valores dos outros três resistores da ponte.
- A fig.
- 2 ilustra tal procedimento.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig2wheat"
+
+\end_inset
+
+ ilustra tal procedimento.
  Nesta figura, determina-se por:
 \begin_inset Formula 
 \begin{equation}
 R_{x}=\frac{R_{1}}{R_{2}}R_{p}
 \end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Equação3-10"
 
 \end_inset
 
@@ -35165,7 +35191,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/ponte-de-wheatstone-circuito-ponte2.PNG
-	scale 60
+	scale 80
 	rotateAngle 1
 
 \end_inset
@@ -35181,6 +35207,13 @@ status open
 \lang english
 Ponte de Wheatstone utilizada para medir-se um resistor.
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig2wheat"
 
 \end_inset
 
@@ -35229,6 +35262,7 @@ Montar o circuito a seguir:
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -35237,7 +35271,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/ponte-de-wheatstone-circuito-ponte3.PNG
-	scale 60
+	scale 70
 	rotateAngle 0.6
 
 \end_inset
@@ -35270,7 +35304,7 @@ Ajustar a década resistiva de modo a obter-se a tensão Vd a mínima possível.
 
 \begin_layout Standard
 
-\series bold
+\shape italic
 Por medida de segurança, ajustar a escala do voltímetro Vd em um valor elevado
  (3v por exemplo) para evitar danos ao instrumento.
  A seguir, quando a tensão for se tornando menor devido à tentativa de equilibra
@@ -35280,16 +35314,32 @@ r-se a ponte, mudar a escala para valores menores, de modo a aumentar a
 \end_layout
 
 \begin_layout Standard
-Preencher a Tabela 1:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Preencher a Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Tabwheat1"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -35422,9 +35472,14 @@ V
 
 \begin_layout Plain Layout
 
-\lang english
-Tabela 1
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Tabwheat1"
 
 \end_inset
 
@@ -35441,10 +35496,20 @@ Retirar, agora,
 \begin_inset Formula $R_{3}$
 \end_inset
 
- e substituir por resistores de “valores desconhecidos”, isto é, valores
- reais desconhecidos (pode-se verificar os valores deste resistores a partir
- das cores marcadas).
- Utilizar 5 valores diferentes, um de cada vez, e preencher a Tabela 2.
+ e substituir por resistores de “
+\shape italic
+valores desconhecidos
+\shape default
+”, isto é, valores reais desconhecidos (pode-se verificar os valores deste
+ resistores a partir das cores marcadas).
+ Utilizar 5 valores diferentes, um de cada vez, e preencher a Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tabwheat2"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -35457,17 +35522,26 @@ Tomar o cuidado de medir os valores de
 \end_inset
 
  com um multímetro digital para utilizá-los na eq.
- (4).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Equação3-10"
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="4">
 <features rotate="0" tabularvalignment="middle">
@@ -35482,7 +35556,8 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula $\begin{array}{c}
 R_{X}\\
-(Valor\,Nominal)
+Valor\,Nominal\\
+\\
 \end{array}$
 \end_inset
 
@@ -35509,8 +35584,8 @@ R_{X}\\
 \begin_layout Plain Layout
 \begin_inset Formula $\begin{array}{c}
 R_{X}\\
-determinado\\
-pela\,eq\,(4)
+Determinado\\
+Pela\,eq\,(4)
 \end{array}$
 \end_inset
 
@@ -35525,8 +35600,8 @@ pela\,eq\,(4)
 \begin_layout Plain Layout
 \begin_inset Formula $\begin{array}{c}
 R_{X}\\
-determinado\\
-pela\,multímetro
+Determinado\\
+pelo\,multímetro
 \end{array}$
 \end_inset
 
@@ -35737,8 +35812,15 @@ pela\,multímetro
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tabela 2
+
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tabwheat2"
 
 \end_inset
 
@@ -35767,6 +35849,60 @@ As medidas de
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Caixa de resistências (década resistiva)
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $100\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $150\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $330\Omega$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
