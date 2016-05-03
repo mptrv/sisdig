@@ -253,12 +253,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-ii
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -30614,7 +30614,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -34371,7 +34371,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status collapsed
+status open
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -34949,7 +34949,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status open
+status collapsed
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -34971,9 +34971,8 @@ Familiarização experimental com a Ponte de Wheatstone;
 Utilização desta ponte para determinação da resistência de resistores.
 \end_layout
 
-\begin_layout Section*
-2.
- Introdução Teórica
+\begin_layout Section
+Introdução Teórica
 \end_layout
 
 \begin_layout Standard
@@ -35248,9 +35247,8 @@ Neste Circuito, deve-se variar o valor de
  com uma escala precisamente relacionada com a resistência apresentada.
 \end_layout
 
-\begin_layout Section*
-3.
- Parte experimental
+\begin_layout Section
+Parte experimental
 \end_layout
 
 \begin_layout Standard
@@ -35909,17 +35907,17 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-ii
-status collapsed
+status open
+
+\begin_layout Chapter
+Instrumentos para Laboratório de Eletrônica
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Title
-Instrumentos para Laboratório de Eletrônica
-\end_layout
-
-\begin_layout Section*
+\begin_layout Section
 Objetivos.
  
 \end_layout
@@ -35937,52 +35935,103 @@ osciloscópio para medida de tensão e tempo de sinais periódicos;
 gerador de funções senoidais, triangulares e quadradas;
 \end_layout
 
-\begin_layout Section*
-PARTE EXPERIMENTAL I - Estudo dos Instrumentos
+\begin_layout Section
+Parte Experimental I - Estudo dos Instrumentos
 \end_layout
 
-\begin_layout Section*
-1.
- Osciloscópio
+\begin_layout Subsection
+Osciloscópio
 \end_layout
 
-\begin_layout Standard
-1.1.
- Utilizaremos nesta experiência o osciloscópio para efetuar medidas de tensão
+\begin_layout Enumerate
+Utilizaremos nesta experiência o osciloscópio para efetuar medidas de tensão
  e período de sinais provenientes do gerador de funções.
  Para isso, ligue o instrumento e juntamente com o professor verifique os
  itens relacionados abaixo e anote suas características:
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-Possui 2 canais de entrada de sinal: [ 
+Possui 2 canais de entrada de sinal: ( 
 \begin_inset Formula $\,$
 \end_inset
 
-] 1 e 2 [
+) 1 e 2 (
 \begin_inset Formula $\,$
 \end_inset
 
- ] A e B 
+ ) A e B 
 \end_layout
 
 \begin_layout Itemize
-Seletor da escala de tensão: mínimo = _______ máximo = ________ (coloque
- as unidades) 
+Seletor da escala de tensão: mínimo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ máximo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ (coloque as unidades) 
 \end_layout
 
 \begin_layout Itemize
-Seletor da escala de tempos: mínimo = _______ máximo = ________ (coloque
- as unidades) 
+Seletor da escala de tempos: mínimo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ máximo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ (coloque as unidades) 
 \end_layout
 
 \begin_layout Itemize
-Entrada de Calibração: tensão = _______ período = _______ (coloque as unidades)
+Entrada de Calibração: tensão = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ período = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ (coloque as unidades)
 \end_layout
 
-\begin_layout Standard
-1.2.
- A primeira leitura que iremos executar será a da Entrada de Calibração.
+\end_deeper
+\begin_layout Enumerate
+A primeira leitura que iremos executar será a da Entrada de Calibração.
  Escolha um dos canais de leitura e encoste o positivo da ponta de prova
  no ponto de calibração.
  Ajuste as escalas de tensão e tempo para obter o melhor sinal (de modo
@@ -35993,13 +36042,16 @@ Entrada de Calibração: tensão = _______ período = _______ (coloque as unidad
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/7° Exp/imagens/imagem-osciloscopio.PNG
+	filename imagens/imagem-osciloscopio.PNG
+	scale 80
 
 \end_inset
 
@@ -36030,19 +36082,55 @@ Imagem osciloscópio
 \end_layout
 
 \begin_layout Standard
-Escala de tensão (pp): ________ [ ] 
+Escala de tensão (pp): 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
 \end_layout
 
 \begin_layout Standard
-Escala de tempo: ________ [ ] 
+Escala de tempo: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
 \end_layout
 
 \begin_layout Standard
-Divisões vertical: _________ 
+Divisões vertical: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
-Divisões horizontal: _________ 
+Divisões horizontal: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -36050,15 +36138,42 @@ Resultados:
 \end_layout
 
 \begin_layout Standard
-Valor da tensão (pp): ________ [ ] 
+Valor da tensão (pp): 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
 \end_layout
 
 \begin_layout Standard
-Período: ________ [ ] 
+Período: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
 \end_layout
 
 \begin_layout Standard
-Frequência: ________ [ ]
+Frequência: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ]
 \end_layout
 
 \begin_layout Standard
@@ -36068,41 +36183,48 @@ Observação: a notação pp indica valor de pico-a-pico, ou seja, a amplitude
  total da forma de onda, do menor ponto negativo ao maior ponto positivo.
 \end_layout
 
-\begin_layout Part*
-2.
- GERADOR DE FUNÇÕES
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Gerador de Funções
 \end_layout
 
 \begin_layout Standard
-2.1.
- Este instrumento fornece, dentre outras, as funções básicas: senoidal,
- triangular e quadrada.
+Este instrumento fornece, dentre outras, as funções básicas: senoidal, triangula
+r e quadrada.
  Verifique juntamente com o professor as principais características do instrumen
 to: terminal de saída da função, seleção do tipo de função, amplitude e
  frequência (ou período).
 \end_layout
 
-\begin_layout Part*
-3.
- MEDIDAS BÁSICAS COM O OSCILOSCÓPIO
+\begin_layout Subsection
+Medidas Básicas com o Osciloscópio
 \end_layout
 
-\begin_layout Standard
-3.1.
- Escolha um canal de entrada do osciloscópio (1 ou 2) e conecte na saída
+\begin_layout Enumerate
+Escolha um canal de entrada do osciloscópio (1 ou 2) e conecte na saída
  do gerador de funções.
  Atenção: devem ser respeitadas as polaridades (+ e -).
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/7° Exp/imagens/gerador-e-osciloscopio.PNG
+	filename imagens/gerador-e-osciloscopio.PNG
+	scale 60
 
 \end_inset
 
@@ -36123,30 +36245,23 @@ Gerador de função com osciloscópio
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-3.2.
- Faça os ajustes especificados abaixo no gerador de funções e execute as
+\end_deeper
+\begin_layout Enumerate
+Faça os ajustes especificados abaixo no gerador de funções e execute as
  respectivas medidas com o osciloscópio.
  Os resultados devem ser expressos de forma semelhante ao item 1.2, ou seja,
  contendo esboço da forma de onda, escalas utilizadas, valores das divisões,
  valor pico-apico das tensões, período e frequência.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-Senoidal
+Senoidal 
 \begin_inset Formula $\begin{cases}
 2Vpp\,x\,100Hz\\
 5Vpp\,x\,1200Hz
@@ -36179,103 +36294,97 @@ Quadrada
 
 \end_layout
 
+\end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
-4.
- LISTA DE MATERIAIS
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-EMC402
-\series default
- - Instrumentos Eletrônicos, Divisores de Tensão em CC e CA, Comparador
- Analógico de Tensões
-\begin_inset Newline newline
+\begin_inset Newpage pagebreak
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-1 Multímetro Digital 
+\begin_layout Section*
+Lista de Materiais
 \end_layout
 
-\begin_layout Standard
-1 Proto-Board 
+\begin_layout Itemize
+Multímetro Digital 
 \end_layout
 
-\begin_layout Standard
-1 Osciloscópio duplo canal com dois cabos 
+\begin_layout Itemize
+Proto-Board 
 \end_layout
 
-\begin_layout Standard
-1 Fonte ajustável 0-30V 
+\begin_layout Itemize
+Osciloscópio duplo canal com dois cabos 
 \end_layout
 
-\begin_layout Standard
-1 Fonte fixa 12V Cabos Banana-Banana 
+\begin_layout Itemize
+Fonte CC de 0 a 30V 
 \end_layout
 
-\begin_layout Standard
-1 Gerador de sinais 
+\begin_layout Itemize
+Fonte fixa 12V Cabos Banana-Banana 
 \end_layout
 
-\begin_layout Standard
-1 CI LM339 
+\begin_layout Itemize
+Gerador de sinais 
 \end_layout
 
-\begin_layout Standard
-1 Potenciômetro de 4k7 
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
+\begin_layout Itemize
+CI LM339 
 \end_layout
 
-\begin_layout Standard
-2 Resistores de 1k 
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-2 Resistores de 1k5
+\begin_layout Itemize
+Potenciômetro de 4k7
 \begin_inset Formula $\varOmega$
 \end_inset
 
  
 \end_layout
 
-\begin_layout Standard
-1 Resistor de 2k2 
+\begin_layout Itemize
+Resistor de 1k
 \begin_inset Formula $\varOmega$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-1 Resistor de 4k7
+\begin_layout Itemize
+2x Resistores de 1k5
 \begin_inset Formula $\varOmega$
 \end_inset
 
  
 \end_layout
 
-\begin_layout Standard
-1 Alicate de Bico 
-\end_layout
-
-\begin_layout Standard
-1 Alicate de Corte Fios para proto-board
-\end_layout
-
+\begin_layout Itemize
+Resistor de 2k2
+\begin_inset Formula $\varOmega$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+Resistor de 4k7
+\begin_inset Formula $\varOmega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Alicate de Bico 
+\end_layout
+
+\begin_layout Itemize
+Alicate de Corte Fios para proto-board
 \end_layout
 
 \end_inset
