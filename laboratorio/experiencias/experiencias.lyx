@@ -263,7 +263,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -36394,35 +36394,32 @@ Alicate de Corte Fios para proto-board
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status collapsed
+status open
+
+\begin_layout Chapter
+Teorema da Superposição Teoremas de Thévenin e de Norton 
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Title
-Teorema da superposição Teoremas de Thévenin e de Norton
+\begin_layout Section
+Objetivos
 \end_layout
 
-\begin_layout Part*
-1.
- Objetivos.
-\end_layout
-
-\begin_layout Standard
--Familiarização prática com o Teorema da Superposição e os Teoremas de Thévenin
+\begin_layout Itemize
+Familiarização prática com o Teorema da Superposição e os Teoremas de Thévenin
  e de Norton
 \end_layout
 
-\begin_layout Section*
-2.
- Introdução Teórica.
+\begin_layout Section
+Introdução Teórica.
  
 \end_layout
 
-\begin_layout Subsection*
-2.1.
- Teorema da Superposição.
+\begin_layout Subsubsection
+Teorema da Superposição.
  
 \end_layout
 
@@ -36496,7 +36493,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem01.PNG
+	filename imagens/imagem01.PNG
+	scale 60
 
 \end_inset
 
@@ -36548,7 +36546,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem02.PNG
+	filename imagens/imagem02.PNG
+	scale 60
 
 \end_inset
 
@@ -36628,7 +36627,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem03.PNG
+	filename imagens/imagem03.PNG
+	scale 60
 
 \end_inset
 
@@ -36700,7 +36700,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem04.PNG
+	filename imagens/imagem04.PNG
+	scale 60
 
 \end_inset
 
@@ -36827,7 +36828,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem05.PNG
+	filename imagens/imagem05.PNG
+	scale 60
 
 \end_inset
 
@@ -36886,7 +36888,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem06-1.PNG
+	filename imagens/imagem06-1.PNG
+	scale 60
 
 \end_inset
 
@@ -36914,7 +36917,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem06-2.PNG
+	filename imagens/imagem06-2.PNG
+	scale 60
 
 \end_inset
 
@@ -36942,7 +36946,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem06-3.PNG
+	filename imagens/imagem06-3.PNG
+	scale 60
 
 \end_inset
 
@@ -36993,7 +36998,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem07.PNG
+	filename imagens/imagem07.PNG
+	scale 60
 
 \end_inset
 
@@ -37119,7 +37125,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem08-1.PNG
+	filename imagens/imagem08-1.PNG
+	scale 60
 
 \end_inset
 
@@ -37143,7 +37150,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem08-2.PNG
+	filename imagens/imagem08-2.PNG
+	scale 60
 
 \end_inset
 
@@ -37167,7 +37175,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem08-3.PNG
+	filename imagens/imagem08-3.PNG
+	scale 60
 
 \end_inset
 
@@ -37210,7 +37219,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem09.PNG
+	filename imagens/imagem09.PNG
+	scale 60
 
 \end_inset
 
@@ -37314,7 +37324,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem10-1.PNG
+	filename imagens/imagem10-1.PNG
+	scale 60
 
 \end_inset
 
@@ -37346,7 +37357,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem10-2.PNG
+	filename imagens/imagem10-2.PNG
+	scale 60
 
 \end_inset
 
@@ -37378,7 +37390,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem10-3.PNG
+	filename imagens/imagem10-3.PNG
+	scale 60
 
 \end_inset
 
@@ -37424,7 +37437,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem11.PNG
+	filename imagens/imagem11.PNG
+	scale 60
 
 \end_inset
 
@@ -37498,7 +37512,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem12.PNG
+	filename imagens/imagem12.PNG
+	scale 60
 
 \end_inset
 
@@ -37549,7 +37564,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem13-1.PNG
+	filename imagens/imagem13-1.PNG
+	scale 60
 
 \end_inset
 
@@ -37573,7 +37589,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem13-2.PNG
+	filename imagens/imagem13-2.PNG
+	scale 60
 
 \end_inset
 
@@ -37633,7 +37650,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem14.PNG
+	filename imagens/imagem14.PNG
+	scale 60
 
 \end_inset
 
@@ -37688,7 +37706,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem15.PNG
+	filename imagens/imagem15.PNG
+	scale 60
 
 \end_inset
 
@@ -37739,7 +37758,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem16-1.PNG
+	filename imagens/imagem16-1.PNG
+	scale 60
 
 \end_inset
 
@@ -37763,7 +37783,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem16-2.PNG
+	filename imagens/imagem16-2.PNG
+	scale 60
 
 \end_inset
 
@@ -37828,7 +37849,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/9° Exp/imagens/imagem17.PNG
+	filename imagens/imagem17.PNG
+	scale 60
 
 \end_inset
 
