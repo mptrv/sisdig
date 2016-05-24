@@ -243,7 +243,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -34371,7 +34371,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status open
+status collapsed
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -35907,7 +35907,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-ii
-status open
+status collapsed
 
 \begin_layout Chapter
 Instrumentos para Laboratório de Eletrônica
@@ -36418,7 +36418,7 @@ Introdução Teórica.
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Teorema da Superposição.
  
 \end_layout
@@ -36446,10 +36446,10 @@ fontes desativadas
  como sendo: 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \series bold
--Curto Circuito
+Curto Circuito
 \series default
  para 
 \series bold
@@ -36458,10 +36458,10 @@ Fontes de Tensão Independentes
  (V = 0V) 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \series bold
--Circuito Aberto
+Circuito Aberto
 \series default
  para 
 \series bold
@@ -36474,6 +36474,10 @@ Fontes de Corrente Independentes
 
 \series bold
 Lembrar que as Fontes Dependentes são devem ser desativadas!
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -36487,14 +36491,16 @@ Como exemplo, aplica-se este teorema ao circuito da fig.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem01.PNG
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -36540,14 +36546,16 @@ Como este circuito apresenta 3 fontes independentes, inicia-se a análise
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem02.PNG
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -36596,7 +36604,16 @@ Determina-se
 \begin_inset Formula $V_{xa}$
 \end_inset
 
-= _________
+= 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -36621,14 +36638,16 @@ Agora, determinar-se
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem03.PNG
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -36669,7 +36688,16 @@ status open
 \begin_inset Formula $V_{xb}$
 \end_inset
 
- = ________
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -36694,14 +36722,16 @@ Finalmente, determina-se
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem04.PNG
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -36742,7 +36772,16 @@ status open
 \begin_inset Formula $V_{xc}$
 \end_inset
 
-= ________
+= 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -36758,9 +36797,8 @@ A tensão
 
 \end_layout
 
-\begin_layout Subsection*
-2.2.
- Teorema de Thévenin.
+\begin_layout Subsection
+Teorema de Thévenin.
  
 \end_layout
 
@@ -36822,14 +36860,16 @@ A fig.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem05.PNG
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -36882,11 +36922,13 @@ O subcircuito A é então reduzido à tensão
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem06-1.PNG
 	scale 60
@@ -36911,11 +36953,13 @@ status open
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem06-2.PNG
 	scale 60
@@ -36940,11 +36984,13 @@ status open
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem06-3.PNG
 	scale 60
@@ -36992,11 +37038,13 @@ Aplicação do teorema de Thévenin.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem07.PNG
 	scale 60
@@ -37049,11 +37097,20 @@ A tensão
 \begin_inset Formula $V_{x}$
 \end_inset
 
-= ________
+= 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection*
-2.3.Teorema de Norton.
+\begin_layout Subsection
+Teorema de Norton.
 \end_layout
 
 \begin_layout Standard
@@ -37119,11 +37176,13 @@ Notar que
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem08-1.PNG
 	scale 60
@@ -37144,14 +37203,16 @@ status open
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem08-2.PNG
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -37169,14 +37230,16 @@ status open
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem08-3.PNG
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -37213,11 +37276,13 @@ Aplicação do Teorema de Norton.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem09.PNG
 	scale 60
@@ -37267,18 +37332,25 @@ A partir da fig.
 \begin_inset Formula $V_{x}$
 \end_inset
 
-= ___________
+= 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section*
-3.
- Parte Experimental.
+\begin_layout Section
+Parte Experimental.
  
 \end_layout
 
-\begin_layout Subsection*
-3.1.
- Teorema da Superposição.
+\begin_layout Subsection
+Teorema da Superposição.
  
 \end_layout
 
@@ -37313,16 +37385,27 @@ Montar o circuito ilustrado na fig.
 \begin_inset Formula $V_{x}$
 \end_inset
 
- = ___________
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem10-1.PNG
 	scale 60
@@ -37346,16 +37429,27 @@ status open
 \begin_inset Formula $V_{xa}$
 \end_inset
 
- = __________
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem10-2.PNG
 	scale 60
@@ -37379,16 +37473,27 @@ status open
 \begin_inset Formula $V_{xb}$
 \end_inset
 
- = ___________
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem10-3.PNG
 	scale 60
@@ -37426,16 +37531,27 @@ Aplicação do Teorema da Superposição
 \begin_inset Formula $V_{xc}$
 \end_inset
 
- = _________
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem11.PNG
 	scale 60
@@ -37476,16 +37592,46 @@ Aplicação do Teorema da Superposição (continuação)
 \begin_inset Formula $V_{xc}$
 \end_inset
 
- = ________ = _____
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "4cm"
+height "1pt"
+
+\end_inset
+
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Comentários:
+Comentários: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
 \end_layout
 
-\begin_layout Subsection*
-3.2.
- Teorema de Thévenin.
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Teorema de Thévenin.
  
 \end_layout
 
@@ -37501,16 +37647,27 @@ Montar o circuito ilustrado na fig.
 \begin_inset Formula $V_{x}$
 \end_inset
 
- = __________
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem12.PNG
 	scale 60
@@ -37554,25 +37711,19 @@ Determinar
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem13-1.PNG
 	scale 60
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -37583,11 +37734,13 @@ status open
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem13-2.PNG
 	scale 60
@@ -37644,11 +37797,13 @@ Substituir o subcircuito A pela fonte de bancada ajustada em
 
 \begin_layout Standard
 \begin_inset Float figure
+placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem14.PNG
 	scale 60
@@ -37677,9 +37832,8 @@ Aplicação do Teorema de Thévenin.
 
 \end_layout
 
-\begin_layout Subsection*
-3.3.
- Teorema de Norton.
+\begin_layout Subsection
+Teorema de Norton.
  
 \end_layout
 
@@ -37695,16 +37849,27 @@ Determinar agora, o Equivalente de Norton para o subcircuito A da fig.
 \begin_inset Formula $V_{x}$
 \end_inset
 
- = _________
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem15.PNG
 	scale 60
@@ -37748,15 +37913,17 @@ Determinar
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem16-1.PNG
 	scale 60
@@ -37777,11 +37944,13 @@ status open
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem16-2.PNG
 	scale 60
@@ -37843,11 +38012,13 @@ Substituir o subcircuito A pela Fonte de Bancada em série com um miliamperímet
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/imagem17.PNG
 	scale 60
@@ -37879,9 +38050,99 @@ Tecer no espaço a seguir, comentários pertinentes a esta experiência, como
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Multímetro analógico
+\end_layout
+
+\begin_layout Itemize
+Ohmimetro 
+\end_layout
+
+\begin_layout Itemize
+Década de Resistores
+\end_layout
+
+\begin_layout Itemize
+3x pilhas grandes (tipo D) de 1,5 V
+\end_layout
+
+\begin_layout Itemize
+Suporte para as pilhas
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
+\end_layout
+
+\begin_layout Itemize
+Resistore de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $330\Omega$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 2x (
+\begin_inset Formula $100\Omega$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
