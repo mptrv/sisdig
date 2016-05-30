@@ -263,12 +263,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -34402,7 +34402,7 @@ Monte o circuito esquematizado abaixo.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -34437,7 +34437,7 @@ Primeira Lei de Kirchhoff
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -34631,7 +34631,7 @@ Segunda Lei de Kirchhoff
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -36394,7 +36394,7 @@ Alicate de Corte Fios para proto-board
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status open
+status collapsed
 
 \begin_layout Chapter
 Teorema da Superposição Teoremas de Thévenin e de Norton 
@@ -36414,13 +36414,11 @@ Familiarização prática com o Teorema da Superposição e os Teoremas de Thév
 \end_layout
 
 \begin_layout Section
-Introdução Teórica.
- 
+Introdução Teórica
 \end_layout
 
 \begin_layout Subsection
-Teorema da Superposição.
- 
+Teorema da Superposição
 \end_layout
 
 \begin_layout Standard
@@ -36617,6 +36615,13 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Agora, determinar-se 
 \begin_inset Formula $V_{x}$
 \end_inset
@@ -36695,6 +36700,13 @@ offset "0ex"
 width "3cm"
 height "1pt"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -36785,6 +36797,13 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 A tensão 
 \begin_inset Formula $V_{x}$
 \end_inset
@@ -36798,8 +36817,7 @@ A tensão
 \end_layout
 
 \begin_layout Subsection
-Teorema de Thévenin.
- 
+Teorema de Thévenin
 \end_layout
 
 \begin_layout Standard
@@ -36943,14 +36961,15 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
-(a)Determinação de 
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $V_{th}$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -36974,14 +36993,16 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
-(b)Determinação de 
+\end_deeper
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $R_{th}$
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -37032,10 +37053,12 @@ Aplicação do teorema de Thévenin.
 
 \end_layout
 
-\begin_layout Standard
-(c)Circuito Equivalente de Thévenin para o Subcircuito A
+\end_deeper
+\begin_layout Enumerate
+Circuito Equivalente de Thévenin para o Subcircuito A
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
 placement H
@@ -37073,8 +37096,9 @@ Aplicação do Teorema de Thévenin (continuação).
 
 \end_layout
 
-\begin_layout Standard
-(d)Determinação de 
+\end_deeper
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -37086,7 +37110,7 @@ A tensão
 \begin_inset Formula $V_{x}$
 \end_inset
 
- nos terminais de A resulta então (notar que deve ser o mesmo valor de 
+ nos terminais de A resulta então (Notar que deve ser o mesmo valor de 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -37110,7 +37134,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Subsection
-Teorema de Norton.
+Teorema de Norton
 \end_layout
 
 \begin_layout Standard
@@ -37194,14 +37218,15 @@ status collapsed
 
 \end_inset
 
-(a)Determinação de 
+
+\end_layout
+
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $I_{n}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -37221,14 +37246,15 @@ status collapsed
 
 \end_inset
 
- (b)Determinação de 
+ 
+\end_layout
+
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $R_{n}$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -37271,10 +37297,11 @@ Aplicação do Teorema de Norton.
 
 \end_inset
 
-(c)Circuito Equivalente de Norton para o Subcircuito A
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Circuito Equivalente de Norton para o Subcircuito A
 \begin_inset Float figure
 placement H
 wide false
@@ -37308,7 +37335,11 @@ Aplicação do Teorema de Norton (continuação).
 
 \end_inset
 
- (d)Determinação de 
+ 
+\end_layout
+
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -37345,13 +37376,11 @@ height "1pt"
 \end_layout
 
 \begin_layout Section
-Parte Experimental.
- 
+Parte Experimental
 \end_layout
 
 \begin_layout Subsection
-Teorema da Superposição.
- 
+Teorema da Superposição 
 \end_layout
 
 \begin_layout Standard
@@ -37376,8 +37405,8 @@ Montar o circuito ilustrado na fig.
  para os 4 circuitos indicados, e verificar o Teorema da Superposição.
 \end_layout
 
-\begin_layout Standard
-(a)Determinação de 
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -37395,9 +37424,6 @@ height "1pt"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -37420,8 +37446,8 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
-(b)Determinação de 
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $V_{xa}$
 \end_inset
 
@@ -37439,9 +37465,6 @@ height "1pt"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -37464,8 +37487,8 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
-(c)Determinação de 
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $V_{xb}$
 \end_inset
 
@@ -37483,9 +37506,6 @@ height "1pt"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -37522,8 +37542,8 @@ Aplicação do Teorema da Superposição
 
 \end_layout
 
-\begin_layout Standard
-(d)Determinação de 
+\begin_layout Enumerate
+Determinação de 
 \begin_inset Formula $V_{xc}$
 \end_inset
 
@@ -37541,9 +37561,6 @@ height "1pt"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -37631,8 +37648,7 @@ caixaresp[5]
 \end_layout
 
 \begin_layout Subsection
-Teorema de Thévenin.
- 
+Teorema de Thévenin
 \end_layout
 
 \begin_layout Standard
@@ -37691,6 +37707,10 @@ Aplicação do Teorema de Thévenin.
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -37833,8 +37853,7 @@ Aplicação do Teorema de Thévenin.
 \end_layout
 
 \begin_layout Subsection
-Teorema de Norton.
- 
+Teorema de Norton
 \end_layout
 
 \begin_layout Standard
@@ -37872,7 +37891,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/imagem15.PNG
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -37919,14 +37938,10 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/imagem16-1.PNG
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -37953,7 +37968,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/imagem16-2.PNG
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -38015,13 +38030,13 @@ Substituir o subcircuito A pela Fonte de Bancada em série com um miliamperímet
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/imagem17.PNG
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -38045,6 +38060,9 @@ Aplicação do Teorema de Norton.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
 Tecer no espaço a seguir, comentários pertinentes a esta experiência, como
  diferenças entre os resultados calculados e os medidos experimentalmente.
  
@@ -38061,6 +38079,10 @@ status open
 caixaresp[5]
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -38154,12 +38176,239 @@ W: 2x (
 \begin_inset Branch an-mtp
 status open
 
+\begin_layout Chapter
+Geradores Elétricos e Máxima Transferência de Potência
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Standard
+\begin_layout Section
+Objetivos
+\end_layout
 
+\begin_layout Itemize
+Determinação da Curva Característica de um Gerador Elétrico;
+\end_layout
+
+\begin_layout Itemize
+Determinação das Condições para Máxima Transferência de Potência.
+\end_layout
+
+\begin_layout Section
+Introdução Teórica 
+\end_layout
+
+\begin_layout Subsection
+Geradores Elétricos
+\end_layout
+
+\begin_layout Standard
+Geradores Elétricos são equipamentos ou dispositivos cuja função é a de
+ produzir uma diferença potencial, ou voltagem, entre seus terminais, obtida
+ por meio da conversão de uma forma de energia(química, mecânica, térmica
+ e luminosa por exemplo) em energia elétrica.
+\end_layout
+
+\begin_layout Standard
+As pilhas e baterias são exemplo de dispositivos que convertem energia química
+ em elétrica.
+ Esta categoria de geradores remontam a invenção da Pilha Eletroquimica
+ por Alessandro Volta apresentada em 1800.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 1.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pilhas e Baterias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como exemplo de equipamentos que convertem energia mecânica em energia elétrica
+ são os dínamos e os alternadores.
+ Estes geradores são empregados em usinas hidroelétricas, sendo também empregado
+s nos automóveis (alternador) para promover a energia elétrica necessária
+ para alimentar os equipamentos deste.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 2.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gerador Eletromecânico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um termopar consiste em um par de metais diferentes, e ao se aplicar temperatura
+s diferentes às suas junções, estabelece uma diferença de potencial conforme
+ ilustrado na fig.
+ 3.
+ Este efeito, é denominado Efeito Seebeck, é um exemplo de conversão de
+ energia térmica em energia elétrica e é amplamente empregado para medida
+ de temperatura.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 3.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Termopar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como último exemplo de gerador elétrico, menciona-se as células solares
+ baseadas em materiais semicondutores, quem convertem energia luminosa em
+ energia elétrica.
+ Essa técnica é amplamente empregada em satélites estações espaciais e hoje
+ encontra-se em telefones na beira de estradas e calculadoras de bolso.
+ Como cada célula é capaz de produzir uma voltagem pequena e também suprir
+ baixas correntes, muitas destas células são dispostas em série e em paralelo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 4.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Célula Solar e Painel Solar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E a fonte de Alimentação de Bancada? Esta também pode ser considerada como
+ gerador eçétrico, porém necessita de outro 
+\begin_inset Quotes eld
+\end_inset
+
+gerador
+\begin_inset Quotes erd
+\end_inset
+
+, que é a rede elétrica e possui características de estabilidade para a
+ tensão de saída muito superiores aos geradores mencionados.
+ A Fonte de Bancada é contruída com circuitos eletrônicos, que possibilitam
+ esta estabilidade.
+\end_layout
+
+\begin_layout Subsection
+Curva v x i de geradores elétricos
 \end_layout
 
 \end_inset
@@ -38174,7 +38423,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iii
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
