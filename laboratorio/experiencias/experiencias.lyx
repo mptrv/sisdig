@@ -32198,7 +32198,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status collapsed
+status open
 
 \begin_layout Chapter
 Lei de Ohm
@@ -32573,7 +32573,7 @@ reference "fig:lei-ohm-ixv-nao-linear"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -38408,7 +38408,788 @@ gerador
 \end_layout
 
 \begin_layout Subsection
-Curva v x i de geradores elétricos
+Curva v x i de Geradores Elétricos
+\end_layout
+
+\begin_layout Standard
+Um gerador elétrico em geral possui uma curva v x i como a ilustrada na
+ fig.
+ 5.
+ Esta curva pode ser obtida por um ensaio de carga, onde aplica-se na saída
+ deste gerador um resistor variável ou uma carga elétrica variável, mede-se
+ v com um voltímetro e i com um amperímetro, traçando-se então a curva em
+ questão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 5.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ensaio de Carga, Curva v x i de um Gerador e Modelo Linear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+É óbvio que esta relação não é linear, porem, pode-se adotar um modelo linear
+ para a região assim designada na fig.
+ 5, resultando no modelo ilustrado ao lado da curva v x i desta mesma figura.
+ Este modelo consiste em um gerador ideal 
+\begin_inset Formula $\mathrm{V}_{\mathrm{g}}$
+\end_inset
+
+em série com um resistor 
+\begin_inset Formula $\mathrm{R}_{\mathrm{g}}$
+\end_inset
+
+, e é frequentemente modelado pela seguinte equação:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{v=V_{g}-R_{g}\centerdot i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para o caso de uma fonte de bancada, a tensão de saída varia pouco com a
+ corrente de saída, resultando em uma curva v x i ilustrada na fig.
+ 6.
+ Este caso de 
+\begin_inset Quotes eld
+\end_inset
+
+gerador
+\begin_inset Quotes erd
+\end_inset
+
+ é o que mais se aproxima de Gerador Ideal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 6.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Curva v x i de um Gerador Ideal e Modelo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Máxima Transferência de Potência
+\end_layout
+
+\begin_layout Standard
+Ao se conectar um gerador qualque (uma bateria por exemplo) a uma carga
+ resistiva pergunta-se: qual o valor desta carga de modo que a potência
+ transferida para esta seja a máxima? Esta situação está ilustrada na fig.
+ 7.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 7.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Máxima Transferência de Potência
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O valor da potência dissipada pela carga é:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{P_{RL}=R_{L}.i^{2}=R_{L}\centerdot\left(\frac{V_{g}}{R_{g}+R_{L}}\right)^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O valor máximo para 
+\begin_inset Formula $\mathrm{P_{RL}}_{\mathrm{}}$
+\end_inset
+
+ é determinado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{\frac{\partial P_{RL}}{\partial R_{L}}=\frac{V_{g}^{2}}{(R_{g}+R_{L})^{2}}+R_{L}V_{g}^{2}\frac{(-2)}{(R_{g}+R_{l})^{3}}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{R_{g}+R_{L}-2R_{L}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{R_{L}\mid\,_{PRL_{MAX}}=R_{g}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Eq (4)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma outra maneira de obter-se este resultado, consiste em equacionar-se
+ 
+\begin_inset Formula $\mathrm{P}_{\mathrm{RL}}$
+\end_inset
+
+ em função das potências geradas por 
+\begin_inset Formula $\mathrm{V_{g}}$
+\end_inset
+
+ e dissipada por 
+\begin_inset Formula $\mathrm{R}_{\mathrm{g}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{P_{RL}=P_{Vg}-P_{Rg}=V_{g}\centerdot i-R_{g}\centerdot i^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta equação é uma parábola como ilustrado na fig.
+ 8.
+ Nesta figura, nota-se que a potência útil, 
+\begin_inset Formula $\mathrm{P}_{\mathrm{RL}}$
+\end_inset
+
+, é zero para a corrente 
+\begin_inset Formula $\mathrm{i=0}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{i=I_{CC}}$
+\end_inset
+
+, onde 
+\begin_inset Formula $\mathrm{I_{CC}}$
+\end_inset
+
+ é a corrente de curto circuito, ou seja 
+\begin_inset Formula $\mathrm{R}_{L}=0\Omega$
+\end_inset
+
+! 
+\series bold
+Convém observar que esta condição nem sempre é saudável de se implemntar
+ na prática, pois pode causar um 
+\shape smallcaps
+terrível acidente
+\shape default
+!!
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+O máximo de 
+\begin_inset Formula $\mathrm{P_{RL}}$
+\end_inset
+
+ em função de i é:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0\:\Rightarrow\:V_{g}-2\centerdot R_{g}\centerdot i=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{i\mid\,_{PRL_{MAX}}=\frac{V_{g}}{2\centerdot R_{g}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\mathrm{v=V_{g}-R_{g}\centerdot i=\frac{V_{g}}{2}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{R_{L}=\frac{v}{i}}$
+\end_inset
+
+ obtém-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{R_{L}\mid\,_{PRL_{MAX}}=\frac{v}{i\mid_{PRL_{max}}}=\frac{\frac{V_{g}}{2}}{\frac{V_{g}}{2\centerdot R_{g}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{R_{L}\mid\,_{PRL_{MAX}}=R_{g}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que é a mesma expressão obtida anteriormente Eq.
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "Eq (4)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Subsection
+Curva de um gerador tipo pilha elétrica (eletroquímica).
+\end_layout
+
+\begin_layout Standard
+Implementar a seguinte montagem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 8.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Montagem para determinação da curva v x i de pilhas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Colocar inicialmente a Década Resistiva em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+kilo
+\backslash
+ohm}
+\end_layout
+
+\end_inset
+
+ e preencher a tabela a seguir e elaboar um gráfico v x i, variando-se esta
+ Década convenientemente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i(mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+v(V)
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+220
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+240
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_inset
