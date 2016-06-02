@@ -1,4 +1,4 @@
-update=01/06/2016 21:48:02
+update=02/06/2016 17:19:31
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,13 @@ LibName29=C:/Users/Marcelo/Desktop/w_logic
 LibName30=C:/Users/Marcelo/Desktop/cmos4000
 LibName31=C:/Users/Marcelo/Desktop/Gajda_cmosieee
 LibName32=C:/Program Files/KiCad/share/kicad/library/relays
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

@@ -42,8 +42,8 @@ Date "junho/2016"
 Rev "0.0"
 Comp "Escola de Engenharia Mauá - IMT"
 Comment1 "ETE102 - Fundamentos de Circuitos Digitais"
-Comment2 "Gabarito"
-Comment3 ""
+Comment2 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
+Comment3 "GABARITO"
 Comment4 ""
 $EndDescr
 $Comp
@@ -729,7 +729,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 3400 5150 3400
 Wire Wire Line
-	5000 2200 5100 2200
+	5050 2200 5100 2200
 Wire Wire Line
 	2200 1950 2200 2200
 Wire Wire Line
@@ -922,13 +922,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 2850 1100 2850
 Wire Wire Line
-	1150 2750 1150 2850
-Wire Wire Line
 	1150 2950 1150 3000
-Text Label 1150 2750 0    60   ~ 0
-ck
-Text Label 5000 2200 2    60   ~ 0
-ck
 $Comp
 L VSS #PWR021
 U 1 1 574FD29A
@@ -1080,4 +1074,8 @@ Text Notes 10500 3400 1    60   ~ 0
 dezena
 Text Notes 10950 5150 1    60   ~ 0
 lâmpada\n  12V
+Text GLabel 1150 2850 2    60   Input ~ 0
+ck
+Text GLabel 5050 2200 0    60   Input ~ 0
+ck
 $EndSCHEMATC
