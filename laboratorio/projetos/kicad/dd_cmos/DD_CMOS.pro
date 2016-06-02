@@ -1,4 +1,4 @@
-update=23/05/2016 01:09:38
+update=01/06/2016 21:48:02
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=valves
 LibName29=C:/Users/Marcelo/Desktop/w_logic
 LibName30=C:/Users/Marcelo/Desktop/cmos4000
 LibName31=C:/Users/Marcelo/Desktop/Gajda_cmosieee
+LibName32=C:/Program Files/KiCad/share/kicad/library/relays
