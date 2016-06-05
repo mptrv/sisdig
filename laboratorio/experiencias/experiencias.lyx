@@ -28957,10 +28957,6 @@ name "fig:mult-Multímetro-analógico"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -29019,10 +29015,6 @@ name "fig:mult-multímetro-digital"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -30044,10 +30036,6 @@ name "fig:mult-construção-de-voltímetro"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -36394,7 +36382,7 @@ Alicate de Corte Fios para proto-board
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status collapsed
+status open
 
 \begin_layout Chapter
 Teorema da Superposição Teoremas de Thévenin e de Norton 
@@ -36402,7 +36390,7 @@ Teorema da Superposição Teoremas de Thévenin e de Norton
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -38298,7 +38286,14 @@ Gerador Eletromecânico
 Um termopar consiste em um par de metais diferentes, e ao se aplicar temperatura
 s diferentes às suas junções, estabelece uma diferença de potencial conforme
  ilustrado na fig.
- 3.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figura3pot"
+
+\end_inset
+
+.
  Este efeito, é denominado Efeito Seebeck, é um exemplo de conversão de
  energia térmica em energia elétrica e é amplamente empregado para medida
  de temperatura.
@@ -38325,14 +38320,17 @@ status collapsed
 
 \begin_layout Plain Layout
 Termopar
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Figura3pot"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -38414,7 +38412,14 @@ Curva v x i de Geradores Elétricos
 \begin_layout Standard
 Um gerador elétrico em geral possui uma curva v x i como a ilustrada na
  fig.
- 5.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura5pot"
+
+\end_inset
+
+.
  Esta curva pode ser obtida por um ensaio de carga, onde aplica-se na saída
  deste gerador um resistor variável ou uma carga elétrica variável, mede-se
  v com um voltímetro e i com um amperímetro, traçando-se então a curva em
@@ -38444,6 +38449,13 @@ status collapsed
 
 \begin_layout Plain Layout
 Ensaio de Carga, Curva v x i de um Gerador e Modelo Linear
+\begin_inset CommandInset label
+LatexCommand label
+name "figura5pot"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38459,7 +38471,14 @@ Ensaio de Carga, Curva v x i de um Gerador e Modelo Linear
 \begin_layout Standard
 É óbvio que esta relação não é linear, porem, pode-se adotar um modelo linear
  para a região assim designada na fig.
- 5, resultando no modelo ilustrado ao lado da curva v x i desta mesma figura.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura5pot"
+
+\end_inset
+
+, resultando no modelo ilustrado ao lado da curva v x i desta mesma figura.
  Este modelo consiste em um gerador ideal 
 \begin_inset Formula $\mathrm{V}_{\mathrm{g}}$
 \end_inset
@@ -38474,7 +38493,7 @@ em série com um resistor
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v=V_{g}-R_{g}\centerdot i}
+\mathrm{v=V_{g}-R_{g}\cdot i}
 \end{equation}
 
 \end_inset
@@ -38485,7 +38504,14 @@ em série com um resistor
 \begin_layout Standard
 Para o caso de uma fonte de bancada, a tensão de saída varia pouco com a
  corrente de saída, resultando em uma curva v x i ilustrada na fig.
- 6.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura6pot"
+
+\end_inset
+
+.
  Este caso de 
 \begin_inset Quotes eld
 \end_inset
@@ -38517,6 +38543,13 @@ status collapsed
 
 \begin_layout Plain Layout
 Curva v x i de um Gerador Ideal e Modelo
+\begin_inset CommandInset label
+LatexCommand label
+name "figura6pot"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38534,19 +38567,22 @@ Máxima Transferência de Potência
 \end_layout
 
 \begin_layout Standard
-Ao se conectar um gerador qualque (uma bateria por exemplo) a uma carga
+Ao se conectar um gerador qualquer (uma bateria por exemplo) a uma carga
  resistiva pergunta-se: qual o valor desta carga de modo que a potência
  transferida para esta seja a máxima? Esta situação está ilustrada na fig.
- 7.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura7pot"
+
+\end_inset
+
+.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -38561,6 +38597,13 @@ status collapsed
 
 \begin_layout Plain Layout
 Máxima Transferência de Potência
+\begin_inset CommandInset label
+LatexCommand label
+name "figura7pot"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38580,7 +38623,7 @@ O valor da potência dissipada pela carga é:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{P_{RL}=R_{L}.i^{2}=R_{L}\centerdot\left(\frac{V_{g}}{R_{g}+R_{L}}\right)^{2}}
+\mathrm{P_{RL}=R_{L}.i^{2}=R_{L}\cdot\left(\frac{V_{g}}{R_{g}+R_{L}}\right)^{2}}
 \end{equation}
 
 \end_inset
@@ -38667,7 +38710,7 @@ Uma outra maneira de obter-se este resultado, consiste em equacionar-se
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{P_{RL}=P_{Vg}-P_{Rg}=V_{g}\centerdot i-R_{g}\centerdot i^{2}}
+\mathrm{P_{RL}=P_{Vg}-P_{Rg}=V_{g}\cdot i-R_{g}\cdot i^{2}}
 \end{equation}
 
 \end_inset
@@ -38721,7 +38764,7 @@ O máximo de
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0\:\Rightarrow\:V_{g}-2\centerdot R_{g}\centerdot i=0}
+\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0\:\Rightarrow\:V_{g}-2\centerdot\cdot R\cdot i=0}
 \]
 
 \end_inset
@@ -38732,7 +38775,7 @@ O máximo de
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{i\mid\,_{P_{RL_{max}}}=\frac{V_{g}}{2\centerdot R_{g}}}
+\mathrm{i\mid\,_{P_{RL_{max}}}=\frac{V_{g}}{2\cdot R_{g}}}
 \end{equation}
 
 \end_inset
@@ -38797,7 +38840,14 @@ Parte Experimental
 \end_layout
 
 \begin_layout Subsection
-Curva de um gerador tipo pilha elétrica (eletroquímica).
+Curva de um gerador tipo pilha elétrica (eletroquímica)
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Curva-de-um"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -38871,7 +38921,7 @@ status collapsed
 <lyxtabular version="3" rows="14" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -38886,20 +38936,7 @@ i(mA)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \hspace{}
-\length 0.9cm
-\end_inset
-
 v(V)
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 2.5cm
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -39183,7 +39220,14 @@ Curva da Fonte de Bancada
 
 \begin_layout Standard
 Repetir o mesmo experimento para a Fonte da Bancada.
- Colocar os pontos obtidos no mesmo gráfico do item 3.1.
+ Colocar os pontos obtidos no mesmo gráfico do item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Curva-de-um"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -39235,7 +39279,7 @@ status collapsed
 <lyxtabular version="3" rows="7" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -39250,20 +39294,7 @@ i(mA)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \hspace{}
-\length 0.9cm
-\end_inset
-
 v(V)
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 2.5cm
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -39411,7 +39442,14 @@ Máxima Transferência de Potência
 
 \begin_layout Standard
 Simular um gerador com a montagem ilustrada na fig.
- 10.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura10pot"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -39420,10 +39458,6 @@ placement H
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -39437,6 +39471,13 @@ status collapsed
 
 \begin_layout Plain Layout
 Máxima Transferência de Potência
+\begin_inset CommandInset label
+LatexCommand label
+name "figura10pot"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -39450,31 +39491,31 @@ Máxima Transferência de Potência
 \end_layout
 
 \begin_layout Standard
-Preencher, então, a seguinte tabela:
-\end_layout
-
-\begin_layout Standard
+Preencher, então, a seguinte tabela:
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="4">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 R(Ω)
 \end_layout
 
@@ -39484,20 +39525,7 @@ R(Ω)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \hspace{}
-\length 1cm
-\end_inset
-
 v(V)
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -39506,21 +39534,7 @@ v(V)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \hspace{}
-\length 1cm
-\end_inset
-
 i(mA)
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -39529,22 +39543,7 @@ i(mA)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \hspace{}
-\length 0.9cm
-\end_inset
-
-
 \begin_inset Formula $\mathrm{P_{RL}}$
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 1cm
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.9cm
 \end_inset
 
 
@@ -39978,13 +39977,17 @@ i(mA)
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Traçãr então dois gráficos em papéis diferentes, um para 
+Traçar então dois gráficos em papéis diferentes, um para 
 \begin_inset Formula $\mathrm{P_{RL}\,\times\,R_{L}}$
 \end_inset
 
@@ -40054,6 +40057,64 @@ height "1pt"
 
 \end_layout
 
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Multímetro analógico
+\end_layout
+
+\begin_layout Itemize
+Década de Resistores
+\end_layout
+
+\begin_layout Itemize
+2x pilhas grandes (tipo D) de 1,5 V
+\end_layout
+
+\begin_layout Itemize
+Suporte para as pilhas
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $100\Omega$
+\end_inset
+
+)
+\end_layout
+
 \end_inset
 
 
@@ -40090,7 +40151,7 @@ status collapsed
 status open
 
 \begin_layout Title
-OSCILOSCOPIO – PARTE II
+OSCILOSCÓPIO – PARTE II
 \end_layout
 
 \begin_layout Title
@@ -40116,7 +40177,7 @@ Evidentemente que este sofisticado instrumento, não foi feito apenas com
 Portanto, toda vez que ligamos o instrumento, é instrumento, é imperioso
  que verifiquemos todos os controles do osciloscópio e o coloquemos em condições
  mínimas de operação.
- Ou seja, verificar posicionamento do ponto ou traço e ajusta-lo na tela,
+ Ou seja, verificar posicionamento do ponto ou traço e ajustá-lo na tela,
  verificar controles como o de Expansão se está fechado, aplicarmos a onda
  quadrada e referência e checarmos se confere a amplitude a frequência.
  
@@ -43419,8 +43480,7 @@ Lembrar das recomendações a respeito de como obter um bom ponto de solda
 \end_layout
 
 \begin_layout Itemize
-Realizar a interconecção entre os terminais dos componentes por meio de
- 
+Realizar a interconexão entre os terminais dos componentes por meio de 
 \emph on
 
 \begin_inset Quotes eld
@@ -43485,7 +43545,7 @@ Incluir, no circuito, dois bornes para cabos banana-banana, a fim de conectar
 \begin_layout Itemize
 No horário de funcionamento do 
 \emph on
-Amoxarifado da Engenharia Elétrica
+Almoxarifado da Engenharia Elétrica
 \emph default
 , poderá ser emprestado o material necessário para solda, assim como disponibili
 zada uma sala para o trabalho.
