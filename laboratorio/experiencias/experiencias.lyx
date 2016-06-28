@@ -268,12 +268,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iii
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -36382,7 +36382,7 @@ Alicate de Corte Fios para proto-board
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status open
+status collapsed
 
 \begin_layout Chapter
 Teorema da Superposição Teoremas de Thévenin e de Norton 
@@ -40122,13 +40122,272 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iii
-status collapsed
+status open
+
+\begin_layout Chapter
+Osciloscópio III 
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
+\begin_layout Section
+Objetivos 
+\end_layout
+
+\begin_layout Itemize
+Treinar a utilização do oscilloscópio para realizar medições de formas de
+ onda.
+\end_layout
+
+\begin_layout Itemize
+Reconhecer a possibilidade de ocorrência de curto pelo 
+\begin_inset Quotes eld
+\end_inset
+
+negativo
+\begin_inset Quotes erd
+\end_inset
+
+ dos canais.
+\end_layout
+
+\begin_layout Section
+Circuito a Analisar 
+\end_layout
+
 \begin_layout Standard
+O circuito que será analisado é o RC série, como mostrado na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "osciloscopio3fig1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-img1.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito RC Série.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "osciloscopio3fig1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As Equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "osciloscopio3.eq1"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "osciloscopio3-eq2"
+
+\end_inset
+
+ regem a carga do capacitor e as 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "osciloscopio3-eq3"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "osciloscopio3-eq4"
+
+\end_inset
+
+, a descarga.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Carga
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{v_{c}(t)}=\mathrm{V_{cc}\cdot(1-e^{\frac{-t}{RC}})}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "osciloscopio3.eq1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{i_{c}(t)=I_{0}\cdot e^{\frac{-t}{RC}}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "osciloscopio3-eq2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Descarga
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{v_{c}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "osciloscopio3-eq3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{i_{c}(t)=-I_{0}\cdot e^{\frac{-t}{RC}}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "osciloscopio3-eq4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{RC=\tau}\;[S]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{I_{o}=\frac{V_{cc}}{R}\;[A]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Foi considerado capacitor inicialmente descarregado em 
+\begin_inset Formula $\mathrm{t_{0}}$
+\end_inset
+
+ e depois completamente carregado em 
+\begin_inset Formula $\mathrm{t_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A tensão no resistor é 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{v_{r}(t)=V_{cc}-v_{c}(t)}
+\]
+
+\end_inset
+
 
 \end_layout
 
