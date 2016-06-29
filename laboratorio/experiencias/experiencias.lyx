@@ -273,12 +273,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iii
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iv
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -32208,7 +32208,7 @@ Bipolos Lineares e Não Lineares
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -34367,7 +34367,7 @@ Leis de Kirchhoff
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -34945,7 +34945,7 @@ Ponte de Wheatstone
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -35903,7 +35903,7 @@ Instrumentos para Laboratório de Eletrônica
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos.
@@ -38170,7 +38170,7 @@ Geradores Elétricos e Máxima Transferência de Potência
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -40122,7 +40122,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iii
-status open
+status collapsed
 
 \begin_layout Chapter
 Osciloscópio III 
@@ -40130,7 +40130,7 @@ Osciloscópio III
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos 
@@ -40391,6 +40391,81 @@ A tensão no resistor é
 
 \end_layout
 
+\begin_layout Standard
+E, portanto, na carga e descarga têm-se as equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq5.osciloscopio3"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq6-osciloscopio3"
+
+\end_inset
+
+ respectivamente.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Carga
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{v_{R}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "eq5.osciloscopio3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Descarga
+\bar default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{v_{R}(t)=-V_{cc}\cdot e^{\frac{-t}{RC}}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "eq6-osciloscopio3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As fromas de onda para carga e descarga no capacitor, sincronizadas no tempo,
+ estão grafadas na figura 2.
+\end_layout
+
 \end_inset
 
 
@@ -40403,19 +40478,19 @@ A tensão no resistor é
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iv
-status collapsed
+status open
+
+\begin_layout Chapter
+Osciloscópio II 
+\begin_inset Newline newline
+\end_inset
+
+Medidas de Amplitude e Defasagem
+\end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
-
-\begin_layout Title
-OSCILOSCÓPIO – PARTE II
-\end_layout
-
-\begin_layout Title
-MEDIDAS DE AMPLITUDE E DEFASAGEM
-\end_layout
 
 \begin_layout Standard
 Evidentemente que este sofisticado instrumento, não foi feito apenas com
@@ -40442,8 +40517,8 @@ Portanto, toda vez que ligamos o instrumento, é instrumento, é imperioso
  
 \end_layout
 
-\begin_layout Section*
-Medida de sinal DC
+\begin_layout Section
+Medida de Sinal DC
 \end_layout
 
 \begin_layout Standard
@@ -40455,14 +40530,14 @@ o e multiplicarmos pelo valor Volts/Div do seletor de ganho vertical.
 
 \begin_layout Standard
 Ou seja: 
-\begin_inset Formula $\frac{Volts}{Div}*Div=Volts$
+\begin_inset Formula $\frac{Volts}{Div}\cdot Div=Volts$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section*
-Medida de sinal alternado
+\begin_layout Section
+Medida de Sinal Alternado
 \end_layout
 
 \begin_layout Standard
@@ -40484,7 +40559,7 @@ Para medirmos o período do sinal, basta ajustarmos a varredura horizontal
  quantas divisões ocupa o mesmo e multiplicarmos pelo valor apontado no
  seletor de varredura.
  Ou seja: 
-\begin_inset Formula $\frac{Tempo}{Div}Div*Div=Tempo$
+\begin_inset Formula $\frac{Tempo}{Div}Div\cdot Div=Tempo$
 \end_inset
 
  
@@ -40498,7 +40573,7 @@ Para medirmos a frequência, basta aplicarmos:
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Medida de Corrente
 \end_layout
 
@@ -40509,8 +40584,8 @@ A impediência de entrada de um osciloscópio, deve ser bastante alta, o que
  através da queda de tensão em um resistor.
 \end_layout
 
-\begin_layout Section*
-Medidas de defasagem
+\begin_layout Section
+Medidas de Defasagem
 \end_layout
 
 \begin_layout Standard
@@ -40525,15 +40600,33 @@ No caso de osciloscópio duplo traço, medirmos diretamente a defasagem em
 \end_layout
 
 \begin_layout Standard
-Período T ---------- 360°
+Período T 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+360°
 \end_layout
 
 \begin_layout Standard
 Defas.
- t ------------ x
+ t 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ x
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Figuras de Lissajous
 \end_layout
 
@@ -40547,13 +40640,16 @@ O método das figuras de Lissajous, é muito útil quando se deseja verificar
 A composição gráfica de dois movimentos oscilatórios, um na horizontal e
  outro na vertical, resulta na Figura de Lissajous, como podemos ver a seguir:
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/figura-de-lissajous.jpg
+	filename imagens/figura-de-lissajous.jpg
+	scale 60
 
 \end_inset
 
@@ -40647,14 +40743,14 @@ Vamos supor dois sinais senoidais de mesma frequência, porem defasados e
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Vh=Vm*sen(wt)$
+\begin_inset Formula $Vh=Vm\cdot sen(wt)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Vv=Vm*sen(wt+\Delta\phi)$
+\begin_inset Formula $Vv=Vm\cdot sen(wt+\Delta\phi)$
 \end_inset
 
 
@@ -40662,13 +40758,16 @@ Vamos supor dois sinais senoidais de mesma frequência, porem defasados e
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/figura-de-lissajous2.png
+	filename imagens/figura-de-lissajous2.png
+	scale 60
 
 \end_inset
 
@@ -40703,7 +40802,7 @@ Observando a figura temos:
 \begin_layout Standard
 
 \series bold
-\begin_inset Formula $Vv=Vm*sen(wt+\Delta\phi)$
+\begin_inset Formula $Vv=Vm\cdot sen(wt+\Delta\phi)$
 \end_inset
 
 
@@ -40723,7 +40822,7 @@ Onde
 
 \begin_layout Standard
 Portanto: 
-\begin_inset Formula $a=bsen(w*0+\Delta\phi)$
+\begin_inset Formula $a=bsen(w\cdot0+\Delta\phi)$
 \end_inset
 
  ou 
@@ -40753,95 +40852,48 @@ ou
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Parte Prática
 \end_layout
 
-\begin_layout Standard
-Material : 
-\end_layout
-
-\begin_layout Standard
-Osciloscópio 
-\end_layout
-
-\begin_layout Standard
-1 - Capacitor 82nF 
-\end_layout
-
-\begin_layout Standard
-Gerador de sinais 
-\end_layout
-
-\begin_layout Standard
-1 – resistor 1k
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Fonte DC variável placa de montagem 
-\end_layout
-
-\begin_layout Standard
-Multímetro 
-\end_layout
-
-\begin_layout Standard
-8 cabos 
-\end_layout
-
-\begin_layout Standard
-Traffo 110/6v 
-\end_layout
-
-\begin_layout Standard
-Cabos p/ osciloscópio 
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Subsection
 Procedimento:
 \end_layout
 
-\begin_layout Standard
-1.
- Ligue o osciloscópio e ajuste os controles de foco e brilho, sem satura-los,
+\begin_layout Enumerate
+Ligue o osciloscópio e ajuste os controles de foco e brilho, sem satura-los,
  para não danificar o material fluorescente.
  
 \end_layout
 
-\begin_layout Standard
-2.
- Acionando o gerador de varredura, faça surgir na tela um traço horizontal,
+\begin_layout Enumerate
+Acionando o gerador de varredura, faça surgir na tela um traço horizontal,
  e com ajuda dos posicionadores coloque o traço em coincidência com uma
  das linhas desenhadas na tela, para que essa linha seja referencia de tensão
  zero.
  
 \end_layout
 
-\begin_layout Standard
-3.
- Ajuste a fonte de tensão com o voltímetro para os valores especificados
+\begin_layout Enumerate
+Ajuste a fonte de tensão com o voltímetro para os valores especificados
  no quadro, e meça com o osciloscópio, anotando a posição do atenuador vertical,
  o numero de divisões do deslocamento e o resultado.
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/fonte-ajustavel.png
+	filename imagens/fonte-ajustavel.png
+	scale 60
 
 \end_inset
 
@@ -40867,11 +40919,13 @@ status open
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
 <features rotate="0" tabularvalignment="middle">
@@ -41171,20 +41225,20 @@ V medido
 
 \end_layout
 
-\begin_layout Standard
-4.
- Medidas de amplitude de tensões AC
-\end_layout
-
-\begin_layout Standard
+\end_deeper
+\begin_layout Enumerate
+Medidas de amplitude de tensões AC
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/gerador-de-funcao.png
+	filename imagens/gerador-de-funcao.png
+	scale 60
 
 \end_inset
 
@@ -41208,35 +41262,34 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-4.1.
- Coloque o controle de varredura do osciloscópio na posição em que o ponto
+\begin_deeper
+\begin_layout Enumerate
+Coloque o controle de varredura do osciloscópio na posição em que o ponto
  na tela se desloque o mais lentamente possível, mas sem para-lo, e aplique
  um sinal senoidal de 1hz com o nível máximo, e observe a tela do osciloscópio.
  
 \end_layout
 
-\begin_layout Standard
-4.2.
- Aumente gradualmente a frequência do gerador e observe o que ocorre com
+\begin_layout Enumerate
+Aumente gradualmente a frequência do gerador e observe o que ocorre com
  o ponto na tela do osciloscópio.
  Explique e justifique o que ocorre.
 \end_layout
 
-\begin_layout Standard
-4.3.
- Ajuste o gerador senoidal para a freq.
+\begin_layout Enumerate
+Ajuste o gerador senoidal para a freq.
  de 100khz, deixando o nível a meio curso e desligue o gerador de varredura
  (posição Ext), do osciloscópio.
  Meça e anote o Valor de pico e o Valor de Pico a Pico.
  
 \end_layout
 
-\begin_layout Standard
-5.
- Medindo frequências 
+\end_deeper
+\begin_layout Enumerate
+Medindo frequências 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 Com o nível do gerador no máximo, complete o quadro abaixo: 
 \end_layout
@@ -41249,11 +41302,13 @@ Senóide
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
 <features rotate="0" tabularvalignment="middle">
@@ -41537,11 +41592,13 @@ Quadrada
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
 <features rotate="0" tabularvalignment="middle">
@@ -41825,11 +41882,13 @@ Triangular
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
 <features rotate="0" tabularvalignment="middle">
@@ -42101,10 +42160,12 @@ Freq.
 
 \end_layout
 
-\begin_layout Standard
-5.1- Verificação da chave AC/DC
+\end_deeper
+\begin_layout Enumerate
+Verificação da chave AC/DC
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 Com atenção, montar o circuito abaixo e explicar, justificar e desenhar
  o que ocorre quando acinamos a chave AC/DC
@@ -42112,13 +42173,16 @@ Com atenção, montar o circuito abaixo e explicar, justificar e desenhar
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/gerador-de-funcao+fonte.png
+	filename imagens/gerador-de-funcao+fonte.png
+	scale 60
 
 \end_inset
 
@@ -42146,9 +42210,9 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-6.
- Ajustar o gerador de funções para um sinal senoidal de 60hz, e utilizando
+\end_deeper
+\begin_layout Enumerate
+Ajustar o gerador de funções para um sinal senoidal de 60hz, e utilizando
  o voltímetro ajuste o nível de saída para as tensões indicadas no quando.
  Para cada ajuste de nível, medi r o valor de pico e pico a pico, visualizado
  no osciloscópio e em seguida calcular com esses dados o respectivo valor
@@ -42156,13 +42220,16 @@ status open
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
 <features rotate="0" tabularvalignment="middle">
@@ -42352,14 +42419,14 @@ Vef.
 
 \end_layout
 
-\begin_layout Standard
-7.
- Medida de frequência e fase por Lissajous 
+\end_deeper
+\begin_layout Enumerate
+Medida de frequência e fase por Lissajous 
 \end_layout
 
-\begin_layout Standard
-7.1.
- Conecte na entrada vertical do osciloscópio, o gerador de funções ajustado
+\begin_deeper
+\begin_layout Enumerate
+Conecte na entrada vertical do osciloscópio, o gerador de funções ajustado
  para saída senoidal com amplitude máxima, e conecte na entrada horizontal
  o secundário do traffo, conforme ilustração; e feche a varredura.
  
@@ -42367,13 +42434,16 @@ Vef.
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/gerador-de-funcao+osciloscopio.PNG
+	filename imagens/gerador-de-funcao+osciloscopio.PNG
+	scale 60
 
 \end_inset
 
@@ -42409,11 +42479,13 @@ Variando a frequência do gerador conforme a tabela, anote a fig.
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="6">
 <features rotate="0" tabularvalignment="middle">
@@ -43123,20 +43195,20 @@ Nh/Nv
 
 \end_layout
 
-\begin_layout Standard
-8.
- Monte o circuito abaixo: 
-\end_layout
-
-\begin_layout Standard
+\end_deeper
+\begin_layout Enumerate
+Monte o circuito abaixo: 
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/circuito-RC.PNG
+	filename imagens/circuito-RC.PNG
+	scale 60
 
 \end_inset
 
@@ -43164,20 +43236,25 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-a) Desenhe as formas de onda e encontre a defasagem entre os sinais.
+\begin_deeper
+\begin_layout Enumerate
+Desenhe as formas de onda e encontre a defasagem entre os sinais.
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/grafico-desenho.PNG
+	filename imagens/grafico-desenho.PNG
+	scale 60
 
 \end_inset
 
@@ -43202,32 +43279,82 @@ status open
 \end_layout
 
 \begin_layout Standard
-BT = ________ ND = ________ T= ________ 
+BT = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ ND = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ T=
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
 \begin_inset Formula $\Delta$
 \end_inset
 
-T = ________ 
+T =
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
 \begin_inset Formula $\theta$
 \end_inset
 
-= ________
+= 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-b) Feche a varredura (posição X-Y) e desenhe a figura de Lissajous e através
+\end_deeper
+\begin_layout Enumerate
+Feche a varredura (posição X-Y) e desenhe a figura de Lissajous e através
  desta encontre a defasagem entre os sinais.
  
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename ../../../../../CEUN/Fundamentos de Circuitos Analógicos/Materiais de Apoio/2015/lab/Exp 7 e 8/8° Exp/imagens/grafico-desenho.PNG
+	filename imagens/grafico-desenho.PNG
+	scale 60
 
 \end_inset
 
@@ -43256,16 +43383,118 @@ status open
 \end_layout
 
 \begin_layout Standard
-2a = ________ 2b = ________ 
+2a = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 2b = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
 \begin_inset Formula $\theta$
 \end_inset
 
-= ________
-\end_layout
+= 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
 
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Osciloscópio 
+\end_layout
+
+\begin_layout Itemize
+Gerador de funções
+\end_layout
+
+\begin_layout Itemize
+Multímetro 
+\end_layout
+
+\begin_layout Itemize
+8 cabos 
+\end_layout
+
+\begin_layout Itemize
+Traffo 110/6v 
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $1k\Omega$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Capacitores: 1x(
+\begin_inset Formula $82nF$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Cabos para osciloscópio 
 \end_layout
 
 \end_inset
