@@ -40122,7 +40122,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iii
-status collapsed
+status open
 
 \begin_layout Chapter
 Osciloscópio III 
@@ -40130,7 +40130,7 @@ Osciloscópio III
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos 
@@ -40466,6 +40466,61 @@ As fromas de onda para carga e descarga no capacitor, sincronizadas no tempo,
  estão grafadas na figura 2.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/carga_descarga_capacitor_1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/carga_descarga_capacitor_2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/carga_descarga_capacitor_3.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+jjjj
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -40478,7 +40533,7 @@ As fromas de onda para carga e descarga no capacitor, sincronizadas no tempo,
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iv
-status open
+status collapsed
 
 \begin_layout Chapter
 Osciloscópio II 
