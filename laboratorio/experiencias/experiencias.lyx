@@ -273,12 +273,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iii
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iv
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -38162,7 +38162,7 @@ W: 2x (
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status open
+status collapsed
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -40474,9 +40474,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/carga_descarga_capacitor_1.png
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -40484,9 +40485,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/carga_descarga_capacitor_2.png
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -40494,9 +40496,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/carga_descarga_capacitor_3.png
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -40504,7 +40507,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-jjjj
+Formas de onda para carga e descarga do capacitor
 \end_layout
 
 \end_inset
@@ -40512,13 +40515,17 @@ jjjj
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Enumerate
+Montar o circuito abaixo:
 \end_layout
 
 \end_inset
