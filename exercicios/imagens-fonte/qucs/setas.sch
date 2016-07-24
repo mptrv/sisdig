@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.18>
 <Properties>
-  <View=0,0,881,800,1,0,0>
+  <View=0,0,881,800,1,227,0>
   <Grid=10,10,1>
   <DataSet=setas.dat>
   <DataDisplay=setas.dpl>
