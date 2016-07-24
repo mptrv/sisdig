@@ -34367,7 +34367,7 @@ Leis de Kirchhoff
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -40173,7 +40173,7 @@ reference "osciloscopio3fig1"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -40471,7 +40471,7 @@ As fromas de onda para carga e descarga no capacitor, sincronizadas no tempo,
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -40526,6 +40526,437 @@ Parte Experimental
 
 \begin_layout Enumerate
 Montar o circuito abaixo:
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-img3.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Certificar-se que o gerador de onda quadrada fornece tensão mínima de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{0}{V}
+\end_layout
+
+\end_inset
+
+ e máxima de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{10}{V}
+\end_layout
+
+\end_inset
+
+ (com auxílio do ociloscópio).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "num:item 3"
+
+\end_inset
+
+Observar, 
+\bar under
+simultaneamente
+\bar default
+, 
+\begin_inset Formula $\mathrm{v_{e}(t)\times t}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{v_{c}(t)\times t}$
+\end_inset
+
+.
+ Para tanto, conectar as pontas de prova do osciloscópio como apresentado
+ a seguir:
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-img4.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "num:item 4"
+
+\end_inset
+
+Anotar 2 períodos das formas de onda nos gráficos abaixo, salientando as
+ 
+\begin_inset Quotes eld
+\end_inset
+
+cotas notáveis
+\begin_inset Quotes erd
+\end_inset
+
+ (conforme apresentado na seção 
+\begin_inset Quotes eld
+\end_inset
+
+Circuito a Analisar
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-3.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-4.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "num:item 5"
+
+\end_inset
+
+Observar, simultaneamente, 
+\begin_inset Formula $\mathrm{v_{R}(t)\times t}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{v_{c}(t)\times t}$
+\end_inset
+
+.
+ Para tanto, conectar as pontas de prova do osciloscópio como apresentado
+ a seguir: 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-img5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Descrever o que foi observado e explicar o porquê.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Com o intuito de realizar o item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "num:item 5"
+
+\end_inset
+
+, conectar as pontas de prova conforme indicado abaixo e acionar a função
+ de inverter o CH2, para a forma de onda não aparecer invertida.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\bar under
+Nota
+\bar default
+: Se o gerador de funções possuir o pino terra, poderá haver resultado incoerent
+e.
+ (Por quê?)
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-img6.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Completar os gráficos do item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "num:item 4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Montar os circuitos abaixo e preencher os gráficos na página seguinte, superpond
+o os resultados dos circuitos.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Se as formas de onda 
+\begin_inset Formula $\mathrm{v_{c1}(t)}$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{v_{c2}(t)}$
+\end_inset
+
+ são iguais, onde reside a diferença entre os circuitos? 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+Desafio
+\bar default
+: Como observar 
+\begin_inset Formula $\mathrm{v_{R}(t)\times t}$
+\end_inset
+
+ conectando as pontas de prova da mesma forma à indicada no item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "num:item 3"
+
+\end_inset
+
+? 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
