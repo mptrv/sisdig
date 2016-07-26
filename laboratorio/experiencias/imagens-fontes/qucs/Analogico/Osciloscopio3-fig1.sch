@@ -2,10 +2,10 @@
 <Properties>
   <View=0,0,800,800,1,0,0>
   <Grid=10,10,1>
-  <DataSet=Osciloscopio3-fig1.dat>
-  <DataDisplay=Osciloscopio3-fig1.dpl>
+  <DataSet=osciloscopio3-fig1.dat>
+  <DataDisplay=osciloscopio3-fig1.dpl>
   <OpenDisplay=1>
-  <Script=Osciloscopio3-fig1.m>
+  <Script=osciloscopio3-fig1.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Título>

@@ -38170,7 +38170,7 @@ Geradores Elétricos e Máxima Transferência de Potência
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -40210,29 +40210,29 @@ name "osciloscopio3fig1"
 \begin_layout Standard
 As Equações 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "osciloscopio3.eq1"
+LatexCommand eqref
+reference "eq:osciloscopio3.eq1"
 
 \end_inset
 
  e 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "osciloscopio3-eq2"
+LatexCommand eqref
+reference "eq:osciloscopio3-eq2"
 
 \end_inset
 
  regem a carga do capacitor e as 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "osciloscopio3-eq3"
+LatexCommand eqref
+reference "eq:osciloscopio3-eq3"
 
 \end_inset
 
  e 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "osciloscopio3-eq4"
+LatexCommand eqref
+reference "eq:osciloscopio3-eq4"
 
 \end_inset
 
@@ -40262,7 +40262,7 @@ Carga
 
 \begin_inset CommandInset label
 LatexCommand label
-name "osciloscopio3.eq1"
+name "eq:osciloscopio3.eq1"
 
 \end_inset
 
@@ -40280,7 +40280,7 @@ name "osciloscopio3.eq1"
 
 \begin_inset CommandInset label
 LatexCommand label
-name "osciloscopio3-eq2"
+name "eq:osciloscopio3-eq2"
 
 \end_inset
 
@@ -40306,7 +40306,7 @@ Descarga
 
 \begin_inset CommandInset label
 LatexCommand label
-name "osciloscopio3-eq3"
+name "eq:osciloscopio3-eq3"
 
 \end_inset
 
@@ -40324,7 +40324,7 @@ name "osciloscopio3-eq3"
 
 \begin_inset CommandInset label
 LatexCommand label
-name "osciloscopio3-eq4"
+name "eq:osciloscopio3-eq4"
 
 \end_inset
 
@@ -40394,15 +40394,15 @@ A tensão no resistor é
 \begin_layout Standard
 E, portanto, na carga e descarga têm-se as equações 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "eq5.osciloscopio3"
+LatexCommand eqref
+reference "eq: eq5.osciloscopio3"
 
 \end_inset
 
  e 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "eq6-osciloscopio3"
+LatexCommand eqref
+reference "eq: eq6-osciloscopio3"
 
 \end_inset
 
@@ -40428,7 +40428,7 @@ Carga
 
 \begin_inset CommandInset label
 LatexCommand label
-name "eq5.osciloscopio3"
+name "eq: eq5.osciloscopio3"
 
 \end_inset
 
@@ -40454,7 +40454,7 @@ Descarga
 
 \begin_inset CommandInset label
 LatexCommand label
-name "eq6-osciloscopio3"
+name "eq: eq6-osciloscopio3"
 
 \end_inset
 
@@ -40462,7 +40462,7 @@ name "eq6-osciloscopio3"
 \end_layout
 
 \begin_layout Standard
-As fromas de onda para carga e descarga no capacitor, sincronizadas no tempo,
+As formas de onda para carga e descarga no capacitor, sincronizadas no tempo,
  estão grafadas na figura 2.
 \end_layout
 
@@ -40533,14 +40533,10 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-img3.png
-	scale 60
+	scale 70
 
 \end_inset
 
@@ -40611,14 +40607,10 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-img4.png
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -40664,11 +40656,7 @@ Circuito a Analisar
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40688,11 +40676,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40709,9 +40693,10 @@ status collapsed
 
 
 \begin_inset Float figure
+placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40731,7 +40716,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40772,7 +40757,7 @@ Observar, simultaneamente,
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -40833,7 +40818,7 @@ e.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -40868,29 +40853,93 @@ reference "num:item 4"
 \end_layout
 
 \begin_layout Enumerate
+\begin_inset CommandInset label
+LatexCommand label
+name "num:item 9"
+
+\end_inset
+
 Montar os circuitos abaixo e preencher os gráficos na página seguinte, superpond
 o os resultados dos circuitos.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset Float figure
+\begin_inset Float table
+placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 \end_layout
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item7-1.png
+	scale 60
+
 \end_inset
 
 
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item7-2.png
+	scale 60
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Circuito 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Circuito 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -40952,6 +41001,122 @@ status open
 
 \backslash
 caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gráficos para os circuitos 1 e 2 do item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "num:item 9"
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item9-1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item9-2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item9-3.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item9-4.png
+	scale 60
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -41354,7 +41519,7 @@ Procedimento:
 \end_layout
 
 \begin_layout Enumerate
-Ligue o osciloscópio e ajuste os controles de foco e brilho, sem satura-los,
+Ligue o osciloscópio e ajuste os controles de foco e brilho, sem saturá-los,
  para não danificar o material fluorescente.
  
 \end_layout
