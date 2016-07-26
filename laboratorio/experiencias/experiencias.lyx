@@ -68,6 +68,8 @@
 \renewcommand{\thefigure}{\arabic{figure}}
 %  Numeração das tabelas.
 \renewcommand{\thetable}{\arabic{table}}
+% Numeração das equações.
+\renewcommand{\theequation}{\arabic{equation}}
 
 % Personalização para unidades SI (por siunitx}.
 \sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
@@ -32208,7 +32210,7 @@ Bipolos Lineares e Não Lineares
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -34945,7 +34947,7 @@ Ponte de Wheatstone
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -35903,7 +35905,7 @@ Instrumentos para Laboratório de Eletrônica
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos.
@@ -36390,7 +36392,7 @@ Teorema da Superposição Teoremas de Thévenin e de Norton
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -40173,7 +40175,7 @@ reference "osciloscopio3fig1"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40211,14 +40213,14 @@ name "osciloscopio3fig1"
 As Equações 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:osciloscopio3.eq1"
+reference "eq:carga-cap-1"
 
 \end_inset
 
  e 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:osciloscopio3-eq2"
+reference "eq:carga-cap-2"
 
 \end_inset
 
@@ -40254,15 +40256,8 @@ Carga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{c}(t)}=\mathrm{V_{cc}\cdot(1-e^{\frac{-t}{RC}})}
+\mathrm{v_{c}(t)}=\mathrm{V_{cc}\cdot(1-e^{\frac{-t}{RC}})}\label{eq:carga-cap-1}
 \end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "eq:osciloscopio3.eq1"
 
 \end_inset
 
@@ -40272,15 +40267,8 @@ name "eq:osciloscopio3.eq1"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{i_{c}(t)=I_{0}\cdot e^{\frac{-t}{RC}}}
+\mathrm{i_{c}(t)=I_{0}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-2}
 \end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "eq:osciloscopio3-eq2"
 
 \end_inset
 
@@ -41028,11 +41016,7 @@ reference "num:item 9"
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41052,7 +41036,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41075,11 +41059,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41102,7 +41082,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -44162,7 +44142,7 @@ Cabos para osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
-status open
+status collapsed
 
 \begin_layout Part
 Analógicos -- Experimentos Extras
