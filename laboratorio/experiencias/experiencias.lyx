@@ -23691,7 +23691,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -23723,7 +23723,7 @@ Identificar resistores.
 \end_layout
 
 \begin_layout Itemize
-Executar medidas de resitências.
+Executar medidas de resistências.
 \end_layout
 
 \begin_layout Itemize
@@ -26625,7 +26625,11 @@ Associação Mista
 \end_layout
 
 \begin_layout Standard
-É uma composição da associação série e paralela (
+É uma composição da associação série e
+\lang romanian
+ p
+\lang brazilian
+aralela (
 \begin_inset CommandInset ref
 LatexCommand formatted
 reference "fig:Associação-mista-resistores"
@@ -30754,7 +30758,7 @@ Há diversos dispositivos que apresentam resistência variável com base em
 \end_layout
 
 \begin_layout Standard
-O potenciômero trata-se de um resistor variável.
+O potenciômetro trata-se de um resistor variável.
  Utiliza como elemento resistivo uma trilha de filme de carvão sobre uma
  placa isolante, com dois terminais nos extremos desta trilha, e um cursor
  deslizante, que é o terceiro terminal e responsável pela variação da resistênci
@@ -32063,7 +32067,7 @@ erro observado
 \series bold
 variação da tensão e corrente
 \series medium
- no potênciometro, conforme a 
+ no potenciômetro, conforme a 
 \series default
 variação de sua resistência
 \series medium
@@ -32170,7 +32174,7 @@ Plaqueta de montagem
 \begin_inset Quotes eld
 \end_inset
 
-Uniersal
+Universal
 \begin_inset Quotes erd
 \end_inset
 
@@ -32374,11 +32378,15 @@ ohm}
 
 ) foi atribuída em homenagem a 
 \emph on
-Georg Simon Ohm
+George Simon Ohm
 \emph default
  (1787---1854), por seu magnífico trabalho 
 \emph on
-“The Galvanic Chain, Mathematically Treated”
+“
+\lang english
+The Galvanic Chain, Mathematically Treated
+\lang brazilian
+”
 \emph default
  publicado em 1827, envolvendo a 
 \emph on
@@ -34997,8 +35005,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Ponte de Wheatstone
 \end_layout
 
@@ -35190,8 +35196,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Ponte de Wheatstone utilizada para medir-se um resistor.
 \end_layout
 
@@ -35268,8 +35272,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Ponte de Wheatstone.
 \end_layout
 
@@ -35427,7 +35429,7 @@ V
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $R_{D}écada$
+\begin_inset Formula $R_{Década}$
 \end_inset
 
 
@@ -35456,15 +35458,14 @@ V
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Tabwheat1"
 
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "Tabwheat1"
+\end_layout
 
 \end_inset
 
@@ -36052,8 +36053,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Imagem osciloscópio
 \end_layout
 
@@ -36225,8 +36224,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Gerador de função com osciloscópio
 \end_layout
 
@@ -36246,7 +36243,7 @@ Faça os ajustes especificados abaixo no gerador de funções e execute as
  respectivas medidas com o osciloscópio.
  Os resultados devem ser expressos de forma semelhante ao item 1.2, ou seja,
  contendo esboço da forma de onda, escalas utilizadas, valores das divisões,
- valor pico-apico das tensões, período e frequência.
+ valor pico-a-pico das tensões, período e frequência.
 \end_layout
 
 \begin_deeper
@@ -36306,7 +36303,7 @@ Multímetro Digital
 \end_layout
 
 \begin_layout Itemize
-Proto-Board 
+Protoboard 
 \end_layout
 
 \begin_layout Itemize
@@ -36499,8 +36496,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema da Superposição
 \end_layout
 
@@ -36554,8 +36549,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset Formula $V_{1}$
 \end_inset
 
@@ -36653,8 +36646,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset Formula $V_{2}$
 \end_inset
 
@@ -36744,8 +36735,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset Formula $V_{3}$
 \end_inset
 
@@ -36888,8 +36877,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema de Thévenin.
 \end_layout
 
@@ -40124,7 +40111,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-iii
-status open
+status collapsed
 
 \begin_layout Chapter
 Osciloscópio III 
