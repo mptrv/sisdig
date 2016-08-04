@@ -259,7 +259,7 @@ customHeadersFooters
 \filename_suffix 0
 \color #faf0e6
 \end_branch
-\branch an-osciloscopio-ii
+\branch an-osciloscopio-revisao
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -274,7 +274,7 @@ customHeadersFooters
 \filename_suffix 0
 \color #faf0e6
 \end_branch
-\branch an-osciloscopio-iii
+\branch an-osciloscopio-rc
 \selected 1
 \filename_suffix 0
 \color #faf0e6
@@ -290,6 +290,21 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch an-osciloscopio-lissajous
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch an-osciloscopio-retif-gramp
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch dg-projeto
 \selected 0
 \filename_suffix 0
 \color #faf0e6
@@ -21902,6 +21917,1561 @@ Instrumentação eletrônica moderna e técnicas de medição
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+===== PROJETO DE DIGITAIS =====
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg-projeto
+status collapsed
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tituloprojeto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\emph on
+Projeto
+\emph default
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Branch preliminar
+status open
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Newline newline
+\end_inset
+
+
+\size larger
+--- Roteiro Preliminar ---
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Profª Alessandra Dutra Coelho
+\begin_inset Newline newline
+\end_inset
+
+Prof° Ângelo Sebastião Zanini
+\begin_inset Newline newline
+\end_inset
+
+Profº José Carlos de Souza Júnior
+\begin_inset Newline newline
+\end_inset
+
+Profº Marcelo Porto Trevizan
+\begin_inset Newline newline
+\end_inset
+
+Profº Wânderson de Oliveira Assis
+\end_layout
+
+\begin_layout Date
+Primeiro Semestre de 2016
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+Desenvolver o projeto e implementar o circuito de um 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+dado digital
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+com dois dígitos de 0 a 9.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch prazo
+status open
+
+\begin_layout Section
+Prazos para Entrega
+\end_layout
+
+\begin_layout Standard
+O projeto deverá ser apresentado na própria aula de laboratório, conforme
+ as datas nas seções a seguir.
+\end_layout
+
+\begin_layout Subsection
+Primeira Pré-apresentação
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na segunda-feira: 28.03.2016
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na quarta-feira: 30.03.2016
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Segunda Pré-apresentação
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na segunda-feira: 02.05.2016
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na quarta-feira: 04.05.2016
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Apresentação Final
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na segunda-feira: 06.06.2016
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na quarta-feira: 08.06.2016
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Repescagem
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+def
+\backslash
+labelitemi{{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diurno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na segunda-feira: 27.06.2016
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Noturno:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Laboratórios na quarta-feira: 29.06.2016
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\emph on
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+Não serão aceitos projetos entregues fora do prazo.
+\end_layout
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+A pontuação será atribuída apenas aos presentes na data de entrega.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Descritivo do Projeto
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Descritivo-do-Projeto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O 
+\emph on
+Dado Digital
+\emph default
+ consiste de um contador de 00 a 99, em alta frequência, que será paralisado
+ ao se pressionar um botão, simulando o sorteio.
+ Caso os dígitos exibidos forem iguais, uma lâmpada deverá acender.
+ Ao se pressionar o botão novamente, a contagem é liberada.
+\end_layout
+
+\begin_layout Standard
+Logo que o circuito for energizado, a contagem deve estar parada em 00,
+ situação que deixará a lâmpada acesa.
+\end_layout
+
+\begin_layout Standard
+A lâmpada só poderá acender quando a contagem for paralisada -- ela não
+ deverá piscar durante a contagem.
+\end_layout
+
+\begin_layout Standard
+A essência do projeto é utilizar dois contadores em década, com decodificadores
+ para 7 segmentos, de forma a exibir os valores nos 
+\emph on
+displays
+\emph default
+.
+ Por meio de um circuito comparador de magnitude, poderá ser detectada a
+ situação de igualdade dos dígitos e, assim, acionar um micro-relé de 5V,
+ permitindo ligar uma lâmpada de 12V.
+\end_layout
+
+\begin_layout Standard
+O esboço do circuito esperado encontra-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Esboço-do-leiaute"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Salienta-se que o leiaute apresentado na figura é apenas um esboço -- os
+ componentes podem ser reposicionados a critério de cada equipe.
+\end_layout
+
+\end_inset
+
+ Notem-se:
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para a fonte de alimentação de 5V.
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para a fonte de alimentação de 12V.
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para o gerador de 
+\emph on
+clock
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Dois 
+\emph on
+diplays
+\emph default
+ de 7-segmentos.
+\end_layout
+
+\begin_layout Itemize
+Um botão (
+\series bold
+Sortear
+\series default
+) do tipo 
+\emph on
+pushbutton
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Um conector do tipo 
+\emph on
+terminal em bloco com parafuso
+\emph default
+ de duas vias.
+\end_layout
+
+\begin_layout Standard
+A lâmpada será conectada no terminal em bloco com parafuso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../projetos/projeto-dado-digital-esboco-circuito.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esboço do leiaute do circuito esperado para o 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esboço-do-leiaute"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Orientações Complementares
+\end_layout
+
+\begin_layout Itemize
+O projeto deverá ser desenvolvido com base no descritivo apresentado na
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Descritivo-do-Projeto"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+O projeto é em equipe: obrigatoriamente, a mesma equipe das aulas de laboratório.
+\end_layout
+
+\begin_layout Itemize
+Todo o material deverá ser adquirido pelo grupo, com exceção da fonte de
+ alimentação, do gerador de 
+\emph on
+clock
+\emph default
+ e da lâmpada de 12V.
+\end_layout
+
+\begin_layout Itemize
+Pode-se utilizar a fonte de alimentação do próprio laboratório.
+\end_layout
+
+\begin_layout Itemize
+Pode-se utilizar o gerador de funções do laboratório como fonte de 
+\emph on
+clock
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+A tensão de alimentação nominal do circuito lógico deverá ser 5V.
+\end_layout
+
+\begin_layout Itemize
+No esquema elétrico, indicar o número da pinagem de cada componente.
+\end_layout
+
+\begin_layout Itemize
+O botão 
+\series bold
+Sortear
+\series default
+ deverá ser do tipo 
+\emph on
+pushbutton
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+A montagem do circuito se dará em 
+\series bold
+\emph on
+placa padrão
+\series default
+\emph default
+, também conhecida como 
+\emph on
+placa universal
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Os componentes deverão ser soldados na placa.
+ 
+\emph on
+Antes de soldá-los, fazer um estudo para encontrar uma boa disposição
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Considerar os detalhes de como obter um bom ponto de solda e de como bem
+ utilizar o ferro de solda.
+\end_layout
+
+\begin_layout Itemize
+Realizar a interconecção entre os terminais dos componentes por meio de
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+trilha de solda
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ (se possível e para pequenas distâncias), ou por meio de 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+fios finos
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, por baixo da placa, com apenas as pontas desencapadas, ou por meio de
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+fios finos
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, por cima da placa, numa configuração conhecida como 
+\emph on
+jumpers
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Para a fixação dos CIs, 
+\series bold
+utilizar soquetes de CI
+\series default
+ de tamanho apropriado.
+\end_layout
+
+\begin_layout Itemize
+A implementação do gerador de 
+\emph on
+clock
+\emph default
+ (por meio do CI 555, por exemplo) é facultativa aos grupos que o quiserem
+ implementar.
+\end_layout
+
+\begin_layout Itemize
+No horário de funcionamento do Amoxarifado de Eletrônica, poderá ser emprestado
+ o material necessário para solda, assim como disponibilizada uma sala para
+ o trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+No Moodle, há um fórum criado para discussões a respeito deste projeto,
+ envolvendo, por exemplo, dicas e sugestões para sua confecção e que podem
+ ser postadas pelos próprios alunos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama em Blocos
+\end_layout
+
+\begin_layout Standard
+O Diagrama em Blocos do projeto proposto encontra-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Diagrama-em-Blocos-dado-digital"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../projetos/diagrama-em-blocos.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama em Blocos do projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-em-Blocos-dado-digital"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cronograma de Referência
+\end_layout
+
+\begin_layout Standard
+Um cronograma detalhado de referência é apresentado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Cronograma-de-referencia-dado-digital"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cronograma detalhado de referência para o desenvolvimento do projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+ ao longo das semanas.
+ 
+\emph on
+(Note-se que é apenas uma referência: as datas a serem obrigatoriamente
+ cumpridas são as das linhas em azul.)
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Cronograma-de-referencia-dado-digital"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="2">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Período
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Atividade/Bloco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+07/03 a 13/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comprar componentes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+14/03 a 20/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar conectores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+21/03 a 27/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projetar, testar e soldar os comparadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+28/03 e 30/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Primeira pré-apresentação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+28/03 a 08/04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar decodificadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+18/04 a 24/04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar os 
+\emph on
+displays
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+25/04 a 01/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Testar decodificação com 
+\emph on
+displays
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+02/05 e 04/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Segunda pré-apresentação
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+02/05 a 08/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Projetar, testar e soldar botão e entornos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+09/05 a 15/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e testar 
+\emph on
+driver 
+\emph default
+da lâmpada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+16/05 a 22/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar contadores, interligando-o aos demais blocos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+23/05 a 29/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e interligar o circuito de POR
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+30/05 a 05/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Finalizações e testes do circuito completo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementação do bônus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+06/06 e 08/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Apresentação final
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+06/06 a 26/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Correções para a repescagem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color red
+27/06 e 29/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color red
+Repescagem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Critérios de Avaliação
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size large
+\emph on
+Nota: para as pré-apresentações, o professor de laboratório dará as corresponden
+tes orientações.
+\end_layout
+
+\begin_layout Standard
+Os critérios de avaliação por item são:
+\end_layout
+
+\begin_layout Enumerate
+Primeira pré-apresentação: 
+\series bold
+10,0 (peso 1,0)
+\end_layout
+
+\begin_layout Enumerate
+Segunda pré-apresentação: 
+\series bold
+10,0 (peso 1,0)
+\end_layout
+
+\begin_layout Enumerate
+Apresentação final: 
+\series bold
+10,0 (peso 8,0)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Esquema elétrico: 
+\series bold
+2,0
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Apresentação do esquema elétrico 
+\bar under
+completo
+\bar default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Pode ser desenhado à mão ou em CAD.
+\end_layout
+
+\end_inset
+
+ no dia da apresentação do projeto: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Identificação de todas as pinagens no esquema elétrico: 
+\series bold
+1,0
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Implementação do circuito: 
+\series bold
+6,5
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Elementos mínimos -- bornes, 
+\emph on
+displays
+\emph default
+, botão, conector para lâmpada: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Contagem de 00 a 99 operante (sem decodificação): 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Decodificação e exibição no 
+\emph on
+display
+\emph default
+: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Operação do botão 
+\series bold
+Sortear
+\series default
+:
+\series bold
+ 1,0
+\end_layout
+
+\begin_layout Enumerate
+Comparação: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Acionamento do micro-relé e da lâmpada: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Implementação e operação do POR (
+\emph on
+Power-On Reset
+\emph default
+): 
+\series bold
+1,0
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Entornos: 
+\series bold
+1,5
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Uso de soquete para CIs: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Estética do circuito final: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Qualidade das soldas: 
+\series bold
+0,5
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Bônus: 
+\series bold
++1,0
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Implementação de gerador de 
+\emph on
+clock
+\emph default
+ próprio: 
+\series bold
++1,0
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+A pontuação máxima é de 
+\series bold
+10,0
+\series default
+ pontos.
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+As equipes que obtiverem pontuação menor que 8,0 poderão ir para a 
+\begin_inset Quotes eld
+\end_inset
+
+repescagem
+\begin_inset Quotes erd
+\end_inset
+
+, na qual a nota do projeto será 80% da pontuação obtida na nova avaliação.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+===== EXTRAS DE DIGITAIS =====
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch cm-textos-extras
 status collapsed
 
@@ -23616,7 +25186,7 @@ Terminada esta etapa final, foi possível obter a seguinte conclusão:
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ===== ANALÓGICOS =====
@@ -23691,7 +25261,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -24004,7 +25574,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Faixas que identificam o valor nominal e a tolerância da resitência.
+Faixas que identificam o valor nominal e a tolerância da resistência.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Faixas-resistores"
@@ -24472,7 +26042,7 @@ Sem Cor
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cores para identificação da talerância e multiplicador menor que 1.
+Cores para identificação da tolerância e multiplicador menor que 1.
 \end_layout
 
 \end_inset
@@ -26185,7 +27755,10 @@ resistores SMD
 \series default
 (
 \emph on
-Surface Mounting Device 
+\lang english
+Surface Mounting Device
+\lang brazilian
+ 
 \emph default
 -- Dispositivo de Montagem em Superfície), o qual apresenta i\SpecialChar \-
 nú\SpecialChar \-
@@ -28576,7 +30149,11 @@ desviada
 \begin_inset Quotes eld
 \end_inset
 
+
+\lang english
 shunt
+\lang brazilian
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -28624,7 +30201,11 @@ do galvanômetro em paralelo com a resistência
 \begin_inset Quotes eld
 \end_inset
 
+
+\lang english
 shunt
+\lang brazilian
+
 \begin_inset Quotes erd
 \end_inset
 
@@ -28678,15 +30259,21 @@ Para eliminar o efeito de
 
 , utiliza-se um 
 \emph on
+\lang english
 shunt
 \emph default
+\lang brazilian
  especial denominado 
 \emph on
 
 \begin_inset Quotes eld
 \end_inset
 
-shunt de Ayrton
+
+\lang english
+shunt
+\lang brazilian
+ de Ayrton
 \begin_inset Quotes erd
 \end_inset
 
@@ -28729,7 +30316,11 @@ Circuito para projeto de um amperímetro utilizando-se o
 \begin_inset Quotes eld
 \end_inset
 
-shunt de Ayrton
+
+\lang english
+shunt
+\lang brazilian
+ de Ayrton
 \begin_inset Quotes erd
 \end_inset
 
@@ -30497,8 +32088,10 @@ V.
 O galvanômetro especificado no item anterior poderá ser utilizado como amperímet
 ro com qual fundo de escala, se nenhuma resistência 
 \emph on
+\lang english
 shunt
 \emph default
+\lang brazilian
  for acrescentada?
 \end_layout
 
@@ -30801,8 +32394,10 @@ status open
 Potenciômetros de montagem sobre placa, sem haste, normalmente utilizados
  para ajustes de pontos de trabalho (
 \emph on
+\lang english
 set point
 \emph default
+\lang brazilian
 ), mas sem acesso ao usuário final.
 \end_layout
 
@@ -35897,489 +37492,6 @@ W: 1x (
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch an-osciloscopio-ii
-status collapsed
-
-\begin_layout Chapter
-Instrumentos para Laboratório de Eletrônica
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch cm-corpo
-status open
-
-\begin_layout Section
-Objetivos.
- 
-\end_layout
-
-\begin_layout Standard
-Verificar experimentalmente a utilização e funcionamento dos seguintes dispositi
-vos: 
-\end_layout
-
-\begin_layout Itemize
-osciloscópio para medida de tensão e tempo de sinais periódicos; 
-\end_layout
-
-\begin_layout Itemize
-gerador de funções senoidais, triangulares e quadradas;
-\end_layout
-
-\begin_layout Section
-Parte Experimental I - Estudo dos Instrumentos
-\end_layout
-
-\begin_layout Subsection
-Osciloscópio
-\end_layout
-
-\begin_layout Enumerate
-Utilizaremos nesta experiência o osciloscópio para efetuar medidas de tensão
- e período de sinais provenientes do gerador de funções.
- Para isso, ligue o instrumento e juntamente com o professor verifique os
- itens relacionados abaixo e anote suas características:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Possui 2 canais de entrada de sinal: ( 
-\begin_inset Formula $\,$
-\end_inset
-
-) 1 e 2 (
-\begin_inset Formula $\,$
-\end_inset
-
- ) A e B 
-\end_layout
-
-\begin_layout Itemize
-Seletor da escala de tensão: mínimo = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- máximo = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- (coloque as unidades) 
-\end_layout
-
-\begin_layout Itemize
-Seletor da escala de tempos: mínimo = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- máximo = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- (coloque as unidades) 
-\end_layout
-
-\begin_layout Itemize
-Entrada de Calibração: tensão = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- período = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- (coloque as unidades)
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-A primeira leitura que iremos executar será a da Entrada de Calibração.
- Escolha um dos canais de leitura e encoste o positivo da ponta de prova
- no ponto de calibração.
- Ajuste as escalas de tensão e tempo para obter o melhor sinal (de modo
- que ocupe o máximo da tela nas duas dimensões).
- A seguir, copie o gráfico obtido no quadro abaixo, anote as medidas dos
- dois eixos e obtenha os resultados.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/imagem-osciloscopio.PNG
-	scale 80
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Imagem osciloscópio
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Escala de tensão (pp): 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- [ ] 
-\end_layout
-
-\begin_layout Standard
-Escala de tempo: 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- [ ] 
-\end_layout
-
-\begin_layout Standard
-Divisões vertical: 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Divisões horizontal: 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Resultados: 
-\end_layout
-
-\begin_layout Standard
-Valor da tensão (pp): 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- [ ] 
-\end_layout
-
-\begin_layout Standard
-Período: 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- [ ] 
-\end_layout
-
-\begin_layout Standard
-Frequência: 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
- [ ]
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-Observação: a notação pp indica valor de pico-a-pico, ou seja, a amplitude
- total da forma de onda, do menor ponto negativo ao maior ponto positivo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Gerador de Funções
-\end_layout
-
-\begin_layout Standard
-Este instrumento fornece, dentre outras, as funções básicas: senoidal, triangula
-r e quadrada.
- Verifique juntamente com o professor as principais características do instrumen
-to: terminal de saída da função, seleção do tipo de função, amplitude e
- frequência (ou período).
-\end_layout
-
-\begin_layout Subsection
-Medidas Básicas com o Osciloscópio
-\end_layout
-
-\begin_layout Enumerate
-Escolha um canal de entrada do osciloscópio (1 ou 2) e conecte na saída
- do gerador de funções.
- Atenção: devem ser respeitadas as polaridades (+ e -).
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/gerador-e-osciloscopio.PNG
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Gerador de função com osciloscópio
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Faça os ajustes especificados abaixo no gerador de funções e execute as
- respectivas medidas com o osciloscópio.
- Os resultados devem ser expressos de forma semelhante ao item 1.2, ou seja,
- contendo esboço da forma de onda, escalas utilizadas, valores das divisões,
- valor pico-a-pico das tensões, período e frequência.
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Senoidal 
-\begin_inset Formula $\begin{cases}
-2Vpp\,x\,100Hz\\
-5Vpp\,x\,1200Hz
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Triangular
-\begin_inset Formula $\begin{cases}
-0,5Vpp\,x\,1kHz\\
-10Vpp\,x\,10kHz\\
-1,5Vpp\,x\,200Hz
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Quadrada
-\begin_inset Formula $\begin{cases}
-5Vpp\,x\,1Hz\\
-12Vpp\,x\,800Hz
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Lista de Materiais
-\end_layout
-
-\begin_layout Itemize
-Multímetro Digital 
-\end_layout
-
-\begin_layout Itemize
-Protoboard 
-\end_layout
-
-\begin_layout Itemize
-Osciloscópio duplo canal com dois cabos 
-\end_layout
-
-\begin_layout Itemize
-Fonte CC de 0 a 30V 
-\end_layout
-
-\begin_layout Itemize
-Fonte fixa 12V Cabos Banana-Banana 
-\end_layout
-
-\begin_layout Itemize
-Gerador de sinais 
-\end_layout
-
-\begin_layout Itemize
-CI LM339 
-\end_layout
-
-\begin_layout Itemize
-Potenciômetro de 4k7
-\begin_inset Formula $\varOmega$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-Resistor de 1k
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-2x Resistores de 1k5
-\begin_inset Formula $\varOmega$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-Resistor de 2k2
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Resistor de 4k7
-\begin_inset Formula $\varOmega$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Itemize
-Alicate de Bico 
-\end_layout
-
-\begin_layout Itemize
-Alicate de Corte Fios para proto-board
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
 status collapsed
 
@@ -37002,8 +38114,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do teorema de Thévenin.
  Determinar 
 \begin_inset Formula $V_{th}$
@@ -37058,8 +38168,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema de Thévenin (continuação).
 \end_layout
 
@@ -37253,8 +38361,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema de Norton.
  Determinar 
 \begin_inset Formula $I_{n}$
@@ -37300,8 +38406,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema de Norton (continuação).
 \end_layout
 
@@ -37504,8 +38608,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema da Superposição
 \end_layout
 
@@ -37814,8 +38916,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema de Thévenin.
 \end_layout
 
@@ -37879,8 +38979,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema de Norton.
 \end_layout
 
@@ -37939,7 +39037,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -38021,8 +39119,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Aplicação do Teorema de Norton.
 \end_layout
 
@@ -38087,7 +39183,7 @@ Multímetro analógico
 \end_layout
 
 \begin_layout Itemize
-Ohmimetro 
+Ohmímetro 
 \end_layout
 
 \begin_layout Itemize
@@ -38121,7 +39217,7 @@ Cabos banana-banana
 \end_layout
 
 \begin_layout Itemize
-Resistore de 
+Resistores de 
 \begin_inset Formula $\nicefrac{1}{4}$
 \end_inset
 
@@ -38380,7 +39476,7 @@ Célula Solar e Painel Solar
 
 \begin_layout Standard
 E a fonte de Alimentação de Bancada? Esta também pode ser considerada como
- gerador eçétrico, porém necessita de outro 
+ gerador elétrico, porém necessita de outro 
 \begin_inset Quotes eld
 \end_inset
 
@@ -40110,11 +41206,11 @@ W: 1x (
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch an-osciloscopio-iii
+\begin_inset Branch an-osciloscopio-rc
 status collapsed
 
 \begin_layout Chapter
-Osciloscópio III 
+Circuitos RC e Osciloscópio
 \end_layout
 
 \begin_layout Standard
@@ -40126,7 +41222,7 @@ Objetivos
 \end_layout
 
 \begin_layout Itemize
-Treinar a utilização do oscilloscópio para realizar medições de formas de
+Treinar a utilização do osciloscópio para realizar medições de formas de
  onda.
 \end_layout
 
@@ -41102,11 +42198,24 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch an-osciloscopio-iv
+\begin_inset Branch an-osciloscopio-retif-gramp
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch an-osciloscopio-lissajous
 status collapsed
 
 \begin_layout Chapter
-Osciloscópio II 
+Osciloscópio:
 \begin_inset Newline newline
 \end_inset
 
@@ -41890,7 +42999,7 @@ status collapsed
 \begin_deeper
 \begin_layout Enumerate
 Coloque o controle de varredura do osciloscópio na posição em que o ponto
- na tela se desloque o mais lentamente possível, mas sem para-lo, e aplique
+ na tela se desloque o mais lentamente possível, mas sem pará-lo, e aplique
  um sinal senoidal de 1hz com o nível máximo, e observe a tela do osciloscópio.
  
 \end_layout
@@ -44095,7 +45204,7 @@ Multímetro
 \end_layout
 
 \begin_layout Itemize
-Traffo 110/6v 
+Trafo 110/6v 
 \end_layout
 
 \begin_layout Itemize
@@ -44128,11 +45237,11 @@ Cabos para osciloscópio
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch cm-textos-extras
-status collapsed
+\begin_inset Note Comment
+status open
 
-\begin_layout Part
-Analógicos -- Experimentos Extras
+\begin_layout Plain Layout
+===== PROJETO DE ANALÓGICOS =====
 \end_layout
 
 \end_inset
@@ -44234,43 +45343,15 @@ labelitemi{{}}
 \begin_layout Itemize
 
 \series bold
-Diurno:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios de segunda-feira: 
-\series bold
-19.10.2015
+Diurno: 26.09.2016
 \end_layout
 
 \begin_layout Itemize
-Laboratórios de quarta-feira: 
-\series bold
-21.10.2015
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
 
 \series bold
-Noturno:
+Noturno: 28.09.2016
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Laboratórios de segunda-feira: 
-\series bold
-19.10.2015
-\end_layout
-
-\begin_layout Itemize
-Laboratórios de terça-feira: 
-\series bold
-20.10.2015
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -44323,42 +45404,22 @@ labelitemi{{}}
 
 \series bold
 Diurno:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios de segunda-feira: 
+\series default
+ 
 \series bold
-26.10.2015
+03.10.2016
 \end_layout
 
-\begin_layout Itemize
-Laboratórios de quarta-feira: 
-\series bold
-28.10.2015
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 
 \series bold
 Noturno:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios de segunda-feira: 
+\series default
+ 
 \series bold
-26.10.2015
+05.10.2016
 \end_layout
 
-\begin_layout Itemize
-Laboratórios de terça-feira: 
-\series bold
-27.10.2015
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset ERT
 status open
@@ -44415,19 +45476,21 @@ Diurno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios de segunda-feira: 
+Antecipada: 
 \series bold
-14.12.2015
-\series default
- (oficial) e 18.12.2014 (repescagem)
+07.11.2016
 \end_layout
 
 \begin_layout Itemize
-Laboratórios de quarta-feira: 
+Oficial: 
 \series bold
-16.12.2015
-\series default
- (oficial) e 18.12.2014 (repescagem)
+28.11.2016
+\end_layout
+
+\begin_layout Itemize
+Repescagem: 
+\series bold
+05.12.2016
 \end_layout
 
 \end_deeper
@@ -44439,19 +45502,21 @@ Noturno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios de segunda-feira: 
+Antecipada: 
 \series bold
-14.12.2015
-\series default
- (oficial) e 18.12.2014 (repescagem)
+09.11.2016
 \end_layout
 
 \begin_layout Itemize
-Laboratórios de terça-feira: 
+Oficial: 
 \series bold
-15.12.2015
-\series default
- (oficial) e 18.12.2014 (repescagem)
+30.11.2016
+\end_layout
+
+\begin_layout Itemize
+Repescagem: 
+\series bold
+07.12.2016
 \end_layout
 
 \end_deeper
@@ -44492,7 +45557,7 @@ Não serão aceitos projetos entregues fora do prazo.
 \emph on
 A pontuação será atribuída apenas aos presentes na data de entrega.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -44733,8 +45798,8 @@ reference "sec:Prazos-para-Entrega"
 .
  Nesta data, o professor fará uma análise prévia para verificar se o projeto
  não é simples demais ou complexo demais.
- Caso assim o considere, uma nova proposta deverá ser apresentada na semana
- seguinte de aula, conforme data citada no item
+ Caso assim o considere, uma nova proposta deverá ser apresentada, conforme
+ data citada no item
 \begin_inset space ~
 \end_inset
 
@@ -44796,7 +45861,7 @@ reference "sec:Critérios-de-Avaliação"
 
 
 \emph default
- .
+.
 \end_layout
 
 \begin_layout Itemize
@@ -44916,6 +45981,515 @@ Aspecto final:
 \emph on
 Se o projeto for para a repescagem, será considerado um máximo de 80% da
  pontuação obtida para a nota do projeto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+===== EXTRAS DE ANALÓGICOS =====
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-textos-extras
+status collapsed
+
+\begin_layout Part
+Analógicos -- Experimentos Extras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch an-osciloscopio-revisao
+status collapsed
+
+\begin_layout Chapter
+Instrumentos para Laboratório de Eletrônica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Section
+Objetivos.
+ 
+\end_layout
+
+\begin_layout Standard
+Verificar experimentalmente a utilização e funcionamento dos seguintes dispositi
+vos: 
+\end_layout
+
+\begin_layout Itemize
+osciloscópio para medida de tensão e tempo de sinais periódicos; 
+\end_layout
+
+\begin_layout Itemize
+gerador de funções senoidais, triangulares e quadradas;
+\end_layout
+
+\begin_layout Section
+Parte Experimental I - Estudo dos Instrumentos
+\end_layout
+
+\begin_layout Subsection
+Osciloscópio
+\end_layout
+
+\begin_layout Enumerate
+Utilizaremos nesta experiência o osciloscópio para efetuar medidas de tensão
+ e período de sinais provenientes do gerador de funções.
+ Para isso, ligue o instrumento e juntamente com o professor verifique os
+ itens relacionados abaixo e anote suas características:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Possui 2 canais de entrada de sinal: ( 
+\begin_inset Formula $\,$
+\end_inset
+
+) 1 e 2 (
+\begin_inset Formula $\,$
+\end_inset
+
+ ) A e B 
+\end_layout
+
+\begin_layout Itemize
+Seletor da escala de tensão: mínimo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ máximo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ (coloque as unidades) 
+\end_layout
+
+\begin_layout Itemize
+Seletor da escala de tempos: mínimo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ máximo = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ (coloque as unidades) 
+\end_layout
+
+\begin_layout Itemize
+Entrada de Calibração: tensão = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ período = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ (coloque as unidades)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A primeira leitura que iremos executar será a da Entrada de Calibração.
+ Escolha um dos canais de leitura e encoste o positivo da ponta de prova
+ no ponto de calibração.
+ Ajuste as escalas de tensão e tempo para obter o melhor sinal (de modo
+ que ocupe o máximo da tela nas duas dimensões).
+ A seguir, copie o gráfico obtido no quadro abaixo, anote as medidas dos
+ dois eixos e obtenha os resultados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/imagem-osciloscopio.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Imagem osciloscópio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escala de tensão (pp): 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
+\end_layout
+
+\begin_layout Standard
+Escala de tempo: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
+\end_layout
+
+\begin_layout Standard
+Divisões vertical: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Divisões horizontal: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Resultados: 
+\end_layout
+
+\begin_layout Standard
+Valor da tensão (pp): 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
+\end_layout
+
+\begin_layout Standard
+Período: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ] 
+\end_layout
+
+\begin_layout Standard
+Frequência: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+ [ ]
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Observação: a notação pp indica valor de pico-a-pico, ou seja, a amplitude
+ total da forma de onda, do menor ponto negativo ao maior ponto positivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Gerador de Funções
+\end_layout
+
+\begin_layout Standard
+Este instrumento fornece, dentre outras, as funções básicas: senoidal, triangula
+r e quadrada.
+ Verifique juntamente com o professor as principais características do instrumen
+to: terminal de saída da função, seleção do tipo de função, amplitude e
+ frequência (ou período).
+\end_layout
+
+\begin_layout Subsection
+Medidas Básicas com o Osciloscópio
+\end_layout
+
+\begin_layout Enumerate
+Escolha um canal de entrada do osciloscópio (1 ou 2) e conecte na saída
+ do gerador de funções.
+ Atenção: devem ser respeitadas as polaridades (+ e -).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/gerador-e-osciloscopio.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gerador de função com osciloscópio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Faça os ajustes especificados abaixo no gerador de funções e execute as
+ respectivas medidas com o osciloscópio.
+ Os resultados devem ser expressos de forma semelhante ao item 1.2, ou seja,
+ contendo esboço da forma de onda, escalas utilizadas, valores das divisões,
+ valor pico-a-pico das tensões, período e frequência.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Senoidal 
+\begin_inset Formula $\begin{cases}
+2Vpp\,x\,100Hz\\
+5Vpp\,x\,1200Hz
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Triangular
+\begin_inset Formula $\begin{cases}
+0,5Vpp\,x\,1kHz\\
+10Vpp\,x\,10kHz\\
+1,5Vpp\,x\,200Hz
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quadrada
+\begin_inset Formula $\begin{cases}
+5Vpp\,x\,1Hz\\
+12Vpp\,x\,800Hz
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Multímetro Digital 
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Protoboard
+\lang brazilian
+ 
+\end_layout
+
+\begin_layout Itemize
+Osciloscópio duplo canal com dois cabos 
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V 
+\end_layout
+
+\begin_layout Itemize
+Fonte fixa 12V Cabos Banana-Banana 
+\end_layout
+
+\begin_layout Itemize
+Gerador de sinais 
+\end_layout
+
+\begin_layout Itemize
+CI LM339 
+\end_layout
+
+\begin_layout Itemize
+Potenciômetro de 4k7
+\begin_inset Formula $\varOmega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Resistor de 1k
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+2x Resistores de 1k5
+\begin_inset Formula $\varOmega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Resistor de 2k2
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Resistor de 4k7
+\begin_inset Formula $\varOmega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Alicate de Bico 
+\end_layout
+
+\begin_layout Itemize
+Alicate de Corte Fios para proto-board
 \end_layout
 
 \end_inset
