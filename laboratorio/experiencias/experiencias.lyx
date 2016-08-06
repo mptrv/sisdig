@@ -230,32 +230,32 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -265,22 +265,22 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iv
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -295,7 +295,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -25261,7 +25261,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -29769,7 +29769,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -32201,7 +32201,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -33787,7 +33787,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status open
+status collapsed
 
 \begin_layout Chapter
 Lei de Ohm
@@ -35964,7 +35964,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status open
+status collapsed
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -36542,7 +36542,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status open
+status collapsed
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -37493,10 +37493,14 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status open
+status collapsed
 
 \begin_layout Chapter
-Teorema da Superposição Teoremas de Thévenin e de Norton 
+Teorema da Superposição e
+\begin_inset Newline newline
+\end_inset
+
+Teoremas de Thévenin e de Norton 
 \end_layout
 
 \begin_layout Standard
@@ -37579,7 +37583,7 @@ Lembrar que as Fontes Dependentes são devem ser desativadas!
 
 \begin_layout Standard
 Como exemplo, aplica-se este teorema ao circuito da fig.
- 1, onde deseja-se determinas a tensão 
+ 1, onde deseja-se determinar a tensão 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -37591,7 +37595,7 @@ Como exemplo, aplica-se este teorema ao circuito da fig.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -37717,7 +37721,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
-Agora, determinar-se 
+Agora, determina-se 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -37922,7 +37926,7 @@ Circuito Linear qualquer
 \series default
 , este pode ser separado em dois subcircuitos A e B conectados por fios
  de resistência desprezível.
- Definindo-se 
+ Define-se 
 \series bold
 
 \begin_inset Formula $V_{oc}$
@@ -37930,9 +37934,8 @@ Circuito Linear qualquer
 
  como sendo a tensão de circuito aberto
 \series default
- que aparece nos terminais de A e quando B.
- Então, todas as tensões e correntes de B ficam inalteradas se o circuito
- A para B.
+ que aparece nos terminais de A quando B for desconectado e, portanto, corrente
+ nenhuma passar de A para B.
  Então, todas as tensões e correntes de B ficam inalteradas se o circuito
  A for substituído por uma 
 \series bold
@@ -38279,7 +38282,7 @@ Notar que
 
 .
  Como exemplo de aplicação, recorre-se à fig.
- 8, determinando-se In como ilustrado na fig.
+ 5, determinando-se In como ilustrado na fig.
  8.
 \end_layout
 
@@ -38288,7 +38291,7 @@ Notar que
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -39247,7 +39250,7 @@ W: 2x (
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status open
+status collapsed
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -41211,7 +41214,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status open
+status collapsed
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -42196,6 +42199,72 @@ status open
 
 \end_layout
 
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Osciloscópio 
+\end_layout
+
+\begin_layout Itemize
+Gerador de funções
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $\SI{1}{\kilo\ohm}$
+\end_inset
+
+; 
+\begin_inset Formula $\SI{2k2}{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Capacitores: 1x (
+\begin_inset Formula $\mbox{\SI{100}{\nano\F}}/\SI{50}{\V}$
+\end_inset
+
+; 
+\begin_inset Formula $\mbox{\SI{220}{\nano\F}}/\SI{50}{\V}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+3x cabos BNC-jacaré
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana pequenos
+\end_layout
+
 \end_inset
 
 
@@ -42205,6 +42274,14 @@ status open
 \begin_inset Branch an-osciloscopio-retif-gramp
 status collapsed
 
+\begin_layout Chapter
+Circuitos Retificadores e Grampeadores e Osciloscópio
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
 \begin_layout Standard
 
 \end_layout
@@ -42214,9 +42291,76 @@ status collapsed
 
 \end_layout
 
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Osciloscópio 
+\end_layout
+
+\begin_layout Itemize
+Gerador de funções
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+3x cabos BNC-jacaré
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana pequenos
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $\SI{1}{\kilo\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Capacitores: 1x (
+\begin_inset Formula $\mbox{\SI{10}{\micro\F}}/\SI{50}{\V}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Diodos: 4x 1N4004
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status open
+status collapsed
 
 \begin_layout Chapter
 Osciloscópio:
@@ -45162,13 +45306,6 @@ height "1pt"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section*
 Lista de Materiais
 \end_layout
@@ -45204,7 +45341,7 @@ Multímetro
 \end_layout
 
 \begin_layout Itemize
-8 cabos 
+Cabos banana-banana
 \end_layout
 
 \begin_layout Itemize
@@ -45224,7 +45361,7 @@ W: 1x (
 \end_layout
 
 \begin_layout Itemize
-Capacitores: 1x(
+Capacitores: 1x (
 \begin_inset Formula $82nF$
 \end_inset
 
@@ -45285,6 +45422,10 @@ Tema Livre
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
 
 \begin_layout Section
 Objetivo
@@ -45985,6 +46126,11 @@ Aspecto final:
 \emph on
 Se o projeto for para a repescagem, será considerado um máximo de 80% da
  pontuação obtida para a nota do projeto.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

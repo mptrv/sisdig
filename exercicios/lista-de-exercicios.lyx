@@ -151,6 +151,16 @@ customHeadersFooters
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch dg
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch an
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -259,6 +269,10 @@ thepage
 
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg
+status open
 
 \begin_layout Chapter
 Contadores Assíncronos e Síncronos
@@ -522,6 +536,11 @@ simulação
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -596,8 +615,12 @@ thepage
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch an
+status open
+
 \begin_layout Chapter
-Lista de Exercício
+Análise de Circuitos
 \end_layout
 
 \begin_layout Enumerate
@@ -969,10 +992,7 @@ W}
 \begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -995,10 +1015,7 @@ W}
 \begin_inset Formula $\mathrm{U=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1017,10 +1034,7 @@ V}
 \begin_inset Formula $\mathrm{P_{d_{R1}}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1134,10 +1148,6 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1174,10 +1184,6 @@ status collapsed
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1253,10 +1259,7 @@ A}
 \begin_inset Formula $\mathrm{P_{d1}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1317,10 +1320,7 @@ W}
 \begin_inset Formula $\mathrm{U_{R1}=}\mathrm{U_{R2}}=\mathrm{U}=$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1339,10 +1339,7 @@ V}
 \begin_inset Formula $\mathrm{I_{T}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1361,10 +1358,7 @@ A}
 \begin_inset Formula $\mathrm{P_{d1}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1383,10 +1377,7 @@ W}
 \begin_inset Formula $\mathrm{P_{d2}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1405,10 +1396,7 @@ W}
 \begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1564,10 +1552,7 @@ mW}
 \begin_inset Formula $\mathrm{P_{R_{3}}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1586,10 +1571,7 @@ mW}
 \begin_inset Formula $\mathrm{P_{f}=}$
 \end_inset
 
-
  
-\lang brazilian
-
 \begin_inset ERT
 status open
 
@@ -1624,10 +1606,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1933,10 +1911,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2036,10 +2010,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2103,10 +2073,6 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2223,5 +2189,10 @@ Resultado:
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
