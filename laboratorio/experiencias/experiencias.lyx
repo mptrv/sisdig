@@ -275,7 +275,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -285,7 +285,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -41214,7 +41214,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status collapsed
+status open
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -41317,14 +41317,14 @@ reference "eq:carga-cap-2"
  regem a carga do capacitor e as 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:osciloscopio3-eq3"
+reference "eq:carga-cap-3"
 
 \end_inset
 
  e 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:osciloscopio3-eq4"
+reference "eq:carga-cap-4"
 
 \end_inset
 
@@ -41376,15 +41376,8 @@ Descarga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{c}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}
+\mathrm{v_{c}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-3}
 \end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "eq:osciloscopio3-eq3"
 
 \end_inset
 
@@ -41394,15 +41387,8 @@ name "eq:osciloscopio3-eq3"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{i_{c}(t)=-I_{0}\cdot e^{\frac{-t}{RC}}}
+\mathrm{i_{c}(t)=-I_{0}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-4}
 \end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "eq:osciloscopio3-eq4"
 
 \end_inset
 
@@ -41473,7 +41459,7 @@ A tensão no resistor é
 E, portanto, na carga e descarga têm-se as equações 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq: eq5.osciloscopio3"
+reference "eq:carga-cap-5"
 
 \end_inset
 
@@ -41498,15 +41484,8 @@ Carga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{R}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}
+\mathrm{v_{R}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-5}
 \end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "eq: eq5.osciloscopio3"
 
 \end_inset
 
@@ -41524,15 +41503,8 @@ Descarga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{R}(t)=-V_{cc}\cdot e^{\frac{-t}{RC}}}
+\mathrm{v_{R}(t)=-V_{cc}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-6}
 \end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "eq: eq6-osciloscopio3"
 
 \end_inset
 
@@ -41554,30 +41526,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/carga_descarga_capacitor_1.png
-	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/carga_descarga_capacitor_2.png
-	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/carga_descarga_capacitor_3.png
-	scale 45
+	filename imagens/carga_descarga_capacitor_simu1.png
+	scale 70
 
 \end_inset
 
@@ -41608,7 +41558,7 @@ Montar o circuito abaixo:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41734,7 +41684,7 @@ Circuito a Analisar
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -41754,7 +41704,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -41774,7 +41724,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -41794,7 +41744,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -42106,13 +42056,13 @@ reference "num:item 9"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-1.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -42126,13 +42076,13 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-2.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -42149,13 +42099,13 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-3.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -42175,14 +42125,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-4.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -45392,7 +45338,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
