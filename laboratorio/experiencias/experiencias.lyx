@@ -275,7 +275,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -37531,7 +37531,7 @@ Este teorema, que em alguns textos é referenciado como Princípio da Superposi�
 
 \begin_layout Standard
 “Um Circuito Linear contendo várias fontes independentes, de tensão e/ou
- de corrente, poder ter suas tensões nodais e correntes de ramos, que são
+ de corrente, pode ter suas tensões nodais e correntes de ramos, que são
  as respostas, determinadas pela 
 \series bold
 superposição das respostas para cada fonte agindo separadamente, sendo as
@@ -37612,6 +37612,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-da-superposição"
+
+\end_inset
+
 Aplicação do Teorema da Superposição
 \end_layout
 
@@ -37963,8 +37969,22 @@ desativadas
 
 \begin_layout Standard
 A fig.
- 5 ilustra um circuito igual ao da fig.
- 1 como exemplo de aplicação deste teorema.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-de-thevenin"
+
+\end_inset
+
+ ilustra um circuito igual ao da fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-da-superposição"
+
+\end_inset
+
+ como exemplo de aplicação deste teorema.
  Nesta mesma figura, estão ilustradas a separação deste circuito nos dois
  subcircuitos A e B.
  
@@ -37975,7 +37995,7 @@ A fig.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -37992,6 +38012,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-de-thevenin"
+
+\end_inset
+
 Aplicação do Teorema de Thévenin.
 \end_layout
 
@@ -38027,7 +38053,14 @@ O subcircuito A é então reduzido à tensão
  é calculado como sendo a resistência apresentada pelos terminais de A com
  todas as fontes independentes inativas.
  Então, o subcircuito A pode ser substituído como ilustrado na fig.
- 6.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-teorema-de-thevenin-fig6"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -38117,6 +38150,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-teorema-de-thevenin-fig6"
+
+\end_inset
+
 Aplicação do teorema de Thévenin.
  Determinar 
 \begin_inset Formula $V_{th}$
@@ -38282,8 +38321,22 @@ Notar que
 
 .
  Como exemplo de aplicação, recorre-se à fig.
- 5, determinando-se In como ilustrado na fig.
- 8.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-de-thevenin"
+
+\end_inset
+
+, determinando-se In como ilustrado na fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-de-Norton-fig8"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -38291,7 +38344,7 @@ Notar que
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -38364,6 +38417,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-de-Norton-fig8"
+
+\end_inset
+
 Aplicação do Teorema de Norton.
  Determinar 
 \begin_inset Formula $I_{n}$
@@ -38469,7 +38528,14 @@ Teorema da Superposição
 
 \begin_layout Standard
 Montar o circuito ilustrado na fig.
- 10, semelhante ao analisado na introdução teórica.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-da-superposiçãofig10"
+
+\end_inset
+
+, semelhante ao analisado na introdução teórica.
  Medir 
 \begin_inset Formula $V_{x}$
 \end_inset
@@ -38594,7 +38660,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -38611,6 +38677,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-da-superposiçãofig10"
+
+\end_inset
+
 Aplicação do Teorema da Superposição
 \end_layout
 
@@ -38647,7 +38719,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -38666,6 +38738,12 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-da-superposição-fg11"
+
+\end_inset
+
 Aplicação do Teorema da Superposição (continuação)
 \end_layout
 
@@ -38735,8 +38813,22 @@ Teorema de Thévenin
 
 \begin_layout Standard
 Montar o circuito ilustrado na fig.
- 11 (o mesmo da fig.
- 10).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-da-superposição-fg11"
+
+\end_inset
+
+ (o mesmo da fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-da-superposiçãofig10"
+
+\end_inset
+
+).
  Medida de 
 \begin_inset Formula $V_{x}$
 \end_inset
@@ -38808,7 +38900,14 @@ Determinar
 \end_inset
 
  segundo a fig.
- 13.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Determinação-de-vth-rth-fig13"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -38839,7 +38938,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -38858,6 +38957,12 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Determinação-de-vth-rth-fig13"
+
+\end_inset
+
 Determinação de 
 \begin_inset Formula $V_{th}$
 \end_inset
@@ -38889,7 +38994,14 @@ Substituir o subcircuito A pela fonte de bancada ajustada em
 \end_inset
 
 , segundo a fig.
- 11.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-de-thevenin-fig14"
+
+\end_inset
+
+.
  e medir o valor de 
 \begin_inset Formula $V_{x}$
 \end_inset
@@ -38919,6 +39031,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-de-thevenin-fig14"
+
+\end_inset
+
 Aplicação do Teorema de Thévenin.
 \end_layout
 
@@ -38938,8 +39056,22 @@ Teorema de Norton
 
 \begin_layout Standard
 Determinar agora, o Equivalente de Norton para o subcircuito A da fig.
- 15, conforme ilustrado na fig.
- 16.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-de-norton-fig15"
+
+\end_inset
+
+, conforme ilustrado na fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Determinação-de-In-Rn-fig16"
+
+\end_inset
+
+.
  Medida de 
 \begin_inset Formula $V_{x}$
 \end_inset
@@ -38982,6 +39114,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-de-norton-fig15"
+
+\end_inset
+
 Aplicação do Teorema de Norton.
 \end_layout
 
@@ -39005,7 +39143,14 @@ Determinar
 \end_inset
 
  segundo a fig.
- 16.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Determinação-de-In-Rn-fig16"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -39040,7 +39185,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -39059,6 +39204,12 @@ status open
 \begin_layout Plain Layout
 
 \lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Determinação-de-In-Rn-fig16"
+
+\end_inset
+
 Determinação de 
 \begin_inset Formula $I_{n}$
 \end_inset
@@ -39088,7 +39239,14 @@ Substituir o subcircuito A pela Fonte de Bancada em série com um miliamperímet
 \end_inset
 
 , segundo a fig.
- 17.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Aplicação-do-Teorema-de-norton-fig17"
+
+\end_inset
+
+.
  Ajustar a Fonte de Tensão de modo a medir-se uma corrente igual a 
 \begin_inset Formula $I_{n}$
 \end_inset
@@ -39122,6 +39280,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Aplicação-do-Teorema-de-norton-fig17"
+
+\end_inset
+
 Aplicação do Teorema de Norton.
 \end_layout
 
@@ -41214,7 +41378,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status open
+status collapsed
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -41466,7 +41630,7 @@ reference "eq:carga-cap-5"
  e 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq: eq6-osciloscopio3"
+reference "eq:carga-cap-6"
 
 \end_inset
 
@@ -41509,6 +41673,10 @@ Descarga
 \end_inset
 
 
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -41521,13 +41689,13 @@ As formas de onda para carga e descarga no capacitor, sincronizadas no tempo,
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/carga_descarga_capacitor_simu1.png
-	scale 70
+	scale 80
 
 \end_inset
 
@@ -41546,6 +41714,10 @@ Formas de onda para carga e descarga do capacitor
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -41558,7 +41730,7 @@ Montar o circuito abaixo:
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -41690,7 +41862,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item4-1.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -41710,7 +41882,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item4-2.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -41730,7 +41902,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item4-3.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -41750,7 +41922,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item4-4.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -42306,7 +42478,7 @@ Diodos: 4x 1N4004
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status collapsed
+status open
 
 \begin_layout Chapter
 Osciloscópio:
