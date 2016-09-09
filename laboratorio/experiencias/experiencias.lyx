@@ -309,6 +309,11 @@ customHeadersFooters
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch osciloscopio4
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -42390,7 +42395,7 @@ Cabos banana-banana pequenos
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-retif-gramp
-status collapsed
+status open
 
 \begin_layout Chapter
 Circuitos Retificadores e Grampeadores e Osciloscópio
@@ -42400,8 +42405,34 @@ Circuitos Retificadores e Grampeadores e Osciloscópio
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Standard
+\begin_layout Section
+Objetivo
+\end_layout
 
+\begin_layout Itemize
+Principalmente, treinar o uso do osciloscópio;
+\end_layout
+
+\begin_layout Itemize
+Instigar a curiosidade por conhecer novos circuitos e a interpretação de
+ seu funcionamento.
+\end_layout
+
+\begin_layout Subsection*
+Circuito 1:
+\end_layout
+
+\begin_layout Standard
+Poderá existir um circuito tal que, uma vez alimentado por uma onda senoidal,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+rebata
+\begin_inset Quotes erd
+\end_inset
+
+ a oarte negativa da senóide para a parte positiva?
 \end_layout
 
 \end_inset
@@ -42478,7 +42509,7 @@ Diodos: 4x 1N4004
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status open
+status collapsed
 
 \begin_layout Chapter
 Osciloscópio:
