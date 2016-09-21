@@ -40,10 +40,10 @@ Sheet 1 1
 Title "Dado Digital - CMOS"
 Date "junho/2016"
 Rev "0.0"
-Comp "Escola de Engenharia Mauá - IMT"
-Comment1 "ETE102 - Fundamentos de Circuitos Digitais"
-Comment2 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
-Comment3 "GABARITO"
+Comp "ETE102 - Fundamentos de Circuitos Digitais"
+Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
+Comment2 "GABARITO"
+Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
