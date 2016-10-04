@@ -300,7 +300,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-retif-gramp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -42432,7 +42432,311 @@ rebata
 \begin_inset Quotes erd
 \end_inset
 
- a oarte negativa da senóide para a parte positiva?
+ a parte negativa da senóide para a parte positiva?
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Efeito
+\bar default
+: 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sim, existe.
+ Um dos circuitos é o 
+\begin_inset Quotes eld
+\end_inset
+
+Retificador em Ponte
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Circuito 2:
+\end_layout
+
+\begin_layout Standard
+Existe algum circuito que, se alimentado por uma onda senoidal, elimine
+ sua parte negativa?
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Efeito
+\bar default
+: 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sim, existe.
+ É o 
+\begin_inset Quotes eld
+\end_inset
+
+Retificador de Meia Onda
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Circuito 3:
+\end_layout
+
+\begin_layout Standard
+É possível construir um circuito que, uma vez alimentado por uma onda senoidal,
+ qualquer que seja sua amplitude, desloque-a para 
+\begin_inset Quotes eld
+\end_inset
+
+cima
+\begin_inset Quotes erd
+\end_inset
+
+ de forma que toda a senóide permaneça na parte positiva? 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Efeito
+\bar default
+: 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Formula $\mathrm{v_{e}(t)}=\mathrm{A\sin(\omega t)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Formula $\mathrm{v_{s}(t)}=\mathrm{A\sin(\omega t)+A=A[1+\sin(\omega t)]}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sim é possível.
+ Tal circuito é o 
+\begin_inset Quotes eld
+\end_inset
+
+Grampeador de Tensão
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Circuito 4 
+\end_layout
+
+\begin_layout Standard
+Dada uma onda pulsante, é possível transformá-la numa 
+\begin_inset Quotes eld
+\end_inset
+
+menos pulsante
+\begin_inset Quotes erd
+\end_inset
+
+, tendendo a contínua?
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Efeito
+\bar default
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sim, é possível.
+ Um dos circuitos é o 
+\begin_inset Quotes eld
+\end_inset
+
+Retificador em Ponte com Filtro
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Enumerate
+Montar os circuitos apresentados a seguir;
+\end_layout
+
+\begin_layout Enumerate
+Observar, no osciloscópio, 
+\bar under
+simultaneamente
+\bar default
+, 
+\begin_inset Formula $\mathrm{v_{e}(t)\times t}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{v_{s}(t)\times t}$
+\end_inset
+
+, sempre que possível;
+\end_layout
+
+\begin_layout Enumerate
+Traçar as formas de onda observadas, anotando as cotas de amplitude e de
+ tempo nos 
+\begin_inset Quotes eld
+\end_inset
+
+cruzamentos em zero
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+
+\bar under
+Lembrete
+\bar default
+: cuidado com o acoplamento AC/DC do osciloscópio, a fim de observar adequadamen
+te os efeitos.
+\end_layout
+
+\begin_layout Enumerate
+Dar o nome de cada circuito, associando-o com os descritivos apresentados
+ na parte introdutória.
+\end_layout
+
+\begin_layout Subsubsection*
+Circuito A:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-circuitoA.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_inset
