@@ -1,0 +1,31 @@
+<Qucs Schematic 0.0.18>
+<Properties>
+  <View=0,-103,800,688,1,0,0>
+  <Grid=10,10,1>
+  <DataSet=osciloscopio4-circ1.dat>
+  <DataDisplay=osciloscopio4-circ1.sch>
+  <OpenDisplay=1>
+  <Script=osciloscopio4-circ1.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Título>
+  <FrameText1=Desenhado por:>
+  <FrameText2=Data:>
+  <FrameText3=Revisão:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 180 521 499 182 3 #c0c0c0 1 00 0 0 0.005 0.02 1 -0.846017 2 9.30618 1 -1 0.5 1 315 0 225 "t (s)" "Vs (V)" "">
+	<"Vs.Vt" #0000ff 0 3 0 0 0>
+  </Rect>
+  <Rect 180 279 500 182 3 #c0c0c0 1 00 0 0 0.005 0.02 1 -11.9991 10 11.9991 1 -1 0.5 1 315 0 225 "t (s)" "Ve (V)" "">
+	<"Ve.Vt" #0000ff 0 3 0 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
