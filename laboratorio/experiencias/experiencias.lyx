@@ -42747,9 +42747,27 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental2.png
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -42794,9 +42812,27 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental2.png
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -42858,9 +42894,27 @@ curto
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental2.png
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -42901,9 +42955,27 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental1.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-grafico-experimental2.png
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
