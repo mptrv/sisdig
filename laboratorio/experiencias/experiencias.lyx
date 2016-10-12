@@ -42450,7 +42450,7 @@ Efeito
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -42503,13 +42503,22 @@ Efeito
 \end_layout
 
 \begin_layout Standard
-
-\bar under
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-circuito2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -42577,13 +42586,23 @@ Efeito
 \end_layout
 
 \begin_layout Standard
-
-\bar under
+\align center
 \begin_inset Float figure
 placement H
 wide false
 sideways false
 status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-circuito3.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -42639,6 +42658,13 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio4-circuito4.png
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -42747,7 +42773,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -42789,7 +42815,7 @@ Circuito B:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -42812,7 +42838,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -42894,7 +42920,7 @@ curto
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -42932,7 +42958,7 @@ Circuito D:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -43016,6 +43042,10 @@ status open
 caixaresp[5]
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
