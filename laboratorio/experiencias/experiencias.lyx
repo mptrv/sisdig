@@ -230,62 +230,62 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-revisao
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iv
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -295,7 +295,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -25487,7 +25487,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -29995,7 +29995,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -32427,7 +32427,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -34013,7 +34013,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status collapsed
+status open
 
 \begin_layout Chapter
 Lei de Ohm
@@ -36190,7 +36190,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status collapsed
+status open
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -36768,7 +36768,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status collapsed
+status open
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -37719,7 +37719,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status collapsed
+status open
 
 \begin_layout Chapter
 Teorema da Superposição e
@@ -39640,7 +39640,7 @@ W: 2x (
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status collapsed
+status open
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -41604,7 +41604,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status collapsed
+status open
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -41612,7 +41612,7 @@ Circuitos RC e Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos 
@@ -42671,7 +42671,7 @@ Efeito
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -42844,7 +42844,8 @@ Grampeador de Tensão
 \begin_inset Quotes erd
 \end_inset
 
-.
+ (na figura, também estão representados os transitórios iniciais antes de
+ se atingir o regime de operação).
 \end_layout
 
 \begin_layout Subsection*
@@ -43346,7 +43347,7 @@ Diodos: 4x 1N4004
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status collapsed
+status open
 
 \begin_layout Chapter
 Osciloscópio:
@@ -46378,7 +46379,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -47152,7 +47153,7 @@ Analógicos -- Experimentos Extras
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-revisao
-status collapsed
+status open
 
 \begin_layout Chapter
 Instrumentos para Laboratório de Eletrônica
