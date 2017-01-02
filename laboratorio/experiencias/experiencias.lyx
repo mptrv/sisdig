@@ -180,7 +180,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -195,7 +195,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -230,52 +230,52 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-revisao
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -295,7 +295,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -3067,7 +3067,7 @@ Painel de relés.
 
 \begin_layout Standard
 \begin_inset Branch dg-tecnicas-soldagem
-status open
+status collapsed
 
 \begin_layout Chapter
 \begin_inset Quotes eld
@@ -3602,11 +3602,15 @@ Sugador
 \begin_inset Formula $\nicefrac{1}{8}$
 \end_inset
 
- W
+ W (a serem descartados)
 \end_layout
 
 \begin_layout Itemize
-3x LEDs
+3x LEDs (a serem descartados)
+\end_layout
+
+\begin_layout Itemize
+2x Cabos banana-jacaré
 \end_layout
 
 \end_inset
@@ -3679,7 +3683,7 @@ vas
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3801,7 +3805,7 @@ reference "fig:CI-7408"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3962,7 +3966,7 @@ reference "tab:Função-AND"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4035,7 +4039,7 @@ reference "tab:Função-NAND"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4077,7 +4081,7 @@ name "fig:CI-7400"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4148,7 +4152,7 @@ reference "tab:Função-OR"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4190,7 +4194,7 @@ name "fig:CI-7432"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4273,7 +4277,7 @@ reference "tab:Função-NOR"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4315,7 +4319,7 @@ name "fig:CI-7402"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4530,9 +4534,228 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename imagens/exp03-Figura 13.png
-	scale 50
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Função NOR
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Entradas 
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Saída
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+S
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aberta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aberta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aberta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aberta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -4643,6 +4866,11 @@ NAND
 ?
 \end_layout
 
+\begin_layout Enumerate
+Elaborar um comparador de igualdade de 4 bits que quando as entradas forem
+ iguais (A=B) a saída será 1 (Y=1).
+\end_layout
+
 \end_inset
 
 
@@ -4706,7 +4934,7 @@ Multiplexadores e Demultiplexadores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -9208,10 +9436,6 @@ CIs: 7404, 7408, 7432, 74153
 Fios rígidos para proto-board 
 \end_layout
 
-\begin_layout Itemize
-2 cabos banana-banana 
-\end_layout
-
 \end_inset
 
 
@@ -9280,7 +9504,7 @@ reference "fig:Contexto-Alarme-Invasão"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -9348,7 +9572,7 @@ reference "tab:Tabela-de-Associação"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -10891,8 +11115,513 @@ g
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="10">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+g
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
-Deduzir as funções lógicas (reduzidas) a partir dos mapas de Karnaugh.
+Deduzir as funções lógicas (reduzidas) a partir da tabela verdade ou dos
+ mapas de Karnaugh.
 \begin_inset CommandInset label
 LatexCommand label
 name "enu:Deduzir-as-funções"
@@ -10902,6 +11631,24 @@ name "enu:Deduzir-as-funções"
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Transformar as funções obtidas no item 
 \begin_inset CommandInset ref
@@ -10921,6 +11668,24 @@ name "enu:Transformar-as-funções-em-nand-nor"
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Elaborar o circuito elétrico correspondente ao item 
 \begin_inset CommandInset ref
@@ -10932,6 +11697,24 @@ reference "enu:Transformar-as-funções-em-nand-nor"
 .
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Montar o circuito em 
 \emph on
@@ -10988,8 +11771,12 @@ Projetar um decodificador BCD--7 Segmentos para dígitos decimais de 0 a
 \end_layout
 
 \begin_layout Enumerate
-Considere os seguintes fatores: a) uma porta NAND TTL do CI 74LS00 pode
- fornecer até 
+Considere os seguintes fatores:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Uma porta NAND TTL do CI 74LS00 pode fornecer até 
 \begin_inset ERT
 status open
 
@@ -11019,7 +11806,11 @@ mA}
 
 \end_inset
 
-; b) um 
+; 
+\end_layout
+
+\begin_layout Enumerate
+Um 
 \emph on
 display 
 \emph default
@@ -11038,7 +11829,11 @@ mA}
 
 \end_inset
 
- em cada segmento para apresentar um brilho adequado; c) num certo 
+ em cada segmento para apresentar um brilho adequado;
+\end_layout
+
+\begin_layout Enumerate
+Num certo 
 \emph on
 Painel Digital
 \emph default
@@ -11070,6 +11865,7 @@ adequado
 ?
 \end_layout
 
+\end_deeper
 \end_inset
 
 
@@ -11174,7 +11970,7 @@ reference "fig:osc-Exemplos-de-osciloscópio"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -11334,7 +12130,7 @@ reference "fig:osc-Tubo-de-Raios-catodicos"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -11572,7 +12368,7 @@ reference "fig:osc-Diagrama-em-Blocos"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -11660,7 +12456,7 @@ reference "fig:osc-Forma-de-onda-senoidal"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -11794,7 +12590,7 @@ reference "fig:osc-Composição-senoide-dente-de-serra"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -11886,7 +12682,7 @@ reference "fig:osc-Exemplo-de-disparo-do-trigger"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -11972,7 +12768,7 @@ reference "fig:osc-Painel-elementar-de-osciloscopio"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -12091,7 +12887,7 @@ reference "fig:osc-Medidas-de-Tensão"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -12160,7 +12956,7 @@ reference "fig:osc-Medida-de-intervalo-de-tempo"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -12238,7 +13034,7 @@ reference "fig:osc-Medida-de-Período-e-frequencia"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -12392,7 +13188,7 @@ Mantendo ainda o gerador de funções com a frequência de
 \end_inset
 
  ligado ao vertical, desativar o Modo X-Y e colocar a Chave Seletora de
- Varredura SWEEP/DIV em uma das posições 
+ Varredura TIME/DIV em uma das posições 
 \begin_inset Formula $\si{\ms\per\text{{div}}}$
 \end_inset
 
@@ -12413,14 +13209,19 @@ Agora, é aplicada a tensão dente de serra proveniente do Gerador de Varredura
 
 \end_deeper
 \begin_layout Enumerate
-Aumentar gradualmente a frequência do Gerador Senoidal e observar o que
- ocorre com o ponto luminoso.
+
+\bar under
+Aumentar gradualmente a frequência
+\bar default
+ do Gerador Senoidal até 100 Hz e observar o que ocorre com o ponto luminoso.
 \end_layout
 
 \begin_layout Enumerate
-Anotar a forma de onda na tela a seguir e medir a tensão pico a pico do
- sinal senoidal, utilizando-se a escala da tela e o valor VOLTS/DIV da escala
- do seletor do canal CH1.
+Anotar a forma de onda na tela a seguir.
+ Medir a tensão pico a pico do sinal senoidal, utilizando-se a escala da
+ tela e o valor VOLTS/DIV da escala do seletor do canal CH1, assim como
+ o valor dos seletores da escala do vertical (VOLTs/DIV) e da escala do
+ horizontal (em TIME/DIV), e calcular a frequência.
 \begin_inset Float figure
 placement H
 wide false
@@ -12457,7 +13258,7 @@ Ajustar a frequência do gerador senoidal para
 \end_layout
 
 \begin_layout Enumerate
-Ajustar a chave Seletora de Varredura SWEEP/DIV e o Nível de Trigger (LEVEL)
+Ajustar a chave Seletora de Varredura TIME/DIV e o Nível de Trigger (LEVEL)
  de modo a obter uma senóide parada na tela.
 \end_layout
 
@@ -12479,7 +13280,7 @@ Anotar a forma de onda na tela a seguir.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -12717,7 +13518,7 @@ Gerador de funções
 \end_layout
 
 \begin_layout Itemize
-1x Trafo 127V/9V
+1x Trafo 127V/9V (caixa)
 \end_layout
 
 \end_inset
@@ -12727,7 +13528,7 @@ Gerador de funções
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -12937,6 +13738,12 @@ V}}
 \end_inset
 
 .
+ Anotar um valor de tensão no qual ocorre a indefinição.
+ 
+\begin_inset Formula $\mathrm{V_{ind}=}$
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -13013,7 +13820,34 @@ Repetir a variação do potenciômetro,
 lentamente
 \bar default
 .
- Em relação ao outro circuito, o que ocorreu? Descreva abaixo:
+ Em relação ao outro circuito, o que ocorreu? Anotar o valor de 
+\begin_inset Formula $\mathrm{V^{+}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{V^{-}}$
+\end_inset
+
+.
+ Descreva abaixo:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\mathrm{V^{+}=}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathrm{V^{-}=}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -13029,6 +13863,7 @@ caixaresp[6]
 
 \end_layout
 
+\end_deeper
 \begin_layout Subsection
 Comportamento das Bordas
 \end_layout
@@ -25487,7 +26322,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -29995,7 +30830,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -32427,7 +33262,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -34013,7 +34848,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status open
+status collapsed
 
 \begin_layout Chapter
 Lei de Ohm
@@ -36190,7 +37025,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status open
+status collapsed
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -36768,7 +37603,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status open
+status collapsed
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -37719,7 +38554,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status open
+status collapsed
 
 \begin_layout Chapter
 Teorema da Superposição e
@@ -39640,7 +40475,7 @@ W: 2x (
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status open
+status collapsed
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -41604,7 +42439,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status open
+status collapsed
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -43347,7 +44182,7 @@ Diodos: 4x 1N4004
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status open
+status collapsed
 
 \begin_layout Chapter
 Osciloscópio:
@@ -46379,7 +47214,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -47153,7 +47988,7 @@ Analógicos -- Experimentos Extras
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-revisao
-status open
+status collapsed
 
 \begin_layout Chapter
 Instrumentos para Laboratório de Eletrônica
