@@ -195,7 +195,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -13528,7 +13528,7 @@ Gerador de funções
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -14401,7 +14401,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -14524,6 +14524,25 @@ reference "tab:Tabela-Verdade-FF-RS-NOR"
 \end_inset
 
  apresenta a Tabela Verdade de seu funcionamento.
+ Já na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Flip-flop-RS-NAND-NE"
+
+\end_inset
+
+, há um flip-flop RS com portas 
+\shape italic
+NAND 
+\shape default
+e na 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
+
+\end_inset
+
+ sua tavela verdade.
 \end_layout
 
 \begin_layout Standard
@@ -14895,6 +14914,305 @@ Erro lógico
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp09-Figura 2 - portas nand.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flip-flop RS com portas 
+\shape italic
+NAND
+\shape default
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Flip-flop-RS-NAND-NE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela Verdade do funcionamento do flip-flop RS com portas 
+\emph on
+N
+\emph default
+AND.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<column alignment="center" valignment="middle">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{Q}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\bar{Q_{a}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Note-se o estado identificado como 
 \emph on
 
@@ -15013,7 +15331,7 @@ Flip-flop RS com portas
 NAND
 \shape default
 .
- Desta forma apresentada, ele também é conhecido como flip-flop SR.
+ Da forma apresentada, ele também é conhecido como flip-flop SR.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -15133,7 +15451,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Flip-Flop RS Síncrono.
+Flip-Flop SR Síncrono.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Flip-Flop-RS-Síncrono."
@@ -15210,7 +15528,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $R$
+\begin_inset Formula $S$
 \end_inset
 
 
@@ -15222,7 +15540,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $S$
+\begin_inset Formula $R$
 \end_inset
 
 
@@ -16276,11 +16594,23 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Sempre que as entradas retornam à situação de repouso, as saídas a\SpecialChar \-
-pre\SpecialChar \-
-sen\SpecialChar \-
-tam
- o seguinte comportamento:
+O que é a 
+\begin_inset Quotes eld
+\end_inset
+
+situação de repouso
+\begin_inset Quotes erd
+\end_inset
+
+? Ela foi observada no experimento em quais 
+\begin_inset Quotes eld
+\end_inset
+
+sequências
+\begin_inset Quotes erd
+\end_inset
+
+ da tabela acima?
 \begin_inset Newline newline
 \end_inset
 
@@ -16320,8 +16650,8 @@ espv[5]
 \end_layout
 
 \begin_layout Enumerate
-Analisando-se esta tabela e comparando-a com a tabela de flip-flop RS apresentad
-a na teoria, é possível estabelecer as seguintes conclusões:
+O comportamento do flip-flop RS apresentado na teoria foi observado no experimen
+to, conforme registrado na tabela anterior?
 \begin_inset Newline newline
 \end_inset
 
@@ -16365,12 +16695,23 @@ Flip-Flop RS Síncrono
 \end_layout
 
 \begin_layout Enumerate
-Desenhar o esquema elétrico do flip-flop RS síncrono com portas 
+Desenhar o esquema elétrico do flip-flop SR síncrono com portas 
 \emph on
 NAND
 \emph default
-, utilizando-se apenas um CI 7400 e indicando a numeração dos pinos de entrada
- e saída.
+, utilizando-se 
+\shape italic
+\bar under
+apenas um
+\shape default
+\bar default
+ CI 7400 e 
+\shape italic
+\bar under
+indicando a numeração dos pinos de entrada e saída
+\shape default
+\bar default
+.
 \begin_inset VSpace medskip
 \end_inset
 
@@ -16491,7 +16832,7 @@ Sequência
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $R$
+\begin_inset Formula $S$
 \end_inset
 
 
@@ -16503,7 +16844,7 @@ Sequência
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $S$
+\begin_inset Formula $R$
 \end_inset
 
 
@@ -17398,8 +17739,8 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Analisando-se a tabela obtida e comparando-a com a tabela do flip-flop RS
- síncrono, chega-se à conclusão que:
+Analisando-se a tabela obtida e comparando-a com a tabela do flip-flop SR
+ síncrono, todas as combinações expostas na teoria foram ensaiadas?
 \begin_inset Newline newline
 \end_inset
 
