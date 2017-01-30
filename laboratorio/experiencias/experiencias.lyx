@@ -290,7 +290,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -14401,7 +14401,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -18638,12 +18638,12 @@ Montar o contador assíncrono de 0 a 7 do circuito a seguir:
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/cont-assinc-0-a-7.png
+	filename imagens/cont-assinc-0-a-7-editado.png
 	scale 75
 
 \end_inset
@@ -18912,7 +18912,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/cont-assinc-0-a-4.png
+	filename imagens/cont-assinc-0-a-4-editado.png
 	scale 75
 
 \end_inset
@@ -19211,7 +19211,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-sincrono
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -19686,7 +19686,7 @@ status collapsed
 \noindent
 \align center
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -19771,7 +19771,7 @@ itshape,
 
 \begin_layout Plain Layout
 
-	${}^{ck}$	 & [timing/c/rising arrows] 24{C} 
+	${}^{ck}$	 & [timing/c/rising arrows] 19{C} 
 \backslash
 
 \backslash
@@ -19780,7 +19780,7 @@ itshape,
 
 \begin_layout Plain Layout
 
-	${}^{E}$	  & 2.5L HH LL HH HH 13.5L 
+	${}^{E}$	  & 2.5L HH LL HH HH 8.5L 
 \backslash
 
 \backslash
@@ -19789,7 +19789,7 @@ itshape,
 
 \begin_layout Plain Layout
 
-	${}^{Q_2}$	& 3L   HH LL HH HH 13L 
+	${}^{Q_2}$	& 3L   HH LL HH HH 8L 
 \backslash
 
 \backslash
@@ -19798,7 +19798,7 @@ itshape,
 
 \begin_layout Plain Layout
 
-	${}^{Q_1}$	& 5L   HH LL HH HH 11L 
+	${}^{Q_1}$	& 5L   HH LL HH HH 6L 
 \backslash
 
 \backslash
@@ -19807,7 +19807,7 @@ itshape,
 
 \begin_layout Plain Layout
 
-	${}^{Q_0}$	& 7L   HH LL HH HH 9L 
+	${}^{Q_0}$	& 7L   HH LL HH HH 4L 
 \backslash
 
 \backslash
@@ -20879,7 +20879,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/cont-sinc-reg-desl-experiencia.png
+	filename imagens/cont-sinc-reg-desl-experiencia-editado.png
 	width 100text%
 
 \end_inset
@@ -20970,8 +20970,16 @@ Desligar e ligar o circuito e verificar o estado inicial novamente.
 \end_layout
 
 \begin_layout Enumerate
-Remover o circuito de POR, desligar e ligar várias vezes o circuito e verificar
- os estados inicias.
+Remover o circuito de POR conectando todos os S e R em 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Desligar e ligar várias vezes o circuito e verificar os estados inicias.
  Descrever o observado e justificar.
 \begin_inset ERT
 status open
@@ -21069,6 +21077,14 @@ Espátula
 
 \begin_layout Itemize
 CIs: 1x 4093; 2x 7474
+\end_layout
+
+\begin_layout Itemize
+Capacitor: 4,7µF
+\end_layout
+
+\begin_layout Itemize
+Resistor: 10kΩ
 \end_layout
 
 \begin_layout Standard
