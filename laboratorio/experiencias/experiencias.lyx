@@ -155,17 +155,17 @@ customHeadersFooters
 \justification true
 \use_refstyle 1
 \branch cm-corpo
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-logica-com-rele
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -180,32 +180,32 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -215,12 +215,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-multiplex
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -280,12 +280,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iv
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -305,7 +305,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-projeto
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -334,6 +334,29 @@ customHeadersFooters
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+=== Macros ========================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\six}[2]{\SI{#1}{#2}}
+\end_inset
+
+
+\end_layout
 
 \begin_layout Standard
 \begin_inset ERT
@@ -403,6 +426,21 @@ status open
 \begin_layout Plain Layout
 
 }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+=== Fim das Macros ========================
 \end_layout
 
 \end_inset
@@ -508,7 +546,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch dg-logica-com-rele
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -533,7 +571,7 @@ Lógica com Relés
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -3067,7 +3105,7 @@ Painel de relés.
 
 \begin_layout Standard
 \begin_inset Branch dg-tecnicas-soldagem
-status collapsed
+status open
 
 \begin_layout Chapter
 \begin_inset Quotes eld
@@ -3084,7 +3122,7 @@ Técnicas de Soldagem
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Tópicos envolvidos
@@ -3280,11 +3318,7 @@ Placas Padrão
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3297,6 +3331,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename imagens/Placa Padrão 2.jpg
+	lyxscale 50
 	scale 20
 
 \end_inset
@@ -3305,7 +3340,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Placas Padrão
+Placas padrão.
 \end_layout
 
 \end_inset
@@ -3319,7 +3354,7 @@ Placas Padrão
 \end_layout
 
 \begin_layout Subsubsection*
-PCI
+Placas de Circuito Impresso
 \end_layout
 
 \begin_layout Standard
@@ -3327,12 +3362,14 @@ PCI
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/PCI.png
+	lyxscale 50
+	scale 120
 
 \end_inset
 
@@ -3340,7 +3377,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-PCI
+Placas de circuito impresso (PCI).
 \end_layout
 
 \end_inset
@@ -3354,7 +3391,7 @@ PCI
 \end_layout
 
 \begin_layout Subsubsection*
-Estanho
+Ferro de Solda
 \end_layout
 
 \begin_layout Standard
@@ -3362,16 +3399,13 @@ Estanho
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/Ferro de Solda.png
+	lyxscale 50
 	scale 13
 
 \end_inset
@@ -3380,7 +3414,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ferro de Solda
+Ferro de solda e suporte com esponja.
 \end_layout
 
 \end_inset
@@ -3394,7 +3428,7 @@ Ferro de Solda
 \end_layout
 
 \begin_layout Subsubsection*
-Estanho
+Elemento de Solda
 \end_layout
 
 \begin_layout Standard
@@ -3402,12 +3436,13 @@ Estanho
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/Estanho.jpg
+	lyxscale 50
 	scale 13
 
 \end_inset
@@ -3419,7 +3454,15 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Estanho
+Elemento de solda (
+\begin_inset Quotes eld
+\end_inset
+
+estanho
+\begin_inset Quotes erd
+\end_inset
+
+).
 \end_layout
 
 \end_inset
@@ -3431,6 +3474,13 @@ Estanho
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -3620,7 +3670,7 @@ Sugador
 
 \begin_layout Standard
 \begin_inset Branch dg-portas-logicas
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -3637,7 +3687,7 @@ Portas Lógicas
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -4917,7 +4967,7 @@ proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-multiplex
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -9443,7 +9493,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-alarme-invasao
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -9468,7 +9518,7 @@ Alarme de Invasão
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Contexto
@@ -10480,7 +10530,7 @@ status open
 \begin_inset Graphics
 	filename imagens/exp05-Figura 6.png
 	lyxscale 40
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -10770,7 +10820,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-decodificador
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -10802,7 +10852,7 @@ name "chap:Decodificador-BCD-Sete-Seg"
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 
@@ -11124,20 +11174,35 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="10">
+<lyxtabular version="3" rows="5" columns="9">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
+<column alignment="center" valignment="top" width="0.5cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -11150,7 +11215,7 @@ A
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11161,16 +11226,7 @@ B
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11179,7 +11235,7 @@ a
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11188,7 +11244,7 @@ b
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11197,7 +11253,7 @@ c
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11206,7 +11262,7 @@ d
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11215,7 +11271,7 @@ e
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11224,7 +11280,7 @@ f
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11244,20 +11300,11 @@ g
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -11336,20 +11383,11 @@ g
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -11428,7 +11466,7 @@ g
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -11491,15 +11529,6 @@ g
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -11520,20 +11549,11 @@ g
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -11610,6 +11630,16 @@ g
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -11908,7 +11938,7 @@ protoboard
 
 \begin_layout Standard
 \begin_inset Branch dg-osciloscopio-i
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -11925,7 +11955,7 @@ Introdução ao Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 
@@ -13528,7 +13558,7 @@ Gerador de funções
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -13545,7 +13575,7 @@ Portas Lógicas Schmitt Trigger
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -14375,7 +14405,7 @@ ohm}
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset External
@@ -14401,7 +14431,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -14418,7 +14448,7 @@ Flip-Flops RS
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -14924,6 +14954,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/exp09-Figura 2 - portas nand.png
+	scale 80
 
 \end_inset
 
@@ -17867,7 +17898,7 @@ CI: 1x 7400
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-assincrono
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -17888,7 +17919,7 @@ Contadores Assíncronos e
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -19173,7 +19204,7 @@ CIs: 1x 7400; 2x 7474
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset External
@@ -19232,7 +19263,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -21084,12 +21115,16 @@ Capacitor: 4,7µF
 \end_layout
 
 \begin_layout Itemize
-Resistor: 10kΩ
+Resistor: 
+\begin_inset Formula $\six{10}{\kilo\ohm}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset External
@@ -21141,7 +21176,7 @@ Motor de Passo
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -23217,7 +23252,7 @@ CIs: 1x 7406; 1x 7486; 1x 74191
 \begin_layout Standard
 \align center
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -23266,7 +23301,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -23349,7 +23384,11 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-projeto
-status collapsed
+status open
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -23370,11 +23409,6 @@ tituloprojeto
 \begin_layout Chapter
 
 \emph on
-Projeto
-\emph default
- 
-\emph on
-
 \begin_inset Quotes eld
 \end_inset
 
@@ -23383,47 +23417,6 @@ Dado Digital
 \end_inset
 
 
-\begin_inset Branch preliminar
-status collapsed
-
-\begin_layout Standard
-
-\emph on
-\begin_inset Newline newline
-\end_inset
-
-
-\size larger
---- Roteiro Preliminar ---
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Author
-Profª Alessandra Dutra Coelho
-\begin_inset Newline newline
-\end_inset
-
-Prof° Ângelo Sebastião Zanini
-\begin_inset Newline newline
-\end_inset
-
-Profº José Carlos de Souza Júnior
-\begin_inset Newline newline
-\end_inset
-
-Profº Marcelo Porto Trevizan
-\begin_inset Newline newline
-\end_inset
-
-Profº Wânderson de Oliveira Assis
-\end_layout
-
-\begin_layout Date
-Primeiro Semestre de 2016
 \end_layout
 
 \begin_layout Section
@@ -23446,10 +23439,6 @@ dado digital
 com dois dígitos de 0 a 9.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Branch prazo
-status collapsed
-
 \begin_layout Section
 Prazos para Entrega
 \end_layout
@@ -23460,7 +23449,7 @@ O projeto deverá ser apresentado na própria aula de laboratório, conforme
 \end_layout
 
 \begin_layout Subsection
-Primeira Pré-apresentação
+Apresentação da Lista de Materiais e dos Componentes
 \end_layout
 
 \begin_layout Standard
@@ -23489,7 +23478,9 @@ Diurno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na segunda-feira: 28.03.2016
+Laboratórios na segunda-feira: 
+\series bold
+10.04.2017
 \end_layout
 
 \end_deeper
@@ -23501,7 +23492,9 @@ Noturno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na quarta-feira: 30.03.2016
+Laboratórios na quarta-feira: 
+\series bold
+12.04.2017
 \end_layout
 
 \end_deeper
@@ -23520,7 +23513,11 @@ status open
 \end_layout
 
 \begin_layout Subsection
-Segunda Pré-apresentação
+Pré-apresentação de Montagem: Decodificador, 
+\emph on
+Display
+\emph default
+, Botão
 \end_layout
 
 \begin_layout Standard
@@ -23549,7 +23546,9 @@ Diurno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na segunda-feira: 02.05.2016
+Laboratórios na segunda-feira: 
+\series bold
+08.05.2017
 \end_layout
 
 \end_deeper
@@ -23561,7 +23560,9 @@ Noturno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na quarta-feira: 04.05.2016
+Laboratórios na quarta-feira: 
+\series bold
+03.05.2017
 \end_layout
 
 \end_deeper
@@ -23609,7 +23610,9 @@ Diurno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na segunda-feira: 06.06.2016
+Laboratórios na segunda-feira: 
+\series bold
+05.06.2017
 \end_layout
 
 \end_deeper
@@ -23621,7 +23624,9 @@ Noturno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na quarta-feira: 08.06.2016
+Laboratórios na quarta-feira: 
+\series bold
+07.06.2017
 \end_layout
 
 \end_deeper
@@ -23669,7 +23674,9 @@ Diurno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na segunda-feira: 27.06.2016
+Laboratórios na segunda-feira: 
+\series bold
+26.06.2017
 \end_layout
 
 \end_deeper
@@ -23681,7 +23688,9 @@ Noturno:
 
 \begin_deeper
 \begin_layout Itemize
-Laboratórios na quarta-feira: 29.06.2016
+Laboratórios na quarta-feira: 
+\series bold
+28.06.2017
 \end_layout
 
 \end_deeper
@@ -23699,24 +23708,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\noindent
-
-\series bold
-\emph on
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
 \begin_layout Quote
 \align center
 
@@ -23731,11 +23722,14 @@ Não serão aceitos projetos entregues fora do prazo.
 \series bold
 \emph on
 A pontuação será atribuída apenas aos presentes na data de entrega.
-\end_layout
+\begin_inset Foot
+status collapsed
 
-\end_inset
+\begin_layout Plain Layout
 
-
+\emph on
+Salvos os casos para os quais se apresentar justificativa plausível acompanhada
+ de atestado.
 \end_layout
 
 \end_inset
@@ -23783,8 +23777,8 @@ displays
 \emph default
 .
  Por meio de um circuito comparador de magnitude, poderá ser detectada a
- situação de igualdade dos dígitos e, assim, acionar um micro-relé de 5V,
- permitindo ligar uma lâmpada de 12V.
+ situação de igualdade dos dígitos e, assim, acionar um relé de 5V, permitindo
+ ligar uma lâmpada de 12V.
 \end_layout
 
 \begin_layout Standard
@@ -23864,10 +23858,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../projetos/projeto-dado-digital-esboco-circuito.png
@@ -23905,10 +23895,6 @@ name "fig:Esboço-do-leiaute"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -24070,7 +24056,7 @@ clock
 \end_layout
 
 \begin_layout Itemize
-No horário de funcionamento do Amoxarifado de Eletrônica, poderá ser emprestado
+No horário de funcionamento do Almoxarifado de Eletrônica, poderá ser emprestado
  o material necessário para solda, assim como disponibilizada uma sala para
  o trabalho.
 \end_layout
@@ -24109,7 +24095,7 @@ reference "fig:Diagrama-em-Blocos-dado-digital"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -24149,13 +24135,17 @@ name "fig:Diagrama-em-Blocos-dado-digital"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Esquema Elétrico
+\end_layout
+
+\begin_layout Standard
+O Esquema Elétrico do projeto proposto encontra-se no anexo a este roteiro.
 \end_layout
 
 \begin_layout Section
@@ -24195,7 +24185,7 @@ Dado Digital
  
 \emph on
 (Note-se que é apenas uma referência: as datas a serem obrigatoriamente
- cumpridas são as das linhas em azul.)
+ cumpridas são as das linhas em destaque azul.)
 \emph default
 
 \begin_inset CommandInset label
@@ -24215,10 +24205,10 @@ name "tab:Cronograma-de-referencia-dado-digital"
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="18" columns="2">
+<lyxtabular version="3" rows="17" columns="2">
 <features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="7cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
@@ -24252,7 +24242,29 @@ Atividade/Bloco
 \begin_layout Plain Layout
 
 \family typewriter
-07/03 a 13/03
+20/03 a 26/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interpretar o projeto, seu Diagrama em Blocos e seu Esquema Elétrico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+27/03 a 02/04
 \end_layout
 
 \end_inset
@@ -24274,54 +24286,10 @@ Comprar componentes
 \begin_layout Plain Layout
 
 \family typewriter
-14/03 a 20/03
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Soldar conectores
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-21/03 a 27/03
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Projetar, testar e soldar os comparadores
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
 \series bold
 \shape italic
 \color blue
-28/03 e 30/03
+10/04 e 12/04
 \end_layout
 
 \end_inset
@@ -24334,7 +24302,7 @@ Projetar, testar e soldar os comparadores
 \series bold
 \shape italic
 \color blue
-Primeira pré-apresentação
+Apresentação da Lista de Materiais e dos Componentes
 \end_layout
 
 \end_inset
@@ -24347,7 +24315,7 @@ Primeira pré-apresentação
 \begin_layout Plain Layout
 
 \family typewriter
-28/03 a 08/04
+10/04 a 16/04
 \end_layout
 
 \end_inset
@@ -24356,29 +24324,7 @@ Primeira pré-apresentação
 \begin_inset Text
 
 \begin_layout Plain Layout
-Soldar decodificadores
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-18/04 a 24/04
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Soldar os 
+Soldar decodificadores e 
 \emph on
 displays
 \end_layout
@@ -24393,7 +24339,7 @@ displays
 \begin_layout Plain Layout
 
 \family typewriter
-25/04 a 01/05
+17/04 a 23/04
 \end_layout
 
 \end_inset
@@ -24402,7 +24348,7 @@ displays
 \begin_inset Text
 
 \begin_layout Plain Layout
-Testar decodificação com 
+Testar decodificadores e 
 \emph on
 displays
 \end_layout
@@ -24417,10 +24363,7 @@ displays
 \begin_layout Plain Layout
 
 \family typewriter
-\series bold
-\shape italic
-\color blue
-02/05 e 04/05
+24/04 a 30/04
 \end_layout
 
 \end_inset
@@ -24429,11 +24372,9 @@ displays
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-\shape italic
-\color blue
-Segunda pré-apresentação
+Soldar e testar botão e 
+\emph on
+deboucing
 \end_layout
 
 \end_inset
@@ -24446,7 +24387,10 @@ Segunda pré-apresentação
 \begin_layout Plain Layout
 
 \family typewriter
-02/05 a 08/05
+\series bold
+\shape italic
+\color blue
+03/05 e 08/05
 \end_layout
 
 \end_inset
@@ -24455,7 +24399,11 @@ Segunda pré-apresentação
 \begin_inset Text
 
 \begin_layout Plain Layout
-Projetar, testar e soldar botão e entornos
+
+\series bold
+\emph on
+\color blue
+Pré-apresentação de Montagem: Decodificador, Display, Botão
 \end_layout
 
 \end_inset
@@ -24468,7 +24416,7 @@ Projetar, testar e soldar botão e entornos
 \begin_layout Plain Layout
 
 \family typewriter
-09/05 a 15/05
+01/05 a 07/05
 \end_layout
 
 \end_inset
@@ -24477,7 +24425,29 @@ Projetar, testar e soldar botão e entornos
 \begin_inset Text
 
 \begin_layout Plain Layout
-Soldar e testar 
+Soldar e testar os contadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+08/05 a 14/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e testar os comparadores e o 
 \emph on
 driver 
 \emph default
@@ -24494,7 +24464,7 @@ da lâmpada
 \begin_layout Plain Layout
 
 \family typewriter
-16/05 a 22/05
+15/05 a 21/05
 \end_layout
 
 \end_inset
@@ -24503,7 +24473,7 @@ da lâmpada
 \begin_inset Text
 
 \begin_layout Plain Layout
-Soldar contadores, interligando-o aos demais blocos
+Soldar e testar o circuito de POR
 \end_layout
 
 \end_inset
@@ -24516,16 +24486,16 @@ Soldar contadores, interligando-o aos demais blocos
 \begin_layout Plain Layout
 
 \family typewriter
-23/05 a 29/05
+22/05 a 28/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Soldar e interligar o circuito de POR
+Interligar os blocos
 \end_layout
 
 \end_inset
@@ -24538,12 +24508,12 @@ Soldar e interligar o circuito de POR
 \begin_layout Plain Layout
 
 \family typewriter
-30/05 a 05/06
+29/05 a 04/06
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -24563,7 +24533,7 @@ Finalizações e testes do circuito completo
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -24583,12 +24553,12 @@ Implementação do bônus
 \series bold
 \shape italic
 \color blue
-06/06 e 08/06
+05/06 e 07/06
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -24610,12 +24580,12 @@ Apresentação final
 
 \family typewriter
 \emph on
-06/06 a 26/06
+05/06 a 25/06
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -24637,12 +24607,12 @@ Correções para a repescagem
 \series bold
 \shape italic
 \color red
-27/06 e 29/06
+26/06 e 28/06
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -24668,6 +24638,13 @@ Repescagem
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Critérios de Avaliação
 \end_layout
@@ -24686,13 +24663,13 @@ Os critérios de avaliação por item são:
 \end_layout
 
 \begin_layout Enumerate
-Primeira pré-apresentação: 
+Apresentação da Lista de Materiais e dos componentes: 
 \series bold
 10,0 (peso 1,0)
 \end_layout
 
 \begin_layout Enumerate
-Segunda pré-apresentação: 
+Pré-apresentação de montagem: 
 \series bold
 10,0 (peso 1,0)
 \end_layout
@@ -24705,36 +24682,41 @@ Apresentação final:
 
 \begin_deeper
 \begin_layout Enumerate
-Esquema elétrico: 
+Esquema Elétrico e Lista de Materiais: 
 \series bold
-2,0
+1,0
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Apresentação do esquema elétrico 
-\bar under
-completo
-\bar default
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Pode ser desenhado à mão ou em CAD.
-\end_layout
-
-\end_inset
-
- no dia da apresentação do projeto: 
+Apresentação do Esquema Elétrico completo no dia da apresentação do projeto:
+ 
 \series bold
-1,0
+0,5
 \end_layout
 
 \begin_layout Enumerate
-Identificação de todas as pinagens no esquema elétrico: 
+Apresentação da Lista de Materiais no dia da apresentação do projeto: 
 \series bold
-1,0
+0,5
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Nota:
+\series default
+ Se houver qualquer alteração no circuito original, inclusive complementação
+ (por exemplo, para implementar o 
+\begin_inset Quotes eld
+\end_inset
+
+bônus
+\begin_inset Quotes erd
+\end_inset
+
+), todo o esquema deverá ser redesenhado.
 \end_layout
 
 \end_deeper
@@ -24788,7 +24770,7 @@ Comparação:
 \end_layout
 
 \begin_layout Enumerate
-Acionamento do micro-relé e da lâmpada: 
+Acionamento do relé e da lâmpada: 
 \series bold
 1,0
 \end_layout
@@ -24833,7 +24815,7 @@ Qualidade das soldas:
 \begin_layout Enumerate
 Bônus: 
 \series bold
-+1,0
++2,0
 \end_layout
 
 \begin_deeper
@@ -24847,14 +24829,42 @@ clock
 +1,0
 \end_layout
 
+\begin_layout Enumerate
+Redesenho de todo o esquema elétrico para inclusão do gerador de 
+\emph on
+clock
+\emph default
+: 
+\series bold
++1,0
+\end_layout
+
 \end_deeper
 \end_deeper
-\begin_layout Standard
+\begin_layout Quote
+\align center
 A pontuação máxima é de 
 \series bold
 10,0
 \series default
  pontos.
+\end_layout
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+Note-se que apenas será possível obter 10,0 pontos se realizado algum item
+ do tópico 
+\begin_inset Quotes eld
+\end_inset
+
+Bônus
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Quotation
@@ -24871,6 +24881,23 @@ repescagem
 , na qual a nota do projeto será 80% da pontuação obtida na nova avaliação.
 \end_layout
 
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/DD_CMOS.pdf
+	lyxscale 50
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -24878,7 +24905,7 @@ repescagem
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 ===== EXTRAS DE DIGITAIS =====
@@ -24912,7 +24939,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -26654,7 +26681,7 @@ ETE103 - Fundamentos de Circuitos Analógicos
 
 \begin_layout Right Footer
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -26696,7 +26723,7 @@ Resistores e Associação de Resistores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -31204,7 +31231,7 @@ Multímetros
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -33629,7 +33656,7 @@ Medidas Elétricas e Resistência Variável
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -35227,7 +35254,7 @@ Bipolos Lineares e Não Lineares
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -37390,7 +37417,7 @@ Leis de Kirchhoff
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -37968,7 +37995,7 @@ Ponte de Wheatstone
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -38923,7 +38950,7 @@ Teoremas de Thévenin e de Norton
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -40840,7 +40867,7 @@ Geradores Elétricos e Máxima Transferência de Potência
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -42804,7 +42831,7 @@ Circuitos RC e Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos 
@@ -43816,7 +43843,7 @@ Circuitos Retificadores e Grampeadores e Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -44551,7 +44578,7 @@ Medidas de Amplitude e Defasagem
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Standard
 Evidentemente que este sofisticado instrumento, não foi feito apenas com
@@ -47604,7 +47631,7 @@ Tema Livre
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivo
@@ -48353,7 +48380,7 @@ Instrumentos para Laboratório de Eletrônica
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos.

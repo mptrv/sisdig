@@ -38,11 +38,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Dado Digital - CMOS"
-Date "junho/2016"
+Date "Primeiro Semestre/2017"
 Rev "0.0"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
-Comment2 "GABARITO"
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
