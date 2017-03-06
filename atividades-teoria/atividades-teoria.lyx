@@ -1,0 +1,596 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage{indentfirst}
+
+% Para personalização das "seções" do documento.
+\usepackage{titlesec}
+
+%Formas de onda digitais.
+\usepackage{tikz-timing}
+\usetikztiminglibrary{clockarrows}
+\usetikztiminglibrary{overlays}
+
+% Unidades do SI.
+\usepackage{siunitx}
+
+% Informações sobre o leiaute da página.
+%   Modo de uso elementar: dentro de flutuante de figura, chamar
+%      \currentpage
+%      \pagedesign
+%\usepackage{layouts}
+
+% Fração do total da altura do texto para alocação de flutuantes na parte inferior da página.
+\renewcommand{\bottomfraction}{0.5}
+
+% Enumeração por letras dos alfabeto.
+\newcommand{\alfaenum}{\renewcommand{\theenumi}{\alph{enumi}}}
+
+% Espaço vertical geral (\espv) e para tabelas (\strutp) - em tabelas, \baselineskip = 0.
+% Nota: há o comando pré-definido \strut.
+%   Ref.: http://en.wikibooks.org/wiki/LaTeX/Rules_and_Struts
+\newlength{\tabbaselineskip}
+\setlength{\tabbaselineskip}{\baselineskip}
+\newcommand{\espv}[1][4]{\rule[-.3\baselineskip]{0pt}{#1\baselineskip}}
+%\newcommand{\espv}[1][4]{\rule[#1ex]{0pt}{0pt}} % Obsoleto.
+\newcommand{\strutp}[1][4]{\rule[-.3\tabbaselineskip]{0pt}{#1\tabbaselineskip}}
+%\newcommand{\strutp}[1]{\rule[-0.3\baselineskip]{0pt}{#1}} % Obsoleto.
+
+% Forma alternativa para alterar o espaçamento entre linhas de tabela.
+\newcommand{\esptab}[1][1.5]{\renewcommand\arraystretch{#1}}
+
+% Personalização dos capítulos.
+%   Ref.: http://tex.stackexchange.com/questions/94729/how-to-customize-chapter-heading-style
+
+% Nome de capítulo padrão, para experiências.
+\titleformat{\chapter}[display]
+  {\normalsize \huge}%
+  {\centering\large\textsc{Atividade}\hspace{1ex}\thechapter}%
+  {10 pt}%
+  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]
+
+% Espaços à esquerda, acima e abaixo do capítulo.
+\titlespacing*{\chapter}{0pt}{5pt}{40pt}
+
+% Nome de capítulo para projetos.
+\newcommand{\tituloprojeto}{%
+\titleformat{\chapter}[display]
+  {\normalsize \huge}%
+  {\centering\large\textsc{Projeto Semestral}}%
+  {10 pt}%
+  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]%
+}
+
+% Personalização das numeração dos elementos.
+%   Numeração das seções.
+\renewcommand{\thesection}{\arabic{section}}
+%   Numeração das figuras.
+\renewcommand{\thefigure}{\arabic{figure}}
+%  Numeração das tabelas.
+\renewcommand{\thetable}{\arabic{table}}
+
+% Personalização para unidades SI (por siunitx}.
+\sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
+
+% Correção do altura do cabeçalho.
+%   Necessário pois alguns pacotes, como 'pdfpages' ou o que oferece os comandos "oval",
+%   parece que reconfiguram a altura do cabeçalho.
+\setlength{\headheight}{34pt}
+
+% Caixa de respostas.
+%  (A linha em branco é importante para separar a caixa do texto que a antecede.)
+\newcommand{\caixaresp}[1][10]{%   
+   \noindent %
+   \begin{tabular}{|>{\centering}p{1\linewidth}|}
+      \hline 
+      \espv[#1]\tabularnewline
+      \hline 
+   \end{tabular}
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing other 1.15
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch cm-textos-extras
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch dg
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch an
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\align left
+===== DIGITAIS ===================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-textos-extras
+status collapsed
+
+\begin_layout Title
+Atividades para Fixação de
+\begin_inset Newline newline
+\end_inset
+
+ Fundamentos de Circuitos Digitais e Analógicos
+\end_layout
+
+\begin_layout Date
+2016
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-textos-extras
+status collapsed
+
+\begin_layout Part
+Digitais
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE102 - Fundamentos de Circuitos Digitais
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg
+status open
+
+\begin_layout Chapter
+Fundamentos Intuitivos das Expressões Lógicas
+\end_layout
+
+\begin_layout Standard
+Ver:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://drive.google.com/drive/folders/0B7g4hnxLC9Fcd1BXdGVVcWswVkk
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Conversões de Base
+\end_layout
+
+\begin_layout Standard
+Realizar as conversões solicitadas.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="50col%">
+<column alignment="center" valignment="top" width="50col%">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a)
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $(100)_{10}=(?)_{2}=(?)_{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[15]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b)
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $(\mathrm{FCD})_{16}=(?)_{2}=(?)_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c)
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $(173)_{8}=(?)_{10}=(?)_{16}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[15]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d)
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $(101110)_{2}=(?)_{16}=(?)_{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="50col%">
+<column alignment="center" valignment="top" width="50col%">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e)
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $(17,14)_{10}=(?)_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[40]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f)
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $(1001,0111)_{2}=(?)_{10}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\align left
+===== ANALÓGICOS ===================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-textos-extras
+status collapsed
+
+\begin_layout Part
+Analógicos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Left Header
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename logo-imt.png
+	lyxscale 10
+	height 4ex
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE103 - Fundamentos de Circuitos Analógicos
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch an
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
