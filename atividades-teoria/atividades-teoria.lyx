@@ -1100,6 +1100,131 @@ d)
 
 \end_layout
 
+\begin_layout Chapter
+Tabela Verdade, Funções e Circuitos Lógicos
+\end_layout
+
+\begin_layout Standard
+Escrever a função lógica dos circuitos abaixo:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/circuito-combinatorio-1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+b)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/circuito-combinatorio-2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Desenhar o circuito lógico das expressões abaixo, utilizando a 
+\series bold
+menor quantidade possível
+\series default
+ de portas lógicas de 
+\series bold
+duas entradas
+\series default
+:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $Y=\overline{\overline{AB}+C\oplus D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+b) 
+\begin_inset Formula $\begin{cases}
+S_{1} & =\overline{\overline{A\bar{B}C}\,\odot\,D\cdot(\overline{A+C+E})+BE}\\
+S_{0} & =\overline{A\bar{B}C}\,\cdot\,A+\overline{C+\bar{D}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+Traçar as Tabelas Verdades para os itens a) dos exercícios anteriores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Extrair a função lógica a partir das Tabelas Verdades do exercício anterior:
+ escolher uma delas para escrever a 
+\emph on
+somatória de mintermos
+\emph default
+ e a outra para a 
+\emph on
+produtória de maxtermos
+\emph default
+.
+\end_layout
+
 \end_inset
 
 
