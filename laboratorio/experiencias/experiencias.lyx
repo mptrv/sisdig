@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage{indentfirst}
@@ -106,16 +108,16 @@ customHeadersFooters
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -155,17 +157,17 @@ customHeadersFooters
 \justification true
 \use_refstyle 1
 \branch cm-corpo
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-logica-com-rele
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -180,32 +182,32 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -215,12 +217,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-multiplex
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -290,7 +292,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -305,7 +307,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -387,7 +389,7 @@ caixaresp}[1][10]{%
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -521,7 +523,7 @@ ETE102 - Fundamentos de Circuitos Digitais
 
 \begin_layout Right Footer
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -546,7 +548,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch dg-logica-com-rele
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -571,7 +573,7 @@ Lógica com Relés
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -641,7 +643,7 @@ reference "fig:Funcionamento-do-relé"
 
  ilustra um relé de um contato duplo (
 \emph on
-NA -- Normalmente Aberto e NF -- Normalmente Fechado
+NA – Normalmente Aberto e NF – Normalmente Fechado
 \emph default
 ) nos estados não acionado 
 \begin_inset CommandInset ref
@@ -1265,10 +1267,10 @@ reference "fig:Conjunto-perfuracao-repouso"
 
 \end_inset
 
-, cor\SpecialChar \-
-res\SpecialChar \-
-pon\SpecialChar \-
-den\SpecialChar \-
+, cor\SpecialChar softhyphen
+res\SpecialChar softhyphen
+pon\SpecialChar softhyphen
+den\SpecialChar softhyphen
 do à situação de repouso.
 \end_layout
 
@@ -1733,6 +1735,10 @@ reference "fig:Circuito-de-controle."
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3105,7 +3111,7 @@ Painel de relés.
 
 \begin_layout Standard
 \begin_inset Branch dg-tecnicas-soldagem
-status open
+status collapsed
 
 \begin_layout Chapter
 \begin_inset Quotes eld
@@ -3122,7 +3128,7 @@ Técnicas de Soldagem
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Tópicos envolvidos
@@ -3130,6 +3136,10 @@ Tópicos envolvidos
 
 \begin_layout Itemize
 Placas para circuitos eletrônicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3149,6 +3159,10 @@ laser
 \end_deeper
 \begin_layout Itemize
 O elemento de solda (estanho)
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3163,6 +3177,10 @@ fluxo.
 \end_deeper
 \begin_layout Itemize
 O ferro de solda:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3185,6 +3203,10 @@ potências de ferro.
 \end_deeper
 \begin_layout Itemize
 O processo de soldagem:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3207,6 +3229,10 @@ o que é solda fria.
 \end_deeper
 \begin_layout Itemize
 Cuidados durante a soldagem:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3225,6 +3251,10 @@ quanto ao corte do excesso dos terminais.
 \end_deeper
 \begin_layout Itemize
 Elementos de ligação:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3259,6 +3289,10 @@ por trilhas (em placas de circuito impresso).
 \end_deeper
 \begin_layout Itemize
 Preparação dos fios:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3285,6 +3319,10 @@ identificação e como evitar o cisalhamento.
 \end_deeper
 \begin_layout Itemize
 O sugador:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3491,10 +3529,10 @@ Parte Experimental
 \end_layout
 
 \begin_layout Standard
-Para a parte experimental, é aconselhado que os itens abaixo sejam re\SpecialChar \-
-a\SpecialChar \-
-li\SpecialChar \-
-za\SpecialChar \-
+Para a parte experimental, é aconselhado que os itens abaixo sejam re\SpecialChar softhyphen
+a\SpecialChar softhyphen
+li\SpecialChar softhyphen
+za\SpecialChar softhyphen
 dos
  por todos os integrantes da equipe.
 \end_layout
@@ -3670,7 +3708,7 @@ Sugador
 
 \begin_layout Standard
 \begin_inset Branch dg-portas-logicas
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -3687,7 +3725,7 @@ Portas Lógicas
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -3722,9 +3760,9 @@ reference "tab:Portas-lógicas-com"
 
 \end_inset
 
- ilustra as portas lógicas utilizadas no experimento e suas res\SpecialChar \-
-pec\SpecialChar \-
-ti\SpecialChar \-
+ ilustra as portas lógicas utilizadas no experimento e suas res\SpecialChar softhyphen
+pec\SpecialChar softhyphen
+ti\SpecialChar softhyphen
 vas
  funções digitais.
 \end_layout
@@ -3905,9 +3943,9 @@ Alimente o circuito integrado:
 \series bold
 0V
 \series default
- (GND -- 
+ (GND – 
 \emph on
-ground --
+ground –
 \emph default
  terra) no terminal 
 \series bold
@@ -4586,7 +4624,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -4853,7 +4891,7 @@ O que se conclui, pela tabela acima, em relação à função NOR, ao se deixar
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100col%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -4967,7 +5005,7 @@ proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-multiplex
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -4984,7 +5022,7 @@ Multiplexadores e Demultiplexadores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -5058,10 +5096,10 @@ reference "fig:Comparação-chave-analógica-mux"
 \end_inset
 
  apresenta uma analogia entre uma chave de seleção analógica e um circuito
- mul\SpecialChar \-
-ti\SpecialChar \-
-ple\SpecialChar \-
-xa\SpecialChar \-
+ mul\SpecialChar softhyphen
+ti\SpecialChar softhyphen
+ple\SpecialChar softhyphen
+xa\SpecialChar softhyphen
 dor digital, ambos com 4 entradas de informação (4 canais de
  entrada).
 \end_layout
@@ -5110,7 +5148,7 @@ name "fig:Comparação-chave-analógica-mux"
 
 \begin_layout Standard
 Como é possível perceber, a quantidade de saídas do multiplexador é fixa
- -- há apenas um canal de saída.
+ – há apenas um canal de saída.
  Já a quantidade de variáveis 
 \begin_inset Formula $m$
 \end_inset
@@ -5294,6 +5332,10 @@ reference "tab:Tabela-Verdade-detalhada-mux-2-canais"
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5320,7 +5362,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -5435,7 +5477,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -5931,7 +5973,7 @@ direto: utilizando-se multiplexador com quantidade de variáveis de seleção
 \begin_inset Formula $N_{E}$
 \end_inset
 
-) -- ou seja, 
+) – ou seja, 
 \begin_inset Formula $N_{S}=N_{E}$
 \end_inset
 
@@ -5947,9 +5989,9 @@ Método
 \begin_inset space ~
 \end_inset
 
-alternativo: utilizando-se multiplexador com quantidade de va\SpecialChar \-
-ri\SpecialChar \-
-á\SpecialChar \-
+alternativo: utilizando-se multiplexador com quantidade de va\SpecialChar softhyphen
+ri\SpecialChar softhyphen
+á\SpecialChar softhyphen
 veis de
  seleção (
 \begin_inset Formula $N_{S}$
@@ -5959,7 +6001,7 @@ veis de
 \begin_inset Formula $N_{E}$
 \end_inset
 
-) menos 1 -- ou seja, 
+) menos 1 – ou seja, 
 \begin_inset Formula $N_{S}=N_{E}-1$
 \end_inset
 
@@ -6030,7 +6072,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -6514,7 +6556,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
@@ -7111,10 +7153,10 @@ name "tab:Tabela-Verdade-modo-2"
 
 \begin_layout Standard
 Note-se que, na expressão, a variável A é a mais significativa e, portanto,
- deve ser conectada ao bit de seleção B do mul\SpecialChar \-
-ti\SpecialChar \-
-ple\SpecialChar \-
-xa\SpecialChar \-
+ deve ser conectada ao bit de seleção B do mul\SpecialChar softhyphen
+ti\SpecialChar softhyphen
+ple\SpecialChar softhyphen
+xa\SpecialChar softhyphen
 dor, que é o mais significa
 tivo deste dispositivo.
  Semelhantemente, deve-se tomar os cuidados devidos com as demais variáveis
@@ -7142,10 +7184,10 @@ DEMUX
 \end_layout
 
 \begin_layout Standard
-O circuito demultiplexador possui comportamento oposto ao mul\SpecialChar \-
-ti\SpecialChar \-
-ple\SpecialChar \-
-xa\SpecialChar \-
+O circuito demultiplexador possui comportamento oposto ao mul\SpecialChar softhyphen
+ti\SpecialChar softhyphen
+ple\SpecialChar softhyphen
+xa\SpecialChar softhyphen
 dor:
  há apenas uma entrada, a qual será ligada eletronicamente a uma das saídas,
  conforme a escolha realizada por meio das variáveis de seleção.
@@ -7160,11 +7202,11 @@ reference "fig:Comparação-chave-analógica-demux"
 \end_inset
 
  apresenta uma analogia entre uma chave de seleção analógica e um circuito
- de\SpecialChar \-
-mul\SpecialChar \-
-ti\SpecialChar \-
-ple\SpecialChar \-
-xa\SpecialChar \-
+ de\SpecialChar softhyphen
+mul\SpecialChar softhyphen
+ti\SpecialChar softhyphen
+ple\SpecialChar softhyphen
+xa\SpecialChar softhyphen
 dor digital, ambos com 4 saídas de informação (4 canais de
  saída).
 \end_layout
@@ -7213,7 +7255,7 @@ name "fig:Comparação-chave-analógica-demux"
 
 \begin_layout Standard
 Como é possível perceber, a quantidade de entradas do demultiplexador é
- fixa -- há apenas um canal de entrada.
+ fixa – há apenas um canal de entrada.
  Já a quantidade de variáveis 
 \begin_inset Formula $m$
 \end_inset
@@ -7397,6 +7439,10 @@ reference "tab:Tabela-Verdade-detalhada-demux-2-canais"
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7423,7 +7469,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -7566,7 +7612,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -7964,7 +8010,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -8362,7 +8408,7 @@ Qual a expressão lógica que representa o funcionamento do circuito multiplexad
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -8406,7 +8452,7 @@ O que se conclui, ao se analisar a saída para cada combinação das entradas?
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -8535,7 +8581,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -8781,7 +8827,7 @@ Quais as expressões lógicas que representam o funcionamento do circuito
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -8825,7 +8871,7 @@ O que se conclui, ao se analisar as saídas para cada combinação das entradas?
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -9042,8 +9088,8 @@ Circuitos integrados de referência.
 \end_layout
 
 \begin_layout Subsection
-Montagem Extra: Implementação de Expressão Ló\SpecialChar \-
-gi\SpecialChar \-
+Montagem Extra: Implementação de Expressão Ló\SpecialChar softhyphen
+gi\SpecialChar softhyphen
 ca com MUX
 \end_layout
 
@@ -9157,7 +9203,7 @@ status open
 \series bold
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -9360,7 +9406,7 @@ Desenhar o esquema elétrico do circuito que implementa a função, utilizando
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -9493,7 +9539,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-alarme-invasao
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -9518,7 +9564,7 @@ Alarme de Invasão
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Contexto
@@ -9554,7 +9600,7 @@ reference "fig:Contexto-Alarme-Invasão"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -9622,7 +9668,7 @@ reference "tab:Tabela-de-Associação"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -9667,7 +9713,7 @@ esptab
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="middle" width="6em">
 <column alignment="center" valignment="middle" width="0pt">
@@ -10372,8 +10418,8 @@ reference "fig:Exemplos-de-chaves"
 \emph on
 microswitch
 \emph default
-, a presença dos terminais C--NA--NF (na figura, em inglês, COM--NO--NC,
- ou seja, 
+, a presença dos terminais C–NA–NF (na figura, em inglês, COM–NO–NC, ou
+ seja, 
 \emph on
 commom, normally open, normally closed
 \emph default
@@ -10612,6 +10658,11 @@ width "100col%"
 special "none"
 height "1.5in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status collapsed
 
 \begin_layout Plain Layout
@@ -10706,7 +10757,7 @@ Descritivos com as observações e correções realizadas durante a implementaç
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -10820,7 +10871,7 @@ Fios rígidos para proto-board
 
 \begin_layout Standard
 \begin_inset Branch dg-decodificador
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -10836,7 +10887,7 @@ Aplicação de Circuito Lógico Combinacional
 \begin_inset Quotes eld
 \end_inset
 
-Decodificador BCD--7 Segmentos
+Decodificador BCD–7 Segmentos
 \begin_inset Quotes erd
 \end_inset
 
@@ -10852,7 +10903,7 @@ name "chap:Decodificador-BCD-Sete-Seg"
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 
@@ -10892,7 +10943,7 @@ Light Emitter Diode
 
 
 \emph default
---
+–
 \begin_inset space ~
 \end_inset
 
@@ -11130,8 +11181,8 @@ Efetuadas as principais considerações referentes ao
 \emph on
 display
 \emph default
- em si, os pró\SpecialChar \-
-xi\SpecialChar \-
+ em si, os pró\SpecialChar softhyphen
+xi\SpecialChar softhyphen
 mos passos consistem em:
 \end_layout
 
@@ -11163,6 +11214,10 @@ g
 11
 \series default
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -11193,7 +11248,7 @@ esptab
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="9">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
@@ -11659,6 +11714,10 @@ name "enu:Deduzir-as-funções"
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -11696,6 +11755,10 @@ name "enu:Transformar-as-funções-em-nand-nor"
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -11725,6 +11788,10 @@ reference "enu:Transformar-as-funções-em-nand-nor"
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -11796,12 +11863,16 @@ Desafio
 \end_layout
 
 \begin_layout Enumerate
-Projetar um decodificador BCD--7 Segmentos para dígitos decimais de 0 a
- 7, utilizando-se apenas portas NAND.
+Projetar um decodificador BCD–7 Segmentos para dígitos decimais de 0 a 7,
+ utilizando-se apenas portas NAND.
 \end_layout
 
 \begin_layout Enumerate
 Considere os seguintes fatores:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -11938,7 +12009,7 @@ protoboard
 
 \begin_layout Standard
 \begin_inset Branch dg-osciloscopio-i
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -11955,7 +12026,7 @@ Introdução ao Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 
@@ -12265,7 +12336,7 @@ Anodo de Aceleração
 \series bold
 Placas Defletoras
 \series default
- que têm por finalidade desviar o feixe verticalmente -- 
+ que têm por finalidade desviar o feixe verticalmente – 
 \begin_inset Formula $\mathbf{P_{v1}}$
 \end_inset
 
@@ -12273,7 +12344,7 @@ Placas Defletoras
 \begin_inset Formula $\mathbf{P_{v2}}$
 \end_inset
 
- -- e horizontalmente – 
+ – e horizontalmente – 
 \begin_inset Formula $\mathbf{P_{h1}}$
 \end_inset
 
@@ -12292,7 +12363,7 @@ Próximo à tela, existe um revestimento de grafite depositado no vidro, que
 \series bold
 Anodo de Alta Tensão
 \series default
- (diversas vezes, referenciado como MAT -- Muita Alta Tensão).
+ (diversas vezes, referenciado como MAT – Muita Alta Tensão).
 \end_layout
 
 \begin_layout Standard
@@ -12323,6 +12394,10 @@ Um ponto fundamental a ser observado é que, dentro de certos limites, o
 \end_inset
 
 , então vale a relação:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -12360,6 +12435,10 @@ Analogamente, se
 \end_inset
 
 , tem-se: 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -13130,6 +13209,10 @@ Focus
 
 \begin_layout Enumerate
 Posicionar então o ponto luminoso no centro da tela.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -13165,6 +13248,10 @@ Localizar a Entrada Horizontal e aplicar a esta um sinal senoidal de
 
 \begin_layout Enumerate
 Posicionar a chave de entrada (indicada por DC-GND-AC) em DC.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -13228,6 +13315,10 @@ Mantendo ainda o gerador de funções com a frequência de
 
  CH1).
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -13376,6 +13467,10 @@ caixaresp
 Desligar a entrada vertical do osciloscópio do gerador senoidal e ligar
  ao secundário de um transformador fornecido, conectando o primário deste
  à rede elétrica.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -13558,7 +13653,7 @@ Gerador de funções
 
 \begin_layout Standard
 \begin_inset Branch dg-schmitt-trigger
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -13575,7 +13670,7 @@ Portas Lógicas Schmitt Trigger
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -13860,6 +13955,10 @@ lentamente
 
 .
  Descreva abaixo:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -13951,6 +14050,10 @@ name "fig:schmitt-distorcao-recuperacao"
 
 \begin_layout Enumerate
 No esquema elétrico, note-se:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -13960,7 +14063,7 @@ No esquema elétrico, note-se:
 Fonte de informação
 \bar default
 : simula a geração de uma informação digital qualquer a ser transmitida
- por um determinado canal (010101\SpecialChar \ldots{}
+ por um determinado canal (010101\SpecialChar ldots
 ).
 \end_layout
 
@@ -13984,7 +14087,7 @@ schmitt trigger
  para recuperar a informação transmitida e que foi distorcida pelo canal;
  no contexto, a informação digital é: 
 \bar under
-010101\SpecialChar \ldots{}
+010101\SpecialChar ldots
 
 \end_layout
 
@@ -14091,6 +14194,10 @@ Nota
 \end_inset
 
 Ajustes básicos sugeridos:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -14223,6 +14330,10 @@ status open
 
 \begin_layout Enumerate
 Quanto aos sinais observados, pegunta-se:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -14405,7 +14516,7 @@ ohm}
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset External
@@ -14431,7 +14542,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch dg-flip-flop-rs
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -14448,7 +14559,7 @@ Flip-Flops RS
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -14489,7 +14600,7 @@ Flip-Flop RS
 \emph on
 R
 \emph default
- (Reset --- levar a 
+ (Reset — levar a 
 \emph on
 0
 \emph default
@@ -14497,7 +14608,7 @@ R
 \emph on
 S
 \emph default
- (Set --- levar a 
+ (Set — levar a 
 \emph on
 1
 \emph default
@@ -14654,7 +14765,7 @@ name "tab:Tabela-Verdade-FF-RS-NOR"
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="middle">
 <column alignment="center" valignment="middle">
 <column alignment="center" valignment="middle">
@@ -15018,7 +15129,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="middle">
 <column alignment="center" valignment="middle">
 <column alignment="center" valignment="middle">
@@ -15442,9 +15553,9 @@ reference "tab:Tabela-Verdade-FF-RS-NAND-Sincr"
 \end_inset
 
  apresenta sua Tabela Verdade.
- Note, pela Tabela Verdade, que o funcionamento é muito se\SpecialChar \-
-me\SpecialChar \-
-lhan\SpecialChar \-
+ Note, pela Tabela Verdade, que o funcionamento é muito se\SpecialChar softhyphen
+me\SpecialChar softhyphen
+lhan\SpecialChar softhyphen
 te ao flip-flop
  RS anterior, diferenciando-se apenas pela condição de 
 \emph on
@@ -15536,7 +15647,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr"
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="middle">
 <column alignment="center" valignment="middle">
 <column alignment="center" valignment="middle">
@@ -15944,7 +16055,7 @@ indicando a numeração dos pinos de entrada e saída
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="100line%">
+<features tabularvalignment="middle" tabularwidth="100line%">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="middle" width="8cm">
 <row>
@@ -16019,7 +16130,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0.75cm">
 <column alignment="center" valignment="top" width="0.75cm">
@@ -16648,7 +16759,7 @@ sequências
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -16689,7 +16800,7 @@ to, conforme registrado na tabela anterior?
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -16753,7 +16864,7 @@ indicando a numeração dos pinos de entrada e saída
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="middle" width="0pt">
 <column alignment="center" valignment="middle" width="8cm">
 <row>
@@ -16828,7 +16939,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="16" columns="6">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0.75cm">
 <column alignment="center" valignment="top" width="0.75cm">
@@ -17778,7 +17889,7 @@ Analisando-se a tabela obtida e comparando-a com a tabela do flip-flop SR
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -17826,7 +17937,7 @@ enable
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="100line%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
@@ -17898,7 +18009,7 @@ CI: 1x 7400
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-assincrono
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -17919,7 +18030,7 @@ Contadores Assíncronos e
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -18052,7 +18163,7 @@ bit
 \series bold
 LSB
 \series default
- -- 
+ – 
 \emph on
 Least Significant Bit
 \emph default
@@ -18069,7 +18180,7 @@ bit
 \series bold
 MSB
 \series default
- -- 
+ – 
 \emph on
 Most Significant Bit
 \emph default
@@ -18696,7 +18807,7 @@ Ajustar a frequência do gerador de pulsos para
 \begin_inset Formula $\SI{1}{\Hz}$
 \end_inset
 
- e observar a contagem no decodificador BCD--7 Segmentos do Painel Digital.
+ e observar a contagem no decodificador BCD–7 Segmentos do Painel Digital.
 \end_layout
 
 \begin_layout Enumerate
@@ -18717,7 +18828,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -19204,7 +19315,7 @@ CIs: 1x 7400; 2x 7474
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset External
@@ -19242,7 +19353,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch dg-contador-sincrono
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -19263,7 +19374,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -19479,7 +19590,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="1">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
@@ -20194,6 +20305,10 @@ em
 \end_inset
 
 que:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -20363,6 +20478,10 @@ em
 \end_inset
 
 que:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -20469,7 +20588,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
@@ -21124,7 +21243,7 @@ Resistor:
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset External
@@ -21176,7 +21295,7 @@ Motor de Passo
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -21275,6 +21394,10 @@ reference "fig:mdp-Esquema-construtivo"
 
 , pode-se determinar a sequência de acionamento para cada uma das fases.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -21341,7 +21464,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sequência de acionamento do motor de passo -- uma fase por passo.
+Sequência de acionamento do motor de passo – uma fase por passo.
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:mdp-Sequência-de-acionamento-uma-fase"
@@ -21364,7 +21487,7 @@ name "tab:mdp-Sequência-de-acionamento-uma-fase"
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
@@ -21705,7 +21828,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Sequência de acionamento do motor de passo -- duas fases por passo.
+Sequência de acionamento do motor de passo – duas fases por passo.
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:mdp-Sequência-de-acionamento-duas-fases"
@@ -21728,7 +21851,7 @@ name "tab:mdp-Sequência-de-acionamento-duas-fases"
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
@@ -22253,7 +22376,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
@@ -22520,6 +22643,10 @@ Nd
 Projetar e construir um circuito sequencial que forneça tal sequência, tanto
  no sentido direito como no sentido reverso, ou seja, que haja a possibilidade
  de inverter a rotação do motor através de uma chave.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -22532,9 +22659,9 @@ contador binário de 2 bits associado a um circuito “decodificador”
 ; o circuito decodificador terá a incumbência de receber a saída binária
  do contador e fornecer o formato adequado para o acionamento dos enrolamentos,
  conforme mostrado pela tabela abaixo.
- Notar ainda que, alternativamente, po\SpecialChar \-
-de\SpecialChar \-
-ri\SpecialChar \-
+ Notar ainda que, alternativamente, po\SpecialChar softhyphen
+de\SpecialChar softhyphen
+ri\SpecialChar softhyphen
 a-se utilizar 
 \series bold
 um registrador de deslocamento de 4 bits
@@ -22551,7 +22678,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="7">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="0.25cm">
@@ -22992,6 +23119,10 @@ decodificador
 \end_deeper
 \begin_layout Enumerate
 Monte o circuito completo, conforme as figuras abaixo.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23252,7 +23383,7 @@ CIs: 1x 7406; 1x 7486; 1x 74191
 \begin_layout Standard
 \align center
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -23301,7 +23432,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset Newpage newpage
@@ -23384,7 +23515,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch dg-projeto
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
@@ -23474,6 +23605,12 @@ labelitemi{{}}
 
 \series bold
 Diurno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23488,6 +23625,12 @@ Laboratórios na segunda-feira:
 
 \series bold
 Noturno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23542,6 +23685,12 @@ labelitemi{{}}
 
 \series bold
 Diurno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23556,6 +23705,12 @@ Laboratórios na segunda-feira:
 
 \series bold
 Noturno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23606,6 +23761,12 @@ labelitemi{{}}
 
 \series bold
 Diurno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23620,6 +23781,12 @@ Laboratórios na segunda-feira:
 
 \series bold
 Noturno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23670,6 +23837,12 @@ labelitemi{{}}
 
 \series bold
 Diurno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23684,6 +23857,12 @@ Laboratórios na segunda-feira:
 
 \series bold
 Noturno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -23703,6 +23882,10 @@ status open
 }
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -23765,8 +23948,8 @@ Logo que o circuito for energizado, a contagem deve estar parada em 00,
 \end_layout
 
 \begin_layout Standard
-A lâmpada só poderá acender quando a contagem for paralisada -- ela não
- deverá piscar durante a contagem.
+A lâmpada só poderá acender quando a contagem for paralisada – ela não deverá
+ piscar durante a contagem.
 \end_layout
 
 \begin_layout Standard
@@ -23794,7 +23977,7 @@ reference "fig:Esboço-do-leiaute"
 status collapsed
 
 \begin_layout Plain Layout
-Salienta-se que o leiaute apresentado na figura é apenas um esboço -- os
+Salienta-se que o leiaute apresentado na figura é apenas um esboço – os
  componentes podem ser reposicionados a critério de cada equipe.
 \end_layout
 
@@ -24206,7 +24389,7 @@ name "tab:Cronograma-de-referencia-dado-digital"
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="2">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="left" valignment="top" width="7cm">
 <row>
@@ -24678,6 +24861,12 @@ Pré-apresentação de montagem:
 Apresentação final: 
 \series bold
 10,0 (peso 8,0)
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -24685,6 +24874,12 @@ Apresentação final:
 Esquema Elétrico e Lista de Materiais: 
 \series bold
 1,0
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -24724,11 +24919,17 @@ bônus
 Implementação do circuito: 
 \series bold
 6,5
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Elementos mínimos -- bornes, 
+Elementos mínimos – bornes, 
 \emph on
 displays
 \emph default
@@ -24790,6 +24991,12 @@ Power-On Reset
 Entornos: 
 \series bold
 1,5
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -24816,6 +25023,12 @@ Qualidade das soldas:
 Bônus: 
 \series bold
 +2,0
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -24921,7 +25134,7 @@ status collapsed
 status collapsed
 
 \begin_layout Part
-Digitais -- Experimentos Extras
+Digitais – Experimentos Extras
 \end_layout
 
 \end_inset
@@ -24939,7 +25152,7 @@ Registradores de Deslocamento
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -25135,6 +25348,10 @@ reference "fig:Registrador"
 \end_inset
 
  com as seguintes condições:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -25245,6 +25462,10 @@ height "1pt"
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -25260,7 +25481,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -25637,7 +25858,7 @@ Utilizando o painel digital didático, montou-se o circuito da Figura 1 nas
 ) respectivamente com níveis lógicos
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -25667,7 +25888,7 @@ Utilizando o painel digital didático, montou-se o circuito da Figura 1 nas
  e 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -25709,7 +25930,7 @@ Para estabelecer a condição zero nos flip-flops (clear all), utilizou-se
  = 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -25743,7 +25964,7 @@ Para estabelecer a condição zero nos flip-flops (clear all), utilizou-se
  = 
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -25822,7 +26043,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -26263,7 +26484,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -26681,7 +26902,7 @@ ETE103 - Fundamentos de Circuitos Analógicos
 
 \begin_layout Right Footer
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -26706,7 +26927,7 @@ thepage
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -26738,11 +26959,11 @@ Identificar resistores.
 \end_layout
 
 \begin_layout Itemize
-Executar medidas de resistências.
+Executar medições de resistências.
 \end_layout
 
 \begin_layout Itemize
-Executar medidas de resistências equivalentes de associações de resistores.
+Executar medições de resistências equivalentes de associações de resistores.
 \end_layout
 
 \begin_layout Section
@@ -26763,7 +26984,7 @@ status open
 \emph on
 Bipolo
 \emph default
-: dispositivo que apresenta dois terminais (polos) acessíveis.
+: dispositivo que apresenta dois polos (terminais) acessíveis.
 \end_layout
 
 \end_inset
@@ -26875,42 +27096,250 @@ reference "fig:tipos-de-resistores"
 
 \end_inset
 
- apresenta exemplos de diversos tipos resistores, onde percebem-se diferentes
+ apresenta exemplos de diversos tipos de resistores, onde percebem-se diferentes
  invólucros e tamanhos.
  Estas diferenças relacionam-se com a potência máxima que cada um pode dissipar,
  cujos valores mais comuns são: 
-\begin_inset Formula $\nicefrac{1}{8}$
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six{1/8}{\watt}$
 \end_inset
 
-W, 
-\begin_inset Formula $\nicefrac{1}{4}$
+,
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six{1/4}{\watt}$
 \end_inset
 
-W, 
-\begin_inset Formula $\nicefrac{1}{2}$
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six{1/2}{\watt}$
 \end_inset
 
-W, 
-\begin_inset Formula $1$
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six 1{\watt}$
 \end_inset
 
-W, 
-\begin_inset Formula $2$
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six 2{\watt}$
 \end_inset
 
-W, 
-\begin_inset Formula $3$
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six 3{\watt}$
 \end_inset
 
-W, 
-\begin_inset Formula $5$
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six 5{\watt}$
 \end_inset
 
-W, 
-\begin_inset Formula $10$
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\six{10}{\watt}$
 \end_inset
 
-W.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang brazilian
+.
 \end_layout
 
 \begin_layout Standard
@@ -27091,7 +27520,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -27349,7 +27778,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -27470,7 +27899,7 @@ Sem Cor
 \begin_inset Text
 
 \begin_layout Plain Layout
----
+—
 \end_layout
 
 \end_inset
@@ -27543,7 +27972,7 @@ Exemplos de valor de resistências para código de cores:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="6">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top">
 <column alignment="center" valignment="top" width="0pt" special="c@{}">
@@ -27562,11 +27991,11 @@ Exemplos de valor de resistências para código de cores:
 \begin_inset Formula $4\mathrm{k}7\,\Omega$
 \end_inset
 
- (
+ 
 \begin_inset Formula $\pm10\%$
 \end_inset
 
-)
+
 \end_layout
 
 \end_inset
@@ -27591,7 +28020,7 @@ AM
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -27608,7 +28037,7 @@ VI
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -27629,7 +28058,7 @@ VM
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -27678,7 +28107,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -27707,7 +28136,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -27740,7 +28169,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -27831,11 +28260,11 @@ status open
 \begin_inset Formula $200\mathrm{R}$
 \end_inset
 
- (
+ 
 \begin_inset Formula $\pm5\%$
 \end_inset
 
-)
+
 \end_layout
 
 \end_inset
@@ -27860,7 +28289,7 @@ VM
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -27877,7 +28306,7 @@ PR
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -27898,7 +28327,7 @@ MA
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -27947,7 +28376,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -27976,7 +28405,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28009,7 +28438,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28100,11 +28529,11 @@ status open
 \begin_inset Formula $3\mathrm{M}3\,\Omega$
 \end_inset
 
- (
+ 
 \begin_inset Formula $\pm20\%$
 \end_inset
 
-)
+
 \end_layout
 
 \end_inset
@@ -28129,7 +28558,7 @@ LA
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28146,7 +28575,7 @@ LA
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28167,7 +28596,7 @@ VD
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28216,7 +28645,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28245,7 +28674,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28278,7 +28707,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28327,7 +28756,7 @@ Exemplos de códigos de cores para valores de resistências:
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="6">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt" special="c@{}">
 <column alignment="center" valignment="top" width="0pt" special="c@{}">
 <column alignment="center" valignment="top" width="0pt" special="c@{}">
@@ -28343,7 +28772,7 @@ MA
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28360,7 +28789,7 @@ PR
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28381,7 +28810,7 @@ VM
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28430,7 +28859,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28459,7 +28888,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28492,7 +28921,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28604,7 +29033,7 @@ VM
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28621,7 +29050,7 @@ VI
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28642,7 +29071,7 @@ AM
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28691,7 +29120,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28720,7 +29149,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28753,7 +29182,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28865,7 +29294,7 @@ LA
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28882,7 +29311,7 @@ LA
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28903,7 +29332,7 @@ PT
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -28952,7 +29381,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \begin_inset space ~
 \end_inset
 
@@ -28981,7 +29410,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -29014,7 +29443,7 @@ status open
 \begin_inset space ~
 \end_inset
 
----
+—
 \end_layout
 
 \end_inset
@@ -29121,7 +29550,7 @@ status open
 Código de cores completo, válidos para resistores de 3, 4, 5 ou 6 faixas
  de cor.
  (A letra que aparece entre parêntesis na tolerância refere-se à identificação
- da tolerância em resistores SMD -- ver descrição no texto.)
+ da tolerância em resistores SMD – ver descrição no texto.)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Código-de-cores-completo-de-resistores"
@@ -29205,9 +29634,9 @@ Surface Mounting Device
 \lang brazilian
  
 \emph default
--- Dispositivo de Montagem em Superfície), o qual apresenta i\SpecialChar \-
-nú\SpecialChar \-
-me\SpecialChar \-
+– Dispositivo de Montagem em Superfície), o qual apresenta i\SpecialChar softhyphen
+nú\SpecialChar softhyphen
+me\SpecialChar softhyphen
 ras vantagens
  sobre os resistores 
 \begin_inset Quotes eld
@@ -29581,8 +30010,11 @@ resistência equivalente
 \end_layout
 
 \begin_layout Standard
-No caso de apenas duas resistências, tem-se simplesmente a divisão do produto
- pela soma:
+No caso de apenas 
+\bar under
+duas resistências
+\bar default
+, tem-se simplesmente a divisão do produto pela soma:
 \end_layout
 
 \begin_layout Standard
@@ -29719,6 +30151,10 @@ reference "tab:Tabela-de-resultados-identificacao-resistores"
 \end_inset
 
 , na qual:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -29753,10 +30189,10 @@ Determine o erro entre o valor nominal e o valor medido, tomando como base
 \end_layout
 
 \begin_layout Enumerate
-Confronte os valores medidos com os nominais, considerando suas to\SpecialChar \-
-le\SpecialChar \-
-rân\SpecialChar \-
-ci\SpecialChar \-
+Confronte os valores medidos com os nominais, considerando suas to\SpecialChar softhyphen
+le\SpecialChar softhyphen
+rân\SpecialChar softhyphen
+ci\SpecialChar softhyphen
 as.
  Existe algum resistor fora de especificação? Em caso afirmativo, qual?
  Tem certeza? Teça comentários.
@@ -29802,7 +30238,7 @@ esptab
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="9">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="1.5cm">
 <column alignment="center" valignment="top" width="1.5cm">
@@ -30703,7 +31139,11 @@ Obtenha, analiticamente, o valor da resistência equivalente entre os pontos
 \begin_inset Formula $R_{eq}=R_{AB}$
 \end_inset
 
-), considerando os valores nominais das resistências.
+), considerando os 
+\bar under
+valores nominais
+\bar default
+ das resistências.
 \end_layout
 
 \begin_layout Enumerate
@@ -30755,7 +31195,7 @@ esptab{
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -30824,7 +31264,14 @@ Calculado
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
 Medido
+\begin_inset space ~
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -30997,9 +31444,12 @@ name "tab:Tabela-de-resultados-associação-resistores"
 
 \begin_layout Enumerate
 \noindent
-Se forem considerados os valores reais das resistências (as medidas com
- o ohmímetro) para o cálculo analítico, a porcentagem de erro diminui? Comprove,
- realizando as medidas e os cálculos.
+Se forem considerados os 
+\bar under
+valores reais
+\bar default
+ das resistências (as medidas com o ohmímetro) para o cálculo analítico,
+ a porcentagem de erro diminui? Comprove, realizando as medidas e os cálculos.
 \end_layout
 
 \begin_layout Standard
@@ -31153,55 +31603,55 @@ Multímetro digital
 
 \begin_layout Itemize
 1x (
-\begin_inset Formula $100\Omega$
+\begin_inset Formula $\six{100}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $220\Omega$
+\begin_inset Formula $\six{220}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $390\Omega$
+\begin_inset Formula $\six{390}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $820\Omega$
+\begin_inset Formula $\six{820}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $1\mathrm{k}\Omega$
+\begin_inset Formula $\six 1{\kilo\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $2\mathrm{k}2\Omega$
+\begin_inset Formula $\six{2k2}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $3\mathrm{k}3\Omega$
+\begin_inset Formula $\six{3k3}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $4\mathrm{k}7\Omega$
+\begin_inset Formula $\six{4k7}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $10\mathrm{k}\Omega$
+\begin_inset Formula $\six{10}{\kilo\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $15\mathrm{k}\Omega$
+\begin_inset Formula $\six{15}{\kilo\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $68\mathrm{k}\Omega$
+\begin_inset Formula $\six{68}{\kilo\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $100\mathrm{k}\Omega$
+\begin_inset Formula $\six{100}{\kilo\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $1\mathrm{M}\Omega$
+\begin_inset Formula $\six 1{\mega\ohm}$
 \end_inset
 
 )
@@ -31237,8 +31687,37 @@ status collapsed
 Objetivo
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+Conceito de sensibilidade.
+\end_layout
+
+\begin_layout Itemize
 Estudo de voltímetro e amperímetro CC usando galvanômetro de bobina móvel.
+\end_layout
+
+\begin_layout Itemize
+Apresentação de modelo para amperimetro e voltimetro.
+\end_layout
+
+\begin_layout Itemize
+Conhecimento das corretas formas para medição de tensão e corrente.
+\end_layout
+
+\begin_layout Itemize
+Os principios de sensores e conversores A/D para construção de voltimetro
+ e amperimetro digital.
+\end_layout
+
+\begin_layout Itemize
+Familiarização com o conceito de 
+\begin_inset Quotes erd
+\end_inset
+
+resistência interna
+\begin_inset Quotes erd
+\end_inset
+
+ de instrumentos.
 \end_layout
 
 \begin_layout Section
@@ -31466,7 +31945,7 @@ resistência interna
 \end_layout
 
 \begin_layout Subsection*
-Sensibilidade
+Sensibilidade e precisão de multimetros digitais
 \end_layout
 
 \begin_layout Standard
@@ -31538,6 +32017,7 @@ R_{g}\ll R_{m}
 \end_layout
 
 \begin_layout Standard
+Nota-se que 
 \begin_inset Formula $R_{v}$
 \end_inset
 
@@ -31824,15 +32304,10 @@ reference "fig:mult-varias-escalas"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -31935,10 +32410,6 @@ name "fig:mult-varias-escalas"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -31966,7 +32437,7 @@ reference "fig:mult-Multímetro-analógico"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -32600,7 +33071,7 @@ Shunt de Ayrton
 
 .
  A resistência equivalente do miliamperímetro será 
-\begin_inset Formula $(R_{1}+R_{g})\parallel R_{2}$
+\begin_inset Formula $(R_{1}+R_{g})\sslash R_{2}$
 \end_inset
 
 .
@@ -32704,24 +33175,6 @@ reference "fig:mult-aferição-miliamperimetro"
 \end_inset
 
  (note-se a presença do multímetro comercial na escala de corrente).
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
 \begin_inset Float figure
 placement H
 wide false
@@ -32733,8 +33186,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/multimetro-circuito9.PNG
-	height 6cm
-	BoundingBox 0bp 0bp 715bp 268bp
+	lyxscale 70
+	scale 70
 
 \end_inset
 
@@ -32762,21 +33215,7 @@ name "fig:mult-aferição-miliamperimetro"
 
 \end_inset
 
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -32807,7 +33246,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -33186,7 +33625,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -33656,17 +34095,17 @@ Medidas Elétricas e Resistência Variável
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
 \end_layout
 
 \begin_layout Itemize
-Efetuar medidas de tensão e corrente, verificando as respectivas po\SpecialChar \-
-la\SpecialChar \-
-ri\SpecialChar \-
-da\SpecialChar \-
+Efetuar medidas de tensão e corrente, verificando as respectivas po\SpecialChar softhyphen
+la\SpecialChar softhyphen
+ri\SpecialChar softhyphen
+da\SpecialChar softhyphen
 des.
 \end_layout
 
@@ -33688,7 +34127,7 @@ Medidas Elétricas
 
 \begin_layout Standard
 Medições de resistência, por meio de ohmímetro, já foram tratadas em outro
- experimento -- 
+ experimento – 
 \begin_inset Quotes eld
 \end_inset
 
@@ -33787,7 +34226,7 @@ Por isso, é necessário observar onde conectar os polos positivos e negativos
 \end_layout
 
 \begin_layout Section
-Resistência Variável -- Potenciômetro 
+Resistência Variável – Potenciômetro 
 \end_layout
 
 \begin_layout Standard
@@ -33957,7 +34396,7 @@ Este experimento visa treinar a prática de medições de tensão e corrente
 Medições de corrente
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:medidas-eletricas-Medições-de-corrente"
+name "subsec:medidas-eletricas-Medições-de-corrente"
 
 \end_inset
 
@@ -34183,6 +34622,12 @@ height "1pt"
 
 \series medium
 Faça as seguintes verificações de consistência, provando a igualdade:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -34250,7 +34695,7 @@ caixaresp[7]
 Medições de Tensão
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:medidas-eletricas-Medições-de-Tensão"
+name "subsec:medidas-eletricas-Medições-de-Tensão"
 
 \end_inset
 
@@ -34291,15 +34736,15 @@ reference "fig:medidas-eletricas-Circuito"
 \begin_inset Formula $V_{R4}$
 \end_inset
 
- com o voltímetro de\SpecialChar \-
-vi\SpecialChar \-
-da\SpecialChar \-
-men\SpecialChar \-
+ com o voltímetro de\SpecialChar softhyphen
+vi\SpecialChar softhyphen
+da\SpecialChar softhyphen
+men\SpecialChar softhyphen
 te polarizado, de modo que os resultados sejam
  positivos.
- A\SpecialChar \-
-pre\SpecialChar \-
-sen\SpecialChar \-
+ A\SpecialChar softhyphen
+pre\SpecialChar softhyphen
+sen\SpecialChar softhyphen
 te os resultados:
 \begin_inset Newline newline
 \end_inset
@@ -34400,6 +34845,12 @@ height "1pt"
 
 \series medium
 Faça as verificações, provando as igualdades:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -34542,29 +34993,33 @@ Com
 
  (potenciômetro) desconectado do circuito, ajuste seu valor inicialmente
  para 
-\begin_inset Formula $500\,\Omega$
+\begin_inset Formula $\six{500}{\ohm}$
 \end_inset
 
- (
+ (um valor proximo a 
 \begin_inset Formula $R_{desejado}$
 \end_inset
 
 ).
- Após o ajuste, conecte-o ao circuito e meça a corrente 
-\begin_inset Formula $I_{medida}$
+ Anote o valor ajustado (
+\begin_inset Formula $R_{utilizado}$
 \end_inset
 
- e a tensão 
-\begin_inset Formula $V_{medida}$
+), conecte-o ao circuito e meça a corrente (
+\begin_inset Formula $I_{medido}$
 \end_inset
 
-, anotando os valores na tabela que segue.
+) e a tensão (
+\begin_inset Formula $V_{medido}$
+\end_inset
+
+), anotando os valores na tabela que segue.
 \end_layout
 
 \begin_layout Enumerate
 
 \series medium
-Repita o item anterior para os valores de 
+Repita o item anterior para os demais valores de 
 \begin_inset Formula $R$
 \end_inset
 
@@ -34593,7 +35048,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="6">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -35254,7 +35709,7 @@ Bipolos Lineares e Não Lineares
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -35269,9 +35724,9 @@ Lei de Ohm
 \end_layout
 
 \begin_layout Itemize
-Levantamento de curvas características de bipolos lineares e não li\SpecialChar \-
-ne\SpecialChar \-
-a\SpecialChar \-
+Levantamento de curvas características de bipolos lineares e não li\SpecialChar softhyphen
+ne\SpecialChar softhyphen
+a\SpecialChar softhyphen
 res.
 \end_layout
 
@@ -35291,8 +35746,11 @@ Ao se aplicar uma diferença de potencial
  a um condutor de eletricidade, como por exemplo um fio metálico, surge
  uma corrente elétrica neste condutor.
  A corrente produzida por esta diferença de potencial depende de propriedades
- físicas e da geometria do condutor, que podem ser modeladas por uma resistência
- à passagem desta corrente elétrica.
+ físicas e da geometria do condutor, que podem ser 
+\bar under
+modeladas
+\bar default
+ por uma resistência à passagem desta corrente elétrica.
 \end_layout
 
 \begin_layout Standard
@@ -35420,7 +35878,7 @@ ohm}
 \emph on
 George Simon Ohm
 \emph default
- (1787---1854), por seu magnífico trabalho 
+ (1787—1854), por seu magnífico trabalho 
 \emph on
 “
 \lang english
@@ -35558,9 +36016,9 @@ frio
 
 
 \emph default
-, evitando a al\SpecialChar \-
-te\SpecialChar \-
-ra\SpecialChar \-
+, evitando a al\SpecialChar softhyphen
+te\SpecialChar softhyphen
+ra\SpecialChar softhyphen
 ção do valor de sua resistência.
 \begin_inset CommandInset label
 LatexCommand label
@@ -35732,9 +36190,9 @@ Um bipolo cuja relação entre
 \begin_inset Formula $v$
 \end_inset
 
- pode ser linear para a faixa de o\SpecialChar \-
-pe\SpecialChar \-
-ra\SpecialChar \-
+ pode ser linear para a faixa de o\SpecialChar softhyphen
+pe\SpecialChar softhyphen
+ra\SpecialChar softhyphen
 ção especificada, é denominado de
  
 \series bold
@@ -35765,9 +36223,9 @@ Um bipolo cuja relação entre
 \begin_inset Formula $v$
 \end_inset
 
- é não linear para a faixa de o\SpecialChar \-
-pe\SpecialChar \-
-ra\SpecialChar \-
+ é não linear para a faixa de o\SpecialChar softhyphen
+pe\SpecialChar softhyphen
+ra\SpecialChar softhyphen
 ção especificada, recebe a denominação
  de 
 \series bold
@@ -35878,7 +36336,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="15" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2cm">
@@ -36796,7 +37254,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="8">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
@@ -37001,7 +37459,7 @@ si{mA}
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="7">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="1cm">
 <column alignment="center" valignment="top" width="1cm">
@@ -37199,6 +37657,7 @@ Numa planilha eletrônica, traçar as curvas
 \begin_layout Enumerate
 Para as curvas acima, realizar a regressão linear, ou seja, inserir uma
  linha de tendência.
+ Tambem exiba as correspondentes equações.
 \end_layout
 
 \begin_layout Enumerate
@@ -37232,8 +37691,25 @@ caixaresp[7]
 \end_layout
 
 \begin_layout Enumerate
-Destes 4 gráficos, o que se pode dizer quanto ao coeficiente angular das
- linhas de tendências?
+Destes 4 gráficos, o que representa o coeficiente angular das linhas de
+ tendências?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[7]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A partir das equações das linhas de tendência, calcule o valor das resistências.
 \begin_inset ERT
 status open
 
@@ -37417,7 +37893,7 @@ Leis de Kirchhoff
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -37599,6 +38075,10 @@ Lei das Malhas
 \begin_layout Enumerate
 Ainda se referindo ao circuito anterior, note que este possui 3 malhas:
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -37694,6 +38174,10 @@ Malha
 \end_inset
 
 (1):
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -37796,6 +38280,10 @@ Malha
 \end_inset
 
 (2):
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -37995,14 +38483,15 @@ Ponte de Wheatstone
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
 \end_layout
 
 \begin_layout Itemize
-Familiarização experimental com a Ponte de Wheatstone; 
+Familiarização experimental com a Ponte de Wheatston.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -38023,7 +38512,7 @@ reference "Figura1wheat"
 
 \end_inset
 
-:
+.
 \end_layout
 
 \begin_layout Standard
@@ -38045,7 +38534,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ponte de Wheatstone
+Ponte de Wheatston
 \end_layout
 
 \end_inset
@@ -38066,14 +38555,17 @@ name "Figura1wheat"
 \end_layout
 
 \begin_layout Standard
-Para que a ponte esteja em equilíbrio, a tensão entre os terminais A e B
- deve ser nula, implicando em:
+Para que a ponte esteja em 
+\bar under
+equilíbrio
+\bar default
+, a tensão entre os terminais A e B deve ser nula, implicando em:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V{}_{r1}=V_{r3}
+V_{R1}=V_{R3}
 \end{equation}
 
 \end_inset
@@ -38084,7 +38576,7 @@ V{}_{r1}=V_{r3}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V_{r2}=V_{r4}
+V_{R2}=V_{R4}\label{eq:2}
 \end{equation}
 
 \end_inset
@@ -38093,21 +38585,22 @@ V_{r2}=V_{r4}
 \end_layout
 
 \begin_layout Standard
-Aplicando-se o conceito de divisor de tensões para determinar-se 
-\begin_inset Formula $V_{r2}$
+Aplicando-se o conceito de divisor de tensões para determinar por exemplo,
+ 
+\begin_inset Formula $V_{R2}$
 \end_inset
 
  e 
-\begin_inset Formula $V_{r4}$
+\begin_inset Formula $V_{R4}$
 \end_inset
 
- por exemplo: 
+, tem-se: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V_{r2}=V\cdot\frac{R_{2}}{R_{1}+R_{2}}
+V_{R2}=V\cdot\frac{R_{2}}{R_{1}+R_{2}}
 \end{equation}
 
 \end_inset
@@ -38118,7 +38611,7 @@ V_{r2}=V\cdot\frac{R_{2}}{R_{1}+R_{2}}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V_{r4}=V\cdot\frac{R_{4}}{R_{3}+R_{4}}
+V_{R4}=V\cdot\frac{R_{4}}{R_{3}+R_{4}}
 \end{equation}
 
 \end_inset
@@ -38127,7 +38620,7 @@ V_{r4}=V\cdot\frac{R_{4}}{R_{3}+R_{4}}
 \end_layout
 
 \begin_layout Standard
-No equilíbrio, igualando-se (2a) com (2b):
+No equilíbrio, igualando-se (3) com (4):
 \end_layout
 
 \begin_layout Standard
@@ -38155,7 +38648,7 @@ V\cdot\frac{R_{2}}{R_{1}+R_{2}}=V\cdot\frac{R_{4}}{R_{3}+R_{4}}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{2}R_{3}+R_{2}R_{4}=R_{4}R_{1}+R_{4}R_{2}
+R_{2}R_{3}+\cancel{R_{2}R_{4}}=R_{4}R_{1}+\cancel{R_{4}R_{2}}
 \end{equation}
 
 \end_inset
@@ -38179,8 +38672,15 @@ R_{2}R_{3}=R_{4}R_{1}
 \end_layout
 
 \begin_layout Standard
-Ou seja, no equilíbrio, os produtos em cruz dos valores dos resistores devem
- ser iguais.
+Ou seja, 
+\bar under
+no equilíbrio
+\bar default
+, os 
+\bar under
+produtos em cruz
+\bar default
+ dos valores dos resistores devem ser iguais.
  
 \end_layout
 
@@ -38194,22 +38694,7 @@ reference "fig2wheat"
 
 \end_inset
 
- ilustra tal procedimento.
- Nesta figura, determina-se por:
-\begin_inset Formula 
-\begin{equation}
-R_{x}=\frac{R_{1}}{R_{2}}R_{p}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "Equação3-10"
-
-\end_inset
-
+ ilustra um circuito para tal objetivo.
  
 \end_layout
 
@@ -38257,11 +38742,19 @@ name "fig2wheat"
 \end_layout
 
 \begin_layout Standard
-Neste Circuito, deve-se variar o valor de 
+Neste circuito, deve-se variar o valor de 
 \begin_inset Formula $R_{p}$
 \end_inset
 
- até que a ponte seja equilibrada.
+ até que a ponte seja equilibrada e,assim,o valor de 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ poderá ser determinado por 
+\begin_inset Formula $R_{x}=\frac{R_{1}}{R_{2}}R_{p}$
+\end_inset
+
+.
  É óbvio que se desejar uma medida precisa de 
 \begin_inset Formula $R_{p}$
 \end_inset
@@ -38285,11 +38778,8 @@ Neste Circuito, deve-se variar o valor de
 Parte experimental
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Montar o circuito a seguir:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -38308,57 +38798,171 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ponte de Wheatstone.
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Ajustar a década resistiva de modo a obter-se a tensão 
+\begin_inset Formula $V_{D}$
+\end_inset
+
+ a mínima possível.
+\shape italic
+
+\begin_inset Newline newline
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
-Ajustar a década resistiva de modo a obter-se a tensão Vd a mínima possível.
-\end_layout
+Por medida de segurança, ajustar a escala do voltímetro 
+\shape default
 
-\begin_layout Standard
+\begin_inset Formula $V_{D}$
+\end_inset
+
 
 \shape italic
-Por medida de segurança, ajustar a escala do voltímetro Vd em um valor elevado
- (3v por exemplo) para evitar danos ao instrumento.
+ em um valor elevado (3v por exemplo) para evitar danos ao instrumento.
  A seguir, quando a tensão for se tornando menor devido à tentativa de equilibra
 r-se a ponte, mudar a escala para valores menores, de modo a aumentar a
- sensibilidade e obter-se um valor de Vd o mais próximo possível de zero.
+ sensibilidade e obter-se um valor de 
+\shape default
+
+\begin_inset Formula $V_{D}$
+\end_inset
+
+
+\shape italic
+ o mais próximo possível de zero.
  
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Apresentar o valor experimental de 
+\begin_inset Formula $R_{Década}$
+\end_inset
+
+ e compara-lo com o valor calculado.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 
+\begin_inset Formula $R_{Década}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Calculado
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Experimental
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace bigskip
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Preencher a Tabela 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Tabwheat1"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
+\begin_layout Enumerate
+Medir a tensão sobre todos os resistores, no equilibrio da ponte.
+ O que se percebe quanto à relação entre as tensões? Por que esta relação
+ ocorre ? 
 \begin_inset Float table
 placement H
 wide false
@@ -38369,7 +38973,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="3cm">
 <row>
@@ -38378,6 +38982,10 @@ status open
 
 \begin_layout Plain Layout
 R
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38386,7 +38994,10 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-V
+\begin_inset Formula $V_{R}$
+\end_inset
+
+(V)
 \end_layout
 
 \end_inset
@@ -38398,10 +39009,6 @@ V
 
 \begin_layout Plain Layout
 100
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -38422,10 +39029,6 @@ V
 
 \begin_layout Plain Layout
 150
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -38446,10 +39049,6 @@ V
 
 \begin_layout Plain Layout
 330
-\begin_inset Formula $\varOmega$
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -38495,16 +39094,20 @@ V
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "Tabwheat1"
-
-\end_inset
 
 
+\backslash
+caixaresp[5]
 \end_layout
 
 \end_inset
@@ -38512,12 +39115,7 @@ name "Tabwheat1"
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Enumerate
 Retirar, agora, 
 \begin_inset Formula $R_{3}$
 \end_inset
@@ -38528,10 +39126,34 @@ valores desconhecidos
 \shape default
 ”, isto é, valores reais desconhecidos (pode-se verificar os valores deste
  resistores a partir das cores marcadas).
- Utilizar 5 valores diferentes, um de cada vez, e preencher a Tabela 
+ Utilizar 5 valores diferentes, um de cada vez, e preencher a Tabela seguinte.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Tomar o cuidado de medir os valores de
+\shape default
+ 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+
+\shape italic
+ e de
+\shape default
+
+\begin_inset Formula $R_{2}$
+\end_inset
+
+
+\shape italic
+ com um multimetro digital para utilizalos na eq.
+\shape default
+
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tabwheat2"
+reference "eq:2"
 
 \end_inset
 
@@ -38539,24 +39161,26 @@ reference "tabwheat2"
 \end_layout
 
 \begin_layout Standard
-Tomar o cuidado de medir os valores de 
-\begin_inset Formula $R_{1}$
-\end_inset
 
- e de 
-\begin_inset Formula $R_{2}$
-\end_inset
-
- com um multímetro digital para utilizá-los na eq.
+\shape italic
+As medidas de
+\shape default
  
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Equação3-10"
-
+\begin_inset Formula $R_{x}$
 \end_inset
 
-.
- 
+
+\shape italic
+ (multimetro) devem ser realizadas com um ohmímetro digital de preferência,
+ para comparação com valores obtidos para 
+\shape default
+
+\begin_inset Formula $R_{x}$
+\end_inset
+
+
+\shape italic
+ através da ponte
 \end_layout
 
 \begin_layout Standard
@@ -38570,7 +39194,7 @@ status open
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top" width="3cm">
 <column alignment="center" valignment="top" width="3cm">
@@ -38835,15 +39459,6 @@ pelo\,multímetro
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "tabwheat2"
@@ -38856,20 +39471,6 @@ name "tabwheat2"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-As medidas de 
-\begin_inset Formula $R_{x}$
-\end_inset
-
- (multímetro) devem ser realizadas com um ohmímetro digital de preferência,
- para comparação com valores obtidos para 
-\begin_inset Formula $R_{x}$
-\end_inset
-
- através da ponte.
- 
 \end_layout
 
 \end_inset
@@ -38911,26 +39512,36 @@ Universal
 Cabos banana-banana
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 Resistores de 
-\begin_inset Formula $\nicefrac{1}{4}$
+\begin_inset Formula $\six{1/4}{\watt}$
 \end_inset
 
-W: 1x (
-\begin_inset Formula $100\Omega$
+: 1x (
+\begin_inset Formula $\six{120}{\ohm},$
+\end_inset
+
+
+\begin_inset Formula $\six{220}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $150\Omega$
+\begin_inset Formula $\six{390}{\ohm},$
+\end_inset
+
+ 
+\begin_inset Formula $\six{470}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $330\Omega$
+\begin_inset Formula $\six{560}{\ohm}$
 \end_inset
 
 )
 \end_layout
 
+\end_deeper
 \end_inset
 
 
@@ -38950,7 +39561,7 @@ Teoremas de Thévenin e de Norton
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -39537,6 +40148,10 @@ Determinação de
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -39567,6 +40182,10 @@ status collapsed
 \begin_layout Enumerate
 Determinação de 
 \begin_inset Formula $R_{th}$
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -39630,6 +40249,10 @@ Aplicação do teorema de Thévenin.
 \end_deeper
 \begin_layout Enumerate
 Circuito Equivalente de Thévenin para o Subcircuito A
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -40105,7 +40728,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -40164,7 +40787,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -40256,7 +40879,7 @@ caixaresp[5]
 Teorema de Thévenin
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Montar o circuito ilustrado na fig.
  
 \begin_inset CommandInset ref
@@ -40292,9 +40915,6 @@ height "1pt"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -40329,13 +40949,9 @@ Aplicação do Teorema de Thévenin.
 \end_inset
 
 
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Determinar 
 \begin_inset Formula $V_{th}$
 \end_inset
@@ -40353,9 +40969,6 @@ reference "fig:Determinação-de-vth-rth-fig13"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -40376,14 +40989,11 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -40429,16 +41039,12 @@ Determinação de
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Substituir o subcircuito A pela fonte de bancada ajustada em 
 \begin_inset Formula $V_{th}$
 \end_inset
 
- volts em série com a Década de Resistores ajustada em 
-\begin_inset Formula $R_{th}$
-\end_inset
-
-, segundo a fig.
+ volts em série com a Década de Resistores ajustada em ohms, segundo a fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -40452,6 +41058,10 @@ reference "fig:Aplicação-do-Teorema-de-thevenin-fig14"
 \end_inset
 
 , comparando-o com o valor medido anteriormente.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -40490,6 +41100,10 @@ Aplicação do Teorema de Thévenin.
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -40542,7 +41156,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40580,11 +41194,11 @@ Aplicação do Teorema de Norton.
 
 \begin_layout Standard
 Determinar 
-\begin_inset Formula $I_{n}$
+\begin_inset Formula $I_{N}$
 \end_inset
 
  e 
-\begin_inset Formula $R_{n}$
+\begin_inset Formula $R_{N}$
 \end_inset
 
  segundo a fig.
@@ -40603,7 +41217,7 @@ reference "fig:Determinação-de-In-Rn-fig16"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40630,7 +41244,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40656,11 +41270,11 @@ name "fig:Determinação-de-In-Rn-fig16"
 \end_inset
 
 Determinação de 
-\begin_inset Formula $I_{n}$
+\begin_inset Formula $I_{N}$
 \end_inset
 
  e de 
-\begin_inset Formula $R_{n}$
+\begin_inset Formula $R_{N}$
 \end_inset
 
 .
@@ -40680,7 +41294,7 @@ Determinação de
 Substituir o subcircuito A pela Fonte de Bancada em série com um miliamperímetro
 , e estes dois elementos em paralelo com a Década de Resistores ajustada
  em 
-\begin_inset Formula $R_{n}$
+\begin_inset Formula $R_{N}$
 \end_inset
 
 , segundo a fig.
@@ -40693,7 +41307,7 @@ reference "fig:Aplicação-do-Teorema-de-norton-fig17"
 
 .
  Ajustar a Fonte de Tensão de modo a medir-se uma corrente igual a 
-\begin_inset Formula $I_{n}$
+\begin_inset Formula $I_{N}$
 \end_inset
 
  no miliamperímetro.
@@ -40795,10 +41409,6 @@ Multímetro analógico
 \end_layout
 
 \begin_layout Itemize
-Ohmímetro 
-\end_layout
-
-\begin_layout Itemize
 Década de Resistores
 \end_layout
 
@@ -40842,10 +41452,10 @@ W: 1x (
 
 \begin_layout Itemize
 Resistores de 
-\begin_inset Formula $\nicefrac{1}{4}$
+\begin_inset Formula $\six 2{\watt}$
 \end_inset
 
-W: 2x (
+: 2x (
 \begin_inset Formula $100\Omega$
 \end_inset
 
@@ -40867,14 +41477,14 @@ Geradores Elétricos e Máxima Transferência de Potência
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
 \end_layout
 
 \begin_layout Itemize
-Determinação da Curva Característica de um Gerador Elétrico;
+Determinação da Curva Característica de um Gerador Elétrico.
 \end_layout
 
 \begin_layout Itemize
@@ -40891,21 +41501,19 @@ Geradores Elétricos
 
 \begin_layout Standard
 Geradores Elétricos são equipamentos ou dispositivos cuja função é a de
- produzir uma diferença potencial, ou voltagem, entre seus terminais, obtida
- por meio da conversão de uma forma de energia(química, mecânica, térmica
- e luminosa por exemplo) em energia elétrica.
+ produzir uma diferença potencial, ou tensão, entre seus terminais, obtida
+ por meio da conversão de uma forma de energia (química, mecânica, térmica
+ ou luminosa, por exemplo) em energia elétrica.
 \end_layout
 
 \begin_layout Standard
-As pilhas e baterias são exemplo de dispositivos que convertem energia química
- em elétrica.
- Esta categoria de geradores remontam a invenção da Pilha Eletroquimica
+As pilhas e baterias são exemplos de dispositivos que convertem energia
+ química em elétrica.
+ Esta categoria de geradores remontam a invenção da Pilha Eletroquímica
  por Alessandro Volta apresentada em 1800.
-\end_layout
-
-\begin_layout Standard
+ Na fig.
+ 1, há algumas ilustrações de pilhas e baterias.
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -40914,7 +41522,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/exp-pot-figura 1.png
-	scale 55
+	scale 85
 
 \end_inset
 
@@ -40936,11 +41544,13 @@ Pilhas e Baterias
 \end_layout
 
 \begin_layout Standard
-Como exemplo de equipamentos que convertem energia mecânica em energia elétrica
- são os dínamos e os alternadores.
+Como exemplo de equipamentos que convertem energia mecânica em energia elétrica,
+ há os dínamos e os alternadores.
  Estes geradores são empregados em usinas hidroelétricas, sendo também empregado
 s nos automóveis (alternador) para promover a energia elétrica necessária
  para alimentar os equipamentos deste.
+ A fig.
+ 2 apresenta uma ilustração.
 \end_layout
 
 \begin_layout Standard
@@ -40948,7 +41558,7 @@ s nos automóveis (alternador) para promover a energia elétrica necessária
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40980,9 +41590,17 @@ Gerador Eletromecânico
 \end_layout
 
 \begin_layout Standard
-Um termopar consiste em um par de metais diferentes, e ao se aplicar temperatura
-s diferentes às suas junções, estabelece uma diferença de potencial conforme
- ilustrado na fig.
+Um termopar consiste em um par de metais diferentes e unidos em seus extremos
+ comforme a fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figura3pot"
+
+\end_inset
+
+ e ao se aplicar temperaturas diferentes às suas junções, estabelece uma
+ diferença de potencial como se vê na fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -40991,9 +41609,9 @@ reference "Figura3pot"
 \end_inset
 
 .
- Este efeito, é denominado Efeito Seebeck, é um exemplo de conversão de
- energia térmica em energia elétrica e é amplamente empregado para medida
- de temperatura.
+ Este efeito é denominado Efeito Seebeck trata-se de um exemplo de conversão
+ de energia térmica em energia elétrica.
+ Tal efeito é amplamente empregado para medição de temperatura.
  
 \end_layout
 
@@ -41038,12 +41656,13 @@ name "Figura3pot"
 
 \begin_layout Standard
 Como último exemplo de gerador elétrico, menciona-se as células solares
- baseadas em materiais semicondutores, quem convertem energia luminosa em
- energia elétrica.
- Essa técnica é amplamente empregada em satélites estações espaciais e hoje
- encontra-se em telefones na beira de estradas e calculadoras de bolso.
- Como cada célula é capaz de produzir uma voltagem pequena e também suprir
- baixas correntes, muitas destas células são dispostas em série e em paralelo.
+ baseadas em materiais semicondutores,as quais convertem energia luminosa
+ em energia elétrica.
+ Essa técnica é muito empregada em satélites, estações espaciais, telefones
+ na beira de estradas e calculadoras de bolso, entre diversas outras aplicaões.
+ Como cada célula é capaz de produzir uma tensão pequena e também suprir
+ baixas correntes, muitas destas são dispostas em associações série e em
+ paralelo.
 \end_layout
 
 \begin_layout Standard
@@ -41537,21 +42156,18 @@ Parte Experimental
 \end_layout
 
 \begin_layout Subsection
-Curva de um gerador tipo pilha elétrica (eletroquímica)
+Curva Caracteristica de Um Gerador Tipo Pilha Elétrica (Eletroquímica)
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Curva-de-um"
+name "subsec:Curva-de-um"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Implementar a seguinte montagem:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -41583,7 +42199,7 @@ Montagem para determinação da curva v x i de pilhas
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Colocar inicialmente a Década Resistiva em 
 \begin_inset ERT
 status open
@@ -41601,11 +42217,15 @@ ohm}
 
 \end_inset
 
- e preencher a tabela a seguir e elaboar um gráfico v x i, variando-se esta
- Década convenientemente.
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Preencher a tabela a seguir.
+\end_layout
+
+\begin_layout Enumerate
+Elaboar um gráfico v x i, variando-se a Década convenientemente.
 \begin_inset Float table
 placement H
 wide false
@@ -41616,7 +42236,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="2cm">
 <row>
@@ -41911,23 +42531,20 @@ v(V)
 
 \end_layout
 
+\begin_layout Enumerate
+No gráfico realizar a regressão linear (traçar a linha de tendencia linear).
+\end_layout
+
+\begin_layout Enumerate
+Determinar a resistencia interna da pilha.
+\end_layout
+
 \begin_layout Subsection
-Curva da Fonte de Bancada
+Curva Caracteristica da Fonte de Bancada
 \end_layout
 
-\begin_layout Standard
-Repetir o mesmo experimento para a Fonte da Bancada.
- Colocar os pontos obtidos no mesmo gráfico do item 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Curva-de-um"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Enumerate
+Repetir o mesmo experimento para a Fonte da Bancada, conforme circuito abaixo.
 \begin_inset Float figure
 placement H
 wide false
@@ -41938,6 +42555,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename imagens/exp-pot-figura 9.png
+	lyxscale 130
 	scale 60
 
 \end_inset
@@ -41963,7 +42581,8 @@ Montagem para determinação da curva v x i da Fonte de Bancada
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Preencher a tabela:
 \begin_inset Float table
 placement H
 wide false
@@ -41974,7 +42593,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="2cm">
 <row>
@@ -42133,23 +42752,35 @@ v(V)
 
 \end_layout
 
-\begin_layout Subsection
-Máxima Transferência de Potência
-\end_layout
-
-\begin_layout Standard
-Simular um gerador com a montagem ilustrada na fig.
- 
+\begin_layout Enumerate
+Colocar os pontos obtidos no mesmo gráfico do item 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "figura10pot"
+reference "subsec:Curva-de-um"
 
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
+Por meio do grafico estime a resistência interna da pilha.
+\end_layout
+
+\begin_layout Enumerate
+Escreva a equação caracteristica da pilha.
+\end_layout
+
+\begin_layout Enumerate
+O que se pode dizer a respeito da resistência interna da fonte de bancada.
+\end_layout
+
+\begin_layout Subsection
+Máxima Transferência de Potência
+\end_layout
+
+\begin_layout Enumerate
+Simular um gerador com a montagem ilustrada abaixo.
 \begin_inset Float figure
 placement H
 wide false
@@ -42164,17 +42795,6 @@ status collapsed
 \end_inset
 
 
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Máxima Transferência de Potência
-\begin_inset CommandInset label
-LatexCommand label
-name "figura10pot"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -42182,28 +42802,19 @@ name "figura10pot"
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Enumerate
 Preencher, então, a seguinte tabela:
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2cm">
@@ -42213,7 +42824,10 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-R(
+\begin_inset Formula $\mathrm{R_{L}}$
+\end_inset
+
+(
 \begin_inset Formula $\si{\ohm}$
 \end_inset
 
@@ -42247,7 +42861,7 @@ i(mA)
 \begin_inset Formula $\mathrm{P_{RL}}$
 \end_inset
 
-
+(mW)
 \end_layout
 
 \end_inset
@@ -42687,8 +43301,8 @@ i(mA)
 
 \end_layout
 
-\begin_layout Standard
-Traçar então dois gráficos em papéis diferentes, um para 
+\begin_layout Enumerate
+Traçar dois gráficos e, um para 
 \begin_inset Formula $\mathrm{P_{RL}\,\times\,R_{L}}$
 \end_inset
 
@@ -42699,54 +43313,279 @@ Traçar então dois gráficos em papéis diferentes, um para
 .
 \end_layout
 
-\begin_layout Standard
-Determinar em que condições 
+\begin_layout Enumerate
+Determinar os valores a seguir para 
 \begin_inset Formula $\mathrm{P_{RL}}$
 \end_inset
 
- é máxima.
+ máximo:
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Teórico
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $\mathrm{P_{RL_{max}}=}\,$
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pelos Graficos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{P_{RL}}$
+\end_inset
+
+ (mW)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{R_{L}}$
 \end_inset
 
 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "3cm"
-height "1pt"
+\begin_inset Formula $\mid$
+\end_inset
+
+
+\begin_inset Formula $\mathrm{_{PRLmax}}$
+\end_inset
+
+ (
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{I_{RL}}$
+\end_inset
+
+
+\begin_inset Formula $\mid$
+\end_inset
+
+
+\begin_inset Formula $\mathrm{_{PRLmax}}$
+\end_inset
+
+ (mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
-\end_inset
-
+\begin_layout Plain Layout
 
 \end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\mathrm{R_{L}\mid\,_{P_{RL_{max}}}=\,}$
-\end_inset
-
-
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "3cm"
-height "1pt"
 
 \end_inset
 
@@ -42767,15 +43606,15 @@ Fonte CC de 0 a 30V
 \end_layout
 
 \begin_layout Itemize
+Década Resistiva
+\end_layout
+
+\begin_layout Itemize
 Multímetro digital
 \end_layout
 
 \begin_layout Itemize
 Multímetro analógico
-\end_layout
-
-\begin_layout Itemize
-Década de Resistores
 \end_layout
 
 \begin_layout Itemize
@@ -42805,11 +43644,7 @@ Cabos banana-banana
 \end_layout
 
 \begin_layout Itemize
-Resistores de 
-\begin_inset Formula $\nicefrac{1}{4}$
-\end_inset
-
-W: 1x (
+Resistores de 2W: 1x (
 \begin_inset Formula $100\Omega$
 \end_inset
 
@@ -42831,10 +43666,15 @@ Circuitos RC e Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos 
+\end_layout
+
+\begin_layout Itemize
+Fixar os conceitos sobre o comportamento de circuitos RC em circuitos de
+ corrente continua
 \end_layout
 
 \begin_layout Itemize
@@ -42888,7 +43728,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Circuito RC Série.
+Circuito RC série.
 \end_layout
 
 \end_inset
@@ -42955,7 +43795,7 @@ Carga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{c}(t)}=\mathrm{V_{cc}\cdot(1-e^{\frac{-t}{RC}})}\label{eq:carga-cap-1}
+\mathrm{v_{c}(t)}=\mathrm{V_{cc}\cdot(1-e^{-t/RC})}\label{eq:carga-cap-1}
 \end{equation}
 
 \end_inset
@@ -42966,7 +43806,7 @@ Carga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{i_{c}(t)=I_{0}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-2}
+\mathrm{i_{c}(t)=I_{0}\cdot e^{-t/RC}}\label{eq:carga-cap-2}
 \end{equation}
 
 \end_inset
@@ -42985,7 +43825,7 @@ Descarga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{c}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-3}
+\mathrm{v_{c}(t)=V_{cc}\cdot e^{-t/RC}}\label{eq:carga-cap-3}
 \end{equation}
 
 \end_inset
@@ -42996,7 +43836,7 @@ Descarga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{i_{c}(t)=-I_{0}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-4}
+\mathrm{i_{c}(t)=-I_{0}\cdot e^{-t/RC}}\label{eq:carga-cap-4}
 \end{equation}
 
 \end_inset
@@ -43018,7 +43858,7 @@ Sendo
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathrm{RC=\tau}\;[S]
+\mathrm{RC=\tau}\;[s]
 \]
 
 \end_inset
@@ -43038,7 +43878,7 @@ Sendo
 \end_layout
 
 \begin_layout Standard
-Foi considerado capacitor inicialmente descarregado em 
+OBS.: Foi considerado capacitor inicialmente descarregado em 
 \begin_inset Formula $\mathrm{t_{0}}$
 \end_inset
 
@@ -43056,7 +43896,7 @@ A tensão no resistor é
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathrm{v_{r}(t)=V_{cc}-v_{c}(t)}
+\mathrm{v_{R}(t)=V_{cc}-v_{c}(t)}
 \]
 
 \end_inset
@@ -43093,7 +43933,7 @@ Carga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{R}(t)=V_{cc}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-5}
+\mathrm{v_{R}(t)=V_{cc}\cdot e^{-t/RC}}\label{eq:carga-cap-5}
 \end{equation}
 
 \end_inset
@@ -43112,7 +43952,7 @@ Descarga
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathrm{v_{R}(t)=-V_{cc}\cdot e^{\frac{-t}{RC}}}\label{eq:carga-cap-6}
+\mathrm{v_{R}(t)=-V_{cc}\cdot e^{-t/RC}}\label{eq:carga-cap-6}
 \end{equation}
 
 \end_inset
@@ -43140,7 +43980,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/carga_descarga_capacitor_simu1.png
-	scale 80
+	width 16cm
 
 \end_inset
 
@@ -43175,7 +44015,7 @@ Montar o circuito abaixo:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -43274,8 +44114,8 @@ name "num:item 4"
 
 \end_inset
 
-Anotar 2 períodos das formas de onda nos gráficos abaixo, salientando as
- 
+Anotar 2 períodos das formas de onda nos gráficos da pag.
+ 3, salientando as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -43292,94 +44132,12 @@ Circuito a Analisar
 \end_inset
 
 ).
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item4-1.png
-	scale 45
-
+\begin_inset Separator latexpar
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item4-2.png
-	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item4-3.png
-	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item4-4.png
-	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 \begin_inset CommandInset label
 LatexCommand label
@@ -43402,13 +44160,13 @@ Observar, simultaneamente,
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-img5.png
-	scale 50
+	scale 70
 
 \end_inset
 
@@ -43448,6 +44206,10 @@ reference "num:item 5"
 
 , conectar as pontas de prova conforme indicado abaixo e acionar a função
  de inverter o CH2, para a forma de onda não aparecer invertida.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -43463,23 +44225,23 @@ e.
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-img6.png
-	scale 50
+	scale 70
 
 \end_inset
 
 
 \end_layout
 
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -43487,10 +44249,83 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-Completar os gráficos do item 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "num:item 4"
+Completar os gráficos a seguir:
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-1.png
+	scale 43
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-2.png
+	scale 43
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-3.png
+	scale 43
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4-4.png
+	scale 43
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -43506,6 +44341,10 @@ name "num:item 9"
 
 Montar os circuitos abaixo e preencher os gráficos na página seguinte, superpond
 o os resultados dos circuitos.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -43514,17 +44353,13 @@ o os resultados dos circuitos.
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -43673,13 +44508,13 @@ reference "num:item 9"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-1.png
-	scale 45
+	scale 38
 
 \end_inset
 
@@ -43693,13 +44528,13 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-2.png
-	scale 45
+	scale 38
 
 \end_inset
 
@@ -43716,13 +44551,13 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-3.png
-	scale 45
+	scale 38
 
 \end_inset
 
@@ -43745,7 +44580,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item9-4.png
-	scale 45
+	scale 38
 
 \end_inset
 
@@ -43843,14 +44678,14 @@ Circuitos Retificadores e Grampeadores e Osciloscópio
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
 \end_layout
 
 \begin_layout Itemize
-Principalmente, treinar o uso do osciloscópio;
+Principalmente, treinar o uso do osciloscópio.
 \end_layout
 
 \begin_layout Itemize
@@ -43913,6 +44748,12 @@ status open
 \end_layout
 
 \begin_layout Standard
+Resposta:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
 Sim, existe.
  Um dos circuitos é o 
 \begin_inset Quotes eld
@@ -43970,6 +44811,12 @@ status open
 \end_layout
 
 \begin_layout Standard
+Resposta:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
 Sim, existe.
  É o 
 \begin_inset Quotes eld
@@ -44023,6 +44870,10 @@ Efeito
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -44054,6 +44905,12 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+Resposta:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
 Sim é possível.
  Tal circuito é o 
 \begin_inset Quotes eld
@@ -44096,12 +44953,12 @@ Efeito
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/osciloscopio4-circuito4.png
+	filename imagens/osciloscopio4-circuito4(2).png
 	scale 50
 
 \end_inset
@@ -44119,6 +44976,12 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+Resposta:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
 Sim, é possível.
  Um dos circuitos é o 
 \begin_inset Quotes eld
@@ -44136,7 +44999,7 @@ Parte Experimental
 \end_layout
 
 \begin_layout Enumerate
-Montar os circuitos apresentados a seguir;
+Montar os circuitos apresentados a seguir.
 \end_layout
 
 \begin_layout Enumerate
@@ -44152,7 +45015,7 @@ simultaneamente
 \begin_inset Formula $\mathrm{v_{s}(t)\times t}$
 \end_inset
 
-, sempre que possível;
+, sempre que possível.
 \end_layout
 
 \begin_layout Enumerate
@@ -44165,7 +45028,7 @@ cruzamentos em zero
 \begin_inset Quotes erd
 \end_inset
 
-;
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -44191,7 +45054,7 @@ Circuito A:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -44210,11 +45073,18 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\align center
+Nome:
+\bar under
+                               
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -44272,6 +45142,13 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+Nome:
+\bar under
+                               
 \end_layout
 
 \begin_layout Standard
@@ -44336,6 +45213,13 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\align center
+Nome:
+\bar under
+                               
+\end_layout
+
+\begin_layout Standard
 
 \bar under
 Notas
@@ -44343,12 +45227,12 @@ Notas
 :
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Aproveitar semelhança do desenho com a geometria da placa para facilitar
  a montagem.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Cuidado para não provocar 
 \bar under
 curto
@@ -44418,6 +45302,13 @@ status open
 \end_layout
 
 \begin_layout Standard
+\align center
+Nome:
+\bar under
+                               
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -44451,12 +45342,8 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-
-\bar under
-Desafio
-\bar default
-:
+\begin_layout Section*
+Desafio:
 \end_layout
 
 \begin_layout Standard
@@ -44469,7 +45356,11 @@ Nos circuitos C e D, qual pode ser uma solução na tentativa de se observar
 \begin_inset Formula $\mathrm{v_{s}(t)\times t}$
 \end_inset
 
- simultaneamente na tela do osciloscópio?
+ 
+\bar under
+simultaneamente
+\bar default
+ na tela do osciloscópio?
 \end_layout
 
 \begin_layout Standard
@@ -44528,7 +45419,11 @@ Multímetro digital
 \end_layout
 
 \begin_layout Itemize
-3x cabos BNC-jacaré
+2x cabos BNC-jacaré
+\end_layout
+
+\begin_layout Itemize
+1x cabos BNC-banana
 \end_layout
 
 \begin_layout Itemize
@@ -44578,7 +45473,7 @@ Medidas de Amplitude e Defasagem
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Standard
 Evidentemente que este sofisticado instrumento, não foi feito apenas com
@@ -44945,20 +45840,41 @@ Parte Prática
 \end_layout
 
 \begin_layout Subsection
-Procedimento:
+Procedimento
 \end_layout
 
 \begin_layout Enumerate
-Ligue o osciloscópio e ajuste os controles de foco e brilho, sem saturá-los,
- para não danificar o material fluorescente.
- 
+Ligue o osciloscópio e ajuste os controles de foco e brilho, 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Ajuste do traço
+\end_layout
+
+\end_inset
+
+ sem saturá-los, para não danificar o material fluorescente.
 \end_layout
 
 \begin_layout Enumerate
-Acionando o gerador de varredura, faça surgir na tela um traço horizontal,
- e com ajuda dos posicionadores coloque o traço em coincidência com uma
- das linhas desenhadas na tela, para que essa linha seja referencia de tensão
- zero.
+Acionando o gerador de varredura, 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Definição do zero(Referência)
+\end_layout
+
+\end_inset
+
+faça surgir na tela um traço horizontal, e com ajuda dos posicionadores
+ coloque o traço em coincidência com uma das linhas desenhadas na tela,
+ para que essa linha seja referencia de tensão zero.
  
 \end_layout
 
@@ -44967,6 +45883,10 @@ Ajuste a fonte de tensão com o voltímetro para os valores especificados
  no quadro, e meça com o osciloscópio, anotando a posição do atenuador vertical,
  o numero de divisões do deslocamento e o resultado.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -45003,6 +45923,16 @@ status collapsed
 \end_inset
 
 
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -45010,13 +45940,13 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -45035,8 +45965,7 @@ E(v)
 \begin_inset Text
 
 \begin_layout Plain Layout
-pos.
- Atenuador
+Seletor(V/DIV)
 \end_layout
 
 \end_inset
@@ -45046,7 +45975,7 @@ pos.
 
 \begin_layout Plain Layout
 num.
- de divisões
+ de divisões(DIV)
 \end_layout
 
 \end_inset
@@ -45055,7 +45984,7 @@ num.
 \begin_inset Text
 
 \begin_layout Plain Layout
-V medido
+Tensão(V)
 \end_layout
 
 \end_inset
@@ -45348,13 +46277,17 @@ status collapsed
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 Coloque o controle de varredura do osciloscópio na posição em que o ponto
  na tela se desloque o mais lentamente possível, mas sem pará-lo, e aplique
- um sinal senoidal de 1hz com o nível máximo, e observe a tela do osciloscópio.
+ um sinal senoidal de 1Hz com o nível máximo, e observe a tela do osciloscópio.
  
 \end_layout
 
@@ -45366,7 +46299,7 @@ Aumente gradualmente a frequência do gerador e observe o que ocorre com
 
 \begin_layout Enumerate
 Ajuste o gerador senoidal para a freq.
- de 100khz, deixando o nível a meio curso e desligue o gerador de varredura
+ de 100kHz, deixando o nível a meio curso e desligue o gerador de varredura
  (posição Ext), do osciloscópio.
  Meça e anote o Valor de pico e o Valor de Pico a Pico.
  
@@ -45375,6 +46308,10 @@ Ajuste o gerador senoidal para a freq.
 \end_deeper
 \begin_layout Enumerate
 Medindo frequências 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -45399,7 +46336,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -45689,7 +46626,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -45979,7 +46916,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -46251,6 +47188,10 @@ Freq.
 \end_deeper
 \begin_layout Enumerate
 Verificação da chave AC/DC
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -46301,11 +47242,14 @@ status collapsed
 \end_deeper
 \begin_layout Enumerate
 Ajustar o gerador de funções para um sinal senoidal de 60hz, e utilizando
- o voltímetro ajuste o nível de saída para as tensões indicadas no quando.
- Para cada ajuste de nível, medi r o valor de pico e pico a pico, visualizado
- no osciloscópio e em seguida calcular com esses dados o respectivo valor
- eficaz.
+ o voltímetro ajuste o nível de saída para as tensões indicadas no quadro.
+ Para cada ajuste de nível, medir o valor de pico a pico, visualizado no
+ osciloscópio, em seguida calcular com esses dados o respectivo valor eficaz.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -46320,7 +47264,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -46510,6 +47454,10 @@ Vef.
 \end_deeper
 \begin_layout Enumerate
 Medida de frequência e fase por Lissajous 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -46576,7 +47524,7 @@ status collapsed
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="6">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -47285,7 +48233,36 @@ Nh/Nv
 
 \end_deeper
 \begin_layout Enumerate
-Monte o circuito abaixo: 
+Monte o circuito abaixo:
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+\begin_inset Formula $\digamma$
+\end_inset
+
+c=1941Hz
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Para: 
+\begin_inset Formula $\digamma$
+\end_inset
+
+=2kHz, 
+\begin_inset Formula $\Delta\theta$
+\end_inset
+
+=-45,9º
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Float figure
 placement H
 wide false
@@ -47315,10 +48292,10 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-\end_layout
 
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -47328,6 +48305,10 @@ status collapsed
 \begin_layout Enumerate
 Desenhe as formas de onda e encontre a defasagem entre os sinais.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -47428,6 +48409,10 @@ height "1pt"
 Feche a varredura (posição X-Y) e desenhe a figura de Lissajous e através
  desta encontre a defasagem entre os sinais.
  
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -47551,7 +48536,7 @@ Cabos banana-banana
 \end_layout
 
 \begin_layout Itemize
-Trafo 110/6v 
+Trafo 110/6V 
 \end_layout
 
 \begin_layout Itemize
@@ -47631,7 +48616,7 @@ Tema Livre
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -47667,6 +48652,12 @@ Apresentação do Esquema Elétrico para Aprovação
 LatexCommand label
 name "enu:Apresentação-do-Esquema"
 
+\end_inset
+
+
+\series default
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -47727,6 +48718,12 @@ Reapresentação do Esquema Elétrico para Aprovação
 LatexCommand label
 name "enu:Reapresentação-do-Esquema"
 
+\end_inset
+
+
+\series default
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -47798,6 +48795,12 @@ name "enu:Apresentação-Final-do"
 \end_inset
 
 
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -47823,6 +48826,12 @@ labelitemi{{}}
 
 \series bold
 Diurno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -47849,6 +48858,12 @@ Repescagem:
 
 \series bold
 Noturno:
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -47978,7 +48993,7 @@ placa de circuito impresso
 ficando por conta da própria equipe todas as ferramentas e procedimentos
  associados
 \bar default
- -- 
+ – 
 \series bold
 não será disponibilizada
 \series default
@@ -48289,6 +49304,10 @@ name "enu:Observação-dos-tópicos"
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -48362,7 +49381,7 @@ status open
 status collapsed
 
 \begin_layout Part
-Analógicos -- Experimentos Extras
+Analógicos – Experimentos Extras
 \end_layout
 
 \end_inset
@@ -48380,7 +49399,7 @@ Instrumentos para Laboratório de Eletrônica
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos.
@@ -48413,6 +49432,10 @@ Utilizaremos nesta experiência o osciloscópio para efetuar medidas de tensão
  e período de sinais provenientes do gerador de funções.
  Para isso, ligue o instrumento e juntamente com o professor verifique os
  itens relacionados abaixo e anote suas características:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -48669,6 +49692,10 @@ Medidas Básicas com o Osciloscópio
 Escolha um canal de entrada do osciloscópio (1 ou 2) e conecte na saída
  do gerador de funções.
  Atenção: devem ser respeitadas as polaridades (+ e -).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -48714,6 +49741,10 @@ Faça os ajustes especificados abaixo no gerador de funções e execute as
  Os resultados devem ser expressos de forma semelhante ao item 1.2, ou seja,
  contendo esboço da forma de onda, escalas utilizadas, valores das divisões,
  valor pico-a-pico das tensões, período e frequência.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
