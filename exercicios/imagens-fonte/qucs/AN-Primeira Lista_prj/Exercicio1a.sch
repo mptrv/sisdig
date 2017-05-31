@@ -1,4 +1,4 @@
-<Qucs Schematic 0.0.18>
+<Qucs Schematic 0.0.19>
 <Properties>
   <View=-20,20,1032,800,1,0,0>
   <Grid=10,10,1>
@@ -14,6 +14,12 @@
   <FrameText3=Revisão:>
 </Properties>
 <Symbol>
+  <Line 0 -20 20 20 #000000 0 1>
+  <Line -20 0 20 -20 #000000 0 1>
+  <Line 0 20 -20 -20 #000000 0 1>
+  <Line 20 0 -20 20 #000000 0 1>
+  <Text -10 -10 12 #000000 0 "+  -\n">
+  <.ID -30 -56 SUB>
 </Symbol>
 <Components>
   <Vdc U1 1 230 230 18 -26 0 1 "10 V" 1>
