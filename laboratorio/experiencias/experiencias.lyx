@@ -74,7 +74,7 @@
 \renewcommand{\theequation}{\arabic{equation}}
 
 % Personalização para unidades SI (por siunitx}.
-\sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
+\sisetup{copy-decimal-marker,input-decimal-markers={,.kM},quotient-mode=fraction,fraction-function=\nicefrac}
 
 % Correção do altura do cabeçalho.
 %   Necessário pois alguns pacotes, como 'pdfpages' ou o que oferece os comandos "oval",
@@ -98,6 +98,10 @@
 % HIFENIZAÇÃO -- CORREÇÕES
 %   Para outros detalhes, ver: https://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Hyphenation.
 \hyphenation{co-nhe-ci-do}
+
+% Formato de capítulo para fancyhdr.
+%   (Ver o manual do fancyhdr para mais informações.)
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -232,62 +236,62 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-revisao
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iv
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -297,12 +301,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-retif-gramp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -326,7 +330,7 @@ customHeadersFooters
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle fancy
 \tracking_changes false
 \output_changes false
@@ -515,17 +519,50 @@ Digitais
 
 \shape smallcaps
 ETE102 - Fundamentos de Circuitos Digitais
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+leftmark
 \end_layout
 
-\begin_layout Center Footer
+\end_inset
+
 
 \end_layout
 
-\begin_layout Right Footer
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Standard
+\begin_layout Left Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -534,6 +571,60 @@ status open
 
 \backslash
 thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -26894,17 +26985,50 @@ Analógicos
 
 \shape smallcaps
 ETE103 - Fundamentos de Circuitos Analógicos
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+leftmark
 \end_layout
 
-\begin_layout Center Footer
+\end_inset
+
 
 \end_layout
 
-\begin_layout Right Footer
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch cm-corpo
 status open
 
-\begin_layout Standard
+\begin_layout Left Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -26913,6 +27037,60 @@ status open
 
 \backslash
 thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Right Footer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -26944,7 +27122,7 @@ Resistores e Associação de Resistores
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivos
@@ -27100,245 +27278,37 @@ reference "fig:tipos-de-resistores"
  invólucros e tamanhos.
  Estas diferenças relacionam-se com a potência máxima que cada um pode dissipar,
  cujos valores mais comuns são: 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 \begin_inset Formula $\six{1/8}{\watt}$
 \end_inset
 
-,
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
- 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
+, 
 \begin_inset Formula $\six{1/4}{\watt}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
 , 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 \begin_inset Formula $\six{1/2}{\watt}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
 , 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 \begin_inset Formula $\six 1{\watt}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
 , 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 \begin_inset Formula $\six 2{\watt}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
 , 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 \begin_inset Formula $\six 3{\watt}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
 , 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 \begin_inset Formula $\six 5{\watt}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
 , 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 \begin_inset Formula $\six{10}{\watt}$
 \end_inset
 
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-\lang brazilian
 .
 \end_layout
 
@@ -27405,7 +27375,46 @@ valores nominais
 \series bold
 real valor
 \series default
- da resistência, entretanto, está contido dentro de uma faixa de 
+ da resistência, entretanto, está contido dent
+\end_layout
+
+\begin_layout Right Header
+
+\shape smallcaps
+ETE102 - Fundamentos de Circuitos Digitais
+\end_layout
+
+\begin_layout Center Footer
+
+\end_layout
+
+\begin_layout Right Footer
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ro de uma faixa de 
 \series bold
 tolerância
 \series default
@@ -31197,9 +31206,9 @@ esptab{
 <lyxtabular version="3" rows="5" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="1cm">
 <row>
 <cell multirow="3" alignment="center" valignment="middle" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
@@ -31664,7 +31673,7 @@ Multímetro digital
 
 \begin_layout Standard
 \begin_inset Branch an-multimetros
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -31681,7 +31690,7 @@ Multímetros
 
 \begin_layout Standard
 \begin_inset Branch cm-corpo
-status collapsed
+status open
 
 \begin_layout Section
 Objetivo
@@ -34085,7 +34094,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -34935,14 +34944,10 @@ reference "fig:medidas-eletricas-Circuito-potenciometro"
 \end_inset
 
  (resistência máxima do potenciômetro).
-\begin_inset Newline newline
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -34992,11 +34997,11 @@ Com
 \end_inset
 
  (potenciômetro) desconectado do circuito, ajuste seu valor inicialmente
- para 
+ para entorno de 
 \begin_inset Formula $\six{500}{\ohm}$
 \end_inset
 
- (um valor proximo a 
+ (
 \begin_inset Formula $R_{desejado}$
 \end_inset
 
@@ -35005,7 +35010,8 @@ Com
 \begin_inset Formula $R_{utilizado}$
 \end_inset
 
-), conecte-o ao circuito e meça a corrente (
+).
+ Conecte o potenciômetro ao circuito e meça a corrente (
 \begin_inset Formula $I_{medido}$
 \end_inset
 
@@ -35029,6 +35035,19 @@ Repita o item anterior para os demais valores de
 
 
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
 \end_inset
 
 
@@ -35549,6 +35568,17 @@ status open
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -35609,35 +35639,35 @@ Caixa de resistências (década resistiva)
 
 \begin_layout Itemize
 Resistores de 
-\begin_inset Formula $\nicefrac{1}{4}$
+\begin_inset Formula $\six{1/4}{\watt}$
 \end_inset
 
-W: 3x (
-\begin_inset Formula $100\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $330\Omega$
+: 3x (
+\begin_inset Formula $\six{100}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $1\mathrm{k}\Omega$
+\begin_inset Formula $\six{330}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $2\mathrm{k}2\Omega$
+\begin_inset Formula $\six{1k}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $3\mathrm{k}3\Omega$
+\begin_inset Formula $\six{2k2}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $6\mathrm{k}8\Omega$
+\begin_inset Formula $\six{3k3}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $10\mathrm{k}\Omega$
+\begin_inset Formula $\six{6k8}{\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{10}{\kilo\ohm}$
 \end_inset
 
 )
@@ -35687,7 +35717,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status collapsed
+status open
 
 \begin_layout Chapter
 Lei de Ohm
@@ -36069,14 +36099,13 @@ reference "fig:lei-ohm-ixv-nao-linear"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/leiohm-grafico2.PNG
-	height 5cm
-	BoundingBox 0bp 0bp 359bp 300bp
+	height 4cm
 
 \end_inset
 
@@ -37709,7 +37738,11 @@ caixaresp[7]
 \end_layout
 
 \begin_layout Enumerate
-A partir das equações das linhas de tendência, calcule o valor das resistências.
+A partir das 
+\bar under
+equações das linhas de tendência
+\bar default
+, calcule o valor das resistências.
 \begin_inset ERT
 status open
 
@@ -37885,7 +37918,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status collapsed
+status open
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -38475,7 +38508,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status collapsed
+status open
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -38574,6 +38607,11 @@ V_{R1}=V_{R3}
 \end_layout
 
 \begin_layout Standard
+\noindent
+e
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 V_{R2}=V_{R4}\label{eq:2}
@@ -38585,7 +38623,7 @@ V_{R2}=V_{R4}\label{eq:2}
 \end_layout
 
 \begin_layout Standard
-Aplicando-se o conceito de divisor de tensões para determinar por exemplo,
+Aplicando-se o conceito de divisor de tensões para determinar, por exemplo,
  
 \begin_inset Formula $V_{R2}$
 \end_inset
@@ -38663,7 +38701,7 @@ e, finalmente:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{2}R_{3}=R_{4}R_{1}
+R_{2}R_{3}=R_{1}R_{4}
 \end{equation}
 
 \end_inset
@@ -38695,7 +38733,26 @@ reference "fig2wheat"
 \end_inset
 
  ilustra um circuito para tal objetivo.
- 
+ Neste, deve-se variar o valor de 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ até que a ponte seja equilibrada e, assim, o valor de 
+\begin_inset Formula $R_{x}$
+\end_inset
+
+ poderá ser determinado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{x}=\frac{R_{1}}{R_{2}}R_{p}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -38742,20 +38799,7 @@ name "fig2wheat"
 \end_layout
 
 \begin_layout Standard
-Neste circuito, deve-se variar o valor de 
-\begin_inset Formula $R_{p}$
-\end_inset
-
- até que a ponte seja equilibrada e,assim,o valor de 
-\begin_inset Formula $R_{x}$
-\end_inset
-
- poderá ser determinado por 
-\begin_inset Formula $R_{x}=\frac{R_{1}}{R_{2}}R_{p}$
-\end_inset
-
-.
- É óbvio que se desejar uma medida precisa de 
+É óbvio que se desejar uma medida precisa de 
 \begin_inset Formula $R_{p}$
 \end_inset
 
@@ -38801,6 +38845,10 @@ status open
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -38815,10 +38863,31 @@ Ajustar a década resistiva de modo a obter-se a tensão
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
-Por medida de segurança, ajustar a escala do voltímetro 
+\begin_layout Quotation
+
+\series bold
+\shape italic
+Por medida de segurança
+\series default
+, ajustar a escala do voltímetro 
 \shape default
 
 \begin_inset Formula $V_{D}$
@@ -38826,7 +38895,11 @@ Por medida de segurança, ajustar a escala do voltímetro
 
 
 \shape italic
- em um valor elevado (3v por exemplo) para evitar danos ao instrumento.
+ em um valor elevado (
+\begin_inset Formula $\six{10}{\volt}$
+\end_inset
+
+ por exemplo) para evitar danos ao instrumento.
  A seguir, quando a tensão for se tornando menor devido à tentativa de equilibra
 r-se a ponte, mudar a escala para valores menores, de modo a aumentar a
  sensibilidade e obter-se um valor de 
@@ -38838,19 +38911,19 @@ r-se a ponte, mudar a escala para valores menores, de modo a aumentar a
 
 \shape italic
  o mais próximo possível de zero.
- 
-\begin_inset Newline newline
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-Apresentar o valor experimental de 
+Anotar o valor experimental de 
 \begin_inset Formula $R_{Década}$
 \end_inset
 
- e compara-lo com o valor calculado.
+ e compará-lo com o valor calculado.
 \begin_inset Newline newline
 \end_inset
 
@@ -38859,7 +38932,7 @@ Apresentar o valor experimental de
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -38877,7 +38950,11 @@ status collapsed
 \begin_inset Formula $R_{Década}$
 \end_inset
 
+ (
+\begin_inset Formula $\si{\ohm}$
+\end_inset
 
+)
 \end_layout
 
 \end_inset
@@ -38962,7 +39039,7 @@ Experimental
 \begin_layout Enumerate
 Medir a tensão sobre todos os resistores, no equilibrio da ponte.
  O que se percebe quanto à relação entre as tensões? Por que esta relação
- ocorre ? 
+ ocorre? 
 \begin_inset Float table
 placement H
 wide false
@@ -38971,6 +39048,19 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features tabularvalignment="middle">
@@ -38981,11 +39071,11 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-R
+R (
 \begin_inset Formula $\varOmega$
 \end_inset
 
-
+)
 \end_layout
 
 \end_inset
@@ -38997,7 +39087,7 @@ R
 \begin_inset Formula $V_{R}$
 \end_inset
 
-(V)
+ (V)
 \end_layout
 
 \end_inset
@@ -39091,6 +39181,17 @@ R
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -39124,12 +39225,39 @@ Retirar, agora,
 \shape italic
 valores desconhecidos
 \shape default
-”, isto é, valores reais desconhecidos (pode-se verificar os valores deste
- resistores a partir das cores marcadas).
- Utilizar 5 valores diferentes, um de cada vez, e preencher a Tabela seguinte.
+”, isto é, valores reais desconhecidos (os valores nominais podem ser determinad
+os pelo código de cores dos resistores).
+ Utilizar 5 valores diferentes, um de cada vez, e preencher a tabela seguinte.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Quote
+
+\series bold
+\emph on
+Notas:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 
 \shape italic
 Tomar o cuidado de medir os valores de
@@ -39142,13 +39270,13 @@ Tomar o cuidado de medir os valores de
 \shape italic
  e de
 \shape default
-
+ 
 \begin_inset Formula $R_{2}$
 \end_inset
 
 
 \shape italic
- com um multimetro digital para utilizalos na eq.
+ com um multímetro digital para utilizá-los na equação 
 \shape default
 
 \begin_inset CommandInset ref
@@ -39160,10 +39288,10 @@ reference "eq:2"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 
 \shape italic
-As medidas de
+As medições em
 \shape default
  
 \begin_inset Formula $R_{x}$
@@ -39171,8 +39299,8 @@ As medidas de
 
 
 \shape italic
- (multimetro) devem ser realizadas com um ohmímetro digital de preferência,
- para comparação com valores obtidos para 
+ devem ser realizadas, de preferência, com um ohmímetro digital; desta forma,
+ a comparação com valores obtidos para 
 \shape default
 
 \begin_inset Formula $R_{x}$
@@ -39180,10 +39308,12 @@ As medidas de
 
 
 \shape italic
- através da ponte
+ através da ponte resultará em menor erro.
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
 \begin_inset Float table
 placement H
 wide false
@@ -39192,23 +39322,35 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\series medium
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="4">
+<lyxtabular version="3" rows="8" columns="5">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
-<column alignment="center" valignment="top" width="3cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\begin{array}{c}
-R_{X}\\
-Valor\,Nominal\\
-\\
-\end{array}$
+\begin_inset Formula $R_{x\,(nominal)}$
 \end_inset
 
 
@@ -39216,11 +39358,11 @@ Valor\,Nominal\\
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $R_{Década}$
+\begin_inset Formula $R_{x\,(medido)}$
 \end_inset
 
 
@@ -39228,17 +39370,343 @@ Valor\,Nominal\\
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\begin{array}{c}
-R_{X}\\
-Determinado\\
-Pela\,eq\,(4)
-\end{array}$
+\begin_inset Formula $R_{década}$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{x\,(calculado)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erro
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -39248,176 +39716,6 @@ Pela\,eq\,(4)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\begin{array}{c}
-R_{X}\\
-Determinado\\
-pelo\,multímetro
-\end{array}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -39432,7 +39730,7 @@ pelo\,multímetro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -39456,12 +39754,13 @@ pelo\,multímetro
 \end_inset
 
 
-\end_layout
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tabwheat2"
+
+}
+\end_layout
 
 \end_inset
 
@@ -39512,25 +39811,36 @@ Universal
 Cabos banana-banana
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Resistores de 
 \begin_inset Formula $\six{1/4}{\watt}$
 \end_inset
 
 : 1x (
-\begin_inset Formula $\six{120}{\ohm},$
+\begin_inset Formula $\six{100}{\ohm}$
 \end_inset
 
+, 
+\begin_inset Formula $\six{120}{\ohm}$
+\end_inset
 
+, 
+\begin_inset Formula $\six{150}{\ohm}$
+\end_inset
+
+, 
 \begin_inset Formula $\six{220}{\ohm}$
 \end_inset
 
 , 
-\begin_inset Formula $\six{390}{\ohm},$
+\begin_inset Formula $\six{330}{\ohm}$
 \end_inset
 
- 
+, 
+\begin_inset Formula $\six{390}{\ohm}$
+\end_inset
+
+, 
 \begin_inset Formula $\six{470}{\ohm}$
 \end_inset
 
@@ -39541,7 +39851,6 @@ Resistores de
 )
 \end_layout
 
-\end_deeper
 \end_inset
 
 
@@ -39549,7 +39858,7 @@ Resistores de
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status collapsed
+status open
 
 \begin_layout Chapter
 Teorema da Superposição e
@@ -41469,7 +41778,7 @@ Resistores de
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status collapsed
+status open
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -43658,7 +43967,7 @@ Resistores de 2W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status collapsed
+status open
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -44670,7 +44979,7 @@ Cabos banana-banana pequenos
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-retif-gramp
-status collapsed
+status open
 
 \begin_layout Chapter
 Circuitos Retificadores e Grampeadores e Osciloscópio
@@ -45461,7 +45770,7 @@ Diodos: 4x 1N4004
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status collapsed
+status open
 
 \begin_layout Chapter
 Osciloscópio:
@@ -48583,7 +48892,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -49391,7 +49700,7 @@ Analógicos – Experimentos Extras
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-revisao
-status collapsed
+status open
 
 \begin_layout Chapter
 Instrumentos para Laboratório de Eletrônica
