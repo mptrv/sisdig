@@ -27375,46 +27375,7 @@ valores nominais
 \series bold
 real valor
 \series default
- da resistência, entretanto, está contido dent
-\end_layout
-
-\begin_layout Right Header
-
-\shape smallcaps
-ETE102 - Fundamentos de Circuitos Digitais
-\end_layout
-
-\begin_layout Center Footer
-
-\end_layout
-
-\begin_layout Right Footer
-\begin_inset Branch cm-corpo
-status open
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thepage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-ro de uma faixa de 
+ da resistência, entretanto, está contido dentro de uma faixa de 
 \series bold
 tolerância
 \series default
@@ -40904,15 +40865,7 @@ Teorema da Superposição
 \end_layout
 
 \begin_layout Standard
-Montar o circuito ilustrado na fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Aplicação-do-Teorema-da-superposiçãofig10"
-
-\end_inset
-
-, semelhante ao analisado na introdução teórica.
+Montar os circuitos abaixo, semelhantes ao analisado na introdução teórica.
  Medir 
 \begin_inset Formula $V_{x}$
 \end_inset
@@ -40937,7 +40890,7 @@ Determinação de
 \begin_inset Formula $V_{x}$
 \end_inset
 
- : 
+: 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -40955,7 +40908,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -40996,7 +40949,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41019,7 +40972,7 @@ Determinação de
 \begin_inset Formula $V_{xb}$
 \end_inset
 
- : 
+: 
 \begin_inset Formula $V_{xb}$
 \end_inset
 
@@ -41037,31 +40990,13 @@ height "1pt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/imagem10-3.PNG
 	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Aplicação-do-Teorema-da-superposiçãofig10"
-
-\end_inset
-
-Aplicação do Teorema da Superposição
-\end_layout
 
 \end_inset
 
@@ -41078,7 +41013,7 @@ Determinação de
 \begin_inset Formula $V_{xc}$
 \end_inset
 
- : 
+: 
 \begin_inset Formula $V_{xc}$
 \end_inset
 
@@ -41096,7 +41031,7 @@ height "1pt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41109,32 +41044,13 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Aplicação-do-Teorema-da-superposição-fg11"
-
-\end_inset
-
-Aplicação do Teorema da Superposição (continuação)
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Enumerate
+Comparação: 
 \begin_inset Formula $V_{xa}$
 \end_inset
 
@@ -41167,18 +41083,23 @@ height "1pt"
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-Comentários: 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
+\series bold
+\emph on
+Observação:
+\series default
+ os valores devem ser bem próximos; diferenças maiores que 
+\begin_inset Formula $\six{0,2}{\volt}$
+\end_inset
 
-
-\backslash
-caixaresp[5]
+ indicam um provável erro experimental ou de interpretação.
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -41189,28 +41110,22 @@ Teorema de Thévenin
 \end_layout
 
 \begin_layout Enumerate
-Montar o circuito ilustrado na fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Aplicação-do-Teorema-da-superposição-fg11"
+O circuito abaixo é o mesmo que o do tópico anterior.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:circ-teo-thevenin"
 
 \end_inset
 
- (o mesmo da fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Aplicação-do-Teorema-da-superposiçãofig10"
 
+\begin_inset Newline newline
 \end_inset
 
-).
- Medida de 
+Anotar o valor de 
 \begin_inset Formula $V_{x}$
 \end_inset
 
- : 
+: 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -41223,32 +41138,18 @@ height "1pt"
 
 \end_inset
 
-
+.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/imagem12.PNG
 	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-Aplicação do Teorema de Thévenin.
-\end_layout
 
 \end_inset
 
@@ -41269,20 +41170,12 @@ Determinar
 \begin_inset Formula $R_{th}$
 \end_inset
 
- segundo a fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Determinação-de-vth-rth-fig13"
-
-\end_inset
-
-.
+ segundo os circuitos seguintes.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41302,7 +41195,7 @@ status collapsed
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41315,65 +41208,69 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Determinação-de-vth-rth-fig13"
-
-\end_inset
-
-Determinação de 
-\begin_inset Formula $V_{th}$
-\end_inset
-
- e de 
-\begin_inset Formula $R_{th}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-Substituir o subcircuito A pela fonte de bancada ajustada em 
+Considerando o circuito do item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:circ-teo-thevenin"
+
+\end_inset
+
+, 
+\series bold
+substituir o Subcircuito A
+\series default
+ pela fonte de bancada ajustada em 
 \begin_inset Formula $V_{th}$
 \end_inset
 
- volts em série com a Década de Resistores ajustada em ohms, segundo a fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Aplicação-do-Teorema-de-thevenin-fig14"
+ volts em série com a Década de Resistores ajustada em 
+\begin_inset Formula $R_{th}$
+\end_inset
+
+ ohms.
+ Em seguida, medir o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ e compará-lo com o do circuito original.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
 
 \end_inset
 
 .
- e medir o valor de 
-\begin_inset Formula $V_{x}$
-\end_inset
-
-, comparando-o com o valor medido anteriormente.
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+\emph on
+Observação:
+\series default
+ os valores devem ser bem próximos; diferenças maiores que 
+\begin_inset Formula $\six{0,2}{\volt}$
+\end_inset
+
+ indicam um provável erro experimental ou de interpretação.
+\emph default
+
 \begin_inset Float figure
 placement h
 wide false
@@ -41391,60 +41288,33 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Aplicação-do-Teorema-de-thevenin-fig14"
-
-\end_inset
-
-Aplicação do Teorema de Thévenin.
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \begin_layout Subsection
 Teorema de Norton
 \end_layout
 
-\begin_layout Standard
-Determinar agora, o Equivalente de Norton para o subcircuito A da fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Aplicação-do-Teorema-de-norton-fig15"
+\begin_layout Enumerate
+O circuito abaixo é o mesmo que o do tópico anterior.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:circ-teo-norton"
 
 \end_inset
 
-, conforme ilustrado na fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Determinação-de-In-Rn-fig16"
 
+\begin_inset Newline newline
 \end_inset
 
-.
- Medida de 
+Anotar o valor de 
 \begin_inset Formula $V_{x}$
 \end_inset
 
- : 
+: 
 \begin_inset Formula $V_{x}$
 \end_inset
 
@@ -41457,10 +41327,7 @@ height "1pt"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+.
 \begin_inset Float figure
 placement H
 wide false
@@ -41470,26 +41337,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/imagem15.PNG
-	scale 55
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Aplicação-do-Teorema-de-norton-fig15"
-
-\end_inset
-
-Aplicação do Teorema de Norton.
-\end_layout
+	filename imagens/imagem12.PNG
+	scale 60
 
 \end_inset
 
@@ -41501,7 +41350,7 @@ Aplicação do Teorema de Norton.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Determinar 
 \begin_inset Formula $I_{N}$
 \end_inset
@@ -41510,18 +41359,15 @@ Determinar
 \begin_inset Formula $R_{N}$
 \end_inset
 
- segundo a fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Determinação-de-In-Rn-fig16"
-
+ segundo os circuitos abaixo.
+\begin_inset Newline newline
 \end_inset
 
-.
-\end_layout
+Lembre-se: 
+\begin_inset Formula $R_{N}=R_{TH}$
+\end_inset
 
-\begin_layout Standard
+
 \begin_inset Float figure
 placement H
 wide false
@@ -41539,16 +41385,9 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -41566,70 +41405,30 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Determinação-de-In-Rn-fig16"
-
-\end_inset
-
-Determinação de 
-\begin_inset Formula $I_{N}$
-\end_inset
-
- e de 
-\begin_inset Formula $R_{N}$
-\end_inset
-
-.
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Substituir o subcircuito A pela Fonte de Bancada em série com um miliamperímetro
-, e estes dois elementos em paralelo com a Década de Resistores ajustada
- em 
-\begin_inset Formula $R_{N}$
-\end_inset
-
-, segundo a fig.
- 
+\begin_layout Enumerate
+Considerando o circuito do item 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Aplicação-do-Teorema-de-norton-fig17"
+reference "enu:circ-teo-norton"
 
 \end_inset
 
-.
- Ajustar a Fonte de Tensão de modo a medir-se uma corrente igual a 
-\begin_inset Formula $I_{N}$
+, 
+\series bold
+substituir o Subcircuito A
+\series default
+ pela Fonte de Bancada em série com um miliamperímetro e estes dois elementos
+ em paralelo com a Década de Resistores ajustada em 
+\begin_inset Formula $R_{N}$
 \end_inset
 
- no miliamperímetro.
- Esta fonte em série com o miliamperímetro simula uma Fonte Independente
- de corrente.
- Medir o valor a 
-\begin_inset Formula $V_{x}$
-\end_inset
-
-, comparando-o com o valor medido anteriormente.
-\end_layout
-
-\begin_layout Standard
+ ohms, segundo o circuito abaixo.
+ 
 \begin_inset Float figure
 placement H
 wide false
@@ -41667,16 +41466,64 @@ Aplicação do Teorema de Norton.
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_layout Enumerate
+Em seguida, ajustar a Fonte de Tensão de modo a medir-se uma corrente igual
+ a 
+\begin_inset Formula $I_{N}$
 \end_inset
 
-Tecer no espaço a seguir, comentários pertinentes a esta experiência, como
- diferenças entre os resultados calculados e os medidos experimentalmente.
- 
+ no miliamperímetro.
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Perceba-se que a fonte de tensão em série com o miliamperímetro emula uma
+ Fonte Independente de Corrente.
+\end_layout
+
+\begin_layout Enumerate
+Medir o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+, comparando-o com o valor medido anteriormente.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+\emph on
+Observação:
+\series default
+ os valores devem ser bem próximos; diferenças maiores que 
+\begin_inset Formula $\six{0,2}{\volt}$
+\end_inset
+
+ indicam um provável erro experimental ou de interpretação.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Tecer, no espaço a seguir, comentários pertinentes a esta experiência, como
+ diferenças entre os resultados calculados e os medidos experimentalmente.
 \begin_inset ERT
 status open
 
@@ -41687,10 +41534,6 @@ status open
 caixaresp[5]
 \end_layout
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -41753,19 +41596,23 @@ Resistores de
 \end_inset
 
 W: 1x (
-\begin_inset Formula $330\Omega$
+\begin_inset Formula $\six{330}{\ohm}$
 \end_inset
 
 )
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 Resistores de 
 \begin_inset Formula $\six 2{\watt}$
 \end_inset
 
-: 2x (
-\begin_inset Formula $100\Omega$
+:
+\series default
+ 2x (
+\begin_inset Formula $\six{100}{\ohm}$
 \end_inset
 
 )
