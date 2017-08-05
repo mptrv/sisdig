@@ -41667,12 +41667,18 @@ As pilhas e baterias são exemplos de dispositivos que convertem energia
  química em elétrica.
  Esta categoria de geradores remontam a invenção da Pilha Eletroquímica
  por Alessandro Volta apresentada em 1800.
- Na fig.
- 1, há algumas ilustrações de pilhas e baterias.
+ Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Pilhas-e-Baterias"
+
+\end_inset
+
+, há algumas ilustrações de pilhas e baterias.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41687,11 +41693,28 @@ status collapsed
 
 \begin_layout Plain Layout
 Pilhas e Baterias
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Pilhas-e-Baterias"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Manter estes desenhos e acrescentar fotos de pilhas e baterias (reais).
 \end_layout
 
 \end_inset
@@ -41703,10 +41726,17 @@ Pilhas e Baterias
 Como exemplo de equipamentos que convertem energia mecânica em energia elétrica,
  há os dínamos e os alternadores.
  Estes geradores são empregados em usinas hidroelétricas, sendo também empregado
-s nos automóveis (alternador) para promover a energia elétrica necessária
- para alimentar os equipamentos deste.
- A fig.
- 2 apresenta uma ilustração.
+s nos automóveis (antigamente, os dínamos; atualmente, os alternadores)
+ para promover a energia elétrica necessária para alimentar os equipamentos
+ deste.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Gerador-Eletromecânico."
+
+\end_inset
+
+ apresenta uma ilustração de um dínamo.
 \end_layout
 
 \begin_layout Standard
@@ -41719,8 +41749,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/exp-pot-figura 2.png
-	scale 55
+	filename imagens/exp-pot-figura-2.png
+	width 100line%
 
 \end_inset
 
@@ -41728,7 +41758,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Gerador Eletromecânico
+Gerador Eletromecânico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gerador-Eletromecânico."
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -41746,28 +41783,23 @@ Gerador Eletromecânico
 \end_layout
 
 \begin_layout Standard
-Um termopar consiste em um par de metais diferentes e unidos em seus extremos
- comforme a fig.
- 
+Um termopar consiste em um par de metais diferentes, unidos em seus extremos,
+ conforme a 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "Figura3pot"
-
-\end_inset
-
- e ao se aplicar temperaturas diferentes às suas junções, estabelece uma
- diferença de potencial como se vê na fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "Figura3pot"
+LatexCommand formatted
+reference "fig:termopar"
 
 \end_inset
 
 .
- Este efeito é denominado Efeito Seebeck trata-se de um exemplo de conversão
- de energia térmica em energia elétrica.
- Tal efeito é amplamente empregado para medição de temperatura.
+ Ao se aplicar temperaturas diferentes às suas junções, estabelece-se uma
+ diferença de potencial, como se vê na mesma figura.
+ Este efeito é denominado 
+\emph on
+Efeito Seebeck 
+\emph default
+e trata-se de um exemplo de conversão de energia térmica em energia elétrica.
+ Tal efeito é amplamente empregado na medição de temperatura.
  
 \end_layout
 
@@ -41776,7 +41808,7 @@ reference "Figura3pot"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -41790,10 +41822,10 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Termopar
+Termopar.
 \begin_inset CommandInset label
 LatexCommand label
-name "Figura3pot"
+name "fig:termopar"
 
 \end_inset
 
@@ -41811,14 +41843,13 @@ name "Figura3pot"
 \end_layout
 
 \begin_layout Standard
-Como último exemplo de gerador elétrico, menciona-se as células solares
- baseadas em materiais semicondutores,as quais convertem energia luminosa
+Como último exemplo de gerador elétrico, mencionam-se as células solares
+ baseadas em materiais semicondutores, as quais convertem energia luminosa
  em energia elétrica.
  Essa técnica é muito empregada em satélites, estações espaciais, telefones
- na beira de estradas e calculadoras de bolso, entre diversas outras aplicaões.
- Como cada célula é capaz de produzir uma tensão pequena e também suprir
- baixas correntes, muitas destas são dispostas em associações série e em
- paralelo.
+ na beira de estradas e calculadoras de bolso, entre diversas outras aplicações.
+ Como cada célula é capaz de somente produzir uma tensão pequena e suprir
+ baixas correntes, muitas destas são dispostas em associações série e paralela.
 \end_layout
 
 \begin_layout Standard
@@ -41854,6 +41885,19 @@ Célula Solar e Painel Solar
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Continuar a revisão da teoria desta experiência a partir daqui.
 \end_layout
 
 \end_inset
@@ -42312,10 +42356,10 @@ Parte Experimental
 \end_layout
 
 \begin_layout Subsection
-Curva Caracteristica de Um Gerador Tipo Pilha Elétrica (Eletroquímica)
+Curva Característica de Um Gerador Tipo Pilha Elétrica (Eletroquímica)
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Curva-de-um"
+name "subsec:Curva-pilha"
 
 \end_inset
 
@@ -42335,15 +42379,6 @@ status collapsed
 \begin_inset Graphics
 	filename imagens/exp-pot-figura 8.png
 	scale 60
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Montagem para determinação da curva v x i de pilhas
-\end_layout
 
 \end_inset
 
@@ -42377,16 +42412,20 @@ ohm}
 \end_layout
 
 \begin_layout Enumerate
-Preencher a tabela a seguir.
+Preencher a tabela a seguir, variando-se a Década convenientemente.
 \end_layout
 
 \begin_layout Enumerate
-Elaboar um gráfico v x i, variando-se a Década convenientemente.
+Em uma planilha eletrônica, traçar o gráfico 
+\begin_inset Formula $v\times i$
+\end_inset
+
+.
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -42400,7 +42439,11 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-i(mA)
+i (
+\begin_inset Formula $\si{\milli\ampere}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -42409,7 +42452,11 @@ i(mA)
 \begin_inset Text
 
 \begin_layout Plain Layout
-v(V)
+v (
+\begin_inset Formula $\si{\volt}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -42688,15 +42735,20 @@ v(V)
 \end_layout
 
 \begin_layout Enumerate
-No gráfico realizar a regressão linear (traçar a linha de tendencia linear).
+No gráfico, realizar a regressão linear (ou seja, traçar a linha de tendência
+ linear).
 \end_layout
 
 \begin_layout Enumerate
-Determinar a resistencia interna da pilha.
+Determinar a resistência interna da pilha por meio da equação obtida.
+\end_layout
+
+\begin_layout Enumerate
+Escrever a equação característica da fonte de bancada
 \end_layout
 
 \begin_layout Subsection
-Curva Caracteristica da Fonte de Bancada
+Curva Característica da Fonte de Bancada
 \end_layout
 
 \begin_layout Enumerate
@@ -42712,16 +42764,7 @@ status collapsed
 \begin_inset Graphics
 	filename imagens/exp-pot-figura 9.png
 	lyxscale 130
-	scale 60
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Montagem para determinação da curva v x i da Fonte de Bancada
-\end_layout
+	height 5cm
 
 \end_inset
 
@@ -42757,7 +42800,11 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-i(mA)
+i (
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -42766,7 +42813,11 @@ i(mA)
 \begin_inset Text
 
 \begin_layout Plain Layout
-v(V)
+v (
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -42909,10 +42960,10 @@ v(V)
 \end_layout
 
 \begin_layout Enumerate
-Colocar os pontos obtidos no mesmo gráfico do item 
+Colocar os pontos obtidos no mesmo gráfico do tópico 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "subsec:Curva-de-um"
+reference "subsec:Curva-pilha"
 
 \end_inset
 
@@ -42920,15 +42971,29 @@ reference "subsec:Curva-de-um"
 \end_layout
 
 \begin_layout Enumerate
-Por meio do grafico estime a resistência interna da pilha.
+Por meio do gráfico, estimar a resistência interna da Fonte de Bancada.
 \end_layout
 
 \begin_layout Enumerate
-Escreva a equação caracteristica da pilha.
+Escrever a equação característica da Fonte de Bancada.
 \end_layout
 
 \begin_layout Enumerate
-O que se pode dizer a respeito da resistência interna da fonte de bancada.
+Qual gerador se aproxima mais do gerador ideal: a Pilha ou a Fonte de Bancada?
+ Por quê?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -42983,7 +43048,7 @@ status open
 \begin_inset Formula $\mathrm{R_{L}}$
 \end_inset
 
-(
+ (
 \begin_inset Formula $\si{\ohm}$
 \end_inset
 
@@ -42996,7 +43061,11 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-v(V)
+v (
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -43005,7 +43074,11 @@ v(V)
 \begin_inset Text
 
 \begin_layout Plain Layout
-i(mA)
+i (
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -43017,7 +43090,11 @@ i(mA)
 \begin_inset Formula $\mathrm{P_{RL}}$
 \end_inset
 
-(mW)
+ (
+\begin_inset Formula $\si{\mW}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -43458,7 +43535,7 @@ i(mA)
 \end_layout
 
 \begin_layout Enumerate
-Traçar dois gráficos e, um para 
+Traçar dois gráficos, um para 
 \begin_inset Formula $\mathrm{P_{RL}\,\times\,R_{L}}$
 \end_inset
 
@@ -43482,59 +43559,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
 
 
-\begin_inset space ~
-\end_inset
+\backslash
+{
+\backslash
+esptab
+\end_layout
 
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
 \end_inset
 
 
@@ -43545,7 +43581,7 @@ status open
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -43554,82 +43590,43 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
 Teórico
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pelos Graficos
+Pelos Gráficos
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{P_{RL}}$
+\begin_inset Formula $\mathrm{P_{RL_{máx}}}$
 \end_inset
 
- (mW)
+ (
+\begin_inset Formula $\si{mW}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -43638,7 +43635,7 @@ Pelos Graficos
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -43649,19 +43646,11 @@ Pelos Graficos
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{R_{L}}$
-\end_inset
-
-
-\begin_inset Formula $\mid$
-\end_inset
-
-
-\begin_inset Formula $\mathrm{_{PRLmax}}$
+\begin_inset Formula $\mathrm{R_{L}\mid_{P_{RL_{máx}}}}$
 \end_inset
 
  (
@@ -43673,7 +43662,7 @@ Pelos Graficos
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -43682,7 +43671,7 @@ Pelos Graficos
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -43693,27 +43682,23 @@ Pelos Graficos
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{I_{RL}}$
+\begin_inset Formula $\mathrm{I_{R_{L}}\mid_{P_{RL_{máx}}}}$
 \end_inset
 
-
-\begin_inset Formula $\mid$
+ (
+\begin_inset Formula $\si{\mA}$
 \end_inset
 
-
-\begin_inset Formula $\mathrm{_{PRLmax}}$
-\end_inset
-
- (mA)
+)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -43722,7 +43707,7 @@ Pelos Graficos
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -43737,9 +43722,16 @@ Pelos Graficos
 \end_inset
 
 
-\end_layout
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -43800,8 +43792,10 @@ Cabos banana-banana
 \end_layout
 
 \begin_layout Itemize
-Resistores de 2W: 1x (
-\begin_inset Formula $100\Omega$
+
+\series bold
+Resistor de 2W: 1x (
+\begin_inset Formula $\six{100}{\ohm}$
 \end_inset
 
 )
@@ -48768,6 +48762,24 @@ Tema Livre
 \end_inset
 
 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Tema Livre
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -48841,13 +48853,13 @@ labelitemi{{}}
 \begin_layout Itemize
 
 \series bold
-Diurno: 26.09.2016
+Diurno: 04.09.2017
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Noturno: 28.09.2016
+Noturno: 06.09.2017
 \end_layout
 
 \begin_layout Standard
@@ -48911,7 +48923,7 @@ Diurno:
 \series default
  
 \series bold
-03.10.2016
+11.09.2017
 \end_layout
 
 \begin_layout Itemize
@@ -48921,7 +48933,7 @@ Noturno:
 \series default
  
 \series bold
-05.10.2016
+13.09.2017
 \end_layout
 
 \begin_layout Standard
@@ -48994,19 +49006,19 @@ Diurno:
 \begin_layout Itemize
 Antecipada: 
 \series bold
-07.11.2016
+30.10.2017
 \end_layout
 
 \begin_layout Itemize
 Oficial: 
 \series bold
-28.11.2016
+06.11.2017
 \end_layout
 
 \begin_layout Itemize
 Repescagem: 
 \series bold
-05.12.2016
+04.12.2017
 \end_layout
 
 \end_deeper
@@ -49026,19 +49038,19 @@ Noturno:
 \begin_layout Itemize
 Antecipada: 
 \series bold
-09.11.2016
+01.11.2017
 \end_layout
 
 \begin_layout Itemize
 Oficial: 
 \series bold
-30.11.2016
+08.11.2017
 \end_layout
 
 \begin_layout Itemize
 Repescagem: 
 \series bold
-07.12.2016
+06.12.2017
 \end_layout
 
 \end_deeper
@@ -49079,13 +49091,13 @@ Não serão aceitos projetos entregues fora do prazo.
 \emph on
 A pontuação será atribuída apenas aos presentes na data de entrega.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 \emph on
-Salvos os casos para os quais se apresentar justificativa plausível acompanhada
- de atestado.
+Salvos os casos para os quais se apresentar justificativa plausível, eventualmen
+te acompanhada de atestado.
 \end_layout
 
 \end_inset
@@ -49167,9 +49179,9 @@ Os componentes deverão ser soldados na placa.
 Antes de soldá-los, fazer um estudo para encontrar uma boa disposição
 \emph default
 .
- Para os CIs, recomenda-se o uso de 
+ 
 \bar under
-soquete
+Para os CIs, é obrigatório o uso de soquete
 \bar default
 .
 \end_layout
@@ -49259,8 +49271,8 @@ Moodle
 , poderá ser aberto um fórum para discussões a respeito deste projeto, envolvend
 o, por exemplo, dicas e sugestões para sua confecção, a serem postadas pelos
  próprios alunos, além dos professores.
- Em caso de interesse, realizar a requisição ao professor responsável pela
- disciplina, via mensagem no 
+ Em caso de interesse, o representante de classe deverá realizar a requisição
+ ao professor responsável pela disciplina, via mensagem no 
 \emph on
 Moodle
 \emph default
@@ -49421,7 +49433,32 @@ reference "sec:Prazos-para-Entrega"
 \series bold
 acompanhado do esquema elétrico
 \series default
+ 
+\series bold
+com pinagem
+\series default
 .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Importante! 
+\series default
+O esquema elétrico deverá seguir o 
+\series bold
+padrão de desenho
+\series default
+ conforme o esquema elétrico fornecido para o projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Poderá ser elaborado à mão ou em CAD.
 \end_layout
 
 \begin_layout Section
@@ -49436,23 +49473,23 @@ name "sec:Critérios-de-Avaliação"
 \end_layout
 
 \begin_layout Standard
-Os critérios de avaliação, por ordem de relevância, são:
+Os critérios de avaliação do projeto consistem dos seguintes itens:
 \end_layout
 
 \begin_layout Enumerate
 Funcionamento: 
 \series bold
-6 pontos 
+5 pontos 
 \series default
-(60%)
+(50%)
 \end_layout
 
 \begin_layout Enumerate
 Observação dos tópicos das orientações: 
 \series bold
-2 pontos
+3 pontos
 \series default
- (20%), sendo
+ (30%), sendo
 \begin_inset CommandInset label
 LatexCommand label
 name "enu:Observação-dos-tópicos"
@@ -49469,6 +49506,18 @@ name "enu:Observação-dos-tópicos"
 \begin_deeper
 \begin_layout Enumerate
 Cumprimento dos prazos de entrega: 
+\series bold
+1,0 ponto
+\series default
+ (10%)
+\end_layout
+
+\begin_layout Enumerate
+Esquema elétrico com pinagens, 
+\bar under
+no padrão recomentado
+\bar default
+: 
 \series bold
 1,5 ponto
 \series default
