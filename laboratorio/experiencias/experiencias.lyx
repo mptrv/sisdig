@@ -43547,7 +43547,7 @@ Traçar dois gráficos, um para
 \end_layout
 
 \begin_layout Enumerate
-Determinar os valores a seguir para 
+Determinar os •valores a seguir para 
 \begin_inset Formula $\mathrm{P_{RL}}$
 \end_inset
 
@@ -43564,8 +43564,6 @@ status open
 
 \begin_layout Plain Layout
 
-
-\backslash
 {
 \backslash
 esptab
@@ -43824,7 +43822,7 @@ Objetivos
 
 \begin_layout Itemize
 Fixar os conceitos sobre o comportamento de circuitos RC em circuitos de
- corrente continua
+ corrente contínua.
 \end_layout
 
 \begin_layout Itemize
@@ -44027,8 +44025,10 @@ Sendo
 
 \end_layout
 
-\begin_layout Standard
-OBS.: Foi considerado capacitor inicialmente descarregado em 
+\begin_layout Description
+
+\emph on
+Observação: Foi considerado capacitor inicialmente descarregado em 
 \begin_inset Formula $\mathrm{t_{0}}$
 \end_inset
 
@@ -44121,7 +44121,6 @@ As formas de onda para carga e descarga no capacitor, sincronizadas no tempo,
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -44129,8 +44128,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/carga_descarga_capacitor_simu1.png
-	width 16cm
+	filename imagens/carga-descarga-capacitor.png
+	width 80line%
 
 \end_inset
 
@@ -44138,7 +44137,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Formas de onda para carga e descarga do capacitor
+Formas de onda para carga e descarga do capacitor.
 \end_layout
 
 \end_inset
@@ -44170,7 +44169,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/osciloscopio3-img3.png
+	filename imagens/osciloscopio3-circ1.png
 	scale 70
 
 \end_inset
