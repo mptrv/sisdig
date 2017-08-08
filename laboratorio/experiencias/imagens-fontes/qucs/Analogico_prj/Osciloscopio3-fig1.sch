@@ -1,4 +1,4 @@
-<Qucs Schematic 0.0.18>
+<Qucs Schematic 0.0.19>
 <Properties>
   <View=0,0,800,800,1,0,0>
   <Grid=10,10,1>
@@ -17,7 +17,7 @@
 </Symbol>
 <Components>
   <Vdc Vcc 1 90 140 -41 -26 1 1 "1 V" 0>
-  <Switch S1 1 210 110 -26 11 1 2 "off" 0 "1 ms" 0 "0" 0 "1e12" 0 "26.85" 0 "1e-6" 0>
+  <Switch S1 1 210 110 -26 11 1 2 "off" 0 "1 ms" 0 "0" 0 "1e12" 0 "26.85" 0 "1e-6" 0 "spline" 0>
   <R R 1 290 110 -26 15 0 0 "50 Ohm" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <C C 1 380 160 -26 -26 1 1 "1 pF" 0 "" 0 "neutral" 0>
 </Components>

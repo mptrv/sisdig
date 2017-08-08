@@ -1,6 +1,6 @@
-<Qucs Schematic 0.0.18>
+<Qucs Schematic 0.0.19>
 <Properties>
-  <View=0,0,780,800,1,317,0>
+  <View=0,0,780,800,1,0,0>
   <Grid=10,10,1>
   <DataSet=osciloscopio3-item7-2.dat>
   <DataDisplay=osciloscopio3-item7-2.dpl>

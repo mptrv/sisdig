@@ -44271,12 +44271,16 @@ name "num:item 4"
 \end_inset
 
 Considerando os eixos 
+\bar under
+
 \begin_inset CommandInset ref
 LatexCommand vpageref
 reference "fig:circ-rc-osc-eixos"
 
 \end_inset
 
+
+\bar default
 , anotar 2 períodos das formas de onda observadas, salientando as 
 \begin_inset Quotes eld
 \end_inset
@@ -44406,12 +44410,12 @@ status open
 
 \end_deeper
 \begin_layout Enumerate
-Completar os gráficos a seguir:
+Completar os gráficos abaixo.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -44419,7 +44423,7 @@ status open
 	filename imagens/osciloscopio3-item4.png
 	lyxscale 50
 	width 80text%
-	height 90theight%
+	height 95theight%
 
 \end_inset
 
@@ -44436,6 +44440,10 @@ name "fig:circ-rc-osc-eixos"
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -44445,13 +44453,23 @@ name "num:item 9"
 
 \end_inset
 
-Montar os circuitos abaixo e preencher os gráficos na página seguinte, superpond
-o os resultados dos circuitos.
+Montar os circuitos abaixo e preencher os gráficos 
+\bar under
+
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:circ-rc-osc-eixos2"
+
+\end_inset
+
+
+\bar default
+, superpondo os resultados dos circuitos.
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -44519,25 +44537,29 @@ Circuito 2
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \begin_inset Float figure
-placement H
+placement p
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-item4.png
 	lyxscale 50
-	scale 38
+	width 80text%
+	height 95theight%
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:circ-rc-osc-eixos2"
 
 \end_inset
 
@@ -44554,7 +44576,7 @@ Se as formas de onda
 \begin_inset Formula $\mathrm{v_{c1}(t)}$
 \end_inset
 
- 
+ e 
 \begin_inset Formula $\mathrm{v_{c2}(t)}$
 \end_inset
 
@@ -44721,7 +44743,7 @@ rebata
 \begin_inset Quotes erd
 \end_inset
 
- a parte negativa da senóide para a parte positiva?
+ a parte negativa da senoide para a parte positiva?
 \end_layout
 
 \begin_layout Standard
@@ -44762,7 +44784,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Resposta:
+
+\bar under
+Resposta
+\bar default
+:
 \end_layout
 
 \begin_layout Standard
@@ -44825,7 +44851,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Resposta:
+
+\bar under
+Resposta
+\bar default
+:
 \end_layout
 
 \begin_layout Standard
@@ -44857,7 +44887,7 @@ cima
 \begin_inset Quotes erd
 \end_inset
 
- de forma que toda a senóide permaneça na parte positiva? 
+ de forma que toda a senoide permaneça na parte positiva? 
 \end_layout
 
 \begin_layout Standard
@@ -44896,7 +44926,7 @@ Efeito
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -44919,7 +44949,11 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-Resposta:
+
+\bar under
+Resposta
+\bar default
+:
 \end_layout
 
 \begin_layout Standard
@@ -44990,7 +45024,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-Resposta:
+
+\bar under
+Resposta
+\bar default
+:
 \end_layout
 
 \begin_layout Standard
@@ -45088,7 +45126,7 @@ status open
 
 \begin_layout Standard
 \align center
-Nome:
+Nome: 
 \bar under
                                
 \end_layout
@@ -45132,6 +45170,9 @@ status open
 \end_layout
 
 \begin_layout Subsubsection*
+\begin_inset Newpage newpage
+\end_inset
+
 Circuito B:
 \end_layout
 
@@ -45160,9 +45201,9 @@ status open
 
 \begin_layout Standard
 \align center
-Nome:
+Nome: 
 \bar under
-                               
+                              
 \end_layout
 
 \begin_layout Standard
@@ -45200,6 +45241,9 @@ status collapsed
 \end_layout
 
 \begin_layout Subsubsection*
+\begin_inset Newpage newpage
+\end_inset
+
 Circuito C:
 \end_layout
 
@@ -45208,7 +45252,7 @@ Circuito C:
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -45228,9 +45272,9 @@ status collapsed
 
 \begin_layout Standard
 \align center
-Nome:
+Nome: 
 \bar under
-                               
+                              
 \end_layout
 
 \begin_layout Standard
@@ -45289,6 +45333,9 @@ status collapsed
 \end_layout
 
 \begin_layout Subsubsection*
+\begin_inset Newpage newpage
+\end_inset
+
 Circuito D:
 \end_layout
 
@@ -45327,7 +45374,7 @@ Nome:
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -45391,10 +45438,6 @@ caixaresp[5]
 \end_inset
 
 
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -45437,7 +45480,7 @@ Multímetro digital
 \end_layout
 
 \begin_layout Itemize
-1x cabos BNC-banana
+1x cabo BNC-banana
 \end_layout
 
 \begin_layout Itemize
@@ -45498,10 +45541,6 @@ Evidentemente que este sofisticado instrumento, não foi feito apenas com
  das condições de ajuste em que o aparelho se encontra naquele instante.
  Ou seja qualquer desatenção ou má operação pode induzir o usuário a graves
  erros, contrariando até as leis da física.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -45640,13 +45679,13 @@ A composição gráfica de dois movimentos oscilatórios, um na horizontal e
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/figura-de-lissajous.jpg
-	scale 60
+	filename imagens/figura-de-lissajous.png
+	height 6cm
 
 \end_inset
 
@@ -45758,13 +45797,13 @@ Vamos supor dois sinais senoidais de mesma frequência, porem defasados e
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/figura-de-lissajous2.png
-	scale 60
+	height 6cm
 
 \end_inset
 
@@ -45858,19 +45897,21 @@ Procedimento
 \end_layout
 
 \begin_layout Enumerate
-Ligue o osciloscópio e ajuste os controles de foco e brilho, 
 \begin_inset Marginal
 status open
 
 \begin_layout Plain Layout
+\align left
 
+\shape smallcaps
 \size footnotesize
 Ajuste do traço
 \end_layout
 
 \end_inset
 
- sem saturá-los, para não danificar o material fluorescente.
+Ligue o osciloscópio e ajuste os controles de foco e brilho, sem saturá-los,
+ para não danificar o material fluorescente.
 \end_layout
 
 \begin_layout Enumerate
@@ -45879,9 +45920,11 @@ Acionando o gerador de varredura,
 status open
 
 \begin_layout Plain Layout
+\align left
 
+\shape smallcaps
 \size footnotesize
-Definição do zero(Referência)
+Definição do zero (Referência)
 \end_layout
 
 \end_inset
@@ -45897,14 +45940,10 @@ Ajuste a fonte de tensão com o voltímetro para os valores especificados
  no quadro, e meça com o osciloscópio, anotando a posição do atenuador vertical,
  o numero de divisões do deslocamento e o resultado.
  
-\begin_inset Separator latexpar
+\begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -45937,18 +45976,9 @@ status collapsed
 \end_inset
 
 
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
+\begin_deeper
 \begin_layout Standard
 \begin_inset Float table
 placement H
@@ -45958,6 +45988,19 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="4">
 <features tabularvalignment="middle">
@@ -45970,7 +46013,11 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-E(v)
+E (
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -45979,7 +46026,11 @@ E(v)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Seletor(V/DIV)
+Seletor (
+\begin_inset Formula $\si{V/DIV}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -45988,8 +46039,12 @@ Seletor(V/DIV)
 \begin_inset Text
 
 \begin_layout Plain Layout
-num.
- de divisões(DIV)
+núm.
+ de divisões (
+\begin_inset Formula $\si{DIV}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -45998,7 +46053,11 @@ num.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tensão(V)
+Tensão medida (
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -46237,6 +46296,17 @@ Tensão(V)
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -46301,7 +46371,11 @@ status collapsed
 \begin_layout Enumerate
 Coloque o controle de varredura do osciloscópio na posição em que o ponto
  na tela se desloque o mais lentamente possível, mas sem pará-lo, e aplique
- um sinal senoidal de 1Hz com o nível máximo, e observe a tela do osciloscópio.
+ um sinal senoidal de 
+\begin_inset Formula $\six 1{\hertz}$
+\end_inset
+
+ com o nível máximo, e observe a tela do osciloscópio.
  
 \end_layout
 
@@ -46313,8 +46387,12 @@ Aumente gradualmente a frequência do gerador e observe o que ocorre com
 
 \begin_layout Enumerate
 Ajuste o gerador senoidal para a freq.
- de 100kHz, deixando o nível a meio curso e desligue o gerador de varredura
- (posição Ext), do osciloscópio.
+ de 
+\begin_inset Formula $\six{100}{\kilo\hertz}$
+\end_inset
+
+, deixando o nível a meio curso e desligue o gerador de varredura (posição
+ Ext), do osciloscópio.
  Meça e anote o Valor de pico e o Valor de Pico a Pico.
  
 \end_layout
@@ -46381,7 +46459,7 @@ Pos.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Num.
+Núm.
  divisões
 \end_layout
 
@@ -46391,7 +46469,7 @@ Num.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Periodo T
+Período
 \end_layout
 
 \end_inset
@@ -46634,7 +46712,7 @@ Quadrada
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -46671,7 +46749,7 @@ Pos.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Num.
+Núm.
  divisões
 \end_layout
 
@@ -46681,7 +46759,7 @@ Num.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Periodo T
+Período
 \end_layout
 
 \end_inset
@@ -46924,7 +47002,7 @@ Triangular
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -46961,7 +47039,7 @@ Pos.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Num.
+Núm.
  divisões
 \end_layout
 
@@ -46971,7 +47049,7 @@ Num.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Periodo T
+Período
 \end_layout
 
 \end_inset
@@ -48247,36 +48325,37 @@ Nh/Nv
 
 \end_deeper
 \begin_layout Enumerate
-Monte o circuito abaixo:
 \begin_inset Marginal
 status open
 
 \begin_layout Plain Layout
+\align left
 
 \size footnotesize
-\begin_inset Formula $\digamma$
+\begin_inset Formula $f_{c}=\six{1941}{\hertz}$
 \end_inset
 
-c=1941Hz
+
 \end_layout
 
 \begin_layout Plain Layout
+\align left
 
 \size footnotesize
-Para: 
-\begin_inset Formula $\digamma$
+Para 
+\begin_inset Formula $f=\six 2{\kilo\hertz}$
 \end_inset
 
-=2kHz, 
-\begin_inset Formula $\Delta\theta$
+, 
+\begin_inset Formula $\Delta\theta=\six{-45,9}{\degree}$
 \end_inset
 
-=-45,9º
+
 \end_layout
 
 \end_inset
 
- 
+Monte o circuito abaixo: 
 \begin_inset Float figure
 placement H
 wide false
@@ -48550,7 +48629,7 @@ Cabos banana-banana
 \end_layout
 
 \begin_layout Itemize
-Trafo 110/6V 
+Trafo 110/6V (caixa) 
 \end_layout
 
 \begin_layout Itemize
@@ -48559,7 +48638,7 @@ Resistores de
 \end_inset
 
 W: 1x (
-\begin_inset Formula $1k\Omega$
+\begin_inset Formula $\six 1{\kilo\ohm}$
 \end_inset
 
 )
@@ -48567,7 +48646,7 @@ W: 1x (
 
 \begin_layout Itemize
 Capacitores: 1x (
-\begin_inset Formula $82nF$
+\begin_inset Formula $\six{82}{\nano\farad}$
 \end_inset
 
 )
