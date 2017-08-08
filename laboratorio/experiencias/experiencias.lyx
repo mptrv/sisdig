@@ -43843,7 +43843,14 @@ negativo
 \end_layout
 
 \begin_layout Section
-Circuito a Analisar 
+Circuito a Analisar
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Circuito-a-Analisar"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -44263,8 +44270,14 @@ name "num:item 4"
 
 \end_inset
 
-Anotar 2 períodos das formas de onda nos gráficos da pag.
- 3, salientando as 
+Considerando os eixos 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fig:circ-rc-osc-eixos"
+
+\end_inset
+
+, anotar 2 períodos das formas de onda observadas, salientando as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -44272,19 +44285,14 @@ cotas notáveis
 \begin_inset Quotes erd
 \end_inset
 
- (conforme apresentado na seção 
-\begin_inset Quotes eld
-\end_inset
+ (conforme apresentado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Circuito-a-Analisar"
 
-Circuito a Analisar
-\begin_inset Quotes erd
 \end_inset
 
 ).
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -44315,7 +44323,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-img5.png
-	scale 70
+	height 5cm
 
 \end_inset
 
@@ -44380,7 +44388,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/osciloscopio3-img6.png
-	scale 70
+	height 5cm
 
 \end_inset
 
@@ -44403,73 +44411,22 @@ Completar os gráficos a seguir:
 placement H
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item4-1.png
-	scale 43
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item4-2.png
-	scale 43
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/osciloscopio3-item4-3.png
-	scale 43
+	filename imagens/osciloscopio3-item4.png
+	lyxscale 50
+	width 80text%
+	height 90theight%
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item4-4.png
-	scale 43
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:circ-rc-osc-eixos"
 
 \end_inset
 
@@ -44490,19 +44447,11 @@ name "num:item 9"
 
 Montar os circuitos abaixo e preencher os gráficos na página seguinte, superpond
 o os resultados dos circuitos.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -44577,9 +44526,29 @@ Circuito 2
 \end_inset
 
 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/osciloscopio3-item4.png
+	lyxscale 50
+	scale 38
+
+\end_inset
+
+
 \end_layout
 
-\end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 Se as formas de onda 
 \begin_inset Formula $\mathrm{v_{c1}(t)}$
@@ -44630,110 +44599,6 @@ status open
 
 \backslash
 caixaresp[5]
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Gráficos para os circuitos 1 e 2 do item 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "num:item 9"
-
-\end_inset
-
-: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item9-1.png
-	scale 38
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item9-2.png
-	scale 38
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item9-3.png
-	scale 38
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/osciloscopio3-item9-4.png
-	scale 38
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
