@@ -251,7 +251,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -261,22 +261,22 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -286,27 +286,27 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-iv
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -316,12 +316,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-retif-gramp
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -28782,7 +28782,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -33335,39 +33335,303 @@ Objetivo
 \end_layout
 
 \begin_layout Itemize
-Conceito de sensibilidade.
+Conhecer os procedimentos para operar adequadamente o multímetro analógico
+ e o digital.
 \end_layout
 
 \begin_layout Itemize
-Estudo de voltímetro e amperímetro CC usando galvanômetro de bobina móvel.
+Estudar a modelagem dos voltímetros e amperímetros.
 \end_layout
 
 \begin_layout Itemize
-Apresentação de modelo para amperimetro e voltimetro.
-\end_layout
-
-\begin_layout Itemize
-Conhecimento das corretas formas para medição de tensão e corrente.
-\end_layout
-
-\begin_layout Itemize
-Os principios de sensores e conversores A/D para construção de voltimetro
- e amperimetro digital.
-\end_layout
-
-\begin_layout Itemize
-Familiarização com o conceito de 
-\begin_inset Quotes erd
-\end_inset
-
-resistência interna
-\begin_inset Quotes erd
-\end_inset
-
- de instrumentos.
+Interpretar os conceitos de resistência interna e sensibilidade.
 \end_layout
 
 \begin_layout Section
+Apresentação
+\end_layout
+
+\begin_layout Standard
+Os instrumentos mais comumente utilizados para medições de resistência,
+ tensão e corrente são os multímetros.
+\end_layout
+
+\begin_layout Standard
+Existem os multímetros analógicos, cuja construção baseia-se no 
+\emph on
+galvanômetro de bobina móvel
+\emph default
+, e os multímetros digitais, cuja construção baseia-se em sensores e conversores
+ analógicos/digitais (conversores A/D).
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-Multímetro-analógico"
+
+\end_inset
+
+ apresenta um exemplo de cada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/mult-multimetro-analogico-sanwa-475px.png
+	lyxscale 50
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Multímetro analógico.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/mult-multimetro-digital-et2780-peq.png
+	lyxscale 75
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Multímetro digital.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplos de multímetros.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-Multímetro-analógico"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+É conveniente salientar que o estudo dos multímetros analógicos ainda se
+ faz importante, mesmo que atualmente os multímetros digitais sejam os mais
+ comuns.
+ De fato, em muitas empresas pode-se encontrar em operação os analógicos;
+ inclusive, estes permitem a leitura de tensão e corrente sem a necessidade
+ de bateria.
+\end_layout
+
+\begin_layout Standard
+Certamente, existem diferenças nas características de ambos os multímetros,
+ conforme exposto na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:mult-Características-Típicas"
+
+\end_inset
+
+ e, em geral, o multímetro digital apresenta diversas vantagens sobre o
+ analógico.
+\end_layout
+
+\begin_layout Standard
+Para bem se conhecer a influência desses instrumentos durante o processo
+ de medição em algum circuito, deve-se estudar seu modelo, conforme exposto
+ na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:mult-Modelagem"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Quanto à operação, certos cuidados são necessários a fim de que o valor
+ obtido na medição seja correto.
+ Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:mult-Operação"
+
+\end_inset
+
+, tais detalhes serão tratados.
+\end_layout
+
+\begin_layout Section
+Operação
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:mult-Operação"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Multímetro Analógico
+\end_layout
+
+\begin_layout Standard
+Uma referência para orientação em como operar multímetros analógicos pode
+ ser obtida em:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
+target "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Medição de Resistência
+\end_layout
+
+\begin_layout Subsubsection
+Medição de Tensão
+\end_layout
+
+\begin_layout Subsubsection
+Medição de Corrente
+\end_layout
+
+\begin_layout Subsection
+Multímetro Digital
+\end_layout
+
+\begin_layout Standard
+...muitas vezes, não são explícitos em um multímetro digital (pois o circuito
+ interno já os trata adequadamente).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Medição de Resistência
+\end_layout
+
+\begin_layout Subsubsection
+Medição de Tensão
+\end_layout
+
+\begin_layout Subsubsection
+Medição de Corrente
+\end_layout
+
+\begin_layout Section
+Modelagem
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:mult-Modelagem"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Notas sobre a Resistência Interna
+\end_layout
+
+\begin_layout Subsection
+Notas sobre a Sensibilidade
+\end_layout
+
+\begin_layout Section
+Características Típicas
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:mult-Características-Típicas"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Informações Complementares
+\end_layout
+
+\begin_layout Subsection
+Fundamentos do Multímetro Analógico
+\end_layout
+
+\begin_layout Subsubsection
 Galvanômetro de Bobina Móvel
 \end_layout
 
@@ -33454,7 +33718,7 @@ name "fig:mult-galvanometro"
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsubsection
 Voltímetro
 \end_layout
 
@@ -33591,110 +33855,7 @@ resistência interna
  do galvanômetro.
 \end_layout
 
-\begin_layout Subsection*
-Sensibilidade e precisão de multimetros digitais
-\end_layout
-
-\begin_layout Standard
-Um voltímetro é tanto 
-\series bold
-melhor
-\series default
- quanto 
-\series bold
-menor 
-\series default
-for a corrente necessária para defletir o ponteiro do galvanômetro.
- Tal fato permite, portanto, trabalhar com uma resistência 
-\begin_inset Formula $R_{m}$
-\end_inset
-
- de valor elevado e, assim, diminuir a interferência no circuito onde é
- executada a medida.
- 
-\end_layout
-
-\begin_layout Standard
-A sensibilidade é definida em função da corrente de fundo de escala 
-\begin_inset Formula $Ig$
-\end_inset
-
-, equacionada por:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-S=\frac{1}{I_{g}}=\frac{R_{v}}{V_{m}}\quad[\Omega/\mathrm{V}]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-em que:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{v}=R_{m}+R_{g}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-sendo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{g}\ll R_{m}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nota-se que 
-\begin_inset Formula $R_{v}$
-\end_inset
-
- é a 
-\emph on
-resistência interna
-\emph default
- do multímetro na escala 
-\begin_inset Formula $V_{m}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Logo, dada a sensibilidade do voltímetro, pode-se determinar o valor da
- resistência 
-\begin_inset Formula $R_{m}$
-\end_inset
-
- necessário para uma dada escala.
- Ou, por outro lado, dada a sensibilidade do voltímetro, pode-se determinar
- sua 
-\emph on
-resistência interna
-\emph default
- e, assim, prever o quanto ele influenciará no circuito a ser medido.
-\end_layout
-
-\begin_layout Section
+\begin_layout Subsubsection
 Amperímetro
 \end_layout
 
@@ -33795,10 +33956,6 @@ name "fig:mult-amperimetro"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -33913,10 +34070,6 @@ name "fig:mult-shunt-ayrton"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -33937,7 +34090,125 @@ Os valores de
  galvanômetro utilizado.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
+Fundamentos do Multímetro Digital
+\end_layout
+
+\begin_layout Standard
+No caso de multímetros digitais, o galvanômetro é substituído por um filtro
+ passa baixas associado a um conversor A/D (conversor Analógico/Digital).
+ Existem, no mercado, circuitos integrados dedicados que, internamente,
+ possuem conversor A/D, decodificador para 
+\emph on
+display
+\emph default
+ e outras facilidades que permitem a construção de multímetros.
+\end_layout
+
+\begin_layout Subsection
+Sensibilidade e precisão de multimetros digitais
+\end_layout
+
+\begin_layout Standard
+Um voltímetro é tanto 
+\series bold
+melhor
+\series default
+ quanto 
+\series bold
+menor 
+\series default
+for a corrente necessária para defletir o ponteiro do galvanômetro.
+ Tal fato permite, portanto, trabalhar com uma resistência 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ de valor elevado e, assim, diminuir a interferência no circuito onde é
+ executada a medida.
+ 
+\end_layout
+
+\begin_layout Standard
+A sensibilidade é definida em função da corrente de fundo de escala 
+\begin_inset Formula $Ig$
+\end_inset
+
+, equacionada por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\frac{1}{I_{g}}=\frac{R_{v}}{V_{m}}\quad[\Omega/\mathrm{V}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{v}=R_{m}+R_{g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{g}\ll R_{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nota-se que 
+\begin_inset Formula $R_{v}$
+\end_inset
+
+ é a 
+\emph on
+resistência interna
+\emph default
+ do multímetro na escala 
+\begin_inset Formula $V_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Logo, dada a sensibilidade do voltímetro, pode-se determinar o valor da
+ resistência 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ necessário para uma dada escala.
+ Ou, por outro lado, dada a sensibilidade do voltímetro, pode-se determinar
+ sua 
+\emph on
+resistência interna
+\emph default
+ e, assim, prever o quanto ele influenciará no circuito a ser medido.
+\end_layout
+
+\begin_layout Subsection
 Instrumentos com Várias Escalas
 \end_layout
 
@@ -34056,146 +34327,6 @@ name "fig:mult-varias-escalas"
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Os instrumentos mais comumente utilizados para medições de tensão, corrente
- e resistência são os multímetros, os quais, naturalmente, possuem várias
- escalas.
-\end_layout
-
-\begin_layout Standard
-A 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-Multímetro-analógico"
-
-\end_inset
-
- apresenta um exemplo de multímetro analógico, cuja construção é baseada
- em galvanômetro de bobina móvel.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/mult-multimetro-analogico-sanwa-475px.jpg
-	lyxscale 50
-	height 7cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Exemplo de multímetro analógico.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-Multímetro-analógico"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-No caso de multímetros digitais, o galvanômetro é substituído por um filtro
- passa baixas associado a um conversor A/D (conversor Analógico/Digital).
- Existem, no mercado, circuitos integrados dedicados que, internamente,
- possuem conversor A/D, decodificador para 
-\emph on
-display
-\emph default
- e outras facilidades que permitem a construção de multímetros.
- A 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-multímetro-digital"
-
-\end_inset
-
- apresenta um exemplo de multímetro digital.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/mult-multimetro-digital-et2780-peq.jpg
-	lyxscale 75
-	height 7cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Exemplo de multímetro digital.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-multímetro-digital"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Note-se ainda que a operação de multímetros analógicos requer certos cuidados
- que, muitas vezes, não são explícitos em um multímetro digital (pois o
- circuito interno já os trata adequadamente).
- Uma referência para orientação em como operar multímetros analógicos pode
- ser obtida em:
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-name "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
-target "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
 
 \end_inset
 
@@ -35732,7 +35863,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -37355,7 +37486,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status open
+status collapsed
 
 \begin_layout Chapter
 Lei de Ohm
@@ -39556,7 +39687,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status open
+status collapsed
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -40146,7 +40277,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status open
+status collapsed
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -41496,7 +41627,7 @@ Resistores de
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status open
+status collapsed
 
 \begin_layout Chapter
 Teorema da Superposição e
@@ -43302,7 +43433,7 @@ Resistores de
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status open
+status collapsed
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -45483,7 +45614,7 @@ Resistor de 2W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status open
+status collapsed
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -46383,7 +46514,7 @@ Cabos banana-banana pequenos
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-retif-gramp
-status open
+status collapsed
 
 \begin_layout Chapter
 Circuitos Retificadores e Grampeadores e Osciloscópio
@@ -47195,7 +47326,7 @@ Diodos: 4x 1N4004
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status open
+status collapsed
 
 \begin_layout Chapter
 Osciloscópio:
@@ -48763,7 +48894,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
