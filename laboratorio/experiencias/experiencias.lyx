@@ -33354,6 +33354,32 @@ Apresentação
 \begin_layout Standard
 Os instrumentos mais comumente utilizados para medições de resistência,
  tensão e corrente são os multímetros.
+ 
+\end_layout
+
+\begin_layout Standard
+A palavra 
+\begin_inset Quotes eld
+\end_inset
+
+multímetro
+\begin_inset Quotes erd
+\end_inset
+
+ significa 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+multi
+\emph default
+medidas
+\begin_inset Quotes erd
+\end_inset
+
+, ou várias medidas – portanto, o multímetro é uma agregação de ohmímetro,
+ voltímetro e amperímetro.
 \end_layout
 
 \begin_layout Standard
@@ -33381,6 +33407,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Float figure
 wide false
 sideways false
@@ -33413,7 +33443,7 @@ Multímetro analógico.
 \end_inset
 
 
-\begin_inset space \qquad{}
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -33453,6 +33483,10 @@ Multímetro digital.
 \end_inset
 
 
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -33484,8 +33518,8 @@ name "fig:mult-Multímetro-analógico"
  faz importante, mesmo que atualmente os multímetros digitais sejam os mais
  comuns.
  De fato, em muitas empresas pode-se encontrar em operação os analógicos;
- inclusive, estes permitem a leitura de tensão e corrente sem a necessidade
- de bateria.
+ por outro lado, estes permitem, inclusive, a leitura de tensão e corrente
+ sem a necessidade de bateria.
 \end_layout
 
 \begin_layout Standard
@@ -33525,7 +33559,198 @@ reference "sec:mult-Operação"
 
 \end_inset
 
-, tais detalhes serão tratados.
+, tais detalhes são tratados.
+\end_layout
+
+\begin_layout Section
+Procedimentos de Medição
+\end_layout
+
+\begin_layout Standard
+Antes de utilizar o instrumento para realizar medições, é muito importante
+ saber como ele deverá ser conectado ao circuito em análise.
+ Caso contrário, o instrumento ou o circuito poderão ser danificados, ou
+ os valores obtidos poderão não corresponder ao correto.
+\end_layout
+
+\begin_layout Subsection
+Medição de Resistência
+\end_layout
+
+\begin_layout Standard
+Os procedimentos para se medir resistência, quando o resistor estiver soldado
+ em uma placa de circuito, seguem:
+\end_layout
+
+\begin_layout Enumerate
+Desligar o circuito.
+\end_layout
+
+\begin_layout Enumerate
+Remover, ao menos, um terminal do resistor do circuito.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Nota: se o circuito em torno do resistor possuir 
+\bar under
+alta impedância
+\bar default
+, não há necessidade de remover o terminal.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Colocar as pontas de prova do ohmímetro em paralelo com os terminais do
+ resistor.
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! Tomar cuidado para não colocar as mãos em paralelo com o resistor.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! Não medir resistências com o circuito energizado!
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-Medição-de-resistência-pci"
+
+\end_inset
+
+ ilustra o procedimento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-medicao-resistencia#03.png
+	lyxscale 50
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medição de resistência em placa de circuito impresso.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-Medição-de-resistência-pci"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Medição de Tensão
+\end_layout
+
+\begin_layout Standard
+Os procedimentos para se medir tensão seguem:
+\end_layout
+
+\begin_layout Enumerate
+Identificar os dois pontos (nós) no circuito entre os quais se deseja conhecer
+ a tensão – ou seja, será encontrada a diferença de potencial (d\SpecialChar endofsentence
+d\SpecialChar endofsentence
+p\SpecialChar endofsentence
+) entre
+ estes.
+\end_layout
+
+\begin_layout Enumerate
+Colocar as pontas de prova do voltímetro em 
+\series bold
+paralelo
+\series default
+ com tais pontos.
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! Tensões são medidas em paralelo.
+\end_layout
+
+\begin_layout Subsection
+Medição de Corrente
+\end_layout
+
+\begin_layout Standard
+Os procedimentos para se medir corrente seguem:
+\end_layout
+
+\begin_layout Enumerate
+Desligar o circuito.
+\end_layout
+
+\begin_layout Enumerate
+Identificar o ramo em qual a corrente será determinada.
+\end_layout
+
+\begin_layout Enumerate
+Abrir 
+\begin_inset Quotes eld
+\end_inset
+
+fisicamente
+\begin_inset Quotes erd
+\end_inset
+
+ o ramo e colocar as pontas de prova do amperímetro em 
+\series bold
+série
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Ligar o circuito.
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! Correntes são medidas em série.
 \end_layout
 
 \begin_layout Section
@@ -33539,36 +33764,185 @@ name "sec:mult-Operação"
 
 \end_layout
 
+\begin_layout Standard
+Para realizar as medições com o multímetro analógico ou digital, há algumas
+ considerações idênticas a ambos, apresentadas a seguir:
+\end_layout
+
+\begin_layout Enumerate
+Liga-se a ponta de prova preta no terminal comum (COM) do multímetro.
+\end_layout
+
+\begin_layout Enumerate
+Liga-se a ponta de prova vermelha no correspondente terminal de acordo com
+ a grandeza a ser medida.
+ Este terminal é indicado, normalmente, pelos símbolos das unidades: 
+\begin_inset Formula $\si{\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+, 
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{10}{\A}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Selecionar o Fundo de Escala adequado.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+\emph on
+Atenção! 
+\series default
+Evitar de ultrapassar o Fundo de Escala selecionado, sob o risco de danificar
+ o instrumento.
+\end_layout
+
+\begin_layout Standard
+Quando não se souber com antecedência a ordem de grandeza a ser medida,
+ deve-se:
+\end_layout
+
+\begin_layout Enumerate
+Posicionar o seletor no 
+\bar under
+maior
+\bar default
+ Fundo de Escala.
+\end_layout
+
+\begin_layout Enumerate
+Após colocar as pontas de prova no circuito, ler o valor da grandeza.
+\end_layout
+
+\begin_layout Enumerate
+Se o valor for menor que a escala 
+\bar under
+imediatamente
+\bar default
+ anterior, então altera-se o seletor para esta.
+ O objetivo é melhorar a precisão da medida.
+\end_layout
+
+\begin_layout Enumerate
+Repetir os dois itens anteriores enquanto a leitura não ultrapassar o valor
+ da escala imediatamente anterior.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Nota: alguns modelos de multímetro digital possuem ajuste automático de
+ escala.
+\end_layout
+
+\end_deeper
+\begin_layout Quotation
+
+\series bold
+Atenção! Tomar cuidado para não provocar curto-circuitos durante as medições.
+\end_layout
+
 \begin_layout Subsection
 Multímetro Analógico
 \end_layout
 
 \begin_layout Standard
-Uma referência para orientação em como operar multímetros analógicos pode
- ser obtida em:
+Quanto ao uso do multímetro analógico, tem-se algumas especifidades gerais
+ a ser considerada:
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset href
-LatexCommand href
-name "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
-target "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
-
+\begin_layout Itemize
+Para evitar o erro de paralaxe, deve-se posicionar 
+\begin_inset Quotes eld
 \end_inset
 
+a visão
+\begin_inset Quotes erd
+\end_inset
 
+ de forma a alinhar o ponteiro com o seu reflexo no espelho da escala do
+ instrumento.
+\end_layout
+
+\begin_layout Itemize
+Antes de iniciar qualquer medição, o ponteiro deve estar repousado sobre
+ a marca zero.
+ Caso não esteja, proceder com o ajuste por meio do parafuso frontal.
 \end_layout
 
 \begin_layout Subsubsection
 Medição de Resistência
 \end_layout
 
-\begin_layout Subsubsection
-Medição de Tensão
+\begin_layout Standard
+Somente para o multímetro analógico, antes de realizar a medição de resistência,
+ deve-se fazer o ajuste do 
+\bar under
+zero ohm
+\bar default
+.
+ Para tanto:
 \end_layout
 
+\begin_layout Enumerate
+Escolher a escala adequada.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Note-se que cada escala possui um fator multiplicador, que multiplicará
+ o valor indicado pelo ponteiro.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Curto-circuitar as pontas de prova.
+\end_layout
+
+\begin_layout Enumerate
+Girar o botão de ajuste (
+\begin_inset Formula $\six 0{\ohm}$
+\end_inset
+
+ ADJ) até que o ponteiro fique sobre o zero na escala da resistência.
+\end_layout
+
+\begin_layout Enumerate
+Sempre que a escala for alterada, repetir estes passos.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Nota: a diminuição da carga da bateria também poderá provocar alterações
+ do zero; portanto, com certa frequência é conveniente verificar este ajuste,
+ no caso de se ficar muito tempo na mesma escala.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
-Medição de Corrente
+Medição de Tensão e de Corrente
+\end_layout
+
+\begin_layout Standard
+Para a medição de tensão e de corrente com o multímetro analógico, não há
+ ajustes adicionais necessários, além dos gerais já mencionados.
 \end_layout
 
 \begin_layout Subsection
@@ -33576,21 +33950,24 @@ Multímetro Digital
 \end_layout
 
 \begin_layout Standard
-...muitas vezes, não são explícitos em um multímetro digital (pois o circuito
- interno já os trata adequadamente).
+Para realizar as medições com o multímetro digital, não são necessários
+ os ajustes adicionais citados para o analógico, pois o circuito interno
+ já os considera adequadamente.
+\end_layout
+
+\begin_layout Standard
+Todavia, em especial, quando se estiver na escala de resistência, não é
+ custoso e é conveniente verificar a resistência de curto circuito do conjunto
  
-\end_layout
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Subsubsection
-Medição de Resistência
-\end_layout
+pontas de prova + instrumento
+\begin_inset Quotes erd
+\end_inset
 
-\begin_layout Subsubsection
-Medição de Tensão
-\end_layout
-
-\begin_layout Subsubsection
-Medição de Corrente
+: há de ser um valor igual a zero ou muito próximo a zero; caso contrário,
+ algo está danificado (como o cabo, por exemplo).
 \end_layout
 
 \begin_layout Section
@@ -33604,8 +33981,163 @@ name "sec:mult-Modelagem"
 
 \end_layout
 
+\begin_layout Standard
+Para as medições de tensão e corrente, uma atenção especial deve dada à
+ influência que o instrumento poderá provocar no circuito em análise.
+\end_layout
+
+\begin_layout Standard
+Com efeito, todo instrumento causa uma pertubação no ambiente analisado,
+ pois ele necessita 
+\begin_inset Quotes eld
+\end_inset
+
+sentir
+\begin_inset Quotes erd
+\end_inset
+
+ a grandeza.
+\end_layout
+
+\begin_layout Standard
+O voltímetro e o amperímetro possuem um circuito interno com considerável
+ complexidade, independentemente de ser analógico ou digital.
+ Mas eles podem ser representados por 
+\series bold
+modelos
+\series default
+, os quais abstraem toda a complexidade em um 
+\begin_inset Quotes eld
+\end_inset
+
+circuito
+\begin_inset Quotes erd
+\end_inset
+
+ mais simples de interpretar.
+\end_layout
+
+\begin_layout Standard
+Na fig., tem-se os modelos de um voltímetro e de um amperímetro.
+\end_layout
+
+\begin_layout Standard
+Perceba-se a presença da 
+\emph on
+resistência interna
+\emph default
+ (
+\begin_inset Formula $r_{i}$
+\end_inset
+
+) em ambos os modelos.
+\end_layout
+
+\begin_layout Subsubsection*
+Voltímetro
+\end_layout
+
+\begin_layout Standard
+No caso do voltímetro, seu modelo consiste de um 
+\emph on
+voltímetro ideal
+\emph default
+, que possui resistência interna tendendo a infinito, em paralelo com uma
+ resistência finita, que é a resistência interna do 
+\emph on
+voltímetro real
+\emph default
+.
+ Portanto, quando for utilizado em alguma medição de tensão, esta resistência
+ ficará em paralelo com o restante do circuito.
+ Para que seja pouco influente, são desejáveis 
+\series bold
+valores 
+\bar under
+muito altos
+\bar default
+ de resistência interna
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Amperímetro
+\end_layout
+
+\begin_layout Standard
+Já no caso do amperímetro, seu modelo consiste de um 
+\emph on
+amperímetro ideal
+\emph default
+, que possui resistência interna nula, em série com uma resistência não
+ nula, que é a resistência interna do 
+\emph on
+amperímetro real
+\emph default
+.
+ Portanto, quando for utilizado em alguma medição de corrente, em um ramo,
+ esta resistência ficará em série com os demais componentes do ramo.
+ Para que seja pouco influente, são desejáveis 
+\series bold
+valores 
+\bar under
+muito baixos
+\bar default
+ de resistência interna
+\series default
+.
+\end_layout
+
 \begin_layout Subsection
 Notas sobre a Resistência Interna
+\end_layout
+
+\begin_layout Standard
+Conhecer a resistência interna dos instrumentos é importante para se saber
+ o quanto ele influenciará nos resultados das medições.
+\end_layout
+
+\begin_layout Standard
+Para melhor compreensão, tome-se como exemplo a fig.
+ O valor esperado da leitura do voltímetro é 
+\begin_inset Formula $\six 5{\V}$
+\end_inset
+
+.
+ Considerando-se o modelo do voltímetro, tem-se o circuito resultante da
+ fig., em qual 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ está em paralelo com 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
+ Supondo 
+\begin_inset Formula $r_{i}=\six{200}{\kilo\ohm}$
+\end_inset
+
+, a leitura resultante será de 
+\begin_inset Formula $\six 4{\V}$
+\end_inset
+
+, que é incoerente com o esperado.
+ Entretanto, caso 
+\begin_inset Formula $r_{i}=\six{10}{\mega\ohm}$
+\end_inset
+
+, a leitura resultante seria de 
+\begin_inset Formula $\six{4,98}{\V}$
+\end_inset
+
+, muito mais próxima do valor esperado.
+\end_layout
+
+\begin_layout Standard
+Analogamente, para o amperímetro\SpecialChar ldots
+
 \end_layout
 
 \begin_layout Subsection
