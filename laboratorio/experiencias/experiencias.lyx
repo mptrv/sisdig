@@ -335,6 +335,11 @@ customHeadersFooters
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch an-galvanometro
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -34136,8 +34141,32 @@ Para melhor compreensão, tome-se como exemplo a fig.
 \end_layout
 
 \begin_layout Standard
-Analogamente, para o amperímetro\SpecialChar ldots
+Analogamente, para o amperímetro, ao analisar o circuito da fig., espera-se
+ obter uma corrente de 
+\begin_inset Formula $\six{0,2}{\A}$
+\end_inset
 
+.
+ Considerando-se o modelo do amperímetro, como mostrado na fig., nota-se
+ que sua resistência interna está em série com a resistência do circuito.
+ Supondo que 
+\begin_inset Formula $r_{i}=\six 2{\ohm}$
+\end_inset
+
+, resultará numa corrente de 
+\begin_inset Formula $\six{0,167}{\A}$
+\end_inset
+
+, aquém do esperado.
+ Entretanto, se a resistência interna fosse bem menor, por exemplo, 
+\begin_inset Formula $r_{i}=\six{0,2}{\ohm}$
+\end_inset
+
+, a corrente resultante, indicada pelo amperímetro, seria de 
+\begin_inset Formula $\six{0,196}{\A}$
+\end_inset
+
+, muito mais próxima do valor esperado.
 \end_layout
 
 \begin_layout Subsection
@@ -34209,7 +34238,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/multimetro-Figura 1.PNG
+	filename imagens/multimetros/mult-galvanometro.gif
 	lyxscale 75
 	width 60text%
 
@@ -34248,378 +34277,6 @@ name "fig:mult-galvanometro"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Voltímetro
-\end_layout
-
-\begin_layout Standard
-É um galvanômetro de bobina móvel com uma resistência multiplicadora 
-\begin_inset Formula $R_{m}$
-\end_inset
-
- para limitar a corrente na bobina.
- A finalidade é a de medir tensões entre dois pontos de um circuito qualquer.
-\end_layout
-
-\begin_layout Standard
-A 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-voltimetro"
-
-\end_inset
-
- apresenta o 
-\series bold
-modelo elétrico
-\series default
- de um galvanômetro, juntamente com a resistência multiplicadora para a
- construção do voltímetro.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito1.PNG
-	height 6cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito para projeto de um voltímetro a partir de um galvanômetro.
- Note-se o 
-\series bold
-modelo elétrico 
-\series default
-do galvanômetro (destacado pelo retângulo pontinhado) seguido da resistência
- multiplicadora 
-\begin_inset Formula $R_{m}$
-\end_inset
-
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-voltimetro"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Sendo 
-\begin_inset Formula $I_{g}$
-\end_inset
-
- a corrente de 
-\emph on
-Fim De Escala 
-\emph default
-(FDE) do galvanômetro e 
-\begin_inset Formula $V_{m}$
-\end_inset
-
- o valor da tensão de fundo de escala que se deseja medir, o valor de 
-\begin_inset Formula $R_{m}$
-\end_inset
-
- é dado por:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{m}=\frac{V_{m}}{I_{g}}-R_{g}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-em que 
-\begin_inset Formula $R_{g}$
-\end_inset
-
- é a resistência interna
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-A 
-\emph on
-resistência interna
-\emph default
- deve-se à resistência apresentada pelo fio da bobina do galvanômetro.
-\end_layout
-
-\end_inset
-
- do galvanômetro.
-\end_layout
-
-\begin_layout Subsubsection
-Amperímetro
-\end_layout
-
-\begin_layout Standard
-A corrente do galvanômetro deve ser 
-\emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-desviada
-\begin_inset Quotes erd
-\end_inset
-
-
-\emph default
- pela resistência 
-\begin_inset Formula $R_{P}$
-\end_inset
-
-, denominada de resistência 
-\emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-
-\lang english
-shunt
-\lang brazilian
-
-\begin_inset Quotes erd
-\end_inset
-
-
-\emph default
- ou resistência paralela, conforme ilustrado pela 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-amperimetro"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito2.PNG
-	height 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito para projeto de um amperímetro a partir de um galvanômetro.
- Note-se o 
-\series bold
-modelo elétrico 
-\series default
-do galvanômetro em paralelo com a resistência 
-\emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-
-\lang english
-shunt
-\lang brazilian
-
-\begin_inset Quotes erd
-\end_inset
-
-
-\emph default
- associada à resistência de contato.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-amperimetro"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A mudança de escala é feita comutando-se o valor de 
-\begin_inset Formula $R_{P}$
-\end_inset
-
- através de uma chave.
- Na medida de correntes altas, esta comutação cria prolemas, pois 
-\begin_inset Formula $R_{P}$
-\end_inset
-
- passa a ser compatível com a resistência de contato da chave 
-\begin_inset Formula $R_{C}$
-\end_inset
-
-, a qual varia com o tempo de vida do aparelho e é difícil de controlar.
-\end_layout
-
-\begin_layout Standard
-Para eliminar o efeito de 
-\begin_inset Formula $R_{P}$
-\end_inset
-
-, utiliza-se um 
-\emph on
-\lang english
-shunt
-\emph default
-\lang brazilian
- especial denominado 
-\emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-
-\lang english
-shunt
-\lang brazilian
- de Ayrton
-\begin_inset Quotes erd
-\end_inset
-
-
-\emph default
-, conforme ilustrado pela 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-shunt-ayrton"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito3.PNG
-	height 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito para projeto de um amperímetro utilizando-se o 
-\emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-
-\lang english
-shunt
-\lang brazilian
- de Ayrton
-\begin_inset Quotes erd
-\end_inset
-
-
-\emph default
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-shunt-ayrton"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Os valores de 
-\begin_inset Formula $R_{P1}$
-\end_inset
-
- e 
-\begin_inset Formula $R_{P2}$
-\end_inset
-
- podem ser facilmente determinados especificando-se a corrente de fim de
- escala a ser medida e a resistência equivalente do amperímetro.
- Como parâmetro adicional, necessita-se da corrente de fundo de escala do
- galvanômetro utilizado.
 \end_layout
 
 \begin_layout Subsection
@@ -34738,131 +34395,6 @@ Logo, dada a sensibilidade do voltímetro, pode-se determinar o valor da
 resistência interna
 \emph default
  e, assim, prever o quanto ele influenciará no circuito a ser medido.
-\end_layout
-
-\begin_layout Subsection
-Instrumentos com Várias Escalas
-\end_layout
-
-\begin_layout Standard
-A obtenção de várias escalas, ou seja, vários fundos de escala, é obtido
- por meio de um seletor, conforme ilustrado na 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-varias-escalas"
-
-\end_inset
-
-.
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito4.PNG
-	height 5cm
-	BoundingBox 20bp 20bp 465bp 310bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Voltímetro.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito5.PNG
-	width 45text%
-	height 5.5cm
-	BoundingBox 15bp 10bp 370bp 310bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Amperímetro.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema elétrico de instrumentos de várias escalas.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-varias-escalas"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -50775,6 +50307,2434 @@ Alicate de Bico
 
 \begin_layout Itemize
 Alicate de Corte Fios para proto-board
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch an-galvanometro
+status open
+
+\begin_layout Chapter
+
+\emph on
+\begin_inset Quotes eld
+\end_inset
+
+Galvanômetro
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Antiga experiência 
+\begin_inset Quotes eld
+\end_inset
+
+Multímetros
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+Estudo de voltímetro e amperímetro CC usando galvanômetro de bobina móvel.
+\end_layout
+
+\begin_layout Section
+Galvanômetro de Bobina Móvel
+\end_layout
+
+\begin_layout Standard
+Seu princípio de funcionamento consiste na interação entre um campo magnético
+ criado por imã permanente e um campo magnético criado por uma bobina móvel
+ sujeita a uma corrente 
+\begin_inset Formula $I$
+\end_inset
+
+, produzindo um torque motor.
+ Um ponteiro associado à parte móvel do instrumento tem sua deflexão proporciona
+l ao valor médio da corrente 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O galvanômetro é, por si só, um miliamperímetro ou microamperímetro, possuindo
+ polaridade em função do sentido da corrente na sua bobina.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-galvanometro-1"
+
+\end_inset
+
+ apresenta um desenho ilustrativo de um galvanômetro do tipo 
+\emph on
+D'Arsonval
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-Figura 1.PNG
+	lyxscale 75
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Desenho ilustrativo de um galvanômetro tipo 
+\emph on
+D'Arsonval
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-galvanometro-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Voltímetro
+\end_layout
+
+\begin_layout Standard
+É um galvanômetro de bobina móvel com uma resistência multiplicadora 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ para limitar a corrente na bobina.
+ A finalidade é a de medir tensões entre dois pontos de um circuito qualquer.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-voltimetro-1"
+
+\end_inset
+
+ apresenta o 
+\series bold
+modelo elétrico
+\series default
+ de um galvanômetro, juntamente com a resistência multiplicadora para a
+ construção do voltímetro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito1.PNG
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para projeto de um voltímetro a partir de um galvanômetro.
+ Note-se o 
+\series bold
+modelo elétrico 
+\series default
+do galvanômetro (destacado pelo retângulo pontinhado) seguido da resistência
+ multiplicadora 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-voltimetro-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo 
+\begin_inset Formula $I_{g}$
+\end_inset
+
+ a corrente de 
+\emph on
+Fim De Escala 
+\emph default
+(FDE) do galvanômetro e 
+\begin_inset Formula $V_{m}$
+\end_inset
+
+ o valor da tensão de fundo de escala que se deseja medir, o valor de 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ é dado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{m}=\frac{V_{m}}{I_{g}}-R_{g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que 
+\begin_inset Formula $R_{g}$
+\end_inset
+
+ é a resistência interna
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A 
+\emph on
+resistência interna
+\emph default
+ deve-se à resistência apresentada pelo fio da bobina do galvanômetro.
+\end_layout
+
+\end_inset
+
+ do galvanômetro.
+\end_layout
+
+\begin_layout Subsection*
+Sensibilidade
+\end_layout
+
+\begin_layout Standard
+Um voltímetro é tanto 
+\series bold
+melhor
+\series default
+ quanto 
+\series bold
+menor 
+\series default
+for a corrente necessária para defletir o ponteiro do galvanômetro.
+ Tal fato permite, portanto, trabalhar com uma resistência 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ de valor elevado e, assim, diminuir a interferência no circuito onde é
+ executada a medida.
+ 
+\end_layout
+
+\begin_layout Standard
+A sensibilidade é definida em função da corrente de fundo de escala 
+\begin_inset Formula $Ig$
+\end_inset
+
+, equacionada por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\frac{1}{I_{g}}=\frac{R_{v}}{V_{m}}\quad[\Omega/\mathrm{V}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{v}=R_{m}+R_{g}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{g}\ll R_{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{v}$
+\end_inset
+
+ é a 
+\emph on
+resistência interna
+\emph default
+ do multímetro na escala 
+\begin_inset Formula $V_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Logo, dada a sensibilidade do voltímetro, pode-se determinar o valor da
+ resistência 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+ necessário para uma dada escala.
+ Ou, por outro lado, dada a sensibilidade do voltímetro, pode-se determinar
+ sua 
+\emph on
+resistência interna
+\emph default
+ e, assim, prever o quanto ele influenciará no circuito a ser medido.
+\end_layout
+
+\begin_layout Section
+Amperímetro
+\end_layout
+
+\begin_layout Standard
+A corrente do galvanômetro deve ser 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+desviada
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ pela resistência 
+\begin_inset Formula $R_{P}$
+\end_inset
+
+, denominada de resistência 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+shunt
+\lang brazilian
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ ou resistência paralela, conforme ilustrado pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-amperimetro-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito2.PNG
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para projeto de um amperímetro a partir de um galvanômetro.
+ Note-se o 
+\series bold
+modelo elétrico 
+\series default
+do galvanômetro em paralelo com a resistência 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+shunt
+\lang brazilian
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ associada à resistência de contato.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-amperimetro-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A mudança de escala é feita comutando-se o valor de 
+\begin_inset Formula $R_{P}$
+\end_inset
+
+ através de uma chave.
+ Na medida de correntes altas, esta comutação cria prolemas, pois 
+\begin_inset Formula $R_{P}$
+\end_inset
+
+ passa a ser compatível com a resistência de contato da chave 
+\begin_inset Formula $R_{C}$
+\end_inset
+
+, a qual varia com o tempo de vida do aparelho e é difícil de controlar.
+\end_layout
+
+\begin_layout Standard
+Para eliminar o efeito de 
+\begin_inset Formula $R_{P}$
+\end_inset
+
+, utiliza-se um 
+\emph on
+\lang english
+shunt
+\emph default
+\lang brazilian
+ especial denominado 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+shunt
+\lang brazilian
+ de Ayrton
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, conforme ilustrado pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-shunt-ayrton-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito3.PNG
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para projeto de um amperímetro utilizando-se o 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+shunt
+\lang brazilian
+ de Ayrton
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-shunt-ayrton-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os valores de 
+\begin_inset Formula $R_{P1}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{P2}$
+\end_inset
+
+ podem ser facilmente determinados especificando-se a corrente de fim de
+ escala a ser medida e a resistência equivalente do amperímetro.
+ Como parâmetro adicional, necessita-se da corrente de fundo de escala do
+ galvanômetro utilizado.
+\end_layout
+
+\begin_layout Section
+Instrumentos com Várias Escalas
+\end_layout
+
+\begin_layout Standard
+A obtenção de várias escalas, ou seja, vários fundos de escala, é obtido
+ por meio de um seletor, conforme ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-varias-escalas-1"
+
+\end_inset
+
+.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito4.PNG
+	height 5cm
+	BoundingBox 20bp 20bp 465bp 310bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Voltímetro.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito5.PNG
+	width 45text%
+	height 5.5cm
+	BoundingBox 15bp 10bp 370bp 310bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amperímetro.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico de instrumentos de várias escalas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-varias-escalas-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os instrumentos mais comumente utilizados para medições de tensão, corrente
+ e resistência são os multímetros, os quais, naturalmente, possuem várias
+ escalas.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-Multímetro-analógico-1"
+
+\end_inset
+
+ apresenta um exemplo de multímetro analógico, cuja construção é baseada
+ em galvanômetro de bobina móvel.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/mult-multimetro-analogico-sanwa-475px.jpg
+	lyxscale 50
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de multímetro analógico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-Multímetro-analógico-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No caso de multímetros digitais, o galvanômetro é substituído por um filtro
+ passa baixas associado a um conversor A/D (conversor Analógico/Digital).
+ Existem, no mercado, circuitos integrados dedicados que, internamente,
+ possuem conversor A/D, decodificador para 
+\emph on
+display
+\emph default
+ e outras facilidades que permitem a construção de multímetros.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-multímetro-digital"
+
+\end_inset
+
+ apresenta um exemplo de multímetro digital.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/mult-multimetro-digital-et2780-peq.jpg
+	lyxscale 75
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de multímetro digital.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-multímetro-digital"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note-se ainda que a operação de multímetros analógicos requer certos cuidados
+ que, muitas vezes, não são explícitos em um multímetro digital (pois o
+ circuito interno já os trata adequadamente).
+ Uma referência para orientação em como operar multímetros analógicos pode
+ ser obtida em:
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
+target "http://www.eletronicadigital.com/site/instrumentos-medicao/6-multimetro-analogico.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Subsection
+Levantamento das Características do Galvanômetro
+\end_layout
+
+\begin_layout Subsubsection*
+Medida da Corrente de Fim de Escala do Galvanômetro 
+\end_layout
+
+\begin_layout Enumerate
+Monte o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-circ-corrente-fde-1"
+
+\end_inset
+
+, adotando 
+\begin_inset Formula $R_{s}=4\mathrm{k}7\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito6.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para determinação da 
+\emph on
+corrente de fundo de escala
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-circ-corrente-fde-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ajuste a fonte de tensão para 
+\begin_inset Formula $0\,V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Aumente, gradativamente, a tensão da fonte até obter a deflexão de fim de
+ escala no galvanômetro.
+\end_layout
+
+\begin_layout Enumerate
+Neste ponto, anote a tensão (
+\begin_inset Formula $E$
+\end_inset
+
+) e a corrente (
+\begin_inset Formula $I_{g}=I_{g(máx)}$
+\end_inset
+
+), a qual é a 
+\emph on
+corrente de fim de escala
+\emph default
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Formula $E$
+\end_inset
+
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $I_{g(máx)}$
+\end_inset
+
+ = 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Medida da Resistência Interna do Galvanômetro
+\end_layout
+
+\begin_layout Enumerate
+Mantendo o circuito e os valores de 
+\begin_inset Formula $E$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{s}$
+\end_inset
+
+ determinados no tópico anterior, acrescente uma resistência 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ em paralelo com o galvanômetro, de acordo com a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-circ-det-ri-1"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito7.PNG
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para determinação da 
+\emph on
+resistência interna
+\emph default
+ do galvanômetro.
+ Note-se o uso da 
+\series bold
+década resistiva
+\series default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-circ-det-ri-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Notar que, 
+\series bold
+sem 
+\begin_inset Formula $\mathbf{R_{p}}$
+\end_inset
+
+
+\series default
+, a deflexão no galvanômetro corresponde à corrente
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{g}=\frac{E}{R_{g}+R_{s}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+e, admitindo que 
+\begin_inset Formula $R_{g}\ll R_{s}$
+\end_inset
+
+, pode-se dizer:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+I_{g}=\frac{E}{R_{s}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Ao acrescentar 
+\begin_inset Formula $\mathbf{R_{p}}$
+\end_inset
+
+
+\series default
+, a corrente no galvanômetro diminuirá.
+ Assim, ajuste 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+ até que a indicação no galvanômetro seja a 
+\series bold
+metade
+\series default
+ da anterior.
+ Nesta situação, como a corrente é a metade da corrente de fundo de escala,
+ pode-se afirmar
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Por quê?
+\end_layout
+
+\end_inset
+
+ que
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R_{p}=R_{g}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+desde que 
+\begin_inset Formula $R_{g}\ll R_{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Anote o valor de 
+\begin_inset Formula $R_{p}$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Formula $R_{p}=R_{g}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.3.
+ Obtido o valor de 
+\begin_inset Formula $R_{g}$
+\end_inset
+
+, verifique se vale a hipótese de que 
+\begin_inset Formula $R_{g}\ll R_{s}$
+\end_inset
+
+, mostrando os cálculos abaixo.
+ Para tanto, basta verificar se 
+\begin_inset Formula $\frac{R_{s}}{R_{g}}\gg1$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Construção de um Miliamperímetro 
+\end_layout
+
+\begin_layout Enumerate
+Construa um miliamperímetro com fundo de escala de 100 mA.
+ Para isso, use o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-cir-miliamperimetro-1"
+
+\end_inset
+
+ com 
+\emph on
+Shunt de Ayrton
+\emph default
+, calculando-se 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+.
+ A resistência equivalente do miliamperímetro será 
+\begin_inset Formula $(R_{1}+R_{g})\parallel R_{2}$
+\end_inset
+
+.
+ Adote para ela o valor de 100 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito8.PNG
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito proposto para o miliamperímetro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-cir-miliamperimetro-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Monte o circuito anterior.
+\end_layout
+
+\begin_layout Enumerate
+Acople-o a uma fonte por meio de uma resistência 
+\begin_inset Formula $R_{f}$
+\end_inset
+
+ (sugestão: 
+\begin_inset Formula $R_{f}=100\Omega$
+\end_inset
+
+), de forma a obterem-se correntes de 0 a 100 mA, seguindo o ilustrado na
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-aferição-miliamperimetro-1"
+
+\end_inset
+
+ (note-se a presença do multímetro comercial na escala de corrente).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito9.PNG
+	height 6cm
+	BoundingBox 0bp 0bp 715bp 268bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Montagem para aferição do miliamperímetro construído.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-aferição-miliamperimetro-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Adotando-se o multímetro comercial na escala de corrente como referência,
+ calibre o miliamperímetro, variando E de forma a obter correntes de 20
+ mA em 20 mA, e preencha a tabela abaixo.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{multímetro\,comercial}$
+\end_inset
+
+ (mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{miliamperímetro\,construído}$
+\end_inset
+
+ (mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desvio (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Construção de um Voltímetro 
+\end_layout
+
+\begin_layout Enumerate
+Construa um voltímetro para 20V, corrente contínua, utilizando o galvanômetro
+ fornecido.
+ Considere o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-construção-de-voltímetro-1"
+
+\end_inset
+
+ como referência.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetro-circuito1.PNG
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito para construção de um voltímetro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-construção-de-voltímetro-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calcule o resistor série 
+\begin_inset Formula $R_{m}$
+\end_inset
+
+.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Formula $R_{m}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "3cm"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Faça a aferição da escala comparando as indicações do galvanômetro com as
+ de um multímetro comercial, utilizado como padrão.
+ Para tanto, escolha 5 pontos de aferição entre 0 e 20 V e preencha a tabela
+ seguinte.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{multímetro\,comercial}$
+\end_inset
+
+ (V)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{galvanômetro}$
+\end_inset
+
+ (mA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{voltímetro\,construído}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Desvio (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Lembrando-se que uma característica importante do voltímetro é sua sensibilidade
+, definida em 
+\begin_inset Formula $\Omega$
+\end_inset
+
+/V, calcule a sensibilidade 
+\begin_inset Formula $S$
+\end_inset
+
+ do voltímetro construído, pela equação seguinte, e faça os comentários
+ pertinentes:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\frac{R_{v}}{V_{FDE}}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+em que 
+\begin_inset Formula $V_{FDE}$
+\end_inset
+
+ é a tensão de fim de escala.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Desafios
+\end_layout
+
+\begin_layout Enumerate
+Especificar as características de um galvanômetro (
+\begin_inset Formula $I_{g(máx)}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{g}$
+\end_inset
+
+) de tal forma que a resistência interna (
+\begin_inset Formula $R_{v}$
+\end_inset
+
+) de um voltímetro seja de 
+\begin_inset Formula $250\,\mathrm{k}\Omega$
+\end_inset
+
+ na escala de 10
+\begin_inset space ~
+\end_inset
+
+V.
+ Explicitar também o valor da sensibilidade (
+\begin_inset Formula $S$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+O galvanômetro especificado no item anterior poderá ser utilizado como amperímet
+ro com qual fundo de escala, se nenhuma resistência 
+\emph on
+\lang english
+shunt
+\emph default
+\lang brazilian
+ for acrescentada?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Caixa de resistências (década resistiva)
+\end_layout
+
+\begin_layout Itemize
+Resistores de 2W: 2x 
+\begin_inset Formula $100\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $150\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $330\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $680\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $820\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $1\mathrm{k}8\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $3\mathrm{k}9\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $4\mathrm{k}7\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $5\mathrm{k}6\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $6\mathrm{k}8\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $10\mathrm{k}\Omega$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Galvanômetro de bobina móvel, com FDE de 1mA
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
 \end_layout
 
 \end_inset
