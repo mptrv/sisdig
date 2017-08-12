@@ -33383,8 +33383,9 @@ medidas
 \begin_inset Quotes erd
 \end_inset
 
-, ou várias medidas – portanto, o multímetro é uma agregação de ohmímetro,
- voltímetro e amperímetro.
+, ou várias medidas – neste sentido, o multímetro agrega o ohmímetro, o
+ voltímetro e o amperímetro, além de, eventualmente, medidores de outras
+ grandezas (como capacímetro e termômetro).
 \end_layout
 
 \begin_layout Standard
@@ -33528,14 +33529,7 @@ name "fig:mult-Multímetro-analógico"
 \end_layout
 
 \begin_layout Standard
-Certamente, existem diferenças nas características de ambos os multímetros,
- conforme exposto na 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "sec:mult-Características-Típicas"
-
-\end_inset
-
+Certamente, existem diferenças nas características de ambos os multímetros
  e, em geral, o multímetro digital apresenta diversas vantagens sobre o
  analógico.
 \end_layout
@@ -33557,25 +33551,39 @@ reference "sec:mult-Modelagem"
 \begin_layout Standard
 Quanto à operação, certos cuidados são necessários a fim de que o valor
  obtido na medição seja correto.
- Na 
+ Nas seções 
 \begin_inset CommandInset ref
-LatexCommand formatted
+LatexCommand ref
+reference "sec:mult-Procedimentos-de-Medição"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
 reference "sec:mult-Operação"
 
 \end_inset
 
-, tais detalhes são tratados.
+, tal assunto é abordado.
 \end_layout
 
 \begin_layout Section
 Procedimentos de Medição
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:mult-Procedimentos-de-Medição"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Antes de utilizar o instrumento para realizar medições, é muito importante
  saber como ele deverá ser conectado ao circuito em análise.
  Caso contrário, o instrumento ou o circuito poderão ser danificados, ou
- os valores obtidos poderão não corresponder ao correto.
+ os valores obtidos poderão não corresponder ao que seria correto.
 \end_layout
 
 \begin_layout Subsection
@@ -33592,7 +33600,7 @@ Desligar o circuito.
 \end_layout
 
 \begin_layout Enumerate
-Remover, ao menos, um terminal do resistor do circuito.
+Remover do circuito, ao menos, um terminal do resistor.
 \end_layout
 
 \begin_deeper
@@ -33694,12 +33702,15 @@ Os procedimentos para se medir tensão seguem:
 \end_layout
 
 \begin_layout Enumerate
-Identificar os dois pontos (nós) no circuito entre os quais se deseja conhecer
- a tensão – ou seja, será encontrada a diferença de potencial (d\SpecialChar endofsentence
+Identificar 
+\bar under
+os dois pontos (nós)
+\bar default
+ no circuito entre os quais se deseja conhecer a tensão – ou seja, será
+ encontrada a diferença de potencial (d\SpecialChar endofsentence
 d\SpecialChar endofsentence
 p\SpecialChar endofsentence
-) entre
- estes.
+) entre estes.
 \end_layout
 
 \begin_layout Enumerate
@@ -33713,7 +33724,67 @@ paralelo
 \begin_layout Quotation
 
 \series bold
-Atenção! Tensões são medidas em paralelo.
+Atenção! Tensões são medidas em 
+\bar under
+paralelo
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-Voltímetro-medir-tensao"
+
+\end_inset
+
+ ilustra o procedimento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-uso-voltimetro.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Voltímetro posto em paralelo com os pontos do circuito para se determinar
+ a tensão entre eles.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-Voltímetro-medir-tensao"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -33729,7 +33800,11 @@ Desligar o circuito.
 \end_layout
 
 \begin_layout Enumerate
-Identificar o ramo em qual a corrente será determinada.
+Identificar 
+\bar under
+o ramo
+\bar default
+ em qual a corrente será determinada.
 \end_layout
 
 \begin_layout Enumerate
@@ -33755,11 +33830,66 @@ Ligar o circuito.
 \begin_layout Quotation
 
 \series bold
-Atenção! Correntes são medidas em série.
+Atenção! Correntes são medidas em 
+\bar under
+série
+\bar default
+.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-amperimetro-medir-corrente"
+
+\end_inset
+
+ ilustra o procedimento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-uso-amperimetro.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amperímetro posto em série com o ramo do qual deseja-se medir a corrente.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-amperimetro-medir-corrente"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Operação
+Operação dos Multímetros
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:mult-Operação"
@@ -33771,7 +33901,7 @@ name "sec:mult-Operação"
 
 \begin_layout Standard
 Para realizar as medições com o multímetro analógico ou digital, há algumas
- considerações idênticas a ambos, apresentadas a seguir:
+ considerações gerais idênticas a ambos, apresentadas a seguir:
 \end_layout
 
 \begin_layout Enumerate
@@ -33854,23 +33984,21 @@ Nota: alguns modelos de multímetro digital possuem ajuste automático de
 \end_layout
 
 \end_deeper
-\begin_layout Quotation
-
-\series bold
-Atenção! Tomar cuidado para não provocar curto-circuitos durante as medições.
-\end_layout
-
 \begin_layout Subsection
 Multímetro Analógico
 \end_layout
 
 \begin_layout Standard
 Quanto ao uso do multímetro analógico, tem-se algumas especifidades gerais
- a ser considerada:
+ a serem consideradas:
 \end_layout
 
 \begin_layout Itemize
-Para evitar o erro de paralaxe, deve-se posicionar 
+Para evitar o
+\emph on
+ erro de paralaxe
+\emph default
+, a pessoa que fará a leitura deve posicionar 
 \begin_inset Quotes eld
 \end_inset
 
@@ -33884,8 +34012,13 @@ a visão
 
 \begin_layout Itemize
 Antes de iniciar qualquer medição, o ponteiro deve estar repousado sobre
- a marca zero.
- Caso não esteja, proceder com o ajuste por meio do parafuso frontal.
+ a 
+\bar under
+marca zero
+\bar default
+.
+ Caso não esteja, delicadamente, proceder com o ajuste por meio do parafuso
+ frontal.
 \end_layout
 
 \begin_layout Subsubsection
@@ -33936,8 +34069,7 @@ Sempre que a escala for alterada, repetir estes passos.
 
 \emph on
 Nota: a diminuição da carga da bateria também poderá provocar alterações
- do zero; portanto, com certa frequência é conveniente verificar este ajuste,
- no caso de se ficar muito tempo na mesma escala.
+ do zero; portanto, com certa frequência é conveniente verificar este ajuste.
 \end_layout
 
 \end_deeper
@@ -33950,13 +34082,51 @@ Para a medição de tensão e de corrente com o multímetro analógico, não há
  ajustes adicionais necessários, além dos gerais já mencionados.
 \end_layout
 
+\begin_layout Standard
+Salienta-se, contudo, que atenção especial seja dada à polaridade da medida.
+ Caso seja invertida, o ponteiro se defletirá no sentido contrário, podendo
+ danificar o instrumento.
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! Para medir tensões, a 
+\bar under
+ponta vermelha
+\bar default
+ (positiva) deve ficar no ponto de 
+\bar under
+maior potencial
+\bar default
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! Para medir correntes, a 
+\bar under
+ponta vermelha
+\bar default
+ (positiva) é por onde a 
+\bar under
+corrente deverá entrar
+\bar default
+.
+\end_layout
+
 \begin_layout Subsection
 Multímetro Digital
 \end_layout
 
 \begin_layout Standard
 Para realizar as medições com o multímetro digital, não são necessários
- os ajustes adicionais citados para o analógico, pois o circuito interno
+ os ajustes específicos citados para o analógico, pois o circuito interno
  já os considera adequadamente.
 \end_layout
 
@@ -33971,7 +34141,7 @@ pontas de prova + instrumento
 \begin_inset Quotes erd
 \end_inset
 
-: há de ser um valor igual a zero ou muito próximo a zero; caso contrário,
+: há de ser um valor igual a zero ou muito próximo a zero ohm; caso contrário,
  algo está danificado (como o cabo, por exemplo).
 \end_layout
 
@@ -34011,23 +34181,13 @@ O voltímetro e o amperímetro possuem um circuito interno com considerável
 \series bold
 modelos
 \series default
-, os quais abstraem toda a complexidade em um 
-\begin_inset Quotes eld
-\end_inset
-
-circuito
-\begin_inset Quotes erd
-\end_inset
-
- mais simples de interpretar.
+, os quais abstraem toda a complexidade em um circuito mais simples de interpret
+ar.
 \end_layout
 
 \begin_layout Standard
-Na fig., tem-se os modelos de um voltímetro e de um amperímetro.
-\end_layout
-
-\begin_layout Standard
-Perceba-se a presença da 
+Nas figuras, tem-se os modelos de um voltímetro e de um amperímetro.
+ Perceba-se a presença da 
 \emph on
 resistência interna
 \emph default
@@ -34036,6 +34196,242 @@ resistência interna
 \end_inset
 
 ) em ambos os modelos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-voltimetro-ideal.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Voltímetro ideal (ou seja, com resistência interna infinita).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-voltimetro-real.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Voltímetro real (ou seja, com resistência interna 
+\bar under
+finita
+\bar default
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representações do voltímetro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-Representações-do-voltímetro."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-amperimetro-ideal.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amperímetro ideal (ou seja, com resistência interna nula).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-amperimetro-real.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amperímetro real (ou seja, com resistência interna 
+\bar under
+não nula
+\bar default
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representações do amperímetro.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-Representações-do-amperimetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -34054,7 +34450,11 @@ voltímetro real
 \emph default
 .
  Portanto, quando for utilizado em alguma medição de tensão, esta resistência
- ficará em paralelo com o restante do circuito.
+ ficará 
+\bar under
+em paralelo
+\bar default
+ com o restante do circuito.
  Para que seja pouco influente, são desejáveis 
 \series bold
 valores 
@@ -34082,7 +34482,11 @@ amperímetro real
 \emph default
 .
  Portanto, quando for utilizado em alguma medição de corrente, em um ramo,
- esta resistência ficará em série com os demais componentes do ramo.
+ esta resistência ficará 
+\bar under
+em série
+\bar default
+ com os demais componentes do ramo.
  Para que seja pouco influente, são desejáveis 
 \series bold
 valores 
@@ -34141,6 +34545,120 @@ Para melhor compreensão, tome-se como exemplo a fig.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-voltimetro-exemplo.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Voltímetro em paralelo para realizar a medição de tensão.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-exemplo-Voltímetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-voltimetro-exemplo-com-modelo.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo do voltímetro em paralelo com o circuito em análise.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-exemplo-Modelo-do-voltímetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo da influência do voltímetro no circuito em análise.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-exemplo-influencia-do-voltímetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Analogamente, para o amperímetro, ao analisar o circuito da fig., espera-se
  obter uma corrente de 
 \begin_inset Formula $\six{0,2}{\A}$
@@ -34169,36 +34687,255 @@ Analogamente, para o amperímetro, ao analisar o circuito da fig., espera-se
 , muito mais próxima do valor esperado.
 \end_layout
 
-\begin_layout Subsection
-Notas sobre a Sensibilidade
-\end_layout
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-\begin_layout Section
-Características Típicas
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:mult-Características-Típicas"
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-amperimetro-exemplo.png
+	scale 80
 
 \end_inset
 
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amperímetro em série para realizar a medição de corrente.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-exemplo-amperimetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-amperimetro-exemplo-com-modelo.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo do amperímetro em série com o ramo em análise do circuito.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-exemplo-Modelo-do-amperimetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo da influência do amperímetro no circuito em análise.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-exemplo-influencia-do-amperimetro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Notas sobre a Sensibilidade
+\end_layout
+
+\begin_layout Standard
+Os multímetros analógicos, quando em operação como voltímetros, possuem
+ a especificação de 
+\emph on
+sensibilidade
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Um voltímetro é tanto 
+\series bold
+melhor
+\series default
+ quanto 
+\series bold
+menor 
+\series default
+for a corrente necessária para defletir o ponteiro de seu galvanômetro.
+ Desta forma, quanto menor for esta corrente, diz-se que o instrumento é
+ mais sensível.
+\end_layout
+
+\begin_layout Standard
+Tal fato permite, portanto, trabalhar com uma resistência interna de valor
+ elevado e, assim, diminuir a interferência no circuito onde é executada
+ a medida.
+ 
+\end_layout
+
+\begin_layout Standard
+A sensibilidade é definida em função da corrente de fundo de escala (
+\begin_inset Formula $Ig$
+\end_inset
+
+), equacionada por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\frac{1}{I_{g}}=\frac{R_{v}}{V_{m}}\quad[\Omega/\mathrm{V}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que 
+\begin_inset Formula $R_{v}$
+\end_inset
+
+ é a 
+\emph on
+resistência interna
+\emph default
+ do multímetro na escala 
+\begin_inset Formula $V_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Logo, dada a sensibilidade do voltímetro, pode-se determinar o correspondente
+ valor de sua 
+\emph on
+resistência interna 
+\emph default
+para uma dada escala de tensão.
+\end_layout
+
+\begin_layout Standard
+Por exemplo, se o multímetro possuir sensibilidade de 
+\begin_inset Formula $\six{20}{\kilo\ohm/\V}$
+\end_inset
+
+ e for escolhido um fundo de escala de 
+\begin_inset Formula $\six{10}{\V}$
+\end_inset
+
+, sua resistência interna será de 
+\begin_inset Formula $\six{200}{\kilo\ohm}$
+\end_inset
+
+.
+ Em outro caso, ao escolher um fundo de escala de 
+\begin_inset Formula $\six{2,5}{\V}$
+\end_inset
+
+, sua resistência interna será de 
+\begin_inset Formula $\six{50}{\kilo\ohm}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Em relação aos multímetros digitais, não há tal conceito de sensibilidade
+ para a determinação da resistência interna.
+ Ao contrário, ela é fixa: por exemplo, considerando-se um determinado instrumen
+to, sua resistência interna é de 
+\begin_inset Formula $\six{10}{\mega\ohm}$
+\end_inset
+
+ para as medições de tensão CC.
+\end_layout
+
 \begin_layout Section
 Informações Complementares
+\end_layout
+
+\begin_layout Standard
+Nas subseções a seguir, um breve descrito a respeito dos fundamentos de
+ construção dos multímetros analógico e digital.
 \end_layout
 
 \begin_layout Subsection
 Fundamentos do Multímetro Analógico
 \end_layout
 
-\begin_layout Subsubsection
-Galvanômetro de Bobina Móvel
-\end_layout
-
 \begin_layout Standard
-Seu princípio de funcionamento consiste na interação entre um campo magnético
- criado por imã permanente e um campo magnético criado por uma bobina móvel
+Como dito, o multímetro analógico possui base em um 
+\series bold
+galvanômetro de bobina móvel
+\series default
+.
+ Seu princípio de funcionamento consiste na interação entre um campo magnético
+ criado por ímã permanente e um campo magnético criado por uma bobina móvel
  sujeita a uma corrente 
 \begin_inset Formula $I$
 \end_inset
@@ -34210,11 +34947,6 @@ l ao valor médio da corrente
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-O galvanômetro é, por si só, um miliamperímetro ou microamperímetro, possuindo
- polaridade em função do sentido da corrente na sua bobina.
  A 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -34284,121 +35016,95 @@ Fundamentos do Multímetro Digital
 \end_layout
 
 \begin_layout Standard
-No caso de multímetros digitais, o galvanômetro é substituído por um filtro
- passa baixas associado a um conversor A/D (conversor Analógico/Digital).
- Existem, no mercado, circuitos integrados dedicados que, internamente,
- possuem conversor A/D, decodificador para 
+No caso de multímetros digitais, o galvanômetro é substituído por sensores,
+ conformadores e conversor A/D.
+ A 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mult-Diagrama-em-blocos-digital"
+
+\end_inset
+
+ ilustra o diagrama em blocos de seu circuito interno.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-diagrama-em-blocos#03.jpg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama em blocos simplificado de um multímetro digital.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mult-Diagrama-em-blocos-digital"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \emph on
-display
-\emph default
- e outras facilidades que permitem a construção de multímetros.
-\end_layout
-
-\begin_layout Subsection
-Sensibilidade e precisão de multimetros digitais
-\end_layout
-
-\begin_layout Standard
-Um voltímetro é tanto 
-\series bold
-melhor
-\series default
- quanto 
-\series bold
-menor 
-\series default
-for a corrente necessária para defletir o ponteiro do galvanômetro.
- Tal fato permite, portanto, trabalhar com uma resistência 
-\begin_inset Formula $R_{m}$
+Nota: existem, no mercado, circuitos integrados dedicados que, internamente,
+ possuem conversor A/D, decodificador para display e outras facilidades
+ que permitem a construção de multímetros; o circuito integrado ICL7107
+ é um bom exemplo (veja seu 
+\begin_inset Quotes eld
 \end_inset
 
- de valor elevado e, assim, diminuir a interferência no circuito onde é
- executada a medida.
- 
-\end_layout
-
-\begin_layout Standard
-A sensibilidade é definida em função da corrente de fundo de escala 
-\begin_inset Formula $Ig$
+datasheet
+\begin_inset Quotes erd
 \end_inset
 
-, equacionada por:
-\end_layout
+ em 
+\begin_inset Flex URL
+status collapsed
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-S=\frac{1}{I_{g}}=\frac{R_{v}}{V_{m}}\quad[\Omega/\mathrm{V}]
-\]
+\begin_layout Plain Layout
+
+http://pdf.datasheetcatalog.com/datasheets/185/382684_DS.pdf
+\end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-em que:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{v}=R_{m}+R_{g}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-sendo:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{g}\ll R_{m}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Nota-se que 
-\begin_inset Formula $R_{v}$
-\end_inset
-
- é a 
-\emph on
-resistência interna
-\emph default
- do multímetro na escala 
-\begin_inset Formula $V_{m}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Logo, dada a sensibilidade do voltímetro, pode-se determinar o valor da
- resistência 
-\begin_inset Formula $R_{m}$
-\end_inset
-
- necessário para uma dada escala.
- Ou, por outro lado, dada a sensibilidade do voltímetro, pode-se determinar
- sua 
-\emph on
-resistência interna
-\emph default
- e, assim, prever o quanto ele influenciará no circuito a ser medido.
+).
 \end_layout
 
 \begin_layout Section
 Parte Experimental
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! Tomar cuidado para não provocar curto-circuitos durante as medições.
 \end_layout
 
 \begin_layout Subsection
