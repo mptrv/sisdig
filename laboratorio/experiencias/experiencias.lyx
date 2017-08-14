@@ -34209,6 +34209,26 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -34216,6 +34236,11 @@ status open
 \begin_inset Graphics
 	filename imagens/multimetros/mult-voltimetro-ideal.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34241,21 +34266,33 @@ Voltímetro ideal (ou seja, com resistência interna infinita).
 \end_inset
 
 
-\begin_inset space \qquad{}
-\end_inset
+\end_layout
 
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -34263,6 +34300,11 @@ status open
 \begin_inset Graphics
 	filename imagens/multimetros/mult-voltimetro-real.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34337,9 +34379,34 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/multimetros/mult-amperimetro-ideal.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34361,18 +34428,10 @@ Amperímetro ideal (ou seja, com resistência interna nula).
 \end_inset
 
 
-\begin_inset space \qquad{}
-\end_inset
+\end_layout
 
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
@@ -34380,9 +34439,34 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename imagens/multimetros/mult-amperimetro-real.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
