@@ -251,7 +251,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -261,22 +261,22 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -286,27 +286,22 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 0
-\filename_suffix 0
-\color #faf0e6
-\end_branch
-\branch an-osciloscopio-iv
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -316,12 +311,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-retif-gramp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -28787,7 +28782,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-resistores
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -33746,12 +33741,13 @@ reference "fig:mult-Voltímetro-medir-tensao"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/multimetros/mult-uso-voltimetro.png
+	width 60text%
 
 \end_inset
 
@@ -34592,14 +34588,28 @@ Conhecer a resistência interna dos instrumentos é importante para se saber
 \end_layout
 
 \begin_layout Standard
-Para melhor compreensão, tome-se como exemplo a fig.
+Para melhor compreensão, tome-se como exemplo a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-exemplo-Voltímetro"
+
+\end_inset
+
+.
  O valor esperado da leitura do voltímetro é 
 \begin_inset Formula $\six 5{\V}$
 \end_inset
 
 .
  Considerando-se o modelo do voltímetro, tem-se o circuito resultante da
- fig., em qual 
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-exemplo-Modelo-do-voltímetro"
+
+\end_inset
+
+, em qual 
 \begin_inset Formula $r_{i}$
 \end_inset
 
@@ -34639,13 +34649,38 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/multimetros/mult-voltimetro-exemplo.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34681,13 +34716,38 @@ name "fig:mult-exemplo-Voltímetro"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/multimetros/mult-voltimetro-exemplo-com-modelo.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34743,14 +34803,27 @@ name "fig:mult-exemplo-influencia-do-voltímetro"
 \end_layout
 
 \begin_layout Standard
-Analogamente, para o amperímetro, ao analisar o circuito da fig., espera-se
- obter uma corrente de 
+Analogamente, para o amperímetro, ao analisar o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-exemplo-amperimetro"
+
+\end_inset
+
+, espera-se obter uma corrente de 
 \begin_inset Formula $\six{0,2}{\A}$
 \end_inset
 
 .
- Considerando-se o modelo do amperímetro, como mostrado na fig., nota-se
- que sua resistência interna está em série com a resistência do circuito.
+ Considerando-se o modelo do amperímetro, como mostrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:mult-exemplo-Modelo-do-amperimetro"
+
+\end_inset
+
+, nota-se que sua resistência interna está em série com a resistência do
+ circuito.
  Supondo que 
 \begin_inset Formula $r_{i}=\six 2{\ohm}$
 \end_inset
@@ -34782,13 +34855,38 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/multimetros/mult-amperimetro-exemplo.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34824,13 +34922,38 @@ name "fig:mult-exemplo-amperimetro"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/multimetros/mult-amperimetro-exemplo-com-modelo.png
 	scale 80
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -35189,478 +35312,50 @@ Parte Experimental
 
 \series bold
 Atenção! Tomar cuidado para não provocar curto-circuitos durante as medições.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+Atenção! O amperímetro possui baixíssima resistência.
+ Portanto, caso seja conectado em paralelo a um ramo, ao invés de em série,
+ poderá ocorrer 
+\begin_inset Quotes eld
+\end_inset
+
+
+\bar under
+curto-circuito pelo amperímetro
+\bar default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
-Levantamento das Características do Galvanômetro
-\end_layout
-
-\begin_layout Subsubsection*
-Medida da Corrente de Fim de Escala do Galvanômetro 
-\end_layout
-
-\begin_layout Enumerate
-Monte o circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-circ-corrente-fde"
-
-\end_inset
-
-, adotando 
-\begin_inset Formula $R_{s}=4\mathrm{k}7\Omega$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito6.PNG
-	scale 80
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito para determinação da 
-\emph on
-corrente de fundo de escala
-\emph default
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-circ-corrente-fde"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Ajuste a fonte de tensão para 
-\begin_inset Formula $0\,V$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Aumente, gradativamente, a tensão da fonte até obter a deflexão de fim de
- escala no galvanômetro.
-\end_layout
-
-\begin_layout Enumerate
-Neste ponto, anote a tensão (
-\begin_inset Formula $E$
-\end_inset
-
-) e a corrente (
-\begin_inset Formula $I_{g}=I_{g(máx)}$
-\end_inset
-
-), a qual é a 
-\emph on
-corrente de fim de escala
-\emph default
-.
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Formula $E$
-\end_inset
-
- = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
-
-\begin_inset space \qquad{}
-\end_inset
-
-
-\begin_inset Formula $I_{g(máx)}$
-\end_inset
-
- = 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Medida da Resistência Interna do Galvanômetro
-\end_layout
-
-\begin_layout Enumerate
-Mantendo o circuito e os valores de 
-\begin_inset Formula $E$
-\end_inset
-
- e 
-\begin_inset Formula $R_{s}$
-\end_inset
-
- determinados no tópico anterior, acrescente uma resistência 
-\begin_inset Formula $R_{p}$
-\end_inset
-
- em paralelo com o galvanômetro, de acordo com a 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-circ-det-ri"
-
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito7.PNG
-	scale 80
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito para determinação da 
-\emph on
-resistência interna
-\emph default
- do galvanômetro.
- Note-se o uso da 
-\series bold
-década resistiva
-\series default
-.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-circ-det-ri"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Notar que, 
-\series bold
-sem 
-\begin_inset Formula $\mathbf{R_{p}}$
-\end_inset
-
-
-\series default
-, a deflexão no galvanômetro corresponde à corrente
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula 
-\[
-I_{g}=\frac{E}{R_{g}+R_{s}}
-\]
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-e, admitindo que 
-\begin_inset Formula $R_{g}\ll R_{s}$
-\end_inset
-
-, pode-se dizer:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula 
-\[
-I_{g}=\frac{E}{R_{s}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-Ao acrescentar 
-\begin_inset Formula $\mathbf{R_{p}}$
-\end_inset
-
-
-\series default
-, a corrente no galvanômetro diminuirá.
- Assim, ajuste 
-\begin_inset Formula $R_{p}$
-\end_inset
-
- até que a indicação no galvanômetro seja a 
-\series bold
-metade
-\series default
- da anterior.
- Nesta situação, como a corrente é a metade da corrente de fundo de escala,
- pode-se afirmar
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Por quê?
-\end_layout
-
-\end_inset
-
- que
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula 
-\[
-R_{p}=R_{g}
-\]
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-desde que 
-\begin_inset Formula $R_{g}\ll R_{s}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Anote o valor de 
-\begin_inset Formula $R_{p}$
-\end_inset
-
-.
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Formula $R_{p}=R_{g}=$
-\end_inset
-
- 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "2cm"
-height "1pt"
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+Uso do Multímetro Analógico
 \end_layout
 
 \begin_layout Standard
-2.3.
- Obtido o valor de 
-\begin_inset Formula $R_{g}$
-\end_inset
-
-, verifique se vale a hipótese de que 
-\begin_inset Formula $R_{g}\ll R_{s}$
-\end_inset
-
-, mostrando os cálculos abaixo.
- Para tanto, basta verificar se 
-\begin_inset Formula $\frac{R_{s}}{R_{g}}\gg1$
-\end_inset
-
+Nesta seção, utilizar somente o 
+\bar under
+multímetro analógico
+\bar default
 .
+\end_layout
+
+\begin_layout Enumerate
+O que é o 
+\emph on
+erro de paralaxe
+\emph default
+?
 \begin_inset ERT
 status open
 
@@ -35676,582 +35371,55 @@ caixaresp
 
 \end_layout
 
-\begin_layout Subsection
-Construção de um Miliamperímetro 
-\end_layout
-
 \begin_layout Enumerate
-Construa um miliamperímetro com fundo de escala de 100 mA.
- Para isso, use o circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-cir-miliamperimetro"
+Antes de se iniciar a medição da resistência, qual ajuste deve ser feito?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
 
 \end_inset
 
- com 
+
+\end_layout
+
+\begin_layout Enumerate
+Medir a resistência dos resistores apontados e completar a tabela seguinte.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
 \emph on
-Shunt de Ayrton
-\emph default
-, calculando-se 
-\begin_inset Formula $R_{1}$
-\end_inset
-
- e 
-\begin_inset Formula $R_{2}$
-\end_inset
-
-.
- A resistência equivalente do miliamperímetro será 
-\begin_inset Formula $(R_{1}+R_{g})\sslash R_{2}$
-\end_inset
-
-.
- Adote para ela o valor de 100 
-\begin_inset Formula $\Omega$
-\end_inset
-
-.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
+\bar under
+Nota
+\bar default
+: Obter a maior quantidade possível de Algarismos Significativos (A\SpecialChar endofsentence
+S\SpecialChar endofsentence
+).
+\begin_inset Float table
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito8.PNG
-	width 60text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito proposto para o miliamperímetro.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-cir-miliamperimetro"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
+{
+\backslash
+esptab
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Monte o circuito anterior.
-\end_layout
-
-\begin_layout Enumerate
-Acople-o a uma fonte por meio de uma resistência 
-\begin_inset Formula $R_{f}$
-\end_inset
-
- (sugestão: 
-\begin_inset Formula $R_{f}=100\Omega$
-\end_inset
-
-), de forma a obterem-se correntes de 0 a 100 mA, seguindo o ilustrado na
- 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-aferição-miliamperimetro"
-
-\end_inset
-
- (note-se a presença do multímetro comercial na escala de corrente).
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito9.PNG
-	lyxscale 70
-	scale 70
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Montagem para aferição do miliamperímetro construído.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-aferição-miliamperimetro"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Enumerate
-Adotando-se o multímetro comercial na escala de corrente como referência,
- calibre o miliamperímetro, variando E de forma a obter correntes de 20
- mA em 20 mA, e preencha a tabela abaixo.
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $I_{multímetro\,comercial}$
-\end_inset
-
- (mA)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $I_{miliamperímetro\,construído}$
-\end_inset
-
- (mA)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Desvio (%)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Construção de um Voltímetro 
-\end_layout
-
-\begin_layout Enumerate
-Construa um voltímetro para 20V, corrente contínua, utilizando o galvanômetro
- fornecido.
- Considere o circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:mult-construção-de-voltímetro"
-
-\end_inset
-
- como referência.
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/multimetro-circuito1.PNG
-	height 4cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito para construção de um voltímetro.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:mult-construção-de-voltímetro"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Calcule o resistor série 
-\begin_inset Formula $R_{m}$
-\end_inset
-
-.
-\begin_inset VSpace medskip
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Formula $R_{m}=$
-\end_inset
-
- 
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "3cm"
-height "1pt"
-
-\end_inset
-
-
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Faça a aferição da escala comparando as indicações do galvanômetro com as
- de um multímetro comercial, utilizado como padrão.
- Para tanto, escolha 5 pontos de aferição entre 0 e 20 V e preencha a tabela
- seguinte.
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Phantom Phantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \hfill{}
 \end_inset
 
 
@@ -36259,39 +35427,15 @@ status open
 <lyxtabular version="3" rows="6" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $V_{multímetro\,comercial}$
-\end_inset
-
- (V)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $I_{galvanômetro}$
-\end_inset
-
- (mA)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $V_{voltímetro\,construído}$
+\begin_inset Formula $R_{nominal}$
 \end_inset
 
 
@@ -36299,94 +35443,103 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Desvio (%)
+Tol.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{medido}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erro 
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+ (
+\begin_inset Formula $\si{\ohm}$
+\end_inset
 
+)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+(
+\begin_inset Formula $\%$
+\end_inset
 
+)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+ (
+\begin_inset Formula $\si{\ohm}$
+\end_inset
 
+)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
+(
+\begin_inset Formula $\%$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36395,7 +35548,7 @@ Desvio (%)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36404,16 +35557,7 @@ Desvio (%)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36424,7 +35568,16 @@ Desvio (%)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+330
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36433,7 +35586,7 @@ Desvio (%)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36442,16 +35595,7 @@ Desvio (%)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36462,7 +35606,16 @@ Desvio (%)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6k8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36471,7 +35624,7 @@ Desvio (%)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36480,7 +35633,7 @@ Desvio (%)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36489,7 +35642,36 @@ Desvio (%)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+82k
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36504,14 +35686,327 @@ Desvio (%)
 \end_inset
 
 
-\begin_inset space \hfill{}
-\end_inset
-
-
-\begin_inset Phantom Phantom
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Montar o circuito abaixo.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+\bar under
+Atenção
+\bar default
+! A corrente deve entrar pelo positivo (
+\begin_inset Formula $+$
+\end_inset
+
+) do amperímetro!
+\emph default
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-exp-amp-anal.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ajustar a década resistiva para os valores apontados na tabela e completá-la.
+\emph on
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{D}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{cálculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{medido}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erro 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\si{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\%$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1k
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7k
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -36521,37 +36016,1046 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Lembrando-se que uma característica importante do voltímetro é sua sensibilidade
-, definida em 
-\begin_inset Formula $\Omega$
-\end_inset
+Com base na última situação da tabela anterior, meça a tensão indicada no
+ circuito abaixo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
 
-/V, calcule a sensibilidade 
-\begin_inset Formula $S$
-\end_inset
-
- do voltímetro construído, pela equação seguinte, e faça os comentários
- pertinentes:
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula 
-\[
-S=\frac{R_{v}}{V_{FDE}}
-\]
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-exp-volt-anal.png
 
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
 \end_inset
 
-em que 
-\begin_inset Formula $V_{FDE}$
+
+\begin_inset Formula $V_{R_{1}}=$
 \end_inset
 
- é a tensão de fim de escala.
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Uso do Multímetro Digital
+\end_layout
+
+\begin_layout Standard
+Nesta seção, utilizar somente o 
+\bar under
+multímetro digital
+\bar default
+.
+\end_layout
+
+\begin_layout Enumerate
+O multímetro digital disponível na bancada possui escala automática?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ele permite ler tensões contínuas e alternadas? Como?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[5]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Medir a resistência dos resistores apontados e completar a tabela seguinte.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+\bar under
+Nota
+\bar default
+: Obter a maior quantidade possível de Algarismos Significativos (A\SpecialChar endofsentence
+S\SpecialChar endofsentence
+).
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{nominal}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tol.
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{medido}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erro 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ (
+\begin_inset Formula $\si{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\%$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ (
+\begin_inset Formula $\si{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\%$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+330
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6k8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+82k
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Montar o circuito abaixo.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+\bar under
+Atenção
+\bar default
+! A corrente deve entrar pelo positivo (
+\begin_inset Formula $+$
+\end_inset
+
+) do amperímetro!
+\emph default
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-exp-amp-dig.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ajustar a década resistiva para os valores apontados na tabela e completá-la.
+\emph on
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<column alignment="center" valignment="top" width="1.5cm">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{D}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{cálculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{medido}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erro 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\si{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\%$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1k
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7k
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Com base na última situação da tabela anterior, meça a tensão indicada no
+ circuito abaixo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-exp-volt-dig.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $V_{R_{1}}=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "2cm"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Influências dos Multímetros nas Medições
+\end_layout
+
+\begin_layout Enumerate
+Montar o circuito abaixo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/multimetros/mult-exp-comp-anal-dig.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Anotar a tensão sobre 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $V_{R_{2}}$
+\end_inset
+
+), preenchendo a tabela.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Teórico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mult\SpecialChar endofsentence
+ Analógico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mult\SpecialChar endofsentence
+ Digital 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{R_{2}}$
+\end_inset
+
+ (
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Qual a resistência interna dos multímetros, na escala selecionada?
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mult\SpecialChar endofsentence
+ Analógico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mult\SpecialChar endofsentence
+ Digital
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ (
+\begin_inset Formula $\si{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+O que se percebe nos resultados das medições? Por quê?
 \begin_inset ERT
 status open
 
@@ -36567,48 +37071,66 @@ caixaresp
 
 \end_layout
 
-\begin_layout Section
-Desafios
+\begin_layout Subsection
+Interpretações Complementares
 \end_layout
 
 \begin_layout Enumerate
-Especificar as características de um galvanômetro (
-\begin_inset Formula $I_{g(máx)}$
+O que acontecerá se as polaridades dos multímetros analógico e digital forem
+ invertidas?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
 \end_inset
 
- e 
-\begin_inset Formula $R_{g}$
-\end_inset
 
-) de tal forma que a resistência interna (
-\begin_inset Formula $R_{v}$
-\end_inset
-
-) de um voltímetro seja de 
-\begin_inset Formula $250\,\mathrm{k}\Omega$
-\end_inset
-
- na escala de 10
-\begin_inset space ~
-\end_inset
-
-V.
- Explicitar também o valor da sensibilidade (
-\begin_inset Formula $S$
-\end_inset
-
-).
 \end_layout
 
 \begin_layout Enumerate
-O galvanômetro especificado no item anterior poderá ser utilizado como amperímet
-ro com qual fundo de escala, se nenhuma resistência 
-\emph on
-\lang english
-shunt
-\emph default
-\lang brazilian
- for acrescentada?
+Comparando-se ambos os multímetros, qual fornece leitura de reistência mais
+ precisa? Com quantos A\SpecialChar endofsentence
+S\SpecialChar endofsentence
+?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Nas medições de tensão e corrente, foi possível obter boa precisão nas leituras?
+ Com quantos A\SpecialChar endofsentence
+S\SpecialChar endofsentence
+? Como procederam-se os ajustes das escalas para tal?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -36622,74 +37144,6 @@ Lista de Materiais
 
 \begin_layout Itemize
 Fonte CC de 0 a 30V
-\end_layout
-
-\begin_layout Itemize
-Multímetro digital
-\end_layout
-
-\begin_layout Itemize
-Caixa de resistências (década resistiva)
-\end_layout
-
-\begin_layout Itemize
-Resistores de 2W: 2x 
-\begin_inset Formula $100\Omega$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Resistores de 
-\begin_inset Formula $\nicefrac{1}{4}$
-\end_inset
-
-W: 1x (
-\begin_inset Formula $150\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $330\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $680\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $820\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $1\mathrm{k}8\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $3\mathrm{k}9\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $4\mathrm{k}7\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $5\mathrm{k}6\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $6\mathrm{k}8\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $10\mathrm{k}\Omega$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Itemize
-Galvanômetro de bobina móvel, com FDE de 1mA
 \end_layout
 
 \begin_layout Itemize
@@ -36707,7 +37161,59 @@ Universal
 \end_layout
 
 \begin_layout Itemize
+Multímetro analógico
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Caixa de resistências (década resistiva)
+\end_layout
+
+\begin_layout Itemize
 Cabos banana-banana
+\end_layout
+
+\begin_layout Itemize
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+W: 1x (
+\begin_inset Formula $\six{47}{\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{330}{\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 1{\kilo\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{6k8}{\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{82}{\kilo\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{10}{\kilo\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{100}{\kilo\ohm}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{220}{\kilo\ohm}$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -36717,7 +37223,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -38340,7 +38846,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
-status collapsed
+status open
 
 \begin_layout Chapter
 Lei de Ohm
@@ -40541,7 +41047,7 @@ Cabos banana-banana
 
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
-status collapsed
+status open
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -41131,7 +41637,7 @@ W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
-status collapsed
+status open
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -42481,7 +42987,7 @@ Resistores de
 
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
-status collapsed
+status open
 
 \begin_layout Chapter
 Teorema da Superposição e
@@ -44287,7 +44793,7 @@ Resistores de
 
 \begin_layout Standard
 \begin_inset Branch an-mtp
-status collapsed
+status open
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -46468,7 +46974,7 @@ Resistor de 2W: 1x (
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
-status collapsed
+status open
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -47368,7 +47874,7 @@ Cabos banana-banana pequenos
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-retif-gramp
-status collapsed
+status open
 
 \begin_layout Chapter
 Circuitos Retificadores e Grampeadores e Osciloscópio
@@ -48180,7 +48686,7 @@ Diodos: 4x 1N4004
 
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-lissajous
-status collapsed
+status open
 
 \begin_layout Chapter
 Osciloscópio:
@@ -49748,7 +50254,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch an-projeto
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -51106,7 +51612,7 @@ Alicate de Corte Fios para proto-board
 
 \begin_layout Standard
 \begin_inset Branch an-galvanometro
-status open
+status collapsed
 
 \begin_layout Chapter
 

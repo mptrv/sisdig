@@ -11,7 +11,6 @@ IProbe:Pr1 _net0 _net1
   </Model>
   <Symbol>
     <.ID -20 14 A>
-    <Line -50 0 35 0 #000000 0 1>
     <Line 15 0 35 0 #000000 0 1>
     <.PortSym -50 0 1 0>
     <.PortSym 50 0 2 0>
@@ -19,6 +18,128 @@ IProbe:Pr1 _net0 _net1
     <Ellipse -15 -15 30 30 #000000 0 1 #ffffff 1 1>
     <Text -6 -13 14 #000000 0 "A">
     <Text -30 -20 14 #000000 0 "+">
+    <Line -50 0 35 0 #000000 0 1>
   </Symbol>
 </Component>
 
+<Component amperimetro-v>
+  <Description>
+Amperímetro vertical.
+  </Description>
+  <Model>
+.Def:simbteo_amperimetro_v _net0 _net1
+IProbe:Pr1 _net0 _net1
+.Def:End
+  </Model>
+  <Symbol>
+    <Arrow -20 15 40 -32 7 3 #000000 0 1 0>
+    <Text -21 -15 14 #000000 90 "+">
+    <Ellipse -15 -15 30 30 #000000 0 1 #ffffff 1 1>
+    <Text -6 -12 14 #000000 0 "A">
+    <.ID 20 -14 A>
+    <.PortSym 0 -60 2 90>
+    <.PortSym 0 60 1 90>
+    <Line 0 60 0 -45 #000000 0 1>
+    <Line 0 -15 0 -45 #000000 0 1>
+  </Symbol>
+</Component>
+
+<Component seta>
+  <Description>
+Seta.
+  </Description>
+  <Model>
+.Def:simbteo_seta _net0
+.Def:End
+  </Model>
+  <VerilogModel>
+module Sub_simbteo_seta (net_net0);
+ inout net_net0;
+
+
+endmodule
+  </VerilogModel>
+  <VHDLModel>
+library ieee;
+use ieee.std_logic_1164.all;
+entity Sub_simbteo_seta is
+ port (net_net0 : inout  );
+end entity;
+use work.all;
+architecture Arch_Sub_simbteo_seta of Sub_simbteo_seta is
+begin
+end architecture;
+  </VHDLModel>
+  <Symbol>
+    <.ID -20 14 Seta>
+    <.PortSym 0 0 1 0>
+    <Arrow 0 0 40 0 10 4 #000000 2 1 1>
+  </Symbol>
+</Component>
+
+<Component voltimetro-h>
+  <Description>
+Voltímetro horizontal.
+  </Description>
+  <Model>
+.Def:simbteo_voltimetro_h _net0 _net1
+VProbe:Pr1 _net0 _net1
+.Def:End
+  </Model>
+  <Symbol>
+    <.ID -20 14 V>
+    <Line 15 0 35 0 #000000 0 1>
+    <.PortSym -50 0 1 0>
+    <.PortSym 50 0 2 0>
+    <Arrow -15 20 32 -40 7 3 #000000 0 1 0>
+    <Ellipse -15 -15 30 30 #000000 0 1 #ffffff 1 1>
+    <Text -30 -20 14 #000000 0 "+">
+    <Line -50 0 35 0 #000000 0 1>
+    <Text -6 -11 14 #000000 0 "V">
+  </Symbol>
+</Component>
+
+<Component voltimetro-v>
+  <Description>
+Voltímetro vertical.
+  </Description>
+  <Model>
+.Def:simbteo_voltimetro_v _net0 _net1
+VProbe:Pr1 _net0 _net1
+.Def:End
+  </Model>
+  <Symbol>
+    <Arrow -20 15 40 -32 7 3 #000000 0 1 0>
+    <Text -21 -15 14 #000000 90 "+">
+    <Ellipse -15 -15 30 30 #000000 0 1 #ffffff 1 1>
+    <.ID 20 -14 V>
+    <.PortSym 0 -60 2 90>
+    <.PortSym 0 60 1 90>
+    <Line 0 60 0 -45 #000000 0 1>
+    <Line 0 -15 0 -45 #000000 0 1>
+    <Text -6 -10 14 #000000 0 "V">
+  </Symbol>
+</Component>
+
+<Component resistor-var>
+  <Description>
+Resistor variável (em termos de símbolo).
+  </Description>
+  <Model>
+.Def:temp_resistor_var _net0 _net1 R="100 ohm"
+R:R1 _net1 _net0 R="[R]" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+.Def:End
+  </Model>
+  <Symbol>
+    <.ID -20 14 R "0=R=100 ohm=Resistência.=Padrão">
+    <.PortSym -30 0 1 0>
+    <.PortSym 30 0 2 0>
+    <Line -20 -10 40 0 #000080 2 1>
+    <Line 20 -10 0 20 #000080 2 1>
+    <Line -20 10 40 0 #000080 2 1>
+    <Line -20 -10 0 20 #000080 2 1>
+    <Line -30 0 10 0 #000080 2 1>
+    <Line 20 0 10 0 #000080 2 1>
+    <Arrow -20 -20 40 40 10 4 #00007f 2 1 0>
+  </Symbol>
+</Component>           
