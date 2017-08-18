@@ -33331,7 +33331,7 @@ Multímetros
 status open
 
 \begin_layout Section
-Objetivo
+Objetivos
 \end_layout
 
 \begin_layout Itemize
@@ -33544,7 +33544,7 @@ reference "sec:mult-Modelagem"
 \end_layout
 
 \begin_layout Standard
-Quanto à operação, certos cuidados são necessários a fim de que o valor
+Quanto à operação, certos cuidados são necessários, a fim de que o valor
  obtido na medição seja correto.
  Nas seções 
 \begin_inset CommandInset ref
@@ -33758,7 +33758,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Voltímetro posto em paralelo com os pontos do circuito para se determinar
+Voltímetro posto em paralelo com dois pontos do circuito para se determinar
  a tensão entre eles.
 \begin_inset CommandInset label
 LatexCommand label
@@ -33959,17 +33959,17 @@ Após colocar as pontas de prova no circuito, ler o valor da grandeza.
 \end_layout
 
 \begin_layout Enumerate
-Se o valor for menor que a escala 
+Se o valor for menor que o Fundo de Escala 
 \bar under
 imediatamente
 \bar default
- anterior, então altera-se o seletor para esta.
+ anterior, então altera-se o seletor para este.
  O objetivo é melhorar a precisão da medida.
 \end_layout
 
 \begin_layout Enumerate
 Repetir os dois itens anteriores enquanto a leitura não ultrapassar o valor
- da escala imediatamente anterior.
+ do Fundo de Escala imediatamente anterior.
 \end_layout
 
 \begin_layout Standard
@@ -34065,7 +34065,8 @@ Sempre que a escala for alterada, repetir estes passos.
 
 \emph on
 Nota: a diminuição da carga da bateria também poderá provocar alterações
- do zero; portanto, com certa frequência é conveniente verificar este ajuste.
+ do zero ohm; portanto, com certa frequência é conveniente verificar este
+ ajuste.
 \end_layout
 
 \end_deeper
@@ -34153,8 +34154,8 @@ name "sec:mult-Modelagem"
 \end_layout
 
 \begin_layout Standard
-Para as medições de tensão e corrente, uma atenção especial deve dada à
- influência que o instrumento poderá provocar no circuito em análise.
+Para as medições de tensão e corrente, é muito importante considerar a influênci
+a que o instrumento poderá provocar no circuito em análise.
 \end_layout
 
 \begin_layout Standard
@@ -34167,7 +34168,7 @@ sentir
 \begin_inset Quotes erd
 \end_inset
 
- a grandeza.
+ a grandeza a medir.
 \end_layout
 
 \begin_layout Standard
@@ -34182,7 +34183,21 @@ ar.
 \end_layout
 
 \begin_layout Standard
-Nas figuras, tem-se os modelos de um voltímetro e de um amperímetro.
+Nas figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mult-Representações-do-voltímetro."
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mult-Representações-do-amperimetro"
+
+\end_inset
+
+, tem-se os modelos de um voltímetro e de um amperímetro.
  Perceba-se a presença da 
 \emph on
 resistência interna
@@ -35013,8 +35028,11 @@ Notas sobre a Sensibilidade
 \end_layout
 
 \begin_layout Standard
-Os multímetros analógicos, quando em operação como voltímetros, possuem
- a especificação de 
+Os multímetros analógicos, quando 
+\bar under
+em operação como voltímetros
+\bar default
+, possuem a especificação de 
 \emph on
 sensibilidade
 \emph default
@@ -35030,7 +35048,8 @@ melhor
 \series bold
 menor 
 \series default
-for a corrente necessária para defletir o ponteiro de seu galvanômetro.
+for a corrente necessária para defletir o ponteiro de seu galvanômetro até
+ o Fundo de Escala.
  Desta forma, quanto menor for esta corrente, diz-se que o instrumento é
  mais sensível.
 \end_layout
@@ -35127,8 +35146,8 @@ Informações Complementares
 \end_layout
 
 \begin_layout Standard
-Nas subseções a seguir, um breve descrito a respeito dos fundamentos de
- construção dos multímetros analógico e digital.
+Nas subseções a seguir, apresenta-se um breve descrito a respeito dos fundamento
+s de construção dos multímetros analógico e digital.
 \end_layout
 
 \begin_layout Subsection
@@ -35227,7 +35246,7 @@ No caso de multímetros digitais, o galvanômetro é substituído por sensores,
  conformadores e conversor A/D.
  A 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:mult-Diagrama-em-blocos-digital"
 
 \end_inset
@@ -35753,7 +35772,7 @@ Ajustar a década resistiva para os valores apontados na tabela e completá-la.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -35778,7 +35797,7 @@ esptab
 <column alignment="center" valignment="top" width="1.5cm">
 <column alignment="center" valignment="top" width="1.5cm">
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -35790,7 +35809,7 @@ esptab
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -35802,7 +35821,7 @@ esptab
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -35814,7 +35833,7 @@ esptab
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -35825,7 +35844,7 @@ Erro
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -35838,7 +35857,7 @@ Erro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -35851,7 +35870,7 @@ Erro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -35864,7 +35883,7 @@ Erro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36488,7 +36507,7 @@ esptab
 <column alignment="center" valignment="top" width="1.5cm">
 <column alignment="center" valignment="top" width="1.5cm">
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36500,7 +36519,7 @@ esptab
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36512,7 +36531,7 @@ esptab
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36524,7 +36543,7 @@ esptab
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36535,7 +36554,7 @@ Erro
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36548,7 +36567,7 @@ Erro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36561,7 +36580,7 @@ Erro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -36574,7 +36593,7 @@ Erro
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -37178,7 +37197,7 @@ Cabos banana-banana
 
 \begin_layout Itemize
 Resistores de 
-\begin_inset Formula $\nicefrac{1}{4}$
+\begin_inset Formula $\nicefrac{1}{8}$
 \end_inset
 
 W: 1x (
@@ -42986,8 +43005,2165 @@ Resistores de
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch an-superposicao-thevenin-norton
+\begin_inset Branch an-mtp
+status collapsed
+
+\begin_layout Chapter
+Geradores Elétricos e Máxima Transferência de Potência
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
 status open
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Itemize
+Determinação da Curva Característica de um Gerador Elétrico.
+\end_layout
+
+\begin_layout Itemize
+Determinação das Condições para Máxima Transferência de Potência.
+\end_layout
+
+\begin_layout Section
+Introdução Teórica 
+\end_layout
+
+\begin_layout Subsection
+Geradores Elétricos
+\end_layout
+
+\begin_layout Standard
+Geradores Elétricos são equipamentos ou dispositivos cuja função é a de
+ produzir uma diferença potencial, ou tensão, entre seus terminais, obtida
+ por meio da conversão de uma forma de energia (química, mecânica, térmica
+ ou luminosa, por exemplo) em energia elétrica.
+\end_layout
+
+\begin_layout Standard
+As pilhas e baterias são exemplos de dispositivos que convertem energia
+ química em elétrica.
+ Esta categoria de geradores remontam a invenção da Pilha Eletroquímica
+ por Alessandro Volta apresentada em 1800.
+ Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Pilhas-e-Baterias"
+
+\end_inset
+
+, há algumas ilustrações de pilhas e baterias.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 1.png
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pilhas e Baterias
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Pilhas-e-Baterias"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Manter estes desenhos e acrescentar fotos de pilhas e baterias (reais).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como exemplo de equipamentos que convertem energia mecânica em energia elétrica,
+ há os dínamos e os alternadores.
+ Estes geradores são empregados em usinas hidroelétricas, sendo também empregado
+s nos automóveis (antigamente, os dínamos; atualmente, os alternadores)
+ para promover a energia elétrica necessária para alimentar os equipamentos
+ deste.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Gerador-Eletromecânico."
+
+\end_inset
+
+ apresenta uma ilustração de um dínamo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura-2.png
+	width 100line%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gerador Eletromecânico.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gerador-Eletromecânico."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um termopar consiste em um par de metais diferentes, unidos em seus extremos,
+ conforme a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:termopar"
+
+\end_inset
+
+.
+ Ao se aplicar temperaturas diferentes às suas junções, estabelece-se uma
+ diferença de potencial, como se vê na mesma figura.
+ Este efeito é denominado 
+\emph on
+Efeito Seebeck 
+\emph default
+e trata-se de um exemplo de conversão de energia térmica em energia elétrica.
+ Tal efeito é amplamente empregado na medição de temperatura.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 3.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Termopar.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:termopar"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como último exemplo de gerador elétrico, mencionam-se as células solares
+ baseadas em materiais semicondutores, as quais convertem energia luminosa
+ em energia elétrica.
+ Essa técnica é muito empregada em satélites, estações espaciais, telefones
+ na beira de estradas e calculadoras de bolso, entre diversas outras aplicações.
+ Como cada célula é capaz de somente produzir uma tensão pequena e suprir
+ baixas correntes, muitas destas são dispostas em associações série e paralela.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 4.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Célula Solar e Painel Solar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Continuar a revisão da teoria desta experiência a partir daqui.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E a fonte de Alimentação de Bancada? Esta também pode ser considerada como
+ gerador elétrico, porém necessita de outro 
+\begin_inset Quotes eld
+\end_inset
+
+gerador
+\begin_inset Quotes erd
+\end_inset
+
+, que é a rede elétrica e possui características de estabilidade para a
+ tensão de saída muito superiores aos geradores mencionados.
+ A Fonte de Bancada é contruída com circuitos eletrônicos, que possibilitam
+ esta estabilidade.
+\end_layout
+
+\begin_layout Subsection
+Curva v x i de Geradores Elétricos
+\end_layout
+
+\begin_layout Standard
+Um gerador elétrico em geral possui uma curva v x i como a ilustrada na
+ fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura5pot"
+
+\end_inset
+
+.
+ Esta curva pode ser obtida por um ensaio de carga, onde aplica-se na saída
+ deste gerador um resistor variável ou uma carga elétrica variável, mede-se
+ v com um voltímetro e i com um amperímetro, traçando-se então a curva em
+ questão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 5.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ensaio de Carga, Curva v x i de um Gerador e Modelo Linear
+\begin_inset CommandInset label
+LatexCommand label
+name "figura5pot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+É óbvio que esta relação não é linear, porem, pode-se adotar um modelo linear
+ para a região assim designada na fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura5pot"
+
+\end_inset
+
+, resultando no modelo ilustrado ao lado da curva v x i desta mesma figura.
+ Este modelo consiste em um gerador ideal 
+\begin_inset Formula $\mathrm{V}_{\mathrm{g}}$
+\end_inset
+
+em série com um resistor 
+\begin_inset Formula $\mathrm{R}_{\mathrm{g}}$
+\end_inset
+
+, e é frequentemente modelado pela seguinte equação:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{v=V_{g}-R_{g}\cdot i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para o caso de uma fonte de bancada, a tensão de saída varia pouco com a
+ corrente de saída, resultando em uma curva v x i ilustrada na fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura6pot"
+
+\end_inset
+
+.
+ Este caso de 
+\begin_inset Quotes eld
+\end_inset
+
+gerador
+\begin_inset Quotes erd
+\end_inset
+
+ é o que mais se aproxima de Gerador Ideal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 6.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Curva v x i de um Gerador Ideal e Modelo
+\begin_inset CommandInset label
+LatexCommand label
+name "figura6pot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Máxima Transferência de Potência
+\end_layout
+
+\begin_layout Standard
+Ao se conectar um gerador qualquer (uma bateria por exemplo) a uma carga
+ resistiva pergunta-se: qual o valor desta carga de modo que a potência
+ transferida para esta seja a máxima? Esta situação está ilustrada na fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figura7pot"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 7.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Máxima Transferência de Potência
+\begin_inset CommandInset label
+LatexCommand label
+name "figura7pot"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O valor da potência dissipada pela carga é:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{P_{RL}=R_{L}.i^{2}=R_{L}\cdot\left(\frac{V_{g}}{R_{g}+R_{L}}\right)^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O valor máximo para 
+\begin_inset Formula $\mathrm{P_{RL}}_{\mathrm{}}$
+\end_inset
+
+ é determinado por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{\frac{\partial P_{RL}}{\partial R_{L}}=\frac{V_{g}^{2}}{(R_{g}+R_{L})^{2}}+R_{L}V_{g}^{2}\frac{(-2)}{(R_{g}+R_{l})^{3}}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{R_{g}+R_{L}-2R_{L}=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{R_{L}\mid\,_{P_{RL_{max}}}=R_{g}}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Eq (4)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma outra maneira de obter-se este resultado, consiste em equacionar-se
+ 
+\begin_inset Formula $\mathrm{P}_{\mathrm{RL}}$
+\end_inset
+
+ em função das potências geradas por 
+\begin_inset Formula $\mathrm{V_{g}}$
+\end_inset
+
+ e dissipada por 
+\begin_inset Formula $\mathrm{R}_{\mathrm{g}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{P_{RL}=P_{Vg}-P_{Rg}=V_{g}\cdot i-R_{g}\cdot i^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esta equação é uma parábola como ilustrado na fig.
+ 8.
+ Nesta figura, nota-se que a potência útil, 
+\begin_inset Formula $\mathrm{P}_{\mathrm{RL}}$
+\end_inset
+
+, é zero para a corrente 
+\begin_inset Formula $\mathrm{i=0}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{i=I_{CC}}$
+\end_inset
+
+, onde 
+\begin_inset Formula $\mathrm{I_{CC}}$
+\end_inset
+
+ é a corrente de curto circuito, ou seja 
+\begin_inset Formula $\mathrm{R}_{L}=0\Omega$
+\end_inset
+
+! 
+\series bold
+Convém observar que esta condição nem sempre é saudável de se implemntar
+ na prática, pois pode causar um 
+\shape smallcaps
+terrível acidente
+\shape default
+!!
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+O máximo de 
+\begin_inset Formula $\mathrm{P_{RL}}$
+\end_inset
+
+ em função de i é:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0\:\Rightarrow\:V_{g}-2\centerdot\cdot R\cdot i=0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{i\mid\,_{P_{RL_{max}}}=\frac{V_{g}}{2\cdot R_{g}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\mathrm{v=V_{g}-R_{g}\centerdot i=\frac{V_{g}}{2}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathrm{R_{L}=\frac{v}{i}}$
+\end_inset
+
+ obtém-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{R_{L}\mid\,_{P_{RL_{max}}}=\frac{v}{i\mid_{P_{RL_{max}}}}=\frac{\frac{V_{g}}{2}}{\frac{V_{g}}{2\centerdot R_{g}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathrm{R_{L}\mid\,_{P_{RL_{max}}}=R_{g}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que é a mesma expressão obtida anteriormente Eq.
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "Eq (4)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Subsection
+Curva Característica de Um Gerador Tipo Pilha Elétrica (Eletroquímica)
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Curva-pilha"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Implementar a seguinte montagem:
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 8.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Colocar inicialmente a Década Resistiva em 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+kilo
+\backslash
+ohm}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Preencher a tabela a seguir, variando-se a Década convenientemente.
+\end_layout
+
+\begin_layout Enumerate
+Em uma planilha eletrônica, traçar o gráfico 
+\begin_inset Formula $v\times i$
+\end_inset
+
+.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i (
+\begin_inset Formula $\si{\milli\ampere}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+v (
+\begin_inset Formula $\si{\volt}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+220
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+240
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No gráfico, realizar a regressão linear (ou seja, traçar a linha de tendência
+ linear).
+\end_layout
+
+\begin_layout Enumerate
+Determinar a resistência interna da pilha por meio da equação obtida.
+\end_layout
+
+\begin_layout Enumerate
+Escrever a equação característica da fonte de bancada
+\end_layout
+
+\begin_layout Subsection
+Curva Característica da Fonte de Bancada
+\end_layout
+
+\begin_layout Enumerate
+Repetir o mesmo experimento para a Fonte da Bancada, conforme circuito abaixo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 9.png
+	lyxscale 130
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Preencher a tabela:
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i (
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+v (
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+250
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Colocar os pontos obtidos no mesmo gráfico do tópico 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Curva-pilha"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Por meio do gráfico, estimar a resistência interna da Fonte de Bancada.
+\end_layout
+
+\begin_layout Enumerate
+Escrever a equação característica da Fonte de Bancada.
+\end_layout
+
+\begin_layout Enumerate
+Qual gerador se aproxima mais do gerador ideal: a Pilha ou a Fonte de Bancada?
+ Por quê?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Máxima Transferência de Potência
+\end_layout
+
+\begin_layout Enumerate
+Simular um gerador com a montagem ilustrada abaixo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/exp-pot-figura 10.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Preencher, então, a seguinte tabela:
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<column alignment="center" valignment="top" width="2cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{R_{L}}$
+\end_inset
+
+ (
+\begin_inset Formula $\si{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+v (
+\begin_inset Formula $\si{\V}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i (
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{P_{RL}}$
+\end_inset
+
+ (
+\begin_inset Formula $\si{\mW}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+400
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+600
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+800
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Traçar dois gráficos, um para 
+\begin_inset Formula $\mathrm{P_{RL}\,\times\,R_{L}}$
+\end_inset
+
+ e outro para 
+\begin_inset Formula $\mathrm{P_{RL}\,\times\,i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Determinar os •valores a seguir para 
+\begin_inset Formula $\mathrm{P_{RL}}$
+\end_inset
+
+ máximo:
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+esptab
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Teórico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pelos Gráficos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{P_{RL_{máx}}}$
+\end_inset
+
+ (
+\begin_inset Formula $\si{mW}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{R_{L}\mid_{P_{RL_{máx}}}}$
+\end_inset
+
+ (
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{I_{R_{L}}\mid_{P_{RL_{máx}}}}$
+\end_inset
+
+ (
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Fonte CC de 0 a 30V
+\end_layout
+
+\begin_layout Itemize
+Década Resistiva
+\end_layout
+
+\begin_layout Itemize
+Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+Multímetro analógico
+\end_layout
+
+\begin_layout Itemize
+2x pilhas grandes (tipo D) de 1,5 V
+\end_layout
+
+\begin_layout Itemize
+Suporte para as pilhas
+\end_layout
+
+\begin_layout Itemize
+Plaqueta de montagem 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cabos banana-banana
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Resistor de 2W: 1x (
+\begin_inset Formula $\six{100}{\ohm}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch an-superposicao-thevenin-norton
+status collapsed
 
 \begin_layout Chapter
 Teorema da Superposição e
@@ -44780,2187 +46956,6 @@ Resistores de
 :
 \series default
  2x (
-\begin_inset Formula $\six{100}{\ohm}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch an-mtp
-status open
-
-\begin_layout Chapter
-Geradores Elétricos e Máxima Transferência de Potência
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch cm-corpo
-status open
-
-\begin_layout Section
-Objetivos
-\end_layout
-
-\begin_layout Itemize
-Determinação da Curva Característica de um Gerador Elétrico.
-\end_layout
-
-\begin_layout Itemize
-Determinação das Condições para Máxima Transferência de Potência.
-\end_layout
-
-\begin_layout Section
-Introdução Teórica 
-\end_layout
-
-\begin_layout Subsection
-Geradores Elétricos
-\end_layout
-
-\begin_layout Standard
-Geradores Elétricos são equipamentos ou dispositivos cuja função é a de
- produzir uma diferença potencial, ou tensão, entre seus terminais, obtida
- por meio da conversão de uma forma de energia (química, mecânica, térmica
- ou luminosa, por exemplo) em energia elétrica.
-\end_layout
-
-\begin_layout Standard
-As pilhas e baterias são exemplos de dispositivos que convertem energia
- química em elétrica.
- Esta categoria de geradores remontam a invenção da Pilha Eletroquímica
- por Alessandro Volta apresentada em 1800.
- Na 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Pilhas-e-Baterias"
-
-\end_inset
-
-, há algumas ilustrações de pilhas e baterias.
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 1.png
-	scale 85
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Pilhas e Baterias
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Pilhas-e-Baterias"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Manter estes desenhos e acrescentar fotos de pilhas e baterias (reais).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como exemplo de equipamentos que convertem energia mecânica em energia elétrica,
- há os dínamos e os alternadores.
- Estes geradores são empregados em usinas hidroelétricas, sendo também empregado
-s nos automóveis (antigamente, os dínamos; atualmente, os alternadores)
- para promover a energia elétrica necessária para alimentar os equipamentos
- deste.
- A 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Gerador-Eletromecânico."
-
-\end_inset
-
- apresenta uma ilustração de um dínamo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura-2.png
-	width 100line%
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Gerador Eletromecânico.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Gerador-Eletromecânico."
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Um termopar consiste em um par de metais diferentes, unidos em seus extremos,
- conforme a 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:termopar"
-
-\end_inset
-
-.
- Ao se aplicar temperaturas diferentes às suas junções, estabelece-se uma
- diferença de potencial, como se vê na mesma figura.
- Este efeito é denominado 
-\emph on
-Efeito Seebeck 
-\emph default
-e trata-se de um exemplo de conversão de energia térmica em energia elétrica.
- Tal efeito é amplamente empregado na medição de temperatura.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 3.png
-	scale 55
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Termopar.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:termopar"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como último exemplo de gerador elétrico, mencionam-se as células solares
- baseadas em materiais semicondutores, as quais convertem energia luminosa
- em energia elétrica.
- Essa técnica é muito empregada em satélites, estações espaciais, telefones
- na beira de estradas e calculadoras de bolso, entre diversas outras aplicações.
- Como cada célula é capaz de somente produzir uma tensão pequena e suprir
- baixas correntes, muitas destas são dispostas em associações série e paralela.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 4.png
-	scale 55
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Célula Solar e Painel Solar
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Continuar a revisão da teoria desta experiência a partir daqui.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-E a fonte de Alimentação de Bancada? Esta também pode ser considerada como
- gerador elétrico, porém necessita de outro 
-\begin_inset Quotes eld
-\end_inset
-
-gerador
-\begin_inset Quotes erd
-\end_inset
-
-, que é a rede elétrica e possui características de estabilidade para a
- tensão de saída muito superiores aos geradores mencionados.
- A Fonte de Bancada é contruída com circuitos eletrônicos, que possibilitam
- esta estabilidade.
-\end_layout
-
-\begin_layout Subsection
-Curva v x i de Geradores Elétricos
-\end_layout
-
-\begin_layout Standard
-Um gerador elétrico em geral possui uma curva v x i como a ilustrada na
- fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "figura5pot"
-
-\end_inset
-
-.
- Esta curva pode ser obtida por um ensaio de carga, onde aplica-se na saída
- deste gerador um resistor variável ou uma carga elétrica variável, mede-se
- v com um voltímetro e i com um amperímetro, traçando-se então a curva em
- questão.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 5.png
-	scale 55
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ensaio de Carga, Curva v x i de um Gerador e Modelo Linear
-\begin_inset CommandInset label
-LatexCommand label
-name "figura5pot"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-É óbvio que esta relação não é linear, porem, pode-se adotar um modelo linear
- para a região assim designada na fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "figura5pot"
-
-\end_inset
-
-, resultando no modelo ilustrado ao lado da curva v x i desta mesma figura.
- Este modelo consiste em um gerador ideal 
-\begin_inset Formula $\mathrm{V}_{\mathrm{g}}$
-\end_inset
-
-em série com um resistor 
-\begin_inset Formula $\mathrm{R}_{\mathrm{g}}$
-\end_inset
-
-, e é frequentemente modelado pela seguinte equação:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathrm{v=V_{g}-R_{g}\cdot i}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Para o caso de uma fonte de bancada, a tensão de saída varia pouco com a
- corrente de saída, resultando em uma curva v x i ilustrada na fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "figura6pot"
-
-\end_inset
-
-.
- Este caso de 
-\begin_inset Quotes eld
-\end_inset
-
-gerador
-\begin_inset Quotes erd
-\end_inset
-
- é o que mais se aproxima de Gerador Ideal.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 6.png
-	scale 60
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Curva v x i de um Gerador Ideal e Modelo
-\begin_inset CommandInset label
-LatexCommand label
-name "figura6pot"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Máxima Transferência de Potência
-\end_layout
-
-\begin_layout Standard
-Ao se conectar um gerador qualquer (uma bateria por exemplo) a uma carga
- resistiva pergunta-se: qual o valor desta carga de modo que a potência
- transferida para esta seja a máxima? Esta situação está ilustrada na fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "figura7pot"
-
-\end_inset
-
-.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 7.png
-	scale 60
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Máxima Transferência de Potência
-\begin_inset CommandInset label
-LatexCommand label
-name "figura7pot"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-O valor da potência dissipada pela carga é:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathrm{P_{RL}=R_{L}.i^{2}=R_{L}\cdot\left(\frac{V_{g}}{R_{g}+R_{L}}\right)^{2}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-O valor máximo para 
-\begin_inset Formula $\mathrm{P_{RL}}_{\mathrm{}}$
-\end_inset
-
- é determinado por:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\mathrm{\frac{\partial P_{RL}}{\partial R_{L}}=\frac{V_{g}^{2}}{(R_{g}+R_{L})^{2}}+R_{L}V_{g}^{2}\frac{(-2)}{(R_{g}+R_{l})^{3}}=0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\mathrm{R_{g}+R_{L}-2R_{L}=0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathrm{R_{L}\mid\,_{P_{RL_{max}}}=R_{g}}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "Eq (4)"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Uma outra maneira de obter-se este resultado, consiste em equacionar-se
- 
-\begin_inset Formula $\mathrm{P}_{\mathrm{RL}}$
-\end_inset
-
- em função das potências geradas por 
-\begin_inset Formula $\mathrm{V_{g}}$
-\end_inset
-
- e dissipada por 
-\begin_inset Formula $\mathrm{R}_{\mathrm{g}}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathrm{P_{RL}=P_{Vg}-P_{Rg}=V_{g}\cdot i-R_{g}\cdot i^{2}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Esta equação é uma parábola como ilustrado na fig.
- 8.
- Nesta figura, nota-se que a potência útil, 
-\begin_inset Formula $\mathrm{P}_{\mathrm{RL}}$
-\end_inset
-
-, é zero para a corrente 
-\begin_inset Formula $\mathrm{i=0}$
-\end_inset
-
- e 
-\begin_inset Formula $\mathrm{i=I_{CC}}$
-\end_inset
-
-, onde 
-\begin_inset Formula $\mathrm{I_{CC}}$
-\end_inset
-
- é a corrente de curto circuito, ou seja 
-\begin_inset Formula $\mathrm{R}_{L}=0\Omega$
-\end_inset
-
-! 
-\series bold
-Convém observar que esta condição nem sempre é saudável de se implemntar
- na prática, pois pode causar um 
-\shape smallcaps
-terrível acidente
-\shape default
-!!
-\series default
- 
-\end_layout
-
-\begin_layout Standard
-O máximo de 
-\begin_inset Formula $\mathrm{P_{RL}}$
-\end_inset
-
- em função de i é:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\mathrm{maxP_{RL}\:\Rightarrow\:\frac{\partial P_{RL}}{\partial R_{L}}=0\:\Rightarrow\:V_{g}-2\centerdot\cdot R\cdot i=0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathrm{i\mid\,_{P_{RL_{max}}}=\frac{V_{g}}{2\cdot R_{g}}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como 
-\begin_inset Formula $\mathrm{v=V_{g}-R_{g}\centerdot i=\frac{V_{g}}{2}}$
-\end_inset
-
- e 
-\begin_inset Formula $\mathrm{R_{L}=\frac{v}{i}}$
-\end_inset
-
- obtém-se:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\mathrm{R_{L}\mid\,_{P_{RL_{max}}}=\frac{v}{i\mid_{P_{RL_{max}}}}=\frac{\frac{V_{g}}{2}}{\frac{V_{g}}{2\centerdot R_{g}}}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathrm{R_{L}\mid\,_{P_{RL_{max}}}=R_{g}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Que é a mesma expressão obtida anteriormente Eq.
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "Eq (4)"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Parte Experimental
-\end_layout
-
-\begin_layout Subsection
-Curva Característica de Um Gerador Tipo Pilha Elétrica (Eletroquímica)
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Curva-pilha"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Implementar a seguinte montagem:
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 8.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Colocar inicialmente a Década Resistiva em 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{1}{
-\backslash
-kilo
-\backslash
-ohm}
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Preencher a tabela a seguir, variando-se a Década convenientemente.
-\end_layout
-
-\begin_layout Enumerate
-Em uma planilha eletrônica, traçar o gráfico 
-\begin_inset Formula $v\times i$
-\end_inset
-
-.
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="14" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="2cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-i (
-\begin_inset Formula $\si{\milli\ampere}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-v (
-\begin_inset Formula $\si{\volt}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-40
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-60
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-80
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-120
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-140
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-160
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-180
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-200
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-220
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-240
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-No gráfico, realizar a regressão linear (ou seja, traçar a linha de tendência
- linear).
-\end_layout
-
-\begin_layout Enumerate
-Determinar a resistência interna da pilha por meio da equação obtida.
-\end_layout
-
-\begin_layout Enumerate
-Escrever a equação característica da fonte de bancada
-\end_layout
-
-\begin_layout Subsection
-Curva Característica da Fonte de Bancada
-\end_layout
-
-\begin_layout Enumerate
-Repetir o mesmo experimento para a Fonte da Bancada, conforme circuito abaixo.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 9.png
-	lyxscale 130
-	height 5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Preencher a tabela:
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="2cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-i (
-\begin_inset Formula $\si{\mA}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-v (
-\begin_inset Formula $\si{\V}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-50
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-150
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-200
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-250
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Colocar os pontos obtidos no mesmo gráfico do tópico 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Curva-pilha"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Por meio do gráfico, estimar a resistência interna da Fonte de Bancada.
-\end_layout
-
-\begin_layout Enumerate
-Escrever a equação característica da Fonte de Bancada.
-\end_layout
-
-\begin_layout Enumerate
-Qual gerador se aproxima mais do gerador ideal: a Pilha ou a Fonte de Bancada?
- Por quê?
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-caixaresp
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Máxima Transferência de Potência
-\end_layout
-
-\begin_layout Enumerate
-Simular um gerador com a montagem ilustrada abaixo.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/exp-pot-figura 10.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Preencher, então, a seguinte tabela:
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<column alignment="center" valignment="top" width="2cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{R_{L}}$
-\end_inset
-
- (
-\begin_inset Formula $\si{\ohm}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-v (
-\begin_inset Formula $\si{\V}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-i (
-\begin_inset Formula $\si{\mA}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{P_{RL}}$
-\end_inset
-
- (
-\begin_inset Formula $\si{\mW}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-40
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-60
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-80
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-100
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-200
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-400
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-600
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-800
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1000
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Traçar dois gráficos, um para 
-\begin_inset Formula $\mathrm{P_{RL}\,\times\,R_{L}}$
-\end_inset
-
- e outro para 
-\begin_inset Formula $\mathrm{P_{RL}\,\times\,i}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Determinar os •valores a seguir para 
-\begin_inset Formula $\mathrm{P_{RL}}$
-\end_inset
-
- máximo:
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-esptab
-\end_layout
-
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Teórico
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Pelos Gráficos
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{P_{RL_{máx}}}$
-\end_inset
-
- (
-\begin_inset Formula $\si{mW}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{R_{L}\mid_{P_{RL_{máx}}}}$
-\end_inset
-
- (
-\begin_inset Formula $\Omega$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{I_{R_{L}}\mid_{P_{RL_{máx}}}}$
-\end_inset
-
- (
-\begin_inset Formula $\si{\mA}$
-\end_inset
-
-)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Lista de Materiais
-\end_layout
-
-\begin_layout Itemize
-Fonte CC de 0 a 30V
-\end_layout
-
-\begin_layout Itemize
-Década Resistiva
-\end_layout
-
-\begin_layout Itemize
-Multímetro digital
-\end_layout
-
-\begin_layout Itemize
-Multímetro analógico
-\end_layout
-
-\begin_layout Itemize
-2x pilhas grandes (tipo D) de 1,5 V
-\end_layout
-
-\begin_layout Itemize
-Suporte para as pilhas
-\end_layout
-
-\begin_layout Itemize
-Plaqueta de montagem 
-\emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-Universal
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Cabos banana-banana
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Resistor de 2W: 1x (
 \begin_inset Formula $\six{100}{\ohm}$
 \end_inset
 
