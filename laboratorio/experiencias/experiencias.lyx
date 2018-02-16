@@ -535,6 +535,20 @@ ETE102
 Fundamentos de Circuitos Digitais
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: acrescentar índice aqui – entretanto, ocorre erro (talvez seja necessário
+ consultar a documentação do pacote 'titlesec').
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Experiências de Laboratório de Digitais
 \begin_inset ERT
