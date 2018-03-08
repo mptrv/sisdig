@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 \usepackage{indentfirst}
@@ -100,16 +102,16 @@ customHeadersFooters
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -282,16 +284,49 @@ Fundamentos Intuitivos das Expressões Lógicas
 \end_layout
 
 \begin_layout Standard
-Ver:
+Construir os circuitos equivalentes às lógicas abaixo:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex URL
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-https://drive.google.com/drive/folders/0B7g4hnxLC9Fcd1BXdGVVcWswVkk
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L=(Ch_{1}+Ch_{2})\,\cdot\,(Ch_{3}\cdot Ch_{4}+Ch_{5})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{cases}
+L_{1} & =Ch_{1}\cdot Ch_{2}+(Ch_{3}+Ch_{4}Ch_{5})\,\cdot\,Ch_{6}\\
+L_{2} & =Ch_{1}\cdot Ch_{2}\cdot Ch_{3}+Ch_{4}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -314,7 +349,7 @@ Realizar as conversões solicitadas.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="50col%">
 <column alignment="center" valignment="top" width="50col%">
 <row>
@@ -438,7 +473,7 @@ d)
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="50col%">
 <column alignment="center" valignment="top" width="50col%">
 <row>
@@ -515,7 +550,7 @@ Realizar as operações solicitadas, em binário.
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="50col%">
 <column alignment="center" valignment="top" width="50col%">
 <row>
@@ -639,7 +674,7 @@ d)
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="50col%">
 <column alignment="center" valignment="top" width="50col%">
 <row>
@@ -823,7 +858,7 @@ Complemento de 2
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="50col%">
 <column alignment="center" valignment="top" width="50col%">
 <row>
@@ -986,7 +1021,7 @@ expressar o resultado final em decimal
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="50col%">
 <column alignment="center" valignment="top" width="50col%">
 <row>
@@ -1114,6 +1149,10 @@ Escrever a função lógica dos circuitos abaixo:
 
 \begin_layout Standard
 a)
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1274,7 +1313,7 @@ Desafio
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
