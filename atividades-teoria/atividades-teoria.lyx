@@ -313,7 +313,7 @@ alfaenum
 \begin_layout Enumerate
 \begin_inset Formula $\begin{cases}
 L_{1} & =Ch_{1}\cdot Ch_{2}+(Ch_{3}+Ch_{4}Ch_{5})\,\cdot\,Ch_{6}\\
-L_{2} & =Ch_{1}\cdot Ch_{2}\cdot Ch_{3}+Ch_{4}
+L_{2} & =Ch_{1}\cdot Ch_{2}
 \end{cases}$
 \end_inset
 
