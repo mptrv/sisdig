@@ -44,6 +44,12 @@
 % Forma alternativa para alterar o espaçamento entre linhas de tabela.
 \newcommand{\esptab}[1][1.5]{\renewcommand\arraystretch{#1}}
 
+% Contador e comando para questão.
+\newcounter{cquestao}
+\newcommand{\questao}[2][x]{%
+  \stepcounter{cquestao}\noindent{$\mathbf{\left(\thecquestao\right)}$}%
+}
+
 % Personalização dos capítulos.
 %   Ref.: http://tex.stackexchange.com/questions/94729/how-to-customize-chapter-heading-style
 
@@ -52,7 +58,7 @@
   {\normalsize \huge}%
   {\centering\large\textsc{Atividade}\hspace{1ex}\thechapter}%
   {10 pt}%
-  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]
+  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}\setcounter{cquestao}{0}]
 
 % Espaços à esquerda, acima e abaixo do capítulo.
 \titlespacing*{\chapter}{0pt}{5pt}{40pt}
@@ -156,7 +162,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -224,7 +230,7 @@ Atividades para Fixação de
 
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
-status open
+status collapsed
 
 \begin_layout Part
 Digitais
@@ -274,10 +280,6 @@ thepage
 
 
 \end_layout
-
-\begin_layout Standard
-\begin_inset Branch dg
-status open
 
 \begin_layout Chapter
 Fundamentos Intuitivos das Expressões Lógicas
@@ -533,6 +535,184 @@ f)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+Tabela Verdade, Funções e Circuitos Lógicos
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Escrever a função lógica dos circuitos abaixo:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a)
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/circuito-combinatorio-1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+b)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/circuito-combinatorio-2.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Desenhar o circuito lógico das expressões abaixo, utilizando a 
+\series bold
+menor quantidade possível
+\series default
+ de portas lógicas de 
+\series bold
+duas entradas
+\series default
+:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a) 
+\begin_inset Formula $Y=\overline{\overline{AB}+C\oplus D}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+b) 
+\begin_inset Formula $\begin{cases}
+S_{1} & =\overline{\overline{A\bar{B}C}\,\odot\,D\cdot(\overline{A+C+E})+BE}\\
+S_{0} & =\overline{A\bar{B}C}\,\cdot\,A+\overline{C+\bar{D}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Traçar as Tabelas Verdades para os itens a) dos exercícios anteriores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Extrair a função lógica a partir das Tabelas Verdades do exercício anterior:
+ escolher uma delas para escrever a 
+\emph on
+somatória de mintermos
+\emph default
+ e a outra para a 
+\emph on
+produtória de maxtermos
+\emph default
+.
 \end_layout
 
 \begin_layout Chapter
@@ -1136,135 +1316,6 @@ d)
 \end_layout
 
 \begin_layout Chapter
-Tabela Verdade, Funções e Circuitos Lógicos
-\end_layout
-
-\begin_layout Standard
-Escrever a função lógica dos circuitos abaixo:
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-a)
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename imagens/circuito-combinatorio-1.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-b)
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename imagens/circuito-combinatorio-2.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Desenhar o circuito lógico das expressões abaixo, utilizando a 
-\series bold
-menor quantidade possível
-\series default
- de portas lógicas de 
-\series bold
-duas entradas
-\series default
-:
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-a) 
-\begin_inset Formula $Y=\overline{\overline{AB}+C\oplus D}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-b) 
-\begin_inset Formula $\begin{cases}
-S_{1} & =\overline{\overline{A\bar{B}C}\,\odot\,D\cdot(\overline{A+C+E})+BE}\\
-S_{0} & =\overline{A\bar{B}C}\,\cdot\,A+\overline{C+\bar{D}}
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset VSpace bigskip
-\end_inset
-
-Traçar as Tabelas Verdades para os itens a) dos exercícios anteriores.
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Extrair a função lógica a partir das Tabelas Verdades do exercício anterior:
- escolher uma delas para escrever a 
-\emph on
-somatória de mintermos
-\emph default
- e a outra para a 
-\emph on
-produtória de maxtermos
-\emph default
-.
-\end_layout
-
-\begin_layout Chapter
 Álgebra Booleana e Mapas de Veitch-Karnaugh
 \end_layout
 
@@ -1679,11 +1730,6 @@ X
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -1751,19 +1797,6 @@ status open
 
 \backslash
 thepage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch an
-status collapsed
-
-\begin_layout Standard
-
 \end_layout
 
 \end_inset
