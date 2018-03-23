@@ -65,7 +65,7 @@
 %   Usa o pacote chngcntr.sty.
 \counterwithin*{page}{chapter}
 
-% Nome de capítulo padrão, para experiências.
+% Nome de capítulo padrão.
 \newcounter{contexp}
 \newcommand{\titulocap}[2][true]{%
 \setcounter{contexp}{1}

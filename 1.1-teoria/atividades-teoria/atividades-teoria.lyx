@@ -6,98 +6,7 @@
 \origin unavailable
 \textclass book
 \begin_preamble
-\usepackage{indentfirst}
-
-% Para personalização das "seções" do documento.
-\usepackage{titlesec}
-
-%Formas de onda digitais.
-\usepackage{tikz-timing}
-\usetikztiminglibrary{clockarrows}
-\usetikztiminglibrary{overlays}
-
-% Unidades do SI.
-\usepackage{siunitx}
-
-% Informações sobre o leiaute da página.
-%   Modo de uso elementar: dentro de flutuante de figura, chamar
-%      \currentpage
-%      \pagedesign
-%\usepackage{layouts}
-
-% Fração do total da altura do texto para alocação de flutuantes na parte inferior da página.
-\renewcommand{\bottomfraction}{0.5}
-
-% Enumeração por letras dos alfabeto.
-\newcommand{\alfaenum}{\renewcommand{\theenumi}{\alph{enumi}}}
-
-% Espaço vertical geral (\espv) e para tabelas (\strutp) - em tabelas, \baselineskip = 0.
-% Nota: há o comando pré-definido \strut.
-%   Ref.: http://en.wikibooks.org/wiki/LaTeX/Rules_and_Struts
-\newlength{\tabbaselineskip}
-\setlength{\tabbaselineskip}{\baselineskip}
-\newcommand{\espv}[1][4]{\rule[-.3\baselineskip]{0pt}{#1\baselineskip}}
-%\newcommand{\espv}[1][4]{\rule[#1ex]{0pt}{0pt}} % Obsoleto.
-\newcommand{\strutp}[1][4]{\rule[-.3\tabbaselineskip]{0pt}{#1\tabbaselineskip}}
-%\newcommand{\strutp}[1]{\rule[-0.3\baselineskip]{0pt}{#1}} % Obsoleto.
-
-% Forma alternativa para alterar o espaçamento entre linhas de tabela.
-\newcommand{\esptab}[1][1.5]{\renewcommand\arraystretch{#1}}
-
-% Contador e comando para questão.
-\newcounter{cquestao}
-\newcommand{\questao}[2][x]{%
-  \stepcounter{cquestao}\noindent{$\mathbf{\left(\thecquestao\right)}$}%
-}
-
-% Personalização dos capítulos.
-%   Ref.: http://tex.stackexchange.com/questions/94729/how-to-customize-chapter-heading-style
-
-% Nome de capítulo padrão, para experiências.
-\titleformat{\chapter}[display]
-  {\normalsize \huge}%
-  {\centering\large\textsc{Atividade}\hspace{1ex}\thechapter}%
-  {10 pt}%
-  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}\setcounter{cquestao}{0}]
-
-% Espaços à esquerda, acima e abaixo do capítulo.
-\titlespacing*{\chapter}{0pt}{5pt}{40pt}
-
-% Nome de capítulo para projetos.
-\newcommand{\tituloprojeto}{%
-\titleformat{\chapter}[display]
-  {\normalsize \huge}%
-  {\centering\large\textsc{Projeto Semestral}}%
-  {10 pt}%
-  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]%
-}
-
-% Personalização das numeração dos elementos.
-%   Numeração das seções.
-\renewcommand{\thesection}{\arabic{section}}
-%   Numeração das figuras.
-\renewcommand{\thefigure}{\arabic{figure}}
-%  Numeração das tabelas.
-\renewcommand{\thetable}{\arabic{table}}
-
-% Personalização para unidades SI (por siunitx}.
-\sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
-
-% Correção do altura do cabeçalho.
-%   Necessário pois alguns pacotes, como 'pdfpages' ou o que oferece os comandos "oval",
-%   parece que reconfiguram a altura do cabeçalho.
-\setlength{\headheight}{34pt}
-
-% Caixa de respostas.
-%  (A linha em branco é importante para separar a caixa do texto que a antecede.)
-\newcommand{\caixaresp}[1][10]{%   
-   \noindent %
-   \begin{tabular}{|>{\centering}p{1\linewidth}|}
-      \hline 
-      \espv[#1]\tabularnewline
-      \hline 
-   \end{tabular}
-}
+\usepackage{../teoria}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -274,6 +183,22 @@ status open
 
 \backslash
 thepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tituloativ{}
 \end_layout
 
 \end_inset
