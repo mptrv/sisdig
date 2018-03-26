@@ -34,7 +34,7 @@ customHeadersFooters
 \bibtex_command default
 \index_command default
 \paperfontsize 12
-\spacing single
+\spacing other 1.15
 \use_hyperref true
 \pdf_bookmarks true
 \pdf_bookmarksnumbered false
@@ -46,7 +46,7 @@ customHeadersFooters
 \pdf_backref false
 \pdf_pdfusetitle true
 \papersize a4paper
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -66,10 +66,21 @@ customHeadersFooters
 \suppress_date false
 \justification true
 \use_refstyle 1
+\branch gabarito
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch detalhes-enunciado
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
 \end_index
+\topmargin 2.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -205,6 +216,26 @@ questao{}
  Quantas variáveis de entrada e saída o circuito terá, respectivamente?
 \end_layout
 
+\begin_layout Standard
+\begin_inset Branch gabarito
+status open
+
+\begin_layout Standard
+
+\series bold
+\color red
+B.
+\begin_inset space \enskip{}
+\end_inset
+
+4 / 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Enumerate
 2 / 4
 \end_layout
@@ -234,7 +265,449 @@ questao{}
 
 \end_inset
 
+ Após elaborada a Tabela Verdade, contando-se a quantidade de 
+\begin_inset Quotes eld
+\end_inset
 
+1
+\begin_inset Quotes erd
+\end_inset
+
+ de todas as saídas, obtém-se quanto?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status open
+
+\begin_layout Standard
+
+\series bold
+\color red
+C.
+\begin_inset space \enskip{}
+\end_inset
+
+14
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+12
+\end_layout
+
+\begin_layout Enumerate
+13
+\end_layout
+
+\begin_layout Enumerate
+14
+\end_layout
+
+\begin_layout Enumerate
+15
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Dada a característica da Tabela Verdade, como a extração das expressões
+ poderá ser realizada de forma 
+\bar under
+mais prática
+\bar default
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status open
+
+\begin_layout Standard
+
+\series bold
+\color red
+A.
+\begin_inset space \enskip{}
+\end_inset
+
+Sem dúvida, por 
+\emph on
+mintermos
+\emph default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sem dúvida, por 
+\emph on
+mintermos
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Sem dúvida, por 
+\emph on
+maxtermos
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+A princípio, por 
+\emph on
+minitermos
+\emph default
+, mas também, equivalentemente, por 
+\emph on
+maxtermos
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Por mescla de 
+\emph on
+mintermos 
+\emph default
+e 
+\emph on
+maxtermos
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Utilizando-se 
+\emph on
+mintermos
+\emph default
+, qual a expressão de 
+\begin_inset Formula $P_{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status open
+
+\begin_layout Standard
+
+\series bold
+\color red
+D.
+\begin_inset space \enskip{}
+\end_inset
+
+
+\series default
+
+\begin_inset Formula $P_{3}=A_{1}A_{0}B_{1}B_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{3}=A_{1}\bar{A_{0}}B_{1}B_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{3}=\bar{A_{1}}\bar{A_{0}}\bar{B_{1}}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{3}=\bar{A_{1}}A_{0}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{3}=A_{1}A_{0}B_{1}B_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Utilizando-se 
+\emph on
+mintermos
+\emph default
+, qual a expressão de 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status open
+
+\begin_layout Standard
+
+\series bold
+\color red
+B.
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}\bar{B_{0}}+A_{1}\bar{A_{0}}B_{1}B_{0}+A_{1}A_{0}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=A_{1}A_{0}B_{1}B_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}\bar{B_{0}}+A_{1}\bar{A_{0}}B_{1}B_{0}+A_{1}A_{0}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}\bar{B_{0}}+A_{1}A_{0}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}\bar{B_{0}}+A_{1}\bar{A_{0}}B_{1}B_{0}+A_{1}A_{0}B_{1}\bar{B_{0}}+A_{1}A_{0}B_{1}B_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Ao simplificar 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ por Álgebra Booleana, qual a expressão obtida?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status open
+
+\begin_layout Standard
+
+\series bold
+\color red
+A.
+\begin_inset space \enskip{}
+\end_inset
+
+
+\series default
+
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}+A_{1}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}+A_{1}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}+A_{1}A_{0}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=A_{1}\bar{A_{0}}B_{1}B_{0}+A_{1}B_{1}\bar{B_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{2}=\bar{A_{1}}A_{0}B_{1}+A_{1}\bar{B_{1}}B_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{}
+\end_layout
+
+\end_inset
+
+ Considerando-se, além das expressões para 
+\begin_inset Formula $P_{3}$
+\end_inset
+
+ e 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ já deduzidas, as seguintes expressões para 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+, qual a quantidade mínima necessária de portas de
+\series bold
+ duas entradas
+\series default
+ para implementar o circuito do multiplicador de 2 bits? Pode-se utilizar
+ portas de qualquer função (ou seja, portas mistas).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+P_{1} & =\bar{A_{1}}A_{0}B_{1}+A_{0}B_{1}\bar{B_{0}}+A_{1}\bar{A_{0}}B_{0}+A_{1}\bar{B_{1}}B_{0}\\
+P_{0} & =A_{0}B_{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status open
+
+\begin_layout Standard
+
+\series bold
+\color red
+B.
+\begin_inset space \enskip{}
+\end_inset
+
+16
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+15
+\end_layout
+
+\begin_layout Enumerate
+16
+\end_layout
+
+\begin_layout Enumerate
+17
+\end_layout
+
+\begin_layout Enumerate
+18
 \end_layout
 
 \end_body
