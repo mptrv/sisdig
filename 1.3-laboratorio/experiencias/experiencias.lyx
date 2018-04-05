@@ -18743,8 +18743,44 @@ O projeto deverá ser apresentado na própria aula de laboratório, conforme
  as datas nas seções a seguir.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Redigir o contexto e o conteúdo dos entregáveis, em especial, quanto ao
+ da primeira entrega.
+ Ver mensagem de correio eletrônico de 05.04.2018, com o título 
+\begin_inset Quotes eld
+\end_inset
+
+ETE102 - Sobre a Entrega da Lista de Componentes e dos Componentes
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Apresentação da Lista de Materiais e dos Componentes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Redigir conteúdo deste entregável.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -18822,8 +18858,10 @@ status open
 \begin_layout Subsection
 Pré-apresentação de Montagem: Decodificador, 
 \emph on
+\lang english
 Display
 \emph default
+\lang brazilian
 , Botão
 \end_layout
 
