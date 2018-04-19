@@ -6126,7 +6126,7 @@ status open
 
 
 \backslash
-caixaresp[5]
+caixaresp[10]
 \end_layout
 
 \end_inset
@@ -7634,7 +7634,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-1 Painel Digital didático para desenvolvimento 
+Painel Digital didático para desenvolvimento 
 \end_layout
 
 \begin_layout Itemize
@@ -7654,7 +7654,10 @@ CIs: 7404, 7408, 7432
 \end_layout
 
 \begin_layout Itemize
-Fios rígidos para proto-board
+Fios rígidos para 
+\emph on
+\lang english
+protoboard
 \end_layout
 
 \end_inset
