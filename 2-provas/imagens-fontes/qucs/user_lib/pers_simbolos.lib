@@ -1,0 +1,150 @@
+<Qucs Library 0.0.18 "pers_simbolos">
+
+<Component fonte-corrente-vinc-tensao>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:pers_simbolos_fonte_corrente_vinc_tensao _net0 _net1 _net3 _net2 i="w v'"
+VCCS:SRC1 _net0 _net3 _net2 _net1 G="1 S" T="0"
+.Def:End
+  </Model>
+  <Symbol>
+    <Line 0 -30 30 30 #000000 2 1>
+    <Line 30 0 -30 30 #000000 2 1>
+    <Line 0 30 -30 -30 #000000 2 1>
+    <Line 0 -30 -30 30 #000000 2 1>
+    <Line 0 30 0 20 #000000 2 1>
+    <Line 0 -30 0 -20 #000000 2 1>
+    <.PortSym 0 50 3 0>
+    <.PortSym 0 -50 4 0>
+    <.PortSym -20 -10 1 0>
+    <.PortSym -20 10 2 0>
+    <.ID 30 -16 I "1=i=w v'==">
+    <Arrow 0 30 0 -60 20 6 #000000 2 1 1>
+  </Symbol>
+</Component>
+
+<Component fonte-tensao-vinc-corrente>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:pers_simbolos_fonte_tensao_vinc_corrente _net0 _net3 _net1 _net2 v="k i'"
+CCVS:SRC1 _net0 _net1 _net2 _net3 G="1 Ohm" T="0"
+.Def:End
+  </Model>
+  <Symbol>
+    <Line 0 -30 30 30 #000000 2 1>
+    <Line 30 0 -30 30 #000000 2 1>
+    <Line 0 30 -30 -30 #000000 2 1>
+    <Line 0 -30 -30 30 #000000 2 1>
+    <Line 0 30 0 20 #000000 2 1>
+    <.PortSym 0 50 3 0>
+    <Text 10 -50 18 #000000 0 "+">
+    <Line 0 -30 0 -20 #000000 2 1>
+    <.PortSym 0 -50 4 0>
+    <.PortSym -20 -10 2 0>
+    <.PortSym -20 10 1 0>
+    <.ID 30 -26 V "1=v=k i'==">
+  </Symbol>
+</Component>
+
+<Component seta-corrente>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:pers_simbolos_seta_corrente _net0
+.Def:End
+  </Model>
+  <VerilogModel>
+module Sub_pers_simbolos_seta_corrente (net_net0);
+ inout net_net0;
+
+endmodule
+  </VerilogModel>
+  <VHDLModel>
+library ieee;
+use ieee.std_logic_1164.all;
+entity Sub_pers_simbolos_seta_corrente is
+ port (net_net0 : inout  );
+end entity;
+use work.all;
+architecture Arch_Sub_pers_simbolos_seta_corrente of Sub_pers_simbolos_seta_corrente is
+begin
+end architecture;
+  </VHDLModel>
+  <Symbol>
+    <.PortSym -30 0 1 0>
+    <Arrow -30 0 70 0 12 6 #000000 0 1 1>
+    <.ID -5 -31 I>
+  </Symbol>
+</Component>
+
+<Component seta-tensao>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:pers_simbolos_seta_tensao _net0
+.Def:End
+  </Model>
+  <VerilogModel>
+module Sub_pers_simbolos_seta_tensao (net_net0);
+ inout net_net0;
+
+endmodule
+  </VerilogModel>
+  <VHDLModel>
+library ieee;
+use ieee.std_logic_1164.all;
+entity Sub_pers_simbolos_seta_tensao is
+ port (net_net0 : inout  );
+end entity;
+use work.all;
+architecture Arch_Sub_pers_simbolos_seta_tensao of Sub_pers_simbolos_seta_tensao is
+begin
+end architecture;
+  </VHDLModel>
+  <Symbol>
+    <EArc -50 10 90 50 333 2098 #000000 2 1>
+    <Arrow 30 20 10 10 15 6 #000000 2 1 1>
+    <.ID -10 -16 V>
+    <.PortSym -45 25 1 0>
+  </Symbol>
+</Component>
+
+<Component terminal>
+  <Description>
+
+  </Description>
+  <Model>
+.Def:pers_simbolos_terminal _net0
+.Def:End
+  </Model>
+  <VerilogModel>
+module Sub_pers_simbolos_terminal (net_net0);
+ inout net_net0;
+
+endmodule
+  </VerilogModel>
+  <VHDLModel>
+library ieee;
+use ieee.std_logic_1164.all;
+entity Sub_pers_simbolos_terminal is
+ port (net_net0 : inout  );
+end entity;
+use work.all;
+architecture Arch_Sub_pers_simbolos_terminal of Sub_pers_simbolos_terminal is
+begin
+end architecture;
+  </VHDLModel>
+  <Symbol>
+    <Line 0 2 0 14 #000000 0 1>
+    <Ellipse -2 -2 5 5 #00007f 2 1 #c0c0c0 1 0>
+    <.PortSym 0 16 1 0>
+    <.ID 6 -10 T>
+  </Symbol>
+</Component>
+

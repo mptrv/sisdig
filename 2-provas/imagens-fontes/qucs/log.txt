@@ -1,0 +1,32 @@
+Saída:
+-------
+
+Iniciando simulação às 22:03:10:962 do dia qua 21. dez 2016
+
+criando netlist... terminado.
+project location: 
+modules to load: 0
+factorycreate.size() is 0
+factorycreate has registered:
+parsing netlist...
+checking netlist...
+netlist content
+      1 IProbe instances
+      1 C instances
+      2 VProbe instances
+      2 R instances
+      1 Vrect instances
+      1 TR instances
+creating netlist...
+
+
+Simulação concluída às 22:03:11:166 do dia qua 21. dez 2016
+Preparado.
+
+
+
+
+Erros:
+-------
+
+

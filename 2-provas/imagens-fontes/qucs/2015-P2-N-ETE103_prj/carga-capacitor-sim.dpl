@@ -1,0 +1,33 @@
+<Qucs Schematic 0.0.18>
+<Properties>
+  <View=-75,-32,800,800,1,20,0>
+  <Grid=10,10,0>
+  <DataSet=carga-capacitor-sim.dat>
+  <DataDisplay=carga-capacitor-sim.sch>
+  <OpenDisplay=1>
+  <Script=carga-capacitor-sim.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Título>
+  <FrameText1=Desenhado por:>
+  <FrameText2=Data:>
+  <FrameText3=Revisão:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 20 597 649 267 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"Ic.It" #0000ff 0 3 0 0 0>
+  </Rect>
+  <Rect 20 276 648 240 3 #55aa00 2 00 1 0 5e-05 0.0005 1 -2.99973 10 32.997 1 -1 0.5 1 315 0 225 "" "" "">
+	<"Vc.Vt" #0000ff 0 3 0 0 0>
+	  <Mkr 0.000101 191 -280 3 0 0>
+	  <Mkr 0.000282 405 -118 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>

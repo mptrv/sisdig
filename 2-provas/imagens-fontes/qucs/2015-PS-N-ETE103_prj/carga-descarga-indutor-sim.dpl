@@ -1,0 +1,41 @@
+<Qucs Schematic 0.0.18>
+<Properties>
+  <View=0,-20,897,640,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=carga-descarga-indutor-sim.dat>
+  <DataDisplay=carga-descarga-indutor-sim.sch>
+  <OpenDisplay=1>
+  <Script=carga-descarga-indutor-sim.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Título>
+  <FrameText1=Desenhado por:>
+  <FrameText2=Data:>
+  <FrameText3=Revisão:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 110 220 740 184 3 #c0c0c0 2 00 1 0 2e-06 2.8e-05 1 -47.8363 20 40 1 -1 0.5 1 315 0 225 "t (s)" "vL(t) [V]" "">
+	<"VL1.Vt" #0000ff 0 3 0 0 0>
+	  <Mkr 1e-06 98 -212 3 0 0>
+	  <Mkr 9.6e-07 53 -83 3 0 0>
+	  <Mkr 7.96e-06 270 -180 3 0 0>
+	  <Mkr 8e-06 372 -58 3 0 0>
+  </Rect>
+  <Rect 110 479 739 187 3 #c0c0c0 2 00 1 0 2e-06 2.8e-05 1 -0.000630311 0.002 0.00693506 1 -1 0.5 1 315 0 225 "t (s)" "iL(t) [A]" "">
+	<"IL1.It" #0000ff 0 3 0 0 0>
+	  <Mkr 1e-06 123 -74 3 0 0>
+	  <Mkr 8e-06 291 -171 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+  <Text 200 380 12 #000000 0 "τ_1">
+  <Text 440 390 12 #000000 0 "τ_2">
+  <Text 130 440 12 #000000 0 "τ_0">
+  <Line 870 0 20 0 #ffffff 0 1>
+</Paintings>

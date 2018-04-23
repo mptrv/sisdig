@@ -1,0 +1,36 @@
+<Qucs Schematic 0.0.18>
+<Properties>
+  <View=-43,42,800,788,1,40,78>
+  <Grid=10,10,0>
+  <DataSet=transiente-cc-indutor.dat>
+  <DataDisplay=transiente-cc-indutor.sch>
+  <OpenDisplay=1>
+  <Script=transiente-cc-indutor.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Título>
+  <FrameText1=Desenhado por:>
+  <FrameText2=Data:>
+  <FrameText3=Revisão:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 90 406 551 237 3 #55ff7f 2 00 1 0 1e-06 7e-06 0 -40 10 40 1 -1 0.5 1 315 0 225 "t (s)" "vL (V)" "">
+	<"VL.Vt" #0000ff 0 3 0 0 0>
+	  <Mkr 3e-06 290 -67 3 0 0>
+	  <Mkr 2.99e-06 306 -185 3 0 0>
+	  <Mkr 2.01e-06 199 -257 3 0 0>
+  </Rect>
+  <Rect 90 699 551 219 3 #55ff7f 2 00 1 0 1e-06 7e-06 0 -0.0005 0.0005 0.00239205 1 -1 0.5 1 315 0 225 "t (s)" "iL (A)" "">
+	<"IL.It" #0000ff 0 3 0 0 0>
+	  <Mkr 3e-06 276 -201 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+  <Line 90 130 20 0 #ffffff 0 1>
+</Paintings>

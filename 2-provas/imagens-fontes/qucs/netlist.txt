@@ -1,0 +1,10 @@
+# Qucs 0.0.18  E:/Projetos/sisdig/trunk/provas/ete102/imagens-fontes/qucs/ETE103-N-PSb-2016_prj/capacitor-gerador-de-audio-sim.sch
+
+IProbe:Ic _net0 _net1
+VProbe:Vc _net0 gnd
+VProbe:Ve _net2 gnd
+C:C1 gnd _net1 C="220 nF" V="0"
+Vrect:V1 _net2 gnd U="12 V" TH="10 ms" TL="10 ms" Tr="1 ns" Tf="1 ns" Td="0 ns"
+.TR:TR1 Type="lin" Start="0" Stop="40 ms" Points="1001" IntegrationMethod="Trapezoidal" Order="2" InitialStep="1 ns" MinStep="1e-16" MaxIter="150" reltol="0.001" abstol="1 pA" vntol="1 uV" Temp="26.85" LTEreltol="1e-3" LTEabstol="1e-6" LTEfactor="1" Solver="CroutLU" relaxTSR="no" initialDC="yes" MaxStep="0"
+R:Rg1 _net2 _net3 R="2.9 kOhm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R1 _net3 _net0 R="3.3 kOhm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"

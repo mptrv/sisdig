@@ -1,0 +1,46 @@
+<Qucs Schematic 0.0.18>
+<Properties>
+  <View=-15,-250,800,542,1,0,120>
+  <Grid=10,10,1>
+  <DataSet=capacitor-gerador-de-audio-sim.dat>
+  <DataDisplay=capacitor-gerador-de-audio-sim.sch>
+  <OpenDisplay=1>
+  <Script=capacitor-gerador-de-audio-sim.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Título>
+  <FrameText1=Desenhado por:>
+  <FrameText2=Data:>
+  <FrameText3=Revisão:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 60 221 518 181 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"Vc.Vt" #0000ff 0 3 0 0 0>
+	  <Mkr 0.0025 190 -225 3 0 0>
+	  <Mkr 0.005 319 -138 3 0 0>
+	  <Mkr 0.00748 447 -223 3 0 0>
+	  <Mkr 0.01 578 -197 3 0 0>
+  </Rect>
+  <Rect 60 -61 517 169 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"Ve.Vt" #0000ff 0 3 0 0 0>
+  </Rect>
+  <Rect 60 468 518 168 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"Ic.It" #0000ff 0 3 0 0 0>
+	  <Mkr 0 60 -211 3 0 0>
+	  <Mkr 0.0025 190 -197 3 0 0>
+	  <Mkr 0.00252 191 -96 3 0 0>
+	  <Mkr 0.00498 318 -99 3 0 0>
+	  <Mkr 0.00501 320 -200 3 0 0>
+	  <Mkr 0.0075 449 -185 3 0 0>
+	  <Mkr 0.00751 449 -84 3 0 0>
+	  <Mkr 0.00998 577 -89 3 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
