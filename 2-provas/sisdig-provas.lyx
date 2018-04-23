@@ -65909,116 +65909,37 @@ status open
 \align center
 
 \color red
-\begin_inset Formula $S$
-\end_inset
-
- = (ABD.
-\begin_inset Formula $\overline{CD}$
-\end_inset
-
-)
-\begin_inset Formula $\odot$
+\begin_inset Formula $S=(ABD\,\overline{CD})\odot\overline{A}=[ABD\,(\overline{C}+\overline{D})]\odot\overline{A}=$
 \end_inset
 
 
-\begin_inset Formula $\bar{A}$
-\end_inset
-
- = [ ABD (
-\begin_inset Formula $\bar{C}$
-\end_inset
-
- + 
-\begin_inset Formula $\bar{D}$
-\end_inset
-
-)] 
-\begin_inset Formula $\odot$
-\end_inset
-
-
-\begin_inset Formula $\bar{A}$
-\end_inset
-
- =
 \end_layout
 
 \begin_layout Standard
 \align center
 
 \color red
-= [ABD
-\begin_inset Formula $\bar{C}$
-\end_inset
-
- + ABD
-\begin_inset Formula $\bar{D}$
-\end_inset
-
-] 
-\begin_inset Formula $\odot$
+\begin_inset Formula $=[ABD\overline{C}+ABD\overline{D}]\odot\overline{A}=ABD\overline{C}\odot\overline{A}=$
 \end_inset
 
 
-\begin_inset Formula $\bar{A}$
-\end_inset
-
- = ABD
-\begin_inset Formula $\bar{C}$
-\end_inset
-
- 
-\begin_inset Formula $\odot$
-\end_inset
-
-
-\begin_inset Formula $\bar{A}$
-\end_inset
-
- =
 \end_layout
 
 \begin_layout Standard
 \align center
 
 \color red
-= 
-\begin_inset Formula $\overline{AB\bar{C}D}$
+\begin_inset Formula $\overline{AB\overline{C}D}\,A+AB\overline{C}D\overline{A}=(\overline{A}+\overline{B}+C+\overline{D})\,A=$
 \end_inset
 
-.A + AB
-\begin_inset Formula $\bar{C}$
-\end_inset
 
-D
-\begin_inset Formula $\bar{A}$
-\end_inset
-
- = (
-\begin_inset Formula $\bar{A}$
-\end_inset
-
- + 
-\begin_inset Formula $\bar{B}$
-\end_inset
-
- + C + 
-\begin_inset Formula $\bar{D}$
-\end_inset
-
-).A =
 \end_layout
 
 \begin_layout Standard
 \align center
 
 \color red
-= A
-\begin_inset Formula $\bar{B}$
-\end_inset
-
- + AC + A
-\begin_inset Formula $\bar{D}$
+\begin_inset Formula $=A\overline{B}+AC+A\overline{D}$
 \end_inset
 
 
