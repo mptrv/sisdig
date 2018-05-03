@@ -11999,7 +11999,7 @@ NAND
 e na 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
+reference "tab:Tabela-Verdade-FF-RS-NAND-NE"
 
 \end_inset
 
@@ -12011,7 +12011,7 @@ reference "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -12050,9 +12050,6 @@ name "fig:Flip-flop-RS-NOR"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -12356,7 +12353,15 @@ reset
 \begin_inset Text
 
 \begin_layout Plain Layout
-Erro lógico
+Estado instável (
+\begin_inset Quotes eld
+\end_inset
+
+erro lógico
+\begin_inset Quotes erd
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -12437,7 +12442,7 @@ N
 AND.
 \begin_inset CommandInset label
 LatexCommand label
-name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
+name "tab:Tabela-Verdade-FF-RS-NAND-NE"
 
 \end_inset
 
@@ -12527,7 +12532,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+1
 \end_layout
 
 \end_inset
@@ -12536,7 +12541,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+1
 \end_layout
 
 \end_inset
@@ -12565,7 +12570,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+1
 \end_layout
 
 \end_inset
@@ -12574,7 +12579,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+0
 \end_layout
 
 \end_inset
@@ -12603,7 +12608,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+0
 \end_layout
 
 \end_inset
@@ -12612,7 +12617,7 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+1
 \end_layout
 
 \end_inset
@@ -12675,7 +12680,15 @@ name "tab:Tabela-Verdade-FF-RS-NAND-Sincr-NE"
 \end_layout
 
 \begin_layout Standard
-Note-se o estado identificado como 
+Na tabela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-FF-RS-NOR"
+
+\end_inset
+
+, referente ao flip-flop com portas NOR, note-se o estado identificado como
+ 
 \emph on
 
 \begin_inset Quotes eld
@@ -12735,6 +12748,15 @@ erro lógico
 \end_inset
 
 ) se saltar para qualquer um dos outros dois.
+ A mesma argumentação, de forma análoga, é valida para o flip-flop com portas
+ NAND (ver a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Tabela-Verdade-FF-RS-NAND-NE"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
