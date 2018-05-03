@@ -351,6 +351,11 @@ customHeadersFooters
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch dg-datasheets
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -28854,6 +28859,175 @@ status open
 	filename anexos/74191.pdf
 	lyxscale 25
 	extra LaTeX "pages={1,4,5}"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg-datasheets
+status open
+
+\begin_layout Chapter
+
+\shape italic
+\begin_inset Quotes eld
+\end_inset
+
+Datasheets
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+status open
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename anexos/74HC4511.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-12}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/74HCT4518.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-7}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/4093.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-8}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/4027.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-12}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/4585.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-12}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7400.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-18}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7402.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-4}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7404.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-4}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7406.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-4}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7408.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-4}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7432.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-5}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7474.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-7}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/7486.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-6}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/74153.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-6}"
+
+\end_inset
+
+
+\begin_inset External
+	template PDFPages
+	filename anexos/74191.pdf
+	lyxscale 25
+	extra LaTeX "pages ={1-6}"
 
 \end_inset
 
