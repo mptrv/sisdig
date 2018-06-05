@@ -143,17 +143,6 @@ F 3 "" H 8900 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 Entradas1
-U 1 1 5B0DF1AF
-P 1600 2850
-F 0 "Entradas1" H 1600 3050 50  0000 C CNN
-F 1 "Conn_01x04" H 1600 2550 50  0000 C CNN
-F 2 "Connectors:Grove_1x04" H 1600 2850 50  0001 C CNN
-F 3 "" H 1600 2850 50  0001 C CNN
-	1    1600 2850
-	-1   0    0    -1  
-$EndComp
-$Comp
 L LED D1
 U 1 1 5B0DF2B7
 P 9650 3900
@@ -274,4 +263,15 @@ Wire Wire Line
 	8200 3900 7500 3900
 Wire Wire Line
 	6250 3900 6100 3900
+$Comp
+L Conn_02x04_Top_Bottom J?
+U 1 1 5B15FEC3
+P 1500 2850
+F 0 "J?" H 1550 3050 50  0000 C CNN
+F 1 "Conn_02x04_Top_Bottom" H 1550 2550 50  0000 C CNN
+F 2 "" H 1500 2850 50  0001 C CNN
+F 3 "" H 1500 2850 50  0001 C CNN
+	1    1500 2850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
