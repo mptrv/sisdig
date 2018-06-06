@@ -1,10 +1,6 @@
-update=05/06/2018 22:36:28
+update=06/06/2018 17:16:59
 version=1
 last_client=kicad
-[general]
-version=1
-RootSch=
-BoardNm=
 [cvpcb]
 version=1
 NetIExt=net
@@ -45,7 +41,7 @@ LibName30=switches
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=circuito-01b.net
+LastNetListRead=circuito-01.net
 PadDrill=0.6
 PadDrillOvalY=0.6
 PadSizeH=1.5
@@ -61,3 +57,5 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+[general]
+version=1
