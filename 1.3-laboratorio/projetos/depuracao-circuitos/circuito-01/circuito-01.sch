@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:circuito-01-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -131,17 +132,6 @@ F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 9150 3800 50  0001 C CNN
 F 3 "" H 9150 3800 50  0001 C CNN
 	1    9150 3800
 	1    0    0    -1  
-$EndComp
-$Comp
-L LED D1
-U 1 1 5B0DF2B7
-P 9800 4400
-F 0 "D1" H 9800 4500 50  0000 C CNN
-F 1 "LED" H 9800 4300 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 9800 4400 50  0001 C CNN
-F 3 "" H 9800 4400 50  0001 C CNN
-	1    9800 4400
-	0    -1   -1   0   
 $EndComp
 $Comp
 L R R1
@@ -348,9 +338,9 @@ $EndComp
 Wire Wire Line
 	5800 4450 5850 4450
 Wire Wire Line
-	9800 4150 9800 4200
+	9800 4150 9800 4250
 Wire Wire Line
-	9800 4600 9800 4650
+	9800 4550 9800 4650
 Wire Wire Line
 	5800 4250 5850 4250
 Wire Wire Line
@@ -438,4 +428,15 @@ $EndComp
 Wire Wire Line
 	2200 2900 2200 2850
 Connection ~ 2200 2850
+$Comp
+L LED_ALT D1
+U 1 1 5B295E8B
+P 9800 4400
+F 0 "D1" H 9800 4500 50  0000 C CNN
+F 1 "LED_ALT" H 9800 4300 50  0001 C CNN
+F 2 "" H 9800 4400 50  0001 C CNN
+F 3 "" H 9800 4400 50  0001 C CNN
+	1    9800 4400
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
