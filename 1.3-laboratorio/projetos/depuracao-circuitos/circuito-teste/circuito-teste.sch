@@ -1,0 +1,136 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery BT1
+U 1 1 5B15A9FC
+P 2300 3000
+F 0 "BT1" H 2400 3050 50  0000 L CNN
+F 1 "Battery" H 2400 2950 50  0000 L CNN
+F 2 "Terminal_Blocks:TerminalBlock_Altech_AK300-2_P5.00mm" V 2300 3040 50  0001 C CNN
+F 3 "" V 2300 3040 50  0000 C CNN
+	1    2300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B15AA89
+P 2650 2700
+F 0 "R1" V 2730 2700 50  0000 C CNN
+F 1 "R" V 2650 2700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2580 2700 50  0001 C CNN
+F 3 "" H 2650 2700 50  0000 C CNN
+	1    2650 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5B15AB2C
+P 3900 3000
+F 0 "D1" H 3900 3100 50  0000 C CNN
+F 1 "LED" H 3900 2900 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm_FlatTop" H 3900 3000 50  0001 C CNN
+F 3 "" H 3900 3000 50  0000 C CNN
+	1    3900 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5B15AB6B
+P 4300 3000
+F 0 "D2" H 4300 3100 50  0000 C CNN
+F 1 "LED" H 4300 2900 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm_FlatTop" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0000 C CNN
+	1    4300 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 2850 2300 2700
+Wire Wire Line
+	2300 2700 2500 2700
+Wire Wire Line
+	2300 3150 2300 3250
+Wire Wire Line
+	4300 3250 4300 3200
+Wire Wire Line
+	3900 3200 3900 3250
+Connection ~ 3900 3250
+Wire Wire Line
+	3600 2700 4300 2700
+Wire Wire Line
+	4300 2700 4300 2800
+Wire Wire Line
+	3900 2800 3900 2700
+Connection ~ 3900 2700
+Wire Wire Line
+	2300 3250 4300 3250
+Wire Wire Line
+	2800 2700 3000 2700
+$Comp
+L CONN_02X02 P1
+U 1 1 5B15B6C0
+P 3300 2700
+F 0 "P1" H 3300 2850 50  0000 C CNN
+F 1 "CONN_02X02" H 3300 2550 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_DIP_x2_W7.62mm_Slide" H 3300 1500 50  0001 C CNN
+F 3 "" H 3300 1500 50  0000 C CNN
+	1    3300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2650 3600 2650
+Wire Wire Line
+	3600 2650 3600 2750
+Wire Wire Line
+	3600 2750 3550 2750
+Connection ~ 3600 2700
+Wire Wire Line
+	3050 2650 3000 2650
+Wire Wire Line
+	3000 2650 3000 2750
+Wire Wire Line
+	3000 2750 3050 2750
+Connection ~ 3000 2700
+$EndSCHEMATC

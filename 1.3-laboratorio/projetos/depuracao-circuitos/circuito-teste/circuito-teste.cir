@@ -1,0 +1,14 @@
+* E:\Projetos\sisdig\1.3-laboratorio\projetos\depuracao-circuitos\circuito-teste\circuito-teste.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 04/06/2018 18:18:51
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+BT1  Net-_BT1-Pad1_ Net-_BT1-Pad2_ Battery		
+R1  Net-_D1-Pad2_ Net-_BT1-Pad1_ R		
+D1  Net-_BT1-Pad2_ Net-_D1-Pad2_ LED		
+D2  Net-_BT1-Pad2_ Net-_D1-Pad2_ LED		
+
+.end
