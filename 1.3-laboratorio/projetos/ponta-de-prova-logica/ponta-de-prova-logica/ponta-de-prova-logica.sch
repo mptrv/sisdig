@@ -1,9 +1,9 @@
 EESchema Schematic File Version 2
+LIBS:ponta-de-prova-logica-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
 LIBS:relays
-LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:ponta-de-prova-logica-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -134,7 +135,7 @@ F 3 "" H 3500 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM319 U?
+L LM319-RESCUE-ponta-de-prova-logica U?
 U 1 1 5B73B4DB
 P 3950 2450
 F 0 "U?" H 3950 2700 50  0000 L CNN
@@ -145,7 +146,7 @@ F 3 "" H 3950 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM319 U?
+L LM319-RESCUE-ponta-de-prova-logica U?
 U 2 1 5B73B621
 P 3950 3550
 F 0 "U?" H 3950 3800 50  0000 L CNN
@@ -189,7 +190,7 @@ F 3 "" H 3150 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED HIGH
+L LED-RESCUE-ponta-de-prova-logica HIGH
 U 1 1 5B73D760
 P 4350 1850
 F 0 "HIGH" H 4350 1950 50  0000 C CNN
@@ -200,7 +201,7 @@ F 3 "" H 4350 1850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LOW
+L LED-RESCUE-ponta-de-prova-logica LOW
 U 1 1 5B73D93F
 P 4350 2950
 F 0 "LOW" H 4350 3050 50  0000 C CNN
@@ -728,7 +729,7 @@ F 3 "" H 8000 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED PULSE
+L LED-RESCUE-ponta-de-prova-logica PULSE
 U 1 1 5B746AC3
 P 8500 2300
 F 0 "PULSE" H 8500 2400 50  0000 C CNN
@@ -840,4 +841,17 @@ $EndComp
 Wire Wire Line
 	9050 1650 9050 1550
 Connection ~ 8750 1650
+$Comp
+L TEST_1P W?
+U 1 1 5BBEAAFC
+P 2900 3000
+F 0 "W?" H 2900 3270 50  0000 C CNN
+F 1 "TEST_1P" H 2900 3200 50  0000 C CNN
+F 2 "" H 3100 3000 50  0000 C CNN
+F 3 "" H 3100 3000 50  0000 C CNN
+	1    2900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3000 3000 3000
 $EndSCHEMATC

@@ -1,32 +1,25 @@
-Saída:
+Saídas:
 -------
 
-Iniciando simulação às 22:03:10:962 do dia qua 21. dez 2016
+Iniciando nova simulação em qua 19. set 2018 as 18:38:33:240
 
-criando netlist... terminado.
+criando netlist...terminado.
+ComeçandoC:/Program Files (x86)/Qucs-0.0.19/bin/qucsator.exe
+
 project location: 
 modules to load: 0
 factorycreate.size() is 0
 factorycreate has registered:
 parsing netlist...
 checking netlist...
-netlist content
-      1 IProbe instances
-      1 C instances
-      2 VProbe instances
-      2 R instances
-      1 Vrect instances
-      1 TR instances
-creating netlist...
 
-
-Simulação concluída às 22:03:11:166 do dia qua 21. dez 2016
-Preparado.
+Erros encontrados durante simulação em qua 19. set 2018 as 18:38:33:754
+Abortado.
 
 
 
+Errors and Warnings:
+--------------------
 
-Erros:
--------
-
+checker error, no actions defined: nothing to do
 

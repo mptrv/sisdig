@@ -261,7 +261,7 @@
 \color #faf0e6
 \end_branch
 \branch 2018-dg-p2
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -271,7 +271,7 @@
 \color #faf0e6
 \end_branch
 \branch 2018-an-p1
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -68386,7 +68386,7 @@ Maxtermos.
 
 \begin_layout Standard
 \begin_inset Branch 2018-dg-p2
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -79958,6 +79958,1185 @@ status open
 
 \begin_layout Plain Layout
 an
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch 2018-an-p1
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaan{Primeira Prova Bimestral}{2018}{20.09.2018}{6}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+\color red
+GABARITO ETE103/N – P1/2016
+\size default
+\color inherit
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{50}
+\end_layout
+
+\end_inset
+
+ É necessário dimensionar um resistor para alimentar o LED de alto brilho
+ indicado.
+ Deseja-se uma corrente mínima de 15 
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Bases de valores comerciais de resistência:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1,0 — 1,2 — 1,5 — 1,8 — 2,2 — 2,7 — 3,3 — 3,9 — 4,7 — 5,6 — 6,8 — 8,2
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Valores comerciais de potência:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Formula $\nicefrac{1}{8}\,\si{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{4}\,\si{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{2}\,\si{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 1{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 2{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 3{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 5{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{10}{\W}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/led.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,25}
+\end_layout
+
+\end_inset
+
+ A especificação completa de R (ou seja, resistência nominal, tolerância
+ e potência máxima).
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ A potência consumida pelo LED.
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ A potência fornecida pela fonte.
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Pode-se ligar mais um par 
+\emph on
+Resistor–LED
+\emph default
+ em paralelo com a fonte? Por quê?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{0}
+\end_layout
+
+\end_inset
+
+ Os dois circuitos abaixo foram montados para alimentar dois LEDs.
+ Pede-se calcular as correntes nos LEDs (
+\begin_inset Formula $I_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+) e a potência fornecida pela fonte (
+\begin_inset Formula $P_{U}$
+\end_inset
+
+).
+ A tensão em cada LED é 
+\begin_inset Formula $V_{LED}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/dois-leds.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ 
+\bar under
+Circuito 1
+\bar default
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ 
+\bar under
+Circuito 2
+\bar default
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{50}
+\end_layout
+
+\end_inset
+
+ Dado o circuito abaixo, pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ Sistema de equações literais que o descreve (devem ser utilizadas as referência
+s apontadas; a resposta final deverá estar no espaço reservado).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Sistema de equações numéricas e correspondente solução do sistema para
+ o caso de 
+\begin_inset Formula $R_{1}=R_{2}=R_{3}=R_{4}=R_{5}=R=\six 2{\ohm}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{1}=V_{2}=V_{3}=V_{4}=V_{5}=U=\six 5{\V}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/analise-de-malhas.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+status open
+
+\begin_layout Standard
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="50text%">
+<column alignment="center" valignment="top" width="50text%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[19]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{ll}
+{\color{red}a)\qquad} & {\color{red}\begin{cases}
+\alpha: & -V_{1}-R_{1}\,I_{1}-(I_{1}-I_{2})\,R_{3}-V_{2}=0\\
+\\
+\beta: & V_{2}+(I_{1}-I_{2})\,R_{3}-R_{2}\,I_{2}+-V_{3}=0
+\end{cases}}\\
+\\
+ & {\color{red}\begin{cases}
+\alpha: & (-R_{1}-R_{3})\,I_{1}+R_{3}\,I_{2}=V_{1}+V_{2}\\
+\\
+\beta: & R_{3}\,I_{1}+(-R_{2}-R_{3})\,I_{2}=V_{3}-V_{2}
+\end{cases}}\\
+\\
+\\
+\\
+b) & {\color{red}I_{2}>0.}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Considere-se o circuito abaixo:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/classificacao.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Calcular a tensão e a corrente em todos os bipolos e 
+\bar under
+indicá-las no circuito
+\bar default
+.
+ 
+\emph on
+(Observação: Não há necessidade de demonstrar os cálculos.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Justificando, classificar todos os bipolos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[0]{50}
+\end_layout
+
+\end_inset
+
+ Modifique o circuito abaixo de forma a facilitar sua resolução.
+ 
+\emph on
+(Observação: não é necessário resolvê-lo!)
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename imagens/2018/an/estrela-triangulo.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+Para usar 'siunitx' no modo equação.
+\end_layout
+
+\begin_layout Plain Layout
+Ref.: http://comments.gmane.org/gmane.editors.lyx.general/68859
+\end_layout
+
+\begin_layout Plain Layout
+There are two ways around this problem:
+\end_layout
+
+\begin_layout Plain Layout
+a) Write a = 
+\backslash
+SI{50}{
+\backslash
+metre
+\backslash
+per
+\backslash
+second
+\backslash
+squared}, highlight and press Ctrl-M.
+\end_layout
+
+\begin_layout Plain Layout
+b) Write 
+\backslash
+{ when you want a non-escaped { (\SpecialChar LyX
+ switches the input convention of literal
+ and grouping bracket).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Um determinado material hipotético desenvolvido em laboratório – 
+\emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{material $
+\backslash
+zeta$}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ (leia-se 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+material zeta
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+) – apresenta coeficiente de temperatura (
+\begin_inset Formula $\alpha$
+\end_inset
+
+) de 
+\begin_inset Formula $\six{0,075}{\celsius^{-1}}$
+\end_inset
+
+.
+ Agora, deseja-se determinar sua resistividade a 
+\begin_inset Formula $\six{100}{\celsius}$
+\end_inset
+
+.
+ Para tanto, tomou-se uma amostra cilíndrica com diâmetro de 
+\begin_inset Formula $\six{0,5}{\cm}$
+\end_inset
+
+ e comprimento de 
+\begin_inset Formula $\six{120}{\cm}$
+\end_inset
+
+ e aplicou-se uma tensão de 
+\begin_inset Formula $\six 2{\V}$
+\end_inset
+
+ nesta, num ambiente cuja temperatura era de 
+\begin_inset Formula $\six{20}{\celsius}$
+\end_inset
+
+.
+ Em tal situação, foi medida uma corrente de 
+\begin_inset Formula $\six{0,25}{\A}$
+\end_inset
+
+.
+ Pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Esboço do 
+\bar under
+material
+\bar default
+ 
+\series bold
+e
+\series default
+ 
+\series bold
+do
+\series default
+ 
+\bar under
+circuito montado
+\bar default
+, com indicação das grandezas envolvidas.
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ 
+\size large
+
+\begin_inset Formula $\rho_{(\six{100}{\celsius})}$
+\end_inset
+
+
+\size default
+.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="50text%">
+<column alignment="center" valignment="top" width="50text%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[20]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+a) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="25line%">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="25line%">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="25line%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/2016-n-ete103-p1-fonte-distante-gab.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\equiv$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/2016-n-ete103-p1-fonte-distante-modelo-gab.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\equiv$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/2016-n-ete103-p1-fonte-distante-modelo2-gab.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{ll}
+b)\quad & {\color{red}V_{R_{L}}=0,98\ U=\six{78,4}{\V}}\\
+ & {\color{red}}\\
+ & {\color{red}I_{R_{L}}=\cfrac{V_{R_{L}}}{R_{L}}=\six{5,227}{\A}}\\
+ & {\color{red}}\\
+ & {\color{red}R_{fio\,tot}=R_{fio\,1}+R_{fio\,2}=2\,R_{fio}}\\
+ & {\color{red}}\\
+ & {\color{red}\qquad(R_{fio}=R_{fio\,1}=R_{fio\,2})}\\
+ & {\color{red}}\\
+ & {\color{red}V_{R_{fio\,tot}}=0,02\,U=\six{1,6}{\V}}\\
+ & {\color{red}}\\
+ & {\color{red}R_{fio\,tot}=\cfrac{V_{R_{fio\,tot}}}{I_{R_{L}}}=\six{306,1}{\milli\ohm}}\\
+ & {\color{red}}\\
+ & {\color{red}R_{fio\,tot}=2\,\cdot\,\rho_{\mathrm{Cu}\,(\six{60}{\celsius})}\cfrac{L}{S}}\\
+ & {\color{red}}\\
+ & {\color{red}\qquad\rho_{\mathrm{Cu\,}(\six{60}{\celsius})}=\rho_{\mathrm{Cu\,}(\six{20}{\celsius})}\,(1+\alpha\,\Delta\theta)}\\
+ & {\color{red}}\\
+ & {\color{red}\qquad\rho_{\mathrm{Cu\,}(\six{60}{\celsius})}=\six{1,988e-8}{\ohm\m}}\\
+ & {\color{red}}\\
+ & {\color{red}\therefore S=\six{38,97e-6}{\m}}\\
+ & {\color{red}}\\
+ & {\color{red}\therefore\boxed{S=\six{38,97}{\mm\squared}}}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
