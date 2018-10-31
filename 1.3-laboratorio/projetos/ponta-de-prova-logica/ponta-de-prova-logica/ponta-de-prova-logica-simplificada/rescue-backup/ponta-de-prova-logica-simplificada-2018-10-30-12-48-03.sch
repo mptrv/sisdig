@@ -1,6 +1,38 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:ponta-de-prova-logica-simplificada-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,10 +47,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR05
+L +5V #PWR5
 U 1 1 5BBF02C2
 P 4700 1750
-F 0 "#PWR05" H 4700 1600 50  0001 C CNN
+F 0 "#PWR5" H 4700 1600 50  0001 C CNN
 F 1 "+5V" H 4700 1890 50  0000 C CNN
 F 2 "" H 4700 1750 50  0001 C CNN
 F 3 "" H 4700 1750 50  0001 C CNN
@@ -26,7 +58,7 @@ F 3 "" H 4700 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L R R8
 U 1 1 5BBF02DC
 P 2300 3800
 F 0 "R8" V 2380 3800 50  0000 C CNN
@@ -37,7 +69,7 @@ F 3 "" H 2300 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L R R9
 U 1 1 5BBF0383
 P 2300 4300
 F 0 "R9" V 2380 4300 50  0000 C CNN
@@ -48,7 +80,7 @@ F 3 "" H 2300 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L R R4
 U 1 1 5BBF0404
 P 2300 2550
 F 0 "R4" V 2380 2550 50  0000 C CNN
@@ -59,7 +91,7 @@ F 3 "" H 2300 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L R R5
 U 1 1 5BBF043F
 P 2300 3150
 F 0 "R5" V 2380 3150 50  0000 C CNN
@@ -70,7 +102,7 @@ F 3 "" H 2300 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
+L R R11
 U 1 1 5BBF0478
 P 3250 4950
 F 0 "R11" V 3330 4950 50  0000 C CNN
@@ -81,7 +113,7 @@ F 3 "" H 3250 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L R R10
 U 1 1 5BBF04AF
 P 3250 4300
 F 0 "R10" V 3330 4300 50  0000 C CNN
@@ -92,7 +124,7 @@ F 3 "" H 3250 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L R R1
 U 1 1 5BBF0ACE
 P 2300 1950
 F 0 "R1" V 2380 1950 50  0000 C CNN
@@ -103,7 +135,7 @@ F 3 "" H 2300 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L R R2
 U 1 1 5BBF0B71
 P 3250 1950
 F 0 "R2" V 3330 1950 50  0000 C CNN
@@ -114,7 +146,7 @@ F 3 "" H 3250 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L R R3
 U 1 1 5BBF0C0A
 P 4350 2350
 F 0 "R3" H 4650 2350 50  0000 C CNN
@@ -125,7 +157,7 @@ F 3 "" H 4350 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L R R6
 U 1 1 5BBF0C7D
 P 2850 3450
 F 0 "R6" V 2930 3450 50  0000 C CNN
@@ -136,7 +168,7 @@ F 3 "" H 2850 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED_ALT D1
+L LED_ALT D1
 U 1 1 5BBF0DAA
 P 4350 1950
 F 0 "D1" H 4350 2050 50  0001 C CNN
@@ -147,7 +179,7 @@ F 3 "" H 4350 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_ALT D2
+L LED_ALT D2
 U 1 1 5BBF0E71
 P 4350 3250
 F 0 "D2" H 4350 3350 50  0001 C CNN
@@ -158,7 +190,7 @@ F 3 "" H 4350 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:TEST_1P J1
+L TEST_1P J1
 U 1 1 5BBF1BCB
 P 1900 3450
 F 0 "J1" H 1900 3720 50  0001 C CNN
@@ -169,10 +201,10 @@ F 3 "" H 2100 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR01
+L GND #PWR1
 U 1 1 5BBF1EC9
 P 2300 5200
-F 0 "#PWR01" H 2300 4950 50  0001 C CNN
+F 0 "#PWR1" H 2300 4950 50  0001 C CNN
 F 1 "GND" H 2300 5050 50  0000 C CNN
 F 2 "" H 2300 5200 50  0001 C CNN
 F 3 "" H 2300 5200 50  0001 C CNN
@@ -180,7 +212,7 @@ F 3 "" H 2300 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L R R7
 U 1 1 5BBF372D
 P 4350 3600
 F 0 "R7" H 4600 3600 50  0000 C CNN
@@ -191,10 +223,10 @@ F 3 "" H 4350 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR4
 U 1 1 5BBF3B02
 P 3800 3000
-F 0 "#PWR04" H 3800 2750 50  0001 C CNN
+F 0 "#PWR4" H 3800 2750 50  0001 C CNN
 F 1 "GND" H 3800 2850 50  0000 C CNN
 F 2 "" H 3800 3000 50  0001 C CNN
 F 3 "" H 3800 3000 50  0001 C CNN
@@ -202,10 +234,10 @@ F 3 "" H 3800 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L GND #PWR3
 U 1 1 5BBF3BC6
 P 3750 4200
-F 0 "#PWR03" H 3750 3950 50  0001 C CNN
+F 0 "#PWR3" H 3750 3950 50  0001 C CNN
 F 1 "GND" H 3750 4050 50  0000 C CNN
 F 2 "" H 3750 4200 50  0001 C CNN
 F 3 "" H 3750 4200 50  0001 C CNN
@@ -226,17 +258,17 @@ Connection ~ 3250 2700
 Wire Wire Line
 	2300 1800 2300 1750
 Wire Wire Line
-	2300 1750 3250 1750
+	2300 1750 4950 1750
 Wire Wire Line
 	3250 1750 3250 1800
 Wire Wire Line
-	2300 2100 2300 2350
+	2300 2100 2300 2400
 Wire Wire Line
-	2300 2700 2300 2750
+	2300 2700 2300 3000
 Wire Wire Line
-	2300 3300 2300 3600
+	2300 3300 2300 3650
 Wire Wire Line
-	2300 5150 2950 5150
+	2300 5150 3250 5150
 Wire Wire Line
 	3250 5150 3250 5100
 Connection ~ 2300 5150
@@ -256,7 +288,7 @@ Wire Wire Line
 	4350 3400 4350 3450
 Connection ~ 4350 1750
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 TTL1
+L SW_DPDT_x2 TTL1
 U 2 1 5BBF4AF5
 P 2850 3900
 F 0 "TTL1" H 2850 4070 50  0001 C CNN
@@ -281,7 +313,7 @@ Wire Wire Line
 	2550 4050 2300 4050
 Connection ~ 2300 4050
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 TTL1
+L SW_DPDT_x2 TTL1
 U 1 1 5BBF503E
 P 2800 2500
 F 0 "TTL1" H 2800 2670 50  0001 C CNN
@@ -291,6 +323,10 @@ F 3 "" H 2800 2500 50  0001 C CNN
 	1    2800 2500
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	3000 2500 3550 2500
+Wire Wire Line
+	3050 2500 3050 2500
 Wire Wire Line
 	2600 2600 2550 2600
 Wire Wire Line
@@ -310,7 +346,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 3800 4100 3800
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:LM319 U1
+L LM319 U1
 U 1 1 5BBF0257
 P 3800 3800
 F 0 "U1" H 3800 4050 50  0001 L CNN
@@ -321,18 +357,18 @@ F 3 "" H 3800 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 2100 3250 2700
+	3250 2100 3250 4150
 Wire Wire Line
-	2300 3950 2300 4050
+	2300 3950 2300 4150
 Wire Wire Line
-	2300 4450 2300 5150
+	2300 4450 2300 5200
 Connection ~ 4700 1750
 Text Label 2800 4100 0    60   ~ 0
 TTL
 Text Label 2750 2750 0    60   ~ 0
 TTL
 $Comp
-L Device:C C1
+L C C1
 U 1 1 5BBF9380
 P 2950 4600
 F 0 "C1" H 2975 4700 50  0000 L CNN
@@ -355,14 +391,14 @@ Wire Wire Line
 Wire Wire Line
 	3800 4150 3800 4100
 Wire Wire Line
-	3700 4150 3750 4150
+	3700 4150 3800 4150
 Wire Wire Line
 	3700 4150 3700 4100
 Wire Wire Line
 	3750 4150 3750 4200
 Connection ~ 3750 4150
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:LM319 U1
+L LM319 U1
 U 2 1 5BBF01DE
 P 3850 2600
 F 0 "U1" H 3850 2850 50  0001 L CNN
@@ -375,7 +411,7 @@ $EndComp
 Wire Wire Line
 	3850 2950 3850 2900
 Wire Wire Line
-	3750 2950 3800 2950
+	3750 2950 3850 2950
 Wire Wire Line
 	3750 2950 3750 2900
 Wire Wire Line
@@ -388,10 +424,10 @@ Wire Wire Line
 Wire Wire Line
 	4950 3050 4950 1750
 $Comp
-L power:+5V #PWR02
+L +5V #PWR2
 U 1 1 5BD73B4F
 P 3700 3450
-F 0 "#PWR02" H 3700 3300 50  0001 C CNN
+F 0 "#PWR2" H 3700 3300 50  0001 C CNN
 F 1 "+5V" H 3700 3590 50  0000 C CNN
 F 2 "" H 3700 3450 50  0001 C CNN
 F 3 "" H 3700 3450 50  0001 C CNN
@@ -411,18 +447,18 @@ CMOS
 Text Label 2750 3750 0    60   ~ 0
 CMOS
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:Conn_01x02 J2
+L Conn_01x02 J?
 U 1 1 5BD755FA
 P 1100 1400
-F 0 "J2" H 1100 1500 50  0000 C CNN
+F 0 "J?" H 1100 1500 50  0000 C CNN
 F 1 "Conn_01x02" H 1100 1200 50  0000 C CNN
-F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 1100 1400 50  0001 C CNN
+F 2 "" H 1100 1400 50  0001 C CNN
 F 3 "" H 1100 1400 50  0001 C CNN
 	1    1100 1400
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG05
+L PWR_FLAG #FLG05
 U 1 1 5BD75E15
 P 1450 1250
 F 0 "#FLG05" H 1450 1325 50  0001 C CNN
@@ -433,7 +469,7 @@ F 3 "" H 1450 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG07
+L PWR_FLAG #FLG07
 U 1 1 5BD75E50
 P 1450 1500
 F 0 "#FLG07" H 1450 1575 50  0001 C CNN
@@ -444,12 +480,12 @@ F 3 "" H 1450 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1300 1300 1450 1300
+	1300 1300 1800 1300
 $Comp
-L power:+5V #PWR0101
+L +5V #PWR?
 U 1 1 5BD75F7C
 P 1800 1250
-F 0 "#PWR0101" H 1800 1100 50  0001 C CNN
+F 0 "#PWR?" H 1800 1100 50  0001 C CNN
 F 1 "+5V" H 1800 1390 50  0000 C CNN
 F 2 "" H 1800 1250 50  0001 C CNN
 F 3 "" H 1800 1250 50  0001 C CNN
@@ -457,10 +493,10 @@ F 3 "" H 1800 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L GND #PWR?
 U 1 1 5BD75FAA
 P 1800 1450
-F 0 "#PWR0102" H 1800 1200 50  0001 C CNN
+F 0 "#PWR?" H 1800 1200 50  0001 C CNN
 F 1 "GND" H 1800 1300 50  0000 C CNN
 F 2 "" H 1800 1450 50  0001 C CNN
 F 3 "" H 1800 1450 50  0001 C CNN
@@ -468,7 +504,7 @@ F 3 "" H 1800 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 1400 1450 1400
+	1300 1400 1800 1400
 Wire Wire Line
 	1450 1250 1450 1300
 Connection ~ 1450 1300
@@ -479,42 +515,4 @@ Wire Wire Line
 	1800 1400 1800 1450
 Wire Wire Line
 	1800 1300 1800 1250
-Wire Wire Line
-	3250 3700 3250 4100
-Wire Wire Line
-	3250 3450 3250 3700
-Wire Wire Line
-	3250 2700 3250 3450
-Wire Wire Line
-	2300 5150 2300 5200
-Wire Wire Line
-	3250 1750 3750 1750
-Wire Wire Line
-	3750 1750 4350 1750
-Wire Wire Line
-	4350 1750 4700 1750
-Wire Wire Line
-	2300 3600 2300 3650
-Wire Wire Line
-	2300 4050 2300 4150
-Wire Wire Line
-	2300 2750 2300 3000
-Wire Wire Line
-	2300 2350 2300 2400
-Wire Wire Line
-	4700 1750 4950 1750
-Wire Wire Line
-	3250 4100 3250 4150
-Wire Wire Line
-	2950 5150 3250 5150
-Wire Wire Line
-	3750 4150 3800 4150
-Wire Wire Line
-	3800 2950 3850 2950
-Wire Wire Line
-	1450 1300 1800 1300
-Wire Wire Line
-	1450 1400 1800 1400
-Wire Wire Line
-	3000 2500 3550 2500
 $EndSCHEMATC
