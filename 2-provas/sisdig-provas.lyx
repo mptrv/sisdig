@@ -18,6 +18,10 @@
 %Mapas de Karnaugh.
 \usepackage{karnaughmap}
 
+%Desenhos gráficos em geral.
+\usepackage{tikz}
+\usepackage{tkz-fct}
+
 %Formas de onda digitais.
 \usepackage{tikz-timing}
 
@@ -271,12 +275,12 @@
 \color #faf0e6
 \end_branch
 \branch 2018-an-p1
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch 2018-an-p2
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -63376,7 +63380,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Note Comment
-status collapsed
+status open
 
 \begin_layout Plain Layout
 dg
@@ -75677,7 +75681,7 @@ X
 
 
 \begin_inset Branch gabarito
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Tabular
@@ -78538,7 +78542,7 @@ status open
 \begin_layout Standard
 \align center
 \begin_inset Branch detalhes-enunciado
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -78941,7 +78945,7 @@ end{tikzpicture}
 
 \begin_layout Standard
 \begin_inset Branch detalhes-enunciado
-status collapsed
+status open
 
 \begin_layout Standard
 a)
@@ -79967,7 +79971,7 @@ an
 
 \begin_layout Standard
 \begin_inset Branch 2018-an-p1
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -81133,6 +81137,740 @@ b)\quad & {\color{red}V_{R_{L}}=0,98\ U=\six{78,4}{\V}}\\
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch 2018-an-p2
+status collapsed
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaan{Segunda Prova Bimestral}{2018}{14.11.2018}{6}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Dado o circuito abaixo, pede-se 
+\begin_inset Formula $v_{x}(t)$
+\end_inset
+
+ e 
+\begin_inset Formula $i_{x}(t)$
+\end_inset
+
+ para 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+.
+ Considerar capacitores e indutores descarregados em 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/no-inicio-fim.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[3]{0}
+\end_layout
+
+\end_inset
+
+ Inicialmente, 
+\begin_inset Formula $L$
+\end_inset
+
+ encontra-se descarregado.
+ Nos instantes 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{3}$
+\end_inset
+
+, a chave é comutada para os pontos indicados, permanecendo lá até o próximo
+ instante.
+ Pede-se traçar o esboço de 
+\begin_inset Formula $i_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $v_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ para 
+\begin_inset Formula $0\leqslant t\leqslant\SI{17}{\micro\s}$
+\end_inset
+
+, 
+\emph on
+\bar under
+indicando os valores dos pontos notáveis
+\emph default
+\bar default
+.
+ Ainda, indicar, no local reservado, os valores dos cálculos auxiliares.
+ 
+\emph on
+(Nota: considerar as referências de tensão e corrente no indutor de acordo
+ com o apresentado nas aulas de teoria.)
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename imagens/2018/an/carga-descarga-indutor.png
+	lyxscale 70
+	width 90text%
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.6, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=9, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.6, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=9, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Alimentou-se um capacitor inicialmente descarregado com um gerador de áudio,
+ cuja resistência interna é de 
+\begin_inset Formula $\six{600}{\ohm}$
+\end_inset
+
+.
+ O gerador fornece uma onda quadrada com 50% de ciclo de trabalho, tensão
+ mínima de 
+\begin_inset Formula $\six 0{\V}$
+\end_inset
+
+, tensão máxima (de pico) de 
+\begin_inset Formula $\six{10}{\V}$
+\end_inset
+
+ e frequência de 
+\begin_inset Formula $\six{60}{\Hz}$
+\end_inset
+
+.
+ Pede-se traçar 
+\begin_inset Formula $v_{e}(t)\,\times\,t$
+\end_inset
+
+ e 
+\begin_inset Formula $v_{c}(t)\,\times\,t$
+\end_inset
+
+, 
+\bar under
+sincronizados no tempo
+\bar default
+ e com cotas no gráfico, para dois períodos de 
+\begin_inset Formula $v_{e}(t)$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/carga-capacitor-gerador-de-audio.png
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.8, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=8, ymin=0, ymax=4]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzGrid
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_e(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.8, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=8, ymin=0, ymax=4]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzGrid
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_c(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+(Continuação da Questão 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thecquestao
+\end_layout
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Calcular 
+\begin_inset Formula $V_{R2}$
+\end_inset
+
+ pelo 
+\emph on
+Teorema da Superposição
+\emph default
+.
+\begin_inset Branch detalhes-enunciado
+status open
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename imagens/2018/an/superposicao.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Para o circuito abaixo, deseja-se obter 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+ Para tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Obter o sistema de equações 
+\series bold
+\emph on
+literais
+\series default
+\emph default
+ que resolve o circuito, por 
+\emph on
+Análise Nodal
+\emph default
+.
+ 
+\emph on
+(Nota: a resposta há de ser na forma 
+\begin_inset Formula $V_{A}=\ldots$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Determinar o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/analise-nodal.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{0}
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+(Ponto extra: desafio.) 
+\emph default
+O sistema de equações a seguir descreve um circuito após realizada a Análise
+ de Malhas.
+ Pede-se desenhar o correspondente circuito.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+\alpha: & (R_{1}+R_{2})\,\boldsymbol{I_{1}}-R_{2}\,\boldsymbol{I_{2}}=V_{1}+V_{2}\\
+\beta: & -R_{2}\,\boldsymbol{I_{1}}+(R_{2}+R_{3}+R_{4})\,\boldsymbol{I_{2}}=-V_{2}-V_{3}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/2018/an/formulario-fornecido-pelos-alunos-editado.pdf
+	lyxscale 50
+	extra LaTeX "pages=1"
 
 \end_inset
 
