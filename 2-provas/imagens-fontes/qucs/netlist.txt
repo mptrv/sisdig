@@ -1,18 +1,19 @@
-# Qucs 0.0.19  E:/Projetos/sisdig/2-provas/imagens-fontes/qucs/2018-P2-N-ETE103_prj/no-inicio-fim.sch
+# Qucs 0.0.19  E:/Projetos/sisdig/2-provas/imagens-fontes/qucs/2018-PS-N-ETE103_prj/no-inicio-fim.sch
 
 .Def:seta_tensao _net0
 .Def:End
 
-R:R1 _net1 _net2 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
-C:C2 _net3 _net2 C="1 pF" V=""
-R:R6 _net4 _net2 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
-L:L2 _net1 _net4 L="1 nH" I=""
-Sub:V2 _net5 Type="seta_tensao"
-R:R2 _net0 _net2 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
-R:R3 _net0 _net2 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
-L:L1 _net3 _net6 L="1 nH" I=""
-R:R41 _net7 _net6 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
-C:C1 _net8 _net7 C="1 pF" V=""
-R:R5 _net0 _net8 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
-Vdc:V3 _net3 _net0 U="1 V"
-Vdc:V1 _net1 _net0 U="1 V"
+R:R1 _net0 _net1 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R2 _net2 _net1 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+C:C21 _net3 _net4 C="1 pF" V=""
+Vdc:V2 _net5 _net2 U="1 V"
+Vdc:V1 _net0 _net2 U="1 V"
+R:R5 _net4 _net5 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+C:C1 _net5 _net1 C="1 pF" V=""
+R:R6 _net2 _net3 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R4 _net6 _net4 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+L:L1 _net1 _net6 L="1 nH" I=""
+Sub:V99 _net7 Type="seta_tensao"
+R:R3 _net8 _net1 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+L:L2 _net2 _net8 L="1 nH" I=""
+L:L3 _net2 _net5 L="1 nH" I=""

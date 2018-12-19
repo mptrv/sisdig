@@ -1,7 +1,7 @@
 Saídas:
 -------
 
-Iniciando nova simulação em ter 13. nov 2018 as 19:54:49:826
+Iniciando nova simulação em ter 18. dez 2018 as 20:33:29:239
 
 criando netlist...terminado.
 ComeçandoC:/Program Files (x86)/Qucs-0.0.19/bin/qucsator.exe
@@ -13,7 +13,7 @@ factorycreate has registered:
 parsing netlist...
 checking netlist...
 
-Erros encontrados durante simulação em ter 13. nov 2018 as 19:54:50:269
+Erros encontrados durante simulação em ter 18. dez 2018 as 20:33:29:451
 Abortado.
 
 
