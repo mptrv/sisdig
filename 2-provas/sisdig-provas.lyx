@@ -280,12 +280,12 @@
 \color #faf0e6
 \end_branch
 \branch 2018-an-p2
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch 2018-an-ps
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -19266,7 +19266,7 @@ V_{X} & = & V_{A}-V_{1}\quad(\mathrm{ou}\ V_{X}=0,5\,V_{A}+2)\\
 
 \begin_layout Standard
 \begin_inset Branch 2015-an-ps
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -41585,7 +41585,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch 2016-an-psa
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -42846,7 +42846,7 @@ questao{3,5}
 
 
 \begin_inset Marginal
-status open
+status collapsed
 
 \begin_layout Plain Layout
 3,5
@@ -81869,6 +81869,1083 @@ O sistema de equações a seguir descreve um circuito após realizada a Análise
 \begin_inset External
 	template PDFPages
 	filename imagens/2018/an/formulario-fornecido-pelos-alunos-editado.pdf
+	lyxscale 50
+	extra LaTeX "pages=1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch 2018-an-ps
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaan{Prova Substitutiva}{2018}{20.12.2018}{6}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Dado o circuito abaixo, pede-se 
+\begin_inset Formula $v_{x}(t)$
+\end_inset
+
+ e 
+\begin_inset Formula $i_{x}(t)$
+\end_inset
+
+ para 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+.
+ Considerar capacitores e indutores descarregados em 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/ps/no-inicio-fim.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[3]{0}
+\end_layout
+
+\end_inset
+
+ Inicialmente, 
+\begin_inset Formula $L$
+\end_inset
+
+ encontra-se descarregado.
+ Nos instantes 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{3}$
+\end_inset
+
+, a chave é comutada para os pontos indicados, permanecendo lá até o próximo
+ instante.
+ Pede-se traçar o esboço de 
+\begin_inset Formula $i_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $v_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ para 
+\begin_inset Formula $0\leqslant t\leqslant\SI{17}{\micro\s}$
+\end_inset
+
+, 
+\emph on
+\bar under
+indicando os valores dos pontos notáveis
+\emph default
+\bar default
+.
+ Ainda, indicar, no local reservado, os valores dos cálculos auxiliares.
+ 
+\emph on
+(Nota: considerar as referências de tensão e corrente no indutor de acordo
+ com o apresentado nas aulas de teoria.)
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename imagens/2018/an/ps/carga-descarga-indutor.png
+	lyxscale 70
+	width 90text%
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.6, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=9, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.6, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=9, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Alimentou-se um capacitor inicialmente descarregado com um gerador de áudio,
+ cuja resistência interna é de 
+\begin_inset Formula $\six{600}{\ohm}$
+\end_inset
+
+.
+ O gerador fornece uma onda quadrada com 50% de ciclo de trabalho, tensão
+ mínima de 
+\begin_inset Formula $\six 0{\V}$
+\end_inset
+
+, tensão máxima (de pico) de 
+\begin_inset Formula $\six{10}{\V}$
+\end_inset
+
+ e frequência de 
+\begin_inset Formula $\six{10}{\Hz}$
+\end_inset
+
+.
+ Pede-se traçar 
+\begin_inset Formula $v_{e}(t)\,\times\,t$
+\end_inset
+
+ e 
+\begin_inset Formula $v_{c}(t)\,\times\,t$
+\end_inset
+
+, 
+\bar under
+sincronizados no tempo
+\bar default
+ e com cotas no gráfico, para dois períodos de 
+\begin_inset Formula $v_{e}(t)$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/ps/carga-capacitor-gerador-de-audio.png
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.8, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=8, ymin=0, ymax=4]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzGrid
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_e(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.8, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=8, ymin=0, ymax=4]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzGrid
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_c(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+(Continuação da Questão 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thecquestao
+\end_layout
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Por meio do 
+\emph on
+Teorema da Superposição de Efeitos
+\emph default
+, calcular a tensão sobre 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $V_{R_{2}}$
+\end_inset
+
+), 
+\emph on
+conforme
+\emph default
+ 
+\emph on
+o referencial adotado.
+\emph default
+
+\begin_inset Branch detalhes-enunciado
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2016/ps/superposicao.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "6cm"
+height_special "none"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imagens/teorema-da-superposicao.png
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "6cm"
+height_special "none"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imagens/teorema-da-superposicao-gab-1.png
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "6cm"
+height_special "none"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imagens/teorema-da-superposicao-gab-2.png
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "6cm"
+height_special "none"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imagens/teorema-da-superposicao-gab-3.png
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+i & = & i'+i''+i'''\\
+v & = & v'+v''+v'''
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Para o circuito abaixo, deseja-se obter 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+ Para tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Obter o sistema de equações 
+\series bold
+\emph on
+literais
+\series default
+\emph default
+ que resolve o circuito, por 
+\emph on
+Análise Nodal
+\emph default
+.
+ 
+\emph on
+(Nota: a resposta há de ser na forma 
+\begin_inset Formula $V_{A}=\ldots$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Determinar o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/ps/analise-nodal.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{0}
+\end_layout
+
+\end_inset
+
+ Um determinado fio possui 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{25}{
+\backslash
+m}
+\end_layout
+
+\end_inset
+
+ de comprimento e 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1,5}{
+\backslash
+mm
+\backslash
+squared}
+\end_layout
+
+\end_inset
+
+ de área da secção transversal.
+ Num ambiente a 
+\begin_inset Formula $\six{80}{\celsius}$
+\end_inset
+
+, aplicou-se 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{1}{
+\backslash
+V}
+\end_layout
+
+\end_inset
+
+ sobre ele e observou-se a corrente de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+SI{2,042}{
+\backslash
+A}
+\end_layout
+
+\end_inset
+
+.
+ Qual o material do fio? 
+\emph on
+(Nota: realizar as operações com 
+\series bold
+4 A\SpecialChar endofsentence
+S\SpecialChar endofsentence
+
+\series default
+)
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\emph on
+Dados
+\begin_inset space ~
+\end_inset
+
+(@
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\six{20}{\celsius}$
+\end_inset
+
+):
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\rho_{Cu}=\SI{1,72e-8}{\ohm\metre}$
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $\alpha_{Cu}=\six{0,0039}{\celsius^{-1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\rho_{Ag}=\SI{1,59e-8}{\ohm\metre}$
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $\alpha_{Ag}=\six{0,0038}{\celsius^{-1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\rho_{Au}=\SI{2,44e-8}{\ohm\metre}$
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $\alpha_{Au}=\six{0,0034}{\celsius^{-1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\rho_{Al}=\SI{2,92e-8}{\ohm\metre}$
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $\alpha_{Al}=\six{0,0039}{\celsius^{-1}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Branch gabarito
+status collapsed
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign*}
+R= & \frac{V}{I}\implies R=\SI{32,5}{\milli\ohm}\\
+R= & \rho\,\frac{L}{S}\implies\rho=\frac{R\,S}{L}\implies\rho=\SI{2,44e-8}{\ohm\metre}
+\end{flalign*}
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\color red
+Portanto, o material é ouro.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/2018/an/ps/formulario-fornecido-pelos-alunos-editado.pdf
 	lyxscale 50
 	extra LaTeX "pages=1"
 
