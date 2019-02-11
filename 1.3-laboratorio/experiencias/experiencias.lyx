@@ -771,7 +771,7 @@ inverted 0
 status open
 
 \begin_layout Section
-Objetivo
+Objetivos
 \end_layout
 
 \begin_layout Standard
@@ -780,6 +780,12 @@ Familiarizar-se com o
 Painel Digital
 \emph default
  e com o 
+\emph on
+protoboard
+\emph default
+.
+ Obter maior rendimento nos demais experimentos em decorrência da maior
+ familiarização com o painel e o 
 \emph on
 protoboard
 \emph default
@@ -943,6 +949,10 @@ chaves reversoras;
 \end_layout
 
 \begin_layout Itemize
+botões com filtro de ruído;
+\end_layout
+
+\begin_layout Itemize
 conjunto de LEDs;
 \end_layout
 
@@ -984,11 +994,19 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-Barramento, acima e abaixo da figura; e
+
+\emph on
+Barramento em linha
+\emph default
+, acima e abaixo da figura; e
 \end_layout
 
 \begin_layout Itemize
-coluna, na região central.
+
+\emph on
+barramento em coluna
+\emph default
+, na região central.
 \end_layout
 
 \begin_layout Standard
@@ -1160,7 +1178,7 @@ protoboard
 \begin_inset Quotes eld
 \end_inset
 
-barramento
+barramento em linha
 \begin_inset Quotes erd
 \end_inset
 
@@ -1169,7 +1187,7 @@ barramento
 \begin_inset Quotes eld
 \end_inset
 
-coluna
+barramento em coluna
 \begin_inset Quotes erd
 \end_inset
 
@@ -1210,7 +1228,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Esquema elétrico para acender um LED.
+Esquema elétrico de circuito para acender um LED.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:protoboard-circuito-exemplo"
@@ -1314,6 +1332,13 @@ name "fig:protoboard-circuito-exemplo-montado"
 Maiores detalhes serão explanados pelos professores durante o experimento.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Parte Experimental
 \end_layout
@@ -1334,23 +1359,123 @@ Note-se que as figuras apresentam ilustrações com base no modelo novo do
 \end_layout
 
 \begin_layout Subsection
-Reconhecimento dos Elementos do Painel Digital
+Reconhecimento de Elementos do Painel Digital
 \end_layout
 
 \begin_layout Enumerate
-Ligar duas chaves reversoras diretamente aos LEDs, conforme sugerido pela
- figura.
+Ligar 
+\series bold
+\bar under
+duas chaves
+\bar default
+ 
+\series default
+reversoras diretamente a 
+\series bold
+\bar under
+dois LEDs
+\series default
+\bar default
+, conforme sugerido pela figura.
  Comutar as chaves e observar os efeitos nos LEDs.
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-01.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ligar um dos botões, por meio de suas torres de acesso, a um dos LEDs e
+ observar os efeitos para cada tipo de saída do botão (em cada torre).
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-02.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conectar o ponto de 
+\begin_inset Formula $+\six 5{\V}$
+\end_inset
+
+ (
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+) aos diversos segmentos do 
+\emph on
+display
+\emph default
+, um por vez.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-03.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Conectar o ponto GND (
+\begin_inset Formula $\six 0{\V}$
+\end_inset
+
+) aos diversos LEDs, um por vez.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-04.png
+	width 90text%
 
 \end_inset
 
@@ -1368,23 +1493,262 @@ Reconhecimento dos Blocos do
 Protoboard
 \end_layout
 
+\begin_layout Enumerate
+Por meio do barramento em linha do 
+\emph on
+protoboard, ligar o
+\emph default
+ 
+\begin_inset Formula $+\six 5{\V}$
+\end_inset
+
+ (
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+) a um segmento do 
+\emph on
+display
+\emph default
+, conforme apontado pela figura.
+ Note-se que o ensaio considerará dois pontos distintos do 
+\emph on
+protoboard
+\emph default
+.
+ De acordo com a padronização, usar, preferencialmente, a 
+\color red
+linha vermelha
+\color inherit
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-05.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Repetir o procedimento anterior, mas para levar o GND (
+\begin_inset Formula $\six 0{\V}$
+\end_inset
+
+) a um dos LEDs.
+ De acordo com a padronização, usar, preferencialmente, a 
+\color blue
+linha azul
+\color inherit
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-06.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Utilizando os barramentos linha e coluna do 
+\emph on
+protoboard
+\emph default
+, conforme apontado pela figura, acender um segmento do 
+\emph on
+display 
+\emph default
+e apagar um LED.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-07.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Montagem de Circuitos
 \end_layout
 
-\begin_layout Standard
-O circuito da 
-\begin_inset CommandInset ref
-LatexCommand formatted
-reference "fig:Circuito-a-montar.-1"
+\begin_layout Enumerate
+Na figura seguinte, há o esquema elétrico para acionar um LED e a correspondente
+ montagem no 
+\emph on
+protoboard
+\emph default
+.
+ Seguindo as orientações do professor, realize a montagem.
+ A tensão de alimentação é de 
+\begin_inset Formula $+\six 5{\V}$
+\end_inset
+
+ em relação ao GND (
+\begin_inset Formula $\six 0{\V}$
+\end_inset
+
+).
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/5v-r-led-nos.png
+	lyxscale 50
+	width 40text%
 
 \end_inset
 
- aciona um LED.
- Seguindo as orientações do professor, realize sua montagem.
+
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/r-led-protoboard.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Seguindo a mesma proposta, monte o circuito abaixo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/5v-r-led-r-led-nos.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/r-led-r-led-protoboard.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Por fim, montar o circuito do esquema elétrico abaixo.
 \begin_inset Float figure
 placement H
 wide false
@@ -1394,27 +1758,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/exp02-led2.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito a montar: acionamento de LED.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Circuito-a-montar.-1"
-
-\end_inset
-
-
-\end_layout
+	filename imagens/painel-digital-e-protoboard/5v-r-r-r-led-nos.png
+	lyxscale 50
+	width 65text%
 
 \end_inset
 
@@ -1436,11 +1782,19 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Painel Digital novo
+Painel Digital Novo
 \end_layout
 
 \begin_layout Itemize
-Caixa com fios
+Fios macho-fêmea para 
+\emph on
+protoboard
+\end_layout
+
+\begin_layout Itemize
+Fios simples para 
+\emph on
+protoboard
 \end_layout
 
 \begin_layout Itemize
@@ -1452,19 +1806,31 @@ Alicate de corte
 \end_layout
 
 \begin_layout Itemize
-3x Resistores de 330 
-\begin_inset Formula $\Omega$
+Resistores de 
+\begin_inset Formula $\nicefrac{1}{8}\,\si{\W}$
 \end_inset
 
- / 
-\begin_inset Formula $\nicefrac{1}{8}$
+: 3 x 
+\begin_inset Formula $\six{100}{\ohm}$
 \end_inset
 
- W
+, 1 x 
+\begin_inset Formula $\six{270}{\ohm}$
+\end_inset
+
+, 1 x 
+\begin_inset Formula $\six{470}{\ohm}$
+\end_inset
+
+, 1 x 
+\begin_inset Formula $\six{330}{\ohm}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-3x LEDs
+2 LEDs
 \end_layout
 
 \end_inset
@@ -17560,7 +17926,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/projeto-dado-digital-esboco-circuito.png
+	filename E:/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/projeto-dado-digital-esboco-circuito.png
 
 \end_inset
 
@@ -17800,7 +18166,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/diagrama-em-blocos.png
+	filename E:/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/diagrama-em-blocos.png
 	width 100text%
 
 \end_inset
