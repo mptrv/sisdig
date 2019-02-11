@@ -1200,7 +1200,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/painel-digital-e-protoboard/5v-r-led.png
-	scale 60
 
 \end_inset
 
@@ -1328,8 +1327,49 @@ dos
  por todos os integrantes da equipe.
 \end_layout
 
+\begin_layout Standard
+Note-se que as figuras apresentam ilustrações com base no modelo novo do
+ Painel Digital, mas a proposta é semelhante e facilmente dedutível para
+ o modelo antigo.
+\end_layout
+
 \begin_layout Subsection
-Montagem de Circuito
+Reconhecimento dos Elementos do Painel Digital
+\end_layout
+
+\begin_layout Enumerate
+Ligar duas chaves reversoras diretamente aos LEDs, conforme sugerido pela
+ figura.
+ Comutar as chaves e observar os efeitos nos LEDs.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/painel-digital-e-protoboard/painel-digital-novo_atividade-01.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Reconhecimento dos Blocos do 
+\emph on
+Protoboard
+\end_layout
+
+\begin_layout Subsection
+Montagem de Circuitos
 \end_layout
 
 \begin_layout Standard
@@ -17520,7 +17560,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../projetos/projeto-dado-digital-esboco-circuito.png
+	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/projeto-dado-digital-esboco-circuito.png
 
 \end_inset
 
@@ -17760,7 +17800,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../projetos/diagrama-em-blocos.png
+	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/diagrama-em-blocos.png
 	width 100text%
 
 \end_inset
