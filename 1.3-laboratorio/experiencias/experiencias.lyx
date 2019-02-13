@@ -185,7 +185,7 @@ customHeadersFooters
 \use_refstyle 1
 \use_minted 0
 \branch cm-corpo
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #e5dcd3
 \end_branch
@@ -521,7 +521,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
 inverted 0
-status collapsed
+status open
 
 \begin_layout Title
 Experiências de Laboratório de
@@ -543,7 +543,7 @@ Experiências de Laboratório de
 \begin_layout Standard
 \begin_inset Branch cm-dg-textos-extras
 inverted 0
-status collapsed
+status open
 
 \begin_layout Title
 ETE102
@@ -746,23 +746,15 @@ tituloexp
 \begin_layout Standard
 \begin_inset Branch dg-painel-protoboard
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
-\begin_inset Quotes eld
-\end_inset
-
 
 \shape italic
-Painel Digital e 
 \emph on
-Protoboard
+Painel Digital e 
 \emph default
-
-\begin_inset Quotes erd
-\end_inset
-
-
+Protoboard
 \end_layout
 
 \begin_layout Standard
@@ -1844,16 +1836,10 @@ inverted 0
 status collapsed
 
 \begin_layout Chapter
-\begin_inset Quotes eld
-\end_inset
-
 
 \shape italic
+\emph on
 Técnicas de Soldagem
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2445,14 +2431,8 @@ status collapsed
 \begin_layout Chapter
 
 \shape italic
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 Portas Lógicas
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3714,7 +3694,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Painel Digital didático para desenvolvimento
+Painel Digital Novo didático para desenvolvimento
 \end_layout
 
 \begin_layout Itemize
@@ -3757,21 +3737,7 @@ status collapsed
 
 \shape italic
 \emph on
-Aplicação de Circuito Lógico Combinacional
-\begin_inset Newline newline
-\end_inset
-
-
-\emph default
-
-\begin_inset Quotes eld
-\end_inset
-
 Decodificador BCD–7 Segmentos
-\begin_inset Quotes erd
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Decodificador-BCD-Sete-Seg"
@@ -4858,7 +4824,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-1 Painel Digital didático para desenvolvimento 
+1 Painel Digital Novo didático para desenvolvimento 
 \end_layout
 
 \begin_layout Itemize
@@ -4897,21 +4863,7 @@ status collapsed
 
 \shape italic
 \emph on
-Aplicação de Circuito Lógico Combinacional
-\begin_inset Newline newline
-\end_inset
-
-
-\emph default
-
-\begin_inset Quotes eld
-\end_inset
-
 Alarme de Invasão
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6194,7 +6146,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Painel Digital didático para desenvolvimento 
+Painel Digital Novo didático para desenvolvimento 
 \end_layout
 
 \begin_layout Itemize
@@ -6231,16 +6183,7 @@ inverted 0
 status collapsed
 
 \begin_layout Chapter
-
-\emph on
-\begin_inset Quotes eld
-\end_inset
-
 Introdução ao Osciloscópio
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -9541,14 +9484,10 @@ status collapsed
 \begin_layout Chapter
 
 \shape italic
-\begin_inset Quotes eld
-\end_inset
-
-Portas Lógicas Schmitt Trigger
-\begin_inset Quotes erd
-\end_inset
-
- 
+\emph on
+Portas Lógicas 
+\emph default
+Schmitt Trigger
 \end_layout
 
 \begin_layout Standard
@@ -10302,7 +10241,7 @@ Gerador de funções
 \end_layout
 
 \begin_layout Itemize
-Painel digital
+Painel Digital Novo
 \end_layout
 
 \begin_layout Itemize
@@ -10433,14 +10372,8 @@ status collapsed
 \begin_layout Chapter
 
 \shape italic
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 Flip-Flops RS
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -13888,7 +13821,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Painel Digital
+Painel Digital Novo
 \end_layout
 
 \begin_layout Itemize
@@ -13922,20 +13855,11 @@ inverted 0
 status collapsed
 
 \begin_layout Chapter
-
-\emph on
-\begin_inset Quotes eld
-\end_inset
-
 Contadores Assíncronos e
 \begin_inset Newline newline
 \end_inset
 
- Divisores de Frequência
-\begin_inset Quotes erd
-\end_inset
-
-
+Divisores de Frequência
 \end_layout
 
 \begin_layout Standard
@@ -15185,7 +15109,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Painel Digital
+Painel Digital Novo
 \end_layout
 
 \begin_layout Itemize
@@ -15269,20 +15193,11 @@ inverted 0
 status collapsed
 
 \begin_layout Chapter
-
-\emph on
-\begin_inset Quotes eld
-\end_inset
-
 Contadores Síncronos e
 \begin_inset Newline newline
 \end_inset
 
 Registradores de Deslocamento
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -17120,7 +17035,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Painel Digital
+Painel Digital Novo
 \end_layout
 
 \begin_layout Itemize
@@ -17307,16 +17222,7 @@ inverted 0
 status open
 
 \begin_layout Chapter
-
-\emph on
-\begin_inset Quotes eld
-\end_inset
-
 Dado Digital
-\begin_inset Quotes erd
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -17336,7 +17242,7 @@ dado digital
 
  
 \emph default
-com dois dígitos de 0 a 9.
+com dois dígitos de 00 a 99.
 \end_layout
 
 \begin_layout Section
@@ -17345,7 +17251,323 @@ Prazos para Entrega
 
 \begin_layout Standard
 O projeto deverá ser apresentado na própria aula de laboratório, conforme
- as datas nas seções a seguir.
+ as datas a seguir.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="7cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Descrição
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Datas
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Diurno
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Noturno
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Lista de Materiais
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+01.04.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+03.04.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Componentes Comprados
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+06.05.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+08.05.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Pré-apresentação de Montagem: Decodificador, 
+\emph default
+\lang english
+Display
+\emph on
+\lang brazilian
+, Botão
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+06.05.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+08.05.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Apresentação Antecipada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+27.05.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+29.05.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Apresentação Final
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+03.06.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+05.06.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Repescagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+24.06.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+26.06.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -17366,409 +17588,14 @@ ETE102 - Sobre a Entrega da Lista de Componentes e dos Componentes
 .
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Apresentação da Lista de Materiais e dos Componentes
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-Redigir conteúdo deste entregável.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
 \begin_layout Plain Layout
 
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na segunda-feira: 
-\series bold
-02.04.2018
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Noturno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na quarta-feira: 
-\series bold
-04.04.2018
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Pré-apresentação de Montagem: Decodificador, 
 \emph on
-\lang english
-Display
-\emph default
-\lang brazilian
-, Botão
+> Revisto.
+ Forma de apresentação das datas alterada e salientada a entrega dos componentes
+ comprados.
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na segunda-feira: 
-\series bold
-07.05.2018
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Noturno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na quarta-feira: 
-\series bold
-02.05.2018
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Apresentação Antecipada
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na segunda-feira: 
-\series bold
-28.05.2018
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Noturno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na quarta-feira: 
-\series bold
-30.05.2018
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Apresentação Final
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na segunda-feira: 
-\series bold
-04.06.2018
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Noturno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na quarta-feira: 
-\series bold
-06.06.2018
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Repescagem
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na segunda-feira: 
-\series bold
-25.06.2018
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Noturno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Laboratórios na quarta-feira: 
-\series bold
-27.06.2018
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Separator latexpar
 \end_inset
 
 
@@ -17926,7 +17753,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename E:/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/projeto-dado-digital-esboco-circuito.png
+	filename ../projetos/dado-digital/projeto-dado-digital-esboco-circuito.png
 
 \end_inset
 
@@ -18045,6 +17872,27 @@ placa universal
 \end_layout
 
 \begin_layout Itemize
+Alternativamente, poderá ser elaborada 
+\series bold
+PCI (
+\emph on
+Placa de Circuito Impresso
+\emph default
+)
+\series default
+, porém as técnicas necessárias ficarão por conta do grupo.
+ Neste caso, 
+\bar under
+o esquema elétrico deverá ser obrigatoriamente redesenhado
+\bar default
+ em programa específico e o 
+\bar under
+leiaute da PCI deverá ser impresso
+\bar default
+ em papel e entregue junto com o esquema elétrico impresso.
+\end_layout
+
+\begin_layout Itemize
 Os componentes deverão ser soldados na placa.
  
 \emph on
@@ -18128,6 +17976,10 @@ No horário de funcionamento do Almoxarifado de Eletrônica, poderá ser emprest
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Note Comment
 status collapsed
 
@@ -18135,6 +17987,11 @@ status collapsed
 No Moodle, há um fórum criado para discussões a respeito deste projeto,
  envolvendo, por exemplo, dicas e sugestões para sua confecção e que podem
  ser postadas pelos próprios alunos.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -18161,12 +18018,12 @@ reference "fig:Diagrama-em-Blocos-dado-digital"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename E:/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/diagrama-em-blocos.png
+	filename ../projetos/dado-digital/diagrama-em-blocos.png
 	width 100text%
 
 \end_inset
@@ -18271,7 +18128,7 @@ name "tab:Cronograma-de-referencia-dado-digital"
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="17" columns="2">
+<lyxtabular version="3" rows="18" columns="2">
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="left" valignment="top" width="7cm">
@@ -18302,18 +18159,18 @@ Atividade/Bloco
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-19/03 a 28/03
+18/03 a 29/03
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18324,18 +18181,47 @@ Interpretar o projeto, seu Diagrama em Blocos e seu Esquema Elétrico
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-26/03 a 04/04
+\series bold
+\shape italic
+\color blue
+01/04 e 03/04
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Apresentação da Lista de Materiais
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+01/04 a 29/04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18346,47 +18232,18 @@ Comprar componentes
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-\series bold
-\shape italic
-\color blue
-02/04 e 04/04
+02/04 a 02/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-\shape italic
-\color blue
-Apresentação da Lista de Materiais e dos Componentes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-02/04 a 15/04
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18399,18 +18256,18 @@ displays
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-16/04 a 22/04
+08/04 a 05/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18423,18 +18280,18 @@ displays
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-23/04 a 02/05
+22/04 a 05/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18447,7 +18304,7 @@ deboucing
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18456,12 +18313,36 @@ deboucing
 \series bold
 \shape italic
 \color blue
-02/05 e 07/05
+06/05 e 08/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+\color blue
+Componentes Comprados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18476,18 +18357,18 @@ Pré-apresentação de Montagem: Decodificador, Display, Botão
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-02/05 a 06/05
+06/05 a 12/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18498,18 +18379,18 @@ Soldar e testar os contadores
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-07/05 a 13/05
+13/05 a 26/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18524,18 +18405,16 @@ da lâmpada
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\family typewriter
-14/05 a 20/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18546,18 +18425,16 @@ Soldar e testar o circuito de POR
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\family typewriter
-21/05 a 27/05
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18568,18 +18445,18 @@ Interligar os blocos
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="center" valignment="middle" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
-28/05 a 03/06
+27/05 a 02/06
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18599,7 +18476,7 @@ Finalizações e testes do circuito completo
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18610,7 +18487,7 @@ Implementação do bônus
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18619,12 +18496,12 @@ Implementação do bônus
 \series bold
 \shape italic
 \color blue
-04/06 e 06/06
+03/06 e 05/06
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18639,19 +18516,19 @@ Apresentação final
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \family typewriter
 \emph on
-04/06 a 24/06
+04/06 a 23/06
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -18673,7 +18550,7 @@ Correções para a repescagem
 \series bold
 \shape italic
 \color red
-25/06 e 27/06
+24/06 e 26/06
 \end_layout
 
 \end_inset
@@ -18729,13 +18606,13 @@ Os critérios de avaliação por item são:
 \end_layout
 
 \begin_layout Enumerate
-Apresentação da Lista de Materiais e dos componentes: 
+Apresentação da Lista de Materiais: 
 \series bold
 10,0 (peso 1,0)
 \end_layout
 
 \begin_layout Enumerate
-Pré-apresentação de montagem: 
+Pré-apresentação de montagem e componentes comprados: 
 \series bold
 10,0 (peso 1,0)
 \end_layout
@@ -18773,6 +18650,19 @@ Apresentação do Esquema Elétrico completo no dia da apresentação do projeto
 0,5
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Como parte desta pontuação, se o circuito for apresentado em PCI, 
+\bar under
+obrigatoriamente
+\bar default
+ todo o esquema elétrico deverá ser redesenhado e impresso e também deverá
+ ser impresso em papel o leiaute da PCI.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Apresentação da Lista de Materiais no dia da apresentação do projeto: 
 \series bold
@@ -18930,10 +18820,17 @@ clock
 \end_layout
 
 \begin_layout Enumerate
-Redesenho de todo o esquema elétrico para inclusão do gerador de 
+Redesenho de 
+\bar under
+todo
+\bar default
+ o esquema elétrico 
+\bar under
+para inclusão do gerador de 
 \emph on
 clock
 \emph default
+\bar default
 : 
 \series bold
 +1,0
@@ -26124,7 +26021,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-1 Painel Digital didático para desenvolvimento 
+1 Painel Digital Novo didático para desenvolvimento 
 \end_layout
 
 \begin_layout Itemize
@@ -26324,7 +26221,7 @@ Relação de Materiais
 \end_layout
 
 \begin_layout Itemize
-1 Painel Digital didático para desenvolvimento 
+1 Painel Digital Novo didático para desenvolvimento 
 \end_layout
 
 \begin_layout Itemize
@@ -29829,7 +29726,7 @@ Quais são as características mais importantes para os diodos e transistores
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
@@ -29916,7 +29813,7 @@ Fonte 0 a 25V
 \end_layout
 
 \begin_layout Itemize
-Painel Digital
+Painel Digital Novo
 \end_layout
 
 \begin_layout Itemize
@@ -30039,7 +29936,7 @@ Datasheets
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset External
