@@ -215,12 +215,12 @@ Wire Wire Line
 	8700 2600 8700 2650
 Connection ~ 8100 2250
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 TTL1
+L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 SW1
 U 2 1 5BBF4AF5
 P 6250 4300
-F 0 "TTL1" H 6250 4470 50  0001 C CNN
+F 0 "SW1" H 6000 4250 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 6250 4100 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6250 4300 50  0001 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_CuK_JS202011CQN_DPDT_Straight" H 6250 4300 50  0001 C CNN
 F 3 "" H 6250 4300 50  0001 C CNN
 	2    6250 4300
 	-1   0    0    1   
@@ -233,12 +233,12 @@ Wire Wire Line
 	5950 4200 5950 4100
 Connection ~ 5700 4100
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 TTL1
+L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 SW1
 U 1 1 5BBF503E
 P 6200 3250
-F 0 "TTL1" H 6200 3420 50  0001 C CNN
+F 0 "SW1" H 5950 3200 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 6200 3050 50  0001 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6200 3250 50  0001 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_CuK_JS202011CQN_DPDT_Straight" H 6200 3250 50  0001 C CNN
 F 3 "" H 6200 3250 50  0001 C CNN
 	1    6200 3250
 	-1   0    0    1   

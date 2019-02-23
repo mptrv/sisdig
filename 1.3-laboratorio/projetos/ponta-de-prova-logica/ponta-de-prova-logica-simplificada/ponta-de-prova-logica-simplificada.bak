@@ -215,10 +215,10 @@ Wire Wire Line
 	8700 2600 8700 2650
 Connection ~ 8100 2250
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 TTL1
+L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 SW1
 U 2 1 5BBF4AF5
 P 6250 4300
-F 0 "TTL1" H 6250 4470 50  0001 C CNN
+F 0 "SW1" H 6000 4250 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 6250 4100 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6250 4300 50  0001 C CNN
 F 3 "" H 6250 4300 50  0001 C CNN
@@ -233,10 +233,10 @@ Wire Wire Line
 	5950 4200 5950 4100
 Connection ~ 5700 4100
 $Comp
-L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 TTL1
+L ponta-de-prova-logica-simplificada-rescue:SW_DPDT_x2 SW1
 U 1 1 5BBF503E
 P 6200 3250
-F 0 "TTL1" H 6200 3420 50  0001 C CNN
+F 0 "SW1" H 5950 3200 50  0000 C CNN
 F 1 "SW_DPDT_x2" H 6200 3050 50  0001 C CNN
 F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 6200 3250 50  0001 C CNN
 F 3 "" H 6200 3250 50  0001 C CNN
@@ -273,13 +273,13 @@ Wire Wire Line
 $Comp
 L ponta-de-prova-logica-simplificada-rescue:Conn_01x02 J1
 U 1 1 5BD755FA
-P 3050 2300
-F 0 "J1" H 3050 2400 50  0000 C CNN
-F 1 "Conn_01x02" H 3050 2100 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 3050 2300 50  0001 C CNN
-F 3 "" H 3050 2300 50  0001 C CNN
-	1    3050 2300
-	-1   0    0    1   
+P 3050 2200
+F 0 "J1" H 3050 2300 50  0000 C CNN
+F 1 "Conn_01x02" H 3050 2000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 3050 2200 50  0001 C CNN
+F 3 "" H 3050 2200 50  0001 C CNN
+	1    3050 2200
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG01
