@@ -1307,7 +1307,7 @@
   (segment (start 145.415 87.63) (end 139.7 87.63) (width 0.25) (layer B.Cu) (net 15))
   (segment (start 139.7 87.63) (end 135.255 92.075) (width 0.25) (layer B.Cu) (net 15))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5C790A08) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5C791F76) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508) (smoothing fillet) (radius 2.54))
