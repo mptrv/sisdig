@@ -1,0 +1,211 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Orientações para Elaboração de PCI
+\end_layout
+
+\begin_layout Section
+Referências
+\end_layout
+
+\begin_layout Standard
+Vídeos no 
+\emph on
+Youtube
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://youtu.be/q8ludS_A3xo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://youtu.be/NtVEvFsT46I
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lista de Materiais
+\end_layout
+
+\begin_layout Enumerate
+Placa de fibra de vidro ou fenolite
+\end_layout
+
+\begin_layout Enumerate
+Fotolito
+\end_layout
+
+\begin_layout Enumerate
+Tinta fotossensível para PCB
+\end_layout
+
+\begin_layout Enumerate
+Luz negra (ultra-violeta)
+\end_layout
+
+\begin_layout Enumerate
+Soda cáustica (hidróxido de sódio)
+\end_layout
+
+\begin_layout Enumerate
+Barrilha leve (carbonato de sódio – corretor de PH de piscina)
+\end_layout
+
+\begin_layout Enumerate
+Água
+\end_layout
+
+\begin_layout Enumerate
+Percloreto de Ferro III
+\end_layout
+
+\begin_layout Enumerate
+Secador de cabelo ou algo semelhante para secar a tinta
+\end_layout
+
+\begin_layout Enumerate
+Dremil ou algo que permita centrifugar a placa para uma distribuição homogênea
+ da tinta
+\end_layout
+
+\begin_layout Enumerate
+Vasilhas para o manuseio e uso das soluções
+\end_layout
+
+\begin_layout Enumerate
+Palha de aço
+\end_layout
+
+\begin_layout Enumerate
+Detergente
+\end_layout
+
+\begin_layout Enumerate
+Luva de látex
+\end_layout
+
+\begin_layout Enumerate
+pincel (opcional)
+\end_layout
+
+\begin_layout Enumerate
+papel toalha
+\end_layout
+
+\begin_layout Enumerate
+Papel 
+\emph on
+transfer
+\emph default
+ para fazer a legenda
+\end_layout
+
+\end_body
+\end_document
