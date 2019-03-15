@@ -139,27 +139,47 @@ Placa de fibra de vidro ou fenolite
 \end_layout
 
 \begin_layout Enumerate
-Fotolito
-\end_layout
-
-\begin_layout Enumerate
 Tinta fotossensível para PCB
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Utilizar em ambiente bem ventilado e evitar inalar os vapores, em especial,
+ por tempo prolongado.
 \end_layout
 
-\begin_layout Enumerate
-Luz negra (ultra-violeta)
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Soda cáustica (hidróxido de sódio)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Altamente corrosivo.
+ Vapores em pequenas concentrações não devem causar qualquer risco à saúde.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 Barrilha leve (carbonato de sódio – corretor de PH de piscina)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Não há problemas em seu manuseio ou seus vapores.
 \end_layout
 
-\begin_layout Enumerate
-Água
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -167,7 +187,31 @@ Percloreto de Ferro III
 \end_layout
 
 \begin_layout Enumerate
-Secador de cabelo ou algo semelhante para secar a tinta
+Água
+\end_layout
+
+\begin_layout Enumerate
+Fotolito (transparência com impressão do circuito)
+\end_layout
+
+\begin_layout Enumerate
+Papel 
+\emph on
+transfer
+\emph default
+ para fazer a legenda
+\end_layout
+
+\begin_layout Enumerate
+Luz negra (ultra-violeta)
+\end_layout
+
+\begin_layout Enumerate
+Pincel
+\end_layout
+
+\begin_layout Enumerate
+Secador de cabelo, forno ou algo semelhante para secar a tinta
 \end_layout
 
 \begin_layout Enumerate
@@ -176,7 +220,11 @@ Dremil ou algo que permita centrifugar a placa para uma distribuição homogêne
 \end_layout
 
 \begin_layout Enumerate
-Vasilhas para o manuseio e uso das soluções
+Cola quente
+\end_layout
+
+\begin_layout Enumerate
+Bandejas para o manuseio e uso das soluções
 \end_layout
 
 \begin_layout Enumerate
@@ -188,23 +236,35 @@ Detergente
 \end_layout
 
 \begin_layout Enumerate
+Papel toalha
+\end_layout
+
+\begin_layout Enumerate
+Caixa de papelão
+\end_layout
+
+\begin_layout Enumerate
+Avental
+\end_layout
+
+\begin_layout Enumerate
 Luva de látex
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Se cair soda cáustica, tirar a luva imediatamente, descartá-la e lavar a
+ mão (realizar este procedimento dentro de 2 minutos).
+ Luvas mais seguras seriam as nitrílicas ou, ainda melhores, as de borracha.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-pincel (opcional)
-\end_layout
-
-\begin_layout Enumerate
-papel toalha
-\end_layout
-
-\begin_layout Enumerate
-Papel 
-\emph on
-transfer
-\emph default
- para fazer a legenda
+Máscara para produtos químicos
 \end_layout
 
 \end_body
