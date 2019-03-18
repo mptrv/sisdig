@@ -248,9 +248,9 @@ Avental
 \end_layout
 
 \begin_layout Enumerate
-Luva de látex
+Luva de látex ou vinil
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Se cair soda cáustica, tirar a luva imediatamente, descartá-la e lavar a
@@ -265,6 +265,10 @@ Se cair soda cáustica, tirar a luva imediatamente, descartá-la e lavar a
 
 \begin_layout Enumerate
 Máscara para produtos químicos
+\end_layout
+
+\begin_layout Enumerate
+Óculos de segurança
 \end_layout
 
 \end_body
