@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.0.2-bee76a0~70~ubuntu16.04.1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.2)-1")
 
   (general
     (thickness 1.6)
@@ -94,7 +94,7 @@
       (padsonsilk false)
       (subtractmaskfromsilk false)
       (outputformat 5)
-      (mirror false)
+      (mirror true)
       (drillshape 2)
       (scaleselection 1)
       (outputdirectory "gerber/"))
@@ -1311,7 +1311,7 @@
   (segment (start 36.195 22.86) (end 30.48 22.86) (width 0.25) (layer B.Cu) (net 15) (tstamp 5C9393DD))
   (segment (start 30.48 22.86) (end 26.035 27.305) (width 0.25) (layer B.Cu) (net 15) (tstamp 5C9393DA))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5C939EFF) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5C940F12) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508) (smoothing fillet) (radius 2.54))
