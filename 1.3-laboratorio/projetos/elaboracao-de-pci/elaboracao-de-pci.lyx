@@ -207,6 +207,14 @@ Luz negra (luz ultravioleta)
 \end_layout
 
 \begin_layout Enumerate
+Brocas para a furação da placa
+\end_layout
+
+\begin_layout Enumerate
+Copo com graduação
+\end_layout
+
+\begin_layout Enumerate
 Pincel
 \end_layout
 
@@ -279,144 +287,223 @@ Máscara para produtos químicos
 Procedimento
 \end_layout
 
-\begin_layout Enumerate
-Lavar placa com bombril
+\begin_layout Subsection
+Corrosão da Placa
 \end_layout
 
 \begin_layout Enumerate
-Lavar placa com detergente
+Lavar a placa com bombril até ficar bem brilhante.
 \end_layout
 
 \begin_layout Enumerate
-Secar com o papel guardanapo
+Lavar a placa com detergente, para remover qualquer gordura.
 \end_layout
 
 \begin_layout Enumerate
-Pintar Placa com tinta Fotossenssível, deixando um pouco mais de tinta no
- centro
+Secar com o papel guardanapo e não mais encostar os dedos no cobre.
 \end_layout
 
 \begin_layout Enumerate
-centrifugar a placa (aproximadamente 30s)
+Marcar o centro e fixar, com cola quente, um eixo para a centrifugação.
 \end_layout
 
 \begin_layout Enumerate
-Secar por 15mim quente
+Pintar a placa com a tinta fotossenssível, deixando um pouco mais de tinta
+ no centro.
 \end_layout
 
 \begin_layout Enumerate
-Secar por 2mim frio (o outro vídeo fala para não deixar passar de 30ºC e
- deixar por 10 minutos)
+Centrifugar a placa por, aproximadamente, 30 s.
 \end_layout
 
 \begin_layout Enumerate
-Imprimir fotolito com as cores invertidas (a região que ficar coberta com
- tinta no fotolito será a região que irá sair depois com a lavagem)
+Secar por 10 min, a não mais que 80 °C; pode-se utilizar secador ou forno;
+ a tinta ficará fosca.
+\end_layout
+
+\begin_layout Enumerate
+Opcionalmente, secar por mais 2 min com vento frio.
+\end_layout
+
+\begin_layout Enumerate
+Imprimir o fotolito com as cores invertidas (a região que ficar coberta
+ com tinta no fotolito será a região que irá sair depois com a lavagem).
 \end_layout
 
 \begin_layout Enumerate
 Recomenda-se utilizar um vidro para segurar o fotolito no lugar enquanto
- é exposto a luz ultravioleta Obs: Cuidado!!! Fotolito tem lado certo!!!
- Obs: Checar para ver se o que esta coberto com tinta preta na impressão
- é realmente aquilo que você quer tirar
+ for exposta a luz ultravioleta.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Cuidado!
+\series default
+ O fotolito tem lado certo! Confirmar se o que está coberto com tinta preta
+ na impressão é realmente aquilo que será removido.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Deixar a placa com fotolito sob luz ultravioleta por, aproximadamente, 3
+ minutos.
 \end_layout
 
 \begin_layout Enumerate
-Deixar placa com fotolito sob luz ultra violeta por aproximadamente 3 minutos
+Misturar 200 ml de água com 1/2 colher de sopa de barrilha leve (carbonato
+ de sódio).
 \end_layout
 
 \begin_layout Enumerate
-misturar 200ml de água com 1/2 colher de barrilha leve
+Mergulhar a placa na mistura e retirar de leve o material que soltar; neste
+ processo, movimentar a mistura e não utilizar material abrasivo; opcionalmente,
+ poderá ser utilizado um rolinho de pintura.
 \end_layout
 
 \begin_layout Enumerate
-Mergulhar placa na mistura e retirar de leve o material que soltar
+Secar a placa com secador ou forno.
 \end_layout
 
 \begin_layout Enumerate
-Mais 2 mim de exposição da placa à luz ultra violeta para garantir boa fixação
- da tinta
+Opcionalmente, expor a placa por mais 2 min à luz ultravioleta para garantir
+ a boa fixação da tinta.
 \end_layout
 
 \begin_layout Enumerate
-Mergulhar placa no Percloreto de Ferro III
+Mergulhar a placa no Percloreto de Ferro III; opcionalmente, pré-aquecê-lo
+ para acelerar o processo de corrosão.
 \end_layout
 
 \begin_layout Enumerate
-Mergulhar placa de 15 a 20 mimnutos mexendo
+Movimentar o percloreto constantemente, por 15 a 20 min.
 \end_layout
 
 \begin_layout Enumerate
-Lavar a placa
+Secar a placa com papel e lavá-la em água corrente.
 \end_layout
 
 \begin_layout Enumerate
-Ferver 200ml de água e misturar com 2 colheres de sóda caustica Obs: Colocar
- a água primeiro e depois a sóda caustica (pois é um processo exotérmico
- forte)
+Ferver 200 ml de água e misturar com 2 colheres de sopa de soda cáustica
+ (hidróxido de sódio).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Cuidado!
+\series default
+ Colocar a água primeiro e depois a soda cáustica, pois a reação química
+ é fortemente exotérmica.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cuidado!
+\series default
+ Utilizar luvas, óculos de segurança e máscara para produtos químicos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mergular a placa e mexer a mistura até toda a tinta se soltar.
 \end_layout
 
 \begin_layout Enumerate
-Mergular a placa para tirar a tinta, ir mexendo até sair tudo
+Cortar os excessos da placa.
+\end_layout
+
+\begin_layout Subsection
+Serigrafia das Referências
 \end_layout
 
 \begin_layout Enumerate
-cortar excessos da placa Papel transfer
+Fazer dois furos de referência.
 \end_layout
 
 \begin_layout Enumerate
-Imprimir legenda espelhada no papel transfer (impressora a laser)
+Imprimir legenda espelhada no papel 
+\emph on
+transfer
+\emph default
+; utilizar impressora a 
+\emph on
+laser
+\emph default
+ ou a jato de tinta conforme o modelo do papel adquirido.
 \end_layout
 
 \begin_layout Enumerate
-grudar papel na placa com fita isolante (qualquer fita forte)
+Alinhar o papel 
+\emph on
+transfer
+\emph default
+ com a placa por meio dos furos; pode-se utilizar um objeto pontiagudo como
+ auxílio.
 \end_layout
 
 \begin_layout Enumerate
-passar o ferro de passar em temperatura máxima em cima do papel por 2 minutos
+Com fita isolante ou qualquer outra forte, fixar o papel e a placa sobre
+ um superfície lisa.
 \end_layout
 
 \begin_layout Enumerate
-esperar resfriar para tirar o papel
+Passar o ferro de passar, em temperatura máxima, sobre o papel por 2 minutos.
 \end_layout
 
 \begin_layout Enumerate
-tirar rebarbas com uma tesoura Mascara de proteção para os trilhos de solda
+Esperar resfriar para retirar o papel.
 \end_layout
 
 \begin_layout Enumerate
-lavar trilhas com bombril e detergente
+Remover as rebarbas com uma tesoura.
+\end_layout
+
+\begin_layout Subsection
+Máscara de Solda
 \end_layout
 
 \begin_layout Enumerate
-aplicar tinta fotossenssível em toda a placa
+Lavar o cobre com bombril e detergente.
 \end_layout
 
 \begin_layout Enumerate
-centrifugar a placa por 30 segundos
+Secar com guardanapo e evitar o contato das mãos no cobre.
 \end_layout
 
 \begin_layout Enumerate
-secar placa por 15 mim quente
+Aplicar tinta fotossenssível em toda a placa novamente.
 \end_layout
 
 \begin_layout Enumerate
-secar placa por 2 mim frio (o outro vídeo fala para não deixar passar de
- 30ºC e deixar por 10 minutos)
+Centrifugá-la por 30 s.
 \end_layout
 
 \begin_layout Enumerate
-imprimir fotolito com as ilhas de solda (para "tirar a tinta das ilhas de
- solda")
+Secar a placa por 15 min em ar quente.
 \end_layout
 
 \begin_layout Enumerate
-Expor placa + fotolito à luz ultra violeta por 3 mim
+Secar a placa por mais 2 min em ar frio.
 \end_layout
 
 \begin_layout Enumerate
-Mergulhar a placa na solução de barrilha (pode reutilizar a que usamos anteriorm
-ente) -Secar e pronto!
+Imprimir fotolito com a máscara de solda (imagem somente com as ilhas).
+\end_layout
+
+\begin_layout Enumerate
+Expor placa com fotolito à luz ultravioleta por 3 min.
+\end_layout
+
+\begin_layout Enumerate
+Mergulhar a placa na solução de barrilha; pode-se reutilizar a anterior.
+\end_layout
+
+\begin_layout Enumerate
+Enxaguar e secar.
 \end_layout
 
 \end_body
