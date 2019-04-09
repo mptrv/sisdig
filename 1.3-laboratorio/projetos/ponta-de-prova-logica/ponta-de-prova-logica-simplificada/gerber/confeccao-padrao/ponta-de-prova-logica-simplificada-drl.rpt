@@ -1,5 +1,5 @@
 Drill report for E:\Projetos\sisdig\1.3-laboratorio\projetos\ponta-de-prova-logica\ponta-de-prova-logica-simplificada\ponta-de-prova-logica-simplificada.kicad_pcb
-Created on 28-02-2019 22:40:15
+Created on 09-04-2019 16:24:53
 
 Copper Layer Stackup:
     =============================================================
@@ -10,9 +10,12 @@ Copper Layer Stackup:
 Drill file 'ponta-de-prova-logica-simplificada.drl' contains
     plated through holes:
     =============================================================
-    T1  0,90mm  0,035"  (71 holes)
+    T1  0,90mm  0,035"  (69 holes)
+    T2  1,00mm  0,039"  (4 holes)
+    T3  1,20mm  0,047"  (2 holes)
+    T4  3,00mm  0,118"  (2 holes)
 
-    Total plated holes count 71
+    Total plated holes count 77
 
 
 Not plated through holes are merged with plated holes
