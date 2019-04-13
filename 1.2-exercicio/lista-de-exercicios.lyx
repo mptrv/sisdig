@@ -1,10 +1,10 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass "../../../../../../Program Files (x86)/LyX 2.2/Resources/layouts/book"
+\textclass book
 \begin_preamble
 \usepackage{indentfirst}
 
@@ -48,11 +48,11 @@
 %   Ref.: http://tex.stackexchange.com/questions/94729/how-to-customize-chapter-heading-style
 
 % Nome de capítulo padrão, para experiências.
-\titleformat{\chapter}[display]
-  {\normalsize \huge}%
-  {\centering\large\textsc{Lista de Exercícios}\hspace{1ex}\thechapter}%
-  {10 pt}%
-  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]%
+%\titleformat{\chapter}[display]
+%  {\normalsize \huge}%
+%  {\centering\large\textsc{Lista de Exercícios}\hspace{1ex}\thechapter}%
+%  {10 pt}%
+%  {\centering\LARGE}[\thispagestyle{fancy}\pagenumbering{arabic}]%
 
 % Nome de capítulo para projetos.
 \newcommand{\tituloprojeto}{%
@@ -110,6 +110,8 @@ customHeadersFooters
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -148,13 +150,14 @@ customHeadersFooters
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \branch cm-textos-extras
 \selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -164,7 +167,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an2
-\selected 1
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch dg-desativar
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -176,9 +184,12 @@ customHeadersFooters
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
-\papersides 2
+\papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -190,6 +201,10 @@ customHeadersFooters
 \begin_body
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Note Comment
 status open
 
@@ -203,8 +218,9 @@ status open
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch cm-textos-extras
+inverted 0
 status collapsed
 
 \begin_layout Title
@@ -224,8 +240,9 @@ Listas de Exercícios de
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch cm-textos-extras
+inverted 0
 status collapsed
 
 \begin_layout Part
@@ -239,9 +256,6 @@ Digitais
 
 \begin_layout Left Header
 
-\shape smallcaps
-\size larger
--
 \end_layout
 
 \begin_layout Right Header
@@ -270,27 +284,47 @@ thepage
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Branch dg
+\begin_layout Plain Layout
+\begin_inset Branch dg-desativar
+inverted 0
 status collapsed
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{comment}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Branch dg
+inverted 0
+status open
 
 \begin_layout Chapter
 Contadores Assíncronos e Síncronos
 \end_layout
 
 \begin_layout Enumerate
-
-\lang english
+Elaborar o circuito lógico de um contador de 2 a 5, cíclico:
 \begin_inset CommandInset label
 LatexCommand label
-name "enu:exercicio1"
+name "enu:Contador-2-a-5"
 
-\end_inset
-
-
-\lang brazilian
-Elaborar o circuito lógico de um contador de 2 a 5, cíclico:
-\begin_inset Separator latexpar
 \end_inset
 
 
@@ -459,7 +493,7 @@ status open
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Enumerate
@@ -485,7 +519,10 @@ glitches
 O contador do exercício 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "enu:exercicio1"
+reference "enu:Contador-2-a-5"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -545,14 +582,40 @@ simulação
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Branch dg-desativar
+inverted 0
+status collapsed
+
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{comment}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Comment
 status collapsed
 
@@ -566,8 +629,9 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch cm-textos-extras
+inverted 0
 status collapsed
 
 \begin_layout Part
@@ -619,8 +683,9 @@ thepage
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch an
+inverted 0
 status collapsed
 
 \begin_layout Chapter
@@ -817,7 +882,7 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-Resultados: 
+Resultados:
 \end_layout
 
 \begin_layout Standard
@@ -1950,7 +2015,7 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
-Por análise de malha 
+Por análise de malha
 \end_layout
 
 \begin_layout Enumerate
@@ -2238,9 +2303,10 @@ Resultado:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Branch an2
-status open
+inverted 0
+status collapsed
 
 \begin_layout Chapter
 Análise de Circuitos
@@ -2387,7 +2453,7 @@ Por analise nodal.
 \end_layout
 
 \begin_layout Enumerate
-Por teorema de thevenin e metodo das correntes nas malhas 
+Por teorema de thevenin e metodo das correntes nas malhas
 \end_layout
 
 \begin_layout Enumerate
@@ -3802,6 +3868,11 @@ status open
 \begin_inset Graphics
 	filename imagens/R7g1.png
 	scale 65
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
