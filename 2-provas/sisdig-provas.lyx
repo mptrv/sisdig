@@ -6,83 +6,11 @@
 \origin unavailable
 \textclass article
 \begin_preamble
-% Cálculos.
-\usepackage{calc}
-
-% Unidades.
-\usepackage{siunitx}
-
-%Laço "for".
-\usepackage{forloop}
-
-%Mapas de Karnaugh.
-\usepackage{karnaughmap}
-
-%Desenhos gráficos em geral.
-\usepackage{tikz}
-\usepackage{tkz-fct}
-
-%Formas de onda digitais.
-\usepackage{tikz-timing}
-
-%Diagramas.
-\usepackage{diagmac2}
-
-%Unidades do SI.
-\usepackage{siunitx}
-
-% Valor de questão ou de item.
-\newcommand{\valor}[1]{\emph{(#1)}}
-
-% Contador e comando para questão.
-\newcounter{cquestao}
-\newcommand{\questao}[2][x]{%
-  \stepcounter{cquestao}\noindent\textbf{Questão \thecquestao} %
-  \ifthenelse{\equal{#1}{x}}{%
-    (#2).~\nolinebreak%
-  }{%
-    (#1,\ifthenelse{#2 = 50}{5}{\ifthenelse{#2 = 00}{0}{#2}}).~\nolinebreak%
-    \marginpar{\textcolor{lightgray}{\pontuacoes{#1}{#2}}}%
-  }%
-}
-
-% Enumeração por letras dos alfabeto.
-\newcommand{\alfaenum}{\renewcommand{\labelenumi}{\alph{enumi})}\renewcommand{\theenumi}{\labelenumi}}
-
-% Espaço vertical geral (\espv) e para tabelas (\strutp) - em tabelas, \baselineskip = 0.
-% Nota: há o comando pré-definido \strut.
-\newlength{\tabbaselineskip}
-\setlength{\tabbaselineskip}{\baselineskip}
-\newcommand{\espv}[1][4]{\rule[-.3\baselineskip]{0pt}{#1\baselineskip}}
-\newcommand{\strutp}[1][4]{\rule[-.3\tabbaselineskip]{0pt}{#1\tabbaselineskip}}
-
-% Forma alternativa para alterar o espaçamento entre linhas de tabela.
-\newcommand{\esptab}[1][1.5]{\renewcommand\arraystretch{#1}}
-
-% Personalização para unidades SI (por siunitx}.
-\sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
-
-% EM DESENVOLVIMENTO...........................................
-% Ensaio de contagem para as pontuações da margem.
-
-\newcounter{cti}
-\newcounter{ctf}[cti]
-\newcounter{ctfini}
-
-\newcommand{\pontuacoes}[3][-25]{%
-  \forloop[-1]{cti}{#2}{\value{cti} > -1}{%
-    \ifthenelse{\value{cti} = #2}{%
-      \setcounter{ctfini}{#3}%
-    }{%else
-      \setcounter{ctfini}{100+#1}%
-    }%
-    \forloop[#1]{ctf}{\value{ctfini}}{\value{ctf} > -1}{%		
-      \noindent\arabic{cti},%
-      \ifthenelse{\value{ctf} = 50}{5}{\arabic{ctf}}%
-      \\[2ex]
-    }%
-  }%
-}
+% Carga do pacote SisDig.
+%	Alterações de formatações deverão ser realizadas,
+%   preferencialmente, no pacote -- a não ser que seja
+%   algo muito específico para provas.
+\usepackage{../latex/sisdig}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -293,7 +221,7 @@
 \color #faf0e6
 \end_branch
 \branch dg-ex
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -83434,7 +83362,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch dg-ex
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
