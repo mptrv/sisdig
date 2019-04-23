@@ -1,0 +1,10 @@
+Reference, Quantity, Value, Footprint, Datasheet
+D1 ,1,"LED_ALT","LED_THT:LED_D5.0mm",""
+J1 J2 J3 J4 J5 J6 ,6,"Conn_01x07_Male","Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical","~"
+P1 ,1,"CONN_01X02","TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree",""
+R1 ,1,"270","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",""
+R2 R3 R4 R5 ,4,"10k","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",""
+SW1 ,1,"SW_DIP_x04","Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm",""
+U1 ,1,"74LS32","Package_DIP:DIP-14_W7.62mm_Socket_LongPads",""
+U2 ,1,"7400","Package_DIP:DIP-14_W7.62mm_Socket_LongPads",""
+U3 ,1,"74LS386","Package_DIP:DIP-14_W7.62mm_Socket_LongPads",""
