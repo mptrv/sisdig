@@ -82,13 +82,13 @@ F 3 "" H 5850 3450 50  0001 C CNN
 $EndComp
 $Comp
 L circuito-01-rescue:74LS386 U3
-U 1 1 5B0DB8C7
+U 3 1 5B0DB8C7
 P 8450 3850
 F 0 "U3" H 8450 3900 50  0000 C CNN
 F 1 "74LS386" H 8450 3800 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8450 3850 50  0001 C CNN
 F 3 "" H 8450 3850 50  0001 C CNN
-	1    8450 3850
+	3    8450 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -287,12 +287,12 @@ $Comp
 L circuito-01-rescue:CONN_01X02 P1
 U 1 1 5B189AF0
 P 2250 1950
-F 0 "P1" H 2250 2100 50  0000 C CNN
+F 0 "P1" H 2250 1800 50  0000 C CNN
 F 1 "CONN_01X02" V 2350 1950 50  0000 C CNN
 F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 2250 1950 50  0001 C CNN
 F 3 "" H 2250 1950 50  0000 C CNN
 	1    2250 1950
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L circuito-01-rescue:VCC #PWR03
@@ -713,11 +713,11 @@ U2-11
 Text Label 7800 4300 0    50   ~ 0
 U2-08
 Text Label 7800 3950 2    50   ~ 0
-U3-02
+U3-09
 Text Label 7800 3750 2    50   ~ 0
-U3-01
+U3-08
 Text Label 9100 3850 0    50   ~ 0
-U3-03
+U3-10
 $Comp
 L circuito-01-rescue:GND #PWR0101
 U 1 1 5CC813DF
@@ -780,13 +780,13 @@ F 3 "" H 4900 5350 50  0001 C CNN
 $EndComp
 $Comp
 L circuito-01-rescue:74LS386 U3
-U 3 1 5CCB67AB
+U 1 1 5CCB67AB
 P 6800 5350
 F 0 "U3" H 6800 5400 50  0000 C CNN
 F 1 "74LS386" H 6800 5300 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6800 5350 50  0001 C CNN
 F 3 "" H 6800 5350 50  0001 C CNN
-	3    6800 5350
+	1    6800 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -835,9 +835,9 @@ U3-05
 Text Label 4250 5450 2    50   ~ 0
 U3-06
 Text Label 6150 5250 2    50   ~ 0
-U3-08
+U3-01
 Text Label 6150 5450 2    50   ~ 0
-U3-09
+U3-02
 Text Label 8050 5250 2    50   ~ 0
 U3-12
 Text Label 8050 5450 2    50   ~ 0
@@ -845,7 +845,7 @@ U3-13
 Text Label 9350 5350 0    50   ~ 0
 U3-11
 Text Label 7450 5350 0    50   ~ 0
-U3-10
+U3-03
 Text Label 5550 5350 0    50   ~ 0
 U3-04
 $Comp
