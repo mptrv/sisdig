@@ -976,18 +976,18 @@ Wire Wire Line
 	10300 1550 10400 1550
 Text Label 10300 1550 2    50   ~ 0
 U1-01
-Text Label 10300 1650 2    50   ~ 0
-U2-02
 Text Label 10300 1750 2    50   ~ 0
-U1-06
+U2-02
 Text Label 10300 2050 2    50   ~ 0
 U1-01
-Text Label 10300 2150 2    50   ~ 0
-U2-02
 Text Label 10300 2250 2    50   ~ 0
-U1-06
+U2-02
 Text Label 10300 1850 2    50   ~ 0
 U3-10
 Text Label 10300 2350 2    50   ~ 0
 U3-10
+Text Label 10300 1650 2    50   ~ 0
+U1-02
+Text Label 10300 2150 2    50   ~ 0
+U1-02
 $EndSCHEMATC
