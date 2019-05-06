@@ -61,7 +61,7 @@
 \use_refstyle 1
 \use_minted 0
 \branch capa
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #00ff7f
 \end_branch
@@ -71,7 +71,7 @@
 \color #cfe2fa
 \end_branch
 \branch gabarito
-\selected 0
+\selected 1
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -81,7 +81,7 @@
 \color #fa9494
 \end_branch
 \branch detalhes-enunciado
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -29161,7 +29161,7 @@ S
 \begin_layout Standard
 \begin_inset Branch 2016-dg-p2
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -33182,7 +33182,7 @@ bigskip
 \noindent
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \noindent
@@ -74410,7 +74410,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch 2018-dg-ps
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -83412,7 +83412,7 @@ capa{Primeira Prova Bimestral}{2019}{16.04.2019}{6}
 \begin_layout Standard
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -83420,7 +83420,7 @@ status collapsed
 \series bold
 \size large
 \color red
-GABARITO ETE102/N – P1/2018
+GABARITO ETE102/N – P1/2019
 \size default
 \color inherit
 
@@ -83589,7 +83589,7 @@ valor{0,25}
 \noindent
 \begin_inset Branch detalhes-enunciado
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -83643,7 +83643,7 @@ espv[15]
 
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -83662,7 +83662,7 @@ status collapsed
 
 \color red
 a) 
-\begin_inset Formula $(A7)_{16}=(1010\:0111)_{2}$
+\begin_inset Formula $(11\,011)_{2}=(33)_{8}$
 \end_inset
 
 
@@ -83680,7 +83680,7 @@ a)
 \end_inset
 
 b) 
-\begin_inset Formula $(50)_{8}=5\cdot8^{1}+0\cdot8^{0}=(40)_{10}$
+\begin_inset Formula $(27)_{8}=2\cdot8^{1}+7\cdot8^{0}=(23)_{10}$
 \end_inset
 
 
@@ -83718,7 +83718,7 @@ status open
 \begin_layout Plain Layout
 
 \color red
-\begin_inset Formula $(1110)_{10}=(456)_{16}$
+\begin_inset Formula $(1010)_{10}=(3F2)_{16}$
 \end_inset
 
 
@@ -83745,7 +83745,7 @@ status open
 \end_inset
 
 d) 
-\begin_inset Formula $(27)_{10}=(1\:1011)_{2}$
+\begin_inset Formula $(27)_{16}=(0010\:0111)_{2}$
 \end_inset
 
 
@@ -84257,19 +84257,41 @@ status open
 
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
+\begin_inset Graphics
+	filename imagens/2019/dg/p1/circuito-combinatorio.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+esptab{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="6">
+<lyxtabular version="3" rows="9" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
 <column alignment="center" valignment="top" width="0.5cm">
-<column alignment="center" valignment="top" width="0.5cm">
-<column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
@@ -84319,24 +84341,6 @@ S
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" usebox="none">
@@ -84376,25 +84380,9 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -84438,25 +84426,9 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\color red
+0
 \end_layout
 
 \end_inset
@@ -84500,25 +84472,9 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\color red
+1
 \end_layout
 
 \end_inset
@@ -84562,92 +84518,55 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
 0
 \end_layout
 
 \end_inset
 </cell>
 <cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \color red
-\begin_inset Formula $S=(A+\bar{B}+C).(A+\bar{B}+\bar{C}).(\bar{A}+\bar{B}+C)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family typewriter
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -84691,25 +84610,9 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -84753,25 +84656,9 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\color red
+1
 \end_layout
 
 \end_inset
@@ -84815,31 +84702,26 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+\color red
+0
 \end_layout
 
 \end_inset
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -84939,7 +84821,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -84948,7 +84830,7 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename imagens/2018/p118.png
+	filename imagens/2019/dg/p1/circuito-de-expressao-logica.png
 	width 80col%
 
 \end_inset
@@ -85011,8 +84893,14 @@ status open
 
 \begin_layout Standard
 \noindent
-\begin_inset ERT
+\begin_inset Branch detalhes-enunciado
+inverted 0
 status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -85155,49 +85043,16 @@ bigskip
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[2]{00}
-\end_layout
-
-\end_inset
-
- Para o bloco abaixo, completar a Carta de Tempos:
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+\noindent
+\begin_inset Branch gabarito
+inverted 0
 status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/2019/dg/p1/registrador-deslocamento.png
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Standard
 \noindent
@@ -85261,6 +85116,238 @@ itshape,
 \begin_layout Plain Layout
 
 	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	%Régua			   & 5D{} 5D{} 5D{} 5D{} 5D{} 5D{} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$A$ 
+\backslash
+tiny{(HEX)}	& 8D{F} 10D{8} 12D{2} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$B$ 
+\backslash
+tiny{(HEX)}    & 5D{4} 17D{8} 8D{2} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$S_>$               & [red] HHHHH HHHLL LLLLL LLLLL LLLLL LLLLL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$S_=$			   & [red] LLLLL LLLHH HHHHH HHHLL LLHHH HHHHH 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$S_<$			   & [red] LLLLL LLLLL LLLLL LLLHH HHLLL LLLLL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{00}
+\end_layout
+
+\end_inset
+
+ Para o bloco abaixo, completar a Carta de Tempos:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2019/dg/p1/registrador-deslocamento.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}[2.5]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0.25,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	% Observação:
+\end_layout
+
+\begin_layout Plain Layout
+
+	%	
+\begin_inset Quotes eld
+\end_inset
+
+C
+\begin_inset Quotes erd
+\end_inset
+
+ é a borda; seu coeficiente é o tempo antes da borda;
+\end_layout
+
+\begin_layout Plain Layout
+
+	%	sempre que ocorre uma borda, o nível lógico altera-se.
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -85354,6 +85441,193 @@ bigskip
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}[2.5]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/rising arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0.25,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	%Régua			   	& 5D{} 5D{} 5D{} 5D{} 5D{} 5D{} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$ck_{LD}$			    & 4C C 17C C 7C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$ck$               	  & 7C C 2CC 2CC 2CC 9C C3C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$D$ 
+\backslash
+tiny{(HEX)} 		& 3D{7} 7D{2} 7D{0} 3D{1} 5D{D} 5D{5} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$ES$ 	 			   & [red] UUUUL LLHHH LLLLL LLLLL LLHHH HLLLL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$SS$ 	 			   & [red] UUUUL LLHHH LLLLL LLLLL LLHHH HLLLL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$Q$ 
+\backslash
+tiny{(HEX)}	     & [red] UUUU 3D{2} 3D{1} 3D{8} 3D{4} 6D{2} 4D{D} 4D{E}
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -85400,8 +85674,14 @@ status open
 
 \begin_layout Standard
 \noindent
-\begin_inset ERT
+\begin_inset Branch detalhes-enunciado
+inverted 0
 status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -85564,6 +85844,205 @@ bigskip
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}[2.5]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/rising arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0.25,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	%Régua			   	& 5D{} 5D{} 5D{} 5D{} 5D{} 5D{} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$MR$			 		& 25L H 4L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$ck_{LD}$			    & 2C C 27C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$ck$               	  & 6C C 2CC 2CC 2CC 2CC 2CC 8C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$D$ 
+\backslash
+tiny{(HEX)}		 & 5D{3} 5D{8} 5D{4} 5D{A} 5D{E} 5D{9} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$Q$ 
+\backslash
+tiny{(HEX)}		 & [red] UU 4D{3} 3D{2} 3D{1} 3D{0} 3D{F} 3D{E} 4D{D} 5D{0}
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$C_o$ 				   & [red] UU 13L 10H 5L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$S$ 
+\backslash
+tiny{(HEX)}		 & [red] [red] UU 4D{6} 3D{4} 3D{2} 3D{0} 3D{E} 3D{C} 4D{A}
+ 5D{0} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -85609,7 +86088,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch dg-ex
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
