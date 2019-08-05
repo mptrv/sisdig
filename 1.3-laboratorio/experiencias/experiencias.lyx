@@ -185,12 +185,12 @@ customHeadersFooters
 \use_refstyle 1
 \use_minted 0
 \branch cm-corpo
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -210,32 +210,32 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -250,7 +250,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -260,77 +260,77 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-revisao
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-retif-gramp
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -340,7 +340,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-galvanometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -350,7 +350,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch cm-an-textos-extras
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -360,7 +360,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-painel-protoboard
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -17201,7 +17201,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch dg-projeto
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -17572,7 +17572,7 @@ Repescagem
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Redigir o contexto e o conteúdo dos entregáveis, em especial, quanto ao
@@ -30283,7 +30283,7 @@ tituloexp
 \begin_layout Standard
 \begin_inset Branch an-resistores
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -34810,7 +34810,7 @@ Multímetro digital
 \begin_layout Standard
 \begin_inset Branch an-multimetros
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -38743,7 +38743,7 @@ W: 1x (
 \begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -40368,7 +40368,7 @@ Cabos banana-banana
 \begin_layout Standard
 \begin_inset Branch an-lei-ohm
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Lei de Ohm
@@ -42571,7 +42571,7 @@ Cabos banana-banana
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -43163,7 +43163,7 @@ W: 1x (
 \begin_layout Standard
 \begin_inset Branch an-ponte-wheatstone
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Ponte de Wheatstone
@@ -44515,7 +44515,7 @@ Resistores de
 \begin_layout Standard
 \begin_inset Branch an-mtp
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Geradores Elétricos e Máxima Transferência de Potência
@@ -46674,7 +46674,7 @@ Resistor de 2W: 1x (
 \begin_layout Standard
 \begin_inset Branch an-superposicao-thevenin-norton
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Teorema da Superposição e
@@ -48482,7 +48482,7 @@ Resistores de
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-rc
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Circuitos RC e Osciloscópio
@@ -49384,7 +49384,7 @@ Cabos banana-banana pequenos
 \begin_layout Standard
 \begin_inset Branch an-osciloscopio-retif-gramp
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Circuitos Retificadores e Grampeadores e Osciloscópio
@@ -50287,267 +50287,280 @@ name "sec:Prazos-para-Entrega"
 
 \begin_layout Standard
 O projeto deverá ser apresentado na própria aula de laboratório, conforme
- as datas:
-\end_layout
-
-\begin_layout Enumerate
-
-\series bold
-\noun on
-Apresentação do Esquema Elétrico para Aprovação
-\begin_inset CommandInset label
-LatexCommand label
-name "enu:Apresentação-do-Esquema"
-
+ as datas a seguir:
+\begin_inset VSpace smallskip
 \end_inset
 
 
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno: 03.09.2018
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Noturno: 29.08.2018
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="7cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
 \series bold
-\noun on
-Reapresentação do Esquema Elétrico para Aprovação
-\begin_inset CommandInset label
-LatexCommand label
-name "enu:Reapresentação-do-Esquema"
-
-\end_inset
-
-
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
+\emph on
+Descrição
 \end_layout
 
-\begin_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
+\series bold
+\emph on
+Datas
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno:
-\series default
- 
-\series bold
-10.09.2018
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Noturno:
-\series default
- 
-\series bold
-05.09.2018
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 
-}
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-
-\series bold
-\noun on
-Apresentação Final do Projeto
-\begin_inset CommandInset label
-LatexCommand label
-name "enu:Apresentação-Final-do"
-
-\end_inset
-
-
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 
-{
-\backslash
-def
-\backslash
-labelitemi{{}}
 \end_layout
 
 \end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Diurno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Antecipada: 
-\series bold
-29.10.2018
-\end_layout
-
-\begin_layout Itemize
-Oficial: 
-\series bold
-05.11.2018
-\end_layout
-
-\begin_layout Itemize
-Repescagem: 
-\series bold
-03.12.2018
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
-Noturno:
-\series default
-
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Antecipada: 
-\series bold
-31.10.2018
-\end_layout
-
-\begin_layout Itemize
-Oficial: 
-\series bold
-07.11.2018
-\end_layout
-
-\begin_layout Itemize
-Repescagem: 
-\series bold
-05.12.2018
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 
-}
+\series bold
+\emph on
+Diurno
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Noturno
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Apresentação do esquema elétrico para aprovação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+09.09.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+11.09.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reapresentação do esquema elétrico para aprovação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+16.09.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+18.09.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Apresentação Antecipada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+04.11.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+06.11.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Apresentação Final
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+11.11.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+13.11.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Repescagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+02.12.2019
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+04.12.2019
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset VSpace bigskip
 \end_inset
@@ -50778,26 +50791,19 @@ O grupo deverá pesquisar um projeto já existente ou desenvolver um projeto
 \end_layout
 
 \begin_layout Itemize
-O esquema elétrico deverá ser apresentado até a data citada no item
-\begin_inset space ~
-\end_inset
-
-
+O esquema elétrico deverá ser apresentado até a data de 
 \emph on
 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "enu:Apresentação-do-Esquema"
-
+\begin_inset Quotes eld
 \end_inset
 
+Apresentação do esquema elétrico
+\begin_inset Quotes erd
+\end_inset
 
+,
 \emph default
- de
-\begin_inset space ~
-\end_inset
-
-
+ apontada em 
 \emph on
 
 \begin_inset CommandInset ref
@@ -50811,40 +50817,18 @@ reference "sec:Prazos-para-Entrega"
 .
  Nesta data, o professor fará uma análise prévia para verificar se o projeto
  não é simples demais ou complexo demais.
- Caso assim o considere, uma nova proposta deverá ser apresentada, conforme
- data citada no item
-\begin_inset space ~
+ Caso assim o considere, uma nova proposta deverá ser apresentada até a
+ data de 
+\begin_inset Quotes eld
 \end_inset
 
-
-\emph on
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "enu:Reapresentação-do-Esquema"
-
+Reapresentação do esquema elétrico
+\begin_inset Quotes erd
 \end_inset
 
-
-\emph default
- de
-\begin_inset space ~
-\end_inset
-
-
-\emph on
-
-\begin_inset CommandInset ref
-LatexCommand nameref
-reference "sec:Prazos-para-Entrega"
-
-\end_inset
-
-
-\emph default
-.
- O cumprimento destas datas fará parte da avaliação, conforme citado no
- item
+, apontada na mesma seção citada.
+ O cumprimento destas datas fará parte da avaliação, conforme registrado
+ no item
 \begin_inset space ~
 \end_inset
 
@@ -50878,26 +50862,15 @@ reference "sec:Critérios-de-Avaliação"
 \end_layout
 
 \begin_layout Itemize
-O projeto implementado deverá ser apresentado na data citada no item
-\begin_inset space ~
+O projeto implementado deverá ser apresentado na data de 
+\begin_inset Quotes eld
 \end_inset
 
-
-\emph on
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "enu:Apresentação-Final-do"
-
+Apresentação final
+\begin_inset Quotes erd
 \end_inset
 
-
-\emph default
- de
-\begin_inset space ~
-\end_inset
-
-
+, apontada em 
 \emph on
 
 \begin_inset CommandInset ref
@@ -50908,9 +50881,24 @@ reference "sec:Prazos-para-Entrega"
 
 
 \emph default
-, 
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+
+\family typewriter
 \series bold
-acompanhado do esquema elétrico
+\emph on
+Importante
+\series default
+!
+\series bold
+ Na apresentação, o projeto deverá ser
+\series default
+ 
+\series bold
+acompanhado pelo esquema elétrico
 \series default
  
 \series bold
@@ -50919,10 +50907,11 @@ com pinagem
 .
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
-Importante! 
+Atenção! 
 \series default
 O esquema elétrico deverá seguir o 
 \series bold
