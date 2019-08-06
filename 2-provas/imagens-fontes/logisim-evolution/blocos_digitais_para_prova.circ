@@ -259,8 +259,8 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="inputs" val="3"/>
     </comp>
   </circuit>
-  <circuit name="Flip_Flop_JK_e3d25efa">
-    <a name="circuit" val="Flip_Flop_JK_e3d25efa"/>
+  <circuit name="Flip_Flop_JK_ck1_clr1">
+    <a name="circuit" val="Flip_Flop_JK_ck1_clr1"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
@@ -845,7 +845,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(60,70)" to="(80,70)"/>
     <wire from="(120,110)" to="(140,110)"/>
     <wire from="(120,70)" to="(140,70)"/>
-    <comp loc="(120,70)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(120,70)" name="Flip_Flop_JK_ck1_clr1"/>
   </circuit>
   <circuit name="Tabela_Verdade_FF_T_ETE101_D_2013_P3_Q4_9661a8bf">
     <a name="circuit" val="Tabela_Verdade_FF_T_ETE101_D_2013_P3_Q4_9661a8bf"/>
@@ -1511,7 +1511,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="1" loc="(250,240)" name="NAND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp loc="(180,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(180,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(490,150)" name="Tunnel">
       <a name="label" val="Q0"/>
     </comp>
@@ -1523,7 +1523,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="5" loc="(70,320)" name="Button">
       <a name="label" val="POR"/>
     </comp>
-    <comp loc="(470,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(470,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(340,140)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ffffff"/>
@@ -1536,7 +1536,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="1" loc="(120,240)" name="XOR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp loc="(310,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(310,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(210,150)" name="Tunnel">
       <a name="label" val="Q2"/>
     </comp>
@@ -1620,7 +1620,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ffffff"/>
       <a name="label" val="Q2"/>
     </comp>
-    <comp loc="(180,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(180,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="6" loc="(65,195)" name="Text">
       <a name="text" val="Q0"/>
       <a name="font" val="SansSerif plain 10"/>
@@ -1645,7 +1645,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="5" loc="(70,310)" name="Button">
       <a name="label" val="POR"/>
     </comp>
-    <comp loc="(320,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(320,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="1" loc="(250,240)" name="NAND Gate">
       <a name="size" val="30"/>
     </comp>
@@ -1664,7 +1664,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ffffff"/>
       <a name="label" val="Q0"/>
     </comp>
-    <comp loc="(470,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(470,200)" name="Flip_Flop_JK_ck1_clr1"/>
   </circuit>
   <circuit name="Contador_S_ncrono_02_Incompleto_cd5eb075">
     <a name="circuit" val="Contador_S_ncrono_02_Incompleto_cd5eb075"/>
@@ -1699,8 +1699,8 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(180,200)" to="(190,200)"/>
     <wire from="(180,240)" to="(190,240)"/>
     <wire from="(130,220)" to="(140,220)"/>
-    <comp loc="(320,200)" name="Flip_Flop_JK_e3d25efa"/>
-    <comp loc="(180,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(320,200)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(180,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(190,170)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ffffff"/>
@@ -1715,7 +1715,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="5" loc="(70,310)" name="Button">
       <a name="label" val="POR"/>
     </comp>
-    <comp loc="(470,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(470,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(480,170)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ffffff"/>
@@ -1780,7 +1780,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ffffff"/>
       <a name="label" val="Q2"/>
     </comp>
-    <comp loc="(470,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(470,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(70,280)" name="Clock"/>
     <comp lib="5" loc="(480,170)" name="LED">
       <a name="facing" val="south"/>
@@ -1810,7 +1810,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="text" val="Q0"/>
       <a name="font" val="SansSerif plain 10"/>
     </comp>
-    <comp loc="(180,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(180,200)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="6" loc="(65,185)" name="Text">
       <a name="text" val="Q0"/>
       <a name="font" val="SansSerif plain 10"/>
@@ -1819,7 +1819,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="text" val="Q0"/>
       <a name="font" val="SansSerif plain 10"/>
     </comp>
-    <comp loc="(320,200)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(320,200)" name="Flip_Flop_JK_ck1_clr1"/>
   </circuit>
   <circuit name="Express_o_MUX_ETE102_N_P1_2016_b7d478e4">
     <a name="circuit" val="Express_o_MUX_ETE102_N_P1_2016_b7d478e4"/>
@@ -2138,8 +2138,8 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(360,190)" to="(360,240)"/>
     <wire from="(70,160)" to="(80,160)"/>
     <wire from="(300,170)" to="(370,170)"/>
-    <comp loc="(410,170)" name="Flip_Flop_JK_e3d25efa"/>
-    <comp loc="(170,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(410,170)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(170,170)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="6" loc="(305,232)" name="Text">
       <a name="text" val="Q2n"/>
     </comp>
@@ -2151,7 +2151,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ebebeb"/>
       <a name="label" val="Q0"/>
     </comp>
-    <comp loc="(290,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(290,170)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(180,120)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ebebeb"/>
@@ -2226,7 +2226,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="label" val="POR"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(290,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(290,170)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="1" loc="(110,170)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
@@ -2235,8 +2235,8 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ebebeb"/>
       <a name="label" val="Q1"/>
     </comp>
-    <comp loc="(170,170)" name="Flip_Flop_JK_e3d25efa"/>
-    <comp loc="(410,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(170,170)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(410,170)" name="Flip_Flop_JK_ck1_clr1"/>
   </circuit>
   <circuit name="Contador_Ass_ncrono_01_Divisor_24da7b90">
     <a name="circuit" val="Contador_Ass_ncrono_01_Divisor_24da7b90"/>
@@ -2473,12 +2473,12 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ffffff"/>
       <a name="label" val="Q0"/>
     </comp>
-    <comp loc="(180,140)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(180,140)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(70,220)" name="Clock"/>
     <comp lib="5" loc="(70,250)" name="Button">
       <a name="label" val="POR"/>
     </comp>
-    <comp loc="(320,140)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(320,140)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(330,110)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ffffff"/>
@@ -2489,7 +2489,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ffffff"/>
       <a name="label" val="Q2"/>
     </comp>
-    <comp loc="(470,140)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(470,140)" name="Flip_Flop_JK_ck1_clr1"/>
   </circuit>
   <circuit name="Contador_S_ncrono_04_Completo_4da59994">
     <a name="circuit" val="Contador_S_ncrono_04_Completo_4da59994"/>
@@ -2544,8 +2544,8 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="6" loc="(98,154)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp loc="(310,150)" name="Flip_Flop_JK_e3d25efa"/>
-    <comp loc="(170,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(310,150)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(170,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="6" loc="(335,194)" name="Text">
       <a name="text" val="Q1n"/>
     </comp>
@@ -2590,7 +2590,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="6" loc="(390,165)" name="Text">
       <a name="text" val="(ou Q2n)"/>
     </comp>
-    <comp loc="(460,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(460,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(440,210)" name="Ground"/>
     <comp lib="5" loc="(60,260)" name="Button">
       <a name="label" val="POR"/>
@@ -2994,8 +2994,8 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="offcolor" val="#ebebeb"/>
       <a name="label" val="Q2"/>
     </comp>
-    <comp loc="(410,170)" name="Flip_Flop_JK_e3d25efa"/>
-    <comp loc="(170,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(410,170)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(170,170)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(420,120)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ebebeb"/>
@@ -3005,7 +3005,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="label" val="POR"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(290,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(290,170)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(300,120)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ebebeb"/>
@@ -3073,7 +3073,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="text" val="Q2n"/>
     </comp>
     <comp lib="0" loc="(90,240)" name="Clock"/>
-    <comp loc="(170,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(170,170)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="5" loc="(180,120)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ebebeb"/>
@@ -3082,7 +3082,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="6" loc="(78,164)" name="Text">
       <a name="text" val="Q1"/>
     </comp>
-    <comp loc="(410,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(410,170)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="6" loc="(323,205)" name="Text">
       <a name="text" val="Q2"/>
     </comp>
@@ -3094,7 +3094,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="6" loc="(203,166)" name="Text">
       <a name="text" val="Q0"/>
     </comp>
-    <comp loc="(290,170)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(290,170)" name="Flip_Flop_JK_ck1_clr1"/>
   </circuit>
   <circuit name="Contador_Ass_ncrono_04_Divisor_Completo_cbf9ddee">
     <a name="circuit" val="Contador_Ass_ncrono_04_Divisor_Completo_cbf9ddee"/>
@@ -3341,16 +3341,16 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp loc="(510,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(510,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(330,120)" name="Ground"/>
     <comp lib="5" loc="(380,90)" name="LED">
       <a name="facing" val="south"/>
       <a name="offcolor" val="#ffffff"/>
       <a name="label" val="Q1"/>
     </comp>
-    <comp loc="(370,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(370,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(490,210)" name="Ground"/>
-    <comp loc="(230,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(230,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(60,250)" name="Clock"/>
     <comp lib="0" loc="(310,120)" name="Power"/>
     <comp lib="0" loc="(100,210)" name="Tunnel">
@@ -3413,7 +3413,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(110,200)" to="(120,200)"/>
     <wire from="(100,210)" to="(110,210)"/>
     <wire from="(260,150)" to="(330,150)"/>
-    <comp loc="(370,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(370,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(100,170)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Q1"/>
@@ -3441,14 +3441,14 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="facing" val="south"/>
       <a name="label" val="Q1"/>
     </comp>
-    <comp loc="(230,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(230,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(170,120)" name="Power"/>
     <comp lib="1" loc="(170,190)" name="XNOR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
     <comp lib="0" loc="(450,120)" name="Power"/>
-    <comp loc="(510,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(510,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="6" loc="(161,140)" name="Text"/>
     <comp lib="0" loc="(330,120)" name="Ground"/>
   </circuit>
@@ -4201,13 +4201,13 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="0" loc="(400,110)" name="Tunnel">
       <a name="label" val="Q1"/>
     </comp>
-    <comp loc="(510,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(510,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(110,170)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Q0n"/>
     </comp>
     <comp lib="0" loc="(450,120)" name="Power"/>
-    <comp loc="(370,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(370,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(110,130)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Q1"/>
@@ -4216,7 +4216,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp loc="(230,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(230,150)" name="Flip_Flop_JK_ck1_clr1"/>
   </circuit>
   <circuit name="Contador_S_ncrono_06_Sem_LEDs_ff35facd">
     <a name="circuit" val="Contador_S_ncrono_06_Sem_LEDs_ff35facd"/>
@@ -4272,7 +4272,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="facing" val="east"/>
       <a name="label" val="Q0n"/>
     </comp>
-    <comp loc="(230,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(230,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(360,110)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="Q1"/>
@@ -4281,7 +4281,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="facing" val="east"/>
       <a name="label" val="Q1"/>
     </comp>
-    <comp loc="(350,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(350,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(190,120)" name="Ground"/>
     <comp lib="5" loc="(110,280)" name="Button">
       <a name="label" val="POR"/>
@@ -4295,7 +4295,7 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <a name="facing" val="south"/>
       <a name="label" val="Q0"/>
     </comp>
-    <comp loc="(470,150)" name="Flip_Flop_JK_e3d25efa"/>
+    <comp loc="(470,150)" name="Flip_Flop_JK_ck1_clr1"/>
     <comp lib="0" loc="(480,190)" name="Tunnel">
       <a name="label" val="Q0n"/>
     </comp>
@@ -4500,8 +4500,6 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <wire from="(390,160)" to="(400,160)"/>
     <wire from="(220,160)" to="(230,160)"/>
     <wire from="(390,170)" to="(460,170)"/>
-    <comp loc="(220,160)" name="Flip_Flop_JK_ck0_clr1"/>
-    <comp loc="(320,160)" name="Flip_Flop_JK_ck0_clr1"/>
     <comp lib="0" loc="(160,130)" name="Power"/>
     <comp lib="0" loc="(140,180)" name="Clock"/>
     <comp lib="0" loc="(260,130)" name="Power"/>
@@ -4541,6 +4539,237 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     </comp>
     <comp lib="6" loc="(361,223)" name="Text">
       <a name="text" val="Q1"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp loc="(320,160)" name="Flip_Flop_JK_ck0_clr1"/>
+    <comp loc="(220,160)" name="Flip_Flop_JK_ck0_clr1"/>
+  </circuit>
+  <circuit name="i2019ps_FlipFlop_RS">
+    <a name="circuit" val="i2019ps_FlipFlop_RS"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif bold 16"/>
+    <a name="circuitnamedbox" val="true"/>
+    <a name="circuitvhdlpath" val=""/>
+    <wire from="(390,190)" to="(450,190)"/>
+    <wire from="(140,230)" to="(200,230)"/>
+    <wire from="(230,180)" to="(280,180)"/>
+    <wire from="(390,190)" to="(390,200)"/>
+    <wire from="(390,160)" to="(390,170)"/>
+    <wire from="(300,210)" to="(300,230)"/>
+    <wire from="(330,140)" to="(330,160)"/>
+    <wire from="(230,160)" to="(230,180)"/>
+    <wire from="(230,140)" to="(230,160)"/>
+    <wire from="(200,210)" to="(200,230)"/>
+    <wire from="(140,180)" to="(180,180)"/>
+    <wire from="(160,130)" to="(160,160)"/>
+    <wire from="(260,130)" to="(260,160)"/>
+    <wire from="(200,230)" to="(300,230)"/>
+    <wire from="(450,150)" to="(480,150)"/>
+    <wire from="(370,140)" to="(400,140)"/>
+    <wire from="(370,220)" to="(400,220)"/>
+    <wire from="(260,200)" to="(280,200)"/>
+    <wire from="(260,160)" to="(280,160)"/>
+    <wire from="(160,160)" to="(160,200)"/>
+    <wire from="(440,210)" to="(460,210)"/>
+    <wire from="(460,210)" to="(480,210)"/>
+    <wire from="(260,160)" to="(260,200)"/>
+    <wire from="(160,200)" to="(180,200)"/>
+    <wire from="(160,160)" to="(180,160)"/>
+    <wire from="(450,150)" to="(450,190)"/>
+    <wire from="(460,170)" to="(460,210)"/>
+    <wire from="(440,150)" to="(450,150)"/>
+    <wire from="(390,200)" to="(400,200)"/>
+    <wire from="(320,160)" to="(330,160)"/>
+    <wire from="(390,160)" to="(400,160)"/>
+    <wire from="(220,160)" to="(230,160)"/>
+    <wire from="(390,170)" to="(460,170)"/>
+    <comp lib="6" loc="(330,134)" name="Text">
+      <a name="text" val="Q1"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(231,135)" name="Text">
+      <a name="text" val="Q0"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(140,180)" name="Clock"/>
+    <comp lib="5" loc="(480,210)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="labelloc" val="center"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="5" loc="(480,150)" name="LED">
+      <a name="offcolor" val="#ffffff"/>
+      <a name="labelloc" val="center"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(160,130)" name="Power"/>
+    <comp lib="1" loc="(440,150)" name="NAND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(440,210)" name="NAND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="5" loc="(140,230)" name="Button">
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="6" loc="(360,144)" name="Text">
+      <a name="text" val="Q0"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(361,223)" name="Text">
+      <a name="text" val="Q1"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(260,130)" name="Power"/>
+    <comp loc="(220,160)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(320,160)" name="Flip_Flop_JK_ck1_clr1"/>
+  </circuit>
+  <circuit name="i2019ps_Contador_Sincrono">
+    <a name="circuit" val="i2019ps_Contador_Sincrono"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif bold 16"/>
+    <a name="circuitnamedbox" val="true"/>
+    <a name="circuitvhdlpath" val=""/>
+    <wire from="(260,140)" to="(320,140)"/>
+    <wire from="(220,210)" to="(220,220)"/>
+    <wire from="(220,360)" to="(220,370)"/>
+    <wire from="(220,460)" to="(220,470)"/>
+    <wire from="(420,140)" to="(420,150)"/>
+    <wire from="(320,140)" to="(320,150)"/>
+    <wire from="(150,140)" to="(260,140)"/>
+    <wire from="(260,140)" to="(260,220)"/>
+    <wire from="(290,230)" to="(390,230)"/>
+    <wire from="(320,140)" to="(420,140)"/>
+    <wire from="(150,230)" to="(190,230)"/>
+    <wire from="(220,220)" to="(260,220)"/>
+    <wire from="(190,230)" to="(290,230)"/>
+    <wire from="(230,390)" to="(260,390)"/>
+    <wire from="(230,410)" to="(260,410)"/>
+    <wire from="(280,160)" to="(300,160)"/>
+    <wire from="(280,200)" to="(300,200)"/>
+    <wire from="(380,160)" to="(400,160)"/>
+    <wire from="(380,200)" to="(400,200)"/>
+    <wire from="(220,370)" to="(370,370)"/>
+    <wire from="(220,470)" to="(370,470)"/>
+    <wire from="(250,120)" to="(250,160)"/>
+    <wire from="(350,120)" to="(350,160)"/>
+    <wire from="(180,160)" to="(200,160)"/>
+    <wire from="(450,120)" to="(450,160)"/>
+    <wire from="(180,200)" to="(200,200)"/>
+    <wire from="(440,160)" to="(450,160)"/>
+    <wire from="(190,180)" to="(190,230)"/>
+    <wire from="(290,180)" to="(300,180)"/>
+    <wire from="(340,160)" to="(350,160)"/>
+    <wire from="(390,180)" to="(400,180)"/>
+    <wire from="(190,180)" to="(200,180)"/>
+    <wire from="(290,400)" to="(370,400)"/>
+    <wire from="(240,160)" to="(250,160)"/>
+    <wire from="(290,180)" to="(290,230)"/>
+    <wire from="(390,180)" to="(390,230)"/>
+    <wire from="(230,310)" to="(370,310)"/>
+    <wire from="(230,280)" to="(370,280)"/>
+    <wire from="(230,500)" to="(370,500)"/>
+    <comp lib="5" loc="(250,120)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q2"/>
+      <a name="labelloc" val="center"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="5" loc="(450,120)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q0"/>
+      <a name="labelloc" val="center"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="5" loc="(350,120)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Q1"/>
+      <a name="labelloc" val="center"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="6" loc="(369,163)" name="Text">
+      <a name="text" val="J0"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(270,164)" name="Text">
+      <a name="text" val="J1"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="5" loc="(150,140)" name="Button">
+      <a name="label" val="POR"/>
+    </comp>
+    <comp lib="0" loc="(150,230)" name="Clock"/>
+    <comp loc="(240,160)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(340,160)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp loc="(440,160)" name="Flip_Flop_JK_ck1_clr1"/>
+    <comp lib="6" loc="(270,204)" name="Text">
+      <a name="text" val="K1"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(169,203)" name="Text">
+      <a name="text" val="K2"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(169,163)" name="Text">
+      <a name="text" val="J2"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(381,313)" name="Text">
+      <a name="text" val="K2"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(219,314)" name="Text">
+      <a name="text" val="Q0"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(216,283)" name="Text">
+      <a name="text" val="Q1n"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(381,283)" name="Text">
+      <a name="text" val="J2"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(381,373)" name="Text">
+      <a name="text" val="J1"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(215,393)" name="Text">
+      <a name="text" val="Q2n"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(215,414)" name="Text">
+      <a name="text" val="Q0n"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="1" loc="(290,400)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="0" loc="(220,360)" name="Power"/>
+    <comp lib="6" loc="(381,403)" name="Text">
+      <a name="text" val="K1"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(381,473)" name="Text">
+      <a name="text" val="J0"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(217,504)" name="Text">
+      <a name="text" val="Q2n"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="6" loc="(381,503)" name="Text">
+      <a name="text" val="K0"/>
+      <a name="font" val="SansSerif plain 10"/>
+    </comp>
+    <comp lib="0" loc="(220,460)" name="Power"/>
+    <comp lib="6" loc="(371,204)" name="Text">
+      <a name="text" val="K0"/>
       <a name="font" val="SansSerif plain 10"/>
     </comp>
   </circuit>

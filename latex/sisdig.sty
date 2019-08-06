@@ -11,34 +11,40 @@
 % Unidades.
 \usepackage{siunitx}
 
-%Laço "for".
+% Laço "for".
 \usepackage{forloop}
 
-%Mapas de Karnaugh.
+% Mapas de Karnaugh.
 \usepackage{karnaughmap}
 
-%Desenhos gráficos em geral.
+% Desenhos gráficos em geral.
 \usepackage{tikz}
 \usepackage{tkz-fct}
 
-%Formas de onda digitais.
+% Formas de onda digitais.
 \usepackage{tikz-timing}
 \usetikztiminglibrary{clockarrows}
 \usetikztiminglibrary{overlays}
 
-%Diagramas.
+% Diagramas.
 \usepackage{diagmac2}
 
-%Unidades do SI.
+% Unidades do SI.
 \usepackage{siunitx}
+
+% Texto para testes.
+%	Utilizá-lo quando conveniente.
+%  Ver também: www.lipsum.com.
+%\usepackage{lipsum}
 
 % Valor de questão ou de item.
 \newcommand{\valor}[1]{\emph{(#1)}}
 
 % Contador e comando para questão.
+% 	  Ref. (sobre o \refstepcounter): https://tex.stackexchange.com/questions/21300/custom-counter-and-cross-referencing
 \newcounter{cquestao}
 \newcommand{\questao}[2][x]{%
-  \stepcounter{cquestao}\noindent\textbf{Questão \thecquestao} %
+  \refstepcounter{cquestao}\noindent\textbf{Questão \thecquestao} %
   \ifthenelse{\equal{#1}{x}}{%
     (#2).~\nolinebreak%
   }{%
@@ -63,8 +69,8 @@
 % Personalização para unidades SI (por siunitx}.
 \sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
 
-% EM DESENVOLVIMENTO...........................................
-% Ensaio de contagem para as pontuações da margem.
+% --- CONTAGEM DE PONTUAÇÕES ---------------------------------------------------
+% Contagem de pontuações a cada 0,25 pontos.
 
 \newcounter{cti}
 \newcounter{ctf}[cti]
