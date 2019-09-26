@@ -40,7 +40,7 @@
 % Valor de questão ou de item.
 \newcommand{\valor}[1]{\emph{(#1)}}
 
-% Contador e comando para questão.
+% Contador e comando para questão. O segundo comando adiciona uma quebra-de-página antes da questão.
 % 	  Ref. (sobre o \refstepcounter): https://tex.stackexchange.com/questions/21300/custom-counter-and-cross-referencing
 \newcounter{cquestao}
 \newcommand{\questao}[2][x]{%
@@ -52,9 +52,13 @@
     \marginpar{\textcolor{lightgray}{\pontuacoes{#1}{#2}}}%
   }%
 }
+\newcommand{\qquestao}[2][x]{\newpage{}\questao[#1]{#2}}
 
 % Enumeração por letras dos alfabeto.
 \newcommand{\alfaenum}{\renewcommand{\labelenumi}{\alph{enumi})}\renewcommand{\theenumi}{\labelenumi}}
+
+% Enumeração por números.
+\newcommand{\normenum}{\renewcommand{\labelenumi}{\arabic{enumi}.}\renewcommand{\theenumi}{\labelenumi}}
 
 % Espaço vertical geral (\espv) e para tabelas (\strutp) - em tabelas, \baselineskip = 0.
 % Nota: há o comando pré-definido \strut.
@@ -90,5 +94,8 @@
     }%
   }%
 }
+
+% --- PADRÕES GLOBAIS DEFINIDOS NESTE ESTILO ---------------------------------------------------
+\alfaenum
 
 \endinput
