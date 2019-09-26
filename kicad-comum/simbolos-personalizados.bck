@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP fonte_corrente
+D Fonte de corrente puramente simbólica.
+K Fonte de corrente, current source, i source
+$ENDCMP
+#
+$CMP seta_corrente
+D Seta de corrente puramente simbólica.
+K seta de corrente, current arrow
+$ENDCMP
+#
+#End Doc Library

@@ -236,12 +236,12 @@
 \color #faf0e6
 \end_branch
 \branch 2019-dg-ps
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch 2019-an-p1
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -83391,7 +83391,7 @@ dg
 \begin_layout Standard
 \begin_inset Branch 2019-dg-p1
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -90460,7 +90460,7 @@ questao[2]{00}
 \begin_layout Standard
 \begin_inset Branch 2019-dg-ps
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -94935,6 +94935,686 @@ Rótulo para indicar a última questão.
 \begin_inset CommandInset label
 LatexCommand label
 name "que:ultima-questao"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+an
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch 2019-an-p1
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaan{Primeira Prova Bimestral}{2019}{27.09.2019}{
+\backslash
+ref{que:ultima-questao-an-p1-2019}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+\color red
+GABARITO ETE103/N – P1/2019
+\size default
+\color inherit
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{00}
+\end_layout
+
+\end_inset
+
+ Um amperímetro com resistência interna de 
+\begin_inset Formula $\six 2{\ohm}$
+\end_inset
+
+ e um voltímetro com resistência interna de 
+\begin_inset Formula $\six{500}{\kohm}$
+\end_inset
+
+ foram utilizados para medir a corrente e a tensão nos correspondentes trechos
+ do circuito abaixo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p1/medicao-de-tensao-e-corrente.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Redesenhar o circuito, indicando o modelo de amperímetro e voltímetro real
+ (ou seja, incluir no circuito as resistências internas).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Calcular a corrente e a tensão exibida pelos instrumentos.
+ 
+\emph on
+(Nota: pontuação possível apenas se o item 
+\bar under
+a
+\bar default
+ estiver correto.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Calcular os respectivos valores teóricos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Calcular os respectivos erros porcentuais.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Justifique os erros observados.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ O que fazer para diminuir o erro significativo observado?
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[2]{00}
+\end_layout
+
+\end_inset
+
+ No circuito abaixo, faça uma transformação 
+\begin_inset Formula $\large{\Ydown}\rightarrow\triangle$
+\end_inset
+
+ e calcule 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ Aponte, no circuito transformado, as tensões e correntes utilizados na
+ determinação.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p1/circuito-estrela.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{50}
+\end_layout
+
+\end_inset
+
+ Dado o circuito abaixo, pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ Sistema de equações literais que o descreve (devem ser utilizadas as referência
+s apontadas; a resposta final deverá estar no espaço reservado).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Sistema de equações numéricas e correspondente solução do sistema para
+ o caso de 
+\begin_inset Formula $R_{1}=R_{2}=R_{3}=R_{4}=R_{5}=R=\six 2{\ohm}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{1}=V_{2}=V_{3}=V_{4}=V_{5}=U=\six 5{\V}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Os valores de 
+\begin_inset Formula $I_{\alpha}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{\beta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Classificar 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{3}$
+\end_inset
+
+ e apresentar as correspondentes justificativas.
+\end_layout
+
+\begin_layout Enumerate
+Acrescentando-se um ramo com um resistor e uma fonte de corrente ao circuito
+ anterior, obtém-se o novo circuito abaixo.
+ Neste, pede-se classificar 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+, apresentando as justificativas.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/analise-de-malhas.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="50text%">
+<column alignment="center" valignment="top" width="50text%">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+espv[19]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{array}{ll}
+{\color{red}a)\qquad} & {\color{red}\begin{cases}
+\alpha: & -V_{1}-R_{1}\,I_{1}-(I_{1}-I_{2})\,R_{3}-V_{2}=0\\
+\\
+\beta: & V_{2}+(I_{1}-I_{2})\,R_{3}-R_{2}\,I_{2}+-V_{3}=0
+\end{cases}}\\
+\\
+ & {\color{red}\begin{cases}
+\alpha: & (-R_{1}-R_{3})\,I_{1}+R_{3}\,I_{2}=V_{1}+V_{2}\\
+\\
+\beta: & R_{3}\,I_{1}+(-R_{2}-R_{3})\,I_{2}=V_{3}-V_{2}
+\end{cases}}\\
+\\
+\\
+\\
+b) & {\color{red}I_{2}>0.}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{00}
+\end_layout
+
+\end_inset
+
+ 
+\bar under
+Dimensionar
+\bar default
+ um resistor para atender às especificações do LED indicado.
+ Deseja-se uma corrente mínima de 15 
+\begin_inset Formula $\si{\mA}$
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Bases de valores comerciais de resistência:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+1,0 — 1,2 — 1,5 — 1,8 — 2,2 — 2,7 — 3,3 — 3,9 — 4,7 — 5,6 — 6,8 — 8,2
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Valores comerciais de potência:
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+\begin_inset Formula $\nicefrac{1}{8}\,\si{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{4}\,\si{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{2}\,\si{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 1{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 2{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 3{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six 5{\W}$
+\end_inset
+
+, 
+\begin_inset Formula $\six{10}{\W}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2018/an/led.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{00}
+\end_layout
+
+\end_inset
+
+ Dado o circuito e as correspondentes informações:
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Enumerate
+Determinar 
+\begin_inset Formula $P_{V_{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Determinar 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[0]{50}
+\end_layout
+
+\end_inset
+
+ Para os circuitos abaixo, calcular o 
+\begin_inset Formula $I_{S}$
+\end_inset
+
+ e o 
+\begin_inset Formula $V_{S}$
+\end_inset
+
+ indicados.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size small
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Rótulo para indicar a última questão.
+ Deixá-lo nesta última linha e não removê-lo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+(Certamente, não deverá haver o incremento de nenhum outro contador entre
+ o cabeçalho da última e este rótulo – como, por exemplo, o de seção ou
+ item.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "que:ultima-questao-an-p1-2019"
 
 \end_inset
 
