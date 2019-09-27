@@ -1,0 +1,25 @@
+Drill report for E:\Projetos\sisdig\1.3-laboratorio\projetos\depuracao-circuitos\circuito-01\circuito-01-com-defeito.kicad_pcb
+Created on 27-09-2019 20:30:32
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'circuito-01-com-defeito.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,90mm  0,035"  (82 holes)
+    T2  1,00mm  0,039"  (52 holes)
+    T3  1,50mm  0,059"  (2 holes)
+    T4  2,20mm  0,087"  (4 holes)
+
+    Total plated holes count 140
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

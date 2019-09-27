@@ -10,7 +10,7 @@
 %	Alterações de formatações deverão ser realizadas,
 %   preferencialmente, no pacote -- a não ser que seja
 %   algo muito específico para provas.
-\usepackage{../latex/sisdig}
+\usepackage{../latex-comum/sisdig}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -94965,6 +94965,28 @@ inverted 0
 status open
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Novo procedimento para o desenho dos circuitos:
+\end_layout
+
+\begin_layout Plain Layout
+Fazer os desenhos no KiCad (pode ser em uma única folha), exportá-los para
+ svg (por meio do menu Arquivo > Plotar...), abrir o svg no Gimp (com resolução
+ de 300 dpi), recortar cada desenho e salvá-los como png no diretório de
+ interesse.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -95037,7 +95059,7 @@ questao[2]{00}
 \align center
 \begin_inset Graphics
 	filename imagens/2019/an/p1/medicao-de-tensao-e-corrente.png
-	scale 75
+	scale 150
 
 \end_inset
 
@@ -95063,6 +95085,10 @@ valor{0,25}
 
  Redesenhar o circuito, indicando o modelo de amperímetro e voltímetro real
  (ou seja, incluir no circuito as resistências internas).
+\begin_inset VSpace 6cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -95086,6 +95112,10 @@ valor{0,5}
 a
 \bar default
  estiver correto.)
+\begin_inset VSpace 6cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -95102,6 +95132,10 @@ valor{0,5}
 \end_inset
 
  Calcular os respectivos valores teóricos.
+\begin_inset VSpace 6cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -95118,6 +95152,10 @@ valor{0,25}
 \end_inset
 
  Calcular os respectivos erros porcentuais.
+\begin_inset VSpace 4cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -95134,6 +95172,10 @@ valor{0,25}
 \end_inset
 
  Justifique os erros observados.
+\begin_inset VSpace 4cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -95150,6 +95192,10 @@ valor{0,25}
 \end_inset
 
  O que fazer para diminuir o erro significativo observado?
+\begin_inset VSpace 4cm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -95174,15 +95220,14 @@ qquestao[2]{00}
 \end_inset
 
 .
- Aponte, no circuito transformado, as tensões e correntes utilizados na
- determinação.
+ Aponte, no circuito transformado, as tensões e correntes utilizados para
+ os cálculos.
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename imagens/2019/an/p1/circuito-estrela.png
-	scale 75
 
 \end_inset
 
@@ -95197,12 +95242,27 @@ status open
 
 
 \backslash
-questao[2]{50}
+qquestao[3]{50}
 \end_layout
 
 \end_inset
 
- Dado o circuito abaixo, pede-se:
+ Considere-se o circuito abaixo:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p1/analise-de-malhas.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
 \end_layout
 
 \begin_layout Enumerate
@@ -95218,133 +95278,15 @@ valor{1,5}
 
 \end_inset
 
- Sistema de equações literais que o descreve (devem ser utilizadas as referência
-s apontadas; a resposta final deverá estar no espaço reservado).
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- Sistema de equações numéricas e correspondente solução do sistema para
- o caso de 
-\begin_inset Formula $R_{1}=R_{2}=R_{3}=R_{4}=R_{5}=R=\six 2{\ohm}$
-\end_inset
-
- e 
-\begin_inset Formula $V_{1}=V_{2}=V_{3}=V_{4}=V_{5}=U=\six 5{\V}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Os valores de 
-\begin_inset Formula $I_{\alpha}$
-\end_inset
-
- e 
-\begin_inset Formula $I_{\beta}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Classificar 
-\begin_inset Formula $V_{1}$
-\end_inset
-
-, 
-\begin_inset Formula $V_{2}$
-\end_inset
-
- e 
-\begin_inset Formula $V_{3}$
-\end_inset
-
- e apresentar as correspondentes justificativas.
-\end_layout
-
-\begin_layout Enumerate
-Acrescentando-se um ramo com um resistor e uma fonte de corrente ao circuito
- anterior, obtém-se o novo circuito abaixo.
- Neste, pede-se classificar 
-\begin_inset Formula $I_{0}$
-\end_inset
-
-, apresentando as justificativas.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename imagens/2018/an/analise-de-malhas.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+ Sistema de 
+\series bold
+equações literais
+\series default
+ que o descreve.
+ Escreva a resposta final no espaço reservado.
 \begin_inset Branch detalhes-enunciado
 inverted 0
-status collapsed
-
-\begin_layout Standard
-\noindent
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="50text%">
-<column alignment="center" valignment="top" width="50text%">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
 status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-espv[19]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Standard
 \noindent
@@ -95362,6 +95304,131 @@ espv[19]
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações numéricas
+\series default
+.
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Os valores de 
+\begin_inset Formula $I_{\alpha}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{\beta}$
+\end_inset
+
+.
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ Classificar 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{3}$
+\end_inset
+
+ e apresentar as correspondentes justificativas.
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Acrescentando-se um ramo com um resistor e uma fonte de corrente ao circuito
+ anterior, obtém-se o novo circuito abaixo.
+ Neste, pede-se classificar 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+, apresentando as justificativas.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p1/analise-de-malhas-extra.png
+	scale 75
 
 \end_inset
 
@@ -95400,6 +95467,147 @@ b) & {\color{red}I_{2}>0.}
 \end_inset
 
 
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[2]{00}
+\end_layout
+
+\end_inset
+
+ Conside-se o circuito abaixo e as correspondentes informações:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p1/potencias.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Determinar a potência em 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $P_{V_{2}}$
+\end_inset
+
+).
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ Determinar 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+.
+\begin_inset VSpace 8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[0]{50}
+\end_layout
+
+\end_inset
+
+ Para os circuitos abaixo, calcular o 
+\begin_inset Formula $I_{S}$
+\end_inset
+
+ e o 
+\begin_inset Formula $V_{S}$
+\end_inset
+
+ indicados.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename imagens/2019/an/p1/divisores.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -95419,12 +95627,8 @@ questao[2]{00}
 \bar under
 Dimensionar
 \bar default
- um resistor para atender às especificações do LED indicado.
- Deseja-se uma corrente mínima de 15 
-\begin_inset Formula $\si{\mA}$
-\end_inset
-
-.
+ o resistor do circuito abaixo para atender às especificações indicadas
+ do LED.
 \begin_inset VSpace smallskip
 \end_inset
 
@@ -95491,95 +95695,14 @@ Valores comerciais de potência:
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename imagens/2018/an/led.png
+	filename imagens/2019/an/p1/dimensionamento-de-resistor.png
+	width 90text%
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[2]{00}
-\end_layout
-
-\end_inset
-
- Dado o circuito e as correspondentes informações:
-\end_layout
-
-\begin_layout Standard
-Pede-se:
-\end_layout
-
-\begin_layout Enumerate
-Determinar 
-\begin_inset Formula $P_{V_{2}}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-Determinar 
-\begin_inset Formula $R_{1}$
-\end_inset
-
-, 
-\begin_inset Formula $R_{2}$
-\end_inset
-
- e 
-\begin_inset Formula $V_{2}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[0]{50}
-\end_layout
-
-\end_inset
-
- Para os circuitos abaixo, calcular o 
-\begin_inset Formula $I_{S}$
-\end_inset
-
- e o 
-\begin_inset Formula $V_{S}$
-\end_inset
-
- indicados.
 \end_layout
 
 \begin_layout Standard
