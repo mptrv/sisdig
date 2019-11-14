@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:circuito-01-com-defeito-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Depuração de Circuitos - Circuito 01"
-Date "2019-04-21"
-Rev "02"
+Date "2019-11-14"
+Rev "03"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
 Comment2 "Com defeitos propositais."
@@ -77,17 +78,6 @@ F 1 "74LS32" H 5900 3400 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5900 3450 50  0001 C CNN
 F 3 "" H 5900 3450 50  0001 C CNN
 	3    5900 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L circuito-01-rescue:74LS386 U3
-U 3 1 5B0DB8C7
-P 8500 3850
-F 0 "U3" H 8500 3900 50  0000 C CNN
-F 1 "74LS386" H 8500 3800 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8500 3850 50  0001 C CNN
-F 3 "" H 8500 3850 50  0001 C CNN
-	3    8500 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -204,17 +194,13 @@ Wire Wire Line
 	6550 4400 6600 4400
 Connection ~ 6550 4300
 Wire Wire Line
-	7900 3750 7850 3750
-Wire Wire Line
 	7850 3750 7850 3350
 Wire Wire Line
 	7850 3350 7800 3350
 Wire Wire Line
-	7900 3950 7850 3950
-Wire Wire Line
 	9150 3850 9150 3900
 Wire Wire Line
-	9150 3850 9100 3850
+	9150 3850 8800 3850
 Wire Wire Line
 	6600 4200 6550 4200
 Wire Wire Line
@@ -698,11 +684,11 @@ U2-11
 Text Label 7850 4300 0    50   ~ 0
 U2-08
 Text Label 7850 3950 2    50   ~ 0
-U3-09
-Text Label 7850 3750 2    50   ~ 0
-U3-08
-Text Label 9150 3850 0    50   ~ 0
 U3-10
+Text Label 7850 3750 2    50   ~ 0
+U3-09
+Text Label 9150 3850 0    50   ~ 0
+U3-08
 $Comp
 L circuito-01-rescue:GND #PWR0101
 U 1 1 5CC813DF
@@ -752,63 +738,12 @@ F 3 "" H 3050 5350 50  0001 C CNN
 	4    3050 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L circuito-01-rescue:74LS386 U3
-U 2 1 5CCB66E7
-P 4950 5350
-F 0 "U3" H 4950 5400 50  0000 C CNN
-F 1 "74LS386" H 4950 5300 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4950 5350 50  0001 C CNN
-F 3 "" H 4950 5350 50  0001 C CNN
-	2    4950 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L circuito-01-rescue:74LS386 U3
-U 1 1 5CCB67AB
-P 6850 5350
-F 0 "U3" H 6850 5400 50  0000 C CNN
-F 1 "74LS386" H 6850 5300 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6850 5350 50  0001 C CNN
-F 3 "" H 6850 5350 50  0001 C CNN
-	1    6850 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L circuito-01-rescue:74LS386 U3
-U 4 1 5CCB6825
-P 8750 5350
-F 0 "U3" H 8750 5400 50  0000 C CNN
-F 1 "74LS386" H 8750 5300 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8750 5350 50  0001 C CNN
-F 3 "" H 8750 5350 50  0001 C CNN
-	4    8750 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 5250 2400 5250
 Wire Wire Line
 	2450 5450 2400 5450
 Wire Wire Line
 	3650 5350 3700 5350
-Wire Wire Line
-	4350 5250 4300 5250
-Wire Wire Line
-	4350 5450 4300 5450
-Wire Wire Line
-	5550 5350 5600 5350
-Wire Wire Line
-	6250 5250 6200 5250
-Wire Wire Line
-	6250 5450 6200 5450
-Wire Wire Line
-	7450 5350 7500 5350
-Wire Wire Line
-	8150 5250 8100 5250
-Wire Wire Line
-	8150 5450 8100 5450
-Wire Wire Line
-	9350 5350 9400 5350
 Text Label 2400 5250 2    50   ~ 0
 U1-12
 Text Label 2400 5450 2    50   ~ 0
@@ -816,9 +751,9 @@ U1-13
 Text Label 3700 5350 0    50   ~ 0
 U1-11
 Text Label 4300 5250 2    50   ~ 0
-U3-05
+U3-04
 Text Label 4300 5450 2    50   ~ 0
-U3-06
+U3-05
 Text Label 6200 5250 2    50   ~ 0
 U3-01
 Text Label 6200 5450 2    50   ~ 0
@@ -832,7 +767,7 @@ U3-11
 Text Label 7500 5350 0    50   ~ 0
 U3-03
 Text Label 5600 5350 0    50   ~ 0
-U3-04
+U3-06
 $Comp
 L circuito-01-rescue:VCC #PWR0103
 U 1 1 5CBEF2FF
@@ -976,9 +911,9 @@ U1-01
 Text Label 10150 1900 2    50   ~ 0
 U2-02
 Text Label 9300 2000 2    50   ~ 0
-U3-10
+U3-08
 Text Label 10150 2000 2    50   ~ 0
-U3-10
+U3-08
 Text Label 9300 1800 2    50   ~ 0
 U1-02
 Text Label 10150 1800 2    50   ~ 0
@@ -1002,21 +937,8 @@ Wire Wire Line
 	9300 2100 9300 2200
 Wire Wire Line
 	2900 3700 3350 3700
-$Comp
-L circuito-01-rescue:GND #PWR0106
-U 1 1 5D8F25AA
-P 3150 4700
-F 0 "#PWR0106" H 3150 4450 50  0001 C CNN
-F 1 "GND" H 3150 4550 50  0000 C CNN
-F 2 "" H 3150 4700 50  0001 C CNN
-F 3 "" H 3150 4700 50  0001 C CNN
-	1    3150 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 4700 3150 3800
-Text Notes 2650 5000 0    50   ~ 0
-Este terra será um defeito!
+Text Notes 9500 2325 0    50   ~ 0
+Um jumper aqui para o\nterra será um defeito!
 Text Notes 7650 4500 0    50   ~ 0
 A falta desta ligação\nserá um defeito!
 Text Notes 4800 6100 0    50   ~ 0
@@ -1025,4 +947,70 @@ Wire Wire Line
 	10150 2100 10250 2100
 Text Label 10150 2100 2    50   ~ 0
 U2-02
+$Comp
+L 74xx:74LS86 U3
+U 3 1 5DCDE195
+P 8500 3850
+F 0 "U3" H 8500 4175 50  0000 C CNN
+F 1 "74LS86" H 8500 4084 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8500 3850 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 8500 3850 50  0001 C CNN
+	3    8500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3750 8200 3750
+Wire Wire Line
+	7850 3950 8200 3950
+$Comp
+L 74xx:74LS86 U3
+U 2 1 5DCF3D68
+P 4950 5350
+F 0 "U3" H 4950 5675 50  0000 C CNN
+F 1 "74LS86" H 4950 5584 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4950 5350 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4950 5350 50  0001 C CNN
+	2    4950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U3
+U 1 1 5DCF3E4E
+P 6850 5350
+F 0 "U3" H 6850 5675 50  0000 C CNN
+F 1 "74LS86" H 6850 5584 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6850 5350 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 6850 5350 50  0001 C CNN
+	1    6850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U3
+U 4 1 5DCF3F0C
+P 8750 5350
+F 0 "U3" H 8750 5675 50  0000 C CNN
+F 1 "74LS86" H 8750 5584 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8750 5350 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 8750 5350 50  0001 C CNN
+	4    8750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5250 4650 5250
+Wire Wire Line
+	4300 5450 4650 5450
+Wire Wire Line
+	5250 5350 5600 5350
+Wire Wire Line
+	6200 5250 6550 5250
+Wire Wire Line
+	6200 5450 6550 5450
+Wire Wire Line
+	7150 5350 7500 5350
+Wire Wire Line
+	8100 5250 8450 5250
+Wire Wire Line
+	8100 5450 8450 5450
+Wire Wire Line
+	9050 5350 9400 5350
 $EndSCHEMATC
