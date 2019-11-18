@@ -1,7 +1,7 @@
 Saídas:
 -------
 
-Iniciando nova simulação em ter 18. dez 2018 as 20:33:29:239
+Iniciando nova simulação em seg 18. nov 2019 as 17:46:44:506
 
 criando netlist...terminado.
 ComeçandoC:/Program Files (x86)/Qucs-0.0.19/bin/qucsator.exe
@@ -11,9 +11,8 @@ modules to load: 0
 factorycreate.size() is 0
 factorycreate has registered:
 parsing netlist...
-checking netlist...
 
-Erros encontrados durante simulação em ter 18. dez 2018 as 20:33:29:451
+Erros encontrados durante simulação em seg 18. nov 2019 as 17:46:44:602
 Abortado.
 
 
@@ -21,5 +20,5 @@ Abortado.
 Errors and Warnings:
 --------------------
 
-checker error, no actions defined: nothing to do
+line 7: syntax error, unexpected Identifier, expecting '"'
 
