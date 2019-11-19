@@ -241,12 +241,12 @@
 \color #faf0e6
 \end_branch
 \branch 2019-an-p1
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch 2019-an-p2
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -40120,7 +40120,7 @@ status collapsed
 \begin_layout Standard
 \begin_inset Branch detalhes-enunciado
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset VSpace 4cm
@@ -95750,6 +95750,914 @@ name "que:ultima-questao-an-p1-2019"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch 2019-an-p2
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaan{Segunda Prova Bimestral}{2019}{18.11.2019}{
+\backslash
+ref{que:ultima-questao-an-p2-2019}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Dado o circuito abaixo, pede-se 
+\begin_inset Formula $v_{x}(t)$
+\end_inset
+
+ e 
+\begin_inset Formula $i_{x}(t)$
+\end_inset
+
+ para 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+.
+ Considerar capacitores e indutores descarregados em 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p2/no-inicio-fim.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[3]{0}
+\end_layout
+
+\end_inset
+
+ Inicialmente, 
+\begin_inset Formula $L$
+\end_inset
+
+ encontra-se descarregado.
+ Nos instantes 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{3}$
+\end_inset
+
+, a chave é comutada para os pontos indicados, permanecendo lá até o próximo
+ instante.
+ Pede-se traçar o esboço de 
+\begin_inset Formula $i_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $v_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ para 
+\begin_inset Formula $0\leqslant t\leqslant\SI{15}{\micro\s}$
+\end_inset
+
+, 
+\emph on
+\bar under
+indicando os valores dos pontos notáveis
+\emph default
+\bar default
+.
+ Ainda, indicar, no local reservado, os valores dos cálculos auxiliares.
+ 
+\emph on
+(Nota: considerar as referências de tensão e corrente no indutor de acordo
+ com o apresentado nas aulas de teoria.)
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename imagens/2019/an/p2/carga-descarga-indutor.png
+	lyxscale 70
+	width 90text%
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Alimentou-se um capacitor inicialmente descarregado com um gerador de áudio,
+ cuja resistência interna é de 
+\begin_inset Formula $\six{600}{\ohm}$
+\end_inset
+
+.
+ O gerador fornece uma onda quadrada com 50% de ciclo de trabalho, tensão
+ mínima de 
+\begin_inset Formula $\six 0{\V}$
+\end_inset
+
+, tensão máxima (de pico) de 
+\begin_inset Formula $\six{12}{\V}$
+\end_inset
+
+ e frequência de 
+\begin_inset Formula $\six{100}{\Hz}$
+\end_inset
+
+.
+ Pede-se traçar 
+\begin_inset Formula $v_{e}(t)\,\times\,t$
+\end_inset
+
+ e 
+\begin_inset Formula $v_{c}(t)\,\times\,t$
+\end_inset
+
+, 
+\bar under
+sincronizados no tempo
+\bar default
+ e com cotas no gráfico, para dois períodos de 
+\begin_inset Formula $v_{e}(t)$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p2/capacitor-gerador-de-audio.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obtenção do circuito equivalente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+(Continuação da Questão 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thecquestao
+\end_layout
+
+\end_inset
+
+.)
+\emph default
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gráficos:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.6, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=10, ymin=0, ymax=4]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzGrid
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_e(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1.6, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=10, ymin=0, ymax=4]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzGrid
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_c(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Calcular 
+\begin_inset Formula $V_{R3}$
+\end_inset
+
+ pelo 
+\emph on
+Teorema da Superposição
+\emph default
+.
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename imagens/2019/an/p2/superposicao.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Para o circuito abaixo, deseja-se obter 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+ Para tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Obter o sistema de equações 
+\series bold
+\emph on
+literais
+\series default
+\emph default
+ que resolve o circuito, por 
+\emph on
+Análise Nodal
+\emph default
+.
+ 
+\emph on
+(Nota: a resposta há de ser na forma 
+\begin_inset Formula $V_{A}=\ldots$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Determinar o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p2/analise-nodal.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[1]{50}
+\end_layout
+
+\end_inset
+
+ Considere-se o circuito abaixo:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2019/an/p2/analise-de-malhas.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações literais
+\series default
+ que o descreve.
+ Escreva a resposta final no espaço reservado.
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações numéricas
+\series default
+.
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Os valores de 
+\begin_inset Formula $I_{\alpha}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{\beta}$
+\end_inset
+
+.
+\begin_inset VSpace 8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[0]{50}
+\end_layout
+
+\end_inset
+
+ 
+\bar under
+A partir das definições de capacitância e indutância
+\bar default
+, pede-se provar, por análise das dimensões, que as expressões 
+\begin_inset Formula $R\,C$
+\end_inset
+
+ e 
+\begin_inset Formula $L/R$
+\end_inset
+
+ possuem unidade de tempo.
+ 
+\emph on
+(Nota: se não partir das definições ou se as definições forem incorretas,
+ não será considerada a solução, nem como parcialmente correta.)
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size small
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Rótulo para indicar a última questão.
+ Deixá-lo nesta última linha e não removê-lo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+(Certamente, não deverá haver o incremento de nenhum outro contador entre
+ o cabeçalho da última e este rótulo – como, por exemplo, o de seção ou
+ item.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "que:ultima-questao-an-p2-2019"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Comment
 status open
 
@@ -96918,6 +97826,550 @@ valor{1,0}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[3]{0}
+\end_layout
+
+\end_inset
+
+ Para o circuito abaixo, deseja-se encontrar o 
+\emph on
+Circuito Equivalente de
+\emph default
+ 
+\emph on
+Thévenin e de Norton 
+\emph default
+e a
+\emph on
+ Máxima Transferência de Potência 
+\emph default
+para 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2017/an/thevenin-mtp.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $V_{TH}$
+\end_inset
+
+ entre os pontos 
+\series bold
+A
+\series default
+ e 
+\series bold
+B
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $R_{TH}$
+\end_inset
+
+ entre os pontos 
+\series bold
+A
+\series default
+ e 
+\series bold
+B
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Desenho do 
+\emph on
+Circuito Equivalente de Thévenin 
+\emph default
+(apenas do circuito equivalente de Thévenin!).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Desenho do 
+\emph on
+Circuito Equivalente de Norton
+\emph default
+ (apenas do circuito equivalente de Norton!).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Valor de 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+ para Máxima Transferência de Potência.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ O valor da máxima potência que pode ser entregue à carga 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{3,5}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+3,5
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+3,25
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+3,0
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+2,75
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+2,5
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+2,25
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+2,0
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1,75
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1,5
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1,25
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,75
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,5
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,25
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+
+ Deseja-se estudar o efeito do indutor no circuito abaixo.
+ Com tal objetivo, para facilitar a análise, será encontrado um circuito
+ equivalente por meio do 
+\emph on
+Teorema de
+\emph default
+ 
+\emph on
+Thévenin
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/teorema-de-thevenin#02.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $V_{TH}$
+\end_inset
+
+ entre os pontos 
+\series bold
+A
+\series default
+ e 
+\series bold
+B
+\series default
+.
+ Resolver o circuito por 
+\series bold
+\emph on
+Análise Nodal
+\series default
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $R_{TH}$
+\end_inset
+
+ entre os pontos 
+\series bold
+A
+\series default
+ e 
+\series bold
+B
+\series default
+.
+ Resolver o circuito por 
+\series bold
+\emph on
+Análise Nodal
+\series default
+\emph default
+.
+ (Recomenda-se utilizar a técnica 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $R_{TH}=\cfrac{v_{t}}{i_{t}}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Desenho do 
+\emph on
+Circuito Equivalente de Thévenin 
+\emph default
+(apenas do circuito equivalente de Thévenin!).
+ 
+\emph on
+(Será considerado apenas se informados os valores para 
+\begin_inset Formula $V_{TH}$
+\end_inset
+
+ e 
+\begin_inset Formula $R_{TH}$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Desenho do circuito simplificado que será analisado, com os valores dos
+ componentes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -97285,6 +98737,280 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Obter o sistema de equações que resolve o circuito seguinte.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/analise-de-malhas-02.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{1}+\underline{\hspace{5cm}}\,I_{2}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{1}+\underline{\hspace{5cm}}\,I_{2}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/analise-de-malhas-02-tensoes.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 3cm
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & V_{1}-(I_{1}-I_{2})\,R_{3}+\mathrm{k}\,I_{2}-R_{1}\,I_{1}=0\\
+\\
+\beta: & R_{3}(I_{1}-I_{2})-R_{2}\,I_{2}+V_{2}-\mathrm{k}\,I_{2}=0
+\end{cases}$
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 3cm
+\end_inset
+
+
+\begin_inset Formula ${\color{red}\begin{cases}
+\alpha: & (R_{1}+R_{3})\,I_{1}-(R_{3}+\mathrm{k})\,I_{2}=V_{1}\\
+\\
+\beta: & -R_{3}\,I_{1}+(R_{2}+R_{3}+\mathrm{k})\,I_{2}=V_{2}
+\end{cases}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Por meio do 
+\emph on
+Teorema da Superposição de Efeitos
+\emph default
+, calcular a tensão sobre 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $V_{R_{2}}$
+\end_inset
+
+), 
+\emph on
+conforme
+\emph default
+ 
+\emph on
+o referencial adotado.
+\emph default
+
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2016/ps/superposicao.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 12cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao{1,0}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Marginal
+status collapsed
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,75
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,5
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,25
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+
+ 
+\bar under
+A partir das definições de capacitância e indutância
+\bar default
+, pede-se provar, por análise das dimensões, que as expressões 
+\begin_inset Formula $R\,C$
+\end_inset
+
+ e 
+\begin_inset Formula $L/R$
+\end_inset
+
+ possuem unidade de tempo.
+ 
+\emph on
+(Nota: se não partir das definições ou se as definições forem incorretas,
+ não será considerada a solução, nem como parcialmente correta.)
 \end_layout
 
 \end_inset
