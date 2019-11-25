@@ -1,5 +1,5 @@
-Drill report for E:\Projetos\sisdig\1.3-laboratorio\projetos\depuracao-circuitos\circuito-01\circuito-01-com-defeito-trilhas-0.5mm.kicad_pcb
-Created on 14-11-2019 13:25:46
+Drill report for /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/depuracao-circuitos/circuito-01/circuito-01-com-defeito-trilhas-0.5mm.kicad_pcb
+Created on Seg 25 Nov 2019 00:16:22 -03
 
 Copper Layer Stackup:
     =============================================================
@@ -7,7 +7,7 @@ Copper Layer Stackup:
     L2 :  B.Cu                      back
 
 
-Drill file 'circuito-01-com-defeito-trilhas-0.5mm.drl' contains
+Drill file 'circuito-01-com-defeito-trilhas-0.5mm-PTH.drl' contains
     plated through holes:
     =============================================================
     T1  0,90mm  0,035"  (82 holes)
@@ -18,7 +18,7 @@ Drill file 'circuito-01-com-defeito-trilhas-0.5mm.drl' contains
     Total plated holes count 140
 
 
-Not plated through holes are merged with plated holes
+Drill file 'circuito-01-com-defeito-trilhas-0.5mm-NPTH.drl' contains
     unplated through holes:
     =============================================================
 

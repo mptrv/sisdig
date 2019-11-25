@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Depuração de Circuitos - Circuito 01"
-Date "2019-11-14"
-Rev "03"
+Date "2019-11-24"
+Rev "04"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
 Comment2 "Com defeitos propositais."
@@ -946,7 +946,7 @@ O terceiro defeito será um dos CIs queimado!
 Wire Wire Line
 	10150 2100 10250 2100
 Text Label 10150 2100 2    50   ~ 0
-U2-02
+U1-02
 $Comp
 L 74xx:74LS86 U3
 U 3 1 5DCDE195
@@ -1025,10 +1025,10 @@ F 3 "74xx/74ls86.pdf" H 1950 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L circuito-01-rescue:VCC #PWR?
+L circuito-01-rescue:VCC #PWR0106
 U 1 1 5DCE5C59
 P 1950 4900
-F 0 "#PWR?" H 1950 4750 50  0001 C CNN
+F 0 "#PWR0106" H 1950 4750 50  0001 C CNN
 F 1 "VCC" H 1950 5050 50  0000 C CNN
 F 2 "" H 1950 4900 50  0000 C CNN
 F 3 "" H 1950 4900 50  0000 C CNN
@@ -1036,10 +1036,10 @@ F 3 "" H 1950 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L circuito-01-rescue:GND #PWR?
+L circuito-01-rescue:GND #PWR0107
 U 1 1 5DCE5CA4
 P 1950 6000
-F 0 "#PWR?" H 1950 5750 50  0001 C CNN
+F 0 "#PWR0107" H 1950 5750 50  0001 C CNN
 F 1 "GND" H 1950 5850 50  0000 C CNN
 F 2 "" H 1950 6000 50  0000 C CNN
 F 3 "" H 1950 6000 50  0000 C CNN
