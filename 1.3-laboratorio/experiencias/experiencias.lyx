@@ -260,57 +260,57 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-ponte-wheatstone
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-revisao
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-superposicao-thevenin-norton
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-mtp
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-rc
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -320,17 +320,17 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-lissajous
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-osciloscopio-retif-gramp
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-projeto
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -340,7 +340,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-galvanometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -350,7 +350,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch cm-an-textos-extras
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -17354,7 +17354,7 @@ Lista de Materiais
 
 \family typewriter
 \emph on
-01.04.2019
+13.04.2020
 \end_layout
 
 \end_inset
@@ -17366,7 +17366,7 @@ Lista de Materiais
 
 \family typewriter
 \emph on
-03.04.2019
+15.04.2020
 \end_layout
 
 \end_inset
@@ -17391,7 +17391,7 @@ Componentes Comprados
 
 \family typewriter
 \emph on
-06.05.2019
+27.04.2020
 \end_layout
 
 \end_inset
@@ -17403,7 +17403,7 @@ Componentes Comprados
 
 \family typewriter
 \emph on
-08.05.2019
+29.04.2020
 \end_layout
 
 \end_inset
@@ -17434,7 +17434,7 @@ Display
 
 \family typewriter
 \emph on
-06.05.2019
+27.04.2020
 \end_layout
 
 \end_inset
@@ -17446,7 +17446,7 @@ Display
 
 \family typewriter
 \emph on
-08.05.2019
+29.04.2020
 \end_layout
 
 \end_inset
@@ -17471,7 +17471,7 @@ Apresentação Antecipada
 
 \family typewriter
 \emph on
-27.05.2019
+01.06.2020
 \end_layout
 
 \end_inset
@@ -17483,7 +17483,7 @@ Apresentação Antecipada
 
 \family typewriter
 \emph on
-29.05.2019
+03.06.2020
 \end_layout
 
 \end_inset
@@ -17508,7 +17508,7 @@ Apresentação Final
 
 \family typewriter
 \emph on
-03.06.2019
+08.06.2020
 \end_layout
 
 \end_inset
@@ -17520,7 +17520,7 @@ Apresentação Final
 
 \family typewriter
 \emph on
-05.06.2019
+10.06.2020
 \end_layout
 
 \end_inset
@@ -17545,7 +17545,7 @@ Repescagem
 
 \family typewriter
 \emph on
-24.06.2019
+29.06.2020
 \end_layout
 
 \end_inset
@@ -17557,7 +17557,7 @@ Repescagem
 
 \family typewriter
 \emph on
-26.06.2019
+01.07.2020
 \end_layout
 
 \end_inset
@@ -18071,11 +18071,15 @@ Esquema Elétrico
 O Esquema Elétrico do projeto proposto encontra-se no anexo a este roteiro.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Section
 Cronograma de Referência
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Um cronograma detalhado de referência é apresentado na 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -18086,7 +18090,7 @@ reference "tab:Cronograma-de-referencia-dado-digital"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float table
 wide false
 sideways false
@@ -18581,7 +18585,9 @@ Repescagem
 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -50390,7 +50396,7 @@ Apresentação do esquema elétrico para aprovação
 
 \family typewriter
 \emph on
-09.09.2019
+09.09.2020
 \end_layout
 
 \end_inset
@@ -50402,7 +50408,7 @@ Apresentação do esquema elétrico para aprovação
 
 \family typewriter
 \emph on
-11.09.2019
+11.09.2020
 \end_layout
 
 \end_inset
@@ -50425,7 +50431,7 @@ Reapresentação do esquema elétrico para aprovação
 
 \family typewriter
 \emph on
-16.09.2019
+16.09.2020
 \end_layout
 
 \end_inset
@@ -50437,7 +50443,7 @@ Reapresentação do esquema elétrico para aprovação
 
 \family typewriter
 \emph on
-18.09.2019
+18.09.2020
 \end_layout
 
 \end_inset
@@ -50462,7 +50468,7 @@ Apresentação Antecipada
 
 \family typewriter
 \emph on
-04.11.2019
+04.11.2020
 \end_layout
 
 \end_inset
@@ -50474,7 +50480,7 @@ Apresentação Antecipada
 
 \family typewriter
 \emph on
-06.11.2019
+06.11.2020
 \end_layout
 
 \end_inset
@@ -50499,7 +50505,7 @@ Apresentação Final
 
 \family typewriter
 \emph on
-11.11.2019
+11.11.2020
 \end_layout
 
 \end_inset
@@ -50511,7 +50517,7 @@ Apresentação Final
 
 \family typewriter
 \emph on
-13.11.2019
+13.11.2020
 \end_layout
 
 \end_inset
@@ -50536,7 +50542,7 @@ Repescagem
 
 \family typewriter
 \emph on
-02.12.2019
+02.12.2020
 \end_layout
 
 \end_inset
@@ -50548,7 +50554,7 @@ Repescagem
 
 \family typewriter
 \emph on
-04.12.2019
+04.12.2020
 \end_layout
 
 \end_inset
