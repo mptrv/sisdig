@@ -21,4 +21,6 @@ Text Notes 850  2050 0    50   ~ 0
 Circuito com Carta de tempos.
 Text Notes 850  2300 0    50   ~ 0
 Operações aritméticas em binário, em 1 byte.
+Text Notes 900  2700 0    50   ~ 0
+=> Circuitos feitos no Logisim e no Digital. <=
 $EndSCHEMATC

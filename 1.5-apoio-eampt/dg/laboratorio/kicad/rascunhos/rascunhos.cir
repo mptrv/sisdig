@@ -1,0 +1,5 @@
+.title KiCad schematic
+R1 /A GND 10k
+R2 Net-_R2-Pad1_ /A 10k
+V1 Net-_R2-Pad1_ GND 5V
+.end
