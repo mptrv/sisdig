@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>contador-assincrono.dig</elementName>
+      <elementAttributes/>
+      <pos x="500" y="1160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-ck0.dig</elementName>
+      <elementAttributes/>
+      <pos x="40" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-ck0-contador-1bit.dig</elementName>
+      <elementAttributes/>
+      <pos x="400" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck0-contador-1bit.dig</elementName>
+      <elementAttributes/>
+      <pos x="40" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck0-contador-2bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="400" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck0-contador-4bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="40" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>74HC74</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>7474.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>7474.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>14</int>
+        </entry>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>http://pdf.datasheetcatalog.com/datasheet/on_semiconductor2/74HC74.PDF</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="640"/>
+    </visualElement>
+  </visualElements>
+  <wires/>
+  <measurementOrdering/>
+</circuit>
