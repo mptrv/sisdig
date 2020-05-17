@@ -384,7 +384,7 @@
           <string>Clock em borda de subida!</string>
         </entry>
       </elementAttributes>
-      <pos x="200" y="180"/>
+      <pos x="220" y="180"/>
     </visualElement>
   </visualElements>
   <wires>

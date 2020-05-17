@@ -10,7 +10,6 @@
           <string>inverterConfig</string>
           <inverterConfig>
             <string>Set</string>
-            <string>C</string>
             <string>Clr</string>
           </inverterConfig>
         </entry>
@@ -86,7 +85,6 @@
           <string>inverterConfig</string>
           <inverterConfig>
             <string>Set</string>
-            <string>C</string>
             <string>Clr</string>
           </inverterConfig>
         </entry>
@@ -251,7 +249,6 @@
           <string>inverterConfig</string>
           <inverterConfig>
             <string>Set</string>
-            <string>C</string>
             <string>Clr</string>
           </inverterConfig>
         </entry>
@@ -289,7 +286,6 @@
           <string>inverterConfig</string>
           <inverterConfig>
             <string>Set</string>
-            <string>C</string>
             <string>Clr</string>
           </inverterConfig>
         </entry>
@@ -380,17 +376,17 @@
       <elementName>Text</elementName>
       <elementAttributes>
         <entry>
-          <string>textOrientation</string>
-          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
-        </entry>
-        <entry>
           <string>textFontSize</string>
           <int>14</int>
         </entry>
         <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
           <string>Description</string>
           <string>Contador crescente com
-incremento em borda de descida</string>
+incremento em borda de subida!</string>
         </entry>
       </elementAttributes>
       <pos x="320" y="180"/>
@@ -487,7 +483,19 @@ incremento em borda de descida</string>
     </wire>
     <wire>
       <p1 x="240" y="340"/>
-      <p2 x="380" y="340"/>
+      <p2 x="400" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="340"/>
+      <p2 x="580" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="660" y="340"/>
+      <p2 x="760" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="340"/>
+      <p2 x="940" y="340"/>
     </wire>
     <wire>
       <p1 x="820" y="500"/>
@@ -590,6 +598,10 @@ incremento em borda de descida</string>
       <p2 x="480" y="320"/>
     </wire>
     <wire>
+      <p1 x="480" y="320"/>
+      <p2 x="480" y="340"/>
+    </wire>
+    <wire>
       <p1 x="320" y="260"/>
       <p2 x="320" y="300"/>
     </wire>
@@ -620,6 +632,10 @@ incremento em borda de descida</string>
     <wire>
       <p1 x="840" y="280"/>
       <p2 x="840" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="320"/>
+      <p2 x="840" y="340"/>
     </wire>
     <wire>
       <p1 x="520" y="260"/>
@@ -660,6 +676,10 @@ incremento em borda de descida</string>
     <wire>
       <p1 x="660" y="280"/>
       <p2 x="660" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="660" y="320"/>
+      <p2 x="660" y="340"/>
     </wire>
     <wire>
       <p1 x="1080" y="460"/>

@@ -6,7 +6,7 @@
     <visualElement>
       <elementName>contador-assincrono.dig</elementName>
       <elementAttributes/>
-      <pos x="500" y="1160"/>
+      <pos x="580" y="1880"/>
     </visualElement>
     <visualElement>
       <elementName>flip-flop-d-ck0.dig</elementName>
@@ -16,7 +16,7 @@
     <visualElement>
       <elementName>flip-flop-d-ck0-contador-1bit.dig</elementName>
       <elementAttributes/>
-      <pos x="400" y="140"/>
+      <pos x="480" y="140"/>
     </visualElement>
     <visualElement>
       <elementName>flip-flop-d-s0-r0-ck0-contador-1bit.dig</elementName>
@@ -26,7 +26,7 @@
     <visualElement>
       <elementName>flip-flop-d-s0-r0-ck0-contador-2bits.dig</elementName>
       <elementAttributes/>
-      <pos x="400" y="280"/>
+      <pos x="480" y="280"/>
     </visualElement>
     <visualElement>
       <elementName>flip-flop-d-s0-r0-ck0-contador-4bits.dig</elementName>
@@ -41,12 +41,12 @@
           <string>74HC74</string>
         </entry>
       </elementAttributes>
-      <pos x="200" y="600"/>
+      <pos x="260" y="600"/>
     </visualElement>
     <visualElement>
       <elementName>7474.dig</elementName>
       <elementAttributes/>
-      <pos x="60" y="700"/>
+      <pos x="100" y="700"/>
     </visualElement>
     <visualElement>
       <elementName>7474.dig</elementName>
@@ -56,7 +56,7 @@
           <shapeType>LAYOUT</shapeType>
         </entry>
       </elementAttributes>
-      <pos x="320" y="700"/>
+      <pos x="360" y="700"/>
     </visualElement>
     <visualElement>
       <elementName>Text</elementName>
@@ -71,10 +71,107 @@
         </entry>
         <entry>
           <string>Description</string>
-          <string>http://pdf.datasheetcatalog.com/datasheet/on_semiconductor2/74HC74.PDF</string>
+          <string>__ http://pdf.datasheetcatalog.com/datasheet/on_semiconductor2/74HC74.PDF __</string>
         </entry>
       </elementAttributes>
-      <pos x="240" y="640"/>
+      <pos x="300" y="640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck1-contador-4bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="40" y="1060"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck1-contador-crescente-4bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="480" y="1060"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Tinkercad</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="1260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>_   ETE102-Contador_Assíncrono</string>
+        </entry>
+      </elementAttributes>
+      <pos x="100" y="1300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Tinkercad</string>
+        </entry>
+      </elementAttributes>
+      <pos x="300" y="1880"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>_   ETE102-Contador_Assíncrono_0_a_9</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="1920"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>14</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Quando ocorre o incremento da contagem?
+
+  1) Ao soltar o botão ck, produzindo uma borda de descida.
+  2) Ao pressionar o botão ck, produzindo uma borda de subida.
+  3) Ao soltar o botão ck, produzindo uma borda de subida.
+  4) Ao pressionar o botão ck, produzindo uma borda de descida.
+  5) Somente ao pressionar e soltar o ~MR antes de se pressionar e soltar o ck.</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Questão</string>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="1380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>tinkercad-contador-assincrono-detalhes.dig</elementName>
+      <elementAttributes/>
+      <pos x="280" y="1620"/>
     </visualElement>
   </visualElements>
   <wires/>
