@@ -497,6 +497,21 @@ Detalhes da montagem no Tinkercad.</string>
       </elementAttributes>
       <pos x="120" y="600"/>
     </visualElement>
+    <visualElement>
+      <elementName>PolarityAwareLED</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Q4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="0" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>VDD</elementName>
+      <elementAttributes/>
+      <pos x="0" y="180"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -612,8 +627,8 @@ Detalhes da montagem no Tinkercad.</string>
       <p2 x="640" y="100"/>
     </wire>
     <wire>
-      <p1 x="80" y="340"/>
-      <p2 x="260" y="340"/>
+      <p1 x="0" y="340"/>
+      <p2 x="80" y="340"/>
     </wire>
     <wire>
       <p1 x="480" y="340"/>
@@ -626,6 +641,10 @@ Detalhes da montagem no Tinkercad.</string>
     <wire>
       <p1 x="840" y="340"/>
       <p2 x="940" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="80" y="340"/>
+      <p2 x="260" y="340"/>
     </wire>
     <wire>
       <p1 x="260" y="340"/>
@@ -726,6 +745,14 @@ Detalhes da montagem no Tinkercad.</string>
     <wire>
       <p1 x="320" y="360"/>
       <p2 x="320" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="180"/>
+      <p2 x="0" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="0" y="320"/>
+      <p2 x="0" y="340"/>
     </wire>
     <wire>
       <p1 x="900" y="280"/>
