@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>flip-flop-d-ck0.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-ck0-contador-1bit.dig</elementName>
+      <elementAttributes/>
+      <pos x="500" y="-400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck0-contador-1bit.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck0-contador-2bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="500" y="-260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck0-contador-4bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="-100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>74HC74</string>
+        </entry>
+      </elementAttributes>
+      <pos x="280" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>7474.dig</elementName>
+      <elementAttributes/>
+      <pos x="120" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>7474.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>shapeType</string>
+          <shapeType>LAYOUT</shapeType>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>14</int>
+        </entry>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>__ http://pdf.datasheetcatalog.com/datasheet/on_semiconductor2/74HC74.PDF __</string>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="100"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck1-contador-4bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="60" y="520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck1-contador-crescente-4bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="500" y="520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Tinkercad</string>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="720"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>_   ETE102-Contador_Assíncrono</string>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Tinkercad</string>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="2040"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>_   ETE102-Contador_Assíncrono_0_a_9</string>
+        </entry>
+      </elementAttributes>
+      <pos x="120" y="2080"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>14</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Quando ocorre o incremento da contagem?
+
+  1) Ao soltar o botão ck, produzindo uma borda de descida.
+  2) Ao pressionar o botão ck, produzindo uma borda de subida.
+  3) Ao soltar o botão ck, produzindo uma borda de subida.
+  4) Ao pressionar o botão ck, produzindo uma borda de descida.
+  5) Somente ao pressionar e soltar o ~MR antes de se pressionar e soltar o ck.</string>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="880"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Questão</string>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>tinkercad-contador-assincrono-detalhes.dig</elementName>
+      <elementAttributes/>
+      <pos x="300" y="1080"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>CONTADOR ASSÍNCRONO</string>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="-520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>CONTADOR ASSÍNCRONO DE 0 A 9</string>
+        </entry>
+      </elementAttributes>
+      <pos x="340" y="1500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Contador</string>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>4</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>12</int>
+        </entry>
+      </elementAttributes>
+      <pos x="60" y="1600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Rectangle</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>RectHeight</string>
+          <int>4</int>
+        </entry>
+        <entry>
+          <string>RectInside</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>CLC (Circ. Lóg. Comb.)</string>
+        </entry>
+        <entry>
+          <string>RectWidth</string>
+          <int>12</int>
+        </entry>
+      </elementAttributes>
+      <pos x="400" y="1600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>17</int>
+        </entry>
+        <entry>
+          <string>snapToGrid</string>
+          <boolean>false</boolean>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>~MR</string>
+        </entry>
+      </elementAttributes>
+      <pos x="168" y="1655"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>******************************************
+Considerações sobre esquema elétrico
+e implementação física.
+******************************************</string>
+        </entry>
+      </elementAttributes>
+      <pos x="340" y="1200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>tinkercad-contador-assincrono-com-pinagem.dig</elementName>
+      <elementAttributes/>
+      <pos x="300" y="1320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>17</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>Q_m a Q_n</string>
+        </entry>
+        <entry>
+          <string>snapToGrid</string>
+          <boolean>false</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="224" y="1630"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>17</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>E_m a E_n</string>
+        </entry>
+        <entry>
+          <string>snapToGrid</string>
+          <boolean>false</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="408" y="1630"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>17</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>S</string>
+        </entry>
+        <entry>
+          <string>snapToGrid</string>
+          <boolean>false</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="512" y="1659"/>
+    </visualElement>
+    <visualElement>
+      <elementName>flip-flop-d-s0-r0-ck1-contador-crescente-0-a-9-4bits.dig</elementName>
+      <elementAttributes/>
+      <pos x="320" y="1840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>ENTREGAS</string>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="2240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>_ 1) Na montagem &quot;ETE102-Contador_Assíncrono_0_a_9&quot;, por que o MS&apos; &quot;não funciona&quot;? Ou seja,
+       por que, ao soltá-lo, todos os LEDs não ficam em 1?
+
+_ 2) Que alterações seriam necessárias no circuito para que, após aplicar MS&apos;, tenha-se o
+       número 9 (1001)?
+
+_ 3) Implementar um contador assíncrono crescente de 0 a 9 utilizando o CI 74HC93.</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="2300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textOrientation</string>
+          <de.neemann.digital.draw.graphics.Orientation>CENTERCENTER</de.neemann.digital.draw.graphics.Orientation>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>OPCIONAIS PARA EXERCITAR A IMAGINAÇÃO
+(não é necessário entregar)</string>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="2600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>textFontSize</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>Description</string>
+          <string>1) Implementar um contador crescente/decrescente de 0 a 15.
+
+2) Implementar um contador crescente/decrescente *automático* de 0 a 15.
+    Ou seja, na contagem crescente, após atingir o 15, inicia-se a contagem decrescente
+    e, após atingir o zero, inicia-se novamente a contagem crescente.
+
+3) Alterar o circuito anterior para implementar um contador crescente/decrescente
+    *automático* de 0 a 9.</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-60" y="2700"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="400" y="1640"/>
+      <p2 x="380" y="1620"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="1660"/>
+      <p2 x="400" y="1640"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="1680"/>
+      <p2 x="160" y="1700"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="1700"/>
+      <p2 x="180" y="1680"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="1640"/>
+      <p2 x="400" y="1640"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="1740"/>
+      <p2 x="520" y="1740"/>
+    </wire>
+    <wire>
+      <p1 x="180" y="1680"/>
+      <p2 x="180" y="1740"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="1680"/>
+      <p2 x="520" y="1740"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>

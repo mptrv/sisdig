@@ -1,0 +1,218 @@
+EESchema Schematic File Version 4
+LIBS:rascunhos-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5E80CBC3
+P 4000 4200
+F 0 "R1" H 4070 4246 50  0000 L CNN
+F 1 "10k" H 4070 4155 50  0000 L CNN
+F 2 "" V 3930 4200 50  0001 C CNN
+F 3 "~" H 4000 4200 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4550 4000 4450
+Wire Wire Line
+	4000 4050 4000 4000
+Wire Wire Line
+	4000 4000 4250 4000
+Connection ~ 4000 4000
+Text Label 4250 4000 0    50   ~ 0
+A
+Wire Wire Line
+	4000 3300 4000 3500
+$Comp
+L Device:R R2
+U 1 1 5E815854
+P 4000 3650
+F 0 "R2" H 4070 3696 50  0000 L CNN
+F 1 "10k" H 4070 3605 50  0000 L CNN
+F 2 "" V 3930 3650 50  0001 C CNN
+F 3 "~" H 4000 3650 50  0001 C CNN
+	1    4000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3800 4000 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 5E815958
+P 4000 4550
+F 0 "#PWR0101" H 4000 4300 50  0001 C CNN
+F 1 "GND" H 4005 4377 50  0000 C CNN
+F 2 "" H 4000 4550 50  0001 C CNN
+F 3 "" H 4000 4550 50  0001 C CNN
+	1    4000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5E815A6C
+P 3450 3950
+F 0 "V1" H 3678 3996 50  0000 L CNN
+F 1 "5V" H 3678 3905 50  0000 L CNN
+F 2 "" H 3450 3950 50  0001 C CNN
+F 3 "~" H 3450 3950 50  0001 C CNN
+	1    3450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3650 3450 3300
+Wire Wire Line
+	3450 3300 4000 3300
+Wire Wire Line
+	4000 4450 3450 4450
+Wire Wire Line
+	3450 4450 3450 4250
+Connection ~ 4000 4450
+Wire Wire Line
+	4000 4450 4000 4350
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E9A1AF8
+P 2850 1250
+F 0 "SW?" V 2896 1202 50  0001 R CNN
+F 1 "SW_Push" V 2805 1202 50  0001 R CNN
+F 2 "" H 2850 1450 50  0001 C CNN
+F 3 "" H 2850 1450 50  0001 C CNN
+	1    2850 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E9B6E52
+P 3350 1250
+F 0 "SW?" V 3396 1202 50  0001 R CNN
+F 1 "SW_Push" V 3305 1202 50  0001 R CNN
+F 2 "" H 3350 1450 50  0001 C CNN
+F 3 "" H 3350 1450 50  0001 C CNN
+	1    3350 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E9B6E63
+P 3850 1250
+F 0 "SW?" V 3896 1202 50  0001 R CNN
+F 1 "SW_Push" V 3805 1202 50  0001 R CNN
+F 2 "" H 3850 1450 50  0001 C CNN
+F 3 "" H 3850 1450 50  0001 C CNN
+	1    3850 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9B6ECC
+P 2850 1700
+F 0 "R?" H 2920 1700 50  0000 L CNN
+F 1 "R" H 2920 1655 50  0001 L CNN
+F 2 "" V 2780 1700 50  0001 C CNN
+F 3 "~" H 2850 1700 50  0001 C CNN
+	1    2850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9B6FF8
+P 3350 1700
+F 0 "R?" H 3420 1700 50  0000 L CNN
+F 1 "R" H 3420 1655 50  0001 L CNN
+F 2 "" V 3280 1700 50  0001 C CNN
+F 3 "~" H 3350 1700 50  0001 C CNN
+	1    3350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E9B7026
+P 3850 1700
+F 0 "R?" H 3920 1700 50  0000 L CNN
+F 1 "R" H 3920 1655 50  0001 L CNN
+F 2 "" V 3780 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1450 2850 1550
+Wire Wire Line
+	3350 1550 3350 1450
+Wire Wire Line
+	3850 1450 3850 1550
+Wire Wire Line
+	2850 1050 2850 1000
+Wire Wire Line
+	2850 1000 3350 1000
+Wire Wire Line
+	3850 1000 3850 1050
+Wire Wire Line
+	3350 1050 3350 1000
+Connection ~ 3350 1000
+Wire Wire Line
+	3350 1000 3850 1000
+Wire Wire Line
+	3350 1000 3350 900 
+Wire Wire Line
+	2850 1850 2850 1900
+Wire Wire Line
+	2850 1900 3350 1900
+Wire Wire Line
+	3850 1900 3850 1850
+Wire Wire Line
+	3350 1850 3350 1900
+Connection ~ 3350 1900
+Wire Wire Line
+	3350 1900 3850 1900
+Wire Wire Line
+	3350 1900 3350 2000
+$Comp
+L Device:CP C?
+U 1 1 5E9B8407
+P 3350 2150
+F 0 "C?" H 3468 2196 50  0000 L CNN
+F 1 "CP" H 3468 2105 50  0000 L CNN
+F 2 "" H 3388 2000 50  0001 C CNN
+F 3 "~" H 3350 2150 50  0001 C CNN
+	1    3350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E9B84CB
+P 3350 2400
+F 0 "#PWR?" H 3350 2150 50  0001 C CNN
+F 1 "Earth" H 3350 2250 50  0001 C CNN
+F 2 "" H 3350 2400 50  0001 C CNN
+F 3 "~" H 3350 2400 50  0001 C CNN
+	1    3350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2300 3350 2400
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E9B8CDE
+P 3350 900
+F 0 "TP?" H 3408 1020 50  0001 L CNN
+F 1 "Saída do CI" H 3100 1100 50  0000 L CNN
+F 2 "" H 3550 900 50  0001 C CNN
+F 3 "~" H 3550 900 50  0001 C CNN
+	1    3350 900 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

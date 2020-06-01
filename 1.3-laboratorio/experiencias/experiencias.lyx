@@ -330,7 +330,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -363,6 +363,11 @@ customHeadersFooters
 \selected 0
 \filename_suffix 0
 \color #faf0e6
+\end_branch
+\branch dg-contador-assincrono2
+\selected 1
+\filename_suffix 0
+\color #cae8cd
 \end_branch
 \index Index
 \shortcut idx
@@ -532,7 +537,7 @@ Experiências de Laboratório de
 \end_layout
 
 \begin_layout Date
-2015
+2020
 \end_layout
 
 \end_inset
@@ -10503,7 +10508,7 @@ reference "tab:Tabela-Verdade-FF-RS-NAND-NE"
 
 \end_inset
 
- sua tavela verdade.
+ sua tabela verdade.
 \end_layout
 
 \begin_layout Standard
@@ -11217,7 +11222,7 @@ erro lógico
 \begin_inset Formula $Q$
 \end_inset
 
- ser igual a 
+ não ser igual a 
 \begin_inset Formula $\bar{Q}$
 \end_inset
 
@@ -15188,6 +15193,1966 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Temporário:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{contexp}{9}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{8}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg-contador-assincrono2
+inverted 0
+status open
+
+\begin_layout Chapter
+Contadores Assíncronos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+inverted 0
+status collapsed
+
+\begin_layout Section
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Objetivos
+\end_layout
+
+\begin_layout Itemize
+Estudar os contadores assíncronos.
+\end_layout
+
+\begin_layout Itemize
+Implementar um contador assíncrono de 0 a 9.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Motivações
+\end_layout
+
+\begin_layout Itemize
+Como obter um contador a partir da associação de diversos flip-flops?
+\end_layout
+
+\begin_layout Itemize
+O que significa contador 
+\begin_inset Quotes eld
+\end_inset
+
+assíncrono
+\begin_inset Quotes erd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Itemize
+Há algum CI que já implementa um contador?
+\end_layout
+
+\begin_layout Itemize
+Quais suas aplicações?
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Referências para Consulta
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://pdf.datasheetcatalog.com/datasheet/on_semiconductor2/74HC74.PDF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+pdf.datasheetcatalog.com/datasheet/philips/74HC_HCT93_CNV_2.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+pdf.datasheetcatalog.com/datasheets/50/231825_DS.pdf
+\end_layout
+
+\end_inset
+
+ (7490)
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Contadores Assíncronos
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesubsection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Contextualização
+\end_layout
+
+\begin_layout Standard
+Os contadores assíncronos são construídos pela ligação em 
+\begin_inset Quotes eld
+\end_inset
+
+cascata
+\begin_inset Quotes erd
+\end_inset
+
+ de vários 
+\emph on
+flip-flops
+\emph default
+ do tipo JK, D ou T.
+ Ligar em 
+\begin_inset Quotes eld
+\end_inset
+
+cascata
+\begin_inset Quotes erd
+\end_inset
+
+ significa que o 
+\emph on
+clock
+\emph default
+ do 
+\emph on
+flip-flop
+\emph default
+ seguinte é obtido pela saída do 
+\emph on
+flip-flop 
+\emph default
+anterior.
+ O desenho da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-assíncrono-0-a-7-1"
+
+\end_inset
+
+ ilustra um exemplo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-assinc-0-a-7.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador assíncrono de 0 a 7 (em binário, de 
+\begin_inset Formula $000_{2}$
+\end_inset
+
+ a 
+\begin_inset Formula $111_{2}$
+\end_inset
+
+).
+ 
+\emph on
+(Nota: considere-se o 
+\begin_inset Formula $\bar{S}$
+\end_inset
+
+ e o 
+\begin_inset Formula $\bar{R}$
+\end_inset
+
+ conectados em nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+.)
+\emph default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Contador-assíncrono-0-a-7-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note-se que o gerador de sinal de 
+\emph on
+clock 
+\emph default
+é conectado no primeiro 
+\emph on
+flip-flop
+\emph default
+, cuja saída é o 
+\emph on
+bit
+\emph default
+ menos significativo (
+\series bold
+LSB
+\series default
+ – 
+\emph on
+Least Significant Bit
+\emph default
+).
+ A saída do último 
+\emph on
+flip-flop
+\emph default
+ é o 
+\emph on
+bit
+\emph default
+ mais significativo (
+\series bold
+MSB
+\series default
+ – 
+\emph on
+Most Significant Bit
+\emph default
+).
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesubsection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Detalhamento Conceitual
+\end_layout
+
+\begin_layout Standard
+Considerar-se-á o 
+\emph on
+flip-flop
+\emph default
+ tipo D nas análises seguintes.
+\end_layout
+
+\begin_layout Standard
+O 
+\emph on
+flip-flop
+\emph default
+ tipo D, essencialmente, copia o dado da entrada para a saída na ocorrência
+ de uma borda do pulso de 
+\emph on
+clock
+\emph default
+.
+ No caso, será utilizado um sensível à borda de descida, conforme ilustrado
+ pela 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ff-d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, a qual também possui um exemplo de operação apresentado na carta de tempos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-ck0.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flip-Flop tipo D e exemplo de operação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ff-d"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ao se 
+\emph on
+realimentar 
+\emph default
+o 
+\begin_inset Formula $\bar{Q}$
+\end_inset
+
+ na entrada 
+\begin_inset Formula $D$
+\end_inset
+
+, a cada pulso de 
+\emph on
+clock
+\emph default
+, tem-se a inversão do sinal de saída (ver 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ff-d-realimentado"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-ck0-contador-1bit.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flip-Flop com realimentação e exemplo de operação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ff-d-realimentado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os 
+\emph on
+flip-flops 
+\emph default
+possuem também sinais de 
+\emph on
+set 
+\emph default
+e 
+\emph on
+reset
+\emph default
+, permitindo definir a saída principal (
+\begin_inset Formula $Q$
+\end_inset
+
+) em 1 ou 0, respectivamente (ver 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ff-d-sr"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-s0-r0-ck0-contador-1bit.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flip-Flop tipo D com 
+\emph on
+set 
+\emph default
+e 
+\emph on
+reset 
+\emph default
+e exemplo de operação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ff-d-sr"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Associando-se dois conjuntos como este, tem-se que o 
+\emph on
+clock 
+\emph default
+do segundo 
+\emph on
+flip-flop
+\emph default
+ será fornecido pela saída 
+\begin_inset Formula $Q$
+\end_inset
+
+ do primeiro.
+ Note-se, na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-2-bits"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que ocorre a alteração de 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ nas bordas de descida de 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ é o bit mais significativo, por alterar menos frequentemente que 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-s0-r0-ck0-contador-2bits.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador de 2 bits e exemplo de operação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-2-bits"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Agrupando-se, agora, quatro estágios semelhantes, tem-se um contador de
+ 4 bits de 0 a 15 (ver 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-4-bits"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Note-se que 
+\begin_inset Formula $Q_{3}$
+\end_inset
+
+ é o bit mais significativo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-s0-r0-ck0-contador-4bits.png
+	lyxscale 25
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador assíncrono de 4 bits de 0 a 15 e exemplo de operação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-4-bits"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A borda do 
+\emph on
+clock
+\emph default
+ pode alterar o comportamento da contagem.
+ Se os 
+\emph on
+flip-flops 
+\emph default
+forem de borda de subida, a contagem será decrescente (ver 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-4-bits-decres"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-s0-r0-ck1-contador-4bits.png
+	lyxscale 25
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador decrescente e exemplo de operação.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-4-bits-decres"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando-se as saídas 
+\begin_inset Formula $\bar{Q}$
+\end_inset
+
+ para alimentar o 
+\emph on
+clock
+\emph default
+ do 
+\emph on
+flip-flop
+\emph default
+ seguinte, tem-se o equivalente acionamento por borda de descida e, portanto,
+ a contagem passa a ser crescente (ver 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-4-bits-cresc"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-s0-r0-ck1-contador-crescente-4bits.png
+	lyxscale 25
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador assíncrono crescente de 0 a 15 com incrementos nas bordas de subida
+ do 
+\emph on
+clock
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-4-bits-cresc"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para se realizar uma contagem de 0 a 9, deve-se forçar o 
+\emph on
+reset
+\emph default
+ antes de se completar todo o ciclo do contador, ou seja, antes de ultrapassar
+ o 15 e retornar a zero.
+ Utilizando-se um circuito lógico combinatório, pode-se facilmente provocar
+ tal efeito.
+ O 
+\emph on
+reset
+\emph default
+ deve ocorrer assim que a contagem atingir 10 (ver 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-blocos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/contador-assincrono-blocos-para-reset.png
+	lyxscale 50
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Blocos que ilustram a realimentação para se forçar o 
+\emph on
+reset
+\emph default
+ no estado desejado.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-blocos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalmente, a implementação a seguir (
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-0-a-9"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) provoca o 
+\emph on
+reset
+\emph default
+ no momento em que a contagem atinge 10, garantindo, assim, 
+\bar under
+um período de 
+\emph on
+clock
+\emph default
+\bar default
+ em cada passo da contagem de 0 a 9.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/flip-flop-d-s0-r0-ck1-contador-crescente-0-a-9-4bits.png
+	lyxscale 25
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador assíncrono crescente de 0 a 9.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-0-a-9"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesubsection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Algumas Aplicações
+\end_layout
+
+\begin_layout Enumerate
+Relógios
+\end_layout
+
+\begin_layout Enumerate
+Cronômetros
+\end_layout
+
+\begin_layout Enumerate
+Contador de pulsos (de itens que passam por uma esteira, por exemplo)
+\end_layout
+
+\begin_layout Enumerate
+Divisores de frequência
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesubsection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Sobre Divisores de Frequência
+\end_layout
+
+\begin_layout Standard
+Todo contador, independentemente de ser assíncrono ou síncrono, é, por natureza,
+ um divisor de frequência.
+\end_layout
+
+\begin_layout Standard
+A divisão se observa ao comparar uma das saídas do contador com o sinal
+ de 
+\emph on
+clock 
+\emph default
+da entrada.
+ Assim, conforme o interesse da divisão a ser realizada, projeta-se o contador.
+\end_layout
+
+\begin_layout Standard
+Considerando-se o exemplo da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-assíncrono-0-a-7-1"
+
+\end_inset
+
+, tem-se a carta de tempos da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Carta-de-tempos-0-a-7-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/falling arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & [timing/c/rising arrows] 24{C} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_0}$	& C 11{2C} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_1}$	& 3C 5{4C} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& 7C 2{8C} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carta de tempos para o contador da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-assíncrono-0-a-7-1"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Carta-de-tempos-0-a-7-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na carta de tempos, percebe-se que 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+ possui metade da frequência do 
+\emph on
+clock
+\emph default
+, 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ possui metade da frequência de 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+ e 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ metade da de 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+.
+ Ainda, 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ possui 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+ da frequência do 
+\emph on
+clock
+\emph default
+ e 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+.
+ Portanto, de acordo com a saída escolhida, tem-se disponível uma determinada
+ divisão: 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\nicefrac{1}{4}$
+\end_inset
+
+ ou 
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Num caso mais genérico, pode-se ter um contador não múltiplo da potência
+ de 2, como o da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-de-0-a-4-1"
+
+\end_inset
+
+, cuja carta de tempos está na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Carta-de-tempos-0-a-4-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-assinc-0-a-4.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contador de 0 a 4 (em binário, de 
+\begin_inset Formula $000_{2}$
+\end_inset
+
+ a 
+\begin_inset Formula $100_{2}$
+\end_inset
+
+).
+ Observe-se que, ao ocorrer o avanço para o estado 5, rapidamente o contador
+ retorna a 0.
+ 
+\emph on
+(Nota: considere-se o 
+\begin_inset Formula $\bar{S}$
+\end_inset
+
+ conectado em nível lógico 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+.)
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Contador-de-0-a-4-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/falling arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & [timing/c/rising arrows] 24{C} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_0}$	& C 2{4{2C} O{;[gray][timing/slope=0] .1H .1L;}{.2L} 1.8L} 2C C
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_1}$	& 3C 2{2{4C} 2L} C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& 7C 2C 8C 2C 5C 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carta de tempos para o contador da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:cont-assinc-Contador-de-0-a-4-1"
+
+\end_inset
+
+.
+ Perceba-se que 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+ apresenta um pulso com duração de alguns nanosegundos antes de ser zerado,
+ no quinto pulso de 
+\emph on
+clock
+\emph default
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cont-assinc-Carta-de-tempos-0-a-4-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparando-se 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ e 
+\emph on
+clock
+\emph default
+, na carta de tempos, nitidamente observa-se a necessidade de 5 pulsos de
+ 
+\emph on
+clock
+\emph default
+ para 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ dar um pulso.
+ Em outras palavras, há 5 períodos de 
+\emph on
+clock
+\emph default
+ para 1 período de 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+.
+ Portanto, o contador de 0 a 4 ilustrado é um divisor de frequência por
+ 5.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Parte Experimental
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesubsection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Contador Assíncrono de 0 a 15
+\end_layout
+
+\begin_layout Enumerate
+Carregar o circuito 
+\family sans
+\series bold
+ETE102-Contador_Assíncrono
+\family default
+\series default
+ no 
+\emph on
+Tinkercad
+\emph default
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/ETE102-Contador-Assíncrono.png
+	lyxscale 25
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Observar a operação do 
+\begin_inset Formula $\overline{MS}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{MR}$
+\end_inset
+
+ e do 
+\begin_inset Formula $ck$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Em que momento ocorre o incremento do contador? Ao pressionar ou soltar
+ o botão? Para tal, é gerada uma borda de subida ou de descida?
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesubsection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Contador Assíncrono de 0 a 9
+\end_layout
+
+\begin_layout Enumerate
+Carregar o circuito 
+\family sans
+\series bold
+ETE102-Contador_Assíncrono_0_a_9
+\family default
+\series default
+ no 
+\emph on
+Tinkercad
+\emph default
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contador-assincrono/ETE102-Contador_Assíncrono_0_a_9.png
+	lyxscale 25
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Observar a operação do 
+\begin_inset Formula $\overline{MS}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{MR}$
+\end_inset
+
+ e do 
+\begin_inset Formula $ck$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+O que ocorre ao se desligar e ligar a fonte no simulador? O que ocorreria
+ num circuito real?
+\end_layout
+
+\begin_layout Enumerate
+Como garantir que a contagem sempre se inicie em um valor conhecido?
+\end_layout
+
+\begin_layout Enumerate
+Qual o problema que ocorre com o 
+\begin_inset Formula $\overline{MS}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Entregas
+\end_layout
+
+\begin_layout Enumerate
+Na montagem 
+\family sans
+\series bold
+ETE102-Contador_Assíncrono_0_a_9
+\family default
+\series default
+, por que o 
+\begin_inset Formula $\overline{MS}$
+\end_inset
+
+ "não funciona"? Ou seja, por que, ao soltá-lo, todos os LEDs não ficam
+ em 1?
+\end_layout
+
+\begin_layout Enumerate
+Que alterações seriam necessárias no circuito para que, após aplicar 
+\begin_inset Formula $\overline{MS}$
+\end_inset
+
+, tenha-se o número 9 (1001)?
+\end_layout
+
+\begin_layout Enumerate
+Implementar um contador assíncrono crescente de 0 a 9 utilizando o CI 74HC93.
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thesection
+\backslash
+quad{}
+\end_layout
+
+\end_inset
+
+Opcionais para Exercitar a Imaginação
+\end_layout
+
+\begin_layout Enumerate
+Implementar um contador crescente/decrescente de 0 a 15.
+\end_layout
+
+\begin_layout Enumerate
+Implementar um contador crescente/decrescente 
+\emph on
+\bar under
+automático
+\emph default
+\bar default
+ de 0 a 15.
+ Ou seja, na contagem crescente, após atingir o 15, inicia-se a contagem
+ decrescente e, após atingir o zero, inicia-se novamente a contagem crescente.
+\end_layout
+
+\begin_layout Enumerate
+Alterar o circuito anterior para implementar um contador crescente/decrescente
+ 
+\emph on
+\bar under
+automático
+\emph default
+\bar default
+ de 0 a 9.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch dg-contador-sincrono
 inverted 0
 status collapsed
@@ -17201,7 +19166,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch dg-projeto
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT

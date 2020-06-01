@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>S</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+      </elementAttributes>
+      <pos x="240" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Y</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="220"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #1</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+0 0 	0 0
+1 0 	0 0
+0 1 	0 0
+1 1 	0 0
+0 1 	0 0
+0 1 	0 0
+0 1 	0 0
+1 1 	0 0
+1 1 	0 0
+0 0 	0 0
+1 0 	0 0
+1 1 	0 0
+1 1 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="500"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Y&apos;</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z&apos;</string>
+        </entry>
+      </elementAttributes>
+      <pos x="580" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Ground</elementName>
+      <elementAttributes/>
+      <pos x="540" y="620"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #2</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+0 1 	0 0
+1 1 	0 0
+0 1 	0 0
+1 1 	0 0
+0 1 	0 0
+0 0 	0 0
+0 0 	0 0
+1 0 	0 0
+1 0 	0 0
+0 0 	0 0
+1 0 	0 0
+1 0 	0 0
+1 1 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="580"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #3</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+0 0 	0 0
+0 0 	0 0
+1 1 	0 0
+1 1 	0 0
+0 1 	0 0
+1 1 	0 0
+1 1 	0 0
+0 1 	0 0
+1 1 	0 0
+0 0 	0 0
+1 0 	0 0
+0 1 	0 0
+1 1 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="660"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #4</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+1 0 	0 0
+1 1 	0 0
+0 1 	0 0
+1 1 	0 0
+1 0 	0 0
+0 0 	0 0
+0 0 	0 0
+1 0 	0 0
+1 0 	0 0
+0 0 	0 0
+1 0 	0 0
+1 1 	0 0
+1 1 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="740"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #5</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+0 0 	0 0
+1 0 	0 0
+0 0 	0 0
+1 0 	0 0
+0 0 	0 0
+1 0 	0 0
+0 1 	0 0
+1 1 	0 0
+1 1 	0 0
+0 1 	0 0
+0 1 	0 0
+1 1 	0 0
+1 0 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #6</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+1 0 	0 0
+1 0 	0 0
+0 1 	0 0
+1 1 	0 0
+0 0 	0 0
+1 0 	0 0
+1 0 	0 0
+0 0 	0 0
+1 0 	0 0
+0 0 	0 0
+1 0 	0 0
+1 1 	0 0
+0 1 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="900"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #7</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+0 1 	0 0
+1 1 	0 0
+0 1 	0 0
+0 1 	0 0
+0 1 	0 0
+1 1 	0 0
+0 0 	0 0
+1 0 	0 0
+1 0 	0 0
+1 0 	0 0
+1 0 	0 0
+0 1 	0 0
+1 1 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="980"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Carta de Tempo #8</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>S C	Y Z
+1 0 	0 0
+0 0 	0 0
+1 1 	0 0
+0 1 	0 0
+1 0 	0 0
+1 0 	0 0
+0 1 	0 0
+1 1 	0 0
+1 0 	0 0
+0 0 	0 0
+0 0 	0 0
+0 1 	0 0
+1 1 	0 0</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="1060"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="320" y="240"/>
+      <p2 x="360" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="340"/>
+      <p2 x="360" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="580"/>
+      <p2 x="580" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="200"/>
+      <p2 x="300" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="200"/>
+      <p2 x="360" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="360"/>
+      <p2 x="500" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="520"/>
+      <p2 x="580" y="520"/>
+    </wire>
+    <wire>
+      <p1 x="240" y="300"/>
+      <p2 x="320" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="320" y="380"/>
+      <p2 x="360" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="220"/>
+      <p2 x="500" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="320" y="240"/>
+      <p2 x="320" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="320" y="300"/>
+      <p2 x="320" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="300" y="200"/>
+      <p2 x="300" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="520"/>
+      <p2 x="540" y="580"/>
+    </wire>
+    <wire>
+      <p1 x="540" y="580"/>
+      <p2 x="540" y="620"/>
+    </wire>
+  </wires>
+  <measurementOrdering>
+    <string>S</string>
+    <string>C</string>
+    <string>Y</string>
+    <string>Z</string>
+  </measurementOrdering>
+</circuit>
