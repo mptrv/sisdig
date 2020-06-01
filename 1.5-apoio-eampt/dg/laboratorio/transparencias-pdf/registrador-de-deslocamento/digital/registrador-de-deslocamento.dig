@@ -128,6 +128,16 @@
       <elementAttributes/>
       <pos x="20" y="580"/>
     </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>E = 1101</string>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="-40"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>

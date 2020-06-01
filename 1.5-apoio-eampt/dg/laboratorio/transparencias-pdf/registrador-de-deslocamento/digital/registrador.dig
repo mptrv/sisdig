@@ -37,12 +37,12 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>D0</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>D0</string>
         </entry>
       </elementAttributes>
       <pos x="740" y="100"/>
@@ -93,12 +93,12 @@
       <elementName>Out</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>Q0</string>
-        </entry>
-        <entry>
           <string>rotation</string>
           <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Q0</string>
         </entry>
       </elementAttributes>
       <pos x="860" y="480"/>
@@ -164,6 +164,21 @@
         </entry>
       </elementAttributes>
       <pos x="180" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Síncrono</string>
+        </entry>
+      </elementAttributes>
+      <pos x="420" y="-40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Data</elementName>
+      <elementAttributes/>
+      <pos x="100" y="580"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -376,5 +391,17 @@
       <p2 x="700" y="480"/>
     </wire>
   </wires>
-  <measurementOrdering/>
+  <measurementOrdering>
+    <string>ck</string>
+    <string>MS</string>
+    <string>MR</string>
+    <string>D3</string>
+    <string>D2</string>
+    <string>D1</string>
+    <string>D0</string>
+    <string>Q3</string>
+    <string>Q2</string>
+    <string>Q1</string>
+    <string>Q0</string>
+  </measurementOrdering>
 </circuit>
