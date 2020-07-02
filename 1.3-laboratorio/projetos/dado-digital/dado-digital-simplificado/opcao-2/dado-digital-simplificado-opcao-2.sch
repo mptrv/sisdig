@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Dado Digital Simplificado"
+Title "Dado Digital Simplificado - Opção 2"
 Date "2020-06-14"
 Rev "00"
 Comp "ETE102 - Fundamentos de Circuito Digital"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment2 "ao novo pressionamento, o valor é sorteado.\""
+Comment3 "\"Ao pressionar o botão, exibe-se a contagem no display e,"
+Comment4 "Implementação: Opção 2"
 $EndDescr
 $Comp
 L Device:C C1
