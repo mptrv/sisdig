@@ -260,27 +260,27 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -365,7 +365,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono2
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #cae8cd
 \end_branch
@@ -526,7 +526,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
 inverted 0
-status open
+status collapsed
 
 \begin_layout Title
 Experiências de Laboratório de
@@ -548,7 +548,7 @@ Experiências de Laboratório de
 \begin_layout Standard
 \begin_inset Branch cm-dg-textos-extras
 inverted 0
-status open
+status collapsed
 
 \begin_layout Title
 ETE102
@@ -639,7 +639,7 @@ leftmark
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 inverted 0
-status open
+status collapsed
 
 \begin_layout Left Footer
 \begin_inset ERT
@@ -689,7 +689,7 @@ thepage
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 inverted 0
-status open
+status collapsed
 
 \begin_layout Right Footer
 \begin_inset ERT
@@ -15203,14 +15203,14 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 setcounter{contexp}{9}
 \end_layout
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 setcounter{chapter}{8}
 \end_layout
@@ -44542,7 +44542,7 @@ Cabos banana-banana
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
 inverted 0
-status collapsed
+status open
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -44574,13 +44574,15 @@ Monte o circuito esquematizado abaixo.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/lei-de-kirchhoff-circuito1.PNG
-	scale 53
+	filename imagens/leis-de-kirchhoff/primeira-lei.png
+	width 100text%
+	BoundingBox 10bp 10bp 845bp 370bp
+	clip
 
 \end_inset
 
@@ -44609,13 +44611,13 @@ Primeira Lei de Kirchhoff
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/lei-de-kirchhoff-circuito2.PNG
-	scale 55
+	filename imagens/leis-de-kirchhoff/primeira-lei-detalhes.png
+	width 100text%
 
 \end_inset
 
@@ -44799,7 +44801,12 @@ Segunda Lei de Kirchhoff
 “a soma algébrica das tensões em uma malha é zero”
 \emph default
 .
- Lembre-se que devem ser considerados os respectivos sinais das tensões.
+ Lembre-se que devem ser considerados os respectivos sinais das tensões,
+ 
+\bar under
+conforme as referências
+\bar default
+.
 \end_layout
 
 \begin_layout Standard
@@ -44807,13 +44814,13 @@ Segunda Lei de Kirchhoff
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/lei-de-kirchhoff-circuito3.PNG
-	scale 50
+	filename imagens/leis-de-kirchhoff/segunda-lei.png
+	width 100text%
 
 \end_inset
 
@@ -45069,25 +45076,63 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Fonte CC de 0 a 30V
+Fonte CC com três canais (2 ajustáveis e 1 fixo de 5V)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Alternativa:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Fonte CC ajustável de um canal
 \end_layout
 
 \begin_layout Itemize
-Multímetro digital
-\end_layout
 
-\begin_layout Itemize
-Multímetro analógico
-\end_layout
-
-\begin_layout Itemize
+\emph on
 3x pilhas grandes (tipo D) de 1,5 V
 \end_layout
 
 \begin_layout Itemize
+
+\emph on
 Suporte para as pilhas
 \end_layout
 
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+2 Multímetros digitais
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Alternativa:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+1 Multímetro digital
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+1 Multímetro analógico
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Itemize
 Plaqueta de montagem 
 \emph on
@@ -45102,6 +45147,28 @@ Universal
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Alternativa:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\emph on
+Protoboard
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Fios para protoboard
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Itemize
 Cabos banana-banana
 \end_layout
@@ -52182,7 +52249,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch an-projeto
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
