@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5F6A8EC7
+P 5200 4000
+F 0 "V1" H 5318 4050 50  0000 L CNN
+F 1 "V?" H 5318 4005 50  0001 L CNN
+F 2 "" V 5200 4060 50  0001 C CNN
+F 3 "~" V 5200 4060 50  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell V2
+U 1 1 5F6A9A85
+P 7200 3700
+F 0 "V2" H 7318 3796 50  0000 L CNN
+F 1 "5V" H 7318 3705 50  0000 L CNN
+F 2 "" V 7200 3760 50  0001 C CNN
+F 3 "~" V 7200 3760 50  0001 C CNN
+	1    7200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5F6AA67B
+P 5700 3350
+F 0 "R1" V 5495 3350 50  0000 C CNN
+F 1 "56Ω" V 5586 3350 50  0000 C CNN
+F 2 "" V 5740 3340 50  0001 C CNN
+F 3 "~" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5F6AA8D7
+P 6750 3350
+F 0 "R2" V 6545 3350 50  0000 C CNN
+F 1 "18Ω" V 6636 3350 50  0000 C CNN
+F 2 "" V 6790 3340 50  0001 C CNN
+F 3 "~" H 6750 3350 50  0001 C CNN
+	1    6750 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5F6AAE76
+P 6200 3650
+F 0 "R3" H 6132 3604 50  0000 R CNN
+F 1 "33Ω" H 6132 3695 50  0000 R CNN
+F 2 "" V 6240 3640 50  0001 C CNN
+F 3 "~" H 6200 3650 50  0001 C CNN
+	1    6200 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pessoal:fonte_corrente I1
+U 1 1 5F6AB638
+P 6200 4200
+F 0 "I1" H 6072 4200 50  0000 R CNN
+F 1 "fonte_corrente" H 6072 4245 50  0001 R CNN
+F 2 "" V 6200 4200 50  0001 C CNN
+F 3 "" V 6200 4200 50  0001 C CNN
+	1    6200 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Amperemeter_DC MES1
+U 1 1 5F6ABFD7
+P 7200 4200
+F 0 "MES1" H 7048 4154 50  0001 R CNN
+F 1 "Amperemeter_DC" H 7048 4245 50  0001 R CNN
+F 2 "" V 7200 4300 50  0001 C CNN
+F 3 "~" V 7200 4300 50  0001 C CNN
+	1    7200 4200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5200 3800 5200 3350
+Wire Wire Line
+	5200 3350 5550 3350
+Wire Wire Line
+	5850 3350 6200 3350
+Wire Wire Line
+	6900 3350 7200 3350
+Wire Wire Line
+	7200 3350 7200 3500
+Wire Wire Line
+	6200 3500 6200 3350
+Connection ~ 6200 3350
+Wire Wire Line
+	6200 3350 6600 3350
+Wire Wire Line
+	6200 3800 6200 3900
+Wire Wire Line
+	7200 3800 7200 4000
+Wire Wire Line
+	7200 4400 7200 4600
+Wire Wire Line
+	7200 4600 6200 4600
+Wire Wire Line
+	5200 4600 5200 4100
+Wire Wire Line
+	6200 4500 6200 4600
+Connection ~ 6200 4600
+Wire Wire Line
+	6200 4600 5200 4600
+$EndSCHEMATC

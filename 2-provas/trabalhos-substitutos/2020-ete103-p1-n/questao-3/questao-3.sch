@@ -1,0 +1,123 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Pessoal:fonte_corrente I1
+U 1 1 5F6D4E45
+P 5200 4150
+F 0 "I1" H 5331 4196 50  0000 L CNN
+F 1 "0,5A" H 5331 4105 50  0001 L CNN
+F 2 "" V 5200 4150 50  0001 C CNN
+F 3 "" V 5200 4150 50  0001 C CNN
+	1    5200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pessoal:fonte_corrente_dep I2
+U 1 1 5F6D5408
+P 6300 3350
+F 0 "I2" V 6035 3350 50  0000 C CNN
+F 1 "i = k v'" V 6126 3350 50  0000 C CIN
+F 2 "" V 6300 3350 50  0001 C CNN
+F 3 "" V 6300 3350 50  0001 C CNN
+	1    6300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5F6D68AC
+P 5650 3350
+F 0 "R1" V 5445 3350 50  0000 C CNN
+F 1 "2Ω" V 5536 3350 50  0000 C CNN
+F 2 "" V 5690 3340 50  0001 C CNN
+F 3 "~" H 5650 3350 50  0001 C CNN
+	1    5650 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5F6D6C26
+P 5650 3750
+F 0 "R2" V 5445 3750 50  0000 C CNN
+F 1 "5Ω" V 5536 3750 50  0000 C CNN
+F 2 "" V 5690 3740 50  0001 C CNN
+F 3 "~" H 5650 3750 50  0001 C CNN
+	1    5650 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5F6D754D
+P 6300 3750
+F 0 "R3" V 6095 3750 50  0000 C CNN
+F 1 "6Ω" V 6186 3750 50  0000 C CNN
+F 2 "" V 6340 3740 50  0001 C CNN
+F 3 "~" H 6300 3750 50  0001 C CNN
+	1    6300 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5F6D79B7
+P 6750 4150
+F 0 "R4" H 6700 4150 50  0000 R CNN
+F 1 "5Ω" H 6682 4195 50  0001 R CNN
+F 2 "" V 6790 4140 50  0001 C CNN
+F 3 "~" H 6750 4150 50  0001 C CNN
+	1    6750 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 3850 5200 3750
+Wire Wire Line
+	5200 3350 5500 3350
+Wire Wire Line
+	5800 3350 6000 3350
+Wire Wire Line
+	6600 3350 6750 3350
+Wire Wire Line
+	6750 3350 6750 3750
+Wire Wire Line
+	5500 3750 5200 3750
+Connection ~ 5200 3750
+Wire Wire Line
+	5200 3750 5200 3350
+Wire Wire Line
+	5800 3750 6150 3750
+Wire Wire Line
+	6450 3750 6750 3750
+Connection ~ 6750 3750
+Wire Wire Line
+	6750 3750 6750 4000
+Wire Wire Line
+	6750 4300 6750 4550
+Wire Wire Line
+	5200 4550 5200 4450
+Wire Wire Line
+	6750 4550 5200 4550
+Text Notes 6400 3450 0    40   ~ 0
+k = 1,5S
+$Comp
+L Pessoal:seta_tensao_longa v'
+U 1 1 5F6CD3C7
+P 6700 4150
+F 0 "v'" H 6550 4150 50  0000 L CIN
+F 1 "seta_tensao_longa" H 6675 4025 50  0001 C CNN
+F 2 "" H 6700 4250 50  0001 C CNN
+F 3 "" H 6700 4250 50  0001 C CNN
+	1    6700 4150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

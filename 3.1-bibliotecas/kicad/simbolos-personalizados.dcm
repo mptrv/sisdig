@@ -5,12 +5,37 @@ D Fonte de corrente puramente simbólica.
 K Fonte de corrente, current source, i source
 $ENDCMP
 #
+$CMP fonte_corrente_dep
+D Fonte de corrente dependente puramente simbólica.
+K Fonte de corrente, dependente, dependent, current source, i source, vinculada
+$ENDCMP
+#
+$CMP fonte_tensao_dep
+D Fonte de tensão dependente puramente simbólica.
+K Fonte de tensão, dependente, dependent, voltage source, v source, vinculada
+$ENDCMP
+#
 $CMP seta_corrente
 D Seta de corrente puramente simbólica.
 K seta de corrente, current arrow
 $ENDCMP
 #
+$CMP seta_corrente_canto
+D Seta de corrente puramente simbólica.
+K seta de corrente, current arrow, canto, corner, curva, curved
+$ENDCMP
+#
+$CMP seta_corrente_longa
+D Seta de corrente puramente simbólica.
+K seta de corrente, current arrow
+$ENDCMP
+#
 $CMP seta_tensao
+D Seta de tensão puramente simbólica.
+K Seta de tensão, voltage arrow
+$ENDCMP
+#
+$CMP seta_tensao_longa
 D Seta de tensão puramente simbólica.
 K Seta de tensão, voltage arrow
 $ENDCMP

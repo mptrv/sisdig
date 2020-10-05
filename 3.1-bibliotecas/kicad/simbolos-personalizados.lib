@@ -10,7 +10,7 @@ F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 ALIAS current_source
 DRAW
-C 0 0 100 0 1 0 N
+C 0 0 103 0 1 0 N
 P 2 0 1 0 0 -100 0 100 N
 P 4 0 1 0 0 100 -25 50 25 50 0 100 F
 X + 1 0 300 200 D 50 50 1 1 P
@@ -18,23 +18,84 @@ X - 2 0 -300 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# fonte_corrente_dep
+#
+DEF fonte_corrente_dep I 0 0 N Y 1 F N
+F0 "I" 150 0 50 H V C CNN
+F1 "fonte_corrente_dep" -150 -25 50 V V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+ALIAS current_source_dep
+DRAW
+P 2 0 1 0 0 -100 0 100 N
+P 4 0 1 0 0 100 -25 50 25 50 0 100 F
+P 5 0 1 0 0 100 -100 0 0 -100 100 0 0 100 N
+X + 1 0 300 200 D 50 50 1 1 P
+X - 2 0 -300 200 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# fonte_tensao_dep
+#
+DEF fonte_tensao_dep V 0 0 N Y 1 F N
+F0 "V" 150 0 50 H V C CNN
+F1 "fonte_tensao_dep" -150 -25 50 V V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+ALIAS voltage_source_dep
+DRAW
+P 5 0 1 0 0 100 -100 0 0 -100 100 0 0 100 N
+X + 1 0 300 200 D 50 50 1 1 P
+X - 2 0 -300 200 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # seta_corrente
 #
-DEF ~seta_corrente I 0 40 Y Y 1 F N
+DEF seta_corrente I 0 40 Y Y 1 F N
 F0 "I" 75 50 50 H V C CNN
 F1 "seta_corrente" 100 -50 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS current_arrow
 DRAW
-P 2 1 1 10 160 0 0 0 N
+P 2 1 1 0 160 0 0 0 N
 P 4 1 1 0 200 0 130 -20 130 20 200 0 F
+ENDDRAW
+ENDDEF
+#
+# seta_corrente_canto
+#
+DEF seta_corrente_canto I 0 40 Y Y 1 F N
+F0 "I" 75 50 50 H V C CNN
+F1 "seta_corrente_canto" 100 -50 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS current_arrow_corner
+DRAW
+P 2 0 1 0 0 0 0 -150 N
+P 2 1 1 0 160 0 0 0 N
+P 4 1 1 0 200 0 130 -20 130 20 200 0 F
+ENDDRAW
+ENDDEF
+#
+# seta_corrente_longa
+#
+DEF seta_corrente_longa I 0 40 Y Y 1 F N
+F0 "I" 200 50 50 H V C CNN
+F1 "seta_corrente_longa" 225 -50 50 H I C CNN
+F2 "" 125 0 50 H I C CNN
+F3 "" 125 0 50 H I C CNN
+ALIAS current_arrow_long
+DRAW
+P 2 1 1 0 285 0 0 0 N
+P 4 1 1 0 325 0 255 -20 255 20 325 0 F
 ENDDRAW
 ENDDEF
 #
 # seta_tensao
 #
-DEF ~seta_tensao V 0 40 Y Y 1 F N
+DEF seta_tensao V 0 40 Y Y 1 F N
 F0 "V" -100 0 50 H V C CNN
 F1 "seta_tensao" -25 -125 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
@@ -43,6 +104,20 @@ ALIAS voltage_arrow
 DRAW
 A 100 0 141 1350 -1350 0 1 0 N 0 100 0 -100
 P 4 0 1 0 0 100 -40 80 -10 60 0 100 F
+ENDDRAW
+ENDDEF
+#
+# seta_tensao_longa
+#
+DEF seta_tensao_longa V 0 40 Y Y 1 F N
+F0 "V" -100 0 50 H V C CNN
+F1 "seta_tensao_longa" -25 -125 50 H I C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+ALIAS voltage_arrow_long
+DRAW
+A 150 0 212 -1350 1350 0 1 0 N 0 -150 0 150
+P 4 0 1 0 0 150 -40 130 -10 110 0 150 F
 ENDDRAW
 ENDDEF
 #

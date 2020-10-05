@@ -10,7 +10,7 @@
 %	Alterações de formatações deverão ser realizadas,
 %   preferencialmente, no pacote -- a não ser que seja
 %   algo muito específico para provas.
-\usepackage{../latex-comum/sisdig}
+\usepackage{../3.1-bibliotecas/latex/sisdig}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -251,9 +251,24 @@
 \color #faf0e6
 \end_branch
 \branch 2019-an-ps
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
+\end_branch
+\branch 2020-an-p1
+\selected 1
+\filename_suffix 0
+\color #cae8cd
+\end_branch
+\branch 2020-an-p2
+\selected 0
+\filename_suffix 0
+\color #cae8cd
+\end_branch
+\branch 2020-an-ps
+\selected 0
+\filename_suffix 0
+\color #cae8cd
 \end_branch
 \index Index
 \shortcut idx
@@ -1487,6 +1502,535 @@ por gentileza,
 desligar os celulares
 \emph default
 ;
+\end_layout
+
+\begin_layout Itemize
+pontuação máxima de 10,0 pontos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\size giant
+\emph on
+Boa Prova!!!
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+(Espaço reservado para rascunho.
+ Poderá ser utilizado para continuar questão, desde que 
+\bar under
+devidamente
+\bar default
+ identificada.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+} %
+\backslash
+capa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Capa do trabalho substituto de prova
+\end_layout
+
+\begin_layout Plain Layout
+
+% Parâmetros: prova, ano, data, qtd.
+ questões.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+capaant}[4]{%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch capa
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+\size largest
+\begin_inset Graphics
+	filename imagens/logo-imt.png
+	lyxscale 10
+	height 1.4cm
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "b"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "12cm"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\shape smallcaps
+\size larger
+ETE103
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Fundamentos de Circuitos Analógicos
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#1
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+\size largest
+Período Noturno
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset VSpace 3.5ex
+\end_inset
+
+Profº Marcelo Porto Trevizan
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size default
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color lightgray
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pontuacoes[-50]{10}{00}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+\color red
+GABARITO
+\size default
+\color inherit
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RA:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 3cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assinatura:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Orientações
+\end_layout
+
+\begin_layout Itemize
+Este trabalho substituto de prova é 
+\series bold
+individual
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+por favor, resolver de forma organizada e destacar as respostas;
+\end_layout
+
+\begin_layout Itemize
+as questões possuem valores parametrizados por RA, conforme tabelas no arquivo
+ 
+\family typewriter
+
+\begin_inset Newline linebreak
+\end_inset
+
+ete103-n-p1-2020-valores-por-ra.ods
+\family default
+, disponível no Moodle; 
+\series bold
+muita atenção!
+\series default
+, pois o uso de valor incorreto implicará em desconto de 50% na nota da
+ questão;
+\end_layout
+
+\begin_layout Itemize
+por favor, indicar, com destaque, o valor dos parâmetros utilizados obtidos
+ da tabela;
+\end_layout
+
+\begin_layout Itemize
+contém 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#4
+\end_layout
+
+\end_inset
+
+ questões;
+\end_layout
+
+\begin_layout Itemize
+o prazo para entrega é até as 23h59 da data final apontada no cabeçalho
+ acima;
+\end_layout
+
+\begin_layout Itemize
+o arquivo de entrega deverá estar em formato PDF;
+\end_layout
+
+\begin_layout Itemize
+o enunciado deverá fazer parte do arquivo enviado; folhas avulsas poderão
+ ser intercaladas entre uma questão e outra;
 \end_layout
 
 \begin_layout Itemize
@@ -97554,6 +98098,640 @@ Rótulo para indicar a última questão.
 \begin_inset CommandInset label
 LatexCommand label
 name "que:ultima-questao-an-ps-2019"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch 2020-an-p1
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaant{Primeira Prova Bimestral -- Trabalho Substituto}{2020}{25.09.2020
+ a 30.09.2020}{
+\backslash
+ref{que:ultima-questao-an-p1-2020}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[3]{50}
+\end_layout
+
+\end_inset
+
+ No circuito abaixo, o amperímetro indicou a corrente de 
+\begin_inset Formula $\mathbf{I_{amp}}\,\si{\A}$
+\end_inset
+
+.
+ Registrar as etapas de cálculo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-1.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ O valor de 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ O balanço de potência.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Classificar os bipolos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Determinar 
+\begin_inset Formula $V_{1_{mín}}$
+\end_inset
+
+ para 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ se tornar receptor ativo.
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\series bold
+\emph on
+\color blue
+Por favor, resolver de forma organizada e destacar as respostas!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[0]{50}
+\end_layout
+
+\end_inset
+
+ Supondo conhecidos os valores 
+\begin_inset Formula $R_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{B}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{C}$
+\end_inset
+
+, 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{CC}$
+\end_inset
+
+, determine a expressão literal de 
+\begin_inset Formula $V_{L}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-2.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Para o circuito abaixo, realizar o balanço de potência e classificar todos
+ os bipolos.
+ Registrar os cálculos realizados e justificar a classificação.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-3.png
+	lyxscale 50
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\series bold
+\emph on
+\color blue
+Por favor, resolver de forma organizada e destacar as respostas!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Determinar 
+\begin_inset Formula $V_{R3}$
+\end_inset
+
+ pelo 
+\emph on
+Teorema da Superposição de Efeitos
+\emph default
+.
+ Apresentar todas as etapas.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-4.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\series bold
+\emph on
+\color blue
+Por favor, resolver de forma organizada e destacar as respostas!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{50}
+\end_layout
+
+\end_inset
+
+ Um determinado material hipotético desenvolvido em laboratório – 
+\emph on
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mbox{material $
+\backslash
+zeta$}
+\end_layout
+
+\end_inset
+
+
+\emph default
+ (leia-se 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+material zeta
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+) – apresenta coeficiente de temperatura (
+\begin_inset Formula $\alpha$
+\end_inset
+
+) de 
+\begin_inset Formula $\mathbf{A\,}\si{\celsius^{-1}}$
+\end_inset
+
+.
+ Agora, deseja-se determinar sua condutividade a 
+\begin_inset Formula $\six{20}{\celsius}$
+\end_inset
+
+.
+ Para tanto, tomou-se uma amostra cilíndrica com diâmetro de 
+\begin_inset Formula $\six 1{\cm}$
+\end_inset
+
+ e comprimento de 
+\begin_inset Formula $\six{10}{\cm}$
+\end_inset
+
+ e aplicou-se uma tensão de 
+\begin_inset Formula $\six 2{\V}$
+\end_inset
+
+ nesta, num ambiente cuja temperatura era de 
+\begin_inset Formula $\mathbf{B}\,\si{\celsius}$
+\end_inset
+
+.
+ Em tal situação, foi medida uma corrente de 
+\begin_inset Formula $\six{0,5}{\A}$
+\end_inset
+
+.
+ Pede-se:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Esboço do material 
+\series bold
+e
+\series default
+ circuito montado, com indicação das grandezas envolvidas.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ 
+\size large
+
+\begin_inset Formula $\sigma_{(\six{20}{\celsius})}$
+\end_inset
+
+
+\size default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Se o circuito de ensaio permanecer ligado por 1 semana, calcular a energia
+ consumida pelo material 
+\begin_inset Formula $\zeta$
+\end_inset
+
+, em calorias.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\series bold
+\emph on
+\color blue
+Por favor, resolver de forma organizada e destacar as respostas!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[1]{0}
+\end_layout
+
+\end_inset
+
+ Projetar um circuito para acender 10 LEDs convencionais simultaneamente
+ com um único resistor.
+ Essencialmente, apresentar:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Desenho do circuito.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ Dimensionamento do resistor.
+ Apontar os cálculos e considerações.
+\end_layout
+
+\begin_layout Standard
+A fonte de tensão a utilizar encontra-se na tabela de valores por RA.
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\series bold
+\emph on
+\color blue
+Por favor, resolver de forma organizada e destacar as respostas!
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size small
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Rótulo para indicar a última questão.
+ Deixá-lo nesta última linha e não removê-lo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+(Certamente, não deverá haver o incremento de nenhum outro contador entre
+ o cabeçalho da última e este rótulo – como, por exemplo, o de seção ou
+ item.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "que:ultima-questao-an-p1-2020"
 
 \end_inset
 

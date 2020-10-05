@@ -1,0 +1,136 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US RA
+U 1 1 5F6B074F
+P 4150 2900
+F 0 "RA" H 4200 2900 50  0000 L CNN
+F 1 "R_US" H 4218 2855 50  0001 L CNN
+F 2 "" V 4190 2890 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US RB
+U 1 1 5F6B0DA7
+P 4150 3350
+F 0 "RB" H 4200 3350 50  0000 L CNN
+F 1 "R_US" H 4218 3305 50  0001 L CNN
+F 2 "" V 4190 3340 50  0001 C CNN
+F 3 "~" H 4150 3350 50  0001 C CNN
+	1    4150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US RC
+U 1 1 5F6B12E9
+P 5150 2650
+F 0 "RC" V 5250 2650 50  0000 C CNN
+F 1 "R_US" V 5036 2650 50  0001 C CNN
+F 2 "" V 5190 2640 50  0001 C CNN
+F 3 "~" H 5150 2650 50  0001 C CNN
+	1    5150 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US RL
+U 1 1 5F6B1AF4
+P 5500 3150
+F 0 "RL" H 5450 3150 50  0000 R CNN
+F 1 "R_US" H 5432 3195 50  0001 R CNN
+F 2 "" V 5540 3140 50  0001 C CNN
+F 3 "~" H 5500 3150 50  0001 C CNN
+	1    5500 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pessoal:fonte_tensao_dep V2
+U 1 1 5F6CC7FC
+P 4800 3150
+F 0 "V2" H 4928 3196 50  0000 L CNN
+F 1 "v = k v'" H 4928 3105 50  0000 L CIN
+F 2 "" V 4800 3150 50  0001 C CNN
+F 3 "" V 4800 3150 50  0001 C CNN
+	1    4800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2650 4150 2650
+Wire Wire Line
+	4150 2650 4150 2750
+Wire Wire Line
+	4150 3200 4150 3050
+Wire Wire Line
+	3450 3300 3450 3600
+Wire Wire Line
+	3450 3600 4150 3600
+Wire Wire Line
+	4150 3600 4150 3500
+$Comp
+L Device:Battery_Cell Vcc
+U 1 1 5F6AF5B5
+P 3450 3200
+F 0 "Vcc" H 3300 3350 50  0000 L CNN
+F 1 "Vcc" H 3568 3205 50  0001 L CNN
+F 2 "" V 3450 3260 50  0001 C CNN
+F 3 "~" V 3450 3260 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2650 3450 3000
+Wire Wire Line
+	4150 3600 4800 3600
+Wire Wire Line
+	4800 3600 4800 3450
+Connection ~ 4150 3600
+Wire Wire Line
+	4800 2850 4800 2650
+Wire Wire Line
+	4800 2650 5000 2650
+Wire Wire Line
+	5300 2650 5500 2650
+Wire Wire Line
+	5500 2650 5500 3000
+Wire Wire Line
+	5500 3300 5500 3600
+Wire Wire Line
+	5500 3600 4800 3600
+Connection ~ 4800 3600
+$Comp
+L Pessoal:seta_tensao_longa VL
+U 1 1 5F6D2778
+P 5650 3150
+F 0 "VL" H 5560 3150 50  0000 R CNN
+F 1 "seta_tensao_longa" H 5625 3025 50  0001 C CNN
+F 2 "" H 5650 3250 50  0001 C CNN
+F 3 "" H 5650 3250 50  0001 C CNN
+	1    5650 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Pessoal:seta_tensao_longa v'
+U 1 1 5F6D33F5
+P 4100 3350
+F 0 "v'" H 3950 3350 50  0000 L CIN
+F 1 "seta_tensao_longa" H 4075 3225 50  0001 C CNN
+F 2 "" H 4100 3450 50  0001 C CNN
+F 3 "" H 4100 3450 50  0001 C CNN
+	1    4100 3350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
