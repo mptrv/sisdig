@@ -90,7 +90,7 @@ Esquemático
 \end_layout
 
 \begin_layout Enumerate
-Edição básica: inserção, movimentação, alteração, exclusão de:
+Edição básica –inserção, movimentação, alteração, exclusão de:
 \end_layout
 
 \begin_deeper
@@ -110,6 +110,70 @@ fios
 
 \emph on
 barramentos
+\end_layout
+
+\begin_layout Itemize
+junções
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Rótulos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+globais
+\end_layout
+
+\begin_layout Enumerate
+de rede
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Realce de redes
+\end_layout
+
+\begin_layout Enumerate
+Hierarquia de folhas
+\end_layout
+
+\begin_layout Enumerate
+Verificação de regras elétricas
+\end_layout
+
+\begin_layout Enumerate
+Boas práticas de desenho:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+organização
+\end_layout
+
+\begin_layout Enumerate
+legibilidade
+\end_layout
+
+\begin_layout Enumerate
+entradas à esquerda/acima, saídas à direita/abaixo
+\end_layout
+
+\begin_layout Enumerate
+sempre que possível, minimizar o tamanho dos fios
+\end_layout
+
+\begin_layout Enumerate
+utilizar rótulos
+\end_layout
+
+\begin_layout Enumerate
+dividir esquemáticos grandes em várias folhas
+\end_layout
+
+\begin_layout Enumerate
+identificar as folhas
 \end_layout
 
 \end_deeper
