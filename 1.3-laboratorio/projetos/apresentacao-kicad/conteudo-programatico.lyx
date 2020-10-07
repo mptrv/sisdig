@@ -79,13 +79,19 @@
 
 \begin_layout Title
 Mini-Curso de Kicad
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Section
+
+\emph on
 Conteúdo Programático
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
+Visão Geral
+\end_layout
+
+\begin_layout Section
 Esquemático
 \end_layout
 
@@ -127,7 +133,11 @@ globais
 \end_layout
 
 \begin_layout Enumerate
-de rede
+de rede de fios
+\end_layout
+
+\begin_layout Enumerate
+de rede de barramentos
 \end_layout
 
 \end_deeper
@@ -139,8 +149,143 @@ Realce de redes
 Hierarquia de folhas
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+folhas hierárquicas
+\end_layout
+
+\begin_layout Enumerate
+navegação na hierarquia
+\end_layout
+
+\begin_layout Enumerate
+rótulos hierárquicos
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Verificação de regras elétricas
+\end_layout
+
+\begin_layout Enumerate
+Bibliotecas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Novas bibliotecas
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Criação
+\end_layout
+
+\begin_layout Enumerate
+Importação
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De projetos
+\end_layout
+
+\begin_layout Enumerate
+Personalizadas
+\end_layout
+
+\begin_layout Enumerate
+De terceiros
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Digi-Key
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/digikey/digikey-kicad-library/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+SparkFun
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/sparkfun/SparkFun-KiCad-Libraries
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+SnapEDA
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.snapeda.com/kicad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Octopart
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://octopart.com/blog/archives/2020/06/over-850-000-free-kicad-models-now-on-
+octopart
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Criação/edição de símbolos
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Configurações de página
 \end_layout
 
 \begin_layout Enumerate
@@ -177,11 +322,11 @@ identificar as folhas
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
+\begin_layout Section
 Placa de Circuito Impresso (PCI)
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Oficina
 \end_layout
 

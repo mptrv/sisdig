@@ -13,12 +13,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4550 3000 6750 3000
 Text GLabel 4550 3000 0    50   Input ~ 0
 ck
-Text HLabel 6350 3800 0    50   Input ~ 0
-teste
+Wire Wire Line
+	4550 3000 6750 3000
 Wire Wire Line
 	6750 3800 6350 3800
+Text HLabel 6350 3800 0    50   Input ~ 0
+teste
+Text HLabel 6750 4100 0    50   Input ~ 0
+ola
+Text HLabel 6800 4350 0    50   Input ~ 0
+oi
 $EndSCHEMATC
