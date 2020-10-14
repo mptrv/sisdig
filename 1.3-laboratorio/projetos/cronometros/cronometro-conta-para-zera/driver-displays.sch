@@ -9,7 +9,7 @@ Date "2020-10-13"
 Rev "0.0"
 Comp "Fundamentos de Circuitos Digitais e Analógicos"
 Comment1 "Décimos de segundo a unidades de minuto."
-Comment2 ""
+Comment2 "Todos resistores de 1/8W, 5% de tolerância."
 Comment3 ""
 Comment4 ""
 $EndDescr
