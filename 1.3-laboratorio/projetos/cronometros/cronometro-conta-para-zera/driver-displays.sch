@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L eec:CD4511BNSR U?
+L cronometro-conta-para-zera-rescue:CD4511BNSR-eec U?
 U 1 1 5FA79889
 P 4150 950
 AR Path="/5FA79889" Ref="U?"  Part="1" 
@@ -135,7 +135,7 @@ DS2
 Text Label 4150 1250 2    50   ~ 0
 DS3
 $Comp
-L eec:CD4511BNSR U?
+L cronometro-conta-para-zera-rescue:CD4511BNSR-eec U?
 U 1 1 5FA798D0
 P 4150 4450
 AR Path="/5FA798D0" Ref="U?"  Part="1" 
@@ -244,7 +244,7 @@ Entry Wire Line
 Wire Bus Line
 	2800 5050 3800 5050
 $Comp
-L eec:CD4511BNSR U?
+L cronometro-conta-para-zera-rescue:CD4511BNSR-eec U?
 U 1 1 5FA79917
 P 4150 2700
 AR Path="/5FA79917" Ref="U?"  Part="1" 
@@ -357,7 +357,7 @@ Entry Wire Line
 Wire Bus Line
 	2800 3300 3800 3300
 $Comp
-L eec:CD4511BNSR U?
+L cronometro-conta-para-zera-rescue:CD4511BNSR-eec U?
 U 1 1 5FA7995E
 P 4200 6200
 AR Path="/5FA7995E" Ref="U?"  Part="1" 

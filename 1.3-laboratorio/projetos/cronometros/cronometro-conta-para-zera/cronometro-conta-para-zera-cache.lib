@@ -315,11 +315,11 @@ X DIS 7 500 0 150 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# eec_CD4511BNSR
+# cronometro-conta-para-zera-rescue_CD4511BNSR-eec
 #
-DEF eec_CD4511BNSR U 0 40 Y Y 1 L N
+DEF cronometro-conta-para-zera-rescue_CD4511BNSR-eec U 0 40 Y Y 1 L N
 F0 "U" 0 200 50 H V L CNN
-F1 "eec_CD4511BNSR" 0 300 50 H V L CNN
+F1 "cronometro-conta-para-zera-rescue_CD4511BNSR-eec" 0 300 50 H V L CNN
 F2 "Texas_Instruments-CD4511BNSR-*" 0 400 50 H I L CNN
 F3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf" 0 500 50 H I L CNN
 F4 "Manufacturer URL" 0 600 50 H I L CNN "Component Link 1 Description"
@@ -377,6 +377,19 @@ P 2 0 1 0 -5 -100 5 -100 N
 P 2 0 1 0 0 -50 0 0 N
 P 2 0 1 0 50 -50 -50 -50 N
 X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #

@@ -1075,7 +1075,7 @@ F 1 "CD4093" H 4000 1100 50  0000 R CNN
 F 2 "" H 3650 1450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 3650 1450 50  0001 C CNN
 	5    3650 1450
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:HEF4093B U5
@@ -1086,7 +1086,7 @@ F 1 "CD4093" H 4550 1100 50  0000 R CNN
 F 2 "" H 4200 1450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 4200 1450 50  0001 C CNN
 	5    4200 1450
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS73 U6
@@ -1135,8 +1135,6 @@ Connection ~ 3100 2000
 Wire Wire Line
 	3100 2000 3650 2000
 Wire Wire Line
-	2550 900  3100 900 
-Wire Wire Line
 	4750 900  4750 1050
 Wire Wire Line
 	4200 950  4200 900 
@@ -1148,11 +1146,6 @@ Wire Wire Line
 Connection ~ 3650 900 
 Wire Wire Line
 	3650 900  4200 900 
-Wire Wire Line
-	3100 950  3100 900 
-Connection ~ 3100 900 
-Wire Wire Line
-	3100 900  3650 900 
 $Comp
 L power:VCC #PWR0102
 U 1 1 5FDE6037
@@ -1232,6 +1225,47 @@ M3
 NoConn ~ 7400 3650
 Wire Wire Line
 	2550 850  2550 900 
+Connection ~ 2550 900 
+Wire Wire Line
+	2550 900  2550 950 
+Wire Wire Line
+	2550 900  3100 900 
+Wire Wire Line
+	3100 950  3100 900 
+Connection ~ 3100 900 
+Wire Wire Line
+	3100 900  3650 900 
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5F8B22C4
+P 1850 1300
+F 0 "#FLG01" H 1850 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 1473 50  0001 C CNN
+F 2 "" H 1850 1300 50  0001 C CNN
+F 3 "~" H 1850 1300 50  0001 C CNN
+	1    1850 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1350 1850 1350
+Wire Wire Line
+	1850 1350 1850 1300
+Connection ~ 1750 1350
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5F8BCCA0
+P 1850 1600
+F 0 "#FLG02" H 1850 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 1850 1773 50  0001 C CNN
+F 2 "" H 1850 1600 50  0001 C CNN
+F 3 "~" H 1850 1600 50  0001 C CNN
+	1    1850 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1750 1550 1850 1550
+Wire Wire Line
+	1850 1550 1850 1600
 Wire Bus Line
 	7700 3450 7700 3700
 Wire Bus Line
@@ -1240,7 +1274,5 @@ Wire Bus Line
 	7700 2550 7700 2900
 Wire Bus Line
 	7700 1400 7700 1750
-Connection ~ 2550 900 
-Wire Wire Line
-	2550 900  2550 950 
+Connection ~ 1750 1550
 $EndSCHEMATC
