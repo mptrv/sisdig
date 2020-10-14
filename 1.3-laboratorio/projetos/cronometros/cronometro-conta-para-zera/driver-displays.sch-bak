@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
 Title "Cronômetro Digital Didático"
-Date "2020-10-13"
+Date "2020-10-14"
 Rev "0.0"
 Comp "Fundamentos de Circuitos Digitais e Analógicos"
 Comment1 "Décimos de segundo a unidades de minuto."
 Comment2 "Todos resistores de 1/8W, 5% de tolerância."
-Comment3 ""
+Comment3 "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
 Comment4 ""
 $EndDescr
 $Comp
@@ -21,7 +21,7 @@ AR Path="/5FA79889" Ref="U?"  Part="1"
 AR Path="/5FA6DD7C/5FA79889" Ref="U7"  Part="1" 
 F 0 "U7" H 4750 1215 50  0000 C CNN
 F 1 "CD4511BNSR" H 4750 1124 50  0000 C CNN
-F 2 "Texas_Instruments-CD4511BNSR-*" H 4150 1350 50  0001 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4150 1350 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf" H 4150 1450 50  0001 L CNN
 F 4 "Manufacturer URL" H 4150 1550 50  0001 L CNN "Component Link 1 Description"
 F 5 "http://www.ti.com/" H 4150 1650 50  0001 L CNN "Component Link 1 URL"
@@ -142,7 +142,7 @@ AR Path="/5FA798D0" Ref="U?"  Part="1"
 AR Path="/5FA6DD7C/5FA798D0" Ref="U9"  Part="1" 
 F 0 "U9" H 4750 4715 50  0000 C CNN
 F 1 "CD4511BNSR" H 4750 4624 50  0000 C CNN
-F 2 "Texas_Instruments-CD4511BNSR-*" H 4150 4850 50  0001 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4150 4850 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf" H 4150 4950 50  0001 L CNN
 F 4 "Manufacturer URL" H 4150 5050 50  0001 L CNN "Component Link 1 Description"
 F 5 "http://www.ti.com/" H 4150 5150 50  0001 L CNN "Component Link 1 URL"
@@ -251,7 +251,7 @@ AR Path="/5FA79917" Ref="U?"  Part="1"
 AR Path="/5FA6DD7C/5FA79917" Ref="U8"  Part="1" 
 F 0 "U8" H 4750 2965 50  0000 C CNN
 F 1 "CD4511BNSR" H 4750 2874 50  0000 C CNN
-F 2 "Texas_Instruments-CD4511BNSR-*" H 4150 3100 50  0001 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4150 3100 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf" H 4150 3200 50  0001 L CNN
 F 4 "Manufacturer URL" H 4150 3300 50  0001 L CNN "Component Link 1 Description"
 F 5 "http://www.ti.com/" H 4150 3400 50  0001 L CNN "Component Link 1 URL"
@@ -364,7 +364,7 @@ AR Path="/5FA7995E" Ref="U?"  Part="1"
 AR Path="/5FA6DD7C/5FA7995E" Ref="U10"  Part="1" 
 F 0 "U10" H 4800 6465 50  0000 C CNN
 F 1 "CD4511BNSR" H 4800 6374 50  0000 C CNN
-F 2 "Texas_Instruments-CD4511BNSR-*" H 4200 6600 50  0001 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 4200 6600 50  0001 L CNN
 F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf" H 4200 6700 50  0001 L CNN
 F 4 "Manufacturer URL" H 4200 6800 50  0001 L CNN "Component Link 1 Description"
 F 5 "http://www.ti.com/" H 4200 6900 50  0001 L CNN "Component Link 1 URL"
@@ -518,7 +518,7 @@ U 1 1 5FB4A8CE
 P 5500 950
 F 0 "R7" V 5500 950 50  0000 C CNN
 F 1 "270R" V 5384 950 50  0001 C CNN
-F 2 "" V 5430 950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 950 50  0001 C CNN
 F 3 "~" H 5500 950 50  0001 C CNN
 	1    5500 950 
 	0    1    1    0   
@@ -529,7 +529,7 @@ U 1 1 5FB4D074
 P 5500 1050
 F 0 "R8" V 5500 1050 50  0000 C CNN
 F 1 "270R" V 5384 1050 50  0001 C CNN
-F 2 "" V 5430 1050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 1050 50  0001 C CNN
 F 3 "~" H 5500 1050 50  0001 C CNN
 	1    5500 1050
 	0    1    1    0   
@@ -540,7 +540,7 @@ U 1 1 5FB4D319
 P 5500 1150
 F 0 "R9" V 5500 1150 50  0000 C CNN
 F 1 "270R" V 5384 1150 50  0001 C CNN
-F 2 "" V 5430 1150 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 1150 50  0001 C CNN
 F 3 "~" H 5500 1150 50  0001 C CNN
 	1    5500 1150
 	0    1    1    0   
@@ -551,7 +551,7 @@ U 1 1 5FB4D4ED
 P 5500 1250
 F 0 "R10" V 5500 1250 50  0000 C CNN
 F 1 "270R" V 5384 1250 50  0001 C CNN
-F 2 "" V 5430 1250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 1250 50  0001 C CNN
 F 3 "~" H 5500 1250 50  0001 C CNN
 	1    5500 1250
 	0    1    1    0   
@@ -562,7 +562,7 @@ U 1 1 5FB4D6F0
 P 5500 1350
 F 0 "R11" V 5500 1350 50  0000 C CNN
 F 1 "270R" V 5384 1350 50  0001 C CNN
-F 2 "" V 5430 1350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 1350 50  0001 C CNN
 F 3 "~" H 5500 1350 50  0001 C CNN
 	1    5500 1350
 	0    1    1    0   
@@ -573,7 +573,7 @@ U 1 1 5FB4D8AA
 P 5500 1450
 F 0 "R12" V 5500 1450 50  0000 C CNN
 F 1 "270R" V 5384 1450 50  0001 C CNN
-F 2 "" V 5430 1450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 1450 50  0001 C CNN
 F 3 "~" H 5500 1450 50  0001 C CNN
 	1    5500 1450
 	0    1    1    0   
@@ -584,7 +584,7 @@ U 1 1 5FB4DAC7
 P 5500 1550
 F 0 "R13" V 5500 1550 50  0000 C CNN
 F 1 "270R" V 5384 1550 50  0001 C CNN
-F 2 "" V 5430 1550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 1550 50  0001 C CNN
 F 3 "~" H 5500 1550 50  0001 C CNN
 	1    5500 1550
 	0    1    1    0   
@@ -625,7 +625,7 @@ U 1 1 5FB630E3
 P 5500 2700
 F 0 "R14" V 5500 2700 50  0000 C CNN
 F 1 "270R" V 5384 2700 50  0001 C CNN
-F 2 "" V 5430 2700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 2700 50  0001 C CNN
 F 3 "~" H 5500 2700 50  0001 C CNN
 	1    5500 2700
 	0    1    1    0   
@@ -636,7 +636,7 @@ U 1 1 5FB630E9
 P 5500 2800
 F 0 "R15" V 5500 2800 50  0000 C CNN
 F 1 "270R" V 5384 2800 50  0001 C CNN
-F 2 "" V 5430 2800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 2800 50  0001 C CNN
 F 3 "~" H 5500 2800 50  0001 C CNN
 	1    5500 2800
 	0    1    1    0   
@@ -647,7 +647,7 @@ U 1 1 5FB630EF
 P 5500 2900
 F 0 "R16" V 5500 2900 50  0000 C CNN
 F 1 "270R" V 5384 2900 50  0001 C CNN
-F 2 "" V 5430 2900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 2900 50  0001 C CNN
 F 3 "~" H 5500 2900 50  0001 C CNN
 	1    5500 2900
 	0    1    1    0   
@@ -658,7 +658,7 @@ U 1 1 5FB630F5
 P 5500 3000
 F 0 "R17" V 5500 3000 50  0000 C CNN
 F 1 "270R" V 5384 3000 50  0001 C CNN
-F 2 "" V 5430 3000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 3000 50  0001 C CNN
 F 3 "~" H 5500 3000 50  0001 C CNN
 	1    5500 3000
 	0    1    1    0   
@@ -669,7 +669,7 @@ U 1 1 5FB630FB
 P 5500 3100
 F 0 "R18" V 5500 3100 50  0000 C CNN
 F 1 "270R" V 5384 3100 50  0001 C CNN
-F 2 "" V 5430 3100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 3100 50  0001 C CNN
 F 3 "~" H 5500 3100 50  0001 C CNN
 	1    5500 3100
 	0    1    1    0   
@@ -680,7 +680,7 @@ U 1 1 5FB63101
 P 5500 3200
 F 0 "R19" V 5500 3200 50  0000 C CNN
 F 1 "270R" V 5384 3200 50  0001 C CNN
-F 2 "" V 5430 3200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 3200 50  0001 C CNN
 F 3 "~" H 5500 3200 50  0001 C CNN
 	1    5500 3200
 	0    1    1    0   
@@ -691,7 +691,7 @@ U 1 1 5FB63107
 P 5500 3300
 F 0 "R20" V 5500 3300 50  0000 C CNN
 F 1 "270R" V 5384 3300 50  0001 C CNN
-F 2 "" V 5430 3300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 3300 50  0001 C CNN
 F 3 "~" H 5500 3300 50  0001 C CNN
 	1    5500 3300
 	0    1    1    0   
@@ -732,7 +732,7 @@ U 1 1 5FB67286
 P 5500 4450
 F 0 "R21" V 5500 4450 50  0000 C CNN
 F 1 "270R" V 5384 4450 50  0001 C CNN
-F 2 "" V 5430 4450 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 4450 50  0001 C CNN
 F 3 "~" H 5500 4450 50  0001 C CNN
 	1    5500 4450
 	0    1    1    0   
@@ -743,7 +743,7 @@ U 1 1 5FB6728C
 P 5500 4550
 F 0 "R22" V 5500 4550 50  0000 C CNN
 F 1 "270R" V 5384 4550 50  0001 C CNN
-F 2 "" V 5430 4550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 4550 50  0001 C CNN
 F 3 "~" H 5500 4550 50  0001 C CNN
 	1    5500 4550
 	0    1    1    0   
@@ -754,7 +754,7 @@ U 1 1 5FB67292
 P 5500 4650
 F 0 "R23" V 5500 4650 50  0000 C CNN
 F 1 "270R" V 5384 4650 50  0001 C CNN
-F 2 "" V 5430 4650 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 4650 50  0001 C CNN
 F 3 "~" H 5500 4650 50  0001 C CNN
 	1    5500 4650
 	0    1    1    0   
@@ -765,7 +765,7 @@ U 1 1 5FB67298
 P 5500 4750
 F 0 "R24" V 5500 4750 50  0000 C CNN
 F 1 "270R" V 5384 4750 50  0001 C CNN
-F 2 "" V 5430 4750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 4750 50  0001 C CNN
 F 3 "~" H 5500 4750 50  0001 C CNN
 	1    5500 4750
 	0    1    1    0   
@@ -776,7 +776,7 @@ U 1 1 5FB6729E
 P 5500 4850
 F 0 "R25" V 5500 4850 50  0000 C CNN
 F 1 "270R" V 5384 4850 50  0001 C CNN
-F 2 "" V 5430 4850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 4850 50  0001 C CNN
 F 3 "~" H 5500 4850 50  0001 C CNN
 	1    5500 4850
 	0    1    1    0   
@@ -787,7 +787,7 @@ U 1 1 5FB672A4
 P 5500 4950
 F 0 "R26" V 5500 4950 50  0000 C CNN
 F 1 "270R" V 5384 4950 50  0001 C CNN
-F 2 "" V 5430 4950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 4950 50  0001 C CNN
 F 3 "~" H 5500 4950 50  0001 C CNN
 	1    5500 4950
 	0    1    1    0   
@@ -798,7 +798,7 @@ U 1 1 5FB672AA
 P 5500 5050
 F 0 "R27" V 5500 5050 50  0000 C CNN
 F 1 "270R" V 5384 5050 50  0001 C CNN
-F 2 "" V 5430 5050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5430 5050 50  0001 C CNN
 F 3 "~" H 5500 5050 50  0001 C CNN
 	1    5500 5050
 	0    1    1    0   
@@ -839,7 +839,7 @@ U 1 1 5FB718CF
 P 5550 6200
 F 0 "R28" V 5550 6200 50  0000 C CNN
 F 1 "270R" V 5434 6200 50  0001 C CNN
-F 2 "" V 5480 6200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 6200 50  0001 C CNN
 F 3 "~" H 5550 6200 50  0001 C CNN
 	1    5550 6200
 	0    1    1    0   
@@ -850,7 +850,7 @@ U 1 1 5FB718D5
 P 5550 6300
 F 0 "R29" V 5550 6300 50  0000 C CNN
 F 1 "270R" V 5434 6300 50  0001 C CNN
-F 2 "" V 5480 6300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 6300 50  0001 C CNN
 F 3 "~" H 5550 6300 50  0001 C CNN
 	1    5550 6300
 	0    1    1    0   
@@ -861,7 +861,7 @@ U 1 1 5FB718DB
 P 5550 6400
 F 0 "R30" V 5550 6400 50  0000 C CNN
 F 1 "270R" V 5434 6400 50  0001 C CNN
-F 2 "" V 5480 6400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 6400 50  0001 C CNN
 F 3 "~" H 5550 6400 50  0001 C CNN
 	1    5550 6400
 	0    1    1    0   
@@ -872,7 +872,7 @@ U 1 1 5FB718E1
 P 5550 6500
 F 0 "R31" V 5550 6500 50  0000 C CNN
 F 1 "270R" V 5434 6500 50  0001 C CNN
-F 2 "" V 5480 6500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 6500 50  0001 C CNN
 F 3 "~" H 5550 6500 50  0001 C CNN
 	1    5550 6500
 	0    1    1    0   
@@ -883,7 +883,7 @@ U 1 1 5FB718E7
 P 5550 6600
 F 0 "R32" V 5550 6600 50  0000 C CNN
 F 1 "270R" V 5434 6600 50  0001 C CNN
-F 2 "" V 5480 6600 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 6600 50  0001 C CNN
 F 3 "~" H 5550 6600 50  0001 C CNN
 	1    5550 6600
 	0    1    1    0   
@@ -894,7 +894,7 @@ U 1 1 5FB718ED
 P 5550 6700
 F 0 "R33" V 5550 6700 50  0000 C CNN
 F 1 "270R" V 5434 6700 50  0001 C CNN
-F 2 "" V 5480 6700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 6700 50  0001 C CNN
 F 3 "~" H 5550 6700 50  0001 C CNN
 	1    5550 6700
 	0    1    1    0   
@@ -905,7 +905,7 @@ U 1 1 5FB718F3
 P 5550 6800
 F 0 "R34" V 5550 6800 50  0000 C CNN
 F 1 "270R" V 5434 6800 50  0001 C CNN
-F 2 "" V 5480 6800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 6800 50  0001 C CNN
 F 3 "~" H 5550 6800 50  0001 C CNN
 	1    5550 6800
 	0    1    1    0   
@@ -1133,7 +1133,7 @@ U 1 1 5FEFC958
 P 7150 1000
 F 0 "R6" V 7150 1000 50  0000 C CNN
 F 1 "270R" V 7034 1000 50  0001 C CNN
-F 2 "" V 7080 1000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7080 1000 50  0001 C CNN
 F 3 "~" H 7150 1000 50  0001 C CNN
 	1    7150 1000
 	-1   0    0    1   
