@@ -1,0 +1,53 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# CD4511BNSR-eec
+#
+DEF CD4511BNSR-eec U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "CD4511BNSR-eec" 0 300 50 H V L CNN
+F2 "Texas_Instruments-CD4511BNSR-*" 0 400 50 H I L CNN
+F3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf" 0 500 50 H I L CNN
+F4 "Manufacturer URL" 0 600 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.ti.com/" 0 700 50 H I L CNN "Component Link 1 URL"
+F6 "Package Specification" 0 800 50 H I L CNN "Component Link 3 Description"
+F7 "http://www.ti.com/litv/pdf/msop002a" 0 900 50 H I L CNN "Component Link 3 URL"
+F8 "SCHS072B" 0 1000 50 H I L CNN "Datasheet Version"
+F9 "Surface Mount" 0 1100 50 H I L CNN "Mounting Technology"
+F10 "16-Pin Plastic Small Outline, Body 10.20 x 5.30 mm, Pitch 1.27 mm" 0 1200 50 H I L CNN "Package Description"
+F11 "4040062/C" 0 1300 50 H I L CNN "Package Version"
+F12 "Military" 0 1400 50 H I L CNN "Rating"
+F13 "Discrete Segment LED Driver" 0 1500 50 H I L CNN "Sub Family"
+F14 "18" 0 1600 50 H I L CNN "Vin Max V"
+F15 "3" 0 1700 50 H I L CNN "Vin Min V"
+F16 "IC" 0 1800 50 H I L CNN "category"
+F17 "1239827" 0 1900 50 H I L CNN "ciiva ids"
+F18 "69b0213151fae990" 0 2000 50 H I L CNN "library id"
+F19 "Texas Instruments" 0 2100 50 H I L CNN "manufacturer"
+F20 "NS0016A" 0 2200 50 H I L CNN "package"
+F21 "1464591347" 0 2300 50 H I L CNN "release date"
+F22 "Yes" 0 2400 50 H I L CNN "rohs"
+F23 "CACC505D-2697-4245-B634-294BE748177B" 0 2500 50 H I L CNN "vault revision"
+F24 "yes" 0 2600 50 H I L CNN "imported"
+DRAW
+S 200 100 1000 -1100 1 1 0 f
+X B 1 100 -100 100 R 40 40 1 1 I
+X d 10 1100 -300 100 L 40 40 1 1 O
+X c 11 1100 -200 100 L 40 40 1 1 O
+X b 12 1100 -100 100 L 40 40 1 1 O
+X a 13 1100 0 100 L 40 40 1 1 O
+X g 14 1100 -600 100 L 40 40 1 1 O
+X f 15 1100 -500 100 L 40 40 1 1 O
+X VDD 16 100 -1000 100 R 40 40 1 1 W
+X C 2 100 -200 100 R 40 40 1 1 I
+X ~LT~ 3 100 -700 100 R 40 40 1 1 I
+X ~BL~ 4 100 -800 100 R 40 40 1 1 I
+X ~STROBE~ 5 100 -500 100 R 40 40 1 1 I
+X D 6 100 -300 100 R 40 40 1 1 I
+X A 7 100 0 100 R 40 40 1 1 I
+X VSS 8 1100 -1000 100 L 40 40 1 1 W
+X e 9 1100 -400 100 L 40 40 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

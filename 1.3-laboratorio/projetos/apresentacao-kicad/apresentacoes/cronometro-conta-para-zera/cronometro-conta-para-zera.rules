@@ -1,0 +1,120 @@
+
+(rules PCB cronometro-conta-para-zera
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 31747)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 250.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 62.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Gnd" "Via[0-1]_800:400_um" Gnd
+  )
+  (via 
+    "Via[0-1]_800:400_um-Vcc" "Via[0-1]_800:400_um" Vcc
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Gnd "Via[0-1]_800:400_um-Gnd"
+  )
+  (via_rule
+    Vcc "Via[0-1]_800:400_um-Vcc"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(R1-Pad2)" "/driver-displays/DP" "Net-(R7-Pad2)" "Net-(R7-Pad1)"
+    "Net-(R8-Pad2)" "Net-(R8-Pad1)" "Net-(R9-Pad2)" "Net-(R9-Pad1)" "Net-(R10-Pad2)" "Net-(R10-Pad1)" "Net-(R11-Pad2)" "Net-(R11-Pad1)"
+    "Net-(R12-Pad2)" "Net-(R12-Pad1)" "Net-(R13-Pad2)" "Net-(R13-Pad1)" "Net-(R14-Pad2)" "Net-(R14-Pad1)" "Net-(R15-Pad2)" "Net-(R15-Pad1)"
+    "Net-(R16-Pad2)" "Net-(R16-Pad1)" "Net-(R17-Pad2)" "Net-(R17-Pad1)" "Net-(R18-Pad2)" "Net-(R18-Pad1)" "Net-(R19-Pad2)" "Net-(R19-Pad1)"
+    "Net-(R20-Pad2)" "Net-(R20-Pad1)" "Net-(R21-Pad2)" "Net-(R21-Pad1)" "Net-(R22-Pad2)" "Net-(R22-Pad1)" "Net-(R23-Pad2)" "Net-(R23-Pad1)"
+    "Net-(R24-Pad2)" "Net-(R24-Pad1)" "Net-(R25-Pad2)" "Net-(R25-Pad1)" "Net-(R26-Pad2)" "Net-(R26-Pad1)" "Net-(R27-Pad2)" "Net-(R27-Pad1)"
+    "Net-(R28-Pad2)" "Net-(R28-Pad1)" "Net-(R29-Pad2)" "Net-(R29-Pad1)" "Net-(R30-Pad2)" "Net-(R30-Pad1)" "Net-(R31-Pad2)" "Net-(R31-Pad1)"
+    "Net-(R32-Pad2)" "Net-(R32-Pad1)" "Net-(R33-Pad2)" "Net-(R33-Pad1)" "Net-(R34-Pad2)" "Net-(R34-Pad1)" ck MR
+    /M3 /DS3 /M2 /DS2 /M1 /DS1 /M0 /DS0
+    /Sd2 "/hab_cont" "/clr_seg" /Su3 /Su2 /Sd1 /Su1 /Sd0
+    /Su0 "Net-(U4-Pad13)" ~MR "Net-(U5-Pad3)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Gnd
+    Earth
+    (clearance_class Gnd)
+    (via_rule Gnd)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Vcc
+    VCC
+    (clearance_class Vcc)
+    (via_rule Vcc)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

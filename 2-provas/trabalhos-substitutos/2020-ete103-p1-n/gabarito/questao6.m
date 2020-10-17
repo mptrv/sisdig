@@ -29,7 +29,8 @@ vcc = [
 ]
 
 vled = 1.8
-iled = 10 * 10e-3
+iled = 10 * 10e-3;
+iled_tot = iled
 
 R = (vcc - vled) ./ iled;
 
@@ -47,16 +48,17 @@ R_com = [
 120
 ];
 
-R_R_com = [R R_com]
+R_Rcom = [R R_com]
 
 
 disp "Cálculos por valores nominais dos resistores:"
 
 iled_nom = (vcc - vled) ./ R_com
 
-P_R_com_nom = (vcc - vled).^2 ./ R_com
+P_R_com_nom = (vcc - vled).^2 ./ R_com;
+PRcomnom = P_R_com_nom
 
-vcc_R_com_iled_nom_P_R_com_nom = [vcc R_com iled_nom P_R_com_nom]
+vcc_Rcom_ilednom_PRcomnom = [vcc R_com iled_nom P_R_com_nom]
 
 
 disp "Cálculos pelo pior caso, para resistores com tolerância de 5%:"

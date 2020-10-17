@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name cronometro-conta-para-zera-rescue)(type Legacy)(uri ${KIPRJMOD}/cronometro-conta-para-zera-rescue.lib)(options "")(descr ""))
+)
