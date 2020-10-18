@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 31747)
+    (start_pass_no 3890)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.3)
+      (against_preferred_direction_trace_costs 2.4)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 1.7)
     )
   )
   (rule
@@ -100,10 +100,15 @@
     (clearance_class Gnd)
     (via_rule Gnd)
     (rule
-      (width 500.0)
+      (width 0.0)
+    )
+    (layer_rule B.Cu
+      (rule 
+        (width 500.0) 
+      )
     )
     (circuit 
-      (use_layer F.Cu B.Cu)
+      (use_layer B.Cu)
     )
   )
   (class Vcc
@@ -111,10 +116,15 @@
     (clearance_class Vcc)
     (via_rule Vcc)
     (rule
-      (width 500.0)
+      (width 0.0)
+    )
+    (layer_rule B.Cu
+      (rule 
+        (width 500.0) 
+      )
     )
     (circuit 
-      (use_layer F.Cu B.Cu)
+      (use_layer B.Cu)
     )
   )
 )
