@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title "Cronômetro Digital Didático"
-Date "2020-10-14"
+Title "Cronômetro Digital Didático Conta-Pára-Zera"
+Date "2020-10-18"
 Rev "0.0"
 Comp "Fundamentos de Circuitos Digitais e Analógicos"
-Comment1 "Décimos de segundo a unidades de minuto."
+Comment1 "Décimos de segundo a unidades de minuto. (Circuito não testado.)"
 Comment2 "Todos resistores de 1/8W, 5% de tolerância."
 Comment3 "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
-Comment4 ""
+Comment4 "Use sob seu próprio risco. Nenhuma garantia fornecida."
 $EndDescr
 $Comp
 L cronometro-conta-para-zera-rescue:CD4511BNSR-eec U?
