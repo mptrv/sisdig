@@ -1,0 +1,14 @@
+v1 = 10
+v2 = 1.632
+v3 = 3.214
+vx = 5.51
+vx1 = 4.373
+vx2 = 0.684
+vx3 = 0.426
+vx_superp = vx1 + vx2 + vx3
+vth = 5.86
+rth = 51
+vx_thevenin = 5.51
+in = 110.9e-3
+rn = 52
+vx_norton = 5.42

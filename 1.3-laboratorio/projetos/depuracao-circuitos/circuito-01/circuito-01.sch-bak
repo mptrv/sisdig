@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:circuito-01-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -274,6 +275,17 @@ Wire Wire Line
 Wire Wire Line
 	5250 4200 5300 4200
 Connection ~ 2950 2800
+$Comp
+L circuito-01-rescue:CONN_01X02 P1
+U 1 1 5B189AF0
+P 1300 1950
+F 0 "P1" H 1300 1800 50  0000 C CNN
+F 1 "CONN_01X02" V 1400 1950 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 1300 1950 50  0001 C CNN
+F 3 "" H 1300 1950 50  0000 C CNN
+	1    1300 1950
+	-1   0    0    1   
+$EndComp
 $Comp
 L circuito-01-rescue:VCC #PWR03
 U 1 1 5B189F60
@@ -996,15 +1008,4 @@ Wire Wire Line
 Wire Wire Line
 	10250 2100 10150 2100
 NoConn ~ 10150 2100
-$Comp
-L circuito-01-rescue:CONN_01X02 P1
-U 1 1 5B189AF0
-P 1300 1950
-F 0 "P1" H 1300 1800 50  0000 C CNN
-F 1 "CONN_01X02" V 1400 1950 50  0000 C CNN
-F 2 "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree" H 1300 1950 50  0001 C CNN
-F 3 "" H 1300 1950 50  0000 C CNN
-	1    1300 1950
-	-1   0    0    -1  
-$EndComp
 $EndSCHEMATC
