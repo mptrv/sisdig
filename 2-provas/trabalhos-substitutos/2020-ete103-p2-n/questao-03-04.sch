@@ -1,0 +1,121 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Questão 3 e 4 - P2/2020 - Noturno"
+Date "2020-11-18"
+Rev "0"
+Comp "ETE103 - Fundamentos de Circuitos Analógicos"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB44D77
+P 5100 4050
+F 0 "V1" H 5218 4146 50  0000 L CNN
+F 1 "10V" H 5218 4055 50  0000 L CNN
+F 2 "" V 5100 4110 50  0001 C CNN
+F 3 "~" V 5100 4110 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FB45895
+P 5700 3650
+F 0 "R2" H 5632 3604 50  0000 R CNN
+F 1 "2k2Ω" H 5632 3695 50  0000 R CNN
+F 2 "" V 5740 3640 50  0001 C CNN
+F 3 "~" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3450 5100 3500
+Wire Wire Line
+	5700 3450 5700 3500
+Wire Wire Line
+	5700 3850 5700 3800
+$Comp
+L Device:R_US R1
+U 1 1 5FB454FE
+P 5100 3650
+F 0 "R1" H 5032 3604 50  0000 R CNN
+F 1 "1kΩ" H 5032 3695 50  0000 R CNN
+F 2 "" V 5140 3640 50  0001 C CNN
+F 3 "~" H 5100 3650 50  0001 C CNN
+	1    5100 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell V2
+U 1 1 5FB5838D
+P 5700 4050
+F 0 "V2" H 5818 4146 50  0000 L CNN
+F 1 "5V" H 5818 4055 50  0000 L CNN
+F 2 "" V 5700 4110 50  0001 C CNN
+F 3 "~" V 5700 4110 50  0001 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FB58A5F
+P 6300 3650
+F 0 "R3" H 6232 3604 50  0000 R CNN
+F 1 "4k7Ω" H 6232 3695 50  0000 R CNN
+F 2 "" V 6340 3640 50  0001 C CNN
+F 3 "~" H 6300 3650 50  0001 C CNN
+	1    6300 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 4200 5700 4200
+Wire Wire Line
+	5700 4200 5700 4150
+Wire Wire Line
+	5100 4150 5100 4200
+Wire Wire Line
+	5700 3450 6300 3450
+Wire Wire Line
+	6300 3450 6300 3500
+Connection ~ 5700 3450
+$Comp
+L Pessoal:seta_tensao_longa Vx
+U 1 1 5FB47F2F
+P 5650 3650
+F 0 "Vx" H 5560 3650 50  0000 R CNN
+F 1 "seta_tensao_longa" H 5625 3525 50  0001 C CNN
+F 2 "" H 5650 3750 50  0001 C CNN
+F 3 "" H 5650 3750 50  0001 C CNN
+	1    5650 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell V3
+U 1 1 5FB54A1C
+P 6300 4050
+F 0 "V3" H 6418 4146 50  0000 L CNN
+F 1 "2,5V" H 6418 4055 50  0000 L CNN
+F 2 "" V 6300 4110 50  0001 C CNN
+F 3 "~" V 6300 4110 50  0001 C CNN
+	1    6300 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3800 5100 3850
+Wire Wire Line
+	5100 3450 5700 3450
+Wire Wire Line
+	6300 3850 6300 3800
+Wire Wire Line
+	6300 4150 6300 4200
+Wire Wire Line
+	6300 4200 5700 4200
+Connection ~ 5700 4200
+$EndSCHEMATC

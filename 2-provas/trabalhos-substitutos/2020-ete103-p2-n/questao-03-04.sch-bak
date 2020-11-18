@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Questão 2 - P2/2020 - Noturno"
+Date "2020-11-18"
+Rev "0"
+Comp "ETE103 - Fundamentos de Circuitos Analógicos"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB44D77
+P 4850 2900
+F 0 "V1" H 4968 2996 50  0000 L CNN
+F 1 "15V" H 4968 2905 50  0000 L CNN
+F 2 "" V 4850 2960 50  0001 C CNN
+F 3 "~" V 4850 2960 50  0001 C CNN
+	1    4850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FB45895
+P 5850 2700
+F 0 "R2" H 5782 2654 50  0000 R CNN
+F 1 "180Ω" H 5782 2745 50  0000 R CNN
+F 2 "" V 5890 2690 50  0001 C CNN
+F 3 "~" H 5850 2700 50  0001 C CNN
+	1    5850 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 2500 4850 2700
+Wire Wire Line
+	5500 2500 5850 2500
+Wire Wire Line
+	5850 2500 5850 2550
+Wire Wire Line
+	5850 2900 5850 2850
+Wire Wire Line
+	4850 2500 5200 2500
+$Comp
+L Device:R_US R1
+U 1 1 5FB454FE
+P 5350 2500
+F 0 "R1" V 5145 2500 50  0000 C CNN
+F 1 "100Ω" V 5236 2500 50  0000 C CNN
+F 2 "" V 5390 2490 50  0001 C CNN
+F 3 "~" H 5350 2500 50  0001 C CNN
+	1    5350 2500
+	0    1    1    0   
+$EndComp
+Text Notes 4450 2250 0    50   ~ 0
+a)
+Text Notes 4450 3800 0    50   ~ 0
+b)
+$Comp
+L Device:Battery_Cell V2
+U 1 1 5FB5838D
+P 5850 3100
+F 0 "V2" H 5968 3196 50  0000 L CNN
+F 1 "24V" H 5968 3105 50  0000 L CNN
+F 2 "" V 5850 3160 50  0001 C CNN
+F 3 "~" V 5850 3160 50  0001 C CNN
+	1    5850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FB58A5F
+P 6450 2850
+F 0 "R3" H 6382 2804 50  0000 R CNN
+F 1 "270Ω" H 6382 2895 50  0000 R CNN
+F 2 "" V 6490 2840 50  0001 C CNN
+F 3 "~" H 6450 2850 50  0001 C CNN
+	1    6450 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 3250 5850 3250
+Wire Wire Line
+	5850 3250 5850 3200
+Wire Wire Line
+	4850 3000 4850 3250
+Wire Wire Line
+	5850 2500 6450 2500
+Wire Wire Line
+	6450 2500 6450 2700
+Connection ~ 5850 2500
+Wire Wire Line
+	6450 3000 6450 3250
+Wire Wire Line
+	6450 3250 5850 3250
+Connection ~ 5850 3250
+$Comp
+L Pessoal:seta_tensao_longa Vx
+U 1 1 5FB47F2F
+P 6700 2850
+F 0 "Vx" H 6610 2850 50  0000 R CNN
+F 1 "seta_tensao_longa" H 6675 2725 50  0001 C CNN
+F 2 "" H 6700 2950 50  0001 C CNN
+F 3 "" H 6700 2950 50  0001 C CNN
+	1    6700 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB5BDF7
+P 4700 4650
+F 0 "V1" H 4818 4746 50  0000 L CNN
+F 1 "5V" H 4818 4655 50  0000 L CNN
+F 2 "" V 4700 4710 50  0001 C CNN
+F 3 "~" V 4700 4710 50  0001 C CNN
+	1    4700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5FB5CC96
+P 5950 4250
+F 0 "R1" H 5882 4204 50  0000 R CNN
+F 1 "2Ω" H 5882 4295 50  0000 R CNN
+F 2 "" V 5990 4240 50  0001 C CNN
+F 3 "~" H 5950 4250 50  0001 C CNN
+	1    5950 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FB5D894
+P 5950 4950
+F 0 "R2" H 5882 4904 50  0000 R CNN
+F 1 "5Ω" H 5882 4995 50  0000 R CNN
+F 2 "" V 5990 4940 50  0001 C CNN
+F 3 "~" H 5950 4950 50  0001 C CNN
+	1    5950 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pessoal:fonte_corrente I1
+U 1 1 5FB5DFE4
+P 5400 4950
+F 0 "I1" H 5269 4904 50  0000 R CNN
+F 1 "2mA" H 5269 4995 50  0000 R CNN
+F 2 "" V 5400 4950 50  0001 C CNN
+F 3 "" V 5400 4950 50  0001 C CNN
+	1    5400 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pessoal:fonte_corrente_dep I2
+U 1 1 5FB5EDC8
+P 6650 4600
+F 0 "I2" H 6522 4509 50  0000 R CNN
+F 1 "i = k v'" H 6522 4600 50  0000 R CNN
+F 2 "" V 6650 4600 50  0001 C CNN
+F 3 "" V 6650 4600 50  0001 C CNN
+F 4 "k = 0,5S" H 6522 4691 50  0000 R CNN "Observação"
+	1    6650 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FB5F679
+P 6650 4100
+F 0 "R3" H 6582 4054 50  0000 R CNN
+F 1 "3Ω" H 6582 4145 50  0000 R CNN
+F 2 "" V 6690 4090 50  0001 C CNN
+F 3 "~" H 6650 4100 50  0001 C CNN
+	1    6650 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 4450 4700 3900
+Wire Wire Line
+	4700 3900 5950 3900
+Wire Wire Line
+	6650 3900 6650 3950
+Wire Wire Line
+	6650 4250 6650 4300
+Wire Wire Line
+	6650 4900 6650 4950
+$Comp
+L Device:R_US R4
+U 1 1 5FB5FBA9
+P 6650 5100
+F 0 "R4" H 6582 5054 50  0000 R CNN
+F 1 "6Ω" H 6582 5145 50  0000 R CNN
+F 2 "" V 6690 5090 50  0001 C CNN
+F 3 "~" H 6650 5100 50  0001 C CNN
+	1    6650 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 5250 6650 5300
+Wire Wire Line
+	6650 5300 5950 5300
+Wire Wire Line
+	4700 5300 4700 4750
+Wire Wire Line
+	5950 4100 5950 3900
+Connection ~ 5950 3900
+Wire Wire Line
+	5950 3900 6650 3900
+Wire Wire Line
+	5950 4400 5950 4600
+Wire Wire Line
+	5950 5100 5950 5300
+Connection ~ 5950 5300
+Wire Wire Line
+	5950 5300 5400 5300
+Wire Wire Line
+	5400 5250 5400 5300
+Connection ~ 5400 5300
+Wire Wire Line
+	5400 5300 4700 5300
+Wire Wire Line
+	5400 4650 5400 4600
+Wire Wire Line
+	5400 4600 5950 4600
+Connection ~ 5950 4600
+Wire Wire Line
+	5950 4600 5950 4800
+$Comp
+L Pessoal:seta_tensao_longa v'
+U 1 1 5FB75724
+P 6100 4250
+F 0 "v'" H 6010 4250 50  0000 R CNN
+F 1 "seta_tensao_longa" H 6075 4125 50  0001 C CNN
+F 2 "" H 6100 4350 50  0001 C CNN
+F 3 "" H 6100 4350 50  0001 C CNN
+	1    6100 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Pessoal:seta_tensao_longa Vx
+U 1 1 5FB76439
+P 6850 5100
+F 0 "Vx" H 6760 5100 50  0000 R CNN
+F 1 "seta_tensao_longa" H 6825 4975 50  0001 C CNN
+F 2 "" H 6850 5200 50  0001 C CNN
+F 3 "" H 6850 5200 50  0001 C CNN
+	1    6850 5100
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
