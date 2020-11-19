@@ -1,0 +1,320 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Questão 7 - P2/2020 - Noturno"
+Date "2020-11-18"
+Rev "0"
+Comp "ETE103 - Fundamentos de Circuitos Analógicos"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB44D77
+P 4850 2550
+F 0 "V1" H 4968 2646 50  0000 L CNN
+F 1 "9V" H 4968 2555 50  0000 L CNN
+F 2 "" V 4850 2610 50  0001 C CNN
+F 3 "~" V 4850 2610 50  0001 C CNN
+	1    4850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FB45895
+P 5750 2200
+F 0 "R2" H 5682 2154 50  0000 R CNN
+F 1 "560Ω" H 5682 2245 50  0000 R CNN
+F 2 "" V 5790 2190 50  0001 C CNN
+F 3 "~" H 5750 2200 50  0001 C CNN
+	1    5750 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 1950 4850 2350
+Wire Wire Line
+	5450 1950 5750 1950
+Wire Wire Line
+	5750 1950 5750 2050
+Wire Wire Line
+	4850 1950 5150 1950
+$Comp
+L Device:R_US R1
+U 1 1 5FB454FE
+P 5300 1950
+F 0 "R1" V 5400 1950 50  0000 C CNN
+F 1 "330Ω" V 5500 1950 50  0000 C CNN
+F 2 "" V 5340 1940 50  0001 C CNN
+F 3 "~" H 5300 1950 50  0001 C CNN
+	1    5300 1950
+	0    1    1    0   
+$EndComp
+Text Notes 4450 1700 0    50   ~ 0
+a)
+Text Notes 4450 3800 0    50   ~ 0
+b)
+$Comp
+L Pessoal:fonte_corrente I1
+U 1 1 5FB5F7F4
+P 5750 2700
+F 0 "I1" H 5881 2746 50  0000 L CNN
+F 1 "5mA" H 5881 2655 50  0000 L CNN
+F 2 "" V 5750 2700 50  0001 C CNN
+F 3 "" V 5750 2700 50  0001 C CNN
+	1    5750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FB66E0C
+P 6475 1950
+F 0 "R3" V 6575 1950 50  0000 C CNN
+F 1 "820Ω" V 6675 1950 50  0000 C CNN
+F 2 "" V 6515 1940 50  0001 C CNN
+F 3 "~" H 6475 1950 50  0001 C CNN
+	1    6475 1950
+	0    1    1    0   
+$EndComp
+Connection ~ 5750 1950
+$Comp
+L Device:R_US R4
+U 1 1 5FB6765D
+P 6925 2200
+F 0 "R4" H 6857 2154 50  0000 R CNN
+F 1 "120Ω" H 6857 2245 50  0000 R CNN
+F 2 "" V 6965 2190 50  0001 C CNN
+F 3 "~" H 6925 2200 50  0001 C CNN
+	1    6925 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell V2
+U 1 1 5FB67A2B
+P 6925 2650
+F 0 "V2" H 6807 2654 50  0000 R CNN
+F 1 "6V" H 6807 2745 50  0000 R CNN
+F 2 "" V 6925 2710 50  0001 C CNN
+F 3 "~" V 6925 2710 50  0001 C CNN
+	1    6925 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6925 2550 6925 2350
+Wire Wire Line
+	5750 2350 5750 2400
+Wire Wire Line
+	6625 1950 6925 1950
+Wire Wire Line
+	6925 1950 6925 2050
+Wire Wire Line
+	6925 2850 6925 3050
+Wire Wire Line
+	4850 3050 4850 2650
+Wire Wire Line
+	5750 3000 5750 3050
+Connection ~ 5750 3050
+Wire Wire Line
+	5750 3050 4850 3050
+Text Notes 6150 3025 0    50   ~ 0
+B
+Text Notes 6150 1925 0    50   ~ 0
+A
+Wire Notes Line
+	6125 1775 4725 1775
+Wire Notes Line
+	5950 1950 5975 1950
+Wire Notes Line
+	6125 1775 6125 3225
+Wire Notes Line
+	4725 3225 6125 3225
+Wire Notes Line
+	4725 1775 4725 3225
+$Comp
+L Pessoal:fonte_corrente I1
+U 1 1 5FB8A7BB
+P 4850 5000
+F 0 "I1" H 4719 4954 50  0000 R CNN
+F 1 "2A" H 4719 5045 50  0000 R CNN
+F 2 "" V 4850 5000 50  0001 C CNN
+F 3 "" V 4850 5000 50  0001 C CNN
+	1    4850 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB8AF78
+P 5850 5300
+F 0 "V1" H 5968 5396 50  0000 L CNN
+F 1 "9V" H 5968 5305 50  0000 L CNN
+F 2 "" V 5850 5360 50  0001 C CNN
+F 3 "~" V 5850 5360 50  0001 C CNN
+	1    5850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US RL
+U 1 1 5FB8B9B8
+P 5700 4850
+F 0 "RL" H 5632 4850 50  0000 R CNN
+F 1 "5Ω" H 5632 4895 50  0001 R CNN
+F 2 "" V 5740 4840 50  0001 C CNN
+F 3 "~" H 5700 4850 50  0001 C CNN
+	1    5700 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5FB8C47C
+P 5350 4600
+F 0 "R1" V 5555 4600 50  0000 C CNN
+F 1 "6Ω" V 5464 4600 50  0000 C CNN
+F 2 "" V 5390 4590 50  0001 C CNN
+F 3 "~" H 5350 4600 50  0001 C CNN
+	1    5350 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FB8D070
+P 6350 4600
+F 0 "R2" V 6555 4600 50  0000 C CNN
+F 1 "8Ω" V 6464 4600 50  0000 C CNN
+F 2 "" V 6390 4590 50  0001 C CNN
+F 3 "~" H 6350 4600 50  0001 C CNN
+	1    6350 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 3050 6125 3050
+$Comp
+L Pessoal:fonte_tensao_dep V3
+U 1 1 5FB8E8E7
+P 6250 4150
+F 0 "V3" V 5895 4150 50  0000 C CNN
+F 1 "v = δ i'" V 5986 4150 50  0000 C CNN
+F 2 "" V 6250 4150 50  0001 C CNN
+F 3 "" V 6250 4150 50  0001 C CNN
+F 4 "δ = 2Ω" V 6077 4150 50  0000 C CNN "Observação"
+	1    6250 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FB8ED89
+P 5450 4150
+F 0 "R3" V 5655 4150 50  0000 C CNN
+F 1 "3Ω" V 5564 4150 50  0000 C CNN
+F 2 "" V 5490 4140 50  0001 C CNN
+F 3 "~" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 4700 4850 4600
+Wire Wire Line
+	4850 4150 5300 4150
+Wire Wire Line
+	5600 4150 5950 4150
+$Comp
+L Device:Battery_Cell V2
+U 1 1 5FB91D80
+P 6850 5050
+F 0 "V2" H 6968 5146 50  0000 L CNN
+F 1 "10V" H 6968 5055 50  0000 L CNN
+F 2 "" V 6850 5110 50  0001 C CNN
+F 3 "~" V 6850 5110 50  0001 C CNN
+	1    6850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4150 6850 4150
+Wire Wire Line
+	6850 4150 6850 4600
+Wire Wire Line
+	4850 5300 4850 5450
+Wire Wire Line
+	4850 5450 5850 5450
+Wire Wire Line
+	6850 5450 6850 5150
+Wire Wire Line
+	5850 5400 5850 5450
+Connection ~ 5850 5450
+Wire Wire Line
+	5850 5450 6850 5450
+Wire Wire Line
+	5200 4600 4850 4600
+Connection ~ 4850 4600
+Wire Wire Line
+	4850 4600 4850 4150
+Wire Wire Line
+	6500 4600 6850 4600
+Connection ~ 6850 4600
+Wire Wire Line
+	6850 4600 6850 4850
+$Comp
+L Device:L LL
+U 1 1 5FB95394
+P 6000 4850
+F 0 "LL" H 6053 4850 50  0000 L CNN
+F 1 "L" H 6053 4805 50  0001 L CNN
+F 2 "" H 6000 4850 50  0001 C CNN
+F 3 "~" H 6000 4850 50  0001 C CNN
+	1    6000 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4600 5850 4600
+Wire Wire Line
+	5700 4700 5700 4650
+Wire Wire Line
+	5700 4650 5850 4650
+Wire Wire Line
+	6000 4650 6000 4700
+Wire Wire Line
+	5850 4650 5850 4600
+Connection ~ 5850 4650
+Wire Wire Line
+	5850 4650 6000 4650
+Connection ~ 5850 4600
+Wire Wire Line
+	5850 4600 6200 4600
+Wire Wire Line
+	5700 5000 5700 5050
+Wire Wire Line
+	5700 5050 5850 5050
+Wire Wire Line
+	6000 5050 6000 5000
+Wire Wire Line
+	5850 5100 5850 5050
+Connection ~ 5850 5050
+Wire Wire Line
+	5850 5050 6000 5050
+$Comp
+L Pessoal:seta_corrente i'
+U 1 1 5FBA573F
+P 5450 4700
+F 0 "i'" H 5550 4750 50  0000 C CNN
+F 1 "seta_corrente" H 5550 4650 50  0001 C CNN
+F 2 "" H 5450 4700 50  0001 C CNN
+F 3 "" H 5450 4700 50  0001 C CNN
+	1    5450 4700
+	-1   0    0    1   
+$EndComp
+Text Notes 5775 4575 0    50   ~ 0
+A\n
+Text Notes 5775 5125 0    50   ~ 0
+B
+Wire Wire Line
+	5750 1950 6125 1950
+Connection ~ 6125 1950
+Wire Wire Line
+	6125 1950 6325 1950
+Connection ~ 6125 3050
+Wire Wire Line
+	6125 3050 6925 3050
+$EndSCHEMATC

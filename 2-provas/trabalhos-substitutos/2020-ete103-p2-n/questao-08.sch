@@ -1,0 +1,245 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Questão 8 - P2/2020 - Noturno"
+Date "2020-11-18"
+Rev "0"
+Comp "ETE103 - Fundamentos de Circuitos Analógicos"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 5FB454FE
+P 6350 2000
+F 0 "R1" V 6145 2000 50  0000 C CNN
+F 1 "15kΩ" V 6236 2000 50  0000 C CNN
+F 2 "" V 6390 1990 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	0    1    1    0   
+$EndComp
+Text Notes 4450 1700 0    50   ~ 0
+a)
+Text Notes 4450 3800 0    50   ~ 0
+b)
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB44D77
+P 4850 2450
+F 0 "V1" H 4968 2546 50  0000 L CNN
+F 1 "10V" H 4968 2455 50  0000 L CNN
+F 2 "" V 4850 2510 50  0001 C CNN
+F 3 "~" V 4850 2510 50  0001 C CNN
+	1    4850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5FB5F9FE
+P 5350 2000
+F 0 "SW1" H 5500 2125 50  0000 C CNN
+F 1 "SW_SPST" H 5350 2144 50  0001 C CNN
+F 2 "" H 5350 2000 50  0001 C CNN
+F 3 "~" H 5350 2000 50  0001 C CNN
+	1    5350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5FB60416
+P 5850 2400
+F 0 "SW2" V 6000 2600 50  0000 R CNN
+F 1 "SW_SPST" V 5805 2312 50  0001 R CNN
+F 2 "" H 5850 2400 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 2250 4850 2000
+Wire Wire Line
+	4850 2000 5150 2000
+Wire Wire Line
+	5550 2000 5850 2000
+Wire Wire Line
+	5850 2200 5850 2000
+Connection ~ 5850 2000
+Wire Wire Line
+	5850 2000 6200 2000
+$Comp
+L Device:C C1
+U 1 1 5FB61BF3
+P 6850 2400
+F 0 "C1" H 6965 2446 50  0000 L CNN
+F 1 "2,2uF" H 6965 2355 50  0000 L CNN
+F 2 "" H 6888 2250 50  0001 C CNN
+F 3 "~" H 6850 2400 50  0001 C CNN
+	1    6850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2000 6850 2000
+Wire Wire Line
+	6850 2000 6850 2250
+Wire Wire Line
+	4850 2550 4850 2800
+Wire Wire Line
+	4850 2800 5850 2800
+Wire Wire Line
+	6850 2800 6850 2550
+Wire Wire Line
+	5850 2600 5850 2800
+Connection ~ 5850 2800
+Wire Wire Line
+	5850 2800 6850 2800
+$Comp
+L Pessoal:seta_tempo t1
+U 1 1 5FB5EBBE
+P 5750 2550
+F 0 "t1" H 5978 2670 50  0001 L CNN
+F 1 "seta_tempo" H 5770 2515 50  0001 C CNN
+F 2 "" H 5750 2550 50  0001 C CNN
+F 3 "" H 5750 2550 50  0001 C CNN
+F 4 "t1 = 180ms" H 5925 2650 30  0000 L CNN "Instante"
+	1    5750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pessoal:seta_tempo_dupla t0
+U 1 1 5FB5FEF3
+P 5225 1900
+F 0 "t0" V 5125 2025 50  0001 C CNN
+F 1 "seta_tempo_dupla" H 5245 1865 50  0001 C CNN
+F 2 "" H 5225 1900 50  0001 C CNN
+F 3 "" H 5225 1900 50  0001 C CNN
+F 4 "t0 = 0s" V 5450 2075 30  0000 C CNN "Instante1"
+F 5 "t1 = 180ms" V 5175 1900 30  0000 C CNN "Instante2"
+	1    5225 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FB6794F
+P 5350 3950
+F 0 "R?" V 5145 3950 50  0000 C CNN
+F 1 "1kΩ" V 5236 3950 50  0000 C CNN
+F 2 "" V 5390 3940 50  0001 C CNN
+F 3 "~" H 5350 3950 50  0001 C CNN
+	1    5350 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB67955
+P 4850 4600
+F 0 "V1" H 4968 4696 50  0000 L CNN
+F 1 "5V" H 4968 4605 50  0000 L CNN
+F 2 "" V 4850 4660 50  0001 C CNN
+F 3 "~" V 4850 4660 50  0001 C CNN
+	1    4850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5FB67961
+P 6300 4800
+F 0 "SW2" V 6450 5000 50  0000 R CNN
+F 1 "SW_SPST" V 6255 4712 50  0001 R CNN
+F 2 "" H 6300 4800 50  0001 C CNN
+F 3 "~" H 6300 4800 50  0001 C CNN
+	1    6300 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 4400 4850 3950
+Wire Wire Line
+	6300 4600 6300 4400
+$Comp
+L Device:C C1
+U 1 1 5FB6796D
+P 6850 4550
+F 0 "C1" H 6965 4596 50  0000 L CNN
+F 1 "10nF" H 6965 4505 50  0000 L CNN
+F 2 "" H 6888 4400 50  0001 C CNN
+F 3 "~" H 6850 4550 50  0001 C CNN
+	1    6850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3950 6850 4400
+Wire Wire Line
+	4850 4700 4850 5150
+Wire Wire Line
+	6850 5150 6850 4700
+Wire Wire Line
+	6300 5000 6300 5150
+$Comp
+L Pessoal:seta_tempo t1
+U 1 1 5FB6797C
+P 6200 4950
+F 0 "t1" H 6428 5070 50  0001 L CNN
+F 1 "seta_tempo" H 6220 4915 50  0001 C CNN
+F 2 "" H 6200 4950 50  0001 C CNN
+F 3 "" H 6200 4950 50  0001 C CNN
+F 4 "t2 = 80us" H 6375 5050 30  0000 L CNN "Instante"
+	1    6200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pessoal:seta_tempo_dupla t0
+U 1 1 5FB67984
+P 5650 3850
+F 0 "t0" V 5550 3975 50  0001 C CNN
+F 1 "seta_tempo_dupla" H 5670 3815 50  0001 C CNN
+F 2 "" H 5650 3850 50  0001 C CNN
+F 3 "" H 5650 3850 50  0001 C CNN
+F 4 "t0 = 0s" V 5875 4025 30  0000 C CNN "Instante1"
+F 5 "t1 = 60us" V 5600 3850 30  0000 C CNN "Instante2"
+	1    5650 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5FB6795B
+P 5800 3950
+F 0 "SW1" H 5950 4075 50  0000 C CNN
+F 1 "SW_SPST" H 5800 4094 50  0001 C CNN
+F 2 "" H 5800 3950 50  0001 C CNN
+F 3 "~" H 5800 3950 50  0001 C CNN
+	1    5800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3950 6300 3950
+Wire Wire Line
+	4850 3950 5200 3950
+Wire Wire Line
+	4850 5150 6300 5150
+Wire Wire Line
+	5500 3950 5600 3950
+Connection ~ 6300 5150
+Wire Wire Line
+	6300 5150 6850 5150
+$Comp
+L Device:R_US R2
+U 1 1 5FB6F821
+P 6300 4250
+F 0 "R2" H 6232 4204 50  0000 R CNN
+F 1 "2k2Ω" H 6232 4295 50  0000 R CNN
+F 2 "" V 6340 4240 50  0001 C CNN
+F 3 "~" H 6300 4250 50  0001 C CNN
+	1    6300 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 4100 6300 3950
+Connection ~ 6300 3950
+Wire Wire Line
+	6300 3950 6850 3950
+$EndSCHEMATC
