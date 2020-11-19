@@ -100,10 +100,28 @@ F0 "t" 30 155 50 H V C CNN
 F1 "seta_tempo" 20 -35 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "t0 = 0s" 90 205 30 H V L CNN "Instante"
 ALIAS time_arrow
 DRAW
 A 199 -25 201 1728 968 0 1 0 N 0 0 175 175
 P 4 0 1 0 200 175 165 180 165 165 200 175 F
+ENDDRAW
+ENDDEF
+#
+# seta_tempo_dupla
+#
+DEF seta_tempo_dupla t 0 40 Y Y 1 F N
+F0 "t" 30 155 50 H V C CNN
+F1 "seta_tempo_dupla" 20 -35 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "t0 = 0s" 85 205 30 H V L CNN "Instante1"
+F5 "t1 = 1s" 20 0 30 H V L CNN "Instante2"
+ALIAS time_arrow_double
+DRAW
+A 199 -25 201 1728 968 0 1 0 N 0 0 175 175
+P 4 0 1 0 200 175 165 180 165 165 200 175 F
+P 4 1 1 0 2 -35 7 0 -8 0 2 -35 F
 ENDDRAW
 ENDDEF
 #

@@ -35,6 +35,11 @@ D Seta de tempo puramente simbólica para indicação de instante de comutação
 K Seta de tensão, voltage arrow
 $ENDCMP
 #
+$CMP seta_tempo_dupla
+D Seta de tempo puramente simbólica para indicação de instante de comutação de chave.
+K Seta de tensão, voltage arrow
+$ENDCMP
+#
 $CMP seta_tensao
 D Seta de tensão puramente simbólica.
 K Seta de tensão, voltage arrow
