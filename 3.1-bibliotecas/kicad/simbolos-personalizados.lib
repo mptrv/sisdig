@@ -93,6 +93,20 @@ P 4 1 1 0 325 0 275 -10 275 10 325 0 F
 ENDDRAW
 ENDDEF
 #
+# seta_tempo
+#
+DEF seta_tempo t 0 40 Y Y 1 F N
+F0 "t" 30 155 50 H V C CNN
+F1 "seta_tempo" 20 -35 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS time_arrow
+DRAW
+A 199 -25 201 1728 968 0 1 0 N 0 0 175 175
+P 4 0 1 0 200 175 165 180 165 165 200 175 F
+ENDDRAW
+ENDDEF
+#
 # seta_tensao
 #
 DEF seta_tensao V 0 40 Y Y 1 F N
