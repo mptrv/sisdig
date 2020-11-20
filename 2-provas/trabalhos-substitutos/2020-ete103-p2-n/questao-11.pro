@@ -1,4 +1,4 @@
-update=qui 19 nov 2020 23:40:57
+update=sex 20 nov 2020 01:43:06
 version=1
 last_client=eeschema
 [general]

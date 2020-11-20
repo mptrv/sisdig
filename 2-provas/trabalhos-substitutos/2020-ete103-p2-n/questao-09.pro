@@ -1,4 +1,4 @@
-update=qui 19 nov 2020 23:40:57
+update=qui 19 nov 2020 21:23:07
 version=1
 last_client=eeschema
 [general]

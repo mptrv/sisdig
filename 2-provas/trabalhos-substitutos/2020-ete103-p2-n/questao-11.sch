@@ -1,0 +1,202 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Questão 11 - P2/2020 - Noturno"
+Date "2020-11-18"
+Rev "0"
+Comp "ETE103 - Fundamentos de Circuitos Analógicos"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 5FB454FE
+P 5050 3350
+F 0 "R1" V 4845 3350 50  0000 C CNN
+F 1 "15kΩ" V 4936 3350 50  0000 C CNN
+F 2 "" V 5090 3340 50  0001 C CNN
+F 3 "~" H 5050 3350 50  0001 C CNN
+	1    5050 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB44D77
+P 4650 3950
+F 0 "V1" H 4768 4046 50  0000 L CNN
+F 1 "10V" H 4768 3955 50  0000 L CNN
+F 2 "" V 4650 4010 50  0001 C CNN
+F 3 "~" V 4650 4010 50  0001 C CNN
+	1    4650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5FB711B7
+P 6750 4250
+F 0 "L2" H 6802 4296 50  0000 L CNN
+F 1 "39mH" H 6802 4205 50  0000 L CNN
+F 2 "" H 6750 4250 50  0001 C CNN
+F 3 "~" H 6750 4250 50  0001 C CNN
+	1    6750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3350 4650 3350
+Wire Wire Line
+	4650 3350 4650 3750
+$Comp
+L Device:C C2
+U 1 1 5FB7307F
+P 6750 3900
+F 0 "C2" H 6865 3946 50  0000 L CNN
+F 1 "4,7uF" H 6865 3855 50  0000 L CNN
+F 2 "" H 6788 3750 50  0001 C CNN
+F 3 "~" H 6750 3900 50  0001 C CNN
+	1    6750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 5FB73502
+P 6750 3550
+F 0 "R5" H 6682 3504 50  0000 R CNN
+F 1 "33kΩ" H 6682 3595 50  0000 R CNN
+F 2 "" V 6790 3540 50  0001 C CNN
+F 3 "~" H 6750 3550 50  0001 C CNN
+	1    6750 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 3350 6750 3400
+Wire Wire Line
+	6750 3700 6750 3750
+Wire Wire Line
+	6750 4050 6750 4100
+Wire Wire Line
+	4650 4450 5450 4450
+Wire Wire Line
+	6750 4450 6750 4400
+Wire Wire Line
+	4650 4050 4650 4450
+$Comp
+L Device:C C1
+U 1 1 5FB75007
+P 5950 3650
+F 0 "C1" H 6065 3696 50  0000 L CNN
+F 1 "2,2uF" H 6065 3605 50  0000 L CNN
+F 2 "" H 5988 3500 50  0001 C CNN
+F 3 "~" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FB75389
+P 5950 4150
+F 0 "R3" H 5882 4104 50  0000 R CNN
+F 1 "10kΩ" H 5882 4195 50  0000 R CNN
+F 2 "" V 5990 4140 50  0001 C CNN
+F 3 "~" H 5950 4150 50  0001 C CNN
+	1    5950 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 4000 5950 3900
+Wire Wire Line
+	5950 3500 5950 3350
+Wire Wire Line
+	5200 3350 5450 3350
+Connection ~ 5950 3350
+Wire Wire Line
+	5950 3350 6350 3350
+Wire Wire Line
+	5950 4300 5950 4450
+Connection ~ 5950 4450
+Wire Wire Line
+	5950 4450 6750 4450
+$Comp
+L Device:L L1
+U 1 1 5FB7666C
+P 5450 4150
+F 0 "L1" H 5502 4196 50  0000 L CNN
+F 1 "10mH" H 5502 4105 50  0000 L CNN
+F 2 "" H 5450 4150 50  0001 C CNN
+F 3 "~" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4000 5450 3800
+Wire Wire Line
+	5450 3500 5450 3350
+Connection ~ 5450 3350
+Wire Wire Line
+	5450 3350 5950 3350
+Wire Wire Line
+	5450 4300 5450 4450
+Connection ~ 5450 4450
+Wire Wire Line
+	5450 4450 5950 4450
+$Comp
+L Device:R_US R2
+U 1 1 5FB75E12
+P 5450 3650
+F 0 "R2" H 5382 3604 50  0000 R CNN
+F 1 "22kΩ" H 5382 3695 50  0000 R CNN
+F 2 "" V 5490 3640 50  0001 C CNN
+F 3 "~" H 5450 3650 50  0001 C CNN
+	1    5450 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pessoal:seta_tensao_longa vx(t)
+U 1 1 5FB79C72
+P 5400 4150
+F 0 "vx(t)" H 5310 4150 50  0000 R CNN
+F 1 "seta_tensao_longa" H 5375 4025 50  0001 C CNN
+F 2 "" H 5400 4250 50  0001 C CNN
+F 3 "" H 5400 4250 50  0001 C CNN
+	1    5400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pessoal:seta_corrente ix(t)
+U 1 1 5FB7A891
+P 5850 4200
+F 0 "ix(t)" V 5950 4100 50  0000 C CNN
+F 1 "seta_corrente" H 5950 4150 50  0001 C CNN
+F 2 "" H 5850 4200 50  0001 C CNN
+F 3 "" H 5850 4200 50  0001 C CNN
+	1    5850 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5FB76788
+P 6350 3650
+F 0 "R4" H 6282 3604 50  0000 R CNN
+F 1 "10kΩ" H 6282 3695 50  0000 R CNN
+F 2 "" V 6390 3640 50  0001 C CNN
+F 3 "~" H 6350 3650 50  0001 C CNN
+	1    6350 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3900 6350 3900
+Wire Wire Line
+	6350 3900 6350 3800
+Connection ~ 5950 3900
+Wire Wire Line
+	5950 3900 5950 3800
+Wire Wire Line
+	6350 3500 6350 3350
+Connection ~ 6350 3350
+Wire Wire Line
+	6350 3350 6750 3350
+$EndSCHEMATC

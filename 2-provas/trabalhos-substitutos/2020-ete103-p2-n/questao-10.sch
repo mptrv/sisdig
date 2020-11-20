@@ -134,9 +134,9 @@ F 0 "t1" H 7078 2570 50  0001 L CNN
 F 1 "seta_tempo" H 6870 2415 50  0001 C CNN
 F 2 "" H 6850 2450 50  0001 C CNN
 F 3 "" H 6850 2450 50  0001 C CNN
-F 4 "t0 = 0us" V 6750 1975 30  0000 L CNN "Instante"
-F 5 "t1 = 20us" V 6825 1950 30  0000 L CNN "Instante2"
-F 6 "t2 = 110us" V 6900 1925 30  0000 L CNN "Instante3"
+F 4 "t0 = 0us" V 6750 1850 50  0000 L CNN "Instante"
+F 5 "t1 = 20us" V 6850 1800 50  0000 L CNN "Instante2"
+F 6 "t2 = 110us" V 6950 1750 50  0000 L CNN "Instante3"
 	1    6850 2450
 	0    -1   1    0   
 $EndComp
@@ -146,8 +146,8 @@ Text Notes 6650 2550 0    30   ~ 0
 t1
 Text Notes 6650 2725 0    30   ~ 0
 t2
-Text Notes 7100 2600 0    30   ~ 0
+Text Notes 7100 2700 0    50   ~ 0
 (tf = 270us)
-Text Notes 7650 3400 0    50   ~ 0
-Cálculos auxiliares (usar 4 A.S.):\n\n\nτ1 =                           5 τ1 = \n\nτ2 =                           5 τ2 = \n\nτ3 =                           5 τ3 = \n\n\nIf1 = \n\nIf2 = \n\nIf3 = 
+Text Notes 4950 4125 0    50   ~ 0
+Cálculos auxiliares (usar 4 A.S.):\n\n\nτ1 =                           5 τ1 = \n\nτ2 =                           5 τ2 = \n\nτ3 =                           5 τ3 = 
 $EndSCHEMATC

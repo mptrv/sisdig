@@ -38,6 +38,29 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_L
+#
+DEF Device_L L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R_US
 #
 DEF Device_R_US R 0 0 N Y 1 F N
@@ -59,50 +82,17 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Pessoal_seta_corrente_canto
+# Pessoal_seta_corrente
 #
-DEF Pessoal_seta_corrente_canto I 0 40 Y Y 1 F N
+DEF Pessoal_seta_corrente I 0 40 Y Y 1 F N
 F0 "I" 75 50 50 H V C CNN
-F1 "Pessoal_seta_corrente_canto" 100 -50 50 H I C CNN
+F1 "Pessoal_seta_corrente" 100 -50 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS current_arrow_corner
+ALIAS current_arrow
 DRAW
-P 2 0 1 0 0 0 0 -150 N
 P 2 1 1 0 160 0 0 0 N
 P 4 1 1 0 200 0 150 -10 150 10 200 0 F
-ENDDRAW
-ENDDEF
-#
-# Pessoal_seta_tempo
-#
-DEF Pessoal_seta_tempo t 0 40 Y Y 1 F N
-F0 "t" 30 155 50 H V C CNN
-F1 "Pessoal_seta_tempo" 20 -35 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "t0 = 0s" 90 205 30 H V L CNN "Instante"
-ALIAS time_arrow
-DRAW
-A 199 -25 201 1728 968 0 1 0 N 0 0 175 175
-P 4 0 1 0 200 175 165 180 165 165 200 175 F
-ENDDRAW
-ENDDEF
-#
-# Pessoal_seta_tempo_dupla
-#
-DEF Pessoal_seta_tempo_dupla t 0 40 Y Y 1 F N
-F0 "t" 30 155 50 H V C CNN
-F1 "Pessoal_seta_tempo_dupla" 20 -35 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "t0 = 0s" 85 205 30 H V L CNN "Instante1"
-F5 "t1 = 1s" 20 0 30 H V L CNN "Instante2"
-ALIAS time_arrow_double
-DRAW
-A 199 -25 201 1728 968 0 1 0 N 0 0 175 175
-P 4 0 1 0 200 175 165 180 165 165 200 175 F
-P 4 1 1 0 2 -35 7 0 -8 0 2 -35 F
 ENDDRAW
 ENDDEF
 #
@@ -117,22 +107,6 @@ ALIAS voltage_arrow_long
 DRAW
 A 150 0 212 -1350 1350 0 1 0 N 0 -150 0 150
 P 4 0 1 0 0 150 -40 130 -10 110 0 150 F
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_SPST
-#
-DEF Switch_SW_SPST SW 0 0 Y N 1 F N
-F0 "SW" 0 125 50 H V C CNN
-F1 "Switch_SW_SPST" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C -80 0 20 0 0 0 N
-C 80 0 20 0 0 0 N
-P 2 0 0 0 -60 10 60 70 N
-X A 1 -200 0 100 R 50 50 1 1 P
-X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

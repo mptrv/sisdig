@@ -1587,7 +1587,7 @@ status open
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1607,7 +1607,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-%Capa do trabalho substituto de prova
+%Capas de trabalho substituto de prova
 \end_layout
 
 \begin_layout Plain Layout
@@ -1634,7 +1634,7 @@ capaant}[4]{%
 \align center
 \begin_inset Branch capa
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -2116,13 +2116,693 @@ status open
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
 } %
 \backslash
-capa
+capaant
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+capaantacordo}[4]{%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch capa
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+\size largest
+\begin_inset Graphics
+	filename imagens/logo-imt.png
+	lyxscale 10
+	height 1.4cm
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "b"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "12cm"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\shape smallcaps
+\size larger
+ETE103
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Fundamentos de Circuitos Analógicos
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#1
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+\size largest
+Período Noturno
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset VSpace 3.5ex
+\end_inset
+
+Profº Marcelo Porto Trevizan
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size default
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color lightgray
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pontuacoes[-50]{10}{00}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+\color red
+GABARITO
+\size default
+\color inherit
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RA:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 3cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assinatura:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Orientações
+\end_layout
+
+\begin_layout Itemize
+Este trabalho substituto de prova é 
+\series bold
+individual
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+
+\color blue
+este trabalho substituto será válido apenas se o cabeçalho acima e o 
+\series bold
+Acordo de Ética 
+\series default
+abaixo estiverem assinados;
+\end_layout
+
+\begin_layout Itemize
+a tentativa identificada de plágio ou fraude poderá acarretar em nota zero
+ na questão ou na prova inteira;
+\end_layout
+
+\begin_layout Itemize
+por favor, resolver de forma organizada e destacar as respostas;
+\end_layout
+
+\begin_layout Itemize
+contém 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#4
+\end_layout
+
+\end_inset
+
+ questões;
+\end_layout
+
+\begin_layout Itemize
+não é obrigatória a resolução de todas as questões;
+\end_layout
+
+\begin_layout Itemize
+o prazo para entrega é até as 23h59 da data final apontada no cabeçalho
+ acima;
+\end_layout
+
+\begin_layout Itemize
+o arquivo de entrega deverá estar em formato PDF;
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+o enunciado deverá fazer parte do arquivo enviado
+\bar default
+; folhas avulsas poderão ser intercaladas entre uma questão e outra;
+\end_layout
+
+\begin_layout Itemize
+pontuação máxima de 10,0 pontos.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align left
+
+\series bold
+\size large
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series default
+\size default
+
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "83col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "2ex"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Quote
+\noindent
+\align center
+
+\series bold
+\size large
+Acordo de Ética
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align block
+
+\family typewriter
+\emph on
+A ética nasce no berço, caminha pela escola e acompanha toda a vida pessoal
+ e profissional de cada pessoa.
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align block
+Ciente da questão ética que nos permeia e de que 
+\bar under
+este trabalho substituto de prova é individual
+\bar default
+, declaro que não cometerei qualquer tipo fraude ou plágio em sua resolução.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assinatura
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Nota sobre o Acordo de Ética
+\end_layout
+
+\begin_layout Quote
+
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align block
+É possível interagir com um colega a respeito do conteúdo do trabalho e
+ este 
+\series bold
+pode dar uma dica
+\series default
+ para sua resolução.
+ Todavia 
+\series bold
+não poderá fornecer a resolução das questões, total ou parcial
+\series default
+, seja por qual forma for.
+\end_layout
+
+\begin_layout Quote
+Por exemplo, o colega poderá dizer 
+\begin_inset Quotes eld
+\end_inset
+
+use o conceito de divisor de tensão
+\begin_inset Quotes erd
+\end_inset
+
+, ou 
+\begin_inset Quotes eld
+\end_inset
+
+consulte o capítulo N do livro X
+\begin_inset Quotes erd
+\end_inset
+
+, mas não poderá ditar ou fornecer uma cópia da expressão que ele usou para
+ resolver o exercício.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\size giant
+\emph on
+Boa Prova!!!
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} %
+\backslash
+capaantacordo
 \end_layout
 
 \end_inset
@@ -98110,6 +98790,34 @@ name "que:ultima-questao-an-ps-2019"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+=== 2020 ===
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+an
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch 2020-an-p1
 inverted 0
 status collapsed
@@ -98756,8 +99464,8 @@ status open
 
 
 \backslash
-capaant{Segunda Prova Bimestral -- Trabalho Substituto}{2020}{19.11.2020 a
- 29.11.2020}{
+capaantacordo{Trabalho Substituto da Segunda Prova Bimestral}{2020}{20.11.2020
+ a 29.11.2020}{
 \backslash
 ref{que:ultima-questao-an-p2-2020}}
 \end_layout
@@ -98821,7 +99529,7 @@ status open
 
 
 \backslash
-qquestao[2]{0}
+qquestao[1]{50}
 \end_layout
 
 \end_inset
@@ -98836,6 +99544,33 @@ Teorema da Superposição
 \emph default
 .
  Apresentar os circuitos intermediários.
+ a) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ b) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -98843,8 +99578,8 @@ Teorema da Superposição
 \begin_inset Graphics
 	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-02.png
 	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+	width 70text%
+	BoundingBox 0bp 0bp 802bp 944bp
 
 \end_inset
 
@@ -98859,7 +99594,7 @@ status open
 
 
 \backslash
-qquestao[2]{0}
+qquestao[1]{0}
 \end_layout
 
 \end_inset
@@ -98885,7 +99620,7 @@ Observação: o
 \end_inset
 
 
-\begin_inset Formula $V_{R_{w}}$
+\begin_inset Formula $V_{R_{2}}$
 \end_inset
 
 
@@ -98900,10 +99635,10 @@ Observação: o
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-03-04.png
-	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-03.png
+	lyxscale 60
+	width 50text%
+	BoundingBox 0bp 0bp 474bp 240bp
 
 \end_inset
 
@@ -98918,8 +99653,103 @@ status open
 
 
 \backslash
-qquestao[2]{0}
+qquestao[1]{0}
 \end_layout
+
+\end_inset
+
+ Determinar 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ por 
+\emph on
+Análise de Malhas
+\emph default
+.
+ Para tanto, pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações literais
+\series default
+ que descreve o circuito, por 
+\emph on
+Análise de Malhas
+\emph default
+.
+ Escreva a resposta final no espaço reservado.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações numéricas 
+\series default
+correspondente e os valores de 
+\begin_inset Formula $I_{\alpha}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{\beta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ O valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-04.png
+	lyxscale 60
+	width 65text%
+	BoundingBox 0bp 0bp 594bp 240bp
 
 \end_inset
 
@@ -98927,12 +99757,26 @@ qquestao[2]{0}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
 \align center
-\begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-03-04.png
-	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -98952,24 +99796,16 @@ qquestao[1]{50}
 
 \end_inset
 
- Considere-se o circuito abaixo:
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-05.png
-	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
-
+ Determinar 
+\begin_inset Formula $V_{x}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Pede-se:
+ por 
+\emph on
+Análise de Malhas
+\emph default
+.
+ Para tanto, pede-se:
 \end_layout
 
 \begin_layout Enumerate
@@ -98989,40 +99825,12 @@ valor{0,75}
 \series bold
 equações literais
 \series default
- que o descreve, por 
+ que descreve o circuito, por 
 \emph on
 Análise de Malhas
 \emph default
 .
  Escreva a resposta final no espaço reservado.
-\begin_inset Branch detalhes-enunciado
-inverted 0
-status open
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset VSpace vfill
-\end_inset
-
-
-\begin_inset Formula $\begin{cases}
-\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
-\\
-\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Enumerate
@@ -99040,13 +99848,17 @@ valor{0,25}
 
  Sistema de 
 \series bold
-equações numéricas
+equações numéricas 
 \series default
-.
-\begin_inset VSpace 6cm
+correspondente e os valores de 
+\begin_inset Formula $I_{\alpha}$
 \end_inset
 
+ e 
+\begin_inset Formula $I_{\beta}$
+\end_inset
 
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -99062,44 +99874,47 @@ valor{0,5}
 
 \end_inset
 
- Os valores de 
-\begin_inset Formula $I_{\alpha}$
-\end_inset
-
- e 
-\begin_inset Formula $I_{\beta}$
+ O valor de 
+\begin_inset Formula $V_{x}$
 \end_inset
 
 .
-\begin_inset VSpace 8cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-qquestao[2]{0}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-02.png
+	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-05.png
 	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+	width 70text%
+	BoundingBox 0bp 0bp 782bp 494bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -99114,12 +99929,115 @@ status open
 
 
 \backslash
-qquestao[2]{0}
+qquestao[1]{25}
+\end_layout
+
+\end_inset
+
+ Para o circuito abaixo, deseja-se obter 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+ Para tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ Obter o sistema de 
+\series bold
+equações
+\series default
+ 
+\series bold
+\emph on
+literais
+\series default
+\emph default
+ que resolve o circuito, por 
+\emph on
+Análise Nodal
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Obter o sistema de sistema de 
+\series bold
+equações numéricas 
+\series default
+correspondente e os valores de 
+\begin_inset Formula $V_{A}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{B}$
+\end_inset
+
+ e 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Determinar o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -99127,8 +100045,8 @@ qquestao[2]{0}
 \begin_inset Graphics
 	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-06.png
 	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+	width 70text%
+	BoundingBox 0bp 0bp 753bp 630bp
 
 \end_inset
 
@@ -99143,7 +100061,38 @@ status open
 
 
 \backslash
-qquestao[2]{0}
+qquestao[1]{50}
+\end_layout
+
+\end_inset
+
+ Encontrar o 
+\emph on
+Circuito Equivalente de Thévenin
+\emph default
+ entre os pontos A e B.
+ a) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ b) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
 \end_layout
 
 \end_inset
@@ -99156,8 +100105,8 @@ qquestao[2]{0}
 \begin_inset Graphics
 	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-07.png
 	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+	width 70text%
+	BoundingBox 0bp 0bp 824bp 1154bp
 
 \end_inset
 
@@ -99172,12 +100121,91 @@ status open
 
 
 \backslash
-qquestao[2]{0}
+qquestao[1]{25}
 \end_layout
 
 \end_inset
 
+ Inicialmente, 
+\begin_inset Formula $C$
+\end_inset
 
+ encontra-se descarregado.
+ Nos instantes 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+, as chaves são comutadas conforme indicado.
+ Pede-se traçar o esboço de 
+\begin_inset Formula $v_{C}(t)\,\times\,t$
+\end_inset
+
+ , 
+\begin_inset Formula $v_{R}(t)\,\times\,t$
+\end_inset
+
+ e 
+\begin_inset Formula $i_{C}(t)\,\times\,t$
+\end_inset
+
+ para 
+\begin_inset Formula $0\leqslant t<\infty$
+\end_inset
+
+, 
+\emph on
+\bar under
+indicando os valores dos pontos notáveis
+\emph default
+\bar default
+.
+ Indicar os cálculos realizados.
+ a)
+\emph on
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ 
+\emph default
+b)
+\emph on
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ (Nota1: considerar as referências de tensão e corrente de acordo com o
+ apresentado no circuito.
+ Nota2: quando houver mais de um resistor, superpor as correspondentes curvas
+ mas mantendo a clareza do traçado.)
 \end_layout
 
 \begin_layout Standard
@@ -99185,8 +100213,735 @@ qquestao[2]{0}
 \begin_inset Graphics
 	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-08.png
 	lyxscale 40
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+	width 80text%
+	BoundingBox 0bp 0bp 903bp 1064bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_R(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_R(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[1]{25}
+\end_layout
+
+\end_inset
+
+ Inicialmente, 
+\begin_inset Formula $L$
+\end_inset
+
+ encontra-se descarregado.
+ Nos instantes 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+, as chaves são comutadas conforme indicado.
+ Pede-se traçar o esboço de 
+\begin_inset Formula $v_{L}(t)\,\times\,t$
+\end_inset
+
+ , 
+\begin_inset Formula $v_{R}(t)\,\times\,t$
+\end_inset
+
+ e 
+\begin_inset Formula $i_{L}(t)\,\times\,t$
+\end_inset
+
+ para 
+\begin_inset Formula $0\leqslant t<\infty$
+\end_inset
+
+, 
+\emph on
+\bar under
+indicando os valores dos pontos notáveis
+\emph default
+\bar default
+.
+ Indicar os cálculos realizados.
+ a)
+\emph on
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ 
+\emph default
+b)
+\emph on
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ (Nota1: considerar as referências de tensão e corrente de acordo com o
+ apresentado no circuito.
+ Nota2: quando houver mais de um resistor, superpor as correspondentes curvas
+ mas mantendo a clareza do traçado.)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-09.png
+	lyxscale 40
+	width 80text%
+	BoundingBox 0bp 0bp 903bp 1064bp
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_R(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_R(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -99206,7 +100961,7 @@ status open
 
 
 \backslash
-qquestao[3]{0}
+qquestao[2]{00}
 \end_layout
 
 \end_inset
@@ -99256,8 +101011,10 @@ indicando os valores dos pontos notáveis
  Ainda, indicar, no local reservado, os valores dos cálculos auxiliares.
  
 \emph on
-(Nota: considerar as referências de tensão e corrente no indutor de acordo
- com o apresentado nas aulas de teoria.)
+(Nota1: considerar as referências de tensão e corrente no capacitor de acordo
+ com o apresentado nas aulas de teoria.
+ Nota2: superpor as curvas de tensão sobre os resistores, mas manter a clareza
+ do traçado.)
 \end_layout
 
 \begin_layout Standard
@@ -99265,8 +101022,8 @@ indicando os valores dos pontos notáveis
 \begin_inset Graphics
 	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-10.png
 	lyxscale 60
-	width 100text%
-	BoundingBox 0bp 0bp 1308bp 1484bp
+	width 80text%
+	BoundingBox 0bp 0bp 910bp 571bp
 
 \end_inset
 
@@ -99285,7 +101042,7 @@ indicando os valores dos pontos notáveis
 \align center
 \begin_inset Branch detalhes-enunciado
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -99443,7 +101200,7 @@ status open
 
 
 \backslash
-qquestao[2]{0}
+qquestao[1]{0}
 \end_layout
 
 \end_inset
@@ -99468,7 +101225,7 @@ status open
 
 
 \backslash
-valor{1,0}
+valor{0,5}
 \end_layout
 
 \end_inset
@@ -99485,7 +101242,7 @@ status open
 
 
 \backslash
-valor{1,0}
+valor{0,5}
 \end_layout
 
 \end_inset
@@ -99499,114 +101256,12 @@ valor{1,0}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[1]{50}
-\end_layout
-
-\end_inset
-
- Para o circuito abaixo, deseja-se obter 
-\begin_inset Formula $V_{x}$
-\end_inset
-
-.
- Para tanto:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- Obter o sistema de equações 
-\series bold
-\emph on
-literais
-\series default
-\emph default
- que resolve o circuito, por 
-\emph on
-Análise Nodal
-\emph default
-.
- 
-\emph on
-(Nota: a resposta há de ser na forma 
-\begin_inset Formula $V_{A}=\ldots$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,5}
-\end_layout
-
-\end_inset
-
- Determinar o valor de 
-\begin_inset Formula $V_{x}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Branch detalhes-enunciado
-inverted 0
-status open
-
-\begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename imagens/2019/an/p2/analise-nodal.png
-
-\end_inset
-
-
-\end_layout
+	filename trabalhos-substitutos/2020-ete103-p2-n/imagens/questao-11.png
+	lyxscale 60
+	width 70text%
+	BoundingBox 0bp 0bp 666bp 408bp
 
 \end_inset
 
@@ -99621,7 +101276,7 @@ status open
 
 
 \backslash
-questao[0]{50}
+qquestao[0]{25}
 \end_layout
 
 \end_inset
