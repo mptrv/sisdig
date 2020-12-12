@@ -222,4 +222,81 @@ F 3 "" H 1500 7100 50  0001 C CNN
 	1    1500 7100
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74AHC04 U?
+U 1 1 5FABFB5E
+P 5250 1450
+F 0 "U?" H 5250 1767 50  0000 C CNN
+F 1 "74AHC04" H 5250 1676 50  0000 C CNN
+F 2 "" H 5250 1450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 5250 1450 50  0001 C CNN
+	1    5250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U?
+U 2 1 5FAC08BE
+P 7000 1500
+F 0 "U?" H 7000 1817 50  0000 C CNN
+F 1 "74LS04" H 7000 1726 50  0000 C CNN
+F 2 "" H 7000 1500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7000 1500 50  0001 C CNN
+	2    7000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Audio:IR4302 U?
+U 1 1 5FAC1783
+P 8400 5700
+F 0 "U?" H 8400 6681 50  0000 C CNN
+F 1 "IR4302" H 8400 6590 50  0000 C CNN
+F 2 "Package_DFN_QFN:Infineon_PQFN-44-31-5EP_7x7mm_P0.5mm" H 8400 5700 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir4302.pdf?fileId=5546d462533600a4015355d602a9181d" H 8400 5700 50  0001 C CNN
+	1    8400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4002 U?
+U 2 1 5FAC2A96
+P 7500 2250
+F 0 "U?" H 7500 2625 50  0000 C CNN
+F 1 "4002" H 7500 2534 50  0000 C CNN
+F 2 "" H 7500 2250 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4000bms-01bms-02bms-25bms.pdf" H 7500 2250 50  0001 C CNN
+	2    7500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM339 U?
+U 2 1 5FAC41FA
+P 1550 1250
+F 0 "U?" H 1550 1617 50  0000 C CNN
+F 1 "LM339" H 1550 1526 50  0000 C CNN
+F 2 "" H 1500 1350 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 1600 1450 50  0001 C CNN
+	2    1550 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U?
+U 2 1 5FAC5635
+P 4300 1450
+F 0 "U?" H 4300 1775 50  0000 C CNN
+F 1 "74LS00" H 4300 1684 50  0000 C CNN
+F 2 "" H 4300 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4300 1450 50  0001 C CNN
+	2    4300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U?
+U 1 1 5FAC74AA
+P 8250 3450
+F 0 "U?" H 8250 3775 50  0000 C CNN
+F 1 "74LS00" H 8250 3684 50  0000 C CNN
+F 2 "" H 8250 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 8250 3450 50  0001 C CNN
+	1    8250 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

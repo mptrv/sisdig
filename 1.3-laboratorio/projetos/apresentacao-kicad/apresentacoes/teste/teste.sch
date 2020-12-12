@@ -299,4 +299,48 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 8250 3450 50  0001 C CNN
 	1    8250 3450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Relay:FRT5_separated K?
+U 1 1 5FBBCCFF
+P 2700 900
+F 0 "K?" H 2855 946 50  0000 L CNN
+F 1 "FRT5_separated" H 2855 855 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 2900 800 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 2700 900 50  0001 C CNN
+	1    2700 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:FRT5_separated K?
+U 2 1 5FBBDEA0
+P 3850 900
+F 0 "K?" H 3994 946 50  0000 L CNN
+F 1 "FRT5_separated" H 3994 855 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4050 800 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 3850 900 50  0001 C CNN
+	2    3850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:FRT5_separated K?
+U 3 1 5FBBEDAD
+P 5850 900
+F 0 "K?" H 5994 946 50  0000 L CNN
+F 1 "FRT5_separated" H 5994 855 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 6050 800 50  0001 L CNN
+F 3 "https://www.elpro.org/de/index.php?controller=attachment&id_attachment=8663" H 5850 900 50  0001 C CNN
+	3    5850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack03_SIP_Split RN?
+U 1 1 5FBC02C3
+P 1300 2200
+F 0 "RN?" H 1388 2246 50  0000 L CNN
+F 1 "R_Pack03_SIP_Split" H 1388 2155 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 1220 2200 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1300 2200 50  0001 C CNN
+	1    1300 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
