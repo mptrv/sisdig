@@ -261,14 +261,14 @@
 \color #cae8cd
 \end_branch
 \branch 2020-an-p2
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #cae8cd
 \end_branch
 \branch 2020-an-ps
-\selected 0
+\selected 1
 \filename_suffix 0
-\color #cae8cd
+\color #d6e3e8
 \end_branch
 \index Index
 \shortcut idx
@@ -2683,21 +2683,6 @@ Assinatura
 \end_layout
 
 \begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
 
 \end_layout
 
@@ -100176,7 +100161,6 @@ status open
 
 \begin_layout Plain Layout
 
-\emph on
 
 \backslash
 valor{0,5}
@@ -100194,7 +100178,6 @@ status open
 
 \begin_layout Plain Layout
 
-\emph on
 
 \backslash
 valor{0,75}
@@ -100237,7 +100220,7 @@ status collapsed
 \begin_layout Standard
 \noindent
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -100286,7 +100269,7 @@ end{tikzpicture}
 \begin_layout Standard
 \noindent
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -100331,7 +100314,7 @@ end{tikzpicture}
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -100595,7 +100578,6 @@ status open
 
 \begin_layout Plain Layout
 
-\emph on
 
 \backslash
 valor{0,5}
@@ -100613,7 +100595,6 @@ status open
 
 \begin_layout Plain Layout
 
-\emph on
 
 \backslash
 valor{0,75}
@@ -101333,6 +101314,808 @@ Rótulo para indicar a última questão.
 \begin_inset CommandInset label
 LatexCommand label
 name "que:ultima-questao-an-p2-2020"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch 2020-an-ps
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaantacordo{Trabalho Substituto da Prova Substitutiva}{2020}{17.12.2020
+ (19h a 23h59)}{
+\backslash
+ref{que:ultima-questao-an-ps-2020}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{0}
+\end_layout
+
+\end_inset
+
+ Dado o circuito abaixo, pede-se 
+\begin_inset Formula $v_{x}(t)$
+\end_inset
+
+ e 
+\begin_inset Formula $i_{x}(t)$
+\end_inset
+
+ para 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+.
+ Considerar capacitores e indutores descarregados em 
+\begin_inset Formula $t=\SI{0}{\s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-ps-n/imagens/no-inicio-fim.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=====================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[3]{0}
+\end_layout
+
+\end_inset
+
+ Inicialmente, 
+\begin_inset Formula $L$
+\end_inset
+
+ encontra-se descarregado.
+ Nos instantes 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{3}$
+\end_inset
+
+, a chave é comutada para os pontos indicados, permanecendo lá até o próximo
+ instante.
+ Pede-se traçar o esboço de 
+\begin_inset Formula $i_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $v_{L}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ e 
+\begin_inset Formula $v_{R}(t)\,\times\,t$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+, para 
+\series bold
+
+\begin_inset Formula $0\leqslant t\leqslant\SI{24}{\micro\s}$
+\end_inset
+
+
+\series default
+, 
+\emph on
+\bar under
+indicando os valores dos pontos notáveis
+\emph default
+\bar default
+.
+ Ainda, indicar, no local reservado, os valores dos cálculos auxiliares.
+ 
+\emph on
+(Nota1: considerar as referências de tensão e corrente no capacitor de acordo
+ com o apresentado nas aulas de teoria.
+ Nota2: superpor as curvas de tensão sobre os resistores, mas manter a clareza
+ do traçado.)
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-ps-n/imagens/carga-descarga-indutor.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_L(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_R(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=====================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[1]{50}
+\end_layout
+
+\end_inset
+
+ Calcular 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ pelo 
+\emph on
+Teorema da Superposição
+\emph default
+.
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-ps-n/imagens/teorema-da-superposicao.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=====================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[1]{50}
+\end_layout
+
+\end_inset
+
+ Para o circuito abaixo, deseja-se obter 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+ Para tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\backslash
+alfaenum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Obter o sistema de equações 
+\series bold
+\emph on
+literais
+\series default
+\emph default
+ que resolve o circuito, por 
+\emph on
+Análise Nodal
+\emph default
+.
+ 
+\emph on
+(Nota: a resposta há de ser na forma 
+\begin_inset Formula $V_{A}=\ldots$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Determinar o valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-ps-n/imagens/analise-nodal.png
+	lyxscale 50
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[1]{50}
+\end_layout
+
+\end_inset
+
+ Considere-se o circuito abaixo:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-ps-n/imagens/analise-de-malhas.png
+	lyxscale 50
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações literais
+\series default
+ que o descreve, por 
+\emph on
+Análise de Malhas
+\emph default
+.
+ Escreva a resposta final no espaço reservado.
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,25}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações numéricas
+\series default
+.
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Os valores de 
+\begin_inset Formula $I_{\alpha}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{\beta}$
+\end_inset
+
+.
+\begin_inset VSpace 8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=====================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[1]{00}
+\end_layout
+
+\end_inset
+
+ No circuito abaixo, sabe-se que 
+\begin_inset Formula $V_{A}=\six{-1,65}{\V}$
+\end_inset
+
+.
+ Pede-se realizar o balanço de potência.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trabalhos-substitutos/2020-ete103-ps-n/imagens/balanco-de-energia.png
+	lyxscale 50
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size small
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Rótulo para indicar a última questão.
+ Deixá-lo nesta última linha e não removê-lo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+(Certamente, não deverá haver o incremento de nenhum outro contador entre
+ o cabeçalho da última e este rótulo – como, por exemplo, o de seção ou
+ item.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "que:ultima-questao-an-ps-2020"
 
 \end_inset
 

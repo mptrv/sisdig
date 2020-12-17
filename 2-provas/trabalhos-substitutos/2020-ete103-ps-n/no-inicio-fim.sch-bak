@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FDAB479
+P 3850 3600
+F 0 "V1" H 3968 3696 50  0000 L CNN
+F 1 "15V" H 3968 3605 50  0000 L CNN
+F 2 "" V 3850 3660 50  0001 C CNN
+F 3 "~" V 3850 3660 50  0001 C CNN
+	1    3850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell V3
+U 1 1 5FDABE12
+P 5800 3600
+F 0 "V3" H 5918 3696 50  0000 L CNN
+F 1 "8V" H 5918 3605 50  0000 L CNN
+F 2 "" V 5800 3660 50  0001 C CNN
+F 3 "~" V 5800 3660 50  0001 C CNN
+	1    5800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell V2
+U 1 1 5FDAC7A6
+P 5000 3400
+F 0 "V2" H 5118 3496 50  0000 L CNN
+F 1 "5V" H 5118 3405 50  0000 L CNN
+F 2 "" V 5000 3460 50  0001 C CNN
+F 3 "~" V 5000 3460 50  0001 C CNN
+	1    5000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FDACF1D
+P 4650 3100
+F 0 "C1" V 4902 3100 50  0000 C CNN
+F 1 "10uF" V 4811 3100 50  0000 C CNN
+F 2 "" H 4688 2950 50  0001 C CNN
+F 3 "~" H 4650 3100 50  0001 C CNN
+	1    4650 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FDAD37B
+P 5400 3100
+F 0 "C2" V 5652 3100 50  0000 C CNN
+F 1 "22uF" V 5561 3100 50  0000 C CNN
+F 2 "" H 5438 2950 50  0001 C CNN
+F 3 "~" H 5400 3100 50  0001 C CNN
+	1    5400 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5FDAECC2
+P 6100 3100
+F 0 "L1" V 6290 3100 50  0000 C CNN
+F 1 "15mH" V 6199 3100 50  0000 C CNN
+F 2 "" H 6100 3100 50  0001 C CNN
+F 3 "~" H 6100 3100 50  0001 C CNN
+	1    6100 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FDAF600
+P 6450 3500
+F 0 "R3" H 6518 3546 50  0000 L CNN
+F 1 "470Ω" H 6518 3455 50  0000 L CNN
+F 2 "" V 6490 3490 50  0001 C CNN
+F 3 "~" H 6450 3500 50  0001 C CNN
+	1    6450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 5FDAF8FC
+P 6100 3950
+F 0 "R5" V 5895 3950 50  0000 C CNN
+F 1 "270Ω" V 5986 3950 50  0000 C CNN
+F 2 "" V 6140 3940 50  0001 C CNN
+F 3 "~" H 6100 3950 50  0001 C CNN
+	1    6100 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FDB065B
+P 4250 3100
+F 0 "R2" V 4455 3100 50  0000 C CNN
+F 1 "120Ω" V 4364 3100 50  0000 C CNN
+F 2 "" V 4290 3090 50  0001 C CNN
+F 3 "~" H 4250 3100 50  0001 C CNN
+	1    4250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5FDB11DF
+P 4750 2550
+F 0 "R1" V 4955 2550 50  0000 C CNN
+F 1 "220Ω" V 4864 2550 50  0000 C CNN
+F 2 "" V 4790 2540 50  0001 C CNN
+F 3 "~" H 4750 2550 50  0001 C CNN
+	1    4750 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 3100 5800 3400
+Wire Wire Line
+	5800 3100 5950 3100
+Wire Wire Line
+	5800 3700 5800 3950
+Wire Wire Line
+	5800 3950 5950 3950
+Wire Wire Line
+	6250 3950 6450 3950
+Wire Wire Line
+	6450 3950 6450 3650
+Wire Wire Line
+	6450 3350 6450 3100
+Wire Wire Line
+	6450 3100 6250 3100
+Wire Wire Line
+	5550 3100 5800 3100
+Connection ~ 5800 3100
+Wire Wire Line
+	5250 3100 5000 3100
+Wire Wire Line
+	5000 3100 5000 3200
+$Comp
+L Device:R_US R4
+U 1 1 5FDB5513
+P 5000 3750
+F 0 "R4" H 4932 3704 50  0000 R CNN
+F 1 "390Ω" H 4932 3795 50  0000 R CNN
+F 2 "" V 5040 3740 50  0001 C CNN
+F 3 "~" H 5000 3750 50  0001 C CNN
+	1    5000 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 3600 5000 3500
+Wire Wire Line
+	5800 3950 5000 3950
+Wire Wire Line
+	5000 3950 5000 3900
+Connection ~ 5800 3950
+Wire Wire Line
+	3850 3700 3850 3950
+Wire Wire Line
+	3850 3950 5000 3950
+Connection ~ 5000 3950
+Wire Wire Line
+	3850 3400 3850 3100
+Wire Wire Line
+	3850 3100 4100 3100
+Wire Wire Line
+	4400 3100 4500 3100
+Wire Wire Line
+	4800 3100 5000 3100
+Connection ~ 5000 3100
+Wire Wire Line
+	4600 2550 3850 2550
+Wire Wire Line
+	3850 2550 3850 3100
+Connection ~ 3850 3100
+Wire Wire Line
+	4900 2550 5800 2550
+Wire Wire Line
+	5800 2550 5800 3100
+$Comp
+L Pessoal:seta_tensao_longa vx(t)
+U 1 1 5FDBD3EE
+P 4950 3750
+F 0 "vx(t)" H 4700 3750 50  0000 L CNN
+F 1 "seta_tensao_longa" H 4925 3625 50  0001 C CNN
+F 2 "" H 4950 3850 50  0001 C CNN
+F 3 "" H 4950 3850 50  0001 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pessoal:seta_corrente ix(t)
+U 1 1 5FDBEAD6
+P 5750 3200
+F 0 "ix(t)" V 5800 3000 50  0000 L CNN
+F 1 "seta_corrente" H 5850 3150 50  0001 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

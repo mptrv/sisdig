@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 5FDCD3E3
+P 4700 3800
+F 0 "R1" H 4768 3846 50  0000 L CNN
+F 1 "4Ω" H 4768 3755 50  0000 L CNN
+F 2 "" V 4740 3790 50  0001 C CNN
+F 3 "~" H 4700 3800 50  0001 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FDCD661
+P 5700 3500
+F 0 "R2" H 5768 3546 50  0000 L CNN
+F 1 "6Ω" H 5768 3455 50  0000 L CNN
+F 2 "" V 5740 3490 50  0001 C CNN
+F 3 "~" H 5700 3500 50  0001 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FDCE0BC
+P 6200 3200
+F 0 "R3" V 5995 3200 50  0000 C CNN
+F 1 "3Ω" V 6086 3200 50  0000 C CNN
+F 2 "" V 6240 3190 50  0001 C CNN
+F 3 "~" H 6200 3200 50  0001 C CNN
+	1    6200 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FDCF5E4
+P 6700 3850
+F 0 "V1" H 6818 3946 50  0000 L CNN
+F 1 "4V" H 6818 3855 50  0000 L CNN
+F 2 "" V 6700 3910 50  0001 C CNN
+F 3 "~" V 6700 3910 50  0001 C CNN
+	1    6700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR01
+U 1 1 5FDD13DC
+P 5700 4550
+F 0 "#PWR01" H 5700 4300 50  0001 C CNN
+F 1 "Earth" H 5700 4400 50  0001 C CNN
+F 2 "" H 5700 4550 50  0001 C CNN
+F 3 "~" H 5700 4550 50  0001 C CNN
+	1    5700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3650 4700 3200
+Wire Wire Line
+	5700 3200 5700 3350
+Wire Wire Line
+	6050 3200 5700 3200
+Wire Wire Line
+	5700 3650 5700 3800
+Wire Wire Line
+	4700 3950 4700 4450
+Wire Wire Line
+	4700 4450 5700 4450
+Wire Wire Line
+	5700 4450 5700 4400
+Wire Wire Line
+	5700 4450 5700 4550
+Connection ~ 5700 4450
+Wire Wire Line
+	6350 3200 6700 3200
+Wire Wire Line
+	6700 3200 6700 3650
+Wire Wire Line
+	6700 3950 6700 4450
+Wire Wire Line
+	6700 4450 5700 4450
+$Comp
+L Pessoal:seta_corrente i'
+U 1 1 5FDD5D56
+P 6650 3150
+F 0 "i'" H 6750 3233 50  0000 C CNN
+F 1 "seta_corrente" H 6750 3100 50  0001 C CNN
+F 2 "" H 6650 3150 50  0001 C CNN
+F 3 "" H 6650 3150 50  0001 C CNN
+	1    6650 3150
+	-1   0    0    -1  
+$EndComp
+Text Notes 5700 3150 0    50   ~ 0
+A
+$Comp
+L Pessoal:fonte_tensao_dep V2
+U 1 1 5FDD04E6
+P 5200 3200
+F 0 "V2" V 5555 3200 50  0000 C CNN
+F 1 "v = k i'" V 5464 3200 50  0000 C CNN
+F 2 "" V 5200 3200 50  0001 C CNN
+F 3 "" V 5200 3200 50  0001 C CNN
+F 4 "k = 1,5Ω" V 5373 3200 50  0000 C CNN "Observação"
+	1    5200 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 3200 4700 3200
+Wire Wire Line
+	5500 3200 5700 3200
+Connection ~ 5700 3200
+$Comp
+L Pessoal:fonte_corrente I1
+U 1 1 5FDE25C4
+P 5700 4100
+F 0 "I1" H 5569 4054 50  0000 R CNN
+F 1 "3A" H 5569 4145 50  0000 R CNN
+F 2 "" V 5700 4100 50  0001 C CNN
+F 3 "" V 5700 4100 50  0001 C CNN
+	1    5700 4100
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
