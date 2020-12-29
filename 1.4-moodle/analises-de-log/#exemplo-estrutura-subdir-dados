@@ -1,0 +1,23 @@
+.
+├── -dados
+├── dados
+│   ├── 2020
+│   │   ├── 2020-ete102-logs_moodle.csv
+│   │   ├── 2020-ete102-notas-d.xls
+│   │   ├── 2020-ete102-notas-n.xls
+│   │   ├── 2020-ete103-logs_moodle.csv
+│   │   ├── 2020-ete103-notas-d.xls
+│   │   ├── 2020-ete103-notas-n.xls
+│   │   ├── ETE103_Presenças_Laboratório_20201229-1249.xlsx
+│   │   ├── logs_ETE102_20201211-1640.ods
+│   │   └── logs_ETE103_20201205-1219.ods
+│   ├── 2021
+│   ├── logs_moodle.csv -> 2020/2020-ete103-logs_moodle.csv
+│   ├── notas-d.xls -> 2020/2020-ete103-notas-d.xls
+│   ├── notas-n.xls -> 2020/2020-ete103-notas-n.xls
+│   ├── presencas-campos-de-interesse-unpivot.xlsx
+│   └── presencas.xlsx -> 2020/ETE103_Presenças_Laboratório_20201229-1249.xlsx
+├── moodle-analises-de-log.accdb
+└── Moodle - Análises de Log.lnk
+
+3 directories, 17 files
