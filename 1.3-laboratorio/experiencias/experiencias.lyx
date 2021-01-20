@@ -190,7 +190,7 @@ customHeadersFooters
 \color #e5dcd3
 \end_branch
 \branch dg-decodificador
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -210,32 +210,32 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-tecnicas-soldagem
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-portas-logicas
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-osciloscopio-i
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-schmitt-trigger
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-flip-flop-rs
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-contador-assincrono
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -250,7 +250,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-alarme-invasao
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -260,27 +260,27 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-multimetros
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-lei-ohm
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -310,12 +310,12 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-projeto
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -360,7 +360,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-painel-protoboard
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -15223,7 +15223,7 @@ setcounter{chapter}{8}
 \begin_layout Standard
 \begin_inset Branch dg-contador-assincrono2
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Contadores Assíncronos
@@ -44542,7 +44542,7 @@ Cabos banana-banana
 \begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Leis de Kirchhoff
