@@ -11,7 +11,7 @@ Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "(Circuito sem Defeito)"
 $EndDescr
 $Comp
 L circuito-01-rescue:7400 U2
