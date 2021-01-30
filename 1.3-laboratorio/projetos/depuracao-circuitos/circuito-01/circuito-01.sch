@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Depuração de Circuitos - Circuito 01"
-Date "2019-04-21"
-Rev "02"
-Comp "ETE102 - Fundamentos de Circuitos Digitais"
+Date "2021-01-30"
+Rev "02.1"
+Comp "ETE102 - Fundamentos de Circuitos Digitais / IMT"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
 Comment2 ""
 Comment3 ""
-Comment4 "(Circuito sem Defeito)"
+Comment4 "(Circuito sem defeito. Referência para a PCI sem defeito.)"
 $EndDescr
 $Comp
 L circuito-01-rescue:7400 U2
@@ -1007,4 +1007,12 @@ F 3 "" H 1300 1950 50  0000 C CNN
 	1    1300 1950
 	-1   0    0    -1  
 $EndComp
+Text Notes 2850 3600 0    50   ~ 0
+A
+Text Notes 2850 3700 0    50   ~ 0
+B
+Text Notes 2850 3800 0    50   ~ 0
+C
+Text Notes 2850 3900 0    50   ~ 0
+D
 $EndSCHEMATC
