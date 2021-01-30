@@ -5,13 +5,21 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Depuração de Circuitos - Circuito 01"
+<<<<<<< HEAD
 Date "2021-01-30"
+=======
+Date "2021-01-29"
+>>>>>>> e18f029cd5020d673a60db75336d072902ae5ab9
 Rev "04.1"
 Comp "ETE102 - Fundamentos de Circuitos Digitais / IMT"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
 Comment2 "Com defeitos propositais."
 Comment3 ""
+<<<<<<< HEAD
 Comment4 "(Base para a PCI e para gerar as versões do professor e do aluno.)"
+=======
+Comment4 "(VERSÃO DO PROFESSOR)"
+>>>>>>> e18f029cd5020d673a60db75336d072902ae5ab9
 $EndDescr
 $Comp
 L circuito-01-rescue:R R1
