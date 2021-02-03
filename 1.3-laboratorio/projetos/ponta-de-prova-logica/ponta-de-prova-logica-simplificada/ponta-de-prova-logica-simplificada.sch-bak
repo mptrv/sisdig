@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ponta-de-prova-logica-simplificada-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -9,9 +8,9 @@ Title "Ponta de Prova Lógica"
 Date "2019-02-16"
 Rev "02"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comment1 "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
+Comment2 "(Circuito testado e funcional.)"
+Comment3 "Use sob seu próprio risco. Nenhuma garantia fornecida."
 Comment4 ""
 $EndDescr
 $Comp

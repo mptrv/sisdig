@@ -350,7 +350,7 @@ P 7550 4200
 F 0 "U1" H 7700 4450 50  0000 C CNN
 F 1 "LM339" H 7700 4350 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7500 4300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 7600 4400 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005706.PDF" H 7600 4400 50  0001 C CNN
 	1    7550 4200
 	1    0    0    -1  
 $EndComp
@@ -361,7 +361,7 @@ P 7550 3350
 F 0 "U1" H 7700 3600 50  0000 C CNN
 F 1 "LM339" H 7700 3500 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7500 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 7600 3550 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005706.PDF" H 7600 3550 50  0001 C CNN
 	2    7550 3350
 	1    0    0    -1  
 $EndComp
@@ -372,7 +372,8 @@ P 3700 4350
 F 0 "U1" H 3850 4600 50  0000 C CNN
 F 1 "LM339" H 3850 4500 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3650 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 3750 4550 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005706.PDF" H 3750 4550 50  0001 C CNN
+F 4 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 3700 4350 50  0001 C CNN "Observação"
 	3    3700 4350
 	1    0    0    -1  
 $EndComp
@@ -383,7 +384,7 @@ P 3700 4950
 F 0 "U1" H 3850 5200 50  0000 C CNN
 F 1 "LM339" H 3850 5100 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3650 5050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 3750 5150 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005706.PDF" H 3750 5150 50  0001 C CNN
 	4    3700 4950
 	1    0    0    -1  
 $EndComp
@@ -394,7 +395,7 @@ P 7550 3350
 F 0 "U1" H 7508 3396 50  0001 L CNN
 F 1 "LM339" H 7508 3305 50  0001 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 7500 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 7600 3550 50  0001 C CNN
+F 3 "http://pdf.datasheetcatalog.com/datasheet/nationalsemiconductor/DS005706.PDF" H 7600 3550 50  0001 C CNN
 	5    7550 3350
 	1    0    0    -1  
 $EndComp
