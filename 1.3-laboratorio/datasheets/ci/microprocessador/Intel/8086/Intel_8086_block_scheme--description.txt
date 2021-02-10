@@ -1,0 +1,15 @@
+Description of Intel_8086_block_scheme.svg 
+
+Block diagram of the Intel 8086 microprocessor
+
+1. Block of general purpose registers
+2 Block segment registers
+3 Dwudziestobitowy combiner
+4 Internal bus C, 5 Queue commands
+6 The control system
+7 The control system bus
+8 Internal Bus A
+9 Arithmetic logic unit (ALU)
+10 Address bus
+11 Data bus
+12 Rail Control F. Registry tags, AX -accumulator , BX - register base CX - counting register, DX - data register, SP - stack pointer, BP - base pointer, SI - source index, DI - Destination Index ,CS - code Segment DS - data segment, SS - stack segment, ES - extra segment, IP - Instruction Pointer.

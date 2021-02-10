@@ -1,0 +1,1193 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Orientações para Elaboração de PCI
+\end_layout
+
+\begin_layout Section
+Referências
+\end_layout
+
+\begin_layout Standard
+Vídeos no 
+\emph on
+Youtube
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://youtu.be/q8ludS_A3xo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://youtu.be/NtVEvFsT46I
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lista de Materiais
+\end_layout
+
+\begin_layout Enumerate
+Placa de fibra de vidro ou fenolite
+\end_layout
+
+\begin_layout Enumerate
+Tinta fotossensível para PCB
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Utilizar em ambiente bem ventilado e evitar inalar os vapores, em especial,
+ por tempo prolongado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Soda cáustica (hidróxido de sódio)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Altamente corrosivo.
+ Vapores em pequenas concentrações não devem causar qualquer risco à saúde.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Barrilha leve (carbonato de sódio – corretor de PH de piscina)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Não há problemas em seu manuseio ou seus vapores.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Percloreto de Ferro III
+\end_layout
+
+\begin_layout Enumerate
+Água
+\end_layout
+
+\begin_layout Enumerate
+Fotolito (transparência com impressão do circuito)
+\end_layout
+
+\begin_layout Enumerate
+Papel 
+\emph on
+transfer
+\emph default
+ para fazer a legenda
+\end_layout
+
+\begin_layout Enumerate
+Luz negra (luz ultravioleta)
+\end_layout
+
+\begin_layout Enumerate
+Brocas para a furação da placa
+\end_layout
+
+\begin_layout Enumerate
+Copo com graduação
+\end_layout
+
+\begin_layout Enumerate
+Pincel
+\end_layout
+
+\begin_layout Enumerate
+Secador de cabelo, forno ou algo semelhante para secar a tinta
+\end_layout
+
+\begin_layout Enumerate
+Ferro de passar roupa
+\end_layout
+
+\begin_layout Enumerate
+Dremil ou algo que permita centrifugar a placa para uma distribuição homogênea
+ da tinta
+\end_layout
+
+\begin_layout Enumerate
+Cola quente
+\end_layout
+
+\begin_layout Enumerate
+Bandejas para o manuseio e uso das soluções
+\end_layout
+
+\begin_layout Enumerate
+Palha de aço
+\end_layout
+
+\begin_layout Enumerate
+Detergente
+\end_layout
+
+\begin_layout Enumerate
+Papel toalha
+\end_layout
+
+\begin_layout Enumerate
+Caixa de papelão
+\end_layout
+
+\begin_layout Enumerate
+Avental
+\end_layout
+
+\begin_layout Enumerate
+Luva de látex ou vinil
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Se cair soda cáustica, tirar a luva imediatamente, descartá-la e lavar a
+ mão (realizar este procedimento dentro de 2 minutos).
+ Luvas mais seguras seriam as nitrílicas ou, ainda melhores, as de borracha.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Máscara para produtos químicos
+\end_layout
+
+\begin_layout Enumerate
+Óculos de segurança
+\end_layout
+
+\begin_layout Section
+Procedimento
+\end_layout
+
+\begin_layout Subsection
+Corrosão da Placa
+\end_layout
+
+\begin_layout Enumerate
+Lavar a placa com bombril até ficar bem brilhante.
+\end_layout
+
+\begin_layout Enumerate
+Lavar a placa com detergente, para remover qualquer gordura.
+\end_layout
+
+\begin_layout Enumerate
+Secar com o papel guardanapo e não mais encostar os dedos no cobre.
+\end_layout
+
+\begin_layout Enumerate
+Marcar o centro e fixar, com cola quente, um eixo para a centrifugação.
+\end_layout
+
+\begin_layout Enumerate
+Pintar a placa com a tinta fotossenssível, deixando um pouco mais de tinta
+ no centro.
+\end_layout
+
+\begin_layout Enumerate
+Centrifugar a placa por, aproximadamente, 30 s.
+\end_layout
+
+\begin_layout Enumerate
+Secar por 10 min, a não mais que 80 °C; pode-se utilizar secador ou forno;
+ a tinta ficará fosca.
+\end_layout
+
+\begin_layout Enumerate
+Opcionalmente, secar por mais 2 min com vento frio.
+\end_layout
+
+\begin_layout Enumerate
+Imprimir o fotolito com as cores invertidas (a região que ficar coberta
+ com tinta no fotolito será a região que irá sair depois com a lavagem).
+\end_layout
+
+\begin_layout Enumerate
+Recomenda-se utilizar um vidro para segurar o fotolito no lugar enquanto
+ for exposta a luz ultravioleta.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Cuidado!
+\series default
+ O fotolito tem lado certo! Confirmar se o que está coberto com tinta preta
+ na impressão é realmente aquilo que será removido.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Deixar a placa com fotolito sob luz ultravioleta por, aproximadamente, 3
+ minutos.
+\end_layout
+
+\begin_layout Enumerate
+Misturar 200 ml de água com 1/2 colher de sopa de barrilha leve (carbonato
+ de sódio).
+\end_layout
+
+\begin_layout Enumerate
+Mergulhar a placa na mistura e retirar de leve o material que soltar; neste
+ processo, movimentar a mistura e não utilizar material abrasivo; opcionalmente,
+ poderá ser utilizado um rolinho de pintura.
+\end_layout
+
+\begin_layout Enumerate
+Secar a placa com secador ou forno.
+\end_layout
+
+\begin_layout Enumerate
+Opcionalmente, expor a placa por mais 2 min à luz ultravioleta para garantir
+ a boa fixação da tinta.
+\end_layout
+
+\begin_layout Enumerate
+Mergulhar a placa no Percloreto de Ferro III; opcionalmente, pré-aquecê-lo
+ para acelerar o processo de corrosão.
+\end_layout
+
+\begin_layout Enumerate
+Movimentar o percloreto constantemente, por 15 a 20 min.
+\end_layout
+
+\begin_layout Enumerate
+Secar a placa com papel e lavá-la em água corrente.
+\end_layout
+
+\begin_layout Enumerate
+Ferver 200 ml de água e misturar com 2 colheres de sopa de soda cáustica
+ (hidróxido de sódio).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Cuidado!
+\series default
+ Colocar a água primeiro e depois a soda cáustica, pois a reação química
+ é fortemente exotérmica.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cuidado!
+\series default
+ Utilizar luvas, óculos de segurança e máscara para produtos químicos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Mergular a placa e mexer a mistura até toda a tinta se soltar.
+\end_layout
+
+\begin_layout Enumerate
+Cortar os excessos da placa.
+\end_layout
+
+\begin_layout Subsection
+Serigrafia das Referências
+\end_layout
+
+\begin_layout Enumerate
+Fazer dois furos de referência.
+\end_layout
+
+\begin_layout Enumerate
+Imprimir legenda espelhada no papel 
+\emph on
+transfer
+\emph default
+; utilizar impressora a 
+\emph on
+laser
+\emph default
+ ou a jato de tinta conforme o modelo do papel adquirido.
+\end_layout
+
+\begin_layout Enumerate
+Alinhar o papel 
+\emph on
+transfer
+\emph default
+ com a placa por meio dos furos; pode-se utilizar um objeto pontiagudo como
+ auxílio.
+\end_layout
+
+\begin_layout Enumerate
+Com fita isolante ou qualquer outra forte, fixar o papel e a placa sobre
+ um superfície lisa.
+\end_layout
+
+\begin_layout Enumerate
+Passar o ferro de passar, em temperatura máxima, sobre o papel por 2 minutos.
+\end_layout
+
+\begin_layout Enumerate
+Esperar resfriar para retirar o papel.
+\end_layout
+
+\begin_layout Enumerate
+Remover as rebarbas com uma tesoura.
+\end_layout
+
+\begin_layout Subsection
+Máscara de Solda
+\end_layout
+
+\begin_layout Enumerate
+Lavar o cobre com bombril e detergente.
+\end_layout
+
+\begin_layout Enumerate
+Secar com guardanapo e evitar o contato das mãos no cobre.
+\end_layout
+
+\begin_layout Enumerate
+Aplicar tinta fotossenssível em toda a placa novamente.
+\end_layout
+
+\begin_layout Enumerate
+Centrifugá-la por 30 s.
+\end_layout
+
+\begin_layout Enumerate
+Secar a placa por 15 min em ar quente.
+\end_layout
+
+\begin_layout Enumerate
+Secar a placa por mais 2 min em ar frio.
+\end_layout
+
+\begin_layout Enumerate
+Imprimir fotolito com a máscara de solda (imagem somente com as ilhas).
+\end_layout
+
+\begin_layout Enumerate
+Expor placa com fotolito à luz ultravioleta por 3 min.
+\end_layout
+
+\begin_layout Enumerate
+Mergulhar a placa na solução de barrilha; pode-se reutilizar a anterior.
+\end_layout
+
+\begin_layout Enumerate
+Enxaguar e secar.
+\end_layout
+
+\begin_layout Section
+Especificações de Fabricantes de PCI
+\end_layout
+
+\begin_layout Subsection
+Fabricação pelo Processo Descrito
+\end_layout
+
+\begin_layout Standard
+As especificações referem-se a tamanhos mínimos que foram experimentados
+ com sucesso.
+ Tamanhos menores em pendência de ensaios.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="middle" width="5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Item
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Tamanho (mm)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Notas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor trilha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Texto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Espessura
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Isolação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trilha/trilha, trilha/ilha, ilha/ilha
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Furo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,90
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor anel de cobre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ex\SpecialChar endofsentence
+: para furos de 0,40mm, pads de 0,70mm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+LPKF ProtoMat S62
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+As opções abaixo para 'pdfpages' inserem o material com título da seção
+ e numeração de página na mesma página do material.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+pagecommand={
+\backslash
+subsection{Subtítulo}},scale=0.7,offset=0 -1cm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/lpkf-protomat-s62.pdf
+	lyxscale 25
+	extra LaTeX "pages={4}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Empresa TEC-CI
+\end_layout
+
+\begin_layout Subsubsection*
+PCI DUPLA FACE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="middle" width="5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Item
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Tamanho (mm)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Notas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor trilha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Texto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Isolação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trilha/trilha, trilha/ilha, ilha/ilha
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Furo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor anel de cobre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ex\SpecialChar endofsentence
+: para furos de 0,40mm, pads de 0,70mm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+PCI FACE SIMPLES-FENOLITE, COMPOSITE, METAL CORE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="middle" width="5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Item
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Tamanho (mm)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Notas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor trilha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Texto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Isolação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trilha/trilha, trilha/ilha, ilha/ilha
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor Furo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Menor anel de cobre
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ex\SpecialChar endofsentence
+: para furos de 0,70mm, pads de 1,50mm
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Empresa Griffus
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/griffus-anexo1-34-parametros-de-processo-e-produto-rev-05.pdf
+	lyxscale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Empresa Micropress
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/micropress-cp10-site.pdf
+	lyxscale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
