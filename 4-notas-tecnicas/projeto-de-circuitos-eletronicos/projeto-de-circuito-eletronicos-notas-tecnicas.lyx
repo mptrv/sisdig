@@ -154,6 +154,13 @@ Notas Técnicas sobre
 \end_inset
 
 Projeto de Circuitos Eletrônicos
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+v.
+ 0.0.1
 \end_layout
 
 \begin_layout Standard
@@ -317,6 +324,61 @@ ing-and-applications
 
 \begin_layout Chapter
 LEDs
+\end_layout
+
+\begin_layout Section
+LEDs Convencionais
+\end_layout
+
+\begin_layout Standard
+Para os LEDs convencionais, um bom brilho pode ser obtido com uma corrente
+ entre 
+\begin_inset Formula $\six{10}{\mA}$
+\end_inset
+
+ e 
+\begin_inset Formula $\six{20}{\mA}$
+\end_inset
+
+.
+ O valor inferior pode ser mais interessante sob o ponto de vista de economia
+ de energia.
+\end_layout
+
+\begin_layout Standard
+A queda de tensão varia um pouco de acordo com a cor, mas o valor de 
+\begin_inset Formula $\six{1,8}{\V}$
+\end_inset
+
+ pode ser adotado em geral.
+\end_layout
+
+\begin_layout Chapter
+
+\emph on
+\lang english
+Protoboard
+\end_layout
+
+\begin_layout Standard
+Para melhorar a estabilidade do funcionamento dos circuitos em 
+\emph on
+\lang english
+protoboard
+\emph default
+\lang brazilian
+, logo na entrada da alimentação pode-se colocar dois capacitores em paralelo,
+ sendo um eletrolítico de 
+\begin_inset Formula $\six{10}{\micro\F}$
+\end_inset
+
+ e outro cerâmico de 
+\begin_inset Formula $\six{10}{\nano\F}$
+\end_inset
+
+.
+ Se necessário, esta configuração também pode ser replicada para as outras
+ linhas de distribuição de alimentação.
 \end_layout
 
 \end_body
