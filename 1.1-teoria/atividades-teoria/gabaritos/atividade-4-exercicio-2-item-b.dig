@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+      </elementAttributes>
+      <pos x="80" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+      </elementAttributes>
+      <pos x="140" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>D</string>
+        </entry>
+      </elementAttributes>
+      <pos x="260" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>E</string>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="140"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="80" y="140"/>
+      <p2 x="80" y="880"/>
+    </wire>
+    <wire>
+      <p1 x="320" y="140"/>
+      <p2 x="320" y="880"/>
+    </wire>
+    <wire>
+      <p1 x="260" y="140"/>
+      <p2 x="260" y="880"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="140"/>
+      <p2 x="200" y="880"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="140"/>
+      <p2 x="140" y="880"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
