@@ -102332,6 +102332,11 @@ inverted 0
 status open
 
 \begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -102342,6 +102347,11 @@ status open
 capadgtacordo{Trabalho Bimestral}{2021}{15.04.2021 a 18.04.2021}{
 \backslash
 ref{que:ultima-questao-dg-p1-2021}}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -102400,7 +102410,7 @@ status open
 
 
 \backslash
-qquestao[1]{00}
+questao[1]{00}
 \end_layout
 
 \end_inset
@@ -102602,6 +102612,19 @@ inverted 0
 status open
 
 \begin_layout Standard
+
+\bar under
+\color red
+Respostas
+\bar default
+:
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align center
 
 \color red
@@ -102610,7 +102633,6 @@ status open
 
 \begin_layout Plain Layout
 
-\color red
 
 \backslash
 esptab{
@@ -102734,7 +102756,6 @@ status open
 
 \begin_layout Plain Layout
 
-\color red
 }
 \end_layout
 
@@ -103033,21 +103054,34 @@ valor{0,25}
 \noindent
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
+
+\begin_layout Standard
+
+\bar under
+\color red
+Respostas
+\bar default
+:
+\end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula 
-\begin{align*}
-a & =(1010\,0111)_{2}\qquad b=(1010\,0111)_{2}\\
-c & =(0110\,1011)_{2}\qquad d=(0110\,1011)_{2}
-\end{align*}
+\noindent
+\align left
 
+\color red
+\begin_inset Formula $\begin{array}{c}
+a=(1010\,0111)_{2}\qquad b=(1010\,0111)_{2}\\
+c=(0110\,1011)_{2}\qquad d=(0110\,1011)_{2}
+\end{array}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
+
+\color red
 \begin_inset Formula $a=(1\,010\,0111)_{2}=(-39)_{10}\qquad c=(0\,110\,1011)_{2}=(+107)_{10}$
 \end_inset
 
@@ -103055,6 +103089,8 @@ c & =(0110\,1011)_{2}\qquad d=(0110\,1011)_{2}
 \end_layout
 
 \begin_layout Enumerate
+
+\color red
 \begin_inset Formula $a=(1010\,0111)_{2}=(-89)_{10}\qquad c=(0110\,1011)_{2}=(+107)_{10}$
 \end_inset
 
@@ -103062,6 +103098,8 @@ c & =(0110\,1011)_{2}\qquad d=(0110\,1011)_{2}
 \end_layout
 
 \begin_layout Enumerate
+
+\color red
 \begin_inset Formula $b=(1010\,0111)_{2}=(167)_{10}\qquad d=(0110\,1011)_{2}=(107)_{10}$
 \end_inset
 
@@ -103069,6 +103107,8 @@ c & =(0110\,1011)_{2}\qquad d=(0110\,1011)_{2}
 \end_layout
 
 \begin_layout Enumerate
+
+\color red
 Como 
 \begin_inset Formula $a$
 \end_inset
@@ -103967,6 +104007,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -103976,6 +104018,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -103985,6 +104029,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -103994,6 +104040,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -104005,6 +104053,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -104014,6 +104064,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104023,6 +104075,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104032,6 +104086,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104043,6 +104099,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104052,6 +104110,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -104061,6 +104121,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -104070,6 +104132,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104081,6 +104145,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104090,6 +104156,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104099,6 +104167,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -104108,6 +104178,8 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -104181,6 +104253,8 @@ status collapsed
 \begin_inset Newline newline
 \end_inset
 
+
+\color red
 
 \begin_inset Formula 
 \begin{align*}
@@ -105028,6 +105102,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -105072,6 +105148,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -105116,6 +105194,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -105160,6 +105240,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -105204,6 +105286,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -105248,6 +105332,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 1
 \end_layout
 
@@ -105292,6 +105378,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -105336,6 +105424,8 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 0
 \end_layout
 
@@ -105498,15 +105588,32 @@ inverted 0
 status open
 
 \begin_layout Standard
+
+\bar under
+\color red
+Resolução
+\bar default
+:
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color red
 \begin_inset Formula 
-\begin{align*}
+\begin{flalign*}
 X & =\overline{\overline{ABD}+CD}\,\bar{A}=\overline{\overline{ABD}}\,\overline{CD}\,\bar{A}=ABD\,\bar{A}\,\overline{CD}\\
 Y & =\overline{\overline{A+B+C}\,\overline{ABD}+A+CD}=\overline{(\bar{A}\bar{B}\bar{C}\,\overline{ABD})+A+CD}=\\
  & =\overline{\bar{A}\bar{B}\bar{C}\,\overline{ABD}}\,\bar{A}\,\overline{CD}
-\end{align*}
+\end{flalign*}
 
 \end_inset
 
+
+\color inherit
 
 \begin_inset VSpace bigskip
 \end_inset
@@ -105636,7 +105743,7 @@ complemento de 2
 \noindent
 \begin_inset Branch detalhes-enunciado
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -105683,6 +105790,256 @@ espv[40]
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch gabarito
+inverted 0
+status open
+
+\begin_layout Standard
+
+\bar under
+\color red
+Resolução
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula ${\color{red}\begin{array}{ccccccccccccccccc}
+ & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}}\\
+ & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}\times}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}}\\
+\cline{1-17} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}}\\
+ & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}}\\
+ & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}}\\
++ & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}} & {\normalcolor {\color{red}}}\\
+\cline{1-17} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}0}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}} & {\normalcolor {\color{red}1}}
+\end{array}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\series bold
+\color red
+Resultado:
+\series default
+ 
+\begin_inset Formula $\boldsymbol{(0100\,1011\,0000\,1111)_{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(Em decimal, seria: 
+\begin_inset Formula $183\times105=19215$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\color red
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Como agora os números são sinalizados, deve-se seguir a regra de multiplicação
+ já conhecida, em que se multiplicam os módulos e se verificam os sinais
+ – se forem iguais, o resultado é positivo, se forem diferentes, o resultado
+ é negativo.
+\begin_inset Newline newline
+\end_inset
+
+Nota-se que o primeiro número é negativo e o segundo é positivo.
+ Portanto, deve-se encontrar o módulo do primeiro, pelo Complemento de 2,
+ realizar a multiplicação e, por fim, encontrar o resultado final pelo Complemen
+to de 2.
+\begin_inset Newline newline
+\end_inset
+
+Perceba-se, inclusive, como ocorreu no item anterior, que 
+\bar under
+o produto de dois dados de 8 bits pode resultar num dado de até 16 bits
+\bar default
+.
+\color inherit
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color red
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $(1011\,0111)_{2}\rightarrow0100\,1000+1=(0100\,1001)_{2C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $\begin{array}{ccccccccccccccccc}
+ & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1}\\
+ & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}\times} & {\color{red}} & {\color{red}0} & {\color{red}1} & {\color{red}1} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1}\\
+\cline{1-17} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1}\\
+ & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}} & {\color{red}} & {\color{red}}\\
+ & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}}\\
++ & {\color{red}} & {\color{red}} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}} & {\color{red}}\\
+\cline{1-17} & {\color{red}0} & {\color{red}0} & {\color{red}0} & {\color{red}1} & {\color{red}1} & {\color{red}1} & {\color{red}0} & {\color{red}1} & {\color{red}1} & {\color{red}1} & {\color{red}1} & {\color{red}1} & {\color{red}0} & {\color{red}0} & {\color{red}0} & {\color{red}1}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $(0001\,1101\,1111\,0001)_{2}\rightarrow1110\,0010\,0000\,11110+1=(1110\,0010\,0000\,1111)_{2C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\color red
+Resultado:
+\series default
+ 
+\begin_inset Formula $\boldsymbol{(1110\,0010\,0000\,1111)_{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(Em decimal, seria: 
+\begin_inset Formula $-73\times105=-7665$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
