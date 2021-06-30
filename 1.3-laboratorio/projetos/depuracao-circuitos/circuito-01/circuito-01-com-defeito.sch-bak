@@ -11,7 +11,7 @@ Comp "ETE102 - Fundamentos de Circuitos Digitais / IMT"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
 Comment2 "Com defeitos propositais."
 Comment3 ""
-Comment4 "(Versão de referência para a PCI com defeito e para as versões do professor e do aluno.))"
+Comment4 "(Versão de referência para a PCI com defeito e para as versões do professor e do aluno.)"
 $EndDescr
 $Comp
 L circuito-01-rescue:R R1
@@ -717,8 +717,6 @@ Wire Wire Line
 Connection ~ 2450 1300
 Wire Wire Line
 	2450 1300 2850 1300
-Wire Wire Line
-	2300 3050 2300 3450
 $Comp
 L Connector_Generic:Conn_01x05 J7
 U 1 1 5CC5816F
@@ -788,8 +786,6 @@ F 3 "" H 9050 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9050 1650 9050 1750
-Wire Wire Line
-	2050 3450 2300 3450
 Text Notes 9225 1925 0    60   Italic 0
 Um jumper aqui para o\nterra será um defeito!
 Text Notes 6800 4275 0    60   Italic 0
@@ -911,7 +907,6 @@ Text Notes 2000 3550 0    50   ~ 0
 B
 Text Notes 2000 3650 0    50   ~ 0
 A
-Connection ~ 2300 3450
 $Comp
 L 74xx:74LS32 U1
 U 1 1 601837DE
@@ -1100,15 +1095,6 @@ Text Notes 6650 2475 0    60   Italic 0
 (Ver arquivo 'circuito-01-cis-queimados.pdf'.)
 Text Notes 1625 4025 0    50   ~ 0
 Off: 1\nOn: 0
-Wire Wire Line
-	2050 3550 2500 3550
-Wire Wire Line
-	2300 3450 2900 3450
-Wire Wire Line
-	2500 3050 2500 3550
-Connection ~ 2500 3550
-Wire Wire Line
-	2500 3550 3450 3550
 $Bitmap
 Pos 9875 6150
 Scale 1.000000
@@ -1565,4 +1551,18 @@ F7 0E 87 F8 0C 52 A8 E1 7B 93 7C A6 23 A3 6F FB 55 D6 D4 CC CC A9 AE BD AB DF 3A
 34 47 64 56 A5 45 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Wire Line
+	2050 3550 2300 3550
+Wire Wire Line
+	2050 3450 2500 3450
+Wire Wire Line
+	2300 3050 2300 3550
+Connection ~ 2300 3550
+Wire Wire Line
+	2300 3550 3450 3550
+Wire Wire Line
+	2500 3050 2500 3450
+Connection ~ 2500 3450
+Wire Wire Line
+	2500 3450 2900 3450
 $EndSCHEMATC

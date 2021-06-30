@@ -37,6 +37,9 @@
 %  Ver também: www.lipsum.com.
 %\usepackage{lipsum}
 
+% Para personalização das "seções" do documento.
+\usepackage{titlesec}
+
 % Valor de questão ou de item.
 \newcommand{\valor}[1]{\emph{(#1)}}
 
@@ -53,6 +56,16 @@
   }%
 }
 \newcommand{\qquestao}[2][x]{\newpage{}\questao[#1]{#2}}
+
+% Formatação da seção para uso com '\questao' ou '\qquestao'.
+% No Lyx, a seção poderá será numerada, para melhor identificação da
+% questão, mas no documento, haverá somente a numeração dada por
+% '\questao' ou '\qquestao'.
+\titleformat{\section}[display]
+  {\normalsize}%
+  {}%
+  {10 pt}%
+  {}[]%
 
 % Enumeração por letras dos alfabeto.
 \newcommand{\alfaenum}{\renewcommand{\labelenumi}{\alph{enumi})}\renewcommand{\theenumi}{\labelenumi}}
@@ -97,5 +110,6 @@
 
 % --- PADRÕES GLOBAIS DEFINIDOS NESTE ESTILO ---------------------------------------------------
 \alfaenum
+\esptab
 
 \endinput

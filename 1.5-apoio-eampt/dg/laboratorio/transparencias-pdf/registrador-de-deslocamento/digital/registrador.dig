@@ -170,7 +170,7 @@
       <elementAttributes>
         <entry>
           <string>Description</string>
-          <string>Síncrono</string>
+          <string>Registrador</string>
         </entry>
       </elementAttributes>
       <pos x="420" y="-40"/>

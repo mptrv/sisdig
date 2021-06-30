@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Depuração de Circuitos - Circuito 01"
-Date "2021-01-30"
-Rev "04.1"
+Date "2021-03-22"
+Rev "04.2"
 Comp "ETE102 - Fundamentos de Circuitos Digitais / IMT"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
 Comment2 "Com defeitos propositais."
@@ -717,8 +717,6 @@ Wire Wire Line
 Connection ~ 2700 1300
 Wire Wire Line
 	2700 1300 3100 1300
-Wire Wire Line
-	2900 3100 2900 3500
 $Comp
 L Connector_Generic:Conn_01x05 J7
 U 1 1 5CC5816F
@@ -788,8 +786,6 @@ F 3 "" H 9300 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9300 1650 9300 1750
-Wire Wire Line
-	2650 3500 2900 3500
 Wire Wire Line
 	10150 1650 10250 1650
 Text Label 10150 1650 2    50   ~ 0
@@ -905,7 +901,6 @@ Text Notes 2600 3600 0    50   ~ 0
 B
 Text Notes 2600 3700 0    50   ~ 0
 A
-Connection ~ 2900 3500
 $Comp
 L 74xx:74LS32 U1
 U 1 1 601837DE
@@ -1089,12 +1084,17 @@ Connection ~ 4450 7100
 Text Notes 2225 4075 0    50   ~ 0
 Off: 1\nOn: 0
 Wire Wire Line
-	2650 3600 3100 3600
+	2650 3500 3100 3500
 Wire Wire Line
-	2900 3500 3500 3500
+	2650 3600 2900 3600
 Wire Wire Line
-	3100 3100 3100 3600
-Connection ~ 3100 3600
+	2900 3100 2900 3600
+Connection ~ 2900 3600
 Wire Wire Line
-	3100 3600 4050 3600
+	2900 3600 4050 3600
+Wire Wire Line
+	3100 3100 3100 3500
+Connection ~ 3100 3500
+Wire Wire Line
+	3100 3500 3500 3500
 $EndSCHEMATC

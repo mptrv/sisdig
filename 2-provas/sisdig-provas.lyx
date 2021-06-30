@@ -286,12 +286,12 @@
 \color #cae8cd
 \end_branch
 \branch 2021-dg-p1
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #cae8cd
 \end_branch
 \branch 2021-dg-p2
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #cae8cd
 \end_branch
@@ -2167,7 +2167,7 @@ status open
 \begin_layout Plain Layout
 
 \series bold
-=== Capa Genérica de Trabalho com Acordo ===
+=== Capas Genéricas de Trabalho e Prova com Acordo ===
 \end_layout
 
 \end_inset
@@ -2193,7 +2193,7 @@ capaacordo}[6]{
 
 \begin_inset Branch capa
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -2873,13 +2873,712 @@ capaacordo
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+capaacordoprova}[6]{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch capa
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+\size largest
+\begin_inset Graphics
+	filename imagens/logo-imt.png
+	lyxscale 10
+	height 1.4cm
+
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "b"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "12cm"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+
+\shape smallcaps
+\size larger
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#5
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#6
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#1
+\end_layout
+
+\end_inset
+
+ de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape smallcaps
+\size largest
+Período Noturno
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset VSpace 3.5ex
+\end_inset
+
+Profº Marcelo Porto Trevizan
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\size default
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\color lightgray
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pontuacoes[-50]{10}{00}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+\color red
+GABARITO
+\size default
+\color inherit
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RA:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 3cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assinatura:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Orientações
+\end_layout
+
+\begin_layout Itemize
+Esta prova é 
+\series bold
+individual
+\series default
+;
+\end_layout
+
+\begin_layout Itemize
+
+\color blue
+esta prova será válida apenas se o cabeçalho acima e o 
+\series bold
+Acordo de Ética 
+\series default
+abaixo estiverem assinados;
+\end_layout
+
+\begin_layout Itemize
+a tentativa identificada de plágio ou fraude poderá acarretar em nota zero
+ na questão ou na prova inteira;
+\end_layout
+
+\begin_layout Itemize
+por favor, resolver de forma organizada e destacar as respostas;
+\end_layout
+
+\begin_layout Itemize
+contém 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+#4
+\end_layout
+
+\end_inset
+
+ questões;
+\end_layout
+
+\begin_layout Itemize
+não é obrigatória a resolução de todas as questões;
+\end_layout
+
+\begin_layout Itemize
+o prazo para entrega é até 30 minutos após o horário final apontado no cabeçalho
+ acima;
+\end_layout
+
+\begin_layout Itemize
+o arquivo de entrega deverá estar em formato PDF;
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+o enunciado deverá fazer parte do arquivo enviado
+\bar default
+; folhas avulsas poderão ser intercaladas entre uma questão e outra;
+\end_layout
+
+\begin_layout Itemize
+apresentar as resoluções de forma manuscrita;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+todas as resoluções devem ser acompanhadas de cálculos e justificativas,
+ conforme o que for pertinente, salvo sob outra orientação no enunciado
+ da própria questão;
+\end_layout
+
+\begin_layout Itemize
+a prova é com consulta;
+\end_layout
+
+\begin_layout Itemize
+pontuação máxima de 10,0 pontos.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align left
+
+\series bold
+\size large
+\begin_inset Newpage newpage
+\end_inset
+
+
+\series default
+\size default
+
+\begin_inset Box ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "83col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "2ex"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Quote
+\noindent
+\align center
+
+\series bold
+\size large
+Acordo de Ética
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align block
+
+\family typewriter
+\emph on
+A ética nasce no berço, caminha pela escola e acompanha toda a vida pessoal
+ e profissional de cada pessoa.
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align block
+Ciente da questão ética que nos permeia e de que 
+\bar under
+esta prova é individual
+\bar default
+, declaro que não cometerei qualquer tipo fraude ou plágio em sua resolução.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assinatura
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+\begin_inset VSpace bigskip
+\end_inset
+
+Nota sobre o Acordo de Ética para esta prova
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align block
+\begin_inset space \hspace{}
+\length 0.5em
+\end_inset
+
+Não é permitida 
+\series bold
+NENHUMA INTERAÇÃO ENTRE OS COLEGAS
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{2}[2]{
+\backslash
+textcolor{teal}{
+\backslash
+texttt{
+\backslash
+emph{
+\backslash
+Huge{}Boa Prova!!!}}}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+} %
+\backslash
+capaacordo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
 
 \series bold
-=== Capa com Acordo (dg) ===
+=== Capa de Trabalho com Acordo (dg) ===
 \end_layout
 
 \end_inset
@@ -2889,7 +3588,7 @@ status open
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -2911,7 +3610,54 @@ capaacordo{#1}{#2}{#3}{#4}{ETE102}{Fundamentos de Circuitos Digitais}
 
 } % 
 \backslash
-capadgacordo
+capadgtacordo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+=== Capa de Prova com Acordo (dg) ===
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+capadgpacordo}[4]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+capaacordoprova{#1}{#2}{#3}{#4}{ETE102}{Fundamentos de Circuitos Digitais}
+\end_layout
+
+\begin_layout Plain Layout
+
+} % 
+\backslash
+capadgpacordo
 \end_layout
 
 \end_inset
@@ -2936,7 +3682,7 @@ status open
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -34391,7 +35137,7 @@ status open
 \noindent
 \begin_inset Branch detalhes-enunciado
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -34562,7 +35308,7 @@ bigskip
 \noindent
 \begin_inset Branch gabarito
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \noindent
@@ -102329,7 +103075,7 @@ dg
 \begin_layout Standard
 \begin_inset Branch 2021-dg-p1
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Branch detalhes-enunciado
@@ -102609,7 +103355,7 @@ espv[45]
 
 \begin_inset Branch gabarito
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 
@@ -105857,7 +106603,7 @@ status open
 Resultado:
 \series default
  
-\begin_inset Formula $\boldsymbol{(0100\,1011\,0000\,1111)_{2}}$
+\begin_inset Formula $\boldsymbol{(0100\,1011\,0000\,1111)_{2}}=(4B0F)_{16}$
 \end_inset
 
 
@@ -106028,7 +106774,7 @@ status open
 Resultado:
 \series default
  
-\begin_inset Formula $\boldsymbol{(1110\,0010\,0000\,1111)_{2}}$
+\begin_inset Formula $\boldsymbol{(1110\,0010\,0000\,1111)_{2}}=(E20F)_{16}$
 \end_inset
 
 
@@ -106094,7 +106840,12 @@ name "que:ultima-questao-dg-p1-2021"
 \begin_layout Standard
 \begin_inset Branch 2021-dg-p2
 inverted 0
-status collapsed
+status open
+
+\begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -106104,13 +106855,16 @@ status open
 
 
 \backslash
-capa{Segunda Prova Bimestral}{2019}{14.06.2019}{6}
+capadgpacordo{Prova Semestral}{2021}{21.06.2021, 21h a 22h30}{
+\backslash
+ref{que:ultima-questao-dg-p2-2021}}
 \end_layout
 
 \end_inset
 
 
-\begin_inset Separator latexpar
+\end_layout
+
 \end_inset
 
 
@@ -106119,7 +106873,7 @@ capa{Segunda Prova Bimestral}{2019}{14.06.2019}{6}
 \begin_layout Standard
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -106127,7 +106881,7 @@ status collapsed
 \series bold
 \size large
 \color red
-GABARITO ETE102/N – P2/2018
+GABARITO ETE102/N – P/2021
 \size default
 \color inherit
 
@@ -106142,7 +106896,7 @@ GABARITO ETE102/N – P2/2018
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
 \begin_inset ERT
 status open
 
@@ -106155,7 +106909,8 @@ questao[2]{50}
 
 \end_inset
 
- Abaixo, tem-se um contador:
+ O contador assíncrono abaixo deveria realizar uma contagem de 3 a 11, mas
+ houve um erro de projeto.
 \end_layout
 
 \begin_layout Standard
@@ -106168,54 +106923,15 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/2019/dg/p2/contador-sincrono.png
-	scale 75
+	filename imagens/2021/dg/p2/contador-assincrono-decrescente.png
+	lyxscale 50
+	width 90text%
 
 \end_inset
 
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Pede-se:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,25}
-\end_layout
-
-\end_inset
-
- Qual o tipo do contador?
-\begin_inset VSpace 1cm
 \end_inset
 
 
@@ -106234,20 +106950,45 @@ valor{1,0}
 
 \end_inset
 
- Completar a Tabela de Transição de Estados.
-\begin_inset Float table
+ Qual a contagem realizada pelo circuito? Desenhar o correspondente 
+\emph on
+Diagrama de Estados
+\emph default
+, indicando o estado inicial após o POR.
+\begin_inset Branch gabarito
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Float figure
 placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Branch detalhes-enunciado
-inverted 0
-status open
-
-\begin_layout Standard
 \align center
+\begin_inset Graphics
+	filename imagens/2021/dg/p2/contador-assincrono-decrescente-diagrama-de-estados.png
+	lyxscale 50
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
 \begin_inset ERT
 status open
 
@@ -106255,15 +106996,87 @@ status open
 
 
 \backslash
-esptab{
+valor{1,5}
+\end_layout
+
+\end_inset
+
+ Corrija o circuito de forma a realizar a contagem desejada.
+ O POR deve estar presente.
+\begin_inset Branch gabarito
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/2021/dg/p2/contador-assincrono-crescente-3-a-11.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[2]{50}
+\end_layout
+
+\end_inset
+
+ Um aluno estava projetando um contador síncrono com 
+\emph on
+\lang english
+flip-flops
+\emph default
+\lang brazilian
+ JK, mas não utilizou a máxima simplificação possível.
+ Segue a 
+\emph on
+Tabela de Transição de Estados 
+\emph default
+que ele fez.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="9">
+<lyxtabular version="3" rows="10" columns="12">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
 <column alignment="center" valignment="middle" width="0.6cm">
 <column alignment="center" valignment="middle" width="0.6cm">
 <column alignment="center" valignment="middle" width="0.6cm">
@@ -106345,6 +107158,33 @@ Entradas
 
 \end_inset
 </cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -106441,7 +107281,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $D_{2}$
+\begin_inset Formula $J_{2}$
 \end_inset
 
 
@@ -106453,7 +107293,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $D_{1}$
+\begin_inset Formula $K_{2}$
 \end_inset
 
 
@@ -106465,7 +107305,43 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $D_{0}$
+\begin_inset Formula $J_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{0}$
 \end_inset
 
 
@@ -106506,7 +107382,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106515,7 +107391,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106524,7 +107400,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106534,6 +107410,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106543,6 +107421,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106552,6 +107432,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106589,7 +107504,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -106598,7 +107513,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -106607,7 +107522,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -106617,6 +107532,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -106626,6 +107543,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -106635,6 +107554,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -106672,7 +107626,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -106681,7 +107635,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -106690,7 +107644,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -106700,6 +107654,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -106709,6 +107665,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -106718,6 +107676,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -106755,7 +107748,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106764,7 +107757,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106773,7 +107766,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106783,6 +107776,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106792,6 +107787,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106801,6 +107798,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106838,7 +107870,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106847,7 +107879,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106856,7 +107888,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+X
 \end_layout
 
 \end_inset
@@ -106866,6 +107898,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106875,6 +107909,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106884,6 +107920,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+X
 \end_layout
 
 \end_inset
@@ -106921,7 +107992,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -106930,7 +108001,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -106939,7 +108010,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -106949,6 +108020,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -106958,6 +108031,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -106967,6 +108042,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -107004,7 +108114,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -107013,7 +108123,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -107022,7 +108132,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -107032,6 +108142,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -107041,6 +108153,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -107050,6 +108164,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -107087,7 +108236,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -107096,7 +108245,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -107105,7 +108254,7 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -107115,6 +108264,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -107124,6 +108275,8 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -107133,6 +108286,41 @@ Entradas
 
 \begin_layout Plain Layout
 
+\color blue
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -107143,25 +108331,1895 @@ Entradas
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
 \end_layout
 
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+Sabe-se que a tabela corresponde à contagem desejada e considere-se também
+ o esboço inicial do circuito logo abaixo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2021/dg/p2/esboco-de-contador-com-por.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Desenhar o correspondente 
+\emph on
+Diagrama de Estados
+\emph default
+, indicando o estado inicial após o POR.
+\begin_inset Branch gabarito
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2021/dg/p2/contador-sincrono-diagrama-de-estados.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ Refazer a 
+\emph on
+Tabela de Transição de Estados 
+\emph default
+para se obter a máxima simplificação.
+\begin_inset CommandInset label
+LatexCommand label
+name "enu:-Refazer-a-tabela"
 
 \end_inset
 
 
 \begin_inset Branch gabarito
 inverted 0
-status collapsed
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="12">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Est.
+ Pres.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Est.
+ Fut.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Entradas
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,75}
+\end_layout
+
+\end_inset
+
+ Utilizando o 
+\emph on
+Mapa de Karnaugh
+\emph default
+, comparar os circuitos lógicos resultantes para 
+\begin_inset Formula $J_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $K_{2}$
+\end_inset
+
+ entre a tabela original do aluno e a obtida no item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:-Refazer-a-tabela"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Branch gabarito
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2021/dg/p2/mapas-de-karnaugh.png
+	lyxscale 50
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2021/dg/p2/circuito-logico-de-contador-sincrono.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color red
+Portanto, a solução revisada é bastante mais vantajosa, por utilizar muito
+ menos componentes adicionais (nenhum a mais).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Se houver um problema no POR e cair-se no estado 3 ao energizar o circuito,
+ qual será o estado futuro de 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+? Justifique.
+ Obter o 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ futuro para a tabela original do aluno e para a do item 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "enu:-Refazer-a-tabela"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Branch gabarito
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+
+\color red
+Conforme expressões obtidas no item anterior:
+\color inherit
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<column alignment="center" valignment="middle" width="0.6cm">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Est.
+ Pres.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Entradas
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Est.
+ Fut.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J_{2}a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{2}a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J_{2}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{2}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{2}a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{2}r$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
 
 \begin_layout Standard
 \begin_inset Tabular
@@ -107475,8 +110533,6 @@ Entradas
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -107486,8 +110542,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -107497,8 +110551,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -107509,8 +110561,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107520,8 +110570,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107531,8 +110579,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107542,8 +110588,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107553,8 +110597,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107564,8 +110606,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107603,8 +110643,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 1
 \end_layout
 
@@ -107614,8 +110652,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 1
 \end_layout
 
@@ -107625,9 +110661,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-0
+1
 \end_layout
 
 \end_inset
@@ -107637,8 +110671,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-1
 \end_layout
 
 \end_inset
@@ -107648,8 +110680,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107659,8 +110689,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-1
 \end_layout
 
 \end_inset
@@ -107670,8 +110698,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107681,8 +110707,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107692,8 +110716,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -107731,9 +110753,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-X
+1
 \end_layout
 
 \end_inset
@@ -107742,9 +110762,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-X
+1
 \end_layout
 
 \end_inset
@@ -107753,9 +110771,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-X
+0
 \end_layout
 
 \end_inset
@@ -107765,8 +110781,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107776,8 +110790,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107787,8 +110799,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107798,8 +110808,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107809,8 +110817,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107820,8 +110826,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107859,8 +110863,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -107870,8 +110872,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -107881,8 +110881,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -107893,8 +110891,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107904,8 +110900,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107915,8 +110909,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107926,8 +110918,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107937,8 +110927,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107948,8 +110936,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -107987,41 +110973,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -108031,20 +110982,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-0
+X
 \end_layout
 
 \end_inset
@@ -108053,8 +110991,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 X
 \end_layout
 
@@ -108065,8 +111001,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -108076,8 +111010,42 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -108115,20 +111083,34 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
+0
+\end_layout
 
-\color red
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -108138,8 +111120,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -108149,8 +111129,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108160,8 +111138,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -108171,8 +111147,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -108182,30 +111156,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-X
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-1
 \end_layout
 
 \end_inset
@@ -108243,8 +111193,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 1
 \end_layout
 
@@ -108254,8 +111202,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 0
 \end_layout
 
@@ -108265,8 +111211,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 1
 \end_layout
 
@@ -108277,8 +111221,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108288,8 +111230,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -108299,8 +111239,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108310,8 +111248,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-1
 \end_layout
 
 \end_inset
@@ -108321,8 +111257,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-0
 \end_layout
 
 \end_inset
@@ -108332,8 +111266,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108371,9 +111303,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-X
+0
 \end_layout
 
 \end_inset
@@ -108382,9 +111312,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-X
+1
 \end_layout
 
 \end_inset
@@ -108393,9 +111321,7 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
-X
+0
 \end_layout
 
 \end_inset
@@ -108405,8 +111331,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108416,8 +111340,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108427,8 +111349,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108438,8 +111358,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108449,8 +111367,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108460,8 +111376,6 @@ X
 
 \begin_layout Plain Layout
 
-\color red
-X
 \end_layout
 
 \end_inset
@@ -108482,13 +111396,9 @@ X
 \end_inset
 
 
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Section
 \begin_inset ERT
 status open
 
@@ -108496,1155 +111406,20 @@ status open
 
 
 \backslash
-valor{0,5}
+qquestao[2]{50}
 \end_layout
 
 \end_inset
 
- Traçar o Diagrama de Estados.
-\begin_inset VSpace 6cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,75}
-\end_layout
-
-\end_inset
-
- Qual a razão entre a frequência do sinal 
-\begin_inset Formula $Q_{1}$
-\end_inset
-
- e a do 
+ Para a implementação de um determinado projeto, deduziu-se a seguinte 
 \emph on
-clock
+Tabela-Verdade
 \emph default
- (
-\begin_inset Formula $\nicefrac{f_{Q_{1}}}{f_{ck}}$
-\end_inset
-
-)? Justifique.
-\begin_inset VSpace 3cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch gabarito
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-
-\color red
-Síncrono.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset space \hspace{}
-\length 3cm
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/2017/diagrama-de-estados#1-gab.png
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset space \hspace{}
-\length 3cm
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-scalebox{1.25}{%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikztimingtable}[%
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/draw grid,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/rowdist=2,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/coldist=0.25,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/name/.style={font=
-\backslash
-normalfont
-\backslash
-sffamily
-\backslash
-scriptsize},
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/font=
-\backslash
-bfseries
-\backslash
-itshape,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/wscale=2
-\end_layout
-
-\begin_layout Plain Layout
-
-	]
-\end_layout
-
-\begin_layout Plain Layout
-
-	$ck$		       		   & 18{C} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_0$						 & 1.25L [!wscale=2*
-\backslash
-wscale!] 8{C} [!wscale=
-\backslash
-wscale/2!] 0.75H 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_1$						 & 3.5H [!wscale=4*
-\backslash
-wscale!] 3{C} [!wscale=
-\backslash
-wscale/4!] 2.5H 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_2$						 & 3.75H [!wscale=8*
-\backslash
-wscale!] 1{C} [!wscale=
-\backslash
-wscale/8!] 6.25H 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_3$						 & 4H 14L 
-\backslash
-
-\backslash
-	
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikztimingtable}
-\end_layout
-
-\begin_layout Plain Layout
-
-}%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/2017/diagrama-de-estados#2-gab.png
-	width 50text%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[2]{00}
-\end_layout
-
-\end_inset
-
- Dado o mapa de Karnaugh, pede-se:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- Obter a função S, simplificada ao máximo, pela 
-\emph on
-\bar under
-forma conjuntiva
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-
-\emph on
-Produtória das somas.
-\end_layout
-
-\end_inset
-
-
-\emph default
-\bar default
- (usar o mapa da esquerda).
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- Obter a função S, simplificada ao máximo, pela 
-\emph on
-\bar under
-forma disjuntiva
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-
-\emph on
-Somatória dos produtos.
-\end_layout
-
-\end_inset
-
-
-\emph default
-\bar default
- (usar o mapa da direita).
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Branch detalhes-enunciado
-inverted 0
-status open
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}[thick]
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-setkarnaughmap[function={
-\backslash
-hspace{6.5em}
-\backslash
-textbf{S}},variables=ABCD,defaultmap=16,omitzeros=false,omitvariables=true,omiti
-dx=true]
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-karnaughmap{XX00 1110 0110 1X10}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-karnaughmap[xshift=16em]{XX00 1110 0110 1X10}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Branch gabarito
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture}[thick]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-setkarnaughmap[function={
-\backslash
-hspace{6.5em}
-\backslash
-textbf{S}},variables=ABCD,defaultmap=16,omitzeros=false,omitvariables=true,omiti
-dx=true]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	%Posições de vértices de um quadrado, para referência.
-\end_layout
-
-\begin_layout Plain Layout
-
-	%
-\backslash
-draw (0,0) circle [x radius=1cm, y radius=1cm, rotate=0];
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-newlength{
-\backslash
-kmsep}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-newlength{
-\backslash
-kmdsl}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-setlength{
-\backslash
-kmsep}{0.1cm}
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-setlength{
-\backslash
-kmdsl}{0em}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(0cm + 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 0cm + 
-\backslash
-kmsep) rectangle
-\end_layout
-
-\begin_layout Plain Layout
-
-		(2cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 2cm - 
-\backslash
-kmsep);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(1cm + 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 0cm + 
-\backslash
-kmsep) rectangle
-\end_layout
-
-\begin_layout Plain Layout
-
-		(3cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 1cm - 
-\backslash
-kmsep);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(3cm + 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 1cm + 
-\backslash
-kmsep) rectangle
-\end_layout
-
-\begin_layout Plain Layout
-
-		(4cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 3cm - 
-\backslash
-kmsep);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(2cm + 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 2cm + 
-\backslash
-kmsep) rectangle
-\end_layout
-
-\begin_layout Plain Layout
-
-		(4cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 4cm - 
-\backslash
-kmsep);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,dashed,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(3cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 0cm - 2*
-\backslash
-kmsep) arc
-\end_layout
-
-\begin_layout Plain Layout
-
-		(0:180:0.4cm and 1.1cm);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,dashed,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(3cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 4cm + 2*
-\backslash
-kmsep) arc
-\end_layout
-
-\begin_layout Plain Layout
-
-		(0:-180:0.4cm and 1.1cm);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,dashed,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(0cm - 2*
-\backslash
-kmsep + 
-\backslash
-kmdsl, 1cm + 
-\backslash
-kmsep) arc
-\end_layout
-
-\begin_layout Plain Layout
-
-		(-90:90:1.1cm and 0.4cm);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,dashed,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(4cm + 2*
-\backslash
-kmsep + 
-\backslash
-kmdsl, 2cm - 
-\backslash
-kmsep) arc
-\end_layout
-
-\begin_layout Plain Layout
-
-		(90:270:1.1cm and 0.4cm);
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-karnaughmap{X100 1100 0X10 0X01}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	%Mapa à direita.
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-setlength{
-\backslash
-kmdsl}{16em}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(0cm + 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 2cm + 
-\backslash
-kmsep) rectangle
-\end_layout
-
-\begin_layout Plain Layout
-
-		(2cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 4cm - 
-\backslash
-kmsep);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(2cm + 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 1cm + 
-\backslash
-kmsep) rectangle
-\end_layout
-
-\begin_layout Plain Layout
-
-		(3cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 3cm - 
-\backslash
-kmsep);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-draw[thick,rounded corners=10pt,color=red]
-\end_layout
-
-\begin_layout Plain Layout
-
-		(3cm + 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 0cm + 
-\backslash
-kmsep) rectangle
-\end_layout
-
-\begin_layout Plain Layout
-
-		(4cm - 
-\backslash
-kmsep + 
-\backslash
-kmdsl, 1cm - 
-\backslash
-kmsep);
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-setlength{
-\backslash
-kmdsl}{16em}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-karnaughmap[xshift=
-\backslash
-kmdsl]{X100 1100 0X10 0X01}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikzpicture}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch detalhes-enunciado
-inverted 0
-status open
-
-\begin_layout Standard
-a)
-\begin_inset space \hfill{}
-\end_inset
-
- b)
-\begin_inset space \hfill{}
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch gabarito
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="50text%">
-<column alignment="left" valignment="top" width="50text%">
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-a) 
-\begin_inset Formula $\begin{cases}
-S= & (\bar{A}+B+\bar{D})\,(A+\bar{C})\,(\bar{A}+C)\,(\bar{A}+\bar{B}+D)\\
-ou\\
-S= & (\bar{A}+B+\bar{D})\,(A+\bar{C})\,(\bar{A}+C)\,(\bar{B}+\bar{C}+D)\\
-ou\\
-S= & (B+\bar{C}+\bar{D})\,(A+\bar{C})\,(\bar{A}+C)\,(\bar{A}+\bar{B}+D)\\
-ou\\
-S= & (B+\bar{C}+\bar{D})\,(A+\bar{C})\,(\bar{A}+C)\,(\bar{B}+\bar{C}+D)
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-b) 
-\begin_inset Formula $S=A\bar{B}C\bar{D}+ABD+\bar{A}\bar{C}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[1]{00}
-\end_layout
-
-\end_inset
-
- Um aluno encontrou uma placa no almoxarifado de eletrônica e passou a estudá-la.
- Notou que o circuito era uma 
-\begin_inset Quotes eld
-\end_inset
-
-pequena borra preta
-\begin_inset Quotes erd
-\end_inset
-
-, ou seja, não havia qualquer CI que pudesse ser identificado.
- Havia três botões, nomeados como 
-\series bold
-A
-\series default
-, 
-\series bold
-B
-\series default
- e 
-\series bold
-C
-\series default
-, e um LED, identificado por 
-\series bold
-S
-\series default
 .
- Alimentou o circuito e percebeu que os botões forneciam nível lógico alto
- quando pressionados.
- Em seguida, realizou diversas combinações de pressionamento desses botões.
- Assim, observou que, ao pressionar o botão 
-\series bold
-A
-\series default
-, o LED sempre acendia.
- Por outro lado, caso este não fosse pressionado, a única maneira de acender
- o LED era por meio do pressionamento dos botões 
-\series bold
-B
-\series default
- e 
-\series bold
-C
-\series default
-, simultaneamente.
- Curioso por identificar a função lógica implementada no circuito, montou
- uma Tabela-Verdade e, por meio de 
-\emph on
-\bar under
-mintermos
-\emph default
-\bar default
- e 
-\emph on
-\bar under
-simplificação por álgebra booleana
-\emph default
-\bar default
-, passou a deduzir a função lógica.
 \end_layout
 
 \begin_layout Standard
-Seguindo o mesmo caminho do aluno, pede-se deduzir a função lógica do citado
- circuito.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Branch detalhes-enunciado
-inverted 0
-status open
-
-\begin_layout Standard
-\align left
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-esptab{
-\end_layout
-
-\end_inset
-
-
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
 <features tabularvalignment="middle">
@@ -109723,6 +111498,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -109761,6 +111538,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -109799,6 +111578,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -109837,6 +111618,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -109875,6 +111658,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -109913,6 +111698,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -109951,6 +111738,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+0
 \end_layout
 
 \end_inset
@@ -109989,6 +111778,8 @@ S
 
 \begin_layout Plain Layout
 
+\color blue
+1
 \end_layout
 
 \end_inset
@@ -109999,471 +111790,48 @@ S
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+Pede-se encontrar a expressão lógica com máxima simplificação para 
+\begin_inset Formula $S$
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[2]{00}
-\end_layout
-
-\end_inset
-
- Considerando-se o circuito abaixo, pede-se completar as Cartas de Tempo.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename imagens/2019/dg/p2/flip-flop-rs.png
-	width 80text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Desprezando o atraso de propagação.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-scalebox{1.5}[2.5]{%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikztimingtable}[%
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/draw grid,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/rowdist=1.5,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/coldist=0.25,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/name/.style={font=
-\backslash
-normalfont
-\backslash
-sffamily
-\backslash
-scriptsize},
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/font=
-\backslash
-bfseries
-\backslash
-itshape,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/wscale=1
-\end_layout
-
-\begin_layout Plain Layout
-
-	]
-\end_layout
-
-\begin_layout Plain Layout
-
-	%Régua			  & 5D{} 5D{} 5D{} 5D{} 5D{} 5D{} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$POR$			   & H 21L 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$ck$   		     & 2C2C2C2C2C2C2C2C2C2C2C 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_{0}$               & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_{1}$			   & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$S$               & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$
-\backslash
-bar{S}$			   & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikztimingtable}
-\end_layout
-
-\begin_layout Plain Layout
-
-}%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Sem desprezar o atraso de propagação dos 
-\bar under
-Flip-Flops JK
-\bar default
-.
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-scalebox{1.5}[2.5]{%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikztimingtable}[%
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/draw grid,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/rowdist=1.5,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/coldist=0.25,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/name/.style={font=
-\backslash
-normalfont
-\backslash
-sffamily
-\backslash
-scriptsize},
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/font=
-\backslash
-bfseries
-\backslash
-itshape,
-\end_layout
-
-\begin_layout Plain Layout
-
-		timing/wscale=1
-\end_layout
-
-\begin_layout Plain Layout
-
-	]
-\end_layout
-
-\begin_layout Plain Layout
-
-	%Régua			  & 5D{} 5D{} 5D{} 5D{} 5D{} 5D{} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$POR$			   & H 21L 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$ck$   		     & 2C2C2C2C2C2C2C2C2C2C2C 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_{0}$               & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$Q_{1}$			   & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$S$               & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$
-\backslash
-bar{S}$			   & [red] 22S 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tikztimingtable}
-\end_layout
-
-\begin_layout Plain Layout
-
-}%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[1]{00}
-\end_layout
-
-\end_inset
-
- Deseja-se desenvolver um projeto de um contador de 0 a 9, que terá seu
- valor decodificado e exibido em um 
-\emph on
-display
-\emph default
- de 7 segmentos.
- Em adição, haverá um único botão que, ao ser pressionado, paralisa o conteúdo
- mostrado no 
-\emph on
-display
-\emph default
-, mas sem parar a contagem.
- Quando este botão for pressionado novamente, o atual valor da contagem
- volta a ser exibido no 
-\emph on
-display
-\emph default
-.
- Para tal projeto, pede-se desenhar o correspondente 
+ utilizando-se, obrigatoriamente, 
 \series bold
-Diagrama em Blocos
+mintermos
+\series default
+ e 
+\series bold
+Álgebra Booleana
 \series default
 .
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 8cm
+\begin_inset Branch gabarito
+inverted 0
+status open
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{align*}
+\boldsymbol{S} & \boldsymbol{=}\bar{A}BC+A\bar{B}C+ABC=BC\,(\bar{A}+A)+A\bar{B}C=\\
+ & =BC+A\bar{B}C=C\,(B+A\bar{B})=C\,(B+A)\boldsymbol{=AC+BC}
+\end{align*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 \begin_inset ERT
 status open
 
@@ -110471,21 +111839,458 @@ status open
 
 
 \backslash
-questao[2]{00}
+qquestao[2]{50}
 \end_layout
 
 \end_inset
 
- Projetar um contador assíncrono crescente de 
-\begin_inset Formula $0_{(16)}$
+ O registrador de deslocamento da figura abaixo possui 
+\series bold
+6 bits
+\series default
+, numa configuração baseada na da figura ao seu lado (esboçada com 2 bits).
+ Em cada bit da saída paralela, há um LED conectado, o qual, quando aceso,
+ exibe a letra associada.
+ Pede-se completar a carta de tempos com os sinais de controle e as saídas,
+ de forma que a palavra exibida pela sequência de LEDs acesos seja PAVÃO
+ (
+\family typewriter
+PAVAO
+\family default
+).
+ O LED acende com nível lógico alto.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Frameless
+position "b"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1.5in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/registrador-deslocamento-leds-letras-6bits.png
+	width 100col%
+
 \end_inset
 
- a 
-\begin_inset Formula $B_{(16)}$
+
+\end_layout
+
 \end_inset
 
-, cíclico.
- O valor inicial deverá ser definido por meio do POR.
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename imagens/registrador-deslocamento-2bits.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=2,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0.25,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	$
+\backslash
+overline{MR}$			   & HH LH; [dotted]21S; Hh LH h H 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$LD$               		   & LL; [dotted]28S 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$ck$		       		   & LL; [dotted]28S 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$P_5
+\backslash
+!
+\backslash
+!
+\backslash
+sim
+\backslash
+!
+\backslash
+! P_0$ 
+\backslash
+tiny{(HEX)}	& 3D{01} 3D{3E} 3D{01} 3D{08} 3D{20} 3D{01} 3D{3E} 3D{08} 3D{0E}
+ 3D{20} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$Q_5
+\backslash
+!
+\backslash
+!
+\backslash
+sim
+\backslash
+!
+\backslash
+! Q_0$ 
+\backslash
+tiny{(HEX)}	& 2U 0.1D{}; [dotted]27.9S 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Branch gabarito
+inverted 0
+status open
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=2,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0.25,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	$
+\backslash
+overline{MR}$			   & HH LH; [red] 7H L 8H L 4H; [black] Hh LH h H 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$LD$             		   & LL; [red] 4Ll h 5LL h 8.5L h 7.5L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$ck$		       		   & 2L; [red] 6L hL hL 19L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$P_5
+\backslash
+!
+\backslash
+!
+\backslash
+sim
+\backslash
+!
+\backslash
+! P_0$ 
+\backslash
+tiny{(HEX)}	& 3D{01} 3D{3E} 3D{01} 3D{08} 3D{20} 3D{01} 3D{3E} 3D{08} 3D{0E}
+ 3D{20} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$Q_5
+\backslash
+!
+\backslash
+!
+\backslash
+sim
+\backslash
+!
+\backslash
+! Q_0$ 
+\backslash
+tiny{(HEX)}	& 2U; [red] 4.5D{00} 1.5D{01} 1.5D{20} 1.5D{10} 2D{00} 7D{20} 2D{00}
+ 4.5D{08} 3.5D{00} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size small
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Rótulo para indicar a última questão.
+ Deixá-lo nesta última linha e não removê-lo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+(Certamente, não deverá haver o incremento de nenhum outro contador entre
+ o cabeçalho da última e este rótulo – como, por exemplo, o de seção ou
+ item.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "que:ultima-questao-dg-p2-2021"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
