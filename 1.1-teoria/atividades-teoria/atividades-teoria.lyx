@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -27,6 +27,8 @@ customHeadersFooters
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -65,6 +67,7 @@ customHeadersFooters
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \branch cm-textos-extras
 \selected 0
 \filename_suffix 0
@@ -89,7 +92,10 @@ customHeadersFooters
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -118,6 +124,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
+inverted 0
 status collapsed
 
 \begin_layout Title
@@ -139,6 +146,7 @@ Atividades para Fixação de
 
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
+inverted 0
 status collapsed
 
 \begin_layout Part
@@ -1678,6 +1686,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
+inverted 0
 status collapsed
 
 \begin_layout Part
@@ -1729,5 +1738,91 @@ thepage
 
 \end_layout
 
+\begin_layout Chapter
+Dimensionamento de Resistores
+\end_layout
+
+\begin_layout Enumerate
+Para os circuitos abaixo, indique se ocorrerá o funcionamento adequado ou
+ se haverá queima de algum componente, indicando, neste qual componente
+ será queimado.
+ Apresentar os cálculos.
+ Considerar o LED do 
+\emph on
+\lang english
+datasheet
+\emph default
+\lang brazilian
+ 
+\emph on
+\lang english
+
+\begin_inset Quotes eld
+\end_inset
+
+Universal LED in Ø 5 mm Tinted Diffused Package
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+\lang brazilian
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+{resistor subdimensionado}
+\end_layout
+
+\begin_layout Enumerate
+{funcionamento adequado}
+\end_layout
+
+\begin_layout Enumerate
+{LED com sobrepotência}
+\end_layout
+
+\begin_layout Enumerate
+{funcionamento adequado com associação paralela de resistores}
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Com base no LED do 
+\emph on
+datasheet
+\emph default
+ 
+\emph on
+\lang english
+
+\begin_inset Quotes eld
+\end_inset
+
+Ultrabright White LED, Ø 5 mm Untinted Non-Diffused Package
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+\lang brazilian
+, dimensionar o resistor:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Considerando qualquer resistor à disposição no mercado.
+\end_layout
+
+\begin_layout Enumerate
+Considerando que se tenha à disposição apenas resistores de 
+\begin_inset Formula $\si{1/8}{\watt}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
