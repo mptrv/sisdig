@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS00 U?
+U 1 1 60458FB9
+P 4500 2050
+F 0 "U?" H 4500 2375 50  0000 C CNN
+F 1 "74LS00" H 4500 2284 50  0000 C CNN
+F 2 "" H 4500 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4500 2050 50  0001 C CNN
+	1    4500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6045A7C3
+P 4900 2250
+F 0 "R?" H 4968 2296 50  0000 L CNN
+F 1 "R_US" H 4968 2205 50  0000 L CNN
+F 2 "" V 4940 2240 50  0001 C CNN
+F 3 "~" H 4900 2250 50  0001 C CNN
+	1    4900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2050 4900 2050
+Wire Wire Line
+	4900 2050 4900 2100
+$Comp
+L Device:LED_ALT D?
+U 1 1 6045B2D3
+P 4900 2600
+F 0 "D?" V 4939 2482 50  0000 R CNN
+F 1 "LED_ALT" V 4848 2482 50  0000 R CNN
+F 2 "" H 4900 2600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 2450 4900 2400
+$Comp
+L power:Earth #PWR?
+U 1 1 6045BCE6
+P 4900 2800
+F 0 "#PWR?" H 4900 2550 50  0001 C CNN
+F 1 "Earth" H 4900 2650 50  0001 C CNN
+F 2 "" H 4900 2800 50  0001 C CNN
+F 3 "~" H 4900 2800 50  0001 C CNN
+	1    4900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2800 4900 2750
+$Comp
+L Switch:SW_SPDT A
+U 1 1 6045C8DF
+P 3850 1750
+F 0 "A" H 3850 1943 50  0000 C CNN
+F 1 "SW_SPDT" H 3850 1944 50  0001 C CNN
+F 2 "" H 3850 1750 50  0001 C CNN
+F 3 "~" H 3850 1750 50  0001 C CNN
+	1    3850 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT B
+U 1 1 6045D69C
+P 3850 2350
+F 0 "B" H 3850 2543 50  0000 C CNN
+F 1 "SW_SPDT" H 3850 2544 50  0001 C CNN
+F 2 "" H 3850 2350 50  0001 C CNN
+F 3 "~" H 3850 2350 50  0001 C CNN
+	1    3850 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1750 4100 1750
+Wire Wire Line
+	4100 1750 4100 1950
+Wire Wire Line
+	4100 1950 4200 1950
+Wire Wire Line
+	4050 2350 4100 2350
+Wire Wire Line
+	4100 2350 4100 2150
+Wire Wire Line
+	4100 2150 4200 2150
+$Comp
+L power:+5V #PWR?
+U 1 1 60460A47
+P 3450 1550
+F 0 "#PWR?" H 3450 1400 50  0001 C CNN
+F 1 "+5V" H 3465 1723 50  0000 C CNN
+F 2 "" H 3450 1550 50  0001 C CNN
+F 3 "" H 3450 1550 50  0001 C CNN
+	1    3450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1550 3450 1650
+Wire Wire Line
+	3450 2250 3650 2250
+Wire Wire Line
+	3650 1650 3450 1650
+Connection ~ 3450 1650
+Wire Wire Line
+	3450 1650 3450 2250
+$Comp
+L power:Earth #PWR?
+U 1 1 604612EC
+P 3600 2800
+F 0 "#PWR?" H 3600 2550 50  0001 C CNN
+F 1 "Earth" H 3600 2650 50  0001 C CNN
+F 2 "" H 3600 2800 50  0001 C CNN
+F 3 "~" H 3600 2800 50  0001 C CNN
+	1    3600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2800 3600 2450
+Wire Wire Line
+	3600 1850 3650 1850
+Wire Wire Line
+	3650 2450 3600 2450
+Connection ~ 3600 2450
+Wire Wire Line
+	3600 2450 3600 1850
+$EndSCHEMATC

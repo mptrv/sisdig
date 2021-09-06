@@ -6,7 +6,20 @@
 \origin unavailable
 \textclass book
 \begin_preamble
+% Configurações padrão para a teoria.
 \usepackage{../teoria}
+
+% Blocos de comentário.
+% (Deve redefinir o bloco de comentário de 'verbatim'.)
+\usepackage{comment}
+
+% Blocos de comentário a utilizar em conjunto com os ramos
+% 'desativar-dg' e 'desativar-an', respectivamente, para
+% controlar qual trecho de conteúdo que será exibido.
+% (Alternativamente, também poderia ser utilizado o
+% comando \includecomment, para exibir o conteúdo.)
+\excludecomment{desativardigitais}
+\excludecomment{desativaranalogicos}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -83,6 +96,16 @@ customHeadersFooters
 \filename_suffix 0
 \color #faf0e6
 \end_branch
+\branch desativar-an
+\selected 0
+\filename_suffix 0
+\color #b1dbe8
+\end_branch
+\branch desativar-dg
+\selected 1
+\filename_suffix 0
+\color #d7e897
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -113,8 +136,36 @@ customHeadersFooters
 status open
 
 \begin_layout Plain Layout
-\align left
-===== DIGITAIS ===================================
+
+\series bold
+\emph on
+\color blue
+=== Macros ========================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\six}[2]{\SI{#1}{#2}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+\color blue
+=== Fim das Macros ========================
 \end_layout
 
 \end_inset
@@ -125,7 +176,7 @@ status open
 \begin_layout Standard
 \begin_inset Branch cm-textos-extras
 inverted 0
-status collapsed
+status open
 
 \begin_layout Title
 Atividades para Fixação de
@@ -137,6 +188,83 @@ Atividades para Fixação de
 
 \begin_layout Date
 2016
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tituloativ{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\begin_layout Plain Layout
+Manter o ramo abaixo sempre antes do início da parte digital.
+\end_layout
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch desativar-dg
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{desativardigitais}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\align left
+===== DIGITAIS ===================================
 \end_layout
 
 \end_inset
@@ -191,22 +319,6 @@ status open
 
 \backslash
 thepage
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-tituloativ{}
 \end_layout
 
 \end_inset
@@ -1664,7 +1776,101 @@ X
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\begin_layout Plain Layout
+Manter o ramo abaixo sempre no final da parte digital.
+\end_layout
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch desativar-dg
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{desativardigitais}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\begin_layout Plain Layout
+Manter o ramo abaixo sempre antes do início da parte analógica.
+\end_layout
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch desativar-an
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{desativaranalogicos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -1744,10 +1950,14 @@ Dimensionamento de Resistores
 
 \begin_layout Enumerate
 Para os circuitos abaixo, indique se ocorrerá o funcionamento adequado ou
- se haverá queima de algum componente, indicando, neste qual componente
- será queimado.
- Apresentar os cálculos.
- Considerar o LED do 
+ não (queima de algum componente e qual irá queimar, ou LED com brilho muito
+ fraco).
+ Apresentar os cálculos e os dados considerados.
+ Utilizar o LED de código 
+\series bold
+TLUR5400
+\series default
+ do 
 \emph on
 \lang english
 datasheet
@@ -1760,36 +1970,59 @@ datasheet
 \begin_inset Quotes eld
 \end_inset
 
-Universal LED in Ø 5 mm Tinted Diffused Package
+Universal LED in Ø 5
+\begin_inset space ~
+\end_inset
+
+mm Tinted Diffused Package
 \begin_inset Quotes erd
 \end_inset
 
 
 \emph default
 \lang brazilian
-.
+ (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.vishay.com/doc?83055
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-{resistor subdimensionado}
+\end_inset
+
+).
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imagens/dimensionamento-de-resistores-e-led.png
+	lyxscale 40
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
-{funcionamento adequado}
-\end_layout
-
-\begin_layout Enumerate
-{LED com sobrepotência}
-\end_layout
-
-\begin_layout Enumerate
-{funcionamento adequado com associação paralela de resistores}
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Com base no LED do 
+Com base no LED de código 
+\series bold
+VLHW5100
+\series default
+ do 
 \emph on
 datasheet
 \emph default
@@ -1807,22 +2040,145 @@ Ultrabright White LED, Ø 5 mm Untinted Non-Diffused Package
 
 \emph default
 \lang brazilian
-, dimensionar o resistor:
+ (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.vishay.com/doc?81159
+\end_layout
+
+\end_inset
+
+), dimensionar o resistor para acender o LED, dada uma tensão de alimentação
+ de 
+\begin_inset Formula $\six{12}{\V}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Dimensione o resistor para limitar a corrente de um LED conforme as seguintes
+ condições:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Considerando qualquer resistor à disposição no mercado.
+você trabalha numa empresa e há grande urgência de elaborar um circuito
+ que acenda um LED quando energizado;
 \end_layout
 
 \begin_layout Enumerate
-Considerando que se tenha à disposição apenas resistores de 
-\begin_inset Formula $\si{1/8}{\watt}$
+não há tempo de encomendar componentes em lojas virtuais e nem de ir à loja
+ física mais próxima;
+\end_layout
+
+\begin_layout Enumerate
+no almoxarifado de eletrônica da empresa, há apenas resistores de 
+\begin_inset Formula $\six{1/8}{\watt}$
+\end_inset
+
+, em várias quantidades, de todos os valores comerciais da faixa E12;
+\end_layout
+
+\begin_layout Enumerate
+no almoxarifado, tem-se disponível o LED de código 
+\series bold
+TLHY4601
+\series default
+ (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.vishay.com/doc?83007
+\end_layout
+
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Enumerate
+o circuito será alimentado por uma bateria de 
+\begin_inset Formula $\six 9{\V}$
 \end_inset
 
 .
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Com o objetivo de economizar energia da bateria, o LED do item anterior
+ foi trocado pelo LED de código 
+\series bold
+TLLY4401
+\series default
+ (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.vishay.com/doc?83029
+\end_layout
+
+\end_inset
+
+).
+ Pede-se para refazer o dimensionamento do resistor, mas agora considerando
+ qualquer resistor comercial da faixa E12, de qualquer potência.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\begin_layout Plain Layout
+Manter o ramo abaixo sempre no final da parte analógica.
+\end_layout
+
+\begin_layout Plain Layout
+=============================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch desativar-an
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{desativaranalogicos}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

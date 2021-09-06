@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Mon Aug 02 18:01:46 BRT 2021 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="80.4mm"
+   height="80.4mm"
+   viewBox="196 16 536 536">
+<g stroke-linecap="square">
+<circle cx="300.0" cy="120.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<circle cx="208.07611" cy="28.076118" r="10.0" stroke="#000000" stroke-width="4.0" fill="#000000" />
+<path d="M 217.9756,37.975613 Q 232.82486,52.82486 247.6741,67.6741" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 229.28932,57.77461 L 249.08832,69.08832 L 237.77461,49.289326" stroke="#808080" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="300.0" y="105.0" fill="#000000" style="font-size:24px">5</text>
+<circle cx="660.0" cy="120.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="660.0" y="105.0" fill="#000000" style="font-size:24px">1</text>
+<circle cx="660.0" cy="480.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="660.0" y="465.0" fill="#000000" style="font-size:24px">6</text>
+<circle cx="300.0" cy="480.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="300.0" y="465.0" fill="#000000" style="font-size:24px">3</text>
+<path d="M 373.99698,119.331856 Q 480.99997,118.81972 584.0031,119.313805" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 563.97455,125.217804 L 586.0031,119.323395 L 564.03217,113.21794" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 659.3842,193.99744 Q 658.9122,300.99997 659.36755,404.00262" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 653.2792,384.02933 L 659.3764,406.0026 L 665.27905,383.9763" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 586.0012,480.42786 Q 479.00003,480.7558 375.99872,480.43942" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 396.01706,474.5009 L 373.99872,480.4333 L 395.9802,486.50082" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 300.60165,406.00244 Q 301.06274,299.00003 300.6179,195.99748" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 306.7042,215.97139 L 300.60925,193.9975 L 294.7043,216.02321" stroke="#808080" stroke-width="2.0" fill="none"/>
+</g>
+</svg>

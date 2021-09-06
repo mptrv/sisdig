@@ -1,0 +1,218 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell Vcc
+U 1 1 603BEA17
+P 5550 2750
+F 0 "Vcc" H 5300 2850 50  0000 L CNN
+F 1 "9V" H 5325 2750 50  0000 L CNN
+F 2 "" V 5550 2810 50  0001 C CNN
+F 3 "~" V 5550 2810 50  0001 C CNN
+	1    5550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 603BF3AD
+P 5950 2450
+F 0 "R1" V 5850 2450 50  0000 C CNN
+F 1 "470 Ω" V 6050 2450 50  0000 C CNN
+F 2 "" V 5990 2440 50  0001 C CNN
+F 3 "~" H 5950 2450 50  0001 C CNN
+	1    5950 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 603BFF34
+P 6350 2700
+F 0 "D1" V 6350 2625 50  0000 R CNN
+F 1 "LED_ALT" V 6298 2582 50  0001 R CNN
+F 2 "" H 6350 2700 50  0001 C CNN
+F 3 "~" H 6350 2700 50  0001 C CNN
+	1    6350 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 2550 5550 2450
+Wire Wire Line
+	5550 2450 5800 2450
+Wire Wire Line
+	6100 2450 6350 2450
+Wire Wire Line
+	6350 2450 6350 2550
+Wire Wire Line
+	5550 2850 5550 2950
+Wire Wire Line
+	5550 2950 6350 2950
+Wire Wire Line
+	6350 2950 6350 2850
+$Comp
+L Device:Battery_Cell Vcc
+U 1 1 603C61E5
+P 5400 3775
+F 0 "Vcc" H 5150 3875 50  0000 L CNN
+F 1 "9V" H 5175 3775 50  0000 L CNN
+F 2 "" V 5400 3835 50  0001 C CNN
+F 3 "~" V 5400 3835 50  0001 C CNN
+	1    5400 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 603C61EB
+P 5800 3475
+F 0 "R1" V 5700 3475 50  0000 C CNN
+F 1 "470 Ω" V 5900 3475 50  0000 C CNN
+F 2 "" V 5840 3465 50  0001 C CNN
+F 3 "~" H 5800 3475 50  0001 C CNN
+	1    5800 3475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 603C61F1
+P 6200 3725
+F 0 "D1" V 6200 3650 50  0000 R CNN
+F 1 "LED_ALT" V 6148 3607 50  0001 R CNN
+F 2 "" H 6200 3725 50  0001 C CNN
+F 3 "~" H 6200 3725 50  0001 C CNN
+	1    6200 3725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 3575 5400 3475
+Wire Wire Line
+	5400 3475 5650 3475
+Wire Wire Line
+	5950 3475 6200 3475
+Wire Wire Line
+	6200 3475 6200 3575
+Wire Wire Line
+	5400 3875 5400 3975
+Wire Wire Line
+	5400 3975 6200 3975
+Wire Wire Line
+	6200 3975 6200 3875
+$Comp
+L Device:LED_ALT D2
+U 1 1 603C63BD
+P 6500 3725
+F 0 "D2" V 6500 3650 50  0000 R CNN
+F 1 "LED_ALT" V 6448 3607 50  0001 R CNN
+F 2 "" H 6500 3725 50  0001 C CNN
+F 3 "~" H 6500 3725 50  0001 C CNN
+	1    6500 3725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3475 6500 3475
+Wire Wire Line
+	6500 3475 6500 3575
+Connection ~ 6200 3475
+Wire Wire Line
+	6500 3875 6500 3975
+Wire Wire Line
+	6500 3975 6200 3975
+Connection ~ 6200 3975
+$Comp
+L Device:Battery_Cell Vcc
+U 1 1 603C9BCD
+P 5400 4900
+F 0 "Vcc" H 5150 5000 50  0000 L CNN
+F 1 "9V" H 5175 4900 50  0000 L CNN
+F 2 "" V 5400 4960 50  0001 C CNN
+F 3 "~" V 5400 4960 50  0001 C CNN
+	1    5400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 603C9BD3
+P 6200 4700
+F 0 "R1" H 6268 4654 50  0000 L CNN
+F 1 "470 Ω" H 6268 4745 50  0000 L CNN
+F 2 "" V 6240 4690 50  0001 C CNN
+F 3 "~" H 6200 4700 50  0001 C CNN
+	1    6200 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 603C9BD9
+P 6200 5050
+F 0 "D1" V 6200 4975 50  0000 R CNN
+F 1 "LED_ALT" V 6148 4932 50  0001 R CNN
+F 2 "" H 6200 5050 50  0001 C CNN
+F 3 "~" H 6200 5050 50  0001 C CNN
+	1    6200 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 4700 5400 4450
+Wire Wire Line
+	6200 4450 6200 4550
+Wire Wire Line
+	5400 5000 5400 5300
+Wire Wire Line
+	5400 5300 6200 5300
+Wire Wire Line
+	6200 5300 6200 5200
+$Comp
+L Device:LED_ALT D2
+U 1 1 603C9BE6
+P 6500 5050
+F 0 "D2" V 6500 4975 50  0000 R CNN
+F 1 "LED_ALT" V 6448 4932 50  0001 R CNN
+F 2 "" H 6500 5050 50  0001 C CNN
+F 3 "~" H 6500 5050 50  0001 C CNN
+	1    6500 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 4450 6500 4450
+Wire Wire Line
+	6500 4450 6500 4550
+Connection ~ 6200 4450
+Wire Wire Line
+	6500 5200 6500 5300
+Wire Wire Line
+	6500 5300 6200 5300
+Connection ~ 6200 5300
+Wire Wire Line
+	6200 4850 6200 4900
+$Comp
+L Device:R_US R2
+U 1 1 603CEE6D
+P 6500 4700
+F 0 "R2" H 6432 4654 50  0000 R CNN
+F 1 "470 Ω" H 6432 4745 50  0000 R CNN
+F 2 "" V 6540 4690 50  0001 C CNN
+F 3 "~" H 6500 4700 50  0001 C CNN
+	1    6500 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 4850 6500 4900
+Wire Wire Line
+	5400 4450 6200 4450
+Text Notes 4900 2500 0    60   ~ 0
+1)
+Text Notes 4900 3500 0    60   ~ 0
+2)
+Text Notes 4900 4450 0    60   ~ 0
+3)
+$EndSCHEMATC

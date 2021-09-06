@@ -100,7 +100,8 @@
 \renewcommand{\thetable}{\arabic{table}}
 
 % Personalização para unidades SI (por siunitx}.
-\sisetup{copy-decimal-marker,input-decimal-markers={,.kM}}
+\sisetup{copy-decimal-marker,input-decimal-markers={,.kM},quotient-mode=fraction,fraction-function=\nicefrac}
+
 
 % Correção do altura do cabeçalho.
 %   Necessário pois alguns pacotes, como 'pdfpages' ou o que oferece os comandos "oval",
