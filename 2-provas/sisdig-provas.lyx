@@ -71,7 +71,7 @@
 \color #cfe2fa
 \end_branch
 \branch gabarito
-\selected 1
+\selected 0
 \filename_suffix 1
 \color #faf0e6
 \end_branch
@@ -81,7 +81,7 @@
 \color #fa9494
 \end_branch
 \branch detalhes-enunciado
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -271,7 +271,7 @@
 \color #d6e3e8
 \end_branch
 \branch 2021-an-p1
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #cae8cd
 \end_branch
@@ -296,7 +296,7 @@
 \color #cae8cd
 \end_branch
 \branch 2021-dg-ps
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #cae8cd
 \end_branch
@@ -312,8 +312,8 @@
 \headsep 0cm
 \secnumdepth 4
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style english
@@ -2080,7 +2080,7 @@ pontuação máxima de 10,0 pontos.
 \family typewriter
 \size giant
 \emph on
-Boa Prova!!!
+Bom Trabalho!!!
 \end_layout
 
 \begin_layout Standard
@@ -2193,7 +2193,7 @@ capaacordo}[6]{
 
 \begin_inset Branch capa
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 \align center
@@ -2588,7 +2588,17 @@ status open
 
 \end_inset
 
- questões;
+ questão
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+questões
+\end_layout
+
+\end_inset
+
+;
 \end_layout
 
 \begin_layout Itemize
@@ -2625,7 +2635,8 @@ todas as resoluções devem ser acompanhadas de cálculos e justificativas,
 \end_layout
 
 \begin_layout Itemize
-pontuação máxima de 10,0 pontos.
+pontuação máxima de 10,0 pontos, com direito a duas entregas, conforme explanado
+ em aula.
 \end_layout
 
 \begin_layout Standard
@@ -2821,7 +2832,7 @@ texttt{
 \backslash
 emph{
 \backslash
-Huge{}Boa Prova!!!}}}
+Huge{}Bom Trabalho!!!}}}
 \end_layout
 
 \end_inset
@@ -2890,7 +2901,7 @@ capaacordoprova}[6]{
 
 \begin_inset Branch capa
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \align center
@@ -14881,7 +14892,7 @@ valor{0,5}
 \begin_layout Standard
 \begin_inset Branch 2015-dg-pse
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset ERT
@@ -112301,7 +112312,7 @@ name "que:ultima-questao-dg-p2-2021"
 \begin_layout Standard
 \begin_inset Branch 2021-dg-ps
 inverted 0
-status open
+status collapsed
 
 \begin_layout Standard
 \begin_inset Branch detalhes-enunciado
@@ -116388,7 +116399,12 @@ an
 \begin_layout Standard
 \begin_inset Branch 2021-an-p1
 inverted 0
-status collapsed
+status open
+
+\begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status open
 
 \begin_layout Standard
 \begin_inset ERT
@@ -116398,10 +116414,12 @@ status open
 
 
 \backslash
-capaant{Primeira Prova Bimestral -- Trabalho Substituto}{2020}{25.09.2020
- a 30.09.2020}{
-\backslash
-ref{que:ultima-questao-an-p1-2020}}
+capaantacordo{Trabalho Bimestral (Parte 2)}{2021}{até 03.10.2021}{1}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -116410,229 +116428,98 @@ ref{que:ultima-questao-an-p1-2020}}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
+\begin_inset Branch gabarito
+inverted 0
 status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[3]{50}
-\end_layout
-
-\end_inset
-
- No circuito abaixo, o amperímetro indicou a corrente de 
-\begin_inset Formula $\mathbf{I_{amp}}\,\si{\A}$
-\end_inset
-
-.
- Registrar as etapas de cálculo.
-\end_layout
 
 \begin_layout Standard
 \align center
-\begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-1.png
-	lyxscale 50
-	width 80text%
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Pede-se:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- O valor de 
-\begin_inset Formula $V_{1}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- O balanço de potência.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,5}
-\end_layout
-
-\end_inset
-
- Classificar os bipolos.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- Determinar 
-\begin_inset Formula $V_{1_{mín}}$
-\end_inset
-
- para 
-\begin_inset Formula $V_{2}$
-\end_inset
-
- se tornar receptor ativo.
-\end_layout
-
-\begin_layout Quote
-
-\family typewriter
 \series bold
-\emph on
-\color blue
-Por favor, resolver de forma organizada e destacar as respostas!
+\size large
+\color red
+GABARITO ETE103/N – T3/2021
+\size default
+\color inherit
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\begin_inset ERT
+\noindent
+\begin_inset Note Comment
 status open
 
 \begin_layout Plain Layout
+\noindent
 
-
-\backslash
-questao[0]{50}
+\series bold
+===========================================
 \end_layout
 
 \end_inset
 
- Supondo conhecidos os valores 
-\begin_inset Formula $R_{A}$
+
+\end_layout
+
+\begin_layout Standard
+Tem-se um sistema (hipotético) para aquecimento de água constituído por
+ um recipiente de forma cilíndrica, um resistor de fio de nicromo 80/20
+ e uma fonte de tensão contínua de 
+\begin_inset Formula $\six{220}{\V}$
 \end_inset
 
-, 
-\begin_inset Formula $R_{B}$
-\end_inset
+, conforme observa-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Desenho-físico-aquecimento-de-agua"
+plural "false"
+caps "false"
+noprefix "false"
 
-, 
-\begin_inset Formula $R_{C}$
-\end_inset
-
-, 
-\begin_inset Formula $R_{L}$
-\end_inset
-
-, 
-\begin_inset Formula $k$
-\end_inset
-
- e 
-\begin_inset Formula $V_{CC}$
-\end_inset
-
-, determine a expressão literal de 
-\begin_inset Formula $V_{L}$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-2.png
-	lyxscale 50
-	width 80text%
+ Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Modelo-do-sistema-aquecimento-de-agua"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+, tem-se um modelo simplificado do sistema.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\begin_inset ERT
+\begin_inset Float figure
+placement !b
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
-
-\backslash
-questao[1]{50}
-\end_layout
-
-\end_inset
-
- Para o circuito abaixo, realizar o balanço de potência e classificar todos
- os bipolos.
- Registrar os cálculos realizados e justificar a classificação.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-3.png
+	filename imagens/2021/an/p1/sistema-hipotetico-para-aquecimento-de-agua#fisico.png
 	lyxscale 50
 	width 60text%
 
@@ -116641,338 +116528,235 @@ questao[1]{50}
 
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
-\family typewriter
-\series bold
-\emph on
-\color blue
-Por favor, resolver de forma organizada e destacar as respostas!
-\end_layout
+\begin_layout Plain Layout
+Desenho físico do sistema.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Desenho-físico-aquecimento-de-agua"
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
 \end_inset
 
 
-\begin_inset ERT
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-questao[2]{0}
-\end_layout
-
-\end_inset
-
- Determinar 
-\begin_inset Formula $V_{R3}$
-\end_inset
-
- pelo 
-\emph on
-Teorema da Superposição de Efeitos
-\emph default
-.
- Apresentar todas as etapas.
-\end_layout
-
-\begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename trabalhos-substitutos/2020-ete103-p1-n/imagens/questao-4.png
+	filename imagens/2021/an/p1/sistema-hipotetico-para-aquecimento-de-agua#modelo.png
 	lyxscale 50
-	width 80text%
+	width 50text%
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Quote
+\begin_layout Plain Layout
+\begin_inset Caption Standard
 
-\family typewriter
-\series bold
-\emph on
-\color blue
-Por favor, resolver de forma organizada e destacar as respostas!
+\begin_layout Plain Layout
+Modelo simplificado do sistema.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Modelo-do-sistema-aquecimento-de-agua"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema hipotético para aquecimento de água.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema-para-aquecimento-de-agua"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+O recipiente está totalmente cheio de água e isolado termicamente do meio
+ ambiente.
+ O resistor tem um formato especial, em espiras concêntricas, de forma a
+ esquentar a água de maneira razoavelmente uniforme, conforme observa-se
+ na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Desenho-físico-aquecimento-de-agua"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[1]{50}
+.
+ A água irá se movimentar por meio do efeito da convecção.
 \end_layout
 
+\begin_layout Standard
+A temperatura inicial interna do sistema é de 
+\begin_inset Formula $\six{25}{\celsius}$
 \end_inset
 
- Um determinado material hipotético desenvolvido em laboratório – 
+.
+\end_layout
+
+\begin_layout Standard
+Deseja-se aquecer o volume de água até 
+\begin_inset Formula $\six{60}{\celsius}$
+\end_inset
+
+ em 
+\begin_inset Formula $\six{40}{\s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Considerem-se as seguintes hipóteses:
+\end_layout
+
+\begin_layout Itemize
+Inicialmente, a resistência não varia na faixa de temperatura em questão.
+\end_layout
+
+\begin_layout Itemize
+Toda energia dissipada pelo resistor será absorvida pela água, desprezando-se
+ os transitórios.
+ Ou seja, é como se a água absorvesse instantaneamente toda a energia dissipada
+ pelo resistor em cada instante de tempo.
+\end_layout
+
+\begin_layout Itemize
+O tamanho dos trechos retos do resistor pode ser aproximado.
+\end_layout
+
+\begin_layout Standard
+Para tanto, solicita-se:
+\end_layout
+
+\begin_layout Enumerate
+Dimensionar o resistor especial.
+ Apresentar todos os cálculos e valores utilizados.
+ Indicar as fontes de consulta dos valores tabelados.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Neste caso, o dimensionamento deverá incluir a geometria.
+\end_layout
+
+\begin_layout Standard
+Deve-se especificar: resistência e potência desejada, comprimento e diâmetro
+ do fio (de nicromo 80/20) e quantidade de espiras, de forma semelhante
+ à geometria apresentada.
+\end_layout
+
+\begin_layout Standard
+Note-se que não há necessidade de um valor comercial de resistência, pois
+ ela será toda projetada.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Indicar qual a corrente que circulará no circuito.
+\end_layout
+
+\begin_layout Enumerate
+Analisar a viabilidade técnica, 
+\bar under
+com base nos resultados obtidos e nas hipóteses adotadas
+\bar default
+.
+ Ou seja, deve-se pontuar se o projeto é factível física e eletricamente.
+ Em adição, se for factível, explanar o porquê é.
+ Se não for, descrever as alterações necessárias para ser.
+\end_layout
+
+\begin_layout Enumerate
+Levantar o custo total para aquisição do fio de nicromo necessário, com
+ base nos resultados obtidos.
+ Apontar o 
 \emph on
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-mbox{material $
-\backslash
-zeta$}
-\end_layout
-
-\end_inset
-
-
+site 
 \emph default
- (leia-se 
+consultado por meio do 
 \emph on
-
-\begin_inset Quotes eld
-\end_inset
-
-material zeta
-\begin_inset Quotes erd
-\end_inset
-
-
+link 
 \emph default
-) – apresenta coeficiente de temperatura (
-\begin_inset Formula $\alpha$
-\end_inset
-
-) de 
-\begin_inset Formula $\mathbf{A\,}\si{\celsius^{-1}}$
-\end_inset
-
-.
- Agora, deseja-se determinar sua condutividade a 
-\begin_inset Formula $\six{20}{\celsius}$
-\end_inset
-
-.
- Para tanto, tomou-se uma amostra cilíndrica com diâmetro de 
-\begin_inset Formula $\six 1{\cm}$
-\end_inset
-
- e comprimento de 
-\begin_inset Formula $\six{10}{\cm}$
-\end_inset
-
- e aplicou-se uma tensão de 
-\begin_inset Formula $\six 2{\V}$
-\end_inset
-
- nesta, num ambiente cuja temperatura era de 
-\begin_inset Formula $\mathbf{B}\,\si{\celsius}$
-\end_inset
-
-.
- Em tal situação, foi medida uma corrente de 
-\begin_inset Formula $\six{0,5}{\A}$
-\end_inset
-
-.
- Pede-se:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
+para o produto e os cálculos efetuados (essencialmente, de proporção).
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,25}
-\end_layout
-
+Analisar a variação da resistência com a temperatura na faixa em questão.
+ Neste sentido, averiguar se a variação da resistência com a temperatura,
+ neste projeto, irá impactar significativamente no tempo de aquecimento.
+ Como parte da justificativa, apresentar o cálculo da variação total da
+ resistência (ou seja, entre a resistência a 
+\begin_inset Formula $\six{25}{\celsius}$
 \end_inset
 
- Esboço do material 
-\series bold
-e
-\series default
- circuito montado, com indicação das grandezas envolvidas.
+ e a 
+\begin_inset Formula $\six{60}{\celsius}$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{1,0}
-\end_layout
-
-\end_inset
-
- 
-\size large
-
-\begin_inset Formula $\sigma_{(\six{20}{\celsius})}$
-\end_inset
-
-
-\size default
-.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,25}
-\end_layout
-
-\end_inset
-
- Se o circuito de ensaio permanecer ligado por 1 semana, calcular a energia
- consumida pelo material 
-\begin_inset Formula $\zeta$
-\end_inset
-
-, em calorias.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Quote
-
-\family typewriter
-\series bold
+Apresentar todas as referências bibliográficas consultadas pertinentes (as
+ fontes de consulta), sejam de livros ou de páginas na 
 \emph on
-\color blue
-Por favor, resolver de forma organizada e destacar as respostas!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-questao[1]{0}
-\end_layout
-
-\end_inset
-
- Projetar um circuito para acender 10 LEDs convencionais simultaneamente
- com um único resistor.
- Essencialmente, apresentar:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-alfaenum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,25}
-\end_layout
-
-\end_inset
-
- Desenho do circuito.
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-valor{0,75}
-\end_layout
-
-\end_inset
-
- Dimensionamento do resistor.
- Apontar os cálculos e considerações.
-\end_layout
-
-\begin_layout Standard
-A fonte de tensão a utilizar encontra-se na tabela de valores por RA.
-\end_layout
-
-\begin_layout Quote
-
-\family typewriter
-\series bold
-\emph on
-\color blue
-Por favor, resolver de forma organizada e destacar as respostas!
+internet
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -117007,7 +116791,7 @@ Rótulo para indicar a última questão.
 \begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
-name "que:ultima-questao-an-p1-2020-1"
+name "que:ultima-questao-an-p1-2021"
 
 \end_inset
 
