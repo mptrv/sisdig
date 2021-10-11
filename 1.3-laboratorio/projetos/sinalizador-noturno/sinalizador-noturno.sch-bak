@@ -16,464 +16,472 @@ $EndDescr
 $Comp
 L Device:Battery_Cell V1
 U 1 1 6161F438
-P 5050 2450
-F 0 "V1" H 5168 2546 50  0000 L CNN
-F 1 "12V" H 5168 2455 50  0000 L CNN
-F 2 "" V 5050 2510 50  0001 C CNN
-F 3 "~" V 5050 2510 50  0001 C CNN
-F 4 "V" H 5050 2450 50  0001 C CNN "Spice_Primitive"
-F 5 "pulse(10 10 0m 100u 100u)" H 5050 2450 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 5050 2450 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    5050 2450
+P 4950 2450
+F 0 "V1" H 5068 2546 50  0000 L CNN
+F 1 "12V" H 5068 2455 50  0000 L CNN
+F 2 "" V 4950 2510 50  0001 C CNN
+F 3 "~" V 4950 2510 50  0001 C CNN
+F 4 "V" H 4950 2450 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(10 10 0m 100u 100u)" H 4950 2450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4950 2450 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4950 2450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 6161F8BB
-P 3750 4400
-F 0 "R1" H 3680 4354 50  0000 R CNN
-F 1 "47k" H 3680 4445 50  0000 R CNN
-F 2 "" V 3680 4400 50  0001 C CNN
-F 3 "~" H 3750 4400 50  0001 C CNN
-	1    3750 4400
+P 3650 4400
+F 0 "R1" H 3580 4354 50  0000 R CNN
+F 1 "47k" H 3580 4445 50  0000 R CNN
+F 2 "" V 3580 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3650 4400
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:VCC #PWR03
 U 1 1 616225BA
-P 5050 1800
-F 0 "#PWR03" H 5050 1650 50  0001 C CNN
-F 1 "VCC" H 5065 1973 50  0000 C CNN
-F 2 "" H 5050 1800 50  0001 C CNN
-F 3 "" H 5050 1800 50  0001 C CNN
-	1    5050 1800
+P 4950 1800
+F 0 "#PWR03" H 4950 1650 50  0001 C CNN
+F 1 "VCC" H 4965 1973 50  0000 C CNN
+F 2 "" H 4950 1800 50  0001 C CNN
+F 3 "" H 4950 1800 50  0001 C CNN
+	1    4950 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR04
 U 1 1 6162304C
-P 5050 3000
-F 0 "#PWR04" H 5050 2750 50  0001 C CNN
-F 1 "Earth" H 5050 2850 50  0001 C CNN
-F 2 "" H 5050 3000 50  0001 C CNN
-F 3 "~" H 5050 3000 50  0001 C CNN
-	1    5050 3000
+P 4950 3000
+F 0 "#PWR04" H 4950 2750 50  0001 C CNN
+F 1 "Earth" H 4950 2850 50  0001 C CNN
+F 2 "" H 4950 3000 50  0001 C CNN
+F 3 "~" H 4950 3000 50  0001 C CNN
+	1    4950 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR02
 U 1 1 61624D6F
-P 3750 5700
-F 0 "#PWR02" H 3750 5450 50  0001 C CNN
-F 1 "Earth" H 3750 5550 50  0001 C CNN
-F 2 "" H 3750 5700 50  0001 C CNN
-F 3 "~" H 3750 5700 50  0001 C CNN
-	1    3750 5700
+P 3650 5700
+F 0 "#PWR02" H 3650 5450 50  0001 C CNN
+F 1 "Earth" H 3650 5550 50  0001 C CNN
+F 2 "" H 3650 5700 50  0001 C CNN
+F 3 "~" H 3650 5700 50  0001 C CNN
+	1    3650 5700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR01
 U 1 1 6162532C
-P 3750 3700
-F 0 "#PWR01" H 3750 3550 50  0001 C CNN
-F 1 "VCC" H 3765 3873 50  0000 C CNN
-F 2 "" H 3750 3700 50  0001 C CNN
-F 3 "" H 3750 3700 50  0001 C CNN
-	1    3750 3700
+P 3650 3700
+F 0 "#PWR01" H 3650 3550 50  0001 C CNN
+F 1 "VCC" H 3665 3873 50  0000 C CNN
+F 2 "" H 3650 3700 50  0001 C CNN
+F 3 "" H 3650 3700 50  0001 C CNN
+	1    3650 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:HEF4093B U1
 U 1 1 6162FEAD
-P 4650 4750
-F 0 "U1" H 4850 5000 50  0000 C CNN
-F 1 "4093" H 4850 4900 50  0000 C CNN
-F 2 "" H 4650 4750 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 4650 4750 50  0001 C CNN
-F 4 "X" H 4650 4750 50  0001 C CNN "Spice_Primitive"
-F 5 "CD4093B" H 4650 4750 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 4650 4750 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 4650 4750 50  0001 C CNN "Spice_Lib_File"
-	1    4650 4750
+P 4550 4750
+F 0 "U1" H 4750 5000 50  0000 C CNN
+F 1 "4093" H 4750 4900 50  0000 C CNN
+F 2 "" H 4550 4750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 4550 4750 50  0001 C CNN
+F 4 "X" H 4550 4750 50  0001 C CNN "Spice_Primitive"
+F 5 "CD4093B" H 4550 4750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4550 4750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 4550 4750 50  0001 C CNN "Spice_Lib_File"
+	1    4550 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 616323D6
-P 4650 5150
-F 0 "R3" V 4765 5150 50  0000 C CNN
-F 1 "2M2" V 4856 5150 50  0000 C CNN
-F 2 "" V 4580 5150 50  0001 C CNN
-F 3 "~" H 4650 5150 50  0001 C CNN
-	1    4650 5150
+P 4550 5150
+F 0 "R3" V 4665 5150 50  0000 C CNN
+F 1 "2M2" V 4756 5150 50  0000 C CNN
+F 2 "" V 4480 5150 50  0001 C CNN
+F 3 "~" H 4550 5150 50  0001 C CNN
+	1    4550 5150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4950 4750 5050 4750
+	4850 4750 4950 4750
 Wire Wire Line
-	5050 2550 5050 3000
+	4950 2550 4950 2900
 Wire Wire Line
-	5050 1800 5050 2250
+	4950 1800 4950 1900
 Wire Wire Line
-	3750 3800 3500 3800
+	3650 3800 3400 3800
 Wire Wire Line
-	3500 3800 3500 4000
+	3400 3800 3400 4000
 Wire Wire Line
-	3500 4000 3600 4000
-Connection ~ 3750 3800
+	3400 4000 3500 4000
+Connection ~ 3650 3800
 Wire Wire Line
-	3750 3800 3750 3850
+	3650 3800 3650 3850
 $Comp
 L Device:C C1
 U 1 1 61647799
-P 4250 5450
-F 0 "C1" H 4365 5496 50  0000 L CNN
-F 1 "220nF" H 4365 5405 50  0000 L CNN
-F 2 "" H 4288 5300 50  0001 C CNN
-F 3 "~" H 4250 5450 50  0001 C CNN
-	1    4250 5450
+P 4150 5450
+F 0 "C1" H 4265 5496 50  0000 L CNN
+F 1 "220nF" H 4265 5405 50  0000 L CNN
+F 2 "" H 4188 5300 50  0001 C CNN
+F 3 "~" H 4150 5450 50  0001 C CNN
+	1    4150 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR05
 U 1 1 61647C4F
-P 4250 5700
-F 0 "#PWR05" H 4250 5450 50  0001 C CNN
-F 1 "Earth" H 4250 5550 50  0001 C CNN
-F 2 "" H 4250 5700 50  0001 C CNN
-F 3 "~" H 4250 5700 50  0001 C CNN
-	1    4250 5700
+P 4150 5700
+F 0 "#PWR05" H 4150 5450 50  0001 C CNN
+F 1 "Earth" H 4150 5550 50  0001 C CNN
+F 2 "" H 4150 5700 50  0001 C CNN
+F 3 "~" H 4150 5700 50  0001 C CNN
+	1    4150 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 4850 4250 4850
+	4250 4850 4150 4850
 Wire Wire Line
-	4250 4850 4250 5150
+	4150 4850 4150 5150
 Wire Wire Line
-	4250 5600 4250 5700
+	4150 5600 4150 5700
 Wire Wire Line
-	4250 5150 4500 5150
+	4150 5150 4400 5150
 Wire Wire Line
-	4800 5150 5050 5150
-Connection ~ 4250 5150
+	4700 5150 4950 5150
+Connection ~ 4150 5150
 Wire Wire Line
-	4250 5150 4250 5300
+	4150 5150 4150 5300
 $Comp
 L Device:R_POT P1
 U 1 1 61645F9B
-P 3750 4000
-F 0 "P1" H 3680 4046 50  0000 R CNN
-F 1 "100k" H 3680 3955 50  0000 R CNN
-F 2 "" H 3750 4000 50  0001 C CNN
-F 3 "~" H 3750 4000 50  0001 C CNN
-	1    3750 4000
+P 3650 4000
+F 0 "P1" H 3580 4046 50  0000 R CNN
+F 1 "100k" H 3580 3955 50  0000 R CNN
+F 2 "" H 3650 4000 50  0001 C CNN
+F 3 "~" H 3650 4000 50  0001 C CNN
+	1    3650 4000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L 4xxx:HEF4093B U1
 U 2 1 6164C8AF
-P 5650 4550
-F 0 "U1" H 5650 4875 50  0000 C CNN
-F 1 "4093" H 5650 4784 50  0000 C CNN
-F 2 "" H 5650 4550 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 5650 4550 50  0001 C CNN
-F 4 "X" H 5650 4550 50  0001 C CNN "Spice_Primitive"
-F 5 "CD4093B" H 5650 4550 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 5650 4550 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 5650 4550 50  0001 C CNN "Spice_Lib_File"
-	2    5650 4550
+P 5550 4550
+F 0 "U1" H 5550 4875 50  0000 C CNN
+F 1 "4093" H 5550 4784 50  0000 C CNN
+F 2 "" H 5550 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 5550 4550 50  0001 C CNN
+F 4 "X" H 5550 4550 50  0001 C CNN "Spice_Primitive"
+F 5 "CD4093B" H 5550 4550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5550 4550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 5550 4550 50  0001 C CNN "Spice_Lib_File"
+	2    5550 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 61651FC6
-P 5650 5150
-F 0 "R4" V 5765 5150 50  0000 C CNN
-F 1 "100k" V 5856 5150 50  0000 C CNN
-F 2 "" V 5580 5150 50  0001 C CNN
-F 3 "~" H 5650 5150 50  0001 C CNN
-	1    5650 5150
+P 5550 5150
+F 0 "R4" V 5665 5150 50  0000 C CNN
+F 1 "100k" V 5756 5150 50  0000 C CNN
+F 2 "" V 5480 5150 50  0001 C CNN
+F 3 "~" H 5550 5150 50  0001 C CNN
+	1    5550 5150
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 61651FCC
-P 5250 5450
-F 0 "C2" H 5365 5496 50  0000 L CNN
-F 1 "470nF" H 5365 5405 50  0000 L CNN
-F 2 "" H 5288 5300 50  0001 C CNN
-F 3 "~" H 5250 5450 50  0001 C CNN
-	1    5250 5450
+P 5150 5450
+F 0 "C2" H 5265 5496 50  0000 L CNN
+F 1 "470nF" H 5265 5405 50  0000 L CNN
+F 2 "" H 5188 5300 50  0001 C CNN
+F 3 "~" H 5150 5450 50  0001 C CNN
+	1    5150 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR08
 U 1 1 61651FD2
-P 5250 5700
-F 0 "#PWR08" H 5250 5450 50  0001 C CNN
-F 1 "Earth" H 5250 5550 50  0001 C CNN
-F 2 "" H 5250 5700 50  0001 C CNN
-F 3 "~" H 5250 5700 50  0001 C CNN
-	1    5250 5700
+P 5150 5700
+F 0 "#PWR08" H 5150 5450 50  0001 C CNN
+F 1 "Earth" H 5150 5550 50  0001 C CNN
+F 2 "" H 5150 5700 50  0001 C CNN
+F 3 "~" H 5150 5700 50  0001 C CNN
+	1    5150 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 4650 5250 5150
+	5150 4650 5150 5150
 Wire Wire Line
-	5250 5600 5250 5700
+	5150 5600 5150 5700
 Wire Wire Line
-	5250 5150 5500 5150
+	5150 5150 5400 5150
 Wire Wire Line
-	6050 4550 6050 5150
+	5950 4550 5950 5150
 Wire Wire Line
-	5800 5150 6050 5150
-Connection ~ 5250 5150
+	5700 5150 5950 5150
+Connection ~ 5150 5150
 Wire Wire Line
-	5250 5150 5250 5300
+	5150 5150 5150 5300
 Wire Wire Line
-	5950 4550 6050 4550
+	5850 4550 5950 4550
 $Comp
 L 4xxx:HEF4093B U1
 U 4 1 61656A2E
-P 7300 4650
-F 0 "U1" H 7300 4975 50  0000 C CNN
-F 1 "4093" H 7300 4884 50  0000 C CNN
-F 2 "" H 7300 4650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 7300 4650 50  0001 C CNN
-F 4 "X" H 7300 4650 50  0001 C CNN "Spice_Primitive"
-F 5 "CD4093B" H 7300 4650 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 7300 4650 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 7300 4650 50  0001 C CNN "Spice_Lib_File"
-	4    7300 4650
+P 7200 4650
+F 0 "U1" H 7200 4975 50  0000 C CNN
+F 1 "4093" H 7200 4884 50  0000 C CNN
+F 2 "" H 7200 4650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 7200 4650 50  0001 C CNN
+F 4 "X" H 7200 4650 50  0001 C CNN "Spice_Primitive"
+F 5 "CD4093B" H 7200 4650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7200 4650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 7200 4650 50  0001 C CNN "Spice_Lib_File"
+	4    7200 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 6165B144
-P 7850 4650
-F 0 "R5" V 7643 4650 50  0000 C CNN
-F 1 "10k" V 7734 4650 50  0000 C CNN
-F 2 "" V 7780 4650 50  0001 C CNN
-F 3 "~" H 7850 4650 50  0001 C CNN
-	1    7850 4650
+P 7750 4650
+F 0 "R5" V 7543 4650 50  0000 C CNN
+F 1 "10k" V 7634 4650 50  0000 C CNN
+F 2 "" V 7680 4650 50  0001 C CNN
+F 3 "~" H 7750 4650 50  0001 C CNN
+	1    7750 4650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8050 4650 8000 4650
+	7950 4650 7900 4650
 $Comp
 L power:VCC #PWR010
 U 1 1 6165EACC
-P 8350 3700
-F 0 "#PWR010" H 8350 3550 50  0001 C CNN
-F 1 "VCC" H 8365 3873 50  0000 C CNN
-F 2 "" H 8350 3700 50  0001 C CNN
-F 3 "" H 8350 3700 50  0001 C CNN
-	1    8350 3700
+P 8250 3700
+F 0 "#PWR010" H 8250 3550 50  0001 C CNN
+F 1 "VCC" H 8265 3873 50  0000 C CNN
+F 2 "" H 8250 3700 50  0001 C CNN
+F 3 "" H 8250 3700 50  0001 C CNN
+	1    8250 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR011
 U 1 1 6165F012
-P 8350 5700
-F 0 "#PWR011" H 8350 5450 50  0001 C CNN
-F 1 "Earth" H 8350 5550 50  0001 C CNN
-F 2 "" H 8350 5700 50  0001 C CNN
-F 3 "~" H 8350 5700 50  0001 C CNN
-	1    8350 5700
+P 8250 5700
+F 0 "#PWR011" H 8250 5450 50  0001 C CNN
+F 1 "Earth" H 8250 5550 50  0001 C CNN
+F 2 "" H 8250 5700 50  0001 C CNN
+F 3 "~" H 8250 5700 50  0001 C CNN
+	1    8250 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 4650 5250 4650
+	5250 4650 5150 4650
 $Comp
 L 4xxx:HEF4093B U1
 U 5 1 61695862
-P 6250 2400
-F 0 "U1" H 6480 2446 50  0000 L CNN
-F 1 "4093" H 6480 2355 50  0000 L CNN
-F 2 "" H 6250 2400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6250 2400 50  0001 C CNN
-F 4 "X" H 6250 2400 50  0001 C CNN "Spice_Primitive"
-F 5 "CD4093B" H 6250 2400 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 6250 2400 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 6250 2400 50  0001 C CNN "Spice_Lib_File"
-	5    6250 2400
+P 6150 2400
+F 0 "U1" H 6380 2446 50  0000 L CNN
+F 1 "4093" H 6380 2355 50  0000 L CNN
+F 2 "" H 6150 2400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6150 2400 50  0001 C CNN
+F 4 "X" H 6150 2400 50  0001 C CNN "Spice_Primitive"
+F 5 "CD4093B" H 6150 2400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6150 2400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 6150 2400 50  0001 C CNN "Spice_Lib_File"
+	5    6150 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR06
 U 1 1 6169A80E
-P 6250 1800
-F 0 "#PWR06" H 6250 1650 50  0001 C CNN
-F 1 "VCC" H 6265 1973 50  0000 C CNN
-F 2 "" H 6250 1800 50  0001 C CNN
-F 3 "" H 6250 1800 50  0001 C CNN
-	1    6250 1800
+P 6150 1800
+F 0 "#PWR06" H 6150 1650 50  0001 C CNN
+F 1 "VCC" H 6165 1973 50  0000 C CNN
+F 2 "" H 6150 1800 50  0001 C CNN
+F 3 "" H 6150 1800 50  0001 C CNN
+	1    6150 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:Earth #PWR07
 U 1 1 6169AD58
-P 6250 3000
-F 0 "#PWR07" H 6250 2750 50  0001 C CNN
-F 1 "Earth" H 6250 2850 50  0001 C CNN
-F 2 "" H 6250 3000 50  0001 C CNN
-F 3 "~" H 6250 3000 50  0001 C CNN
-	1    6250 3000
+P 6150 3000
+F 0 "#PWR07" H 6150 2750 50  0001 C CNN
+F 1 "Earth" H 6150 2850 50  0001 C CNN
+F 2 "" H 6150 3000 50  0001 C CNN
+F 3 "~" H 6150 3000 50  0001 C CNN
+	1    6150 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 3000 6250 2950
+	6150 3000 6150 2950
 Wire Wire Line
-	6250 1900 6250 1850
+	6150 1900 6150 1850
 Wire Wire Line
-	6250 1850 6900 1850
+	6150 1850 6800 1850
 Wire Wire Line
-	6900 1850 6900 2250
-Connection ~ 6250 1850
+	6800 1850 6800 2250
+Connection ~ 6150 1850
 Wire Wire Line
-	6250 1850 6250 1800
+	6150 1850 6150 1800
 $Comp
 L Device:C C3
 U 1 1 6169DBEF
-P 6900 2400
-F 0 "C3" H 7015 2446 50  0000 L CNN
-F 1 "100nF" H 7015 2355 50  0000 L CNN
-F 2 "" H 6938 2250 50  0001 C CNN
-F 3 "~" H 6900 2400 50  0001 C CNN
-	1    6900 2400
+P 6800 2400
+F 0 "C3" H 6915 2446 50  0000 L CNN
+F 1 "100nF" H 6915 2355 50  0000 L CNN
+F 2 "" H 6838 2250 50  0001 C CNN
+F 3 "~" H 6800 2400 50  0001 C CNN
+	1    6800 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 2550 6900 2950
+	6800 2550 6800 2950
 Wire Wire Line
-	6900 2950 6250 2950
-Connection ~ 6250 2950
+	6800 2950 6150 2950
+Connection ~ 6150 2950
 Wire Wire Line
-	6250 2950 6250 2900
+	6150 2950 6150 2900
 $Comp
 L Device:R_PHOTO R2
 U 1 1 616BDE3F
-P 3750 5200
-F 0 "R2" H 3820 5246 50  0000 L CNN
-F 1 "GL5516" H 3820 5155 50  0000 L CNN
-F 2 "" V 3800 4950 50  0001 L CNN
-F 3 "~" H 3750 5150 50  0001 C CNN
-	1    3750 5200
+P 3650 5200
+F 0 "R2" H 3720 5246 50  0000 L CNN
+F 1 "GL5516" H 3720 5155 50  0000 L CNN
+F 2 "" V 3700 4950 50  0001 L CNN
+F 3 "~" H 3650 5150 50  0001 C CNN
+	1    3650 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:HEF4093B U1
 U 3 1 6168CAFD
-P 6600 4550
-F 0 "U1" H 6600 4875 50  0000 C CNN
-F 1 "4093" H 6600 4784 50  0000 C CNN
-F 2 "" H 6600 4550 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6600 4550 50  0001 C CNN
-F 4 "X" H 6600 4550 50  0001 C CNN "Spice_Primitive"
-F 5 "CD4093B" H 6600 4550 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 6600 4550 50  0001 C CNN "Spice_Netlist_Enabled"
-F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 6600 4550 50  0001 C CNN "Spice_Lib_File"
-	3    6600 4550
+P 6500 4550
+F 0 "U1" H 6500 4875 50  0000 C CNN
+F 1 "4093" H 6500 4784 50  0000 C CNN
+F 2 "" H 6500 4550 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 6500 4550 50  0001 C CNN
+F 4 "X" H 6500 4550 50  0001 C CNN "Spice_Primitive"
+F 5 "CD4093B" H 6500 4550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6500 4550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/cd4000.lib" H 6500 4550 50  0001 C CNN "Spice_Lib_File"
+	3    6500 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4650 4250 4450
+	4150 4650 4150 4450
 Wire Wire Line
-	4250 4650 4350 4650
+	4150 4650 4250 4650
 Wire Wire Line
-	3750 3700 3750 3800
+	3650 3700 3650 3800
 Wire Wire Line
-	3750 4150 3750 4250
+	3650 4150 3650 4250
 Wire Wire Line
-	3750 5700 3750 5350
+	3650 5700 3650 5350
 $Comp
-L Transistor_BJT:BC328 Q?
+L Transistor_BJT:BC328 Q1
 U 1 1 617014EC
-P 8250 4650
-F 0 "Q?" H 8441 4604 50  0000 L CNN
-F 1 "BC328" H 8441 4695 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8450 4575 50  0001 L CIN
-F 3 "http://www.redrok.com/PNP_BC327_-45V_-800mA_0.625W_Hfe100_TO-92.pdf" H 8250 4650 50  0001 L CNN
-	1    8250 4650
+P 8150 4650
+F 0 "Q1" H 8341 4604 50  0000 L CNN
+F 1 "BC328" H 8341 4695 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8350 4575 50  0001 L CIN
+F 3 "http://www.redrok.com/PNP_BC327_-45V_-800mA_0.625W_Hfe100_TO-92.pdf" H 8150 4650 50  0001 L CNN
+	1    8150 4650
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	8350 3700 8350 4450
+	8250 3700 8250 4450
 Wire Wire Line
-	7600 4650 7700 4650
+	7500 4650 7600 4650
 Wire Wire Line
-	5050 4750 5050 5150
-Connection ~ 5050 4750
+	4950 4750 4950 5150
+Connection ~ 4950 4750
 Wire Wire Line
-	5050 4750 7000 4750
+	4950 4750 6900 4750
 Wire Wire Line
-	4250 4450 5350 4450
+	4150 4450 5250 4450
 Wire Wire Line
-	3750 5050 3750 4650
+	3650 5050 3650 4650
 Wire Wire Line
-	3750 4650 4250 4650
-Connection ~ 3750 4650
+	3650 4650 4150 4650
+Connection ~ 3650 4650
 Wire Wire Line
-	3750 4650 3750 4550
-Connection ~ 4250 4650
+	3650 4650 3650 4550
+Connection ~ 4150 4650
 Wire Wire Line
-	6900 4550 7000 4550
+	6800 4550 6900 4550
 Wire Wire Line
-	6300 4450 6200 4450
+	6200 4450 6100 4450
 Wire Wire Line
-	6200 4450 6200 4550
+	6100 4450 6100 4550
 Wire Wire Line
-	6200 4650 6300 4650
+	6100 4650 6200 4650
 Wire Wire Line
-	6050 4550 6200 4550
-Connection ~ 6050 4550
-Connection ~ 6200 4550
+	5950 4550 6100 4550
+Connection ~ 5950 4550
+Connection ~ 6100 4550
 Wire Wire Line
-	6200 4550 6200 4650
-Text Notes 6050 4500 0    50   ~ 0
+	6100 4550 6100 4650
+Text Notes 5950 4500 0    50   ~ 0
 B
-Text Notes 5050 4700 0    50   ~ 0
+Text Notes 4950 4700 0    50   ~ 0
 A
-Text Notes 8400 4950 0    50   ~ 0
+Text Notes 8300 4950 0    50   ~ 0
 S
 $Comp
 L Device:R R6
 U 1 1 6165D2EC
-P 8350 5100
-F 0 "R6" H 8280 5054 50  0000 R CNN
-F 1 "1k" H 8280 5145 50  0000 R CNN
-F 2 "" V 8280 5100 50  0001 C CNN
-F 3 "~" H 8350 5100 50  0001 C CNN
-	1    8350 5100
+P 8250 5100
+F 0 "R6" H 8180 5054 50  0000 R CNN
+F 1 "1k" H 8180 5145 50  0000 R CNN
+F 2 "" V 8180 5100 50  0001 C CNN
+F 3 "~" H 8250 5100 50  0001 C CNN
+	1    8250 5100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8350 5300 8350 5250
+	8250 5300 8250 5250
 Wire Wire Line
-	8350 5700 8350 5600
+	8250 5700 8250 5600
 $Comp
 L Device:LED_ALT D1
 U 1 1 6165E0C7
-P 8350 5450
-F 0 "D1" V 8389 5332 50  0000 R CNN
-F 1 "LED_ALT" V 8298 5332 50  0000 R CNN
-F 2 "" H 8350 5450 50  0001 C CNN
-F 3 "~" H 8350 5450 50  0001 C CNN
-	1    8350 5450
+P 8250 5450
+F 0 "D1" V 8289 5332 50  0000 R CNN
+F 1 "LED_ALT" V 8198 5332 50  0000 R CNN
+F 2 "" H 8250 5450 50  0001 C CNN
+F 3 "~" H 8250 5450 50  0001 C CNN
+	1    8250 5450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8350 4850 8350 4950
+	8250 4850 8250 4950
 Wire Notes Line style solid
-	6500 5250 6650 5250
+	6400 5250 6550 5250
 Wire Notes Line style solid
-	6650 5250 6650 5150
+	6550 5250 6550 5150
 Wire Notes Line style solid
-	6650 5150 6900 5150
+	6550 5150 6800 5150
 Wire Notes Line style solid
-	6900 5250 7050 5250
+	6800 5250 6950 5250
 Wire Notes Line style solid
-	6900 5150 6900 5250
+	6800 5150 6800 5250
+Wire Notes Line style solid
+	6400 5400 6450 5400
+Wire Notes Line style solid
+	6450 5400 6450 5300
+Wire Notes Line style solid
+	6450 5300 6500 5300
+Wire Notes Line style solid
+	6500 5300 6500 5400
 Wire Notes Line style solid
 	6500 5400 6550 5400
 Wire Notes Line style solid
@@ -509,15 +517,15 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	6900 5400 6950 5400
 Wire Notes Line style solid
-	6950 5400 6950 5300
+	6400 5550 6600 5550
 Wire Notes Line style solid
-	6950 5300 7000 5300
+	6600 5550 6600 5450
 Wire Notes Line style solid
-	7000 5300 7000 5400
+	6600 5450 6650 5450
 Wire Notes Line style solid
-	7000 5400 7050 5400
+	6650 5450 6650 5550
 Wire Notes Line style solid
-	6500 5550 6700 5550
+	6650 5550 6700 5550
 Wire Notes Line style solid
 	6700 5550 6700 5450
 Wire Notes Line style solid
@@ -525,23 +533,15 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	6750 5450 6750 5550
 Wire Notes Line style solid
-	6750 5550 6800 5550
-Wire Notes Line style solid
-	6800 5550 6800 5450
-Wire Notes Line style solid
-	6800 5450 6850 5450
-Wire Notes Line style solid
-	6850 5450 6850 5550
-Wire Notes Line style solid
-	6850 5550 7050 5550
-Text Notes 6400 5250 0    50   ~ 0
+	6750 5550 6950 5550
+Text Notes 6300 5250 0    50   ~ 0
 A
-Text Notes 6400 5400 0    50   ~ 0
+Text Notes 6300 5400 0    50   ~ 0
 B
-Text Notes 6400 5550 0    50   ~ 0
+Text Notes 6300 5550 0    50   ~ 0
 S
 $Bitmap
-Pos 6725 5700
+Pos 6625 5700
 Scale 0.700000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 12 00 00 00 3A 08 02 00 00 00 F3 DD 41 
@@ -638,4 +638,40 @@ D0 13 03 81 20 0C 4A 1B 04 82 30 28 6D 10 08 C2 A0 B4 41 20 08 F3 5F 52 06 DD A6
 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61637578
+P 5100 1800
+F 0 "#FLG?" H 5100 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 1973 50  0001 C CNN
+F 2 "" H 5100 1800 50  0001 C CNN
+F 3 "~" H 5100 1800 50  0001 C CNN
+	1    5100 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1800 5100 1900
+Wire Wire Line
+	5100 1900 4950 1900
+Connection ~ 4950 1900
+Wire Wire Line
+	4950 1900 4950 2250
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 616393DC
+P 5100 3000
+F 0 "#FLG?" H 5100 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 3173 50  0001 C CNN
+F 2 "" H 5100 3000 50  0001 C CNN
+F 3 "~" H 5100 3000 50  0001 C CNN
+	1    5100 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3000 5100 2900
+Wire Wire Line
+	5100 2900 4950 2900
+Connection ~ 4950 2900
+Wire Wire Line
+	4950 2900 4950 3000
 $EndSCHEMATC
