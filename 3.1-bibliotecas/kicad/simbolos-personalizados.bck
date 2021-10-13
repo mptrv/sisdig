@@ -10,6 +10,12 @@ D Fonte de corrente dependente puramente simbólica.
 K Fonte de corrente, dependente, dependent, current source, i source, vinculada
 $ENDCMP
 #
+$CMP fonte_tensao
+D Single-cell battery
+K battery cell
+F ~
+$ENDCMP
+#
 $CMP fonte_tensao_dep
 D Fonte de tensão dependente puramente simbólica.
 K Fonte de tensão, dependente, dependent, voltage source, v source, vinculada

@@ -25,10 +25,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3700 
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xxx:4017 U4
+L 4xxx:4017 U2
 U 1 1 6163B9BC
 P 2950 4300
-F 0 "U4" H 3150 5050 50  0000 C CNN
+F 0 "U2" H 3150 5050 50  0000 C CNN
 F 1 "4017" H 3150 4950 50  0000 C CNN
 F 2 "" H 2950 4300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 2950 4300 50  0001 C CNN
@@ -206,10 +206,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7950 
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xxx:4017 U5
+L 4xxx:4017 U3
 U 1 1 6166B4F9
 P 7200 4300
-F 0 "U5" H 7400 5050 50  0000 C CNN
+F 0 "U3" H 7400 5050 50  0000 C CNN
 F 1 "4017" H 7400 4950 50  0000 C CNN
 F 2 "" H 7200 4300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf" H 7200 4300 50  0001 C CNN
@@ -638,10 +638,10 @@ Wire Wire Line
 Wire Wire Line
 	6600 3900 6600 3950
 $Comp
-L Device:Battery_Cell U3
+L Device:Battery_Cell V1
 U 1 1 61754F59
 P 1800 1750
-F 0 "U3" H 1918 1846 50  0000 L CNN
+F 0 "V1" H 1918 1846 50  0000 L CNN
 F 1 "12V" H 1918 1755 50  0000 L CNN
 F 2 "" V 1800 1810 50  0001 C CNN
 F 3 "~" V 1800 1810 50  0001 C CNN
@@ -805,9 +805,10 @@ L 4xxx:HEF4093B U1
 U 2 1 616E7839
 P 9100 1450
 F 0 "U1" H 9100 1775 50  0000 C CNN
-F 1 "4093" H 9100 1684 50  0000 C CNN
+F 1 "4093B" H 9100 1684 50  0000 C CNN
 F 2 "" H 9100 1450 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 9100 1450 50  0001 C CNN
+F 4 "4093B" H 9100 1450 50  0001 C CNN "Value"
 	2    9100 1450
 	1    0    0    -1  
 $EndComp
@@ -884,20 +885,22 @@ L 4xxx:HEF4093B U1
 U 1 1 616B6404
 P 7200 1750
 F 0 "U1" H 7200 2075 50  0000 C CNN
-F 1 "4093" H 7200 1984 50  0000 C CNN
+F 1 "4093B" H 7200 1984 50  0000 C CNN
 F 2 "" H 7200 1750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 7200 1750 50  0001 C CNN
+F 4 "4093B" H 7200 1750 50  0001 C CNN "Value"
 	1    7200 1750
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:HEF4093B U2
+L 4xxx:HEF4093B U1
 U 5 1 617DCF2E
 P 4700 1700
-F 0 "U2" H 4930 1746 50  0000 L CNN
-F 1 "4093" H 4930 1655 50  0000 L CNN
+F 0 "U1" H 4930 1746 50  0000 L CNN
+F 1 "4093B" H 4930 1655 50  0000 L CNN
 F 2 "" H 4700 1700 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 4700 1700 50  0001 C CNN
+F 4 "4093B" H 4700 1700 50  0001 C CNN "Value"
 	5    4700 1700
 	1    0    0    -1  
 $EndComp
@@ -953,17 +956,18 @@ L 4xxx:HEF4093B U1
 U 3 1 61855556
 P 1800 6850
 F 0 "U1" H 1800 7175 50  0000 C CNN
-F 1 "4093" H 1800 7084 50  0000 C CNN
+F 1 "4093B" H 1800 7084 50  0000 C CNN
 F 2 "" H 1800 6850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 1800 6850 50  0001 C CNN
+F 4 "4093B" H 1800 6850 50  0001 C CNN "Value"
 	3    1800 6850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR019
+L power:Earth #PWR018
 U 1 1 61858E3A
 P 1400 7050
-F 0 "#PWR019" H 1400 6800 50  0001 C CNN
+F 0 "#PWR018" H 1400 6800 50  0001 C CNN
 F 1 "Earth" H 1400 6900 50  0001 C CNN
 F 2 "" H 1400 7050 50  0001 C CNN
 F 3 "~" H 1400 7050 50  0001 C CNN
@@ -987,17 +991,18 @@ L 4xxx:HEF4093B U1
 U 4 1 61876FDB
 P 3000 6850
 F 0 "U1" H 3000 7175 50  0000 C CNN
-F 1 "4093" H 3000 7084 50  0000 C CNN
+F 1 "4093B" H 3000 7084 50  0000 C CNN
 F 2 "" H 3000 6850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf" H 3000 6850 50  0001 C CNN
+F 4 "4093B" H 3000 6850 50  0001 C CNN "Value"
 	4    3000 6850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR018
+L power:Earth #PWR019
 U 1 1 61876FE1
 P 2600 7050
-F 0 "#PWR018" H 2600 6800 50  0001 C CNN
+F 0 "#PWR019" H 2600 6800 50  0001 C CNN
 F 1 "Earth" H 2600 6900 50  0001 C CNN
 F 2 "" H 2600 7050 50  0001 C CNN
 F 3 "~" H 2600 7050 50  0001 C CNN
@@ -1103,10 +1108,10 @@ Wire Notes Line style solid
 Text Notes 4350 7500 1    50   ~ 0
 Semáforo 2
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG01
 U 1 1 619906C4
 P 2050 1100
-F 0 "#FLG?" H 2050 1175 50  0001 C CNN
+F 0 "#FLG01" H 2050 1175 50  0001 C CNN
 F 1 "PWR_FLAG" H 2050 1273 50  0001 C CNN
 F 2 "" H 2050 1100 50  0001 C CNN
 F 3 "~" H 2050 1100 50  0001 C CNN
@@ -1121,10 +1126,10 @@ Connection ~ 1800 1200
 Wire Wire Line
 	1800 1200 1800 1550
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG02
 U 1 1 61997AEB
 P 2050 2300
-F 0 "#FLG?" H 2050 2375 50  0001 C CNN
+F 0 "#FLG02" H 2050 2375 50  0001 C CNN
 F 1 "PWR_FLAG" H 2050 2473 50  0001 C CNN
 F 2 "" H 2050 2300 50  0001 C CNN
 F 3 "~" H 2050 2300 50  0001 C CNN
