@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Jumper_Simbolico
+D Jumper simbólico para desenho de jumpers na PCI; normally closed;
+K jumper bridge link NC NF
+F ~
+$ENDCMP
+#
 $CMP fonte_corrente
 D Fonte de corrente puramente simbólica.
 K Fonte de corrente, current source, i source
@@ -12,7 +18,7 @@ $ENDCMP
 #
 $CMP fonte_tensao
 D Single-cell battery
-K battery cell
+K battery cell, fonte de tensão, voltage source
 F ~
 $ENDCMP
 #

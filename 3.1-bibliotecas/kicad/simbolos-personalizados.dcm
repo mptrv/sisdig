@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Jumper_Simbolico
+D Jumper simbólico para desenho de jumpers na PCI; normally closed;
+K jumper bridge link NC NF
+F ~
+$ENDCMP
+#
 $CMP fonte_corrente
 D Fonte de corrente puramente simbólica.
 K Fonte de corrente, current source, i source
