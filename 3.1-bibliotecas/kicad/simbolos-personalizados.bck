@@ -6,6 +6,12 @@ K jumper bridge link NC NF
 F ~
 $ENDCMP
 #
+$CMP LM555
+D Precision Timers, 555 compatible,  PDIP-8
+K single timer 555
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
 $CMP fonte_corrente
 D Fonte de corrente puramente simbólica.
 K Fonte de corrente, current source, i source
