@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Dado Digital - CMOS"
-Date "Primeiro Semestre/2017"
+Date "2022-02-02"
 Rev "1.0"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
@@ -47,11 +47,11 @@ F 3 "" H 2200 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DD_CMOS-rescue:C C1
+L Device:CP1 C1
 U 1 1 57427337
 P 2200 1950
 F 0 "C1" H 2225 2050 50  0001 L CNN
-F 1 "1uF" H 2225 1850 50  0000 L CNN
+F 1 "1uF/16V" H 2225 1850 50  0000 L CNN
 F 2 "" H 2238 1800 50  0000 C CNN
 F 3 "" H 2200 1950 50  0000 C CNN
 	1    2200 1950
@@ -71,23 +71,23 @@ $EndComp
 $Comp
 L power:VDD #PWR03
 U 1 1 57427413
-P 3200 850
-F 0 "#PWR03" H 3200 700 50  0001 C CNN
-F 1 "VDD" H 3200 1000 50  0000 C CNN
-F 2 "" H 3200 850 50  0000 C CNN
-F 3 "" H 3200 850 50  0000 C CNN
-	1    3200 850 
+P 3450 850
+F 0 "#PWR03" H 3450 700 50  0001 C CNN
+F 1 "VDD" H 3450 1000 50  0000 C CNN
+F 2 "" H 3450 850 50  0000 C CNN
+F 3 "" H 3450 850 50  0000 C CNN
+	1    3450 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 574277F3
-P 5300 3050
-F 0 "#PWR04" H 5300 2800 50  0001 C CNN
-F 1 "GND" H 5300 2900 50  0000 C CNN
-F 2 "" H 5300 3050 50  0000 C CNN
-F 3 "" H 5300 3050 50  0000 C CNN
-	1    5300 3050
+P 5250 3050
+F 0 "#PWR04" H 5250 2800 50  0001 C CNN
+F 1 "GND" H 5250 2900 50  0000 C CNN
+F 2 "" H 5250 3050 50  0000 C CNN
+F 3 "" H 5250 3050 50  0000 C CNN
+	1    5250 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -113,11 +113,11 @@ F 3 "" H 2200 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DD_CMOS-rescue:C C2
+L Device:CP1 C2
 U 1 1 57427E77
 P 2200 3650
 F 0 "C2" H 2225 3750 50  0001 L CNN
-F 1 "10uF" H 2225 3550 50  0000 L CNN
+F 1 "10uF/16V" H 2225 3550 50  0000 L CNN
 F 2 "" H 2238 3500 50  0000 C CNN
 F 3 "" H 2200 3650 50  0000 C CNN
 	1    2200 3650
@@ -148,23 +148,23 @@ $EndComp
 $Comp
 L DD_CMOS-rescue:R R3
 U 1 1 5742C9F0
-P 9350 5550
-F 0 "R3" V 9430 5550 50  0001 C CNN
-F 1 "1k" V 9350 5550 50  0000 C CNN
-F 2 "" V 9280 5550 50  0000 C CNN
-F 3 "" H 9350 5550 50  0000 C CNN
-	1    9350 5550
+P 9350 5650
+F 0 "R3" V 9430 5650 50  0000 C CNN
+F 1 "1k" V 9350 5650 50  0000 C CNN
+F 2 "" V 9280 5650 50  0000 C CNN
+F 3 "" H 9350 5650 50  0000 C CNN
+	1    9350 5650
 	0    -1   -1   0   
 $EndComp
 $Comp
 L DD_CMOS-rescue:BC549 Q1
 U 1 1 5742CA8F
-P 9800 5550
-F 0 "Q1" H 10000 5625 50  0000 L CNN
-F 1 "BC547" H 10000 5550 50  0000 L CNN
-F 2 "TO-92" H 10000 5475 50  0001 L CIN
-F 3 "" H 9800 5550 50  0000 L CNN
-	1    9800 5550
+P 9800 5650
+F 0 "Q1" H 10000 5725 50  0000 L CNN
+F 1 "BC547" H 10000 5650 50  0000 L CNN
+F 2 "TO-92" H 10000 5575 50  0001 L CIN
+F 3 "" H 9800 5650 50  0000 L CNN
+	1    9800 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -192,12 +192,12 @@ $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5742CC47
-P 9900 5950
-F 0 "#PWR09" H 9900 5700 50  0001 C CNN
-F 1 "GND" H 9900 5800 50  0000 C CNN
-F 2 "" H 9900 5950 50  0000 C CNN
-F 3 "" H 9900 5950 50  0000 C CNN
-	1    9900 5950
+P 9900 6050
+F 0 "#PWR09" H 9900 5800 50  0001 C CNN
+F 1 "GND" H 9900 5900 50  0000 C CNN
+F 2 "" H 9900 6050 50  0000 C CNN
+F 3 "" H 9900 6050 50  0000 C CNN
+	1    9900 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -422,19 +422,19 @@ Wire Wire Line
 Wire Wire Line
 	6350 1350 6900 1350
 Wire Wire Line
-	6350 2550 6750 2550
+	6300 2550 6750 2550
 Wire Wire Line
 	6750 2550 7600 2550
 Wire Wire Line
-	6350 2650 6650 2650
+	6300 2650 6650 2650
 Wire Wire Line
 	6650 2650 7600 2650
 Wire Wire Line
-	6350 2750 6550 2750
+	6300 2750 6550 2750
 Wire Wire Line
 	6550 2750 7600 2750
 Wire Wire Line
-	6350 2850 6450 2850
+	6300 2850 6450 2850
 Wire Wire Line
 	6450 2850 7600 2850
 Wire Wire Line
@@ -462,7 +462,7 @@ Wire Wire Line
 	6450 2850 6450 5600
 Connection ~ 6450 2850
 Wire Wire Line
-	9900 5750 9900 5950
+	9900 5850 9900 6050
 Wire Wire Line
 	8600 1050 9300 1050
 Wire Wire Line
@@ -501,7 +501,7 @@ Connection ~ 10500 1750
 Wire Wire Line
 	6350 2250 6350 1350
 Wire Wire Line
-	5200 2250 6350 2250
+	5150 2250 6350 2250
 Connection ~ 6350 1350
 Wire Wire Line
 	10500 1650 10500 1750
@@ -514,16 +514,16 @@ Wire Wire Line
 Wire Wire Line
 	9900 5250 9900 5300
 Wire Wire Line
-	9900 5300 9900 5350
+	9900 5300 9900 5450
 Wire Wire Line
 	9550 5300 9900 5300
 Connection ~ 9900 5300
 Wire Wire Line
 	9550 4600 9550 4800
 Wire Wire Line
-	5350 2650 5300 2650
+	5300 2650 5250 2650
 Wire Wire Line
-	5300 2650 5300 3050
+	5250 2650 5250 3050
 Wire Wire Line
 	1750 1550 2200 1550
 Wire Wire Line
@@ -535,13 +535,13 @@ Wire Wire Line
 Wire Wire Line
 	4750 1250 5300 1250
 Wire Wire Line
-	5200 2850 5200 2250
+	5150 2850 5150 2250
 Wire Wire Line
 	4750 3400 4750 2750
 Wire Wire Line
 	4750 2750 4750 1250
 Wire Wire Line
-	5350 2750 4750 2750
+	5300 2750 4750 2750
 Connection ~ 4750 2750
 Wire Wire Line
 	3850 950  3600 950 
@@ -557,7 +557,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 3400 4750 3400
 Wire Wire Line
-	5200 2850 5350 2850
+	5150 2850 5300 2850
 Wire Wire Line
 	5200 1350 5300 1350
 Wire Wire Line
@@ -579,7 +579,7 @@ F 3 "" H 10800 5350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 5550 9600 5550
+	9500 5650 9600 5650
 Wire Wire Line
 	9550 5300 9550 5100
 $Comp
@@ -596,7 +596,7 @@ $EndComp
 Wire Wire Line
 	7400 4600 7500 4600
 Wire Wire Line
-	9100 5550 9200 5550
+	9100 5650 9200 5650
 $Comp
 L DD_CMOS-rescue:CONN_01X02 P1
 U 1 1 574F8BD1
@@ -697,11 +697,11 @@ Wire Wire Line
 Wire Wire Line
 	1050 1500 1050 1550
 $Comp
-L power:VSS #PWR021
+L power:PWR_FLAG #PWR021
 U 1 1 574FD29A
 P 1250 1050
 F 0 "#PWR021" H 1250 900 50  0001 C CNN
-F 1 "VSS" H 1250 1200 50  0000 C CNN
+F 1 "PWR_FLAG" H 1250 1200 50  0001 C CNN
 F 2 "" H 1250 1050 50  0000 C CNN
 F 3 "" H 1250 1050 50  0000 C CNN
 	1    1250 1050
@@ -751,17 +751,6 @@ F 3 "" H 1050 1500 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1050 1650 1050 1700
-$Comp
-L power:GNDA #PWR026
-U 1 1 574FFFAC
-P 1050 1700
-F 0 "#PWR026" H 1050 1450 50  0001 C CNN
-F 1 "GNDA" H 1050 1550 50  0000 C CNN
-F 2 "" H 1050 1700 50  0000 C CNN
-F 3 "" H 1050 1700 50  0000 C CNN
-	1    1050 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L DD_CMOS-rescue:FINDER-40.51 RL1
 U 1 1 575012BB
@@ -822,9 +811,9 @@ Text Notes 700  1050 1    60   ~ 0
 +5V
 Text Notes 700  1700 1    60   ~ 0
 +12V
-Text Notes 10400 1100 3    60   ~ 0
+Text Notes 9500 850  0    60   ~ 0
 unidade
-Text Notes 10400 2950 1    60   ~ 0
+Text Notes 9850 2350 2    60   ~ 0
 dezena
 Text Notes 11050 5550 1    60   ~ 0
 lâmpada\n  12V
@@ -895,14 +884,14 @@ Wire Wire Line
 Wire Wire Line
 	2950 1550 3550 1550
 Wire Wire Line
-	3550 1650 3200 1650
+	3550 1650 3450 1650
 Wire Wire Line
-	3550 1450 3200 1450
-Connection ~ 3200 1450
+	3550 1450 3450 1450
+Connection ~ 3450 1450
 Wire Wire Line
-	3200 1450 3200 1650
+	3450 1450 3450 1650
 Wire Wire Line
-	3200 850  3200 1450
+	3450 850  3450 1450
 Wire Wire Line
 	4250 1450 4150 1450
 Wire Wire Line
@@ -943,12 +932,12 @@ $EndComp
 $Comp
 L 4xxx:4518 U4
 U 2 1 62009603
-P 5850 2650
-F 0 "U4" H 5850 3017 50  0000 C CNN
-F 1 "4518" H 5850 2926 50  0000 C CNN
-F 2 "" H 5850 2650 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf" H 5850 2650 50  0001 C CNN
-	2    5850 2650
+P 5800 2650
+F 0 "U4" H 5800 3017 50  0000 C CNN
+F 1 "4518" H 5800 2926 50  0000 C CNN
+F 2 "" H 5800 2650 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf" H 5800 2650 50  0001 C CNN
+	2    5800 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1114,8 +1103,8 @@ $Comp
 L Display_Character:SBC18-11SURKCGKWA U5
 U 1 1 6212A212
 P 10100 1350
-F 0 "U5" H 10100 2017 50  0000 C CNN
-F 1 "C-1505SR-BW" H 10100 1926 50  0000 C CNN
+F 0 "U5" H 10100 1900 50  0000 C CNN
+F 1 "C-1505SR-BW" V 10350 1500 50  0000 C CNN
 F 2 "Display_7Segment:SBC18-11SURKCGKWA" H 9370 640 50  0001 L CNN
 F 3 "https://www.datasheetarchive.com/pdf/download.php?id=95807997a35626b3d5d4ddbe5548a7f1a69f20&type=M&term=A1505S" H 10100 1540 50  0001 L CNN
 	1    10100 1350
@@ -1141,8 +1130,8 @@ $Comp
 L Display_Character:SBC18-11SURKCGKWA U7
 U 1 1 6216BF63
 P 10100 2850
-F 0 "U7" H 10100 3517 50  0000 C CNN
-F 1 "C-1505SR-BW" H 10100 3426 50  0000 C CNN
+F 0 "U7" H 10100 3400 50  0000 C CNN
+F 1 "C-1505SR-BW" V 10350 3000 50  0000 C CNN
 F 2 "Display_7Segment:SBC18-11SURKCGKWA" H 9370 2140 50  0001 L CNN
 F 3 "https://www.datasheetarchive.com/pdf/download.php?id=95807997a35626b3d5d4ddbe5548a7f1a69f20&type=M&term=A1505S" H 10100 3040 50  0001 L CNN
 	1    10100 2850
@@ -1250,7 +1239,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 4500 9100 4500
 Wire Wire Line
-	9100 4500 9100 5550
+	9100 4500 9100 5650
 Wire Wire Line
 	1750 4600 1750 4550
 Wire Wire Line
@@ -1429,8 +1418,8 @@ F 3 "" H 5300 5700 50  0000 C CNN
 	1    5300 5700
 	1    0    0    -1  
 $EndComp
-Text Notes 3950 4500 0    60   ~ 0
-Capacitores de bypass\n
+Text Notes 3925 4500 0    60   ~ 0
+Capacitores de "bypass"
 Text Notes 3900 4750 0    60   ~ 0
 (posicioná-los próximos\n    aos CIs indicados)
 Connection ~ 5300 4800
@@ -1599,7 +1588,7 @@ f ≅ 2 Hz
 Text Notes 4800 6750 0    60   ~ 0
 D ≅ 33%
 Text Notes 4850 7500 0    50   ~ 0
-Para f ≅ 100Hz:\n\n  C = 22 nF\n\n  ou\n\n  RA = RB = 4.7e3
+Para f ≅ 100Hz:\n\n  C = 22 nF\n\n  ou\n\n  RA = RB = 4k7Ω
 Wire Notes Line
 	4800 6900 5650 6900
 Wire Notes Line
@@ -1610,4 +1599,84 @@ Wire Notes Line
 	4800 7550 4800 6900
 Text Notes 1900 4500 0    60   ~ 0
 Pinos de alimentação de\n     CIs multiparte
+Text Notes 2500 2950 0    60   ~ 0
+POR
+Text Notes 2400 1100 0    60   ~ 0
+  Botão e\n"deboucing"
+Wire Wire Line
+	7500 4500 7350 4500
+Text Label 7350 4500 0    60   ~ 0
+Ctrl
+Text Label 4650 1800 2    60   ~ 0
+Ctrl
+Wire Wire Line
+	4650 1650 4650 1800
+Connection ~ 4650 1650
+Text Notes 3650 850  0    60   ~ 0
+Controle da\n Contagem
+Text Notes 5550 1900 0    60   ~ 0
+Contadores
+Text Notes 7750 700  0    60   ~ 0
+Decodificadores
+Text Notes 9875 700  0    60   ~ 0
+"Displays"
+Text Notes 7800 6100 0    60   ~ 0
+Comparador
+Text Notes 9950 4250 0    60   ~ 0
+Atuador
+Text Notes 10600 5750 0    60   ~ 0
+Cargas
+Text Notes 3650 6100 0    60   ~ 0
+Oscilador
+$Comp
+L power:Earth #PWR0101
+U 1 1 62047A03
+P 1050 1700
+F 0 "#PWR0101" H 1050 1450 50  0001 C CNN
+F 1 "Earth" H 1050 1550 50  0001 C CNN
+F 2 "" H 1050 1700 50  0001 C CNN
+F 3 "~" H 1050 1700 50  0001 C CNN
+	1    1050 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L DD_CMOS-rescue:R R6
+U 1 1 62049194
+P 10300 5500
+F 0 "R6" H 10370 5546 50  0000 L CNN
+F 1 "1k" H 10370 5455 50  0000 L CNN
+F 2 "" V 10230 5500 50  0000 C CNN
+F 3 "" H 10300 5500 50  0000 C CNN
+	1    10300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D2
+U 1 1 6204A61B
+P 10300 5850
+F 0 "D2" V 10339 5732 50  0000 R CNN
+F 1 "Verde" V 10248 5732 50  0000 R CNN
+F 2 "" H 10300 5850 50  0001 C CNN
+F 3 "~" H 10300 5850 50  0001 C CNN
+	1    10300 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 6204AC75
+P 10300 6050
+F 0 "#PWR026" H 10300 5800 50  0001 C CNN
+F 1 "GND" H 10300 5900 50  0000 C CNN
+F 2 "" H 10300 6050 50  0000 C CNN
+F 3 "" H 10300 6050 50  0000 C CNN
+	1    10300 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5300 10300 5350
+Wire Wire Line
+	10300 5650 10300 5700
+Wire Wire Line
+	10300 6000 10300 6050
+Connection ~ 10300 5300
 $EndSCHEMATC

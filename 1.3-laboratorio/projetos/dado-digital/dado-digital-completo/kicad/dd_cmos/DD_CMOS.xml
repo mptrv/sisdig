@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>E:\Projetos\sisdig\trunk\laboratorio\projetos\kicad\dd_cmos\DD_CMOS.sch</source>
-    <date>01/06/2016 21:28:37</date>
-    <tool>Eeschema 4.0.2-stable</tool>
+    <source>/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/dado-digital-completo/kicad/dd_cmos/DD_CMOS.sch</source>
+    <date>qua 02 fev 2022 23:22:31</date>
+    <tool>Eeschema 5.1.12-84ad8e8a86~92~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>Dado Digital - CMOS</title>
+        <company>ETE102 - Fundamentos de Circuitos Digitais</company>
+        <rev>1.0</rev>
+        <date>2022-02-02</date>
         <source>DD_CMOS.sch</source>
-        <comment number="1" value=""/>
+        <comment number="1" value="Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -21,219 +21,402 @@
   <components>
     <comp ref="SW1">
       <value>SW_PUSH</value>
-      <libsource lib="device" part="SW_PUSH"/>
+      <libsource lib="DD_CMOS-rescue" part="SW_PUSH" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>574270F2</tstamp>
     </comp>
     <comp ref="R1">
-      <value>1k</value>
-      <libsource lib="device" part="R"/>
+      <value>10k</value>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57427232</tstamp>
     </comp>
     <comp ref="C1">
-      <value>C</value>
-      <libsource lib="device" part="C"/>
+      <value>1uF/16V</value>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57427337</tstamp>
     </comp>
-    <comp ref="U2">
-      <value>4027</value>
-      <libsource lib="cmos4000" part="4027"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5742742F</tstamp>
-    </comp>
-    <comp ref="U3">
-      <value>4518</value>
-      <libsource lib="cmos4000" part="4518"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5742773B</tstamp>
-    </comp>
     <comp ref="R2">
       <value>10k</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57427BCC</tstamp>
     </comp>
     <comp ref="C2">
-      <value>C</value>
-      <libsource lib="device" part="C"/>
+      <value>10uF/16V</value>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57427E77</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>4511</value>
-      <libsource lib="Gajda_cmosieee" part="4511"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5742BAA9</tstamp>
-    </comp>
-    <comp ref="U6">
-      <value>4511</value>
-      <libsource lib="Gajda_cmosieee" part="4511"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5742BC14</tstamp>
-    </comp>
     <comp ref="R3">
       <value>1k</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5742C9F0</tstamp>
     </comp>
     <comp ref="Q1">
       <value>BC547</value>
       <footprint>TO-92</footprint>
-      <libsource lib="transistors" part="BC549"/>
+      <libsource lib="DD_CMOS-rescue" part="BC549" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5742CA8F</tstamp>
     </comp>
     <comp ref="D1">
       <value>1N4148</value>
-      <libsource lib="device" part="D"/>
+      <libsource lib="DD_CMOS-rescue" part="D" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5742CB78</tstamp>
     </comp>
-    <comp ref="K1">
-      <value>RELAY</value>
-      <libsource lib="device" part="RELAY_2RT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5742CC7F</tstamp>
-    </comp>
-    <comp ref="U4">
-      <value>4585</value>
-      <libsource lib="Gajda_cmosieee" part="4585"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5743105D</tstamp>
-    </comp>
     <comp ref=".14">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57438492</tstamp>
     </comp>
     <comp ref=".13">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57443F04</tstamp>
     </comp>
     <comp ref=".12">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57443F5D</tstamp>
     </comp>
     <comp ref=".11">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57443F63</tstamp>
     </comp>
     <comp ref=".10">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57443F9D</tstamp>
     </comp>
     <comp ref=".9">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57443FA3</tstamp>
     </comp>
     <comp ref=".8">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57443FA9</tstamp>
     </comp>
     <comp ref=".7">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57444482</tstamp>
     </comp>
     <comp ref=".6">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57444488</tstamp>
     </comp>
     <comp ref=".5">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5744448E</tstamp>
     </comp>
     <comp ref=".4">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57444494</tstamp>
     </comp>
     <comp ref=".3">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5744449A</tstamp>
     </comp>
     <comp ref=".2">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>574444A0</tstamp>
     </comp>
     <comp ref=".1">
       <value>220R</value>
-      <libsource lib="device" part="R"/>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>574444A6</tstamp>
     </comp>
-    <comp ref="AFF2">
-      <value>HDSP-7xxx-C</value>
-      <libsource lib="display" part="HDSP-7xxx-C"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>574661AC</tstamp>
-    </comp>
-    <comp ref="AFF1">
-      <value>HDSP-7xxx-C</value>
-      <libsource lib="display" part="HDSP-7xxx-C"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>57466242</tstamp>
-    </comp>
-    <comp ref="P5">
+    <comp ref="P4">
       <value>CONN_01X02</value>
-      <libsource lib="conn" part="CONN_01X02"/>
+      <libsource lib="DD_CMOS-rescue" part="CONN_01X02" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>574CE7B0</tstamp>
     </comp>
     <comp ref="P1">
       <value>CONN_01X02</value>
-      <libsource lib="conn" part="CONN_01X02"/>
+      <footprint>~</footprint>
+      <libsource lib="DD_CMOS-rescue" part="CONN_01X02" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>574F8BD1</tstamp>
     </comp>
     <comp ref="U1">
       <value>4093</value>
-      <libsource lib="w_logic" part="4093"/>
+      <libsource lib="4xxx" part="HEF4093B" description="Quad 2-Input NAND Schmitt Trigger, SOIC-14"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>574F9662</tstamp>
     </comp>
     <comp ref="P2">
       <value>CONN_01X02</value>
-      <libsource lib="conn" part="CONN_01X02"/>
+      <footprint>~</footprint>
+      <libsource lib="DD_CMOS-rescue" part="CONN_01X02" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>574FB283</tstamp>
     </comp>
-    <comp ref="P3">
-      <value>CONN_01X02</value>
-      <libsource lib="conn" part="CONN_01X02"/>
+    <comp ref="RL1">
+      <value>FINDER-40.51</value>
+      <libsource lib="DD_CMOS-rescue" part="FINDER-40.51" description=""/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>574FB2C9</tstamp>
+      <tstamp>575012BB</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>4027</value>
+      <libsource lib="4xxx" part="4027" description="Dual JK FlipFlop, set &amp; reset"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5742742F</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>4518</value>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf</datasheet>
+      <libsource lib="4xxx" part="4518" description="Dual BCD Up-Counter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61FF280F</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>CD4511BE</value>
+      <footprint>Texas_Instruments-CD4511BE-*</footprint>
+      <datasheet>http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&amp;fileType=pdf</datasheet>
+      <fields>
+        <field name="Code  JEDEC">MS-001</field>
+        <field name="Component Link 1 Description">Manufacturer URL</field>
+        <field name="Component Link 1 URL">http://www.ti.com/</field>
+        <field name="Component Link 3 Description">Package Specification</field>
+        <field name="Component Link 3 URL">http://www.ti.com/litv/pdf/mpdi002c</field>
+        <field name="Datasheet Version">SCHS072B</field>
+        <field name="Mounting Technology">Through Hole</field>
+        <field name="Package Description">16-Pin Plastic In-Line, Body 19.305 x 6.35 mm, Pitch 2.54 mm</field>
+        <field name="Package Version">4040049/E</field>
+        <field name="Rating">Military</field>
+        <field name="Sub Family">Discrete Segment LED Driver</field>
+        <field name="Vin Max V">18</field>
+        <field name="Vin Min V">3</field>
+        <field name="category">IC</field>
+        <field name="ciiva ids">13585921</field>
+        <field name="imported">yes</field>
+        <field name="library id">8d74ce39b66b2924</field>
+        <field name="manufacturer">Texas Instruments</field>
+        <field name="package">N0016A</field>
+        <field name="release date">1464591341</field>
+        <field name="rohs">Yes</field>
+        <field name="vault revision">B4FF7ED3-A38F-4FCD-BB2B-34C921878191</field>
+      </fields>
+      <libsource lib="eec" part="CD4511BE" description="CD4511BE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62023C2A</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>CD4511BE</value>
+      <footprint>Texas_Instruments-CD4511BE-*</footprint>
+      <datasheet>http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&amp;fileType=pdf</datasheet>
+      <fields>
+        <field name="Code  JEDEC">MS-001</field>
+        <field name="Component Link 1 Description">Manufacturer URL</field>
+        <field name="Component Link 1 URL">http://www.ti.com/</field>
+        <field name="Component Link 3 Description">Package Specification</field>
+        <field name="Component Link 3 URL">http://www.ti.com/litv/pdf/mpdi002c</field>
+        <field name="Datasheet Version">SCHS072B</field>
+        <field name="Mounting Technology">Through Hole</field>
+        <field name="Package Description">16-Pin Plastic In-Line, Body 19.305 x 6.35 mm, Pitch 2.54 mm</field>
+        <field name="Package Version">4040049/E</field>
+        <field name="Rating">Military</field>
+        <field name="Sub Family">Discrete Segment LED Driver</field>
+        <field name="Vin Max V">18</field>
+        <field name="Vin Min V">3</field>
+        <field name="category">IC</field>
+        <field name="ciiva ids">13585921</field>
+        <field name="imported">yes</field>
+        <field name="library id">8d74ce39b66b2924</field>
+        <field name="manufacturer">Texas Instruments</field>
+        <field name="package">N0016A</field>
+        <field name="release date">1464591341</field>
+        <field name="rohs">Yes</field>
+        <field name="vault revision">B4FF7ED3-A38F-4FCD-BB2B-34C921878191</field>
+      </fields>
+      <libsource lib="eec" part="CD4511BE" description="CD4511BE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62027C08</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>C-1505SR-BW</value>
+      <footprint>Display_7Segment:SBC18-11SURKCGKWA</footprint>
+      <datasheet>https://www.datasheetarchive.com/pdf/download.php?id=95807997a35626b3d5d4ddbe5548a7f1a69f20&amp;type=M&amp;term=A1505S</datasheet>
+      <libsource lib="Display_Character" part="SBC18-11SURKCGKWA" description="Single digit 7 segment hyper red and green LED display, common cathode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6212A212</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>C-1505SR-BW</value>
+      <footprint>Display_7Segment:SBC18-11SURKCGKWA</footprint>
+      <datasheet>https://www.datasheetarchive.com/pdf/download.php?id=95807997a35626b3d5d4ddbe5548a7f1a69f20&amp;type=M&amp;term=A1505S</datasheet>
+      <libsource lib="Display_Character" part="SBC18-11SURKCGKWA" description="Single digit 7 segment hyper red and green LED display, common cathode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6216BF63</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>CD4585B</value>
+      <footprint>Texas_Instruments-CD4585B-*</footprint>
+      <fields>
+        <field name="Bits">4</field>
+        <field name="Datasheet Version">SCHS091B</field>
+        <field name="F  Nom VoltageMaxMhz">8</field>
+        <field name="ICC  Nom VoltageMaxmA">0.3</field>
+        <field name="Input Type">CMOS</field>
+        <field name="Operating Temperature RangeC">-55 to 125</field>
+        <field name="Output Drive IOLIOHMaxmA">4/-4</field>
+        <field name="Output Type">CMOS</field>
+        <field name="Rating">Military</field>
+        <field name="Technology Family">CD4000</field>
+        <field name="VCC Max V">18</field>
+        <field name="VCC Min V">3</field>
+        <field name="Voltage Nom V">10</field>
+        <field name="category">IC</field>
+        <field name="ciiva ids">19299328</field>
+        <field name="imported">yes</field>
+        <field name="library id">97480692d6917754</field>
+        <field name="manufacturer">Texas Instruments</field>
+        <field name="package">N0016A</field>
+        <field name="release date">1459326111</field>
+        <field name="tpd  Nom VoltageMaxns">250</field>
+        <field name="vault revision">3DC5686F-0A64-423F-ACFB-3E2A0862EF0D</field>
+      </fields>
+      <libsource lib="eec" part="CD4585B" description="CD4585B"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6220AFA5</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10nF</value>
+      <fields>
+        <field name="Observação">Do 4093</field>
+      </fields>
+      <libsource lib="DD_CMOS-rescue" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6238EC40</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10nF</value>
+      <fields>
+        <field name="Observação">Do 4027</field>
+      </fields>
+      <libsource lib="DD_CMOS-rescue" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>623AB04E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>10nF</value>
+      <fields>
+        <field name="Observação">Do 4518</field>
+      </fields>
+      <libsource lib="DD_CMOS-rescue" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>623AB621</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10nF</value>
+      <fields>
+        <field name="Observação">Do 4511</field>
+      </fields>
+      <libsource lib="DD_CMOS-rescue" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>623ABA32</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10nF</value>
+      <fields>
+        <field name="Observação">Do 4511</field>
+      </fields>
+      <libsource lib="DD_CMOS-rescue" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>623ABF7B</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10nF</value>
+      <fields>
+        <field name="Observação">Do 4585</field>
+      </fields>
+      <libsource lib="DD_CMOS-rescue" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>623AC5A6</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10nF</value>
+      <libsource lib="DD_CMOS-rescue" part="C" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627297A8</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>LM555</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/ne555.pdf</datasheet>
+      <libsource lib="Pessoal" part="LM555" description="Precision Timers, 555 compatible,  PDIP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62604BD1</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1uF/16V</value>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>624F4457</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>220k</value>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>624F3251</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>220k</value>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>624F2A5C</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <libsource lib="DD_CMOS-rescue" part="R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62049194</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>Verde</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_ALT" description="Light emitting diode, filled shape"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6204A61B</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="cmos4000" part="4027">
+    <libpart lib="4xxx" part="4027">
       <description>Dual JK FlipFlop, set &amp; reset</description>
+      <docs>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4027bms.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*3.9x9.9mm*P1.27mm*</fp>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">4027</field>
@@ -241,72 +424,28 @@
       <pins>
         <pin num="1" name="Q" type="output"/>
         <pin num="2" name="~Q" type="output"/>
-        <pin num="3" name="Cp" type="input"/>
-        <pin num="4" name="Cd" type="input"/>
+        <pin num="3" name="C" type="input"/>
+        <pin num="4" name="R" type="input"/>
         <pin num="5" name="K" type="input"/>
         <pin num="6" name="J" type="input"/>
-        <pin num="7" name="Sd" type="output"/>
+        <pin num="7" name="S" type="input"/>
         <pin num="8" name="VSS" type="power_in"/>
-        <pin num="9" name="Sd" type="output"/>
+        <pin num="9" name="S" type="input"/>
         <pin num="10" name="J" type="input"/>
         <pin num="11" name="K" type="input"/>
-        <pin num="12" name="Cd" type="input"/>
-        <pin num="13" name="Cp" type="input"/>
+        <pin num="12" name="R" type="input"/>
+        <pin num="13" name="C" type="input"/>
         <pin num="14" name="~Q" type="output"/>
         <pin num="15" name="Q" type="output"/>
         <pin num="16" name="VDD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="w_logic" part="4093">
-      <description>Quad 2-input NAND Schmitt Trigger, logic symbol</description>
-      <docs>/home/walter/Documenti/Elettronica/DATA_SHEET/Elettronici/Integrati/Digitali/Porte_logiche/NAND/NXP_HEF4093B.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">4093</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1A" type="passive"/>
-        <pin num="2" name="1B" type="passive"/>
-        <pin num="3" name="1Y" type="passive"/>
-        <pin num="4" name="2Y" type="passive"/>
-        <pin num="5" name="2A" type="passive"/>
-        <pin num="6" name="2B" type="passive"/>
-        <pin num="7" name="VSS" type="passive"/>
-        <pin num="8" name="3A" type="passive"/>
-        <pin num="9" name="3B" type="passive"/>
-        <pin num="10" name="3Y" type="passive"/>
-        <pin num="11" name="4Y" type="passive"/>
-        <pin num="12" name="4A" type="passive"/>
-        <pin num="13" name="4B" type="passive"/>
-        <pin num="14" name="VDD" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Gajda_cmosieee" part="4511">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">4511</field>
-      </fields>
-      <pins>
-        <pin num="1" name="DB" type="input"/>
-        <pin num="2" name="DC" type="input"/>
-        <pin num="3" name="~LT" type="input"/>
-        <pin num="4" name="~BI" type="input"/>
-        <pin num="5" name="~EL" type="input"/>
-        <pin num="6" name="DD" type="input"/>
-        <pin num="7" name="DA" type="input"/>
-        <pin num="8" name="Vss" type="power_in"/>
-        <pin num="9" name="Qe" type="output"/>
-        <pin num="10" name="Qd" type="output"/>
-        <pin num="11" name="Qc" type="output"/>
-        <pin num="12" name="Qb" type="output"/>
-        <pin num="13" name="Qa" type="output"/>
-        <pin num="14" name="Qg" type="output"/>
-        <pin num="15" name="Qf" type="output"/>
-        <pin num="16" name="Vdd" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="cmos4000" part="4518">
+    <libpart lib="4xxx" part="4518">
       <description>Dual BCD Up-Counter</description>
+      <docs>http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf</docs>
+      <footprints>
+        <fp>DIP?16*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
         <field name="Value">4518</field>
@@ -330,45 +469,40 @@
         <pin num="16" name="VDD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Gajda_cmosieee" part="4585">
+    <libpart lib="4xxx" part="HEF4093B">
+      <description>Quad 2-Input NAND Schmitt Trigger, SOIC-14</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*P1.27mm*</fp>
+      </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">4585</field>
+        <field name="Value">HEF4093B</field>
       </fields>
       <pins>
-        <pin num="1" name="B2" type="input"/>
-        <pin num="2" name="A2" type="input"/>
-        <pin num="3" name="Qa=b" type="output"/>
-        <pin num="4" name="Ia&gt;b" type="input"/>
-        <pin num="5" name="Ia&lt;b" type="input"/>
-        <pin num="6" name="Ia=b" type="input"/>
-        <pin num="7" name="A1" type="input"/>
-        <pin num="8" name="Vss" type="power_in"/>
-        <pin num="9" name="B1" type="input"/>
-        <pin num="10" name="A0" type="input"/>
-        <pin num="11" name="B0" type="input"/>
-        <pin num="12" name="Qa&lt;b" type="output"/>
-        <pin num="13" name="Qa&gt;b" type="output"/>
-        <pin num="14" name="B3" type="input"/>
-        <pin num="15" name="A3" type="input"/>
-        <pin num="16" name="Vdd" type="power_in"/>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="output"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="input"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="input"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="output"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="transistors" part="BC547">
-      <aliases>
-        <alias>BC546</alias>
-        <alias>BC548</alias>
-        <alias>BC549</alias>
-        <alias>BC550</alias>
-      </aliases>
-      <description>45V Vce, 0.1A Ic, NPN, Small Signal Transistor, TO-92</description>
-      <docs>http://www.fairchildsemi.com/ds/BC/BC547.pdf</docs>
+    <libpart lib="DD_CMOS-rescue" part="BC549">
       <footprints>
         <fp>TO-92*</fp>
       </footprints>
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">BC547</field>
+        <field name="Value">BC549</field>
         <field name="Footprint">TO-92</field>
       </fields>
       <pins>
@@ -377,8 +511,7 @@
         <pin num="3" name="E" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="C">
-      <description>Unpolarized capacitor</description>
+    <libpart lib="DD_CMOS-rescue" part="C">
       <footprints>
         <fp>C?</fp>
         <fp>C_????_*</fp>
@@ -395,8 +528,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="CONN_01X02">
-      <description>Connector 01x02</description>
+    <libpart lib="DD_CMOS-rescue" part="CONN_01X02">
       <footprints>
         <fp>Pin_Header_Straight_1X02</fp>
         <fp>Pin_Header_Angled_1X02</fp>
@@ -412,8 +544,7 @@
         <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="D">
-      <description>Diode</description>
+    <libpart lib="DD_CMOS-rescue" part="D">
       <footprints>
         <fp>Diode_*</fp>
         <fp>D-Pak_TO252AA</fp>
@@ -430,26 +561,20 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="display" part="HDSP-7xxx-C">
+    <libpart lib="DD_CMOS-rescue" part="FINDER-40.51">
       <fields>
-        <field name="Reference">AFF</field>
-        <field name="Value">HDSP-7xxx-C</field>
+        <field name="Reference">RL</field>
+        <field name="Value">FINDER-40.51</field>
       </fields>
       <pins>
-        <pin num="1" name="C.K." type="passive"/>
-        <pin num="2" name="f" type="passive"/>
-        <pin num="3" name="g" type="passive"/>
-        <pin num="4" name="e" type="passive"/>
-        <pin num="5" name="d" type="passive"/>
-        <pin num="6" name="C.K." type="passive"/>
-        <pin num="7" name="DP" type="passive"/>
-        <pin num="8" name="c" type="passive"/>
-        <pin num="9" name="b" type="passive"/>
-        <pin num="10" name="a" type="passive"/>
+        <pin num="11" name="~" type="passive"/>
+        <pin num="12" name="~" type="passive"/>
+        <pin num="14" name="~" type="passive"/>
+        <pin num="A1" name="~" type="passive"/>
+        <pin num="A2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="R">
-      <description>Resistor</description>
+    <libpart lib="DD_CMOS-rescue" part="R">
       <footprints>
         <fp>R_*</fp>
         <fp>Resistor_*</fp>
@@ -463,24 +588,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="RELAY_2RT">
-      <fields>
-        <field name="Reference">K</field>
-        <field name="Value">RELAY_2RT</field>
-      </fields>
-      <pins>
-        <pin num="1" name="T1" type="passive"/>
-        <pin num="3" name="R1" type="passive"/>
-        <pin num="5" name="C1" type="passive"/>
-        <pin num="8" name="8" type="input"/>
-        <pin num="9" name="9" type="input"/>
-        <pin num="12" name="C2" type="passive"/>
-        <pin num="14" name="R2" type="passive"/>
-        <pin num="16" name="T2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="SW_PUSH">
-      <description>Button</description>
+    <libpart lib="DD_CMOS-rescue" part="SW_PUSH">
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">SW_PUSH</field>
@@ -490,310 +598,515 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Device" part="CP1">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_ALT">
+      <description>Light emitting diode, filled shape</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Display_Character" part="SBC18-11SURKCGKWA">
+      <aliases>
+        <alias>SBC18-11EGWA</alias>
+      </aliases>
+      <description>Single digit 7 segment hyper red and green LED display, common cathode</description>
+      <docs>http://www.kingbright.com/attachments/file/psearch/000/00/00/SBC18-11SURKCGKWA(Ver.6A).pdf</docs>
+      <footprints>
+        <fp>*SBC18*11*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SBC18-11SURKCGKWA</field>
+        <field name="Footprint">Display_7Segment:SBC18-11SURKCGKWA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CC" type="input"/>
+        <pin num="2" name="E" type="input"/>
+        <pin num="3" name="D" type="input"/>
+        <pin num="4" name="C" type="input"/>
+        <pin num="5" name="CC" type="input"/>
+        <pin num="6" name="B" type="input"/>
+        <pin num="7" name="A" type="input"/>
+        <pin num="8" name="DP" type="input"/>
+        <pin num="9" name="F" type="input"/>
+        <pin num="10" name="G" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Pessoal" part="LM555">
+      <description>Precision Timers, 555 compatible,  PDIP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/ne555.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM555</field>
+        <field name="Footprint">Package_DIP:DIP-8_W7.62mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="TR" type="input"/>
+        <pin num="3" name="Q" type="output"/>
+        <pin num="4" name="R" type="input"/>
+        <pin num="5" name="CV" type="input"/>
+        <pin num="6" name="THR" type="input"/>
+        <pin num="7" name="DIS" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="eec" part="CD4511BE">
+      <description>CD4511BE</description>
+      <docs>http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&amp;fileType=pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CD4511BE</field>
+        <field name="Footprint">Texas_Instruments-CD4511BE-*</field>
+        <field name="Datasheet">http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&amp;fileType=pdf</field>
+        <field name="Code  JEDEC">MS-001</field>
+        <field name="Component Link 1 Description">Manufacturer URL</field>
+        <field name="Component Link 1 URL">http://www.ti.com/</field>
+        <field name="Component Link 3 Description">Package Specification</field>
+        <field name="Component Link 3 URL">http://www.ti.com/litv/pdf/mpdi002c</field>
+        <field name="Datasheet Version">SCHS072B</field>
+        <field name="Mounting Technology">Through Hole</field>
+        <field name="Package Description">16-Pin Plastic In-Line, Body 19.305 x 6.35 mm, Pitch 2.54 mm</field>
+        <field name="Package Version">4040049/E</field>
+        <field name="Rating">Military</field>
+        <field name="Sub Family">Discrete Segment LED Driver</field>
+        <field name="Vin Max V">18</field>
+        <field name="Vin Min V">3</field>
+        <field name="category">IC</field>
+        <field name="ciiva ids">13585921</field>
+        <field name="library id">8d74ce39b66b2924</field>
+        <field name="manufacturer">Texas Instruments</field>
+        <field name="package">N0016A</field>
+        <field name="release date">1464591341</field>
+        <field name="rohs">Yes</field>
+        <field name="vault revision">B4FF7ED3-A38F-4FCD-BB2B-34C921878191</field>
+        <field name="imported">yes</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="C" type="input"/>
+        <pin num="3" name="~LT~" type="input"/>
+        <pin num="4" name="~BL~" type="input"/>
+        <pin num="5" name="~STROBE~" type="input"/>
+        <pin num="6" name="D" type="input"/>
+        <pin num="7" name="A" type="input"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="e" type="output"/>
+        <pin num="10" name="d" type="output"/>
+        <pin num="11" name="c" type="output"/>
+        <pin num="12" name="b" type="output"/>
+        <pin num="13" name="a" type="output"/>
+        <pin num="14" name="g" type="output"/>
+        <pin num="15" name="f" type="output"/>
+        <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="eec" part="CD4585B">
+      <description>CD4585B</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CD4585B</field>
+        <field name="Footprint">Texas_Instruments-CD4585B-*</field>
+        <field name="Bits">4</field>
+        <field name="Datasheet Version">SCHS091B</field>
+        <field name="F  Nom VoltageMaxMhz">8</field>
+        <field name="ICC  Nom VoltageMaxmA">0.3</field>
+        <field name="Input Type">CMOS</field>
+        <field name="Operating Temperature RangeC">-55 to 125</field>
+        <field name="Output Drive IOLIOHMaxmA">4/-4</field>
+        <field name="Output Type">CMOS</field>
+        <field name="Rating">Military</field>
+        <field name="Technology Family">CD4000</field>
+        <field name="VCC Max V">18</field>
+        <field name="VCC Min V">3</field>
+        <field name="Voltage Nom V">10</field>
+        <field name="category">IC</field>
+        <field name="ciiva ids">19299328</field>
+        <field name="library id">97480692d6917754</field>
+        <field name="manufacturer">Texas Instruments</field>
+        <field name="package">N0016A</field>
+        <field name="release date">1459326111</field>
+        <field name="vault revision">3DC5686F-0A64-423F-ACFB-3E2A0862EF0D</field>
+        <field name="imported">yes</field>
+        <field name="tpd  Nom VoltageMaxns">250</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B2" type="input"/>
+        <pin num="2" name="A2" type="input"/>
+        <pin num="3" name="(A=B)OUT" type="output"/>
+        <pin num="4" name="(A&gt;B)IN" type="input"/>
+        <pin num="5" name="(A&lt;B)IN" type="input"/>
+        <pin num="6" name="(A=B)IN" type="input"/>
+        <pin num="7" name="A1" type="input"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="B1" type="input"/>
+        <pin num="10" name="A0" type="input"/>
+        <pin num="11" name="B0" type="input"/>
+        <pin num="12" name="(A&lt;B)OUT" type="output"/>
+        <pin num="13" name="(A&gt;B)OUT" type="output"/>
+        <pin num="14" name="B3" type="input"/>
+        <pin num="15" name="A3" type="input"/>
+        <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
-    <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    <library logical="4xxx">
+      <uri>/usr/share/kicad/library/4xxx.lib</uri>
     </library>
-    <library logical="transistors">
-      <uri>C:\Program Files\KiCad\share\kicad\library\transistors.lib</uri>
+    <library logical="DD_CMOS-rescue">
+      <uri>/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/dado-digital-completo/kicad/dd_cmos/DD_CMOS-rescue.lib</uri>
     </library>
-    <library logical="conn">
-      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
     </library>
-    <library logical="display">
-      <uri>C:\Program Files\KiCad\share\kicad\library\display.lib</uri>
+    <library logical="Display_Character">
+      <uri>/usr/share/kicad/library/Display_Character.lib</uri>
     </library>
-    <library logical="w_logic">
-      <uri>C:\Program Files\KiCad\share\kicad\library\w_logic.lib</uri>
+    <library logical="Pessoal">
+      <uri>/home/mpt/Documentos/Projetos/sisdig/3.1-bibliotecas/kicad/simbolos-personalizados.lib</uri>
     </library>
-    <library logical="cmos4000">
-      <uri>C:\Program Files\KiCad\share\kicad\library\cmos4000.lib</uri>
-    </library>
-    <library logical="Gajda_cmosieee">
-      <uri>C:\Program Files\KiCad\share\kicad\library\Gajda_cmosieee.lib</uri>
+    <library logical="eec">
+      <uri>/home/mpt/Documentos/Projetos/kicad-libraries/octopart/eec.symbols/eec.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(C2-Pad1)">
-      <node ref="U1" pin="6"/>
-      <node ref="U1" pin="5"/>
-      <node ref="R2" pin="2"/>
-      <node ref="C2" pin="1"/>
+    <net code="1" name="Net-(U7-Pad8)">
+      <node ref="U7" pin="8"/>
     </net>
-    <net code="2" name="Net-(D1-Pad2)">
-      <node ref="Q1" pin="1"/>
-      <node ref="D1" pin="2"/>
-      <node ref="K1" pin="9"/>
+    <net code="2" name="Net-(.7-Pad2)">
+      <node ref="U7" pin="10"/>
+      <node ref=".7" pin="2"/>
     </net>
-    <net code="3" name="Net-(U2-Pad1)">
-      <node ref="U2" pin="1"/>
-      <node ref="U3" pin="1"/>
+    <net code="3" name="Net-(.5-Pad2)">
+      <node ref="U7" pin="2"/>
+      <node ref=".5" pin="2"/>
     </net>
-    <net code="4" name="/ck">
-      <node ref="U3" pin="2"/>
-      <node ref="P3" pin="1"/>
+    <net code="4" name="Net-(.4-Pad2)">
+      <node ref=".4" pin="2"/>
+      <node ref="U7" pin="3"/>
     </net>
-    <net code="5" name="Net-(U3-Pad10)">
-      <node ref="U3" pin="10"/>
-      <node ref="U6" pin="6"/>
-      <node ref="U4" pin="15"/>
-      <node ref="U3" pin="6"/>
+    <net code="5" name="Net-(.3-Pad2)">
+      <node ref=".3" pin="2"/>
+      <node ref="U7" pin="4"/>
     </net>
-    <net code="6" name="Net-(U2-Pad2)">
-      <node ref="U4" pin="6"/>
-      <node ref="U2" pin="2"/>
+    <net code="6" name="Net-(.2-Pad2)">
+      <node ref=".2" pin="2"/>
+      <node ref="U7" pin="6"/>
     </net>
-    <net code="7" name="Net-(U1-Pad4)">
-      <node ref="U3" pin="15"/>
-      <node ref="U1" pin="4"/>
-      <node ref="U2" pin="4"/>
-      <node ref="U3" pin="7"/>
+    <net code="7" name="Net-(.1-Pad2)">
+      <node ref=".1" pin="2"/>
+      <node ref="U7" pin="7"/>
     </net>
-    <net code="8" name="Net-(U3-Pad4)">
-      <node ref="U4" pin="7"/>
-      <node ref="U3" pin="4"/>
-      <node ref="U6" pin="1"/>
+    <net code="8" name="Net-(U5-Pad8)">
+      <node ref="U5" pin="8"/>
     </net>
-    <net code="9" name="Net-(U3-Pad14)">
-      <node ref="U5" pin="6"/>
-      <node ref="U4" pin="14"/>
-      <node ref="U3" pin="14"/>
+    <net code="9" name="Net-(.6-Pad2)">
+      <node ref=".6" pin="2"/>
+      <node ref="U7" pin="9"/>
     </net>
-    <net code="10" name="Net-(U3-Pad13)">
-      <node ref="U4" pin="1"/>
-      <node ref="U3" pin="13"/>
-      <node ref="U5" pin="2"/>
-    </net>
-    <net code="11" name="Net-(U3-Pad12)">
-      <node ref="U3" pin="12"/>
-      <node ref="U5" pin="1"/>
-      <node ref="U4" pin="9"/>
-    </net>
-    <net code="12" name="Net-(U3-Pad11)">
-      <node ref="U3" pin="11"/>
-      <node ref="U4" pin="11"/>
-      <node ref="U5" pin="7"/>
-    </net>
-    <net code="13" name="Net-(U3-Pad5)">
-      <node ref="U4" pin="2"/>
-      <node ref="U3" pin="5"/>
-      <node ref="U6" pin="2"/>
-    </net>
-    <net code="14" name="Net-(U3-Pad3)">
-      <node ref="U6" pin="7"/>
-      <node ref="U4" pin="10"/>
-      <node ref="U3" pin="3"/>
-    </net>
-    <net code="15" name="Net-(.4-Pad1)">
-      <node ref=".4" pin="1"/>
+    <net code="10" name="Net-(.14-Pad2)">
+      <node ref=".14" pin="2"/>
       <node ref="U5" pin="10"/>
     </net>
-    <net code="16" name="Net-(.1-Pad1)">
-      <node ref="U5" pin="13"/>
-      <node ref=".1" pin="1"/>
+    <net code="11" name="Net-(.12-Pad2)">
+      <node ref=".12" pin="2"/>
+      <node ref="U5" pin="2"/>
     </net>
-    <net code="17" name="Net-(.2-Pad1)">
-      <node ref=".2" pin="1"/>
-      <node ref="U5" pin="12"/>
+    <net code="12" name="Net-(.11-Pad2)">
+      <node ref=".11" pin="2"/>
+      <node ref="U5" pin="3"/>
     </net>
-    <net code="18" name="Net-(.3-Pad1)">
-      <node ref="U5" pin="11"/>
-      <node ref=".3" pin="1"/>
+    <net code="13" name="Net-(.10-Pad2)">
+      <node ref=".10" pin="2"/>
+      <node ref="U5" pin="4"/>
     </net>
-    <net code="19" name="Net-(C1-Pad1)">
-      <node ref="SW1" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="U1" pin="2"/>
-      <node ref="C1" pin="1"/>
-      <node ref="R1" pin="2"/>
+    <net code="14" name="Net-(.9-Pad2)">
+      <node ref=".9" pin="2"/>
+      <node ref="U5" pin="6"/>
     </net>
-    <net code="20" name="Net-(.5-Pad1)">
+    <net code="15" name="Net-(.8-Pad2)">
+      <node ref=".8" pin="2"/>
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="16" name="Net-(.13-Pad2)">
+      <node ref=".13" pin="2"/>
       <node ref="U5" pin="9"/>
-      <node ref=".5" pin="1"/>
     </net>
-    <net code="21" name="Net-(.6-Pad1)">
-      <node ref="U5" pin="15"/>
-      <node ref=".6" pin="1"/>
+    <net code="17" name="Net-(U4-Pad14)">
+      <node ref="U8" pin="14"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U6" pin="6"/>
     </net>
-    <net code="22" name="Net-(.7-Pad1)">
-      <node ref="U5" pin="14"/>
-      <node ref=".7" pin="1"/>
-    </net>
-    <net code="23" name="Net-(.14-Pad1)">
-      <node ref=".14" pin="1"/>
-      <node ref="U6" pin="14"/>
-    </net>
-    <net code="24" name="Net-(.13-Pad1)">
-      <node ref="U6" pin="15"/>
-      <node ref=".13" pin="1"/>
-    </net>
-    <net code="25" name="Net-(.12-Pad1)">
-      <node ref="U6" pin="9"/>
-      <node ref=".12" pin="1"/>
-    </net>
-    <net code="26" name="Net-(.11-Pad1)">
-      <node ref=".11" pin="1"/>
-      <node ref="U6" pin="10"/>
-    </net>
-    <net code="27" name="Net-(.10-Pad1)">
-      <node ref="U6" pin="11"/>
-      <node ref=".10" pin="1"/>
-    </net>
-    <net code="28" name="Net-(.9-Pad1)">
-      <node ref=".9" pin="1"/>
-      <node ref="U6" pin="12"/>
-    </net>
-    <net code="29" name="Net-(.8-Pad1)">
-      <node ref="U6" pin="13"/>
-      <node ref=".8" pin="1"/>
-    </net>
-    <net code="30" name="GND">
-      <node ref="C1" pin="2"/>
-      <node ref="U4" pin="5"/>
-      <node ref="U3" pin="8"/>
-      <node ref="U5" pin="8"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="U3" pin="9"/>
-      <node ref="P1" pin="2"/>
-      <node ref="U2" pin="7"/>
-      <node ref="U2" pin="8"/>
-      <node ref="U6" pin="5"/>
-      <node ref="U5" pin="5"/>
-      <node ref="U6" pin="8"/>
-      <node ref="AFF2" pin="1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="SW1" pin="1"/>
-      <node ref="P3" pin="2"/>
-      <node ref="AFF1" pin="6"/>
-      <node ref="AFF1" pin="1"/>
-      <node ref="AFF2" pin="6"/>
-      <node ref="U1" pin="7"/>
-      <node ref="U4" pin="8"/>
-    </net>
-    <net code="31" name="Net-(U4-Pad13)">
+    <net code="18" name="Net-(U4-Pad13)">
+      <node ref="U6" pin="2"/>
+      <node ref="U8" pin="1"/>
       <node ref="U4" pin="13"/>
     </net>
-    <net code="32" name="Net-(AFF1-Pad7)">
-      <node ref="AFF1" pin="7"/>
+    <net code="19" name="Net-(U4-Pad11)">
+      <node ref="U6" pin="7"/>
+      <node ref="U4" pin="11"/>
+      <node ref="U8" pin="11"/>
     </net>
-    <net code="33" name="Net-(U4-Pad12)">
-      <node ref="U4" pin="12"/>
+    <net code="20" name="GND">
+      <node ref="C9" pin="2"/>
+      <node ref="U7" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U1" pin="7"/>
+      <node ref="U2" pin="7"/>
+      <node ref="P1" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U9" pin="1"/>
+      <node ref="U7" pin="5"/>
+      <node ref="U8" pin="5"/>
+      <node ref="U6" pin="8"/>
+      <node ref="U3" pin="5"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U4" pin="9"/>
+      <node ref="U6" pin="5"/>
+      <node ref="U8" pin="8"/>
+      <node ref="U2" pin="8"/>
+      <node ref="U5" pin="5"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U4" pin="8"/>
     </net>
-    <net code="34" name="+12V">
-      <node ref="P2" pin="1"/>
-      <node ref="K1" pin="5"/>
+    <net code="21" name="Net-(U8-Pad12)">
+      <node ref="U8" pin="12"/>
     </net>
-    <net code="35" name="VDD">
-      <node ref="U5" pin="4"/>
-      <node ref="U3" pin="16"/>
-      <node ref="D1" pin="1"/>
-      <node ref="K1" pin="8"/>
+    <net code="22" name="Net-(U8-Pad13)">
+      <node ref="U8" pin="13"/>
+    </net>
+    <net code="23" name="/Ctrl">
+      <node ref="U4" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U8" pin="6"/>
+    </net>
+    <net code="24" name="Net-(.3-Pad1)">
+      <node ref=".3" pin="1"/>
+      <node ref="U6" pin="11"/>
+    </net>
+    <net code="25" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
+      <node ref="U8" pin="10"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="26" name="Net-(.12-Pad1)">
+      <node ref=".12" pin="1"/>
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="27" name="Net-(.4-Pad1)">
+      <node ref="U6" pin="10"/>
+      <node ref=".4" pin="1"/>
+    </net>
+    <net code="28" name="Net-(.2-Pad1)">
+      <node ref=".2" pin="1"/>
+      <node ref="U6" pin="12"/>
+    </net>
+    <net code="29" name="Net-(.1-Pad1)">
+      <node ref=".1" pin="1"/>
+      <node ref="U6" pin="13"/>
+    </net>
+    <net code="30" name="Net-(.7-Pad1)">
+      <node ref=".7" pin="1"/>
+      <node ref="U6" pin="14"/>
+    </net>
+    <net code="31" name="Net-(.6-Pad1)">
+      <node ref=".6" pin="1"/>
+      <node ref="U6" pin="15"/>
+    </net>
+    <net code="32" name="Net-(U3-Pad1)">
       <node ref="U4" pin="4"/>
-      <node ref="U4" pin="16"/>
-      <node ref="U5" pin="3"/>
-      <node ref="U5" pin="16"/>
-      <node ref="P1" pin="1"/>
-      <node ref="U1" pin="14"/>
-      <node ref="U6" pin="4"/>
-      <node ref="U6" pin="3"/>
-      <node ref="U2" pin="6"/>
-      <node ref="U2" pin="5"/>
-      <node ref="U6" pin="16"/>
-      <node ref="R2" pin="1"/>
-      <node ref="R1" pin="1"/>
+      <node ref="U8" pin="7"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="33" name="Net-(.11-Pad1)">
+      <node ref=".11" pin="1"/>
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="34" name="Net-(.10-Pad1)">
+      <node ref="U3" pin="11"/>
+      <node ref=".10" pin="1"/>
+    </net>
+    <net code="35" name="Net-(.9-Pad1)">
+      <node ref="U3" pin="12"/>
+      <node ref=".9" pin="1"/>
+    </net>
+    <net code="36" name="Net-(.8-Pad1)">
+      <node ref=".8" pin="1"/>
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="37" name="Net-(.14-Pad1)">
+      <node ref="U3" pin="14"/>
+      <node ref=".14" pin="1"/>
+    </net>
+    <net code="38" name="Net-(.13-Pad1)">
+      <node ref=".13" pin="1"/>
+      <node ref="U3" pin="15"/>
+    </net>
+    <net code="39" name="Net-(U3-Pad2)">
+      <node ref="U4" pin="5"/>
+      <node ref="U8" pin="2"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="40" name="Net-(.5-Pad1)">
+      <node ref="U6" pin="9"/>
+      <node ref=".5" pin="1"/>
+    </net>
+    <net code="41" name="Net-(R4-Pad2)">
+      <node ref="U9" pin="7"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="42" name="Net-(C9-Pad1)">
+      <node ref="R5" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U9" pin="6"/>
+      <node ref="U9" pin="2"/>
+    </net>
+    <net code="43" name="ck">
+      <node ref="U9" pin="3"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="44" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="U9" pin="5"/>
+    </net>
+    <net code="45" name="VDD">
       <node ref="U2" pin="16"/>
+      <node ref="U6" pin="16"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U4" pin="16"/>
+      <node ref="U6" pin="4"/>
+      <node ref="R1" pin="1"/>
+      <node ref="RL1" pin="A1"/>
+      <node ref="P1" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U3" pin="3"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U8" pin="4"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U8" pin="16"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U2" pin="6"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U3" pin="16"/>
+      <node ref="U9" pin="8"/>
+      <node ref="C8" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="U9" pin="4"/>
+      <node ref="C5" pin="1"/>
     </net>
-    <net code="36" name="Net-(K1-Pad12)">
-      <node ref="K1" pin="12"/>
+    <net code="46" name="Net-(P4-Pad1)">
+      <node ref="RL1" pin="11"/>
+      <node ref="R6" pin="1"/>
+      <node ref="P4" pin="1"/>
     </net>
-    <net code="37" name="GNDA">
-      <node ref="P2" pin="2"/>
-      <node ref="P5" pin="2"/>
+    <net code="47" name="Net-(D2-Pad2)">
+      <node ref="R6" pin="2"/>
+      <node ref="D2" pin="2"/>
     </net>
-    <net code="38" name="Net-(K1-Pad16)">
-      <node ref="K1" pin="16"/>
+    <net code="48" name="Net-(U4-Pad12)">
+      <node ref="U4" pin="12"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U8" pin="9"/>
     </net>
-    <net code="39" name="Net-(K1-Pad1)">
-      <node ref="K1" pin="1"/>
-      <node ref="P5" pin="1"/>
+    <net code="49" name="Net-(R3-Pad1)">
+      <node ref="U8" pin="3"/>
+      <node ref="R3" pin="1"/>
     </net>
-    <net code="40" name="Net-(K1-Pad14)">
-      <node ref="K1" pin="14"/>
-    </net>
-    <net code="41" name="Net-(AFF2-Pad7)">
-      <node ref="AFF2" pin="7"/>
-    </net>
-    <net code="42" name="Net-(K1-Pad3)">
-      <node ref="K1" pin="3"/>
-    </net>
-    <net code="43" name="Net-(Q1-Pad2)">
+    <net code="50" name="Net-(Q1-Pad2)">
       <node ref="Q1" pin="2"/>
       <node ref="R3" pin="2"/>
     </net>
-    <net code="44" name="Net-(U1-Pad3)">
+    <net code="51" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="RL1" pin="A2"/>
+    </net>
+    <net code="52" name="Net-(C1-Pad1)">
+      <node ref="R1" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="53" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="54" name="+12V">
+      <node ref="RL1" pin="14"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="55" name="Net-(RL1-Pad12)">
+      <node ref="RL1" pin="12"/>
+    </net>
+    <net code="56" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="57" name="Net-(U3-Pad6)">
+      <node ref="U3" pin="6"/>
+      <node ref="U8" pin="15"/>
+      <node ref="U4" pin="10"/>
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="58" name="Net-(U1-Pad3)">
       <node ref="U1" pin="3"/>
       <node ref="U2" pin="3"/>
     </net>
-    <net code="46" name="Net-(R3-Pad1)">
-      <node ref="U4" pin="3"/>
-      <node ref="R3" pin="1"/>
+    <net code="59" name="Earth">
+      <node ref="P2" pin="2"/>
+      <node ref="P4" pin="2"/>
     </net>
-    <net code="47" name="Net-(.2-Pad2)">
-      <node ref=".2" pin="2"/>
-      <node ref="AFF1" pin="9"/>
-    </net>
-    <net code="48" name="Net-(.12-Pad2)">
-      <node ref="AFF2" pin="4"/>
-      <node ref=".12" pin="2"/>
-    </net>
-    <net code="49" name="Net-(.14-Pad2)">
-      <node ref="AFF2" pin="3"/>
-      <node ref=".14" pin="2"/>
-    </net>
-    <net code="50" name="Net-(.13-Pad2)">
-      <node ref="AFF2" pin="2"/>
-      <node ref=".13" pin="2"/>
-    </net>
-    <net code="51" name="Net-(.1-Pad2)">
-      <node ref="AFF1" pin="10"/>
-      <node ref=".1" pin="2"/>
-    </net>
-    <net code="52" name="Net-(.11-Pad2)">
-      <node ref="AFF2" pin="5"/>
-      <node ref=".11" pin="2"/>
-    </net>
-    <net code="53" name="Net-(.3-Pad2)">
-      <node ref=".3" pin="2"/>
-      <node ref="AFF1" pin="8"/>
-    </net>
-    <net code="54" name="Net-(.4-Pad2)">
-      <node ref="AFF1" pin="5"/>
-      <node ref=".4" pin="2"/>
-    </net>
-    <net code="55" name="Net-(.5-Pad2)">
-      <node ref=".5" pin="2"/>
-      <node ref="AFF1" pin="4"/>
-    </net>
-    <net code="56" name="Net-(.6-Pad2)">
-      <node ref=".6" pin="2"/>
-      <node ref="AFF1" pin="2"/>
-    </net>
-    <net code="57" name="Net-(.7-Pad2)">
-      <node ref=".7" pin="2"/>
-      <node ref="AFF1" pin="3"/>
-    </net>
-    <net code="58" name="Net-(.8-Pad2)">
-      <node ref=".8" pin="2"/>
-      <node ref="AFF2" pin="10"/>
-    </net>
-    <net code="59" name="Net-(.9-Pad2)">
-      <node ref="AFF2" pin="9"/>
-      <node ref=".9" pin="2"/>
-    </net>
-    <net code="60" name="Net-(.10-Pad2)">
-      <node ref="AFF2" pin="8"/>
-      <node ref=".10" pin="2"/>
+    <net code="60" name="Net-(U1-Pad4)">
+      <node ref="U4" pin="15"/>
+      <node ref="U4" pin="7"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U2" pin="4"/>
     </net>
   </nets>
 </export>
