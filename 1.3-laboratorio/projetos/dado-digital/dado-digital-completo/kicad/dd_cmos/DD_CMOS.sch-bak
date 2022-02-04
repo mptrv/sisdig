@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Dado Digital - CMOS"
-Date "2022-02-02"
+Date "2022-02-03"
 Rev "1.0"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
@@ -567,17 +567,6 @@ Wire Wire Line
 Connection ~ 2200 1550
 Wire Wire Line
 	2200 2300 2200 2100
-$Comp
-L DD_CMOS-rescue:CONN_01X02 P4
-U 1 1 574CE7B0
-P 10800 5350
-F 0 "P4" H 10800 5500 50  0000 C CNN
-F 1 "CONN_01X02" V 10900 5350 50  0001 C CNN
-F 2 "" H 10800 5350 50  0000 C CNN
-F 3 "" H 10800 5350 50  0000 C CNN
-	1    10800 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 5650 9600 5650
 Wire Wire Line
@@ -597,17 +586,6 @@ Wire Wire Line
 	7400 4600 7500 4600
 Wire Wire Line
 	9100 5650 9200 5650
-$Comp
-L DD_CMOS-rescue:CONN_01X02 P1
-U 1 1 574F8BD1
-P 800 950
-F 0 "P1" H 800 1100 50  0000 C CNN
-F 1 "CONN_01X02" V 900 950 50  0001 C CNN
-F 2 "~" H 800 950 50  0000 C CNN
-F 3 "" H 800 950 50  0000 C CNN
-	1    800  950 
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR016
 U 1 1 574F8DC8
@@ -675,17 +653,6 @@ Wire Wire Line
 	1050 900  1050 850 
 Wire Wire Line
 	1050 1000 1050 1050
-$Comp
-L DD_CMOS-rescue:CONN_01X02 P2
-U 1 1 574FB283
-P 800 1600
-F 0 "P2" H 800 1750 50  0000 C CNN
-F 1 "CONN_01X02" V 900 1600 50  0001 C CNN
-F 2 "~" H 800 1600 50  0000 C CNN
-F 3 "" H 800 1600 50  0000 C CNN
-	1    800  1600
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1000 1650 1050 1650
 Wire Wire Line
@@ -1099,17 +1066,6 @@ Wire Wire Line
 	7600 3050 7450 3050
 Wire Wire Line
 	7450 3050 7450 3700
-$Comp
-L Display_Character:SBC18-11SURKCGKWA U5
-U 1 1 6212A212
-P 10100 1350
-F 0 "U5" H 10100 1900 50  0000 C CNN
-F 1 "C-1505SR-BW" V 10350 1500 50  0000 C CNN
-F 2 "Display_7Segment:SBC18-11SURKCGKWA" H 9370 640 50  0001 L CNN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=95807997a35626b3d5d4ddbe5548a7f1a69f20&type=M&term=A1505S" H 10100 1540 50  0001 L CNN
-	1    10100 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9600 1050 9800 1050
 Wire Wire Line
@@ -1126,17 +1082,6 @@ Wire Wire Line
 	9600 1550 9800 1550
 Wire Wire Line
 	9700 1750 9800 1750
-$Comp
-L Display_Character:SBC18-11SURKCGKWA U7
-U 1 1 6216BF63
-P 10100 2850
-F 0 "U7" H 10100 3400 50  0000 C CNN
-F 1 "C-1505SR-BW" V 10350 3000 50  0000 C CNN
-F 2 "Display_7Segment:SBC18-11SURKCGKWA" H 9370 2140 50  0001 L CNN
-F 3 "https://www.datasheetarchive.com/pdf/download.php?id=95807997a35626b3d5d4ddbe5548a7f1a69f20&type=M&term=A1505S" H 10100 3040 50  0001 L CNN
-	1    10100 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9600 2550 9800 2550
 Wire Wire Line
@@ -1583,20 +1528,16 @@ F 3 "" H 3850 7450 50  0000 C CNN
 $EndComp
 Text GLabel 4500 6650 2    60   Input ~ 0
 ck
-Text Notes 4800 6600 0    60   ~ 0
+Text Notes 4850 6450 0    60   ~ 0
 f ≅ 2 Hz
-Text Notes 4800 6750 0    60   ~ 0
+Text Notes 4850 6600 0    60   ~ 0
 D ≅ 33%
-Text Notes 4850 7500 0    50   ~ 0
+Text Notes 4900 7300 0    50   ~ 0
 Para f ≅ 100Hz:\n\n  C = 22 nF\n\n  ou\n\n  RA = RB = 4k7Ω
 Wire Notes Line
-	4800 6900 5650 6900
+	4850 6700 5700 6700
 Wire Notes Line
-	5650 6900 5650 7550
-Wire Notes Line
-	5650 7550 4800 7550
-Wire Notes Line
-	4800 7550 4800 6900
+	5700 7350 4850 7350
 Text Notes 1900 4500 0    60   ~ 0
 Pinos de alimentação de\n     CIs multiparte
 Text Notes 2500 2950 0    60   ~ 0
@@ -1644,7 +1585,7 @@ L DD_CMOS-rescue:R R6
 U 1 1 62049194
 P 10300 5500
 F 0 "R6" H 10370 5546 50  0000 L CNN
-F 1 "R" H 10370 5455 50  0000 L CNN
+F 1 "1k" H 10370 5455 50  0000 L CNN
 F 2 "" V 10230 5500 50  0000 C CNN
 F 3 "" H 10300 5500 50  0000 C CNN
 	1    10300 5500
@@ -1655,7 +1596,7 @@ L Device:LED_ALT D2
 U 1 1 6204A61B
 P 10300 5850
 F 0 "D2" V 10339 5732 50  0000 R CNN
-F 1 "VD" V 10248 5732 50  0000 R CNN
+F 1 "Verde" V 10248 5732 50  0000 R CNN
 F 2 "" H 10300 5850 50  0001 C CNN
 F 3 "~" H 10300 5850 50  0001 C CNN
 	1    10300 5850
@@ -1679,4 +1620,67 @@ Wire Wire Line
 Wire Wire Line
 	10300 6000 10300 6050
 Connection ~ 10300 5300
+Text Notes 4900 7650 0    50   ~ 0
+Para f ≅ 220Hz:\n\n  C = 10 nF
+Wire Notes Line
+	5700 7700 4850 7700
+Wire Notes Line
+	5700 6700 5700 7700
+Wire Notes Line
+	4850 6700 4850 7700
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 620818EA
+P 800 1000
+F 0 "J1" H 800 800 50  0000 C CNN
+F 1 "Conn_01x02" H 718 766 50  0001 C CNN
+F 2 "" H 800 1000 50  0001 C CNN
+F 3 "~" H 800 1000 50  0001 C CNN
+	1    800  1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 620839E4
+P 800 1650
+F 0 "J2" H 800 1450 50  0000 C CNN
+F 1 "Conn_01x02" H 718 1416 50  0001 C CNN
+F 2 "" H 800 1650 50  0001 C CNN
+F 3 "~" H 800 1650 50  0001 C CNN
+	1    800  1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 62084076
+P 10800 5300
+F 0 "J3" H 10750 5400 50  0000 L CNN
+F 1 "Conn_01x02" H 10718 5066 50  0001 C CNN
+F 2 "" H 10800 5300 50  0001 C CNN
+F 3 "~" H 10800 5300 50  0001 C CNN
+	1    10800 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:KCSA02-105 U5
+U 1 1 620A9A20
+P 10100 1350
+F 0 "U5" H 10100 1900 50  0000 C CNN
+F 1 "SM256-1" V 10350 1400 50  0000 C CNN
+F 2 "Display_7Segment:KCSC02-105" H 10100 750 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-105(Ver.10A).pdf" H 9600 1825 50  0001 L CNN
+	1    10100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:KCSA02-105 U7
+U 1 1 620AA4E5
+P 10100 2850
+F 0 "U7" H 10100 3400 50  0000 C CNN
+F 1 "SM256-1" V 10350 2900 50  0000 C CNN
+F 2 "Display_7Segment:KCSC02-105" H 10100 2250 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-105(Ver.10A).pdf" H 9600 3325 50  0001 L CNN
+	1    10100 2850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
