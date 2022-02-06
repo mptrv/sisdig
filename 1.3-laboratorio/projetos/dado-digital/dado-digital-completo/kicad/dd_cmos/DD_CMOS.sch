@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Dado Digital - CMOS"
-Date "2022-02-05"
+Date "2022-02-06"
 Rev "1.0"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
@@ -533,8 +533,8 @@ F 3 "" H 1250 1050 50  0000 C CNN
 $EndComp
 Connection ~ 1050 1000
 NoConn ~ 9700 3250
-NoConn ~ 8850 4400
-NoConn ~ 8850 4600
+NoConn ~ 8800 4400
+NoConn ~ 8800 4600
 $Comp
 L power:GND #PWR026
 U 1 1 574FD915
@@ -959,39 +959,6 @@ Wire Wire Line
 	8600 3550 8700 3550
 Wire Wire Line
 	8700 3550 8700 3700
-$Comp
-L eec:CD4585B U5
-U 1 1 6220AFA5
-P 7400 4400
-F 0 "U5" H 8100 4665 50  0000 C CNN
-F 1 "CD4585B" H 8100 4574 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 7400 4800 50  0001 L CNN
-F 3 "" H 7400 4900 50  0001 L CNN
-F 4 "4" H 7400 5000 50  0001 L CNN "Bits"
-F 5 "SCHS091B" H 7400 5100 50  0001 L CNN "Datasheet Version"
-F 6 "8" H 7400 5200 50  0001 L CNN "F  Nom VoltageMaxMhz"
-F 7 "0.3" H 7400 5300 50  0001 L CNN "ICC  Nom VoltageMaxmA"
-F 8 "CMOS" H 7400 5400 50  0001 L CNN "Input Type"
-F 9 "-55 to 125" H 7400 5500 50  0001 L CNN "Operating Temperature RangeC"
-F 10 "4/-4" H 7400 5600 50  0001 L CNN "Output Drive IOLIOHMaxmA"
-F 11 "CMOS" H 7400 5700 50  0001 L CNN "Output Type"
-F 12 "Military" H 7400 5800 50  0001 L CNN "Rating"
-F 13 "CD4000" H 7400 5900 50  0001 L CNN "Technology Family"
-F 14 "18" H 7400 6000 50  0001 L CNN "VCC Max V"
-F 15 "3" H 7400 6100 50  0001 L CNN "VCC Min V"
-F 16 "10" H 7400 6200 50  0001 L CNN "Voltage Nom V"
-F 17 "IC" H 7400 6300 50  0001 L CNN "category"
-F 18 "19299328" H 7400 6400 50  0001 L CNN "ciiva ids"
-F 19 "97480692d6917754" H 7400 6500 50  0001 L CNN "library id"
-F 20 "Texas Instruments" H 7400 6600 50  0001 L CNN "manufacturer"
-F 21 "N0016A" H 7400 6700 50  0001 L CNN "package"
-F 22 "1459326111" H 7400 6800 50  0001 L CNN "release date"
-F 23 "3DC5686F-0A64-423F-ACFB-3E2A0862EF0D" H 7400 6900 50  0001 L CNN "vault revision"
-F 24 "yes" H 7400 7000 50  0001 L CNN "imported"
-F 25 "250" H 7400 7100 50  0001 L CNN "tpd  Nom VoltageMaxns"
-	1    7400 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 5600 7500 5600
 Wire Wire Line
@@ -1035,9 +1002,9 @@ Connection ~ 7300 4400
 Wire Wire Line
 	7300 4400 7300 4200
 Wire Wire Line
-	8850 4600 8700 4600
+	8800 4600 8700 4600
 Wire Wire Line
-	8850 4400 8700 4400
+	8800 4400 8700 4400
 Wire Wire Line
 	8700 4500 9100 4500
 Wire Wire Line
@@ -1235,9 +1202,9 @@ Text Notes 2400 1100 0    60   ~ 0
 Wire Wire Line
 	7500 4500 7350 4500
 Text Label 7350 4500 0    60   ~ 0
-Ctrl
+ctrl
 Text Label 4650 1800 2    60   ~ 0
-Ctrl
+ctrl
 Wire Wire Line
 	4650 1650 4650 1800
 Connection ~ 4650 1650
@@ -1249,7 +1216,7 @@ Text Notes 7750 700  0    60   ~ 0
 Decodificadores
 Text Notes 9875 700  0    60   ~ 0
 "Displays"
-Text Notes 7800 6100 0    60   ~ 0
+Text Notes 7825 6075 0    60   ~ 0
 Comparador
 Text Notes 9950 4250 0    60   ~ 0
 Atuador
@@ -1520,10 +1487,10 @@ F 3 "" H 9450 3150 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR032
 U 1 1 62167A6C
 P 10300 6050
-F 0 "#PWR?" H 10300 5800 50  0001 C CNN
+F 0 "#PWR032" H 10300 5800 50  0001 C CNN
 F 1 "Earth" H 10300 5900 50  0001 C CNN
 F 2 "" H 10300 6050 50  0001 C CNN
 F 3 "~" H 10300 6050 50  0001 C CNN
@@ -1709,4 +1676,40 @@ F 3 "" H 5300 5700 50  0000 C CNN
 	1    5300 5700
 	1    0    0    -1  
 $EndComp
+$Comp
+L eec:CD74HCT85 U5
+U 1 1 620294E1
+P 7400 4400
+F 0 "U5" H 8100 4665 50  0000 C CNN
+F 1 "CD74HCT85" H 8100 4574 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 7400 4800 50  0001 L CNN
+F 3 "" H 7400 4900 50  0001 L CNN
+F 4 "4" H 7400 5000 50  0001 L CNN "Bits"
+F 5 "SCHS136E" H 7400 5100 50  0001 L CNN "Datasheet Version"
+F 6 "70" H 7400 5200 50  0001 L CNN "F  Nom VoltageMaxMhz"
+F 7 "0.08" H 7400 5300 50  0001 L CNN "ICC  Nom VoltageMaxmA"
+F 8 "TTL" H 7400 5400 50  0001 L CNN "Input Type"
+F 9 "-55 to 125" H 7400 5500 50  0001 L CNN "Operating Temperature RangeC"
+F 10 "4/-4" H 7400 5600 50  0001 L CNN "Output Drive IOLIOHMaxmA"
+F 11 "CMOS" H 7400 5700 50  0001 L CNN "Output Type"
+F 12 "Catalog" H 7400 5800 50  0001 L CNN "Rating"
+F 13 "No" H 7400 5900 50  0001 L CNN "Schmitt Trigger"
+F 14 "HCT" H 7400 6000 50  0001 L CNN "Technology Family"
+F 15 "5.5" H 7400 6100 50  0001 L CNN "VCC Max V"
+F 16 "4.5" H 7400 6200 50  0001 L CNN "VCC Min V"
+F 17 "4.5" H 7400 6300 50  0001 L CNN "Voltage Nom V"
+F 18 "IC" H 7400 6400 50  0001 L CNN "category"
+F 19 "1166062" H 7400 6500 50  0001 L CNN "ciiva ids"
+F 20 "fa29bd229b596f21" H 7400 6600 50  0001 L CNN "library id"
+F 21 "Texas Instruments" H 7400 6700 50  0001 L CNN "manufacturer"
+F 22 "D0016A" H 7400 6800 50  0001 L CNN "package"
+F 23 "1459323913" H 7400 6900 50  0001 L CNN "release date"
+F 24 "D5493793-D314-4725-94A2-C5A5787CEF4A" H 7400 7000 50  0001 L CNN "vault revision"
+F 25 "yes" H 7400 7100 50  0001 L CNN "imported"
+F 26 "50" H 7400 7200 50  0001 L CNN "tpd  Nom VoltageMaxns"
+	1    7400 4400
+	1    0    0    -1  
+$EndComp
+Text Label 8750 4500 0    60   ~ 0
+comando
 $EndSCHEMATC

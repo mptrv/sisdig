@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Dado Digital - CMOS"
-Date "2022-02-05"
+Date "2022-02-06"
 Rev "1.0"
 Comp "ETE102 - Fundamentos de Circuitos Digitais"
 Comment1 "Licença: CC-BY-SA (http://creativecommons.org/licenses/by-sa/4.0/)"
@@ -533,8 +533,8 @@ F 3 "" H 1250 1050 50  0000 C CNN
 $EndComp
 Connection ~ 1050 1000
 NoConn ~ 9700 3250
-NoConn ~ 8850 4400
-NoConn ~ 8850 4600
+NoConn ~ 8800 4400
+NoConn ~ 8800 4600
 $Comp
 L power:GND #PWR026
 U 1 1 574FD915
@@ -959,39 +959,6 @@ Wire Wire Line
 	8600 3550 8700 3550
 Wire Wire Line
 	8700 3550 8700 3700
-$Comp
-L eec:CD4585B U5
-U 1 1 6220AFA5
-P 7400 4400
-F 0 "U5" H 8100 4665 50  0000 C CNN
-F 1 "CD4585B" H 8100 4574 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 7400 4800 50  0001 L CNN
-F 3 "" H 7400 4900 50  0001 L CNN
-F 4 "4" H 7400 5000 50  0001 L CNN "Bits"
-F 5 "SCHS091B" H 7400 5100 50  0001 L CNN "Datasheet Version"
-F 6 "8" H 7400 5200 50  0001 L CNN "F  Nom VoltageMaxMhz"
-F 7 "0.3" H 7400 5300 50  0001 L CNN "ICC  Nom VoltageMaxmA"
-F 8 "CMOS" H 7400 5400 50  0001 L CNN "Input Type"
-F 9 "-55 to 125" H 7400 5500 50  0001 L CNN "Operating Temperature RangeC"
-F 10 "4/-4" H 7400 5600 50  0001 L CNN "Output Drive IOLIOHMaxmA"
-F 11 "CMOS" H 7400 5700 50  0001 L CNN "Output Type"
-F 12 "Military" H 7400 5800 50  0001 L CNN "Rating"
-F 13 "CD4000" H 7400 5900 50  0001 L CNN "Technology Family"
-F 14 "18" H 7400 6000 50  0001 L CNN "VCC Max V"
-F 15 "3" H 7400 6100 50  0001 L CNN "VCC Min V"
-F 16 "10" H 7400 6200 50  0001 L CNN "Voltage Nom V"
-F 17 "IC" H 7400 6300 50  0001 L CNN "category"
-F 18 "19299328" H 7400 6400 50  0001 L CNN "ciiva ids"
-F 19 "97480692d6917754" H 7400 6500 50  0001 L CNN "library id"
-F 20 "Texas Instruments" H 7400 6600 50  0001 L CNN "manufacturer"
-F 21 "N0016A" H 7400 6700 50  0001 L CNN "package"
-F 22 "1459326111" H 7400 6800 50  0001 L CNN "release date"
-F 23 "3DC5686F-0A64-423F-ACFB-3E2A0862EF0D" H 7400 6900 50  0001 L CNN "vault revision"
-F 24 "yes" H 7400 7000 50  0001 L CNN "imported"
-F 25 "250" H 7400 7100 50  0001 L CNN "tpd  Nom VoltageMaxns"
-	1    7400 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 5600 7500 5600
 Wire Wire Line
@@ -1035,9 +1002,9 @@ Connection ~ 7300 4400
 Wire Wire Line
 	7300 4400 7300 4200
 Wire Wire Line
-	8850 4600 8700 4600
+	8800 4600 8700 4600
 Wire Wire Line
-	8850 4400 8700 4400
+	8800 4400 8700 4400
 Wire Wire Line
 	8700 4500 9100 4500
 Wire Wire Line
@@ -1209,17 +1176,6 @@ F 3 "" H 5300 4500 50  0000 C CNN
 	1    5300 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR021
-U 1 1 62483EBD
-P 5300 5700
-F 0 "#PWR021" H 5300 5450 50  0001 C CNN
-F 1 "GND" H 5300 5550 50  0000 C CNN
-F 2 "" H 5300 5700 50  0000 C CNN
-F 3 "" H 5300 5700 50  0000 C CNN
-	1    5300 5700
-	1    0    0    -1  
-$EndComp
 Text Notes 3925 4500 0    60   ~ 0
 Capacitores de "bypass"
 Text Notes 3900 4750 0    60   ~ 0
@@ -1237,164 +1193,6 @@ F 3 "~" H 10550 5450 50  0001 C CNN
 	1    10550 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4500 6650 4350 6650
-Wire Wire Line
-	4450 7100 4450 6850
-Wire Wire Line
-	4450 6850 4350 6850
-Wire Wire Line
-	4450 7450 4450 7400
-Wire Wire Line
-	3850 7450 3850 7250
-$Comp
-L DD_CMOS-rescue:C C7
-U 1 1 627297A8
-P 4450 7250
-F 0 "C7" H 4565 7296 50  0000 L CNN
-F 1 "10nF" H 4565 7205 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4488 7100 50  0001 C CNN
-F 3 "" H 4450 7250 50  0000 C CNN
-	1    4450 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 6250 3950 6250
-Connection ~ 3750 6250
-Wire Wire Line
-	3750 6450 3750 6250
-Wire Wire Line
-	3050 6250 3050 6300
-Connection ~ 3050 6250
-Wire Wire Line
-	3950 6250 3950 6450
-Wire Wire Line
-	3050 6250 3750 6250
-Wire Wire Line
-	3050 6200 3050 6250
-Connection ~ 3250 7050
-Wire Wire Line
-	3350 7050 3250 7050
-Wire Wire Line
-	3050 7050 3050 7100
-Connection ~ 3050 7050
-Wire Wire Line
-	3250 6850 3350 6850
-Wire Wire Line
-	3250 7050 3250 6850
-Wire Wire Line
-	3050 7050 3250 7050
-Wire Wire Line
-	3050 6650 3050 6700
-Connection ~ 3050 6650
-Wire Wire Line
-	3350 6650 3050 6650
-Wire Wire Line
-	3050 7000 3050 7050
-$Comp
-L Pessoal:LM555 U4
-U 1 1 62604BD1
-P 3850 6850
-F 0 "U4" H 4200 7350 50  0000 C CNN
-F 1 "LM555" H 4200 7250 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4500 6450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4700 6450 50  0001 C CNN
-	1    3850 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 7400 3050 7450
-Wire Wire Line
-	3050 6600 3050 6650
-$Comp
-L power:VDD #PWR013
-U 1 1 62533DCA
-P 3050 6200
-F 0 "#PWR013" H 3050 6050 50  0001 C CNN
-F 1 "VDD" H 3050 6350 50  0000 C CNN
-F 2 "" H 3050 6200 50  0000 C CNN
-F 3 "" H 3050 6200 50  0000 C CNN
-	1    3050 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 62505C6C
-P 4450 7450
-F 0 "#PWR018" H 4450 7200 50  0001 C CNN
-F 1 "GND" H 4450 7300 50  0000 C CNN
-F 2 "" H 4450 7450 50  0000 C CNN
-F 3 "" H 4450 7450 50  0000 C CNN
-	1    4450 7450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR014
-U 1 1 625054FD
-P 3050 7450
-F 0 "#PWR014" H 3050 7200 50  0001 C CNN
-F 1 "GND" H 3050 7300 50  0000 C CNN
-F 2 "" H 3050 7450 50  0000 C CNN
-F 3 "" H 3050 7450 50  0000 C CNN
-	1    3050 7450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C3
-U 1 1 624F4457
-P 3050 7250
-F 0 "C3" H 2950 7300 50  0000 R CNN
-F 1 "1uF/16V" H 2950 7200 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3088 7100 50  0001 C CNN
-F 3 "" H 3050 7250 50  0000 C CNN
-	1    3050 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L DD_CMOS-rescue:R R3
-U 1 1 624F3251
-P 3050 6450
-F 0 "R3" H 2975 6500 50  0000 R CNN
-F 1 "220k" H 2975 6400 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 6450 50  0001 C CNN
-F 3 "" H 3050 6450 50  0000 C CNN
-	1    3050 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L DD_CMOS-rescue:R R4
-U 1 1 624F2A5C
-P 3050 6850
-F 0 "R4" H 2981 6896 50  0000 R CNN
-F 1 "220k" H 2981 6805 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 6850 50  0001 C CNN
-F 3 "" H 3050 6850 50  0000 C CNN
-	1    3050 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 624EEC6B
-P 3850 7450
-F 0 "#PWR017" H 3850 7200 50  0001 C CNN
-F 1 "GND" H 3850 7300 50  0000 C CNN
-F 2 "" H 3850 7450 50  0000 C CNN
-F 3 "" H 3850 7450 50  0000 C CNN
-	1    3850 7450
-	1    0    0    -1  
-$EndComp
-Text GLabel 4500 6650 2    60   Input ~ 0
-ck
-Text Notes 4850 6450 0    60   ~ 0
-f ≅ 2 Hz
-Text Notes 4850 6600 0    60   ~ 0
-D ≅ 33%
-Text Notes 4900 7300 0    50   ~ 0
-Para f ≅ 100Hz:\n\n  C = 22 nF\n\n  ou\n\n  RA = RB = 4k7Ω
-Wire Notes Line
-	4850 6700 5700 6700
-Wire Notes Line
-	5700 7350 4850 7350
 Text Notes 1900 4500 0    60   ~ 0
 Pinos de alimentação de\n     CIs multiparte
 Text Notes 2500 2950 0    60   ~ 0
@@ -1404,9 +1202,9 @@ Text Notes 2400 1100 0    60   ~ 0
 Wire Wire Line
 	7500 4500 7350 4500
 Text Label 7350 4500 0    60   ~ 0
-Ctrl
+ctrl
 Text Label 4650 1800 2    60   ~ 0
-Ctrl
+ctrl
 Wire Wire Line
 	4650 1650 4650 1800
 Connection ~ 4650 1650
@@ -1424,8 +1222,6 @@ Text Notes 9950 4250 0    60   ~ 0
 Atuador
 Text Notes 10600 5750 0    60   ~ 0
 Cargas
-Text Notes 3650 6100 0    60   ~ 0
-Oscilador
 $Comp
 L power:Earth #PWR04
 U 1 1 62047A03
@@ -1466,14 +1262,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 6000 10300 6050
 Connection ~ 10300 5300
-Text Notes 4900 7650 0    50   ~ 0
-Para f ≅ 220Hz:\n\n  C = 10 nF
-Wire Notes Line
-	5700 7700 4850 7700
-Wire Notes Line
-	5700 6700 5700 7700
-Wire Notes Line
-	4850 6700 4850 7700
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 620818EA
@@ -1699,14 +1487,229 @@ F 3 "" H 9450 3150 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR032
 U 1 1 62167A6C
 P 10300 6050
-F 0 "#PWR?" H 10300 5800 50  0001 C CNN
+F 0 "#PWR032" H 10300 5800 50  0001 C CNN
 F 1 "Earth" H 10300 5900 50  0001 C CNN
 F 2 "" H 10300 6050 50  0001 C CNN
 F 3 "~" H 10300 6050 50  0001 C CNN
 	1    10300 6050
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	4150 6700 4150 7700
+Wire Notes Line
+	5000 6700 5000 7700
+Wire Notes Line
+	5000 7700 4150 7700
+Text Notes 4200 7650 0    50   ~ 0
+Para f ≅ 220Hz:\n\n  C = 10 nF
+Text Notes 2950 6100 0    60   ~ 0
+Oscilador
+Wire Notes Line
+	5000 7350 4150 7350
+Wire Notes Line
+	4150 6700 5000 6700
+Text Notes 4200 7300 0    50   ~ 0
+Para f ≅ 100Hz:\n\n  C = 22 nF\n\n  ou\n\n  RA = RB = 4k7Ω
+Text Notes 4150 6600 0    60   ~ 0
+D ≅ 33%
+Text Notes 4150 6450 0    60   ~ 0
+f ≅ 2 Hz
+Text GLabel 3800 6650 2    60   Input ~ 0
+ck
+$Comp
+L power:GND #PWR017
+U 1 1 624EEC6B
+P 3150 7450
+F 0 "#PWR017" H 3150 7200 50  0001 C CNN
+F 1 "GND" H 3150 7300 50  0000 C CNN
+F 2 "" H 3150 7450 50  0000 C CNN
+F 3 "" H 3150 7450 50  0000 C CNN
+	1    3150 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L DD_CMOS-rescue:R R4
+U 1 1 624F2A5C
+P 2350 6850
+F 0 "R4" H 2281 6896 50  0000 R CNN
+F 1 "220k" H 2281 6805 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 6850 50  0001 C CNN
+F 3 "" H 2350 6850 50  0000 C CNN
+	1    2350 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DD_CMOS-rescue:R R3
+U 1 1 624F3251
+P 2350 6450
+F 0 "R3" H 2275 6500 50  0000 R CNN
+F 1 "220k" H 2275 6400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 6450 50  0001 C CNN
+F 3 "" H 2350 6450 50  0000 C CNN
+	1    2350 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C3
+U 1 1 624F4457
+P 2350 7250
+F 0 "C3" H 2250 7300 50  0000 R CNN
+F 1 "1uF/16V" H 2250 7200 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2388 7100 50  0001 C CNN
+F 3 "" H 2350 7250 50  0000 C CNN
+	1    2350 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 625054FD
+P 2350 7450
+F 0 "#PWR014" H 2350 7200 50  0001 C CNN
+F 1 "GND" H 2350 7300 50  0000 C CNN
+F 2 "" H 2350 7450 50  0000 C CNN
+F 3 "" H 2350 7450 50  0000 C CNN
+	1    2350 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 62505C6C
+P 3750 7450
+F 0 "#PWR018" H 3750 7200 50  0001 C CNN
+F 1 "GND" H 3750 7300 50  0000 C CNN
+F 2 "" H 3750 7450 50  0000 C CNN
+F 3 "" H 3750 7450 50  0000 C CNN
+	1    3750 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR013
+U 1 1 62533DCA
+P 2350 6200
+F 0 "#PWR013" H 2350 6050 50  0001 C CNN
+F 1 "VDD" H 2350 6350 50  0000 C CNN
+F 2 "" H 2350 6200 50  0000 C CNN
+F 3 "" H 2350 6200 50  0000 C CNN
+	1    2350 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6600 2350 6650
+Wire Wire Line
+	2350 7400 2350 7450
+$Comp
+L Pessoal:LM555 U4
+U 1 1 62604BD1
+P 3150 6850
+F 0 "U4" H 3500 7350 50  0000 C CNN
+F 1 "LM555" H 3500 7250 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3800 6450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4000 6450 50  0001 C CNN
+	1    3150 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 7000 2350 7050
+Wire Wire Line
+	2650 6650 2350 6650
+Connection ~ 2350 6650
+Wire Wire Line
+	2350 6650 2350 6700
+Wire Wire Line
+	2350 7050 2550 7050
+Wire Wire Line
+	2550 7050 2550 6850
+Wire Wire Line
+	2550 6850 2650 6850
+Connection ~ 2350 7050
+Wire Wire Line
+	2350 7050 2350 7100
+Wire Wire Line
+	2650 7050 2550 7050
+Connection ~ 2550 7050
+Wire Wire Line
+	2350 6200 2350 6250
+Wire Wire Line
+	2350 6250 3050 6250
+Wire Wire Line
+	3250 6250 3250 6450
+Connection ~ 2350 6250
+Wire Wire Line
+	2350 6250 2350 6300
+Wire Wire Line
+	3050 6450 3050 6250
+Connection ~ 3050 6250
+Wire Wire Line
+	3050 6250 3250 6250
+$Comp
+L DD_CMOS-rescue:C C7
+U 1 1 627297A8
+P 3750 7250
+F 0 "C7" H 3865 7296 50  0000 L CNN
+F 1 "10nF" H 3865 7205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3788 7100 50  0001 C CNN
+F 3 "" H 3750 7250 50  0000 C CNN
+	1    3750 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 7450 3150 7250
+Wire Wire Line
+	3750 7450 3750 7400
+Wire Wire Line
+	3750 6850 3650 6850
+Wire Wire Line
+	3750 7100 3750 6850
+Wire Wire Line
+	3800 6650 3650 6650
+$Comp
+L power:GND #PWR021
+U 1 1 62483EBD
+P 5300 5700
+F 0 "#PWR021" H 5300 5450 50  0001 C CNN
+F 1 "GND" H 5300 5550 50  0000 C CNN
+F 2 "" H 5300 5700 50  0000 C CNN
+F 3 "" H 5300 5700 50  0000 C CNN
+	1    5300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L eec:CD74HCT85 U5
+U 1 1 620294E1
+P 7400 4400
+F 0 "U5" H 8100 4665 50  0000 C CNN
+F 1 "CD74HCT85" H 8100 4574 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 7400 4800 50  0001 L CNN
+F 3 "" H 7400 4900 50  0001 L CNN
+F 4 "4" H 7400 5000 50  0001 L CNN "Bits"
+F 5 "SCHS136E" H 7400 5100 50  0001 L CNN "Datasheet Version"
+F 6 "70" H 7400 5200 50  0001 L CNN "F  Nom VoltageMaxMhz"
+F 7 "0.08" H 7400 5300 50  0001 L CNN "ICC  Nom VoltageMaxmA"
+F 8 "TTL" H 7400 5400 50  0001 L CNN "Input Type"
+F 9 "-55 to 125" H 7400 5500 50  0001 L CNN "Operating Temperature RangeC"
+F 10 "4/-4" H 7400 5600 50  0001 L CNN "Output Drive IOLIOHMaxmA"
+F 11 "CMOS" H 7400 5700 50  0001 L CNN "Output Type"
+F 12 "Catalog" H 7400 5800 50  0001 L CNN "Rating"
+F 13 "No" H 7400 5900 50  0001 L CNN "Schmitt Trigger"
+F 14 "HCT" H 7400 6000 50  0001 L CNN "Technology Family"
+F 15 "5.5" H 7400 6100 50  0001 L CNN "VCC Max V"
+F 16 "4.5" H 7400 6200 50  0001 L CNN "VCC Min V"
+F 17 "4.5" H 7400 6300 50  0001 L CNN "Voltage Nom V"
+F 18 "IC" H 7400 6400 50  0001 L CNN "category"
+F 19 "1166062" H 7400 6500 50  0001 L CNN "ciiva ids"
+F 20 "fa29bd229b596f21" H 7400 6600 50  0001 L CNN "library id"
+F 21 "Texas Instruments" H 7400 6700 50  0001 L CNN "manufacturer"
+F 22 "D0016A" H 7400 6800 50  0001 L CNN "package"
+F 23 "1459323913" H 7400 6900 50  0001 L CNN "release date"
+F 24 "D5493793-D314-4725-94A2-C5A5787CEF4A" H 7400 7000 50  0001 L CNN "vault revision"
+F 25 "yes" H 7400 7100 50  0001 L CNN "imported"
+F 26 "50" H 7400 7200 50  0001 L CNN "tpd  Nom VoltageMaxns"
+	1    7400 4400
+	1    0    0    -1  
+$EndComp
+Text Label 8750 4500 0    60   ~ 0
+comando
 $EndSCHEMATC
