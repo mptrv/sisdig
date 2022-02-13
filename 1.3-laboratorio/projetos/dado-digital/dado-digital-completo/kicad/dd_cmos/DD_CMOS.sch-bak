@@ -1287,13 +1287,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 62084076
-P 10800 5300
-F 0 "J5" H 10750 5400 50  0000 L CNN
-F 1 "Conn_01x02" H 10718 5066 50  0001 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10800 5300 50  0001 C CNN
-F 3 "~" H 10800 5300 50  0001 C CNN
-	1    10800 5300
-	1    0    0    -1  
+P 10800 5400
+F 0 "J5" H 10750 5500 50  0000 L CNN
+F 1 "Conn_01x02" H 10718 5166 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10800 5400 50  0001 C CNN
+F 3 "~" H 10800 5400 50  0001 C CNN
+	1    10800 5400
+	1    0    0    1   
 $EndComp
 $Comp
 L Display_Character:KCSA02-105 U8

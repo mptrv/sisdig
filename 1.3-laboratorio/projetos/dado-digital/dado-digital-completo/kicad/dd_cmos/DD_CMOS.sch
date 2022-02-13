@@ -356,9 +356,9 @@ Connection ~ 10500 3250
 Connection ~ 10500 3150
 Connection ~ 10500 1750
 Wire Wire Line
-	6350 2250 6350 1350
+	6350 2000 6350 1350
 Wire Wire Line
-	5150 2250 6350 2250
+	5150 2000 6350 2000
 Connection ~ 6350 1350
 Wire Wire Line
 	10500 1650 10500 1750
@@ -392,7 +392,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 1250 5300 1250
 Wire Wire Line
-	5150 2850 5150 2250
+	5150 2850 5150 2000
 Wire Wire Line
 	4750 3400 4750 2750
 Wire Wire Line

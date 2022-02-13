@@ -315,7 +315,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch dg-contador-sincrono
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -396,6 +396,11 @@ customHeadersFooters
 \end_branch
 \branch dg-botao-deboucing-por
 \selected 0
+\filename_suffix 0
+\color #cae8cd
+\end_branch
+\branch dg-projeto-reeditado
+\selected 1
 \filename_suffix 0
 \color #cae8cd
 \end_branch
@@ -15913,7 +15918,7 @@ tituloproj
 
 \begin_inset Branch cm-corpo
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 Dado Digital
@@ -16447,7 +16452,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../projetos/dado-digital/projeto-dado-digital-esboco-circuito.png
+	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/dado-digital-completo/projeto-dado-digital-esboco-circuito.png
 
 \end_inset
 
@@ -16717,7 +16722,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../projetos/dado-digital/diagrama-em-blocos.png
+	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/dado-digital-completo/diagrama-em-blocos.png
 	width 100text%
 
 \end_inset
@@ -16767,7 +16772,7 @@ O Esquema Elétrico do projeto proposto encontra-se no anexo a este roteiro.
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Section
 Cronograma de Referência
@@ -17581,7 +17586,1534 @@ repescagem
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename imagens/DD_CMOS.pdf
+	filename imagens/dado-digital/2022-dado-digital-completo#esquema-eletrico.pdf
+	lyxscale 50
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg-projeto-reeditado
+inverted 0
+status open
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tituloproj
+\end_layout
+
+\end_inset
+
+
+\begin_inset Branch cm-corpo
+inverted 0
+status open
+
+\begin_layout Chapter
+Dado Digital
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+Implementar o circuito de um 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+dado digital
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+com dois dígitos de 00 a 99.
+\end_layout
+
+\begin_layout Section
+Prazos para Entrega
+\end_layout
+
+\begin_layout Standard
+O projeto deverá ser apresentado na própria aula de laboratório, conforme
+ as datas a seguir.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="7cm">
+<column alignment="center" valignment="top">
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Descrição
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Datas
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Diurno e Noturno
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Entrega Parcial
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+04.04.2022
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Apresentação Antecipada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+30.05.2022
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Apresentação Final
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+06.06.2022
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Repescagem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+27.06.2022
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+Não serão aceitos projetos entregues fora do prazo.
+\end_layout
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+A pontuação será atribuída apenas aos presentes na data de entrega.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Salvos os casos para os quais se apresentar justificativa plausível acompanhada
+ de atestado.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Descritivo do Projeto
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Descritivo-do-Projeto-1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O 
+\emph on
+Dado Digital
+\emph default
+ consiste de um contador de 00 a 99, em alta frequência, que será paralisado
+ ao se pressionar um botão, simulando o sorteio.
+ Caso os dígitos exibidos forem iguais, uma lâmpada deverá acender.
+ Ao se pressionar o botão novamente, a contagem é liberada.
+\end_layout
+
+\begin_layout Standard
+Logo que o circuito for energizado, a contagem deve estar parada em 00,
+ situação que deixará a lâmpada acesa.
+\end_layout
+
+\begin_layout Standard
+A lâmpada só poderá acender quando a contagem for paralisada – ela não deverá
+ piscar durante a contagem.
+\end_layout
+
+\begin_layout Standard
+A essência do projeto é utilizar dois contadores em década, com decodificadores
+ para 7 segmentos, de forma a exibir os valores nos 
+\emph on
+displays
+\emph default
+.
+ Por meio de um circuito comparador de magnitude, poderá ser detectada a
+ situação de igualdade dos dígitos e, assim, acionar um relé de 5V, permitindo
+ ligar uma lâmpada de 12V.
+\end_layout
+
+\begin_layout Standard
+O esboço do circuito esperado encontra-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Esboço-do-leiaute-1"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Salienta-se que o leiaute apresentado na figura é apenas um esboço – os
+ componentes podem ser reposicionados a critério de cada equipe.
+\end_layout
+
+\end_inset
+
+ Notem-se:
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para a fonte de alimentação de 5V.
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para a fonte de alimentação de 12V.
+\end_layout
+
+\begin_layout Itemize
+Dois bornes para o gerador de 
+\emph on
+clock
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Dois 
+\emph on
+diplays
+\emph default
+ de 7-segmentos.
+\end_layout
+
+\begin_layout Itemize
+Um botão (
+\series bold
+Sortear
+\series default
+) do tipo 
+\emph on
+pushbutton
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Um conector do tipo 
+\emph on
+terminal em bloco com parafuso
+\emph default
+ de duas vias.
+\end_layout
+
+\begin_layout Standard
+A lâmpada será conectada no terminal em bloco com parafuso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/dado-digital-completo/projeto-dado-digital-esboco-circuito.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esboço do leiaute do circuito esperado para o 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esboço-do-leiaute-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Orientações Complementares
+\end_layout
+
+\begin_layout Itemize
+O projeto deverá ser desenvolvido com base no descritivo apresentado na
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "sec:Descritivo-do-Projeto-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+O projeto é em equipe: obrigatoriamente, a mesma equipe das aulas de laboratório.
+\end_layout
+
+\begin_layout Itemize
+Todo o material deverá ser adquirido pelo grupo, com exceção da fonte de
+ alimentação, do gerador de 
+\emph on
+clock
+\emph default
+ e da lâmpada de 12V.
+\end_layout
+
+\begin_layout Itemize
+Pode-se utilizar a fonte de alimentação do próprio laboratório.
+\end_layout
+
+\begin_layout Itemize
+Pode-se utilizar o gerador de funções do laboratório como fonte de 
+\emph on
+clock
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+A tensão de alimentação nominal do circuito lógico deverá ser 5V.
+\end_layout
+
+\begin_layout Itemize
+No esquema elétrico, indicar o número da pinagem de cada componente.
+\end_layout
+
+\begin_layout Itemize
+O botão 
+\series bold
+Sortear
+\series default
+ deverá ser do tipo 
+\emph on
+pushbutton
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+A montagem do circuito se dará em 
+\series bold
+\emph on
+placa padrão
+\series default
+\emph default
+, também conhecida como 
+\emph on
+placa universal
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Alternativamente, poderá ser elaborada 
+\series bold
+PCI (
+\emph on
+Placa de Circuito Impresso
+\emph default
+)
+\series default
+, porém as técnicas necessárias ficarão por conta do grupo.
+ Neste caso, 
+\bar under
+o esquema elétrico deverá ser obrigatoriamente redesenhado
+\bar default
+ em programa específico e o 
+\bar under
+leiaute da PCI deverá ser impresso
+\bar default
+ em papel e entregue junto com o esquema elétrico impresso.
+\end_layout
+
+\begin_layout Itemize
+Os componentes deverão ser soldados na placa.
+ 
+\emph on
+Antes de soldá-los, fazer um estudo para encontrar uma boa disposição
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Considerar os detalhes de como obter um bom ponto de solda e de como bem
+ utilizar o ferro de solda.
+\end_layout
+
+\begin_layout Itemize
+Realizar a interconecção entre os terminais dos componentes por meio de
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+trilha de solda
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+ (se possível e para pequenas distâncias), ou por meio de 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+fios finos
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, por baixo da placa, com apenas as pontas desencapadas, ou por meio de
+ 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+fios finos
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+, por cima da placa, numa configuração conhecida como 
+\emph on
+jumpers
+\emph default
+.
+\end_layout
+
+\begin_layout Itemize
+Para a fixação dos CIs, 
+\series bold
+utilizar soquetes de CI
+\series default
+ de tamanho apropriado.
+\end_layout
+
+\begin_layout Itemize
+A implementação do gerador de 
+\emph on
+clock
+\emph default
+ (por meio do CI 555, por exemplo) é facultativa aos grupos que o quiserem
+ implementar.
+\end_layout
+
+\begin_layout Itemize
+No horário de funcionamento do Almoxarifado de Eletrônica, poderá ser emprestado
+ o material necessário para solda, assim como disponibilizada uma sala para
+ o trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+No Moodle, há um fórum criado para discussões a respeito deste projeto,
+ envolvendo, por exemplo, dicas e sugestões para sua confecção e que podem
+ ser postadas pelos próprios alunos.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama em Blocos
+\end_layout
+
+\begin_layout Standard
+O Diagrama em Blocos do projeto proposto encontra-se na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Diagrama-em-Blocos-dado-digital-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/dado-digital/dado-digital-completo/diagrama-em-blocos.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama em Blocos do projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-em-Blocos-dado-digital-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Esquema Elétrico
+\end_layout
+
+\begin_layout Standard
+O Esquema Elétrico do projeto proposto encontra-se no anexo a este roteiro.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Section
+Cronograma de Referência
+\end_layout
+
+\begin_layout Plain Layout
+Um cronograma detalhado de referência é apresentado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Cronograma-de-referencia-dado-digital-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cronograma detalhado de referência para o desenvolvimento do projeto 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+ ao longo das semanas.
+ 
+\emph on
+(Note-se que é apenas uma referência: as datas a serem obrigatoriamente
+ cumpridas são as das linhas em destaque azul.)
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Cronograma-de-referencia-dado-digital-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="7cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Período
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Atividade/Bloco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+18/03 a 29/03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interpretar o projeto, seu Diagrama em Blocos e seu Esquema Elétrico
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+01/04 e 03/04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Apresentação da Lista de Materiais
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+01/04 a 29/04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comprar componentes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+02/04 a 02/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar decodificadores e 
+\emph on
+displays
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+08/04 a 05/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Testar decodificadores e 
+\emph on
+displays
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+22/04 a 05/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e testar botão e 
+\emph on
+deboucing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+06/05 e 08/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+\color blue
+Componentes Comprados
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+\color blue
+Pré-apresentação de Montagem: Decodificador, Display, Botão
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+06/05 a 12/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e testar os contadores
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+13/05 a 26/05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e testar os comparadores e o 
+\emph on
+driver 
+\emph default
+da lâmpada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soldar e testar o circuito de POR
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interligar os blocos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+27/05 a 02/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Finalizações e testes do circuito completo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implementação do bônus
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color blue
+03/06 e 05/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color blue
+Apresentação final
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\emph on
+04/06 a 23/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Correções para a repescagem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+\shape italic
+\color red
+24/06 e 26/06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\color red
+Repescagem
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Critérios de Avaliação
+\end_layout
+
+\begin_layout Quotation
+
+\family typewriter
+\size large
+\emph on
+Nota: para as pré-apresentações, o professor de laboratório dará as corresponden
+tes orientações.
+\end_layout
+
+\begin_layout Standard
+Os critérios de avaliação por item são:
+\end_layout
+
+\begin_layout Enumerate
+Apresentação da Lista de Materiais: 
+\series bold
+10,0 (peso 1,0)
+\end_layout
+
+\begin_layout Enumerate
+Pré-apresentação de montagem e componentes comprados: 
+\series bold
+10,0 (peso 1,0)
+\end_layout
+
+\begin_layout Enumerate
+Apresentação final: 
+\series bold
+10,0 (peso 8,0)
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Esquema Elétrico e Lista de Materiais: 
+\series bold
+1,0
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Apresentação do Esquema Elétrico completo no dia da apresentação do projeto:
+ 
+\series bold
+0,5
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Como parte desta pontuação, se o circuito for apresentado em PCI, 
+\bar under
+obrigatoriamente
+\bar default
+ todo o esquema elétrico deverá ser redesenhado e impresso e também deverá
+ ser impresso em papel o leiaute da PCI.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Apresentação da Lista de Materiais no dia da apresentação do projeto: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\emph on
+Nota:
+\series default
+ Se houver qualquer alteração no circuito original, inclusive complementação
+ (por exemplo, para implementar o 
+\begin_inset Quotes eld
+\end_inset
+
+bônus
+\begin_inset Quotes erd
+\end_inset
+
+), 
+\bar under
+todo o esquema deverá ser redesenhado
+\bar default
+ para obter o bônus do esquema elétrico.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Implementação do circuito: 
+\series bold
+6,5
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Elementos mínimos – bornes, 
+\emph on
+displays
+\emph default
+, botão, conector para lâmpada: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Contagem de 00 a 99 operante (sem decodificação): 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Decodificação e exibição no 
+\emph on
+display
+\emph default
+: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Operação do botão 
+\series bold
+Sortear
+\series default
+:
+\series bold
+ 1,0
+\end_layout
+
+\begin_layout Enumerate
+Comparação: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Acionamento do relé e da lâmpada: 
+\series bold
+1,0
+\end_layout
+
+\begin_layout Enumerate
+Implementação e operação do POR (
+\emph on
+Power-On Reset
+\emph default
+): 
+\series bold
+1,0
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Entornos: 
+\series bold
+1,5
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Uso de soquete para CIs: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Estética do circuito final: 
+\series bold
+0,5
+\end_layout
+
+\begin_layout Enumerate
+Qualidade das soldas: 
+\series bold
+0,5
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Bônus: 
+\series bold
++2,0
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Implementação de gerador de 
+\emph on
+clock
+\emph default
+ próprio: 
+\series bold
++1,0
+\end_layout
+
+\begin_layout Enumerate
+Redesenho de 
+\bar under
+todo
+\bar default
+ o esquema elétrico 
+\bar under
+para inclusão do gerador de 
+\emph on
+clock
+\emph default
+\bar default
+: 
+\series bold
++1,0
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Quote
+\align center
+A pontuação máxima é de 
+\series bold
+10,0
+\series default
+ pontos.
+\end_layout
+
+\begin_layout Quote
+\align center
+
+\series bold
+\emph on
+Note-se que apenas será possível obter 10,0 pontos se realizado algum item
+ do tópico 
+\begin_inset Quotes eld
+\end_inset
+
+Bônus
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+As equipes que obtiverem pontuação menor que 8,0 poderão ir para a 
+\begin_inset Quotes eld
+\end_inset
+
+repescagem
+\begin_inset Quotes erd
+\end_inset
+
+, na qual a nota do projeto será 80% da pontuação obtida na nova avaliação.
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/dado-digital/2022-dado-digital-completo#esquema-eletrico.pdf
 	lyxscale 50
 	rotateAngle 90
 

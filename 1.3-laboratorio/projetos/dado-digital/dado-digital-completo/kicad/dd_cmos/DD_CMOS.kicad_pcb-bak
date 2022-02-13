@@ -38,7 +38,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user hide)
+    (49 F.Fab user)
   )
 
   (setup
@@ -697,7 +697,7 @@
   (gr_arc (start 103.505 122.555) (end 101.6 122.555) (angle -90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 150.495 122.555) (end 150.495 124.46) (angle -90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 150.495 88.265) (end 152.4 88.265) (angle -90) (layer Edge.Cuts) (width 0.1))
-  (gr_arc (start 103.505 88.265) (end 103.505 86.36) (angle -90) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 103.505 88.265) (end 103.505 86.36) (angle -90) (layer Edge.Cuts) (width 0.1))
   (gr_text "rev. 1.0" (at 151.13 95.885 90) (layer F.SilkS) (tstamp 6203DF95)
     (effects (font (size 0.7 0.7) (thickness 0.1)))
   )
@@ -775,7 +775,7 @@
   (segment (start 135.000001 98.170001) (end 135.000001 105.804001) (width 0.5) (layer B.Cu) (net 11))
   (segment (start 127 104.99132) (end 131.01934 109.01066) (width 3) (layer B.Cu) (net 11))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 6203E270) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 62040DED) (hatch edge 0.508)
     (connect_pads (clearance 0.5))
     (min_thickness 0.3)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508) (smoothing fillet) (radius 2))
@@ -956,7 +956,7 @@
       )
     )
   )
-  (zone (net 11) (net_name "Net-(J5-Pad2)") (layer B.Cu) (tstamp 6203E26D) (hatch edge 0.508)
+  (zone (net 11) (net_name "Net-(J5-Pad2)") (layer B.Cu) (tstamp 62040DEA) (hatch edge 0.508)
     (priority 1)
     (connect_pads (clearance 0.5))
     (min_thickness 0.3)

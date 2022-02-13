@@ -1,20 +1,17 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,5.1.12-84ad8e8a86~92~ubuntu20.04.1*%
-%TF.CreationDate,2022-02-09T01:19:47-03:00*%
+%TF.CreationDate,2022-02-09T15:54:31-03:00*%
 %TF.ProjectId,DD_CMOS,44445f43-4d4f-4532-9e6b-696361645f70,01.0*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Profile,NP*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.12-84ad8e8a86~92~ubuntu20.04.1) date 2022-02-09 01:19:47*
+G04 Created by KiCad (PCBNEW 5.1.12-84ad8e8a86~92~ubuntu20.04.1) date 2022-02-09 15:54:31*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
 %TA.AperFunction,Profile*%
 %ADD10C,0.100000*%
-%TD*%
-%TA.AperFunction,Profile*%
-%ADD11C,0.150000*%
 %TD*%
 G04 APERTURE END LIST*
 D10*
@@ -33,13 +30,11 @@ G75*
 G02*
 X152400000Y-88265000I0J-1905000D01*
 G01*
-D11*
 X101600000Y-88265000D02*
 G75*
 G02*
 X103505000Y-86360000I1905000J0D01*
 G01*
-D10*
 X150495000Y-86360000D02*
 X103505000Y-86360000D01*
 X152400000Y-122555000D02*
