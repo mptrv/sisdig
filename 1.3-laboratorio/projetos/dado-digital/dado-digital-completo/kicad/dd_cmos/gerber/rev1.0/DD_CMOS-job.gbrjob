@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.12-84ad8e8a86~92~ubuntu20.04.1"
     },
-    "CreationDate":  "2022-02-09T15:54:31-03:00"
+    "CreationDate":  "2022-02-13T23:17:25-03:00"
   },
   "GeneralSpecs":
   {
@@ -15,7 +15,7 @@
     {
       "Name": "DD_CMOS",
       "GUID": "44445f43-4d4f-4532-9e6b-696361645f70",
-      "Revision": "01.0"
+      "Revision": "1.0.1"
     },
     "Size":
     {
