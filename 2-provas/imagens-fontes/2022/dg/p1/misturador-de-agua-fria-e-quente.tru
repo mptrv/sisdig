@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="SAF"/>
+    <variable name="SAQ"/>
+    <variable name="TAF"/>
+    <variable name="TAQ"/>
+  </variables>
+  <results>
+    <result>
+      <name>VAF1</name>
+      <values class="BoolTable">XXXXXXXX11000100</values>
+    </result>
+    <result>
+      <name>VAF0</name>
+      <values class="BoolTable">XXXXXXXX00111011</values>
+    </result>
+    <result>
+      <name>VAQ1</name>
+      <values class="BoolTable">XXXX0000XXXX0010</values>
+    </result>
+    <result>
+      <name>VAQ0</name>
+      <values class="BoolTable">XXXX1010XXXX1101</values>
+    </result>
+  </results>
+</truthTable>

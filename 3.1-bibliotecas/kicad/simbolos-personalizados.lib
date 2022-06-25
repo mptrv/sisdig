@@ -1,6 +1,61 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Chave_Reversora_0_1
+#
+DEF Chave_Reversora_0_1 B 0 40 Y Y 1 F N
+F0 "B" 0 150 50 H V C CNN
+F1 "Chave_Reversora_0_1" 25 -150 50 H I C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
+DRAW
+C -30 50 10 0 1 0 N
+C -30 -40 10 1 1 0 N
+C 70 0 10 1 1 0 N
+T 0 -80 50 50 0 0 0 0 Normal 0 C C
+T 0 -80 -40 50 0 1 1 1 Normal 0 C C
+P 5 0 1 0 -125 100 -125 -100 125 -100 125 100 -125 100 f
+P 2 1 1 0 60 0 -30 30 N
+P 2 1 1 0 80 0 130 0 N
+X ~ S 200 0 75 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Decodificador_Display
+#
+DEF Decodificador_Display S 0 40 Y Y 1 F N
+F0 "S" 150 575 50 H V C CNN
+F1 "Decodificador_Display" -150 175 50 V I C CNN
+F2 "" 150 350 50 H I C CNN
+F3 "" 150 350 50 H I C CNN
+DRAW
+T 0 250 275 100 0 0 0 . Normal 0 C C
+T 0 150 150 50 0 0 0 Decod. Normal 0 C C
+T 0 160 445 20 0 1 1 A Normal 0 C C
+T 0 250 415 20 0 1 1 B Normal 0 C C
+T 0 240 295 20 0 1 1 C Normal 0 C C
+T 0 140 265 20 0 1 1 D Normal 0 C C
+T 0 290 235 20 0 1 1 DP Normal 0 C C
+T 0 50 295 20 0 1 1 E Normal 0 C C
+T 0 60 415 20 0 1 1 F Normal 0 C C
+T 0 150 385 20 0 1 1 G Normal 0 C C
+S -100 525 400 100 0 0 0 f
+P 4 0 1 0 350 100 350 200 -50 200 -50 100 N
+P 2 1 1 20 90 335 80 255 N
+P 2 1 1 20 100 235 180 235 N
+P 2 1 1 20 100 455 90 375 N
+P 2 1 1 20 110 355 190 355 N
+P 2 1 1 20 120 475 200 475 N
+P 2 1 1 20 210 335 200 255 N
+P 2 1 1 20 220 455 210 375 N
+P 2 1 1 20 250 235 250 235 N
+X ~ A 300 0 100 U 50 50 1 1 I
+X ~ B 200 0 100 U 50 50 1 1 I
+X ~ C 100 0 100 U 50 50 1 1 I
+X ~ D 0 0 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Jumper_Simbolico
 #
 DEF Jumper_Simbolico JP 0 30 Y N 1 F N
@@ -43,6 +98,34 @@ X R 4 -100 400 100 D 50 50 1 1 I I
 X CV 5 500 0 150 L 50 50 1 1 I
 X THR 6 -500 0 150 R 50 50 1 1 I
 X DIS 7 -500 200 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Pulso_Borda_Descida
+#
+DEF Pulso_Borda_Descida B 0 40 Y Y 1 F N
+F0 "B" 0 150 50 H V C CNN
+F1 "Pulso_Borda_Descida" 25 -150 50 H I C CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+P 4 0 1 0 75 -25 25 -25 -25 25 -75 25 N
+P 5 0 1 0 -125 100 -125 -100 125 -100 125 100 -125 100 f
+X ~ S 200 0 75 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Pulso_Borda_Subida
+#
+DEF Pulso_Borda_Subida B 0 40 Y Y 1 F N
+F0 "B" 0 150 50 H V C CNN
+F1 "Pulso_Borda_Subida" 25 -150 50 H I C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
+DRAW
+P 4 0 1 0 -75 -25 -25 -25 25 25 75 25 N
+P 5 0 1 0 -125 100 -125 -100 125 -100 125 100 -125 100 f
+X ~ S 200 0 75 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #

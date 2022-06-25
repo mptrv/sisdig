@@ -1,5 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Chave_Reversora_0_1
+K pulso, clock
+$ENDCMP
+#
+$CMP Decodificador_Display
+K decodificador, display
+$ENDCMP
+#
 $CMP Jumper_Simbolico
 D Jumper simbólico para desenho de jumpers na PCI; normally closed;
 K jumper bridge link NC NF
@@ -10,6 +18,14 @@ $CMP LM555
 D Precision Timers, 555 compatible,  PDIP-8
 K single timer 555
 F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP Pulso_Borda_Descida
+K pulso, clock
+$ENDCMP
+#
+$CMP Pulso_Borda_Subida
+K pulso, clock
 $ENDCMP
 #
 $CMP fonte_corrente

@@ -1,0 +1,114 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 74xx_74HC74
+#
+DEF 74xx_74HC74 U 0 40 Y Y 3 L N
+F0 "U" -300 350 50 H V C CNN
+F1 "74xx_74HC74" -300 -350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 74HC74
+$FPLIST
+ DIP*W7.62mm*
+$ENDFPLIST
+DRAW
+S -200 200 200 -200 1 1 10 f
+S -200 200 200 -200 2 1 10 f
+S -200 300 200 -300 3 1 10 f
+X ~R 1 0 -300 100 U 50 50 1 0 I
+X D 2 -300 100 100 R 50 50 1 0 I
+X C 3 -300 0 100 R 50 50 1 0 I C
+X ~S 4 0 300 100 D 50 50 1 0 I
+X Q 5 300 100 100 L 50 50 1 0 O
+X ~Q 6 300 -100 100 L 50 50 1 0 O
+X ~S 10 0 300 100 D 50 50 2 0 I
+X C 11 -300 0 100 R 50 50 2 0 I C
+X D 12 -300 100 100 R 50 50 2 0 I
+X ~R 13 0 -300 100 U 50 50 2 0 I
+X ~Q 8 300 -100 100 L 50 50 2 0 O
+X Q 9 300 100 100 L 50 50 2 0 O
+X VCC 14 0 400 100 D 50 50 3 0 W
+X GND 7 0 -400 100 U 50 50 3 0 W
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Pessoal_Pulso_Borda_Descida
+#
+DEF Pessoal_Pulso_Borda_Descida B 0 40 Y Y 1 F N
+F0 "B" 0 150 50 H V C CNN
+F1 "Pessoal_Pulso_Borda_Descida" 25 -150 50 H V C CNN
+F2 "" -100 0 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -75 100 -125 100 f
+P 4 0 1 0 75 -25 25 -25 -25 25 -75 25 N
+P 5 0 1 0 -125 100 -125 -100 125 -100 125 100 -75 100 N
+X ~ 1 200 0 75 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Pessoal_Pulso_Borda_Subida
+#
+DEF Pessoal_Pulso_Borda_Subida B 0 40 Y Y 1 F N
+F0 "B" 0 150 50 H V C CNN
+F1 "Pessoal_Pulso_Borda_Subida" 25 -150 50 H V C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -75 100 -125 100 f
+P 4 0 1 0 -75 -25 -25 -25 25 25 75 25 N
+P 5 0 1 0 -125 100 -125 -100 125 -100 125 100 -75 100 N
+X ~ 1 200 0 75 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# power_Earth
+#
+DEF power_Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

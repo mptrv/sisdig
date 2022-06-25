@@ -379,7 +379,7 @@ customHeadersFooters
 \filename_suffix 0
 \color #cae8cd
 \end_branch
-\branch dg-atuador-e-carga
+\branch dg-logica-com-chaves
 \selected 0
 \filename_suffix 0
 \color #cae8cd
@@ -400,6 +400,11 @@ customHeadersFooters
 \color #cae8cd
 \end_branch
 \branch dg-projeto-reeditado
+\selected 0
+\filename_suffix 0
+\color #cae8cd
+\end_branch
+\branch dg-contadores-sincronos-controle-de-contagem
 \selected 1
 \filename_suffix 0
 \color #cae8cd
@@ -800,7 +805,7 @@ Protoboard
 \begin_layout Standard
 \begin_inset Branch cm-corpo
 inverted 0
-status open
+status collapsed
 
 \begin_layout Section
 Objetivos
@@ -1814,7 +1819,7 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Painel Digital Novo
+Painel Digital
 \end_layout
 
 \begin_layout Itemize
@@ -1871,82 +1876,50 @@ Resistores de
 \end_layout
 
 \begin_layout Standard
-\begin_inset Branch dg-atuador-e-carga
+\begin_inset Branch dg-logica-com-chaves
 inverted 0
 status collapsed
+
+\begin_layout Chapter
+Lógica com Chaves
+\end_layout
 
 \begin_layout Section*
 Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Caixa com fios
+Painel Digital
 \end_layout
 
 \begin_layout Itemize
-Alicate de bico
+Cabos para 
+\emph on
+\lang english
+protoboard
 \end_layout
 
 \begin_layout Itemize
-Alicate de corte
+6x chave 
+\emph on
+\lang english
+push-button
 \end_layout
 
 \begin_layout Itemize
-2x Cabos banana-jacaré
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Para o bloco atuador do projeto:
-\end_layout
-
-\begin_layout Itemize
-Placa padrão 5 x 5 cm
-\end_layout
-
-\begin_layout Itemize
-1x Transistor NPN BC547
-\end_layout
-
-\begin_layout Itemize
-1x Diodo 1N4148
-\end_layout
-
-\begin_layout Itemize
-1x LED 
-\begin_inset Formula $\six 3{\mm}$
-\end_inset
-
- difuso amarelo convencional
-\end_layout
-
-\begin_layout Itemize
-1x Relé 5V
-\end_layout
-
-\begin_layout Itemize
-2x Resistor 
-\begin_inset Formula $\six 1{\kilo\ohm}$
+6x resistor 
+\begin_inset Formula $\six{10}{\kilo\ohm}$
 \end_inset
 
  / 
-\begin_inset Formula $\nicefrac{1}{4}$
-\end_inset
-
- W
-\end_layout
-
-\begin_layout Itemize
-3x Conector KRE 2 vias/
-\begin_inset Formula $\six 5{\mm}$
+\begin_inset Formula $\six{1/8}{\W}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-1x Pino vertical para placa macho
+3x LED convencional
 \end_layout
 
 \end_inset
@@ -2362,6 +2335,31 @@ Parte Experimental
 \end_layout
 
 \begin_layout Standard
+Montar os componentes na PCI 
+\begin_inset Quotes eld
+\end_inset
+
+Atuador e Carga
+\begin_inset Quotes erd
+\end_inset
+
+, referente ao projeto semestral 
+\begin_inset Quotes eld
+\end_inset
+
+Dado Digital
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O anexo contém o esquema elétrico e as informações necessárias para a montagem.
+\end_layout
+
+\begin_layout Section
+Parte Experimental Extra
+\end_layout
+
+\begin_layout Standard
 Para a parte experimental, é aconselhado que os itens abaixo sejam re\SpecialChar softhyphen
 a\SpecialChar softhyphen
 li\SpecialChar softhyphen
@@ -2483,10 +2481,6 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Placa padrão 10 x 5 cm
-\end_layout
-
-\begin_layout Itemize
 Caixa com fios
 \end_layout
 
@@ -2515,6 +2509,18 @@ Sugador
 \end_layout
 
 \begin_layout Itemize
+2x Cabos banana-jacaré
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Placa padrão 10 x 5 cm
+\end_layout
+
+\begin_layout Itemize
 3x Resistores de 
 \begin_inset Formula $\six{330}{\ohm}$
 \end_inset
@@ -2530,18 +2536,35 @@ Sugador
 3x LEDs (a serem descartados)
 \end_layout
 
-\begin_layout Itemize
-2x Cabos banana-jacaré
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-Para o bloco atuador do projeto:
+Para o bloco 
+\begin_inset Quotes eld
+\end_inset
+
+Atuador e Carga
+\begin_inset Quotes erd
+\end_inset
+
+ do projeto:
 \end_layout
 
 \begin_layout Itemize
-Placa padrão 5 x 5 cm
+PCI 
+\begin_inset Quotes eld
+\end_inset
+
+Atuador e Carga
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2565,15 +2588,19 @@ Placa padrão 5 x 5 cm
 \end_layout
 
 \begin_layout Itemize
-2x Resistor 
-\begin_inset Formula $\six 1{\kilo\ohm}$
-\end_inset
-
- / 
+Resistores de 
 \begin_inset Formula $\nicefrac{1}{4}$
 \end_inset
 
- W
+ W: 2x 
+\begin_inset Formula $\six 1{\kilo\ohm}$
+\end_inset
+
+, 1x 
+\begin_inset Formula $\six{47}{\ohm}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2586,6 +2613,26 @@ Placa padrão 5 x 5 cm
 
 \begin_layout Itemize
 1x Pino vertical para placa macho
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/dado-digital/ete102-projeto-semestral-dado-digital#atuador-e-carga.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename imagens/dado-digital/ete102-projeto-semestral-dado-digital#atuador-e-carga#2.pdf
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3901,7 +3948,7 @@ proto-board
 \begin_layout Standard
 \begin_inset Branch dg-comparador-de-magnitude
 inverted 0
-status collapsed
+status open
 
 \begin_layout Standard
 
@@ -9007,14 +9054,1689 @@ status open
 
 
 \backslash
-setcounter{contexp}{12}
+setcounter{contexp}{10}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-setcounter{chapter}{11}
+setcounter{chapter}{9}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch dg-contadores-sincronos-controle-de-contagem
+inverted 0
+status collapsed
+
+\begin_layout Chapter
+Contadores Síncronos e
+\begin_inset Newline newline
+\end_inset
+
+Registradores de Deslocamento
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch cm-corpo
+inverted 0
+status open
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Itemize
+Estudar os contadores síncronos sob a ótica dos registradores de deslocamento.
+\end_layout
+
+\begin_layout Itemize
+Conhecer o contador 4518.
+\end_layout
+
+\begin_layout Section
+Contadores Síncronos
+\end_layout
+
+\begin_layout Standard
+Os contadores síncronos diferem-se dos assíncronos pelo fato do pulso de
+ 
+\emph on
+clock
+\emph default
+ ser simultâneo a todos os 
+\emph on
+flip-flops
+\emph default
+ do contador e, assim, as saídas destes 
+\emph on
+flip-flops
+\emph default
+ são atualizadas praticamente ao mesmo tempo.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Flip-flops-recebendo-pulso-1"
+
+\end_inset
+
+ apresenta a topologia do pulso de 
+\emph on
+clock
+\emph default
+ simultâneo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-topologia-clock.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+Flip-flops
+\emph default
+ recebendo pulso de 
+\emph on
+clock
+\emph default
+ simultaneamente, o que caracteriza o contandor síncrono.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Flip-flops-recebendo-pulso-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Certamente, o circuito da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Flip-flops-recebendo-pulso-1"
+
+\end_inset
+
+ não irá realizar qualquer contagem, pois nada foi estipulado para as entradas
+ dos 
+\emph on
+flip-flops
+\emph default
+.
+ Torna-se evidente, portanto, que há a necessidade de um circuito lógico
+ para alimentá-las, mas de forma que o próximo valor da contagem seja determinad
+o com base no atual.
+ Ainda, como trata-se de um circuito que será projetado, pode-se, para cada
+ valor atual, definir um futuro sem a obrigatoriedade de ser um número consecuti
+vo.
+ Ou seja, tem-se a liberdade de criar uma contagem com qualquer sequência
+ numérica.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Diagrama-de-Estados-contador-1"
+
+\end_inset
+
+ apresenta um 
+\emph on
+Diagrama de Estados
+\emph default
+, o qual mapeia a sequência numérica de contagem de um determinado contador
+ síncrono, e a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Esquema-elétrico-contador-completo-1"
+
+\end_inset
+
+ contém o circuito que o implementa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-diagrama-de-estados.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Estados.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Diagrama-de-Estados-contador-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/cont-sinc-3-bits-exemplo-flip-flops.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagens/cont-sinc-3-bits-exemplo-combinatorio.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico do circuito.
+ Note-se que os pulsos de 
+\emph on
+clock
+\emph default
+ são simultâneos a todos o 
+\emph on
+flip-flops
+\emph default
+ e que as entradas destes são provenientes de um circuito lógico.
+ O estado inicial é definido por circuito de POR, a ser estudado mais adiante.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Esquema-elétrico-contador-completo-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de contador síncrono completo.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Exemplo-de-contador-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O projeto do circuito lógico deve tomar o 
+\emph on
+estado atual
+\emph default
+ como entrada e o 
+\emph on
+estado futuro
+\emph default
+ será a saída.
+ Estado atual é o valor atual da contagem e estado futuro é o próximo valor.
+\end_layout
+
+\begin_layout Section
+Registradores de Deslocamento
+\end_layout
+
+\begin_layout Standard
+Os registradores de deslocamento, na realidade, são um caso particular de
+ contador síncrono.
+ Nesses, a entrada de cada 
+\emph on
+flip-flop
+\emph default
+ é a saída do 
+\emph on
+flip-flop
+\emph default
+ anterior.
+ Quando os pulsos de 
+\emph on
+clock 
+\emph default
+são aplicados, tem-se o efeito de um 
+\emph on
+bit
+\emph default
+, presente na entrada do primeiro 
+\emph on
+flip-flop
+\emph default
+, ser deslocado para os demais.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Esquema-elétrico-reg-desloc-1"
+
+\end_inset
+
+ apresenta um registrador de deslocamento de 3 
+\emph on
+bits
+\emph default
+ e a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:csinc-Carta-de-tempos-1"
+
+\end_inset
+
+ demonstra um exemplo de deslocamento de 
+\emph on
+bit
+\emph default
+ por meio da carta de tempos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/cont-sinc-reg-desl-3-bits-exemplo.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquema elétrico do circuito.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Esquema-elétrico-reg-desloc-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.5}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/falling arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & [timing/c/rising arrows] 19{C} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{E}$	  & 2.5L HH LL HH HH 8.5L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& 3L   HH LL HH HH 8L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_1}$	& 5L   HH LL HH HH 6L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_0}$	& 7L   HH LL HH HH 4L 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carta de tempos com demonstração do deslocamento de um 
+\emph on
+bit
+\emph default
+ aplicado à entrada do primeiro 
+\emph on
+flip-flop
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Carta-de-tempos-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exemplo de registrador de deslocamento de 3 
+\emph on
+bits
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:csinc-Exemplo-de-registrador-desloc-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+O CI 4518
+\end_layout
+
+\begin_layout Standard
+O CI 4518 possui dois contadores BCD síncronos, ou seja, que realizam contagens
+ em decimal de 0 a 9 de forma síncrona.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Diagrama-Funcional-4518"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e a 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Tabela-Verdade-4518"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostram seu diagrama funcional e sua Tabela-Verdade.
+ Note-se que é possível incrementar a contagem a partir de pulsos na entrada
+ 
+\begin_inset Formula $clock$
+\end_inset
+
+ (borda de subida) ou na entrada 
+\begin_inset Formula $enable$
+\end_inset
+
+ (borda de descida).
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/experiencias/imagens/contadores-sincronos/4518-diagrama-funcional.png
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama Funcional do 4518.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-Funcional-4518"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contadores-sincronos/4518-tabela-verdade.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela-Verdade do 4518.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tabela-Verdade-4518"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Carta-de-Tempos-4518"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra uma carta de tempos com ambas as possibilidades de funcionamento.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename imagens/contadores-sincronos/4518-carta-de-tempos.png
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Carta de Tempos para o 4518.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Carta-de-Tempos-4518"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estas figuras foram extraídas do correspondente 
+\emph on
+\lang english
+datasheet
+\emph default
+\lang brazilian
+ da Intersil, também disponível na URL:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://pdf.datasheetcatalog.com/datasheets/120/109587_DS.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Parte Experimental
+\end_layout
+
+\begin_layout Subsection
+Parte 1: Registrador de Deslocamento
+\end_layout
+
+\begin_layout Enumerate
+Deseja-se implementar um registrador de deslocamento para fornecer a sequência
+ apresentada pela tabela e correspondente carta de tempos abaixo.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="center" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset Formula $Q_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" mroffset="1ex" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+medskip
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scalebox{1.35}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikztimingtable}[%
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/draw grid,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/falling arrows,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow pos=.8,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/c/arrow tip=stealth,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/rowdist=1.5,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/coldist=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/name/.style={font=
+\backslash
+normalfont
+\backslash
+sffamily
+\backslash
+scriptsize},
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/font=
+\backslash
+bfseries
+\backslash
+itshape,
+\end_layout
+
+\begin_layout Plain Layout
+
+		timing/wscale=1
+\end_layout
+
+\begin_layout Plain Layout
+
+	]
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{ck}$	 & [timing/c/rising arrows] 12{C} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_3}$	& H LLLL HHHH LLL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_2}$	& H HHLL LLHH HHL 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_1}$	& L HHHH LLLL HHH 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	${}^{Q_0}$	& L LLHH HHLL LLH 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikztimingtable}
+\end_layout
+
+\begin_layout Plain Layout
+
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+O circuito a ser utilizado é o que segue.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contadores-sincronos/registrador-de-deslocamento.png
+	lyxscale 40
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No circuito apresentado, perceba-se que o botão 
+\begin_inset Formula $B1$
+\end_inset
+
+ do Painel Digital irá garantir que 
+\begin_inset Formula $Q_{3}$
+\end_inset
+
+ e 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ iniciam-se em 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+, enquanto 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $Q_{0}$
+\end_inset
+
+, em 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Por meio de botão 
+\begin_inset Formula $B2$
+\end_inset
+
+ do Painel Digital, aplicar pulsos consecutivos de 
+\emph on
+clock 
+\emph default
+e observar o deslocamento cíclico dos 
+\emph on
+bits
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Quantos pulsos de 
+\emph on
+clock
+\emph default
+ são necessários para haver repetição da sequência?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+caixaresp[3]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Parte 2: Contador Decimal 4518
+\end_layout
+
+\begin_layout Enumerate
+Montar o circuito abaixo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/contadores-sincronos/contador-4518.png
+	lyxscale 40
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+No esquema elétrico, note-se:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+B1: botão do Painel Digital normalmente em 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+B2: outro botão do Painel Digital normalmente em 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+C1: chave reversora do Painel Digital normalmente em 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+DD1: decodificador e 
+\emph on
+display
+\emph default
+ do Painel Digital (posicionado no canto direito superior).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Deixar botão 
+\begin_inset Formula $B1$
+\end_inset
+
+ solto (ou seja, 
+\begin_inset Formula $Enable=0$
+\end_inset
+
+) e tentar pressionar o botão 
+\begin_inset Formula $B2$
+\end_inset
+
+ (ou seja, tentar aplicar pulsos de 
+\emph on
+clock
+\emph default
+).
+ Verificar se algo ocorre.
+\end_layout
+
+\begin_layout Enumerate
+Pressionar o botão 
+\begin_inset Formula $B1$
+\end_inset
+
+ (ou seja, 
+\begin_inset Formula $Enable=1$
+\end_inset
+
+) e, mantendo-o pressionado, pressionar várias vezes o botão 
+\begin_inset Formula $B2$
+\end_inset
+
+ (aplicando, assim, pulsos de 
+\emph on
+clock
+\emph default
+).
+ Verificar se algo ocorre.
+\end_layout
+
+\begin_layout Enumerate
+Em qualquer valor de contagem, comutar a chave 
+\begin_inset Formula $C1$
+\end_inset
+
+ e verificar se o valor no 
+\emph on
+display 
+\emph default
+volta para 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Agora, manter pressionado o botão 
+\begin_inset Formula $B2$
+\end_inset
+
+ e pressionar várias vezes o botão 
+\begin_inset Formula $B1$
+\end_inset
+
+.
+ Note-se que, nesta situação, pulsos no 
+\begin_inset Formula $Enable$
+\end_inset
+
+ também incrementam o contador.
+\end_layout
+
+\begin_layout Section
+Para Pensar\SpecialChar ldots
+
+\end_layout
+
+\begin_layout Enumerate
+Quais as vantagens do contador síncrono em relação ao assíncrono?
+\end_layout
+
+\begin_layout Enumerate
+Quais as desvantagens do contador síncrono em relação ao assíncrono?
+\end_layout
+
+\begin_layout Enumerate
+Os 
+\emph on
+flip-flops
+\emph default
+ 
+\bar under
+reais
+\bar default
+ possuem um tempo de atraso na propagação do 
+\emph on
+clock
+\emph default
+, ou seja, tem-se um tempo entre a aplicação do 
+\emph on
+clock
+\emph default
+ e a alteração da saída 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ Caso os 
+\emph on
+flip-flops
+\emph default
+ fossem 
+\bar under
+ideais
+\bar default
+, ou seja, caso este tempo de atraso fosse nulo, o registrador de deslocamento
+ iria operar conforme descrito?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lista de Materiais
+\end_layout
+
+\begin_layout Itemize
+Painel Digital
+\end_layout
+
+\begin_layout Itemize
+Caixa com fios
+\end_layout
+
+\begin_layout Itemize
+Alicate de corte
+\end_layout
+
+\begin_layout Itemize
+Alicate de bico
+\end_layout
+
+\begin_layout Itemize
+Espátula
+\end_layout
+
+\begin_layout Itemize
+CIs: 2x 7474, 1x 4518
 \end_layout
 
 \end_inset

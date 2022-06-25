@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Sat Jun 25 16:45:50 BRT 2022 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="212.1mm"
+   height="93.6mm"
+   viewBox="38 -12 1414 624">
+<g stroke-linecap="square">
+<circle cx="180.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<circle cx="50.0" cy="60.0" r="10.0" stroke="#000000" stroke-width="4.0" fill="#000000" />
+<path d="M 64,60 Q 85,60 106,60" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 86,66 L 108,60 L 86,54" stroke="#808080" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="180.0" y="45.0" fill="#000000" style="font-size:24px">1</text>
+<circle cx="420.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="420.0" y="45.0" fill="#000000" style="font-size:24px">2</text>
+<circle cx="660.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="660.0" y="45.0" fill="#000000" style="font-size:24px">3</text>
+<circle cx="900.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="900.0" y="45.0" fill="#000000" style="font-size:24px">4</text>
+<circle cx="1140.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1140.0" y="45.0" fill="#000000" style="font-size:24px">5</text>
+<circle cx="1380.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1380.0" y="45.0" fill="#000000" style="font-size:24px">6</text>
+<circle cx="1380.0" cy="300.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1380.0" y="285.0" fill="#000000" style="font-size:24px">7</text>
+<circle cx="1380.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1380.0" y="525.0" fill="#000000" style="font-size:24px">8</text>
+<circle cx="1140.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1140.0" y="525.0" fill="#000000" style="font-size:24px">9</text>
+<circle cx="900.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="900.0" y="525.0" fill="#000000" style="font-size:24px">10</text>
+<circle cx="660.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="660.0" y="525.0" fill="#000000" style="font-size:24px">11</text>
+<circle cx="420.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="420.0" y="525.0" fill="#000000" style="font-size:24px">12</text>
+<circle cx="180.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="180.0" y="525.0" fill="#000000" style="font-size:24px">13</text>
+<path d="M 253.99765,60.589718 Q 300.99994,60.495262 344.0024,60.605656" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 323.98706,66.55429 L 346.0024,60.61079 L 324.01788,54.554333" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 493.99963,60.228443 Q 541,60.19184 584.00037,60.23462" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 563.9944,66.21472 L 586.00037,60.23661 L 564.00635,54.214725" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 733.99396,59.054184 Q 780.99994,59.20559 824.0062,59.02862" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 804.0311,65.11087 L 826.0062,59.020393 L 803.9817,53.11097" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 973.996,59.228874 Q 1020.9999,59.352356 1064.0042,59.208035" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1044.0244,65.27512 L 1066.0042,59.201324 L 1043.9841,53.27519" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1213.9999,59.848614 Q 1261,59.872864 1304.0001,59.844524" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1284.004,65.857704 L 1306.0001,59.843204 L 1283.9962,53.857704" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1380.731,133.9964 Q 1380.614,180.99994 1380.7506,224.00371" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1374.6871,204.02287 L 1380.757,226.0037 L 1386.6871,203.98476" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1379.4749,373.99814 Q 1379.5592,420.99994 1379.4607,464.00192" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1373.5065,443.98825 L 1379.456,466.00192 L 1385.5065,444.01572" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1306.0005,539.7492 Q 1259,539.7893 1215.9995,539.7424" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1236.0061,533.7642 L 1213.9995,539.7402 L 1235.9929,545.7642" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1066.004,539.2295 Q 1019.0001,539.35284 975.99585,539.2086" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 996.01587,533.27576 L 973.99585,539.2019 L 995.9756,545.27563" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 826.00165,539.5045 Q 779,539.584 735.9983,539.49115" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 756.01117,533.5343 L 733.9983,539.4868 L 755.9853,545.5343" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 586.0044,539.1918 Q 539.00006,539.32117 495.99548,539.17" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 516.0165,533.24036 L 493.99548,539.16296 L 515.97424,545.24023" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 346.00336,539.29474 Q 299.00006,539.4077 255.99655,539.2757" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 276.0149,533.3371 L 253.99657,539.26953 L 275.97803,545.3371" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 179.88876,466.0001 Q 179.70044,299 179.88576,135.99991" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 185.86302,156.00671 L 179.88803,133.99991 L 173.86302,155.99307" stroke="#808080" stroke-width="2.0" fill="none"/>
+</g>
+</svg>
