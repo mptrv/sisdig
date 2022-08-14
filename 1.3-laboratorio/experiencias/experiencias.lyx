@@ -260,7 +260,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -405,7 +405,7 @@ customHeadersFooters
 \color #cae8cd
 \end_branch
 \branch dg-contadores-sincronos-controle-de-contagem
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #cae8cd
 \end_branch
@@ -39657,7 +39657,7 @@ tituloexp
 \begin_layout Standard
 \begin_inset Branch an-resistores
 inverted 0
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -42072,8 +42072,45 @@ status open
 \begin_layout Plain Layout
 Código de cores completo, válidos para resistores de 3, 4, 5 ou 6 faixas
  de cor.
- (A letra que aparece entre parêntesis na tolerância refere-se à identificação
- da tolerância em resistores SMD – ver descrição no texto.)
+ A letra que aparece entre parêntesis na tolerância refere-se à identificação
+ da tolerância em resistores SMD – ver descrição no texto.
+ O coeficiente de temperatura é dado em ppm/
+\begin_inset Formula $\six{}{\celsius}$
+\end_inset
+
+, em que 
+\begin_inset Quotes eld
+\end_inset
+
+ppm
+\begin_inset Quotes erd
+\end_inset
+
+ significa 
+\begin_inset Quotes eld
+\end_inset
+
+partes por milhão
+\begin_inset Quotes erd
+\end_inset
+
+ – por exemplo, se o resistor for de 
+\begin_inset Formula $\six 1{\mega\ohm}$
+\end_inset
+
+ com coeficiente de temperatura de 50ppm/
+\begin_inset Formula $\si{\celsius}$
+\end_inset
+
+, então haverá a variação de 
+\begin_inset Formula $\six{50}{\ohm}$
+\end_inset
+
+ por 
+\begin_inset Formula $\si{\celsius}$
+\end_inset
+
+ de variação na temperatura.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Código-de-cores-completo-de-resistores"
@@ -42085,10 +42122,6 @@ name "fig:Código-de-cores-completo-de-resistores"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -42661,7 +42694,7 @@ Identificação de Resistores
 \end_layout
 
 \begin_layout Enumerate
-Dentre os resistores fornecidos, escolha 6 peças.
+Dentre os resistores fornecidos, escolha 3 peças.
  Identifique-os por suas respectivas faixas de cores e preencha a 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -42670,10 +42703,6 @@ reference "tab:Tabela-de-resultados-identificacao-resistores"
 \end_inset
 
 , na qual:
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -42756,7 +42785,7 @@ esptab
 \size small
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="9">
+<lyxtabular version="3" rows="5" columns="9">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="1.5cm">
@@ -43134,268 +43163,13 @@ Erro
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \size small
-6
+3
 \end_layout
 
 \end_inset

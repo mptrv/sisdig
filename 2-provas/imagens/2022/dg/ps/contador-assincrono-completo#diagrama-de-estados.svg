@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Digital by H.Neemann -->
+<!-- created: Wed Jul 27 18:48:17 BRT 2022 -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="165.6mm"
+   height="104.1mm"
+   viewBox="348 -82 1104 694">
+<g stroke-linecap="square">
+<circle cx="420.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="420.0" y="45.0" fill="#000000" style="font-size:24px">14</text>
+<circle cx="660.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<circle cx="660.0" cy="-70.0" r="10.0" stroke="#000000" stroke-width="4.0" fill="#000000" />
+<path d="M 660,-56 Q 660,-35 660,-14" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 654,-34 L 660,-12 L 666,-34" stroke="#808080" stroke-width="2.0" fill="none"/>
+<text text-anchor="middle" x="660.0" y="45.0" fill="#000000" style="font-size:24px">3</text>
+<circle cx="900.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="900.0" y="45.0" fill="#000000" style="font-size:24px">4</text>
+<circle cx="1140.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1140.0" y="45.0" fill="#000000" style="font-size:24px">5</text>
+<circle cx="1380.0" cy="60.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1380.0" y="45.0" fill="#000000" style="font-size:24px">6</text>
+<circle cx="1380.0" cy="300.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1380.0" y="285.0" fill="#000000" style="font-size:24px">7</text>
+<circle cx="1380.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1380.0" y="525.0" fill="#000000" style="font-size:24px">8</text>
+<circle cx="1140.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="1140.0" y="525.0" fill="#000000" style="font-size:24px">9</text>
+<circle cx="900.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="900.0" y="525.0" fill="#000000" style="font-size:24px">10</text>
+<circle cx="660.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="660.0" y="525.0" fill="#000000" style="font-size:24px">11</text>
+<circle cx="420.0" cy="540.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="420.0" y="525.0" fill="#000000" style="font-size:24px">12</text>
+<circle cx="420.0" cy="300.0" r="70.0" stroke="#000000" stroke-width="4.0" fill="none" />
+<text text-anchor="middle" x="420.0" y="285.0" fill="#000000" style="font-size:24px">13</text>
+<path d="M 733.99396,59.054184 Q 780.99994,59.20559 824.0062,59.02862" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 804.0311,65.11087 L 826.0062,59.020393 L 803.9817,53.11097" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 973.996,59.228874 Q 1020.9999,59.352356 1064.0042,59.208035" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1044.0244,65.27512 L 1066.0042,59.201324 L 1043.9841,53.27519" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1213.9999,59.848614 Q 1261,59.872864 1304.0001,59.844524" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1284.004,65.857704 L 1306.0001,59.843204 L 1283.9962,53.857704" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1380.731,133.9964 Q 1380.614,180.99994 1380.7506,224.00371" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1374.6871,204.02287 L 1380.757,226.0037 L 1386.6871,203.98476" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1379.4749,373.99814 Q 1379.5592,420.99994 1379.4607,464.00192" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1373.5065,443.98825 L 1379.456,466.00192 L 1385.5065,444.01572" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1306.0005,539.7492 Q 1259,539.7893 1215.9995,539.7424" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1236.0061,533.7642 L 1213.9995,539.7402 L 1235.9929,545.7642" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 1066.004,539.2295 Q 1019.0001,539.35284 975.99585,539.2086" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 996.01587,533.27576 L 973.99585,539.2019 L 995.9756,545.27563" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 826.00165,539.5045 Q 779,539.584 735.9983,539.49115" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 756.01117,533.5343 L 733.9983,539.4868 L 755.9853,545.5343" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 586.0044,539.1918 Q 539.00006,539.32117 495.99548,539.17" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 516.0165,533.24036 L 493.99548,539.16296 L 515.97424,545.24023" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 493.99805,59.46375 Q 541,59.549652 584.002,59.449253" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 564.0161,65.49593 L 586.002,59.444584 L 563.98804,53.495964" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 419.41028,466.00235 Q 419.50476,419.00006 419.39432,375.9976" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 425.44565,395.98212 L 419.3892,373.9976 L 413.4457,396.01294" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 420.3351,226.00076 Q 420.28146,179 420.34418,135.99922" stroke="#808080" stroke-width="2.0" fill="none"/>
+<path d="M 426.315,156.00795 L 420.3471,133.99922 L 414.315,155.99046" stroke="#808080" stroke-width="2.0" fill="none"/>
+</g>
+</svg>
