@@ -1,0 +1,178 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R1
+U 1 1 62FEB36C
+P 4600 2850
+F 0 "R1" H 4668 2850 50  0000 L CNN
+F 1 "R_US" H 4668 2805 50  0001 L CNN
+F 2 "" V 4640 2840 50  0001 C CNN
+F 3 "~" H 4600 2850 50  0001 C CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 62FEBB24
+P 4600 3400
+F 0 "SW1" V 4600 3312 50  0000 R CNN
+F 1 "SW_SPST" V 4555 3312 50  0001 R CNN
+F 2 "" H 4600 3400 50  0001 C CNN
+F 3 "~" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR03
+U 1 1 62FEE864
+P 4600 3700
+F 0 "#PWR03" H 4600 3450 50  0001 C CNN
+F 1 "Earth" H 4600 3550 50  0001 C CNN
+F 2 "" H 4600 3700 50  0001 C CNN
+F 3 "~" H 4600 3700 50  0001 C CNN
+	1    4600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:7400 U1
+U 1 1 62FEEE11
+P 5600 3100
+F 0 "U1" H 5600 3333 50  0000 C CNN
+F 1 "7400" H 5600 3334 50  0001 C CNN
+F 2 "" H 5600 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn7400" H 5600 3100 50  0001 C CNN
+	1    5600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 62FF2604
+P 6400 2850
+F 0 "R2" H 6468 2850 50  0000 L CNN
+F 1 "R_US" H 6468 2805 50  0001 L CNN
+F 2 "" V 6440 2840 50  0001 C CNN
+F 3 "~" H 6400 2850 50  0001 C CNN
+	1    6400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR02
+U 1 1 62FF76BE
+P 6400 2600
+F 0 "#PWR02" H 6400 2450 50  0001 C CNN
+F 1 "VCC" H 6415 2773 50  0000 C CNN
+F 2 "" H 6400 2600 50  0001 C CNN
+F 3 "" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 62FF7E2C
+P 4600 2600
+F 0 "#PWR01" H 4600 2450 50  0001 C CNN
+F 1 "VCC" H 4615 2773 50  0000 C CNN
+F 2 "" H 4600 2600 50  0001 C CNN
+F 3 "" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2600 6400 2700
+Wire Wire Line
+	6000 3100 5900 3100
+Wire Wire Line
+	6400 3000 6400 3100
+Wire Wire Line
+	4600 2600 4600 2700
+Wire Wire Line
+	4600 3000 4600 3100
+Wire Wire Line
+	4600 3600 4600 3700
+Wire Wire Line
+	5300 3000 5200 3000
+Wire Wire Line
+	5200 3000 5200 3100
+Wire Wire Line
+	5200 3200 5300 3200
+Wire Wire Line
+	5200 3100 4600 3100
+Connection ~ 5200 3100
+Wire Wire Line
+	5200 3100 5200 3200
+Connection ~ 4600 3100
+Wire Wire Line
+	4600 3100 4600 3200
+$Comp
+L Pessoal:seta_tensao_longa V1
+U 1 1 62FF90C7
+P 5150 3300
+F 0 "V1" H 4950 3300 50  0000 L CNN
+F 1 "seta_tensao_longa" H 5125 3175 50  0001 C CNN
+F 2 "" H 5150 3400 50  0001 C CNN
+F 3 "" H 5150 3400 50  0001 C CNN
+	1    5150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR04
+U 1 1 62FF9E0C
+P 5200 3700
+F 0 "#PWR04" H 5200 3450 50  0001 C CNN
+F 1 "Earth" H 5200 3550 50  0001 C CNN
+F 2 "" H 5200 3700 50  0001 C CNN
+F 3 "~" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3500 5200 3700
+$Comp
+L Connector:TestPoint_Small TP1
+U 1 1 62FFAD35
+P 5200 3500
+F 0 "TP1" H 5248 3546 50  0001 L CNN
+F 1 "TestPoint_Small" H 5248 3455 50  0001 L CNN
+F 2 "" H 5400 3500 50  0001 C CNN
+F 3 "~" H 5400 3500 50  0001 C CNN
+	1    5200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 62FF36D2
+P 6150 3100
+F 0 "D1" H 6143 3225 50  0000 C CNN
+F 1 "LED_ALT" H 6143 3226 50  0001 C CNN
+F 2 "" H 6150 3100 50  0001 C CNN
+F 3 "~" H 6150 3100 50  0001 C CNN
+	1    6150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3100 6300 3100
+$Comp
+L Pessoal:seta_corrente I1
+U 1 1 6300180F
+P 4900 3050
+F 0 "I1" H 5000 3133 50  0000 C CNN
+F 1 "seta_corrente" H 5000 3000 50  0001 C CNN
+F 2 "" H 4900 3050 50  0001 C CNN
+F 3 "" H 4900 3050 50  0001 C CNN
+	1    4900 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
