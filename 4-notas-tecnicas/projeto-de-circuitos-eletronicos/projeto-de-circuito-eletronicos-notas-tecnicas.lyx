@@ -582,6 +582,10 @@ e
 \emph on
 \lang english
 Pull-Down
+\emph default
+ 
+\lang brazilian
+
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Estudo-sobre-Valores-de-Resistores-Pull-Up-Pull-Down"
@@ -604,7 +608,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -642,7 +646,7 @@ na configuração A.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -760,8 +764,6 @@ na configuração B.
 \end_layout
 
 \begin_layout Plain Layout
-
-\emph on
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout

@@ -260,7 +260,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-resistores
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -270,7 +270,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -39657,7 +39657,7 @@ tituloexp
 \begin_layout Standard
 \begin_inset Branch an-resistores
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -47889,9 +47889,37 @@ W: 1x (
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Temporário: número da experiência
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{contexp}{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
 inverted 0
-status collapsed
+status open
 
 \begin_layout Chapter
 
@@ -48048,7 +48076,7 @@ O potenciômetro trata-se de um resistor variável.
  deslizante, que é o terceiro terminal e responsável pela variação da resistênci
 a em função de seu posicionamento
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 O evento físico aqui é o movimento mecânico exercido sobre o cursor.
@@ -48079,7 +48107,7 @@ trimpots
 \emph default
 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Potenciômetros de montagem sobre placa, sem haste, normalmente utilizados
@@ -48107,6 +48135,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/medidas-eletricas-potenciometro.png
+	lyxscale 50
 	width 90text%
 
 \end_inset
@@ -48146,7 +48175,7 @@ name "fig:medidas-eletricas-Potenciômetro-angular"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -48182,6 +48211,279 @@ name "fig:medidas-eletricas-Vários-tipos-de-pot"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Aplicações
+\end_layout
+
+\begin_layout Standard
+Embora a finalidade principal do potenciômetro seja de ajustar algum parâmetro
+ (o volume do aparelho de som, por exemplo), podemos facilmente utilizá-lo
+ como um sensor de posição.
+ Potenciômetros com essa finalidade podem ser encontrados em robôs e equipamento
+s industriais, onde são destinados a informar a angulação exata de um braço
+ mecânico.
+\end_layout
+
+\begin_layout Standard
+Além da resistência total, podemos classificar os potenciômetros de acordo
+ com outros fatores.
+ O principal é o modo como podemos alterar a posição do cursor, ou seja,
+ como podemos variar a resistência entre o terminal central e os terminais
+ externos.
+ Podemos classificá-los em angulares, lineares ou multivolta, como ilustrado
+ na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-modelos-de-potenciometro"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/medidas-eletricas/modelos-de-potenciometro.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelos de potenciômetros.
+ 1-Poteciôetro angular.
+ 2-Potenciômetro multivolta.
+ 3-Potenciômetro linear.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F
+\emph default
+\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:medidas-eletricas-modelos-de-potenciometro"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para utilizar um potenciômetro como um sensor de posição, é necessário ligar
+ um dos terminais da extremidade com uma tensão positiva e o outro com uma
+ tensão negativa.
+ A tensão do terminal central variará entre esses dois valores de tensão.
+ A tensão máxima de alimentação do potenciômetro depende da potência que
+ ele e capaz de dissipar (a energia perdida na forma de calor) e de sua
+ resistência.
+ Um potenciômetro comum é capaz de dissipar uma potência de 0,5W.
+ Supondo que estamos utilizando um potenciômetro de 1kΩ vamos calcular a
+ tensão máxima que podemos alimentá-lo.
+ A relação entre potência, tensão e resistência é dada pela seguinte fórmula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+P & =\frac{V^{2}}{R}\\
+V & =\sqrt{P\cdot R}\\
+V & =\sqrt{\six{0,5}{\W}\cdot\six{1000}{\ohm}}\\
+V & =\six{22,4}{\V}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos alimentar esse potenciômetro com uma tensão continua de, no máximo,
+ 22,4 Volts.
+\end_layout
+
+\begin_layout Standard
+Além de estar atento a tensão, lembre-se de nunca ligar o terminal central
+ do potenciômetro a alimentação, sob o risco de causar um curto-circuito
+ na fonte de alimentação.
+\end_layout
+
+\begin_layout Standard
+Podemos utilizar potenciômetros nas mais variadas aplicações que envolvam
+ deslocamento, seja ele linear ou angular.
+ Através desse componente, é possível fazer o controle preciso da posição
+ de um eixo ou de um braço mecânico de um robô.
+ A partir da tensão de saída do potenciômetro, é possível saber a angulação
+ do conjunto e, se necessário, controlá-la.
+\end_layout
+
+\begin_layout Standard
+Outra aplicação interessante é a medição do volume de um tanque.
+ Para isso, utilizamos um potenciômetro angular com uma boia presa ao seu
+ eixo através de uma haste.
+ Sendo assim, a resposta do potenciômetro varia em função da posição da
+ boia dentro do tanque.
+ Podemos então, de acordo com o sinal do potenciômetro, mostrar através
+ de uma barra de LEDs se este se encontra vazio ou cheio, ou até mesmo mostrar
+ o volume em litros numa tela de cristal líquido.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-potenciometro-como-sensor-de-nivel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ilustra a aplicação onde o “kit” pode ser um microcontrolador para o monitorame
+nto do valor do potenciômetro através de uma das suas entradas analógicas.
+ A 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:medidas-eletricas-potenciometro-nivel-tanque-combustivel"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ apresenta uma foto do sensor de nível de combustível de um automóvel, implement
+ado por meio de uma boia e um potenciômetro, o qual está associado a um
+ conjunto que envolve a bomba de combustível.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement !h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/medidas-eletricas/potenciometro-como-sensor-de-nivel.png
+	lyxscale 30
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Utilizando um potenciômetro para monitorar o volume de um tanque.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F
+\emph default
+\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:medidas-eletricas-potenciometro-como-sensor-de-nivel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement !h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/medidas-eletricas/conjunto-bomba-de-comubustivel-e-sensor-de-nivel.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Foto do conjunto de uma bomba de combustível no qual vê-se, à frente, a
+ boia associada a um potenciômetro para a medição do nível de combustível
+ no tanque de um automóvel.
+ O par de fios do potenciômetro é acessível por um conector na parte superior
+ do conjunto.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:medidas-eletricas-potenciometro-nivel-tanque-combustivel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -49899,7 +50201,7 @@ reference "fig:lei-ohm-ixv-nao-linear"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -49995,7 +50297,7 @@ Resumindo, a Lei de Ohm expressa uma relação linear, ideal, entre
  de corrente e, consequentemente, de potência dissipada pelo dispositivo.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Bipolo Linear e Bipolo Não Linear
 \end_layout
 
@@ -50073,7 +50375,462 @@ reference "fig:lei-ohm-ixv-nao-linear"
 
 \end_inset
 
-), ou mesmo uma junção semicondutora (como a de um diodo ou transistor).
+), uma junção semicondutora (como a de um diodo ou transistor), um termistor
+ (NTC e PTC), ou ainda um LDR (
+\emph on
+\lang english
+Light Dependent Resistor
+\emph default
+\lang brazilian
+).
+ No caso do termistor e do fotorresistor (LDR), a resistência depende de
+ parâmetros externos tais como a temperatura, no caso do termistor, e a
+ luz incidente, no caso do fotorresistor.
+ A seguir, serão discutidas algumas das principais características desses
+ elementos.
+\end_layout
+
+\begin_layout Subsubsection*
+Termistores 
+\end_layout
+
+\begin_layout Standard
+São elementos resistivos feitos de material semicondutor, cuja resistência
+ depende fortemente da temperatura.
+ São classificados em: NTC (abreviatura de 
+\emph on
+\lang english
+Negative Temperature Coefficient
+\emph default
+\lang brazilian
+), cuja resistência diminui com o aumento de temperatura e PTC (
+\emph on
+\lang english
+Positive Temperature Coefficient
+\emph default
+\lang brazilian
+), cuja resistência aumenta com a temperatura.
+ Na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Termistores-diversos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ veem-se termistores diversos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/lei-de-ohm/termistores-diversos.png
+	lyxscale 25
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Termistores diversos.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Termistores-diversos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As curvas na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:termistores-Curva-de-resposta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostram como a resistência dos termistores NTC e PTC varia de acordo com
+ a temperatura.
+ Os fabricantes disponibilizam vários tipos de termistores, com diferentes
+ curvas de resposta, temperaturas máximas e mínimas de operação e outras
+ características, de modo que seu funcionamento seja adequado a determinadas
+ aplicações.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/lei-de-ohm/termistores-curvas-ntc-ptc.png
+	lyxscale 25
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Curva de resposta dos termistores NTC e PTC.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:termistores-Curva-de-resposta"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Durante a utilização do termistor, é importante levar em consideração que
+ ele apresenta uma faixa limite de operação.
+ A temperatura adequada para a sua utilização varia de acordo com o fabricante.
+ Para fazer a medição da temperatura através do termistor, podemos ligá-lo
+ na forma de um divisor de tensão, pois ele é um sensor resistivo.
+ Desse modo, a tensão resultante nesse circuito será correspondente à temperatur
+a do ambiente.
+ Isso porque a resistência do termistor está relacionada com a temperatura
+ do ambiente ao seu redor.
+\end_layout
+
+\begin_layout Subsubsection*
+Fotoresistor ou LDR 
+\end_layout
+
+\begin_layout Standard
+O exemplo mais comum de sensor resistivo é o LDR (
+\emph on
+\lang english
+Light Dependent Resistor
+\emph default
+\lang brazilian
+ – Resistor Dependente de Luz), que é um componente como o da 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:LDR"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ em qual uma variação na luminosidade que incide sobre ele resulta numa
+ variação na sua resistência.
+ A aplicação mais conhecida do LDR é, sem dúvida, na iluminação pública,
+ onde é utilizado para que, de acordo com a claridade do ambiente, sejam
+ acionadas ou desligadas as lâmpadas automaticamente, sem que haja a necessidade
+ de alguém para controlá-las.
+ Os LDRs são também utilizados em câmeras para medir o nível de luz do ambiente,
+ permitindo assim o controle do tempo de exposição para a captura de uma
+ boa imagem.
+\end_layout
+
+\begin_layout Standard
+Os símbolos elétricos utilizados para representá-los podem ser vistos na
+ 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ldr-Símbolos-utilizados"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/lei-de-ohm/ldr.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+LDR.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LDR"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/lei-de-ohm/ldr-simbolos.png
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Símbolos utilizados em circuitos eletrônicos.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ldr-Símbolos-utilizados"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os LDRs são compostos por sulfeto de cádmio (CdS), um material semicondutor,
+ que é disposto num traçado onduloso na superfície do componente.
+ Esse material tem a propriedade de diminuir sua resistência à passagem
+ da corrente elétrica quando a luminosidade sobre ele aumenta.
+ Com o auxílio de um multímetro, podemos verificar facilmente como ocorre
+ esse fato.
+ Num ambiente escuro, sua resistência será alta, podendo chegar a valores
+ próximos ou até superiores a 1 MΩ.
+ Mas se aumentarmos gradativamente a intensidade da luz que incide sobre
+ ele, podemos verificar que sua resistência cairá, podendo chegar a valores
+ próximos de 1 kΩ.
+ 
+\end_layout
+
+\begin_layout Standard
+Esses valores, no entanto, dependem de vários fatores, como o componente
+ utilizado, a quantidade de luz no ambiente e o próprio multímetro.
+ Podemos verificar a curva de resposta do LDR na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ldr-Curva-de-resposta"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/lei-de-ohm/ldr-curva.jpg
+	lyxscale 25
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Curva de resposta do LDR.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ldr-Curva-de-resposta"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para fazer a medida da luminosidade do ambiente através do LDR, precisamos
+ fazer com que a variação da resistência do componente seja convertida numa
+ variação de tensão.
+ Essa tensão pode ser utilizada por um circuito externo ou ser monitorada
+ através da entrada analógica de um microcontrolador, por exemplo.
+ O meio mais fácil de conectá-lo é através de um divisor de tensão, como
+ o ilustrado na 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:ldr-Divisor-de-tensão"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/lei-de-ohm/ldr-divisor-de-tensao.png
+	lyxscale 60
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Divisor de tensão com o LDR.
+ 
+\emph on
+Fonte: Patsko, L\SpecialChar endofsentence
+ F\SpecialChar endofsentence
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ldr-Divisor-de-tensão"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -50164,10 +50921,9 @@ status open
 
 
 \begin_inset Tabular
-<lyxtabular version="3" rows="15" columns="5">
+<lyxtabular version="3" rows="9" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top" width="2cm">
@@ -50218,15 +50974,6 @@ si{mA}
 \end_inset
 
 )
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -50329,33 +51076,6 @@ ohm}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $R=$
-\end_inset
-
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{2k2}{
-\backslash
-ohm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -50390,62 +51110,6 @@ ohm}
 
 \begin_layout Plain Layout
 0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -50506,62 +51170,6 @@ ohm}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -50578,62 +51186,6 @@ ohm}
 
 \begin_layout Plain Layout
 4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -50694,62 +51246,6 @@ ohm}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -50766,62 +51262,6 @@ ohm}
 
 \begin_layout Plain Layout
 8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -50882,62 +51322,6 @@ ohm}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-11
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -50954,15 +51338,6 @@ ohm}
 
 \begin_layout Plain Layout
 12
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -51668,21 +52043,6 @@ status open
 SI{1}{
 \backslash
 kilo
-\backslash
-ohm}
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-SI{2k2}{
 \backslash
 ohm}
 \end_layout
