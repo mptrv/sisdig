@@ -270,7 +270,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-medidas-potenciometro
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -280,7 +280,7 @@ customHeadersFooters
 \color #faf0e6
 \end_branch
 \branch an-leis-kirchhoff
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -47889,37 +47889,9 @@ W: 1x (
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%Temporário: número da experiência
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{contexp}{3}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setcounter{chapter}{2}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Branch an-medidas-potenciometro
 inverted 0
-status open
+status collapsed
 
 \begin_layout Chapter
 
@@ -52077,9 +52049,37 @@ Cabos banana-banana
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Temporário: número da experiência
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{contexp}{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{4}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Branch an-leis-kirchhoff
 inverted 0
-status collapsed
+status open
 
 \begin_layout Chapter
 Leis de Kirchhoff
@@ -52095,7 +52095,10 @@ Objetivo
 \end_layout
 
 \begin_layout Itemize
-Verificar experimentalmente as duas leis de Kirchhoff.
+Por meio do contexto das Leis de Kirchhoff, salientar a importância das
+ adoções das referências de tensão e corrente e o correto equacionamento
+ matemático com base nestas referências durante a análise teórica ou experimenta
+l de um circuito.
 \end_layout
 
 \begin_layout Section
@@ -52111,7 +52114,7 @@ Monte o circuito esquematizado abaixo.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -52613,37 +52616,17 @@ Lista de Materiais
 \end_layout
 
 \begin_layout Itemize
-Fonte CC com três canais (2 ajustáveis e 1 fixo de 5V)
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\emph on
-Alternativa:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\emph on
-Fonte CC ajustável de um canal
+Fonte CC ajustável
 \end_layout
 
 \begin_layout Itemize
-
-\emph on
 3x pilhas grandes (tipo D) de 1,5 V
 \end_layout
 
 \begin_layout Itemize
-
-\emph on
 Suporte para as pilhas
 \end_layout
 
-\end_deeper
-\end_deeper
 \begin_layout Itemize
 2 Multímetros digitais
 \end_layout

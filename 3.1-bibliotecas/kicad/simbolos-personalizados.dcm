@@ -28,6 +28,12 @@ $CMP Pulso_Borda_Subida
 K pulso, clock
 $ENDCMP
 #
+$CMP SW_SPST_Temperature_NC
+D Single Pole Single Throw (SPST) switch, temperature dependent, normaly closed
+K temperature switch
+F ~
+$ENDCMP
+#
 $CMP fonte_corrente
 D Fonte de corrente puramente simbólica.
 K Fonte de corrente, current source, i source
