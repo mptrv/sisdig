@@ -1,0 +1,526 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1300 3500 1300 3650
+$Comp
+L pspice:VSOURCE V3
+U 1 1 63255A19
+P 1300 3950
+F 0 "V3" H 1528 3996 50  0000 L CNN
+F 1 "VSOURCE" H 1528 3905 50  0000 L CNN
+F 2 "" H 1300 3950 50  0001 C CNN
+F 3 "~" H 1300 3950 50  0001 C CNN
+F 4 "V" H 1300 3950 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 5 50m 500u 500u 50m 100m)" H 1300 3950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1300 3950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1300 3950
+	1    0    0    -1  
+$EndComp
+Text Label 1300 3500 0    50   ~ 0
+A
+$Comp
+L power:Earth #PWR02
+U 1 1 6325CEC8
+P 1300 4450
+F 0 "#PWR02" H 1300 4200 50  0001 C CNN
+F 1 "Earth" H 1300 4300 50  0001 C CNN
+F 2 "" H 1300 4450 50  0001 C CNN
+F 3 "~" H 1300 4450 50  0001 C CNN
+	1    1300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 63256673
+P 1500 750
+F 0 "#GND01" H 1500 650 50  0001 C CNN
+F 1 "0" H 1500 839 50  0000 C CNN
+F 2 "" H 1500 750 50  0001 C CNN
+F 3 "~" H 1500 750 50  0001 C CNN
+	1    1500 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR01
+U 1 1 6325BAE5
+P 1300 750
+F 0 "#PWR01" H 1300 500 50  0001 C CNN
+F 1 "Earth" H 1300 600 50  0001 C CNN
+F 2 "" H 1300 750 50  0001 C CNN
+F 3 "~" H 1300 750 50  0001 C CNN
+	1    1300 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 750  1300 650 
+Wire Wire Line
+	1300 650  1500 650 
+Wire Wire Line
+	1500 650  1500 750 
+Wire Wire Line
+	6200 2050 6200 2100
+Wire Wire Line
+	6300 2050 6200 2050
+$Comp
+L power:Earth #PWR08
+U 1 1 6325C62A
+P 6200 2100
+F 0 "#PWR08" H 6200 1850 50  0001 C CNN
+F 1 "Earth" H 6200 1950 50  0001 C CNN
+F 2 "" H 6200 2100 50  0001 C CNN
+F 3 "~" H 6200 2100 50  0001 C CNN
+	1    6200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R9
+U 1 1 6325ABEA
+P 6550 2050
+F 0 "R9" V 6255 2050 50  0000 C CNN
+F 1 "2k" V 6346 2050 50  0000 C CNN
+F 2 "" H 6550 2050 50  0001 C CNN
+F 3 "~" H 6550 2050 50  0001 C CNN
+F 4 "R" H 6550 2050 50  0001 C CNN "Spice_Primitive"
+F 5 "100k" V 6437 2050 50  0000 C CNN "Spice_Model"
+F 6 "Y" H 6550 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6550 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 1550 7000 1550
+Wire Wire Line
+	6800 2050 6900 2050
+Wire Wire Line
+	6950 2050 6900 2050
+Connection ~ 6900 2050
+Wire Wire Line
+	6900 2050 6900 1550
+Wire Wire Line
+	7700 2050 7450 2050
+Wire Wire Line
+	7700 1450 7700 2050
+Connection ~ 7700 1450
+Wire Wire Line
+	7600 1450 7700 1450
+$Comp
+L pspice:R R10
+U 1 1 63259F67
+P 7200 2050
+F 0 "R10" V 7313 2050 50  0000 C CNN
+F 1 "500" V 7404 2050 50  0000 C CNN
+F 2 "" H 7200 2050 50  0001 C CNN
+F 3 "~" H 7200 2050 50  0001 C CNN
+F 4 "R" H 7200 2050 50  0001 C CNN "Spice_Primitive"
+F 5 "25k" V 7495 2050 50  0000 C CNN "Spice_Model"
+F 6 "Y" H 7200 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    7200 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 4250 1300 4450
+Wire Wire Line
+	7000 1350 6900 1350
+Text Label 6900 1350 2    50   ~ 0
+Vr2r
+Text Label 7800 1450 0    50   ~ 0
+Vs
+$Comp
+L pspice:VSOURCE V1
+U 1 1 63260121
+P 1300 1550
+F 0 "V1" H 1528 1596 50  0000 L CNN
+F 1 "VSOURCE" H 1528 1505 50  0000 L CNN
+F 2 "" H 1300 1550 50  0001 C CNN
+F 3 "~" H 1300 1550 50  0001 C CNN
+F 4 "V" H 1300 1550 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 1300 1550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1300 1550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1250 1300 1150
+Text Label 1300 1150 0    50   ~ 0
+Vcc
+$Comp
+L power:Earth #PWR03
+U 1 1 63260D89
+P 1550 2100
+F 0 "#PWR03" H 1550 1850 50  0001 C CNN
+F 1 "Earth" H 1550 1950 50  0001 C CNN
+F 2 "" H 1550 2100 50  0001 C CNN
+F 3 "~" H 1550 2100 50  0001 C CNN
+	1    1550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1150 7200 1050
+Text Label 7200 1050 0    50   ~ 0
+Vcc
+$Comp
+L pspice:VSOURCE V2
+U 1 1 63262399
+P 1300 2600
+F 0 "V2" H 1528 2646 50  0000 L CNN
+F 1 "VSOURCE" H 1528 2555 50  0000 L CNN
+F 2 "" H 1300 2600 50  0001 C CNN
+F 3 "~" H 1300 2600 50  0001 C CNN
+F 4 "V" H 1300 2600 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 1300 2600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1300 2600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1850 1300 2050
+Wire Wire Line
+	1300 2900 1300 3050
+Text Label 1300 3050 0    50   ~ 0
+Vss
+Wire Wire Line
+	1300 2050 1550 2050
+Wire Wire Line
+	1550 2050 1550 2100
+Connection ~ 1300 2050
+Wire Wire Line
+	1300 2050 1300 2300
+$Comp
+L pspice:R R11
+U 1 1 63263D9C
+P 8050 1750
+F 0 "R11" H 7982 1704 50  0000 R CNN
+F 1 "1k" H 7982 1795 50  0000 R CNN
+F 2 "" H 8050 1750 50  0001 C CNN
+F 3 "~" H 8050 1750 50  0001 C CNN
+F 4 "R" H 8050 1750 50  0001 C CNN "Spice_Primitive"
+F 5 "1k" H 8050 1750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8050 1750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8050 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 1450 8050 1500
+Wire Wire Line
+	7700 1450 8050 1450
+Wire Wire Line
+	8050 2000 8050 2100
+$Comp
+L power:Earth #PWR010
+U 1 1 632648B9
+P 8050 2100
+F 0 "#PWR010" H 8050 1850 50  0001 C CNN
+F 1 "Earth" H 8050 1950 50  0001 C CNN
+F 2 "" H 8050 2100 50  0001 C CNN
+F 3 "~" H 8050 2100 50  0001 C CNN
+	1    8050 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:OPAMP U1
+U 1 1 63265459
+P 7300 1450
+F 0 "U1" H 7644 1496 50  0000 L CNN
+F 1 "OPAMP" H 7644 1405 50  0000 L CNN
+F 2 "" H 7300 1450 50  0001 C CNN
+F 3 "~" H 7300 1450 50  0001 C CNN
+F 4 "X" H 7300 1450 50  0001 C CNN "Spice_Primitive"
+F 5 "LM358" H 7300 1450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7300 1450 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "1 2 4 5 3" H 7300 1450 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/OpAmp_TI.lib" H 7300 1450 50  0001 C CNN "Spice_Lib_File"
+	1    7300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR09
+U 1 1 63266722
+P 7200 1850
+F 0 "#PWR09" H 7200 1600 50  0001 C CNN
+F 1 "Earth" H 7200 1700 50  0001 C CNN
+F 2 "" H 7200 1850 50  0001 C CNN
+F 3 "~" H 7200 1850 50  0001 C CNN
+	1    7200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1850 7200 1750
+$Comp
+L Device:R R2
+U 1 1 63271939
+P 4000 1650
+F 0 "R2" H 4070 1696 50  0000 L CNN
+F 1 "2R" H 4070 1605 50  0000 L CNN
+F 2 "" V 3930 1650 50  0001 C CNN
+F 3 "~" H 4000 1650 50  0001 C CNN
+F 4 "R" H 4000 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "2.2k" H 4000 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4000 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 63271CEB
+P 4500 1650
+F 0 "R4" H 4570 1696 50  0000 L CNN
+F 1 "2R" H 4570 1605 50  0000 L CNN
+F 2 "" V 4430 1650 50  0001 C CNN
+F 3 "~" H 4500 1650 50  0001 C CNN
+F 4 "R" H 4500 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "2.2k" H 4500 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4500 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 63272570
+P 4250 1350
+F 0 "R3" V 4043 1350 50  0000 C CNN
+F 1 "R" V 4134 1350 50  0000 C CNN
+F 2 "" V 4180 1350 50  0001 C CNN
+F 3 "~" H 4250 1350 50  0001 C CNN
+F 4 "R" H 4250 1350 50  0001 C CNN "Spice_Primitive"
+F 5 "1.1k" H 4250 1350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 1350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4250 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 63272BB6
+P 3600 1650
+F 0 "R1" H 3670 1696 50  0000 L CNN
+F 1 "2R" H 3670 1605 50  0000 L CNN
+F 2 "" V 3530 1650 50  0001 C CNN
+F 3 "~" H 3600 1650 50  0001 C CNN
+F 4 "R" H 3600 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "2.2k" H 3600 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3600 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 63273BB7
+P 5000 1650
+F 0 "R6" H 5070 1696 50  0000 L CNN
+F 1 "2R" H 5070 1605 50  0000 L CNN
+F 2 "" V 4930 1650 50  0001 C CNN
+F 3 "~" H 5000 1650 50  0001 C CNN
+F 4 "R" H 5000 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "2.2k" H 5000 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5000 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 63273BC0
+P 4750 1350
+F 0 "R5" V 4543 1350 50  0000 C CNN
+F 1 "R" V 4634 1350 50  0000 C CNN
+F 2 "" V 4680 1350 50  0001 C CNN
+F 3 "~" H 4750 1350 50  0001 C CNN
+F 4 "R" H 4750 1350 50  0001 C CNN "Spice_Primitive"
+F 5 "1.1k" H 4750 1350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4750 1350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4750 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 63274356
+P 5500 1650
+F 0 "R8" H 5570 1696 50  0000 L CNN
+F 1 "2R" H 5570 1605 50  0000 L CNN
+F 2 "" V 5430 1650 50  0001 C CNN
+F 3 "~" H 5500 1650 50  0001 C CNN
+F 4 "R" H 5500 1650 50  0001 C CNN "Spice_Primitive"
+F 5 "2.2k" H 5500 1650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5500 1650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 6327435F
+P 5250 1350
+F 0 "R7" V 5043 1350 50  0000 C CNN
+F 1 "R" V 5134 1350 50  0000 C CNN
+F 2 "" V 5180 1350 50  0001 C CNN
+F 3 "~" H 5250 1350 50  0001 C CNN
+F 4 "R" H 5250 1350 50  0001 C CNN "Spice_Primitive"
+F 5 "1.1k" H 5250 1350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5250 1350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5250 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR06
+U 1 1 632747E6
+P 3600 1900
+F 0 "#PWR06" H 3600 1650 50  0001 C CNN
+F 1 "Earth" H 3600 1750 50  0001 C CNN
+F 2 "" H 3600 1900 50  0001 C CNN
+F 3 "~" H 3600 1900 50  0001 C CNN
+	1    3600 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1900 3600 1800
+Wire Wire Line
+	3600 1350 4000 1350
+Wire Wire Line
+	5500 1350 5500 1500
+Wire Wire Line
+	4400 1350 4500 1350
+Wire Wire Line
+	3600 1500 3600 1350
+Wire Wire Line
+	4900 1350 5000 1350
+Wire Wire Line
+	5400 1350 5500 1350
+Wire Wire Line
+	4000 1900 4000 1800
+Wire Wire Line
+	4000 1500 4000 1350
+Connection ~ 4000 1350
+Wire Wire Line
+	4000 1350 4100 1350
+Wire Wire Line
+	4500 1900 4500 1800
+Wire Wire Line
+	4500 1500 4500 1350
+Connection ~ 4500 1350
+Wire Wire Line
+	4500 1350 4600 1350
+Wire Wire Line
+	5000 1900 5000 1800
+Wire Wire Line
+	5000 1500 5000 1350
+Connection ~ 5000 1350
+Wire Wire Line
+	5000 1350 5100 1350
+Wire Wire Line
+	5500 1800 5500 1900
+Text Label 5500 1900 0    50   ~ 0
+A
+Text Label 5000 1900 0    50   ~ 0
+B
+Text Label 4500 1900 0    50   ~ 0
+C
+Text Label 4000 1900 0    50   ~ 0
+D
+Wire Wire Line
+	2250 3500 2250 3650
+$Comp
+L pspice:VSOURCE V4
+U 1 1 6327C7FA
+P 2250 3950
+F 0 "V4" H 2478 3996 50  0000 L CNN
+F 1 "VSOURCE" H 2478 3905 50  0000 L CNN
+F 2 "" H 2250 3950 50  0001 C CNN
+F 3 "~" H 2250 3950 50  0001 C CNN
+F 4 "V" H 2250 3950 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 5 25m 500u 500u 25m 50m)" H 2250 3950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2250 3950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2250 3950
+	1    0    0    -1  
+$EndComp
+Text Label 2250 3500 0    50   ~ 0
+B
+$Comp
+L power:Earth #PWR04
+U 1 1 6327C801
+P 2250 4450
+F 0 "#PWR04" H 2250 4200 50  0001 C CNN
+F 1 "Earth" H 2250 4300 50  0001 C CNN
+F 2 "" H 2250 4450 50  0001 C CNN
+F 3 "~" H 2250 4450 50  0001 C CNN
+	1    2250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4250 2250 4450
+Wire Wire Line
+	3200 3500 3200 3650
+$Comp
+L pspice:VSOURCE V5
+U 1 1 6327DC9E
+P 3200 3950
+F 0 "V5" H 3428 3996 50  0000 L CNN
+F 1 "VSOURCE" H 3428 3905 50  0000 L CNN
+F 2 "" H 3200 3950 50  0001 C CNN
+F 3 "~" H 3200 3950 50  0001 C CNN
+F 4 "V" H 3200 3950 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 5 12.5m 500u 500u 12m 25m)" H 3200 3950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3200 3950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3200 3950
+	1    0    0    -1  
+$EndComp
+Text Label 3200 3500 0    50   ~ 0
+C
+$Comp
+L power:Earth #PWR05
+U 1 1 6327DCA5
+P 3200 4450
+F 0 "#PWR05" H 3200 4200 50  0001 C CNN
+F 1 "Earth" H 3200 4300 50  0001 C CNN
+F 2 "" H 3200 4450 50  0001 C CNN
+F 3 "~" H 3200 4450 50  0001 C CNN
+	1    3200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4250 3200 4450
+Wire Wire Line
+	4150 3500 4150 3650
+$Comp
+L pspice:VSOURCE V6
+U 1 1 6328040F
+P 4150 3950
+F 0 "V6" H 4378 3996 50  0000 L CNN
+F 1 "VSOURCE" H 4378 3905 50  0000 L CNN
+F 2 "" H 4150 3950 50  0001 C CNN
+F 3 "~" H 4150 3950 50  0001 C CNN
+F 4 "V" H 4150 3950 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 5 6.25m 500u 500u 5.75m 12.5m)" H 4150 3950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4150 3950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+Text Label 4150 3500 0    50   ~ 0
+D
+$Comp
+L power:Earth #PWR07
+U 1 1 63280416
+P 4150 4450
+F 0 "#PWR07" H 4150 4200 50  0001 C CNN
+F 1 "Earth" H 4150 4300 50  0001 C CNN
+F 2 "" H 4150 4450 50  0001 C CNN
+F 3 "~" H 4150 4450 50  0001 C CNN
+	1    4150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4250 4150 4450
+Wire Wire Line
+	5500 1350 5800 1350
+Connection ~ 5500 1350
+Text Label 5800 1350 0    50   ~ 0
+Vr2r
+$EndSCHEMATC
