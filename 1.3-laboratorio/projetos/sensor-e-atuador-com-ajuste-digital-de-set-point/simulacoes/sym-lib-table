@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "ldr-ponte-rescue")(type "Legacy")(uri "${KIPRJMOD}/ldr-ponte-rescue.lib")(options "")(descr ""))
+)

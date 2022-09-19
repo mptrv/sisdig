@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "dimensionamento-de-resistor-para-led-rescue")(type "Legacy")(uri "${KIPRJMOD}/dimensionamento-de-resistor-para-led-rescue.lib")(options "")(descr ""))
+)

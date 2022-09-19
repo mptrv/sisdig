@@ -1,0 +1,31 @@
+.title KiCad schematic
+.include "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/Bordodynovs Electronics Lib/sub/OpAmp_TI.lib"
+R2 /A 0 Rb
+V1 VCC 0 dc Vf
+R3 VCC /B Rb
+R4 /B 0 Rldr
+R1 VCC /A Rb
+XU1 /B /A VCC 0 /Vs LM358
+R6 /A /Vs 100k
+R7 0 /Vs 1Meg
+R5 0 /B 100k
+.save @r2[i]
+.save @v1[i]
+.save @r3[i]
+.save @r4[i]
+.save @r1[i]
+.save @r6[i]
+.save @r7[i]
+.save @r5[i]
+.save V(/A)
+.save V(/B)
+.save V(/Vs)
+.save V(VCC)
+.save 'V(/B)-V(/A)'
+.param Vf = 12V
+.param Rb = 47k
+.param Rldr = 20k
+.dc R4 10k 200k 10k R3 1k 51k 10k
+.end
+
+

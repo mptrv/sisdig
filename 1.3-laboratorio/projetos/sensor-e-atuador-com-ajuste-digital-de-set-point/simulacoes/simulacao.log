@@ -1,0 +1,12 @@
+Circuit: .title KiCad schematic
+
+Error on line 1003 : v3 /a 0 pulse(0 5 50m ts td 50m 100m)
+	 Unknown parameter "ts"
+Error on line 1018 : v4 /b 0 pulse(0 5 25m ts td 25m 50m)
+	 Unknown parameter "ts"
+Error on line 1019 : v5 /c 0 pulse(0 5 12.5m ts td 12.5m 25m)
+	 Unknown parameter "ts"
+Error on line 1020 : v6 /d 0 pulse(0 5 6.25m ts td 6.25m 12.5m)
+	 Unknown parameter "ts"
+Fatal Error: V6: requires a minimum of 5 parameters.  Only 3 specified.
+
