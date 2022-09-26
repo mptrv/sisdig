@@ -1,27 +1,12 @@
-5
-2
-.dc R12 1k 250k 10k
 4
-1
-/PWB
-V
-1
-/Vldr
-V
-1
-/Vs
-V
-1
-/Vsp
-V
 9
 .tran 100u 100m
 4
 1
-/Vldr
+/Vctrl
 V
 1
-/Vr2r
+/Vldr
 V
 1
 /Vs
@@ -29,9 +14,6 @@ V
 1
 /Vsp
 V
-2
-.dc V6 100m 25 100m
-0
 2
 .dc V6 100m 25 100m
 4
@@ -61,4 +43,16 @@ V
 V
 1
 /Vsp
+V
+9
+.tran 100u 100m
+3
+1
+/Vr2r
+V
+1
+/Vsp
+V
+1
+/Vu2+
 V
