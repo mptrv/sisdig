@@ -1,89 +1,29 @@
-"Source:","/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/sensor-e-atuador-com-ajuste-digital-de-set-point/sensor-e-atuador-com-ajuste-digital-de-set-point/sensor-e-atuador-com-ajuste-digital-de-set-point.kicad_sch"
-"Date:","seg 26 set 2022 00:11:11"
-"Tool:","Eeschema 6.0.7-f9a2dced07~116~ubuntu20.04.1"
-"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
-"Component Count:","46"
-
-"Individual Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Code  JEDEC","Component Link 1 Description","Component Link 1 URL","Component Link 3 Description","Component Link 3 URL","Datasheet Version","Mounting Technology","Observação","Package Description","Package Version","Rating","Spice_Model","Spice_Netlist_Enabled","Spice_Primitive","Sub Family","Vin Max V","Vin Min V","category","ciiva ids","imported","library id","manufacturer","package","release date","rohs","vault revision"
-"","","C1","1uF/16V","Device:C_Polarized_US","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","C2","100nF","Device:C","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","C3","10nF","DD_CMOS-rescue:C","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","","","","","","","","Do 4093","","","","","","","","","","","","","","","","","",""
-"","","C4","10nF","DD_CMOS-rescue:C","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","","","","","","","","Do 4518","","","","","","","","","","","","","","","","","",""
-"","","C5","10nF","DD_CMOS-rescue:C","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","","","","","","","","Do 4511","","","","","","","","","","","","","","","","","",""
-"","","C6","100nF","DD_CMOS-rescue:C","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","","","","","","","","Do LM324N","","","","","","","","","","","","","","","","","",""
-"","","C7","1uF/16V","DD_CMOS-rescue:CP1-Device","Capacitor_THT:CP_Radial_D5.0mm_P2.50mm","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","C8","10uF/16V","DD_CMOS-rescue:CP1-Device","Capacitor_THT:CP_Radial_D5.0mm_P2.50mm","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","D1","1N4148","Diode:1N4148","Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal","https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","J1","Conn_01x02","Connector_Generic:Conn_01x02","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","J2","Conn_01x01","Connector_Generic:Conn_01x01","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","LDR1","GL10537-1","ldr-ponte-rescue:R_PHOTO-Device","","https://storage.googleapis.com/baudaeletronicadatasheet/LDR%20GL105%20series.pdf","","","","","","","","Vmáx=200VDC, Pmáx=200mW, λpico=560nm, Rluz=20k-30k, Rescuro=3M, (Baú da Eletrônica)","","","","250k","Y","R","","","","","","","","","","","",""
-"","","P1","47k","Device:R_Potentiometer_Trim","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R1","68k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R2","68k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R3","4k7","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R4","10k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R5","22k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R6","22k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R7","11k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R8","22k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R9","11k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R10","22k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R11","11k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R12","22k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R13","100k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R14","220k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R15","120k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R16","160k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R17","10k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R18","10k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R19","10k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R20","10k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R21","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R22","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R23","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R24","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R25","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R26","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","R27","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","SW1","SW_PUSH","Switch:SW_Push","Button_Switch_THT:SW_PUSH_6mm","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","U1","LM324N","Amplifier_Operational:LM324","","http://www.ti.com/lit/ds/symlink/lm2902-n.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","U2","4093","4xxx:HEF4093B","Package_DIP:DIP-14_W7.62mm_LongPads","https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","U3","4518","4xxx:4518","Package_DIP:DIP-16_W7.62mm_LongPads","http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"","","U4","CD4511BE","eec:CD4511BE","Texas_Instruments-CD4511BE-*","http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf","MS-001","Manufacturer URL","http://www.ti.com/","Package Specification","http://www.ti.com/litv/pdf/mpdi002c","SCHS072B","Through Hole","","16-Pin Plastic In-Line, Body 19.305 x 6.35 mm, Pitch 2.54 mm","4040049/E","Military","","","","Discrete Segment LED Driver","18","3","IC","13585921","yes","8d74ce39b66b2924","Texas Instruments","N0016A","1464591341","Yes","B4FF7ED3-A38F-4FCD-BB2B-34C921878191"
-"","","U5","KCSC02-105","Display_Character:KCSC02-105","Display_7Segment:KCSC02-105","http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-
-
-
-"Collated Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Code  JEDEC","Component Link 1 Description","Component Link 1 URL","Component Link 3 Description","Component Link 3 URL","Datasheet Version","Mounting Technology","Observação","Package Description","Package Version","Rating","Spice_Model","Spice_Netlist_Enabled","Spice_Primitive","Sub Family","Vin Max V","Vin Min V","category","ciiva ids","imported","library id","manufacturer","package","release date","rohs","vault revision"
-"1","1","C1","1uF/16V","Device:C_Polarized_US","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"2","1","C2","100nF","Device:C","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"3","3","C3, C4, C5","10nF","DD_CMOS-rescue:C","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","","","","","","","","Do 4093","","","","","","","","","","","","","","","","","",""
-"4","1","C6","100nF","DD_CMOS-rescue:C","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm","","","","","","","","","Do LM324N","","","","","","","","","","","","","","","","","",""
-"5","1","C7","1uF/16V","DD_CMOS-rescue:CP1-Device","Capacitor_THT:CP_Radial_D5.0mm_P2.50mm","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"6","1","C8","10uF/16V","DD_CMOS-rescue:CP1-Device","Capacitor_THT:CP_Radial_D5.0mm_P2.50mm","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"7","1","D1","1N4148","Diode:1N4148","Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal","https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"8","1","J1","Conn_01x02","Connector_Generic:Conn_01x02","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"9","1","J2","Conn_01x01","Connector_Generic:Conn_01x01","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"10","1","LDR1","GL10537-1","ldr-ponte-rescue:R_PHOTO-Device","","https://storage.googleapis.com/baudaeletronicadatasheet/LDR%20GL105%20series.pdf","","","","","","","","Vmáx=200VDC, Pmáx=200mW, λpico=560nm, Rluz=20k-30k, Rescuro=3M, (Baú da Eletrônica)","","","","250k","Y","R","","","","","","","","","","","",""
-"11","1","P1","47k","Device:R_Potentiometer_Trim","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"12","2","R1, R2","68k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"13","1","R3","4k7","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"14","3","R4, R17, R18","10k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"15","5","R5, R6, R8, R10, R12","22k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"16","3","R7, R9, R11","11k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"17","1","R13","100k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"18","1","R14","220k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"19","1","R15","120k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"20","1","R16","160k","Device:R","","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"21","2","R19, R20","10k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"22","7","R21, R22, R23, R24, R25, R26, R27","1k","DD_CMOS-rescue:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal","","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"23","1","SW1","SW_PUSH","Switch:SW_Push","Button_Switch_THT:SW_PUSH_6mm","~","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"24","1","U1","LM324N","Amplifier_Operational:LM324","","http://www.ti.com/lit/ds/symlink/lm2902-n.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"25","1","U2","4093","4xxx:HEF4093B","Package_DIP:DIP-14_W7.62mm_LongPads","https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"26","1","U3","4518","4xxx:4518","Package_DIP:DIP-16_W7.62mm_LongPads","http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
-"27","1","U4","CD4511BE","eec:CD4511BE","Texas_Instruments-CD4511BE-*","http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf","MS-001","Manufacturer URL","http://www.ti.com/","Package Specification","http://www.ti.com/litv/pdf/mpdi002c","SCHS072B","Through Hole","","16-Pin Plastic In-Line, Body 19.305 x 6.35 mm, Pitch 2.54 mm","4040049/E","Military","","","","Discrete Segment LED Driver","18","3","IC","13585921","yes","8d74ce39b66b2924","Texas Instruments","N0016A","1464591341","Yes","B4FF7ED3-A38F-4FCD-BB2B-34C921878191"
-"28","1","U5","KCSC02-105","Display_Character:KCSC02-105","Display_7Segment:KCSC02-105","http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf","","","","","","","","","","","","","","","","","","","","","","","","","",""
+Collated Components:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Code  JEDEC,Component Link 1 Description,Component Link 1 URL,Component Link 3 Description,Component Link 3 URL,Datasheet Version,Mounting Technology,Observação,Package Description,Package Version,Rating,Spice_Model,Spice_Netlist_Enabled,Spice_Primitive,Sub Family,Vin Max V,Vin Min V,category,ciiva ids,imported,library id,manufacturer,package,release date,rohs,vault revision
+1,2,"C1, C7",1uF/16V,Device:C_Polarized_US,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+2,2,C2 C6,100nF,Device:C,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+3,3,"C3, C4, C5",10nF,Device:C,Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm,~,,,,,,,,Do 4093,,,,,,,,,,,,,,,,,,
+6,1,C8,10uF/16V,Device:C_Polarized_US,Capacitor_THT:CP_Radial_D5.0mm_P2.50mm,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+7,1,D1,1N4148,Diode:1N4148,Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal,https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,
+8,1,D2,LED_Filled,Device:LED_Filled,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+9,1,J1,KRE 2 vias,Connector_Generic:Conn_01x02,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+10,2,"J2, J3",Conn_01x01,Connector_Generic:Conn_01x01,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+11,1,LDR1,GL10537-1,Device:R_Photo,,~,,,,,,,,"Vmáx=200VDC, Pmáx=200mW, λpico=560nm, Rluz=20k-30k, Rescuro=3M, (Baú da Eletrônica)",,,,250k,Y,R,,,,,,,,,,,,
+12,2,"P1, P2",47k,Device:R_Potentiometer_Trim,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+13,2,"R1, R2",68k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+14,1,R3,4k7,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+15,3,"R4, R19, R20",10k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+16,5,"R5, R6, R8, R10, R12",22k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+17,3,"R7, R9, R11",11k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+18,2,"R13, R18",100k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+19,1,R14,220k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+20,2,"R15, R16",120k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+21,1,R17,15k,Device:R,,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+23,8,"R21, R22, R23, R24, R25, R26, R27, R28",1k,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+25,1,SW1,SW_PUSH,Switch:SW_Push,Button_Switch_THT:SW_PUSH_6mm,~,,,,,,,,,,,,,,,,,,,,,,,,,,
+26,1,U1,LM324N,Amplifier_Operational:LM324,,http://www.ti.com/lit/ds/symlink/lm2902-n.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,
+27,1,U2,4093,4xxx:HEF4093B,Package_DIP:DIP-14_W7.62mm_LongPads,https://assets.nexperia.com/documents/data-sheet/HEF4093B.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,
+28,1,U3,4518,4xxx:4518,Package_DIP:DIP-16_W7.62mm_LongPads,http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,
+29,1,U4,CD4511BE,eec:CD4511BE,Texas_Instruments-CD4511BE-*,http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&fileType=pdf,MS-001,Manufacturer URL,http://www.ti.com/,Package Specification,http://www.ti.com/litv/pdf/mpdi002c,SCHS072B,Through Hole,,"16-Pin Plastic In-Line, Body 19.305 x 6.35 mm, Pitch 2.54 mm",4040049/E,Military,,,,Discrete Segment LED Driver,18,3,IC,13585921,yes,8d74ce39b66b2924,Texas Instruments,N0016A,1464591341,Yes,B4FF7ED3-A38F-4FCD-BB2B-34C921878191
+30,1,U5,SM42056-1,Display_Character:KCSC02-105,Display_7Segment:KCSC02-105,http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf,,,,,,,,,,,,,,,,,,,,,,,,,,
