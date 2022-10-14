@@ -1,0 +1,18 @@
+.title KiCad schematic
+.include "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/spice_complete/NATBJT.LIB"
+V1 /V1 0 dc 5
+XU1 /V1 /V2 /Vcc 0 /Vsaida LM324N
+R1 /Vsaida 0 10k
+VBT1 /Vcc 0 dc 11.1
+V2 /V2 0 dc 5
+.save @v1[i]
+.save @r1[i]
+.save @vbt1[i]
+.save @v2[i]
+.save V(/V1)
+.save V(/V2)
+.save V(/Vcc)
+.save V(/Vsaida)
+.save "V(/V1) + V(/V2)"
+.dc V1 0 10 10m
+.end

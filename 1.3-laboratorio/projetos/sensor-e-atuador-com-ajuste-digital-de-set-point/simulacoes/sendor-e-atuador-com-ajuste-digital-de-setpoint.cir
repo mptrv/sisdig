@@ -1,0 +1,84 @@
+.title KiCad schematic
+.include "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/spice_complete/NATBJT.LIB"
+R6 0 /Vref_ldr Rb
+V1 VCC 0 dc Vf
+R13 /Vref_ldr /Vsensor 10k
+R15 /Vu2- /Vr2r 100k
+XU2 /Vu2+ /Vu2- VCC 0 /Vsp LM324N
+V3 /B 0 dc Vf pwl(0 0 25m 0 '25m+ts' Vf 50m Vf  '50m+td' 0 62.5m 0 r=0)
+R17 /Vsp /Vu2- 160k
+R14 /Vu2+ VCC 220k
+R12 0 /Vu2+ 120k
+R18 0 /Vsp 1k
+R9 /Vr2r Net-_R5-Pad1_ 11k
+R5 Net-_R5-Pad1_ Net-_R3-Pad1_ 11k
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ 11k
+V2 /A 0 dc Vf pwl(0 0 50m 0 '50m+ts' Vf 62.5m Vf '62.5m+td' 0 r =0)
+R1 Net-_R1-Pad1_ 0 22k
+R2 Net-_R1-Pad1_ /D 22k
+R19 /Vsp /Vu3+ 15k
+R20 /Vu3+ /Vs 100k
+V4 /C 0 dc Vf pwl(0 0 12.5m 0 '12.5m+ts' Vf 25m Vf '25m+td' 0 37.5m 0 '37.5m+ts' Vf 50m Vf '50m+td' 0 62.5m 0 r =0)
+V5 /D 0 dc Vf pulse(0 Vf 6.25m ts td 6.25m 12.5m)
+XU3 /Vu3+ /Vldr VCC 0 /Vs LM324N
+R21 0 /Vs 1Meg
+R10 /Vr2r /A 22k
+R8 Net-_R5-Pad1_ /B 22k
+R4 Net-_R3-Pad1_ /C 22k
+R11 0 /Vldr 22k
+R7 /Vref_ldr VCC Rb
+R22 /Vldr VCC 10k
+R16 0 /Vsensor 1Meg
+XU1 /Vldr /Vref_ldr VCC 0 /Vsensor LM324N
+.save @r6[i]
+.save @v1[i]
+.save @r13[i]
+.save @r15[i]
+.save @v3[i]
+.save @r17[i]
+.save @r14[i]
+.save @r12[i]
+.save @r18[i]
+.save @r9[i]
+.save @r5[i]
+.save @r3[i]
+.save @v2[i]
+.save @r1[i]
+.save @r2[i]
+.save @r19[i]
+.save @r20[i]
+.save @v4[i]
+.save @v5[i]
+.save @r21[i]
+.save @r10[i]
+.save @r8[i]
+.save @r4[i]
+.save @r11[i]
+.save @r7[i]
+.save @r22[i]
+.save @r16[i]
+.save V(/A)
+.save V(/B)
+.save V(/C)
+.save V(/D)
+.save V(/Vldr)
+.save V(/Vr2r)
+.save V(/Vref_ldr)
+.save V(/Vs)
+.save V(/Vsensor)
+.save V(/Vsp)
+.save V(/Vu2+)
+.save V(/Vu2-)
+.save V(/Vu3+)
+.save V(Net-_R1-Pad1_)
+.save V(Net-_R3-Pad1_)
+.save V(Net-_R5-Pad1_)
+.save V(VCC)
+.save 'V(/B)-V(/A)'
+.param Vf = 12V
+.param Rb = 68k
+.param Rldr = 40k
+.param ts = 5us
+.param td = 'ts'
+.dc R22 1k 250k 1k
+.end
