@@ -6,8 +6,8 @@
 
   (title_block
     (title "Sensor com Ajuste Digital de Set-Point para Atuador")
-    (date "2022-10-11")
-    (rev "0.0.2")
+    (date "2022-10-20")
+    (rev "0.0.3")
     (company "ETE103 - Fundamentos de Circuitos Analógicos")
     (comment 1 "Licença: CC-BY-SA (https://creativecommons.org/licenses/by-sa/4.0/)")
   )
@@ -3342,6 +3342,10 @@
   (label "Vref" (at 196.85 81.28 0)
     (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
     (uuid 884915b3-75ac-43d6-b8d4-7f57031ab33f)
+  )
+  (label "Vcomp" (at 233.68 83.82 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 9c6f6a96-d6a8-40aa-95b4-d3d1d3c70027)
   )
   (label "Vref" (at 220.98 90.17 180)
     (effects (font (size 1.27 1.27) bold) (justify right bottom))

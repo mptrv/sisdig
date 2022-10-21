@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# fonte_corrente-Pessoal
+#
+DEF fonte_corrente-Pessoal I 0 0 N Y 1 F N
+F0 "I" 150 0 50 H V C CNN
+F1 "fonte_corrente-Pessoal" -150 -25 50 V V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+DRAW
+P 2 0 1 0 0 -100 0 100 N
+P 4 0 1 0 0 100 -25 50 25 50 0 100 F
+C 0 0 103 0 1 0 N
+X ~ 1 0 300 200 D 50 50 1 1 P
+X ~ 2 0 -300 200 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# seta_tensao_longa-Pessoal
+#
+DEF seta_tensao_longa-Pessoal V 0 40 Y Y 1 F N
+F0 "V" -100 0 50 H V C CNN
+F1 "seta_tensao_longa-Pessoal" -25 -125 50 H I C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+P 4 0 1 0 0 150 -40 130 -10 110 0 150 F
+A 150 0 212 1350 -1350 0 1 0 N 0 150 0 -150
+ENDDRAW
+ENDDEF
+#
+#End Library
