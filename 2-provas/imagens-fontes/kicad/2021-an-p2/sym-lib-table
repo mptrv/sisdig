@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "teorema-de-thevenin-rescue")(type "Legacy")(uri "${KIPRJMOD}/teorema-de-thevenin-rescue.lib")(options "")(descr ""))
+  (lib (name "analise-de-malhas-rescue")(type "Legacy")(uri "${KIPRJMOD}/analise-de-malhas-rescue.lib")(options "")(descr ""))
+  (lib (name "carga-e-descarga-de-capacitor-rescue")(type "Legacy")(uri "${KIPRJMOD}/carga-e-descarga-de-capacitor-rescue.lib")(options "")(descr ""))
+)
