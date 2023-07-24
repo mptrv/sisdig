@@ -1,0 +1,174 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Questão 5 e 6 - P2/2020 - Noturno"
+Date "2020-11-18"
+Rev "0"
+Comp "ETE103 - Fundamentos de Circuitos Analógicos"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Pessoal:seta_tensao_longa Vx
+U 1 1 5FB47F2F
+P 5900 2700
+F 0 "Vx" H 5810 2700 50  0000 R CNN
+F 1 "seta_tensao_longa" H 5875 2575 50  0001 C CNN
+F 2 "" H 5900 2800 50  0001 C CNN
+F 3 "" H 5900 2800 50  0001 C CNN
+	1    5900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell V1
+U 1 1 5FB54577
+P 4850 2750
+F 0 "V1" H 4968 2846 50  0000 L CNN
+F 1 "3V" H 4968 2755 50  0000 L CNN
+F 2 "" V 4850 2810 50  0001 C CNN
+F 3 "~" V 4850 2810 50  0001 C CNN
+	1    4850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5FB55839
+P 4850 2200
+F 0 "R1" H 4782 2154 50  0000 R CNN
+F 1 "1kΩ" H 4782 2245 50  0000 R CNN
+F 2 "" V 4890 2190 50  0001 C CNN
+F 3 "~" H 4850 2200 50  0001 C CNN
+	1    4850 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Battery_Cell V2
+U 1 1 5FB55D24
+P 5250 1950
+F 0 "V2" V 4995 2000 50  0000 C CNN
+F 1 "5V" V 5086 2000 50  0000 C CNN
+F 2 "" V 5250 2010 50  0001 C CNN
+F 3 "~" V 5250 2010 50  0001 C CNN
+	1    5250 1950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FB56424
+P 5650 1950
+F 0 "R2" V 5855 1950 50  0000 C CNN
+F 1 "3k9Ω" V 5764 1950 50  0000 C CNN
+F 2 "" V 5690 1940 50  0001 C CNN
+F 3 "~" H 5650 1950 50  0001 C CNN
+	1    5650 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5FB56C59
+P 6400 1950
+F 0 "R4" V 6605 1950 50  0000 C CNN
+F 1 "5k6Ω" V 6514 1950 50  0000 C CNN
+F 2 "" V 6440 1940 50  0001 C CNN
+F 3 "~" H 6400 1950 50  0001 C CNN
+	1    6400 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FB5739F
+P 6000 2200
+F 0 "R3" H 5932 2154 50  0000 R CNN
+F 1 "2k2Ω" H 5932 2245 50  0000 R CNN
+F 2 "" V 6040 2190 50  0001 C CNN
+F 3 "~" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pessoal:fonte_tensao_dep V4
+U 1 1 5FB57DC6
+P 6000 2700
+F 0 "V4" H 5872 2609 50  0000 R CNN
+F 1 "v = δ i'" H 5872 2700 50  0000 R CIN
+F 2 "" V 6000 2700 50  0001 C CNN
+F 3 "" V 6000 2700 50  0001 C CNN
+F 4 "δ = 1kΩ" H 5875 2825 50  0000 R CNN "Observação"
+	1    6000 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 2400 6000 2350
+Wire Wire Line
+	5800 1950 6000 1950
+Wire Wire Line
+	6000 1950 6000 2050
+Wire Wire Line
+	6000 1950 6250 1950
+Connection ~ 6000 1950
+Wire Wire Line
+	4850 3050 4850 2850
+Wire Wire Line
+	4850 2550 4850 2350
+Wire Wire Line
+	4850 2050 4850 1950
+Wire Wire Line
+	5350 1950 5500 1950
+Connection ~ 6000 3050
+Wire Wire Line
+	6000 3050 4850 3050
+Wire Wire Line
+	6000 3000 6000 3050
+Wire Wire Line
+	6800 2650 6800 3050
+Wire Wire Line
+	6800 3050 6000 3050
+Wire Wire Line
+	6800 1950 6800 2350
+Wire Wire Line
+	6550 1950 6800 1950
+$Comp
+L Device:Battery_Cell V3
+U 1 1 5FB58747
+P 6800 2550
+F 0 "V3" H 6918 2646 50  0000 L CNN
+F 1 "12V" H 6918 2555 50  0000 L CNN
+F 2 "" V 6800 2610 50  0001 C CNN
+F 3 "~" V 6800 2610 50  0001 C CNN
+	1    6800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Pessoal:seta_corrente i'
+U 1 1 5FB600AD
+P 6300 2050
+F 0 "i'" H 6400 2000 50  0000 C CNN
+F 1 "seta_corrente" H 6400 2000 50  0001 C CNN
+F 2 "" H 6300 2050 50  0001 C CNN
+F 3 "" H 6300 2050 50  0001 C CNN
+	1    6300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 6193CC21
+P 6000 3150
+F 0 "#PWR?" H 6000 2900 50  0001 C CNN
+F 1 "Earth" H 6000 3000 50  0001 C CNN
+F 2 "" H 6000 3150 50  0001 C CNN
+F 3 "~" H 6000 3150 50  0001 C CNN
+	1    6000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3150 6000 3050
+Text Notes 6000 1900 0    50   ~ 0
+A
+Wire Wire Line
+	4850 1950 5050 1950
+$EndSCHEMATC

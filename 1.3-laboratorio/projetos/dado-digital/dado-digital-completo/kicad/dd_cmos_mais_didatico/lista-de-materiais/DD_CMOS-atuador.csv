@@ -1,0 +1,8 @@
+"Id";"Designador";"Pacote";"Quantidade";"Designação";"Fornecedor e referência";
+1;"J4";"PinHeader_1x01_P1.00mm_Vertical";1;"Conn_01x01";;;
+2;"RL1";"Relay_SPDT_SANYOU_SRD_Series_Form_C";1;"FINDER-40.51";;;
+3;"R20,R5";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";2;"1k";;;
+4;"Q1";"TO-92";1;"BC547";;;
+5;"J5,J2,J1";"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal";3;"Conn_01x02";;;
+6;"D2";"LED_D3.0mm";1;"Verde";;;
+7;"D1";"D_DO-34_SOD68_P7.62mm_Horizontal";1;"1N4148";;;

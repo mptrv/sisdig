@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name DD_CMOS-rescue)(type Legacy)(uri ${KIPRJMOD}/DD_CMOS-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "DD_CMOS-rescue")(type "KiCad")(uri "${KIPRJMOD}/DD_CMOS-rescue.kicad_sym")(options "")(descr ""))
 )

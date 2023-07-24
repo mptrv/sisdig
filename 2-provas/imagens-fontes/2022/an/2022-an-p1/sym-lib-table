@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "dimensionamento-de-resistor-para-led-rescue")(type "Legacy")(uri "${KIPRJMOD}/dimensionamento-de-resistor-para-led-rescue.lib")(options "")(descr ""))
+  (lib (name "balanco-de-potencia-rescue")(type "Legacy")(uri "${KIPRJMOD}/balanco-de-potencia-rescue.lib")(options "")(descr ""))
+  (lib (name "fonte-vinculada-e-classificacao-de-bipolos-rescue")(type "Legacy")(uri "${KIPRJMOD}/fonte-vinculada-e-classificacao-de-bipolos-rescue.lib")(options "")(descr ""))
+)

@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Pessoal:fonte_corrente I1
+U 1 1 63249F0E
+P 3950 3750
+F 0 "I1" H 3819 3704 50  0000 R CNN
+F 1 "4mA" H 3819 3795 50  0000 R CNN
+F 2 "" V 3950 3750 50  0001 C CNN
+F 3 "" V 3950 3750 50  0001 C CNN
+	1    3950 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Pessoal:fonte_corrente_dep I2
+U 1 1 6324A5BD
+P 4750 3750
+F 0 "I2" H 4878 3841 50  0000 L CNN
+F 1 "i=k.i'" H 4878 3750 50  0000 L CIN
+F 2 "" V 4750 3750 50  0001 C CNN
+F 3 "" V 4750 3750 50  0001 C CNN
+F 4 "k = 5" H 4878 3659 50  0000 L CNN "Observação"
+	1    4750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 6324AFEE
+P 5300 3200
+F 0 "R1" V 5095 3200 50  0000 C CNN
+F 1 "2k2" V 5186 3200 50  0000 C CNN
+F 2 "" V 5340 3190 50  0001 C CNN
+F 3 "~" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 6324B552
+P 5850 3800
+F 0 "BT1" H 5968 3896 50  0000 L CNN
+F 1 "12V" H 5968 3805 50  0000 L CNN
+F 2 "" V 5850 3860 50  0001 C CNN
+F 3 "~" V 5850 3860 50  0001 C CNN
+	1    5850 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 6324BCBC
+P 6650 3500
+F 0 "R2" H 6582 3454 50  0000 R CNN
+F 1 "1k2" H 6582 3545 50  0000 R CNN
+F 2 "" V 6690 3490 50  0001 C CNN
+F 3 "~" H 6650 3500 50  0001 C CNN
+	1    6650 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 6324C3A0
+P 6650 4000
+F 0 "R3" H 6582 3954 50  0000 R CNN
+F 1 "4k7" H 6582 4045 50  0000 R CNN
+F 2 "" V 6690 3990 50  0001 C CNN
+F 3 "~" H 6650 4000 50  0001 C CNN
+	1    6650 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3450 3950 3200
+Wire Wire Line
+	3950 3200 4750 3200
+Wire Wire Line
+	6650 3200 6650 3350
+Wire Wire Line
+	6650 4300 5850 4300
+Wire Wire Line
+	3950 4300 3950 4050
+Wire Wire Line
+	5450 3200 5850 3200
+Wire Wire Line
+	6650 3650 6650 3850
+Wire Wire Line
+	6650 4150 6650 4300
+Wire Wire Line
+	4750 3200 4750 3450
+Wire Wire Line
+	4750 4050 4750 4300
+Connection ~ 4750 3200
+Wire Wire Line
+	4750 3200 5150 3200
+Connection ~ 4750 4300
+Wire Wire Line
+	4750 4300 3950 4300
+Wire Wire Line
+	5850 3200 5850 3600
+Wire Wire Line
+	5850 3900 5850 4300
+Connection ~ 5850 3200
+Wire Wire Line
+	5850 3200 6650 3200
+Connection ~ 5850 4300
+Wire Wire Line
+	5850 4300 4750 4300
+$Comp
+L Pessoal:seta_corrente i'
+U 1 1 632529A6
+P 6550 3300
+F 0 "i'" V 6650 3262 50  0000 R CIN
+F 1 "seta_corrente" H 6650 3250 50  0001 C CNN
+F 2 "" H 6550 3300 50  0001 C CNN
+F 3 "" H 6550 3300 50  0001 C CNN
+	1    6550 3300
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

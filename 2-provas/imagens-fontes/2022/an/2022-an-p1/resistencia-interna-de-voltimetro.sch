@@ -1,0 +1,84 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell V1
+U 1 1 632387F6
+P 2700 2350
+F 0 "V1" H 2818 2446 50  0000 L CNN
+F 1 "6V" H 2818 2355 50  0000 L CNN
+F 2 "" V 2700 2410 50  0001 C CNN
+F 3 "~" V 2700 2410 50  0001 C CNN
+	1    2700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 63238F21
+P 3150 2000
+F 0 "R1" V 2945 2000 50  0000 C CNN
+F 1 "50k" V 3036 2000 50  0000 C CNN
+F 2 "" V 3190 1990 50  0001 C CNN
+F 3 "~" H 3150 2000 50  0001 C CNN
+	1    3150 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 63239AEF
+P 3600 2300
+F 0 "R2" H 3668 2346 50  0000 L CNN
+F 1 "100k" H 3668 2255 50  0000 L CNN
+F 2 "" V 3640 2290 50  0001 C CNN
+F 3 "~" H 3600 2300 50  0001 C CNN
+	1    3600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Voltmeter_DC MES1
+U 1 1 6323A157
+P 4150 2300
+F 0 "MES1" H 4303 2300 50  0001 L CNN
+F 1 "Voltmeter_DC" H 4303 2255 50  0001 L CNN
+F 2 "" V 4150 2400 50  0001 C CNN
+F 3 "~" V 4150 2400 50  0001 C CNN
+	1    4150 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2150 2700 2000
+Wire Wire Line
+	2700 2000 3000 2000
+Wire Wire Line
+	3300 2000 3600 2000
+Wire Wire Line
+	4150 2000 4150 2100
+Wire Wire Line
+	4150 2600 3600 2600
+Wire Wire Line
+	2700 2600 2700 2450
+Wire Wire Line
+	4150 2500 4150 2600
+Wire Wire Line
+	3600 2000 3600 2150
+Wire Wire Line
+	3600 2450 3600 2600
+Connection ~ 3600 2000
+Wire Wire Line
+	3600 2000 4150 2000
+Connection ~ 3600 2600
+Wire Wire Line
+	3600 2600 2700 2600
+$EndSCHEMATC
