@@ -1,6 +1,29 @@
 {
   "board": {
     "3dviewports": [],
+    "design_settings": {
+      "defaults": {
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "other_line_width": 0.15,
+        "silk_line_width": 0.15,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.15
+      },
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "rules": {
+        "min_copper_edge_clearance": 0.0,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0
+      },
+      "track_widths": [],
+      "via_dimensions": []
+    },
     "layer_presets": [],
     "viewports": []
   },
@@ -224,7 +247,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "resistor-controlado-por-tensao.kicad_pro",
+    "filename": "sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -291,15 +314,15 @@
     "net_format_name": "",
     "ngspice": {
       "fix_include_paths": true,
-      "fix_passive_vals": true,
+      "fix_passive_vals": false,
       "meta": {
         "version": 0
       },
       "model_mode": 0,
-      "workbook_filename": "resistor-controlado-por-tensao.wbk"
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "saidas/pdf",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -311,7 +334,7 @@
   },
   "sheets": [
     [
-      "0b91fc0f-069c-44ff-bbf0-d36fc04fadcd",
+      "dc27e538-3c17-4ce1-aae3-a08a420e03f0",
       ""
     ]
   ],

@@ -1,10 +1,20 @@
-1
+version 2
 2
-.dc V1 0 12 2
 2
+.dc R3 1k 120k 1k{return}.kicad adjustpaths{return}.save all{return}.probe alli
 1
-/Vs
-V
 1
-VCC
-V
+V(/Vs2)
+ 
+2
+.dc V2 0 12 500m{return}.kicad adjustpaths{return}.save all{return}.probe alli
+3
+2
+I(V3)
+ 
+1
+V(/Vctrl)
+ 
+1
+V(/Vs)
+ 

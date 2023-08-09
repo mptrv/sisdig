@@ -1,0 +1,53 @@
+version 2
+5
+2
+.dc V6 100m 25 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+3
+1
+/Vldr
+ 
+1
+/Vs
+ 
+1
+/Vu3+
+ 
+9
+.tran 100u 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+4
+1
+/Vctrl
+ 
+1
+V(/PWA)
+ 
+1
+V(/PWB)
+ 
+1
+V(/Vldr)
+ 
+9
+.tran 100u 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+2
+1
+/Vr2r
+ 
+1
+V(/Vref)
+ 
+9
+.tran 100u 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+3
+1
+V(/Vldr)
+ 
+1
+V(/Vref)
+ 
+1
+V(/Vs)
+ 
+9
+.tran 100u 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+0
