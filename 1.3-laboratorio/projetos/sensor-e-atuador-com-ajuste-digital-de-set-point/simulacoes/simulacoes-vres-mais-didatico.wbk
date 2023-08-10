@@ -14,12 +14,9 @@ version 2
  
 9
 .tran 100u 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
-4
+3
 1
 /Vctrl
- 
-1
-V(/PWA)
  
 1
 V(/PWB)
@@ -38,7 +35,7 @@ V(/Vref)
  
 9
 .tran 100u 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
-3
+4
 1
 V(/Vldr)
  
@@ -47,6 +44,9 @@ V(/Vref)
  
 1
 V(/Vs)
+ 
+1
+V(/Vu3+)
  
 9
 .tran 100u 100m{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
