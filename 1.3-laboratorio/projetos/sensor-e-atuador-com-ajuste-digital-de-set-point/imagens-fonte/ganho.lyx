@@ -80,7 +80,18 @@
 \begin_layout Standard
 \begin_inset Formula 
 \[
-G=1+\frac{P2+R13}{R16}
+G=1+\frac{P2+R14}{R13}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{r2r}=\frac{V_{D}}{2}+\frac{V_{C}}{4}+\frac{V_{B}}{8}+\frac{V_{A}}{16}
 \]
 
 \end_inset
