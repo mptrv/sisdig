@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/sensor-e-atuador-com-ajuste-digital-de-set-point/sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico/sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch</source>
-    <date>sáb 19 ago 2023 23:10:16</date>
+    <date>qua 23 ago 2023 18:36:57</date>
     <tool>Eeschema 7.0.7-7.0.7~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Sensor com Ajuste Digital de Set-Point para Atuador</title>
         <company>ETE103 - Fundamentos de Circuitos Analógicos</company>
         <rev>1.0.1</rev>
-        <date>2023-08-19</date>
+        <date>2023-08-23</date>
         <source>sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch</source>
         <comment number="1" value="Licença: CC-BY-SA (https://creativecommons.org/licenses/by-sa/4.0/)"/>
         <comment number="2" value=""/>
@@ -26,6 +26,7 @@
   <components>
     <comp ref="C1">
       <value>1uF/16V</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.50mm</footprint>
       <libsource lib="Device" part="C_Polarized_US" description="Polarized capacitor, US symbol"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -36,17 +37,19 @@
     </comp>
     <comp ref="C2">
       <value>100nF</value>
+      <footprint>Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Observação" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>91c8bf55-54d1-41b8-a564-e90e47c4acba</tstamps>
+      <tstamps>017b60c7-021e-40c2-890b-5ce5a6f01e74</tstamps>
     </comp>
     <comp ref="C3">
       <value>10nF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm</footprint>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
         <field name="Observação">Do 4093</field>
       </fields>
@@ -61,7 +64,7 @@
     </comp>
     <comp ref="C4">
       <value>10nF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm</footprint>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
         <field name="Observação">Do 4518</field>
       </fields>
@@ -76,7 +79,7 @@
     </comp>
     <comp ref="C5">
       <value>10nF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm</footprint>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
         <field name="Observação">Do 4511</field>
       </fields>
@@ -91,7 +94,7 @@
     </comp>
     <comp ref="C6">
       <value>100nF</value>
-      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm</footprint>
+      <footprint>Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm</footprint>
       <fields>
         <field name="Observação">Do LM324N</field>
       </fields>
@@ -146,6 +149,7 @@
     </comp>
     <comp ref="D2">
       <value>LED_Filled</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
       <libsource lib="Device" part="LED_Filled" description="Light emitting diode, filled shape"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -156,6 +160,7 @@
     </comp>
     <comp ref="J1">
       <value>Conn_01x02</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -166,6 +171,7 @@
     </comp>
     <comp ref="J2">
       <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -176,6 +182,7 @@
     </comp>
     <comp ref="J3">
       <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical</footprint>
       <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -186,6 +193,7 @@
     </comp>
     <comp ref="LDR1">
       <value>GL10537-1</value>
+      <footprint>OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical</footprint>
       <fields>
         <field name="Observação">Vmáx=200VDC, Pmáx=200mW, λpico=560nm, Rluz=20k-30k, Rescuro=3M, (Baú da Eletrônica)</field>
         <field name="Sim.Device">SPICE</field>
@@ -206,6 +214,7 @@
     </comp>
     <comp ref="P1">
       <value>50k</value>
+      <footprint>Potentiometer_THT:Potentiometer_ACP_CA9-H5_Horizontal</footprint>
       <libsource lib="Device" part="R_Potentiometer_Trim" description="Trim-potentiometer"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -216,6 +225,7 @@
     </comp>
     <comp ref="P2">
       <value>100k</value>
+      <footprint>Potentiometer_THT:Potentiometer_ACP_CA9-H5_Horizontal</footprint>
       <libsource lib="Device" part="R_Potentiometer_Trim" description="Trim-potentiometer"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -224,8 +234,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2f009bb3-4aeb-47e3-94a5-e40be1fed83a</tstamps>
     </comp>
-    <comp ref="R3">
+    <comp ref="R1">
       <value>4k7</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -234,8 +245,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>deeb923f-c55a-4ab1-8d04-896bc87d0004</tstamps>
     </comp>
-    <comp ref="R5">
+    <comp ref="R2">
       <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -244,8 +256,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>57421fa0-47a7-43ee-9a1b-8dc464ea67c5</tstamps>
     </comp>
-    <comp ref="R6">
+    <comp ref="R3">
       <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -254,8 +267,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>29df4c2a-8fbb-41d1-b7d8-2bbde1c0e16b</tstamps>
     </comp>
-    <comp ref="R7">
+    <comp ref="R4">
       <value>11k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -264,8 +278,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>aa5f35f8-0424-4d47-87fe-c3c9451d2d7e</tstamps>
     </comp>
-    <comp ref="R8">
+    <comp ref="R5">
       <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -274,8 +289,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>87b0bd4a-1041-481f-9e3d-7b8e2c9ff928</tstamps>
     </comp>
-    <comp ref="R9">
+    <comp ref="R6">
       <value>11k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -284,8 +300,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>80400e21-5427-4b25-af9e-246e54cc567c</tstamps>
     </comp>
-    <comp ref="R10">
+    <comp ref="R7">
       <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -294,8 +311,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f85e5d63-d5b1-4a36-aaee-93b85a8eb8da</tstamps>
     </comp>
-    <comp ref="R11">
+    <comp ref="R8">
       <value>11k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -304,8 +322,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>240d345d-57b6-4083-b3de-0c47e7cf0bd9</tstamps>
     </comp>
-    <comp ref="R12">
+    <comp ref="R9">
       <value>22k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -314,8 +333,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>70b0b8d9-aa2f-4dfb-b160-8780273f4d79</tstamps>
     </comp>
-    <comp ref="R13">
+    <comp ref="R10">
       <value>330k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -324,8 +344,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1545f0a7-0a8f-490b-ab02-31162cb3015a</tstamps>
     </comp>
-    <comp ref="R14">
+    <comp ref="R11">
       <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -334,8 +355,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>39620aca-4b1f-4cb2-93f5-50268f131838</tstamps>
     </comp>
-    <comp ref="R15">
+    <comp ref="R12">
       <value>15k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -344,8 +366,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>67b233fb-874a-4d30-97fa-a5313bf1b3b8</tstamps>
     </comp>
-    <comp ref="R16">
+    <comp ref="R13">
       <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -354,9 +377,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8ba5c574-1e85-4d8d-82a8-20a992413da4</tstamps>
     </comp>
-    <comp ref="R17">
+    <comp ref="R14">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -365,9 +388,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f7730fee-4ce1-42f9-9ee6-5db78d70492d</tstamps>
     </comp>
-    <comp ref="R18">
+    <comp ref="R15">
       <value>10k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -376,9 +399,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e94a6d22-1d05-43e1-ba26-c97251e67e62</tstamps>
     </comp>
-    <comp ref="R19">
+    <comp ref="R16">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -387,9 +410,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5059c156-2d50-4f9e-8950-d87ee4ebcc16</tstamps>
     </comp>
-    <comp ref="R20">
+    <comp ref="R17">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -398,9 +421,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>23de3787-d52e-4ccf-85f2-fcf287729b69</tstamps>
     </comp>
-    <comp ref="R21">
+    <comp ref="R18">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -409,9 +432,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c3081fd5-ab96-422a-a243-4c422b99c3d4</tstamps>
     </comp>
-    <comp ref="R22">
+    <comp ref="R19">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -420,9 +443,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c05b3246-65a7-4bd2-a848-e2e975a884d9</tstamps>
     </comp>
-    <comp ref="R23">
+    <comp ref="R20">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -431,9 +454,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f9fb500f-a1b7-4a3d-8d53-b7e788dbdb55</tstamps>
     </comp>
-    <comp ref="R24">
+    <comp ref="R21">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -442,9 +465,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4f16b9ff-6726-4701-b1a3-67dfd2cad705</tstamps>
     </comp>
-    <comp ref="R25">
+    <comp ref="R22">
       <value>1k</value>
-      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -453,8 +476,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>59da1d90-7a62-440a-9486-016c9e9875c4</tstamps>
     </comp>
-    <comp ref="R26">
+    <comp ref="R23">
       <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -476,6 +500,7 @@
     </comp>
     <comp ref="U1">
       <value>LM324N</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/lm2902-n.pdf</datasheet>
       <libsource lib="Amplifier_Operational" part="LM324" description="Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"/>
       <property name="Sheetname" value=""/>
@@ -487,7 +512,7 @@
     </comp>
     <comp ref="U2">
       <value>4093</value>
-      <footprint>Package_DIP:DIP-14_W7.62mm_LongPads</footprint>
+      <footprint>Package_DIP:DIP-14_W7.62mm_Socket_LongPads</footprint>
       <libsource lib="4xxx" part="HEF4093B" description="Quad 2-Input NAND Schmitt Trigger, SOIC-14"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="sensor-e-atuador-com-ajuste-digital-de-set-point-mais-didatico.kicad_sch"/>
@@ -498,7 +523,7 @@
     </comp>
     <comp ref="U3">
       <value>4518</value>
-      <footprint>Package_DIP:DIP-16_W7.62mm_LongPads</footprint>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf</datasheet>
       <libsource lib="4xxx" part="4518" description="Dual BCD Up-Counter"/>
       <property name="Sheetname" value=""/>
@@ -510,7 +535,7 @@
     </comp>
     <comp ref="U4">
       <value>CD4511BE</value>
-      <footprint>Texas_Instruments-CD4511BE-*</footprint>
+      <footprint>Package_DIP:DIP-16_W7.62mm_Socket_LongPads</footprint>
       <datasheet>http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=CD4511B&amp;fileType=pdf</datasheet>
       <fields>
         <field name="Code  JEDEC">MS-001</field>
@@ -567,7 +592,7 @@
     </comp>
     <comp ref="U5">
       <value>SM42056-1</value>
-      <footprint>Display_7Segment:KCSC02-105</footprint>
+      <footprint>Display_7Segment:HDSP-A151</footprint>
       <datasheet>http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf</datasheet>
       <libsource lib="Display_Character" part="KCSC02-105" description="One digit 7 segment hyper red LED, common cathode"/>
       <property name="Sheetname" value=""/>
@@ -936,22 +961,22 @@
   </libraries>
   <nets>
     <net code="1" name="/A">
-      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
       <node ref="U3" pin="3" pinfunction="Q1" pintype="output"/>
       <node ref="U4" pin="7" pinfunction="A" pintype="input"/>
     </net>
     <net code="2" name="/B">
-      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U3" pin="4" pinfunction="Q2" pintype="output"/>
       <node ref="U4" pin="1" pinfunction="B" pintype="input"/>
     </net>
     <net code="3" name="/C">
-      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="Q3" pintype="output"/>
       <node ref="U4" pin="2" pinfunction="C" pintype="input"/>
     </net>
     <net code="4" name="/D">
-      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="Q4" pintype="output"/>
       <node ref="U4" pin="6" pinfunction="D" pintype="input"/>
     </net>
@@ -960,33 +985,33 @@
       <node ref="U3" pin="7" pinfunction="Reset" pintype="input"/>
     </net>
     <net code="6" name="/V+">
-      <node ref="R11" pin="2" pintype="passive"/>
-      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U1" pin="10" pinfunction="+" pintype="input"/>
     </net>
     <net code="7" name="/V-">
-      <node ref="R13" pin="2" pintype="passive"/>
-      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="-" pintype="input"/>
     </net>
     <net code="8" name="/Vcomp">
-      <node ref="R15" pin="2" pintype="passive"/>
-      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="+" pintype="input"/>
     </net>
     <net code="9" name="/Vldr">
       <node ref="LDR1" pin="2" pintype="passive"/>
-      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="+" pintype="input"/>
     </net>
     <net code="10" name="/Vref">
       <node ref="P2" pin="3" pinfunction="3" pintype="passive"/>
-      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
       <node ref="U1" pin="8" pintype="output"/>
     </net>
     <net code="11" name="/Vs">
       <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U1" pin="7" pintype="output"/>
     </net>
     <net code="12" name="/Vsensor">
@@ -1010,8 +1035,8 @@
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="P1" pin="3" pinfunction="3" pintype="passive"/>
-      <node ref="R13" pin="1" pintype="passive"/>
-      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="V-" pintype="power_in"/>
       <node ref="U1" pin="12" pinfunction="+" pintype="input"/>
@@ -1027,14 +1052,14 @@
     </net>
     <net code="15" name="Net-(C7-Pad1)">
       <node ref="C7" pin="1" pintype="passive"/>
-      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
       <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U2" pin="1" pintype="input"/>
       <node ref="U2" pin="2" pintype="input"/>
     </net>
     <net code="16" name="Net-(C8-Pad1)">
       <node ref="C8" pin="1" pintype="passive"/>
-      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
       <node ref="U2" pin="12" pintype="input"/>
       <node ref="U2" pin="13" pintype="input"/>
     </net>
@@ -1044,95 +1069,95 @@
     </net>
     <net code="18" name="Net-(D2-A)">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
     </net>
     <net code="19" name="Net-(J3-Pin_1)">
       <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
     </net>
     <net code="20" name="Net-(P1-Pad1)">
       <node ref="P1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="P1" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
     </net>
     <net code="21" name="Net-(P2-Pad1)">
       <node ref="P2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="P2" pin="2" pinfunction="2" pintype="passive"/>
-      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
     </net>
-    <net code="22" name="Net-(R5-Pad1)">
+    <net code="22" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
-    </net>
-    <net code="23" name="Net-(R7-Pad2)">
-      <node ref="R7" pin="2" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
-      <node ref="R9" pin="1" pintype="passive"/>
-    </net>
-    <net code="24" name="Net-(R10-Pad1)">
-      <node ref="R10" pin="1" pintype="passive"/>
-      <node ref="R11" pin="1" pintype="passive"/>
-      <node ref="R9" pin="2" pintype="passive"/>
     </net>
     <net code="25" name="Net-(U1D--)">
       <node ref="U1" pin="13" pinfunction="-" pintype="input"/>
       <node ref="U1" pin="14" pintype="output"/>
     </net>
     <net code="26" name="Net-(U4-a)">
-      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
       <node ref="U4" pin="13" pinfunction="a" pintype="output"/>
     </net>
     <net code="27" name="Net-(U4-b)">
-      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
       <node ref="U4" pin="12" pinfunction="b" pintype="output"/>
     </net>
     <net code="28" name="Net-(U4-c)">
-      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
       <node ref="U4" pin="11" pinfunction="c" pintype="output"/>
     </net>
     <net code="29" name="Net-(U4-d)">
-      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
       <node ref="U4" pin="10" pinfunction="d" pintype="output"/>
     </net>
     <net code="30" name="Net-(U4-e)">
-      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
       <node ref="U4" pin="9" pinfunction="e" pintype="output"/>
     </net>
     <net code="31" name="Net-(U4-f)">
-      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
       <node ref="U4" pin="15" pinfunction="f" pintype="output"/>
     </net>
     <net code="32" name="Net-(U4-g)">
-      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
       <node ref="U4" pin="14" pinfunction="g" pintype="output"/>
     </net>
     <net code="33" name="Net-(U5-A)">
-      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
       <node ref="U5" pin="7" pinfunction="A" pintype="input"/>
     </net>
     <net code="34" name="Net-(U5-B)">
-      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
       <node ref="U5" pin="6" pinfunction="B" pintype="input"/>
     </net>
     <net code="35" name="Net-(U5-C)">
-      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
       <node ref="U5" pin="4" pinfunction="C" pintype="input"/>
     </net>
     <net code="36" name="Net-(U5-D)">
-      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
       <node ref="U5" pin="2" pinfunction="D" pintype="input"/>
     </net>
     <net code="37" name="Net-(U5-E)">
-      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
       <node ref="U5" pin="1" pinfunction="E" pintype="input"/>
     </net>
     <net code="38" name="Net-(U5-F)">
-      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
       <node ref="U5" pin="9" pinfunction="F" pintype="input"/>
     </net>
     <net code="39" name="Net-(U5-G)">
-      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
       <node ref="U5" pin="10" pinfunction="G" pintype="input"/>
     </net>
     <net code="40" name="VCC">
@@ -1144,8 +1169,8 @@
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="LDR1" pin="1" pintype="passive"/>
-      <node ref="R17" pin="1" pintype="passive"/>
-      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="V+" pintype="power_in"/>
       <node ref="U2" pin="14" pinfunction="VCC" pintype="power_in"/>
       <node ref="U2" pin="5" pintype="input"/>
