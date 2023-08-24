@@ -1,0 +1,130 @@
+OBSERVAÇÕES PARA REALIZAR A SIMULAÇÃO
+=========== ==== ======== = =========
+
+
+SIMULAÇÃO BÁSICA
+--------- ------
+
+Seguem lembretes e observações básicas para
+realizar a simulação.
+
+1. Carregar o circuito com
+   
+   ngspice circuito.cir
+
+2. Realizar a simulação com
+
+   -> run
+
+3. Visualizar os resultados com
+
+   -> plot ...
+
+   Por exemplo:
+
+   -> plot "V(/Vsensor)"
+
+
+USO DA SEÇÃO DE CONTROLE
+--- -- ----- -- --------
+
+Pode-se criar, dentro do arquivo .cir, a seção de controle,
+delimitada por:
+
+   .control
+   .endc
+
+Logo antes da instrução de final de arquivo, ou seja, antes de:
+
+   .end
+
+Dentro da seção de controle, podem-se fornecer comandos diversos.
+Por exemplo:
+
+	.control
+	   dc R22 1k 200k 1k
+	   dc R22 200k 1k -1k
+	   set color2=green
+	   set color3=orange
+	   set color4=red
+	   set color5=red
+	   set color6=blue
+	   set color7=blue
+		set xbrushwidth=3		
+	   plot "dc1.v(/Vref)" "dc1.v(/Vsensor)" "dc1.v(/Vcomp)" "dc2.v(/Vcomp)" "dc1.v(/Vs)" "dc2.v(/Vs)"  xlabel 'Rldr' ylimit -1 12
+	   shell wmctrl -r "dc2: KiCad schematic" -e "0,50,50,925,845"
+	.endc
+
+
+ARQUIVO DE INICIALIZAÇÃO DO USUÁRIO
+------- -- ------------- -- -------
+
+	O arquivo de inicialização do usuário é:
+	
+	.spiceinit
+
+o qual é procurado na seguinte sequência:
+
+	1. Diretório apontado pela variável de ambiente SPICE_USERINIT_DIR.
+	2. Diretório corrente.
+	3. $HOME (para Linux)
+	4. %USERPROFILE% (para Windows)
+
+	O arquivo de inicialização global é:
+
+	spinit
+
+o qual é carregado e processado antes de .spiceinit.
+
+	Se a opção de linha de comando -n for fornecida, o arquivo de
+inicialização será ignorado.
+
+
+CORES DO GRÁFICO
+----- -- -------
+
+	color0: fundo
+	color1: grade e texto
+	color2 a color20: cor das curvas
+
+	As cores nomeadas válidas para X11 podem ser encontradas em:
+	
+	/etc/X11/rgb.txt
+
+	ou
+	
+	/usr/lib/rgb.txt
+
+
+wmctrl
+------
+
+	'wmctrl' permite ajustar a posição e o tamanho de uma janela
+controlada por ele.
+
+	A princípio, fornecendo a opção:
+
+	-r "título da janela"
+
+seria suficiente para fazer o ajuste. Todavia, o 'plot' do Ngspice 40+
+parece que não atribui adequadamente o nome da janela. Portanto, pode-se
+usar a forma:
+
+	-i -r "0x00000000"
+
+para o devido efeito, sendo "0x00000000" o ID da janela, que pode ser
+identificado por:
+
+	$ wmctrl -l
+
+	A linha da janela criada pelo 'plot' do Ngspice possui a indicação
+"N/A".
+
+
+MANUAL DO NGSPICE
+------ -- -------
+
+Ver o manual do Ngspice para mais informações.
+
+Web: https://ngspice.sourceforge.io/docs.html
+Local: /home/mpt/Documentos/Consultas/0030-Eletrônica/Simulações/ngspice-manual-v.40.pdf

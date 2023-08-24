@@ -1,0 +1,15 @@
+Questionable use of curly braces in "set color2={green}"
+    Error: undefined symbol in: "[green]"
+Questionable use of curly braces in "set color3={orange}"
+    Error: undefined symbol in: "[orange]"
+Questionable use of curly braces in "set color4={red}"
+    Error: undefined symbol in: "[red]"
+Questionable use of curly braces in "set color5={red}"
+    Error: undefined symbol in: "[red]"
+Questionable use of curly braces in "set color6={blue}"
+    Error: undefined symbol in: "[blue]"
+Questionable use of curly braces in "set color7={blue}"
+    Error: undefined symbol in: "[blue]"
+Circuit: .title KiCad schematic
+
+Fatal Error: Multiple instances of "Dc"

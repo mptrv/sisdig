@@ -1,0 +1,50 @@
+.title KiCad schematic
+.include "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/spice_complete/NATBJT.LIB"
+.include "/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/sensor-e-atuador-com-ajuste-digital-de-set-point/simulacoes/mais-didatico/vres.lib"
+.save all
+.probe alli
+.param Ka=1
+.param Kb=0
+.param Kc=0
+.param Kd=1
+
+.param Va='Vf*Ka'
+.param Vb='Vf*Kb'
+.param Vc='Vf*Kc'
+.param Vd='Vf*Kd'
+.param Vf = 11.3V
+.param Rb = 68k
+.param Rldr = 40k
+.param ts = 5us
+.param td = 'ts'
+.tran 100u 100m
+
+R10 /V+ /A 22k
+R1 Net-_R1-Pad1_ 0 22k
+R2 Net-_R1-Pad1_ /D 22k
+R4 Net-_R3-Pad1_ /C 22k
+R5 Net-_R5-Pad1_ Net-_R3-Pad1_ 11k
+R8 Net-_R5-Pad1_ /B 22k
+R9 /V+ Net-_R5-Pad1_ 11k
+R16 0 /Vsensor 1Meg
+R13 /Vsensor /Vsensor 10k
+XU2 /V+ /Vu2- VCC 0 /Vref LM324N
+R12 Net-_R12-Pad1_ /Vu2- 100k
+R17 /Vu2- 0 270k
+R6 0 Net-_R11-Pad1_ 4.7k
+V2 /A 0 dc Vf pwl(0 0 50m 0 '50m+ts' Vf 62.5m Vf '62.5m+td' 0 r =0)
+V3 /B 0 dc Vf pwl(0 0 25m 0 '25m+ts' Vf 50m Vf  '50m+td' 0 62.5m 0 r=0)
+V4 /C 0 dc Vf pwl(0 0 12.5m 0 '12.5m+ts' Vf 25m Vf '25m+td' 0 37.5m 0 '37.5m+ts' Vf 50m Vf '50m+td' 0 62.5m 0 r =0)
+V5 /D 0 dc Vf pulse(0 Vf 6.25m ts td 6.25m 12.5m)
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ 11k
+V1 VCC 0 Vf
+XVCR1 VCC /Vldr /Vctrl 0 VC_RES1_10K
+R11 Net-_R11-Pad1_ /Vldr 14k
+XU1 /Vldr /Vsensor VCC 0 /Vsensor LM324N
+V6 /Vctrl 0 dc 500m pulse(0 20 0 40m 40m 10m 100m)
+R15 /Vref Net-_R12-Pad1_ 50k
+R20 /Vu3+ /Vs 100k
+R19 /Vref /Vu3+ 15k
+XU3 /Vu3+ /Vsensor VCC 0 /Vs LM324N
+R21 0 /Vs 1Meg
+.end

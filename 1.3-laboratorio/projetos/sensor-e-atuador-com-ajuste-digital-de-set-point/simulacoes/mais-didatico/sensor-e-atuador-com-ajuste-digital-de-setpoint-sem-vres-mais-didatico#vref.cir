@@ -1,0 +1,60 @@
+.title KiCad schematic
+
+.include "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/spice_complete/NATBJT.LIB"
+.include "/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/sensor-e-atuador-com-ajuste-digital-de-set-point/simulacoes/mais-didatico/vres.lib"
+
+.save all
+.probe alli
+
+.param Vf = 11.3V
+.param tb = 10m
+.param ts = 5us
+.param td = 'ts'
+
+V5 /D 0 dc Vf pulse(0 Vf tb ts td tb '2*tb')
+V4 /C 0 dc Vf pwl(0 0 '2*tb' 0 '2*tb+ts' Vf '4*tb' Vf '4*tb+td' 0 '6*tb' 0 '6*tb+ts' Vf '8*tb' Vf '8*tb+td' 0 '10*tb' 0 r =0)
+V3 /B 0 dc Vf pwl(0 0 '4*tb' 0 '4*tb+ts' Vf '8*tb' Vf  '8*tb+td' 0 '10*tb' 0 r=0)
+V2 /A 0 dc Vf pwl(0 0 '8*tb' 0 '8*tb+ts' Vf '10*tb' Vf '10*tb+td' 0 r =0)
+
+R10 /V+ /A 22k
+R1 Net-_R1-Pad1_ 0 22k
+R2 Net-_R1-Pad1_ /D 22k
+R4 Net-_R3-Pad1_ /C 22k
+R8 Net-_R5-Pad1_ /B 22k
+R9 /V+ Net-_R5-Pad1_ 11k
+R16 0 /Vsensor 1Meg
+XU1 /Vldr /Vsensor VCC 0 /Vsensor LM324N
+XU2 /V+ /Vu2- VCC 0 /Vref LM324N
+R12 Net-_R12-Pad1_ /Vu2- 100k
+R17 /Vu2- 0 270k
+R15 /Vref Net-_R12-Pad1_ 50k
+R20 /Vu3+ /Vs 100k
+R19 /Vref /Vu3+ 15k
+XU3 /Vu3+ /Vsensor VCC 0 /Vs LM324N
+R21 0 /Vs 1Meg
+R5 Net-_R5-Pad1_ Net-_R3-Pad1_ 11k
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ 11k
+V1 VCC 0 Vf
+R11 Net-_R11-Pad1_ /Vldr 14k
+R6 0 Net-_R11-Pad1_ 4.7k
+
+Rldr /Vldr VCC 10k
+
+.control
+
+	
+	*** Vref
+
+	tran 100u 100m
+
+	set color2=blue
+	set xbrushwidth=3
+	
+	plot "v(/Vref)"
+	
+	* (Para listar ids das janelas: wmctrl -l)
+	shell wmctrl -i -r "0x06a00011" -e "0,50,50,925,845"	
+
+.endc
+
+.end
