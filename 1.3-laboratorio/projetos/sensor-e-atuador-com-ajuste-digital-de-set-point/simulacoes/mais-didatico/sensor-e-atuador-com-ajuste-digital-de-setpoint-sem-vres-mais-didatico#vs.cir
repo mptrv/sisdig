@@ -1,0 +1,78 @@
+.title Tensão de Saída em Função da Resistência do LDR
+
+.include "/home/mpt/Documentos/Projetos/kicad-libraries/kicad-spice-library/Models/uncategorized/spice_complete/NATBJT.LIB"
+.include "/home/mpt/Documentos/Projetos/sisdig/1.3-laboratorio/projetos/sensor-e-atuador-com-ajuste-digital-de-set-point/simulacoes/mais-didatico/vres.lib"
+
+.save all
+.probe alli
+
+.param Vf = 11.3V
+.param tb = 10m
+.param ts = 5us
+.param td = 'ts'
+
+.param Ka=0
+.param Kb=1
+.param Kc=0
+.param Kd=1
+
+.param Va='Vf*Ka'
+.param Vb='Vf*Kb'
+.param Vc='Vf*Kc'
+.param Vd='Vf*Kd'
+
+V1 VCC 0 Vf
+
+VA1 /Ar 0 DC Va AC 0
+VB1 /Br 0 DC Vb AC 0
+VC1 /Cr 0 DC Vc AC 0
+VD1 /Dr 0 DC Vd AC 0
+
+R10 /V+ /Ar 22k
+R1 Net-_R1-Pad1_ 0 22k
+R2 Net-_R1-Pad1_ /Dr 22k
+R4 Net-_R3-Pad1_ /Cr 22k
+R8 Net-_R5-Pad1_ /Br 22k
+R9 /V+ Net-_R5-Pad1_ 11k
+R16 0 /Vsensor 1Meg
+XU1 /Vldr /Vsensor VCC 0 /Vsensor LM324N
+XU2 /V+ /Vu2- VCC 0 /Vref LM324N
+R12 Net-_R12-Pad1_ /Vu2- 100k
+R17 /Vu2- 0 270k
+R20 /Vcomp /Vs 100k
+R19 /Vref /Vcomp 15k
+XU3 /Vcomp /Vsensor VCC 0 /Vs LM324N
+R21 0 /Vs 1Meg
+R5 Net-_R5-Pad1_ Net-_R3-Pad1_ 11k
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ 11k
+R6 0 Net-_R11-Pad1_ 4.7k
+
+RP1 Net-_R11-Pad1_ /Vldr 14k
+RP2 /Vref Net-_R12-Pad1_ 50k
+
+Rldr /Vldr VCC 10k
+
+.control
+
+	
+	*** Vref
+
+	set color2=blue
+	set color3=orange
+	set color4=green3
+	set color5=red
+	set xbrushwidth=3
+	
+	dc Rldr 1k 250k 1k
+	plot "/Vref"  "/Vs" "/Vsensor" "/Vcomp" xlabel 'Rldr crescente' ylimit -0.1 12
+	
+	dc Rldr 250k 1k -1k
+	plot "/Vref"  "/Vs" "/Vsensor" "/Vcomp" xlabel 'Rldr decrescente' ylimit -0.1 12
+
+	* (Para listar ids das janelas: wmctrl -l)
+	shell wmctrl -i -r "0x06c00011" -e "0,50,50,925,845"	
+	shell wmctrl -i -r "0x06c00024" -e "0,100,100,925,845"	
+
+.endc
+
+.end

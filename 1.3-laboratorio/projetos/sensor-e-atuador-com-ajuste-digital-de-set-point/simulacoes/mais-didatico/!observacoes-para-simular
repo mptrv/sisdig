@@ -118,7 +118,9 @@ identificado por:
 	$ wmctrl -l
 
 	A linha da janela criada pelo 'plot' do Ngspice possui a indicação
-"N/A".
+"N/A". Alternativamente, pode-se já executar:
+
+	$ wmctrl -l | grep -e "0x.*N/A$"
 
 
 MANUAL DO NGSPICE
