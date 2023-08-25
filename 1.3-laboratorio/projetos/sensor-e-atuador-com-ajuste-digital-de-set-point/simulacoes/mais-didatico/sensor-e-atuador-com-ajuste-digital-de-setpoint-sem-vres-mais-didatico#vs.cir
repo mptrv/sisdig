@@ -12,8 +12,8 @@
 .param td = 'ts'
 
 .param Ka=0
-.param Kb=1
-.param Kc=0
+.param Kb=0
+.param Kc=1
 .param Kd=1
 
 .param Va='Vf*Ka'
@@ -54,24 +54,123 @@ Rldr /Vldr VCC 10k
 
 .control
 
-	
-	*** Vref
-
 	set color2=blue
 	set color3=orange
 	set color4=green3
 	set color5=red
 	set xbrushwidth=3
-	
-	dc Rldr 1k 250k 1k
-	plot "/Vref"  "/Vs" "/Vsensor" "/Vcomp" xlabel 'Rldr crescente' ylimit -0.1 12
-	
-	dc Rldr 250k 1k -1k
-	plot "/Vref"  "/Vs" "/Vsensor" "/Vcomp" xlabel 'Rldr decrescente' ylimit -0.1 12
 
-	* (Para listar ids das janelas: wmctrl -l)
-	shell wmctrl -i -r "0x06c00011" -e "0,50,50,925,845"	
-	shell wmctrl -i -r "0x06c00024" -e "0,100,100,925,845"	
+	let ind = 0
+	let nimg = 1
+	let npontos = 150
+	let passo = $&npontos / $&nimg
+	
+	*** Rldr crescente
+	dc Rldr 1k 150k 1k
+
+	*** Rldr decrescente
+	dc Rldr 150k 1k -1k
+
+
+	*** Gráficos Rldr decrescente
+
+	let ind = 150
+	setplot dc2
+
+	repeat $&nimg
+
+		plot "/Vref"  "/Vs" "/Vsensor" "/Vcomp" xlabel 'Rldr decrescente (clareando)' xlimit 0 150k ylimit -0.1 12 xindices 1 $&ind
+
+		let ind = ind - $&passo
+	
+	end
+
+	*** Gráficos Rldr crescente
+
+	let ind = 150
+	setplot dc1
+
+	repeat $&nimg
+
+		plot "/Vref"  "/Vs" "/Vsensor" "/Vcomp" xlabel 'Rldr crescente (escurecendo)' xlimit 0 150k ylimit -0.1 12 xindices 1 $&ind
+
+		let ind = ind - $&passo
+
+	end
+
+	*** Gráfico Combinado
+
+	set color2=red
+	set color3=orange
+	set color4=red
+	set color5=orange
+	set color6=green3
+	set color7=blue
+
+	plot "dc2./VComp" "dc2./Vs" "dc1./Vcomp" "dc1./Vs" "dc1./Vsensor" "dc1./Vref" xlabel 'Rldr crescente e decrescente' xlimit 0 150k ylimit -0.1 12 xindices 1 $&ind
+
+
+	* (Para listar ids das janelas: wmctrl -l | grep -e "0x.*N/A$")
+		  shell wmctrl -i -r "0x04000011" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000024" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000035" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000046" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000057" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000068" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000079" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x0400008a" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x0400009b" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040000ac" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040000bd" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040000ce" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040000df" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040000f0" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000101" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000112" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000123" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000134" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000145" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000156" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000167" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000178" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000189" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x0400019a" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040001ab" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040001bc" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040001cd" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040001de" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040001ef" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000200" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000211" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000222" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000233" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000244" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000255" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000266" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000277" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000288" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000299" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040002aa" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040002bb" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040002cc" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040002dd" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040002ee" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040002ff" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000310" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000321" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000332" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000343" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000354" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000365" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000376" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000387" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x04000398" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040003a9" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040003ba" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040003cb" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040003dc" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040003ed" -e "0,50,50,935,845"
+		  shell wmctrl -i -r "0x040003fe" -e "0,50,50,935,845"
 
 .endc
 
