@@ -361,12 +361,12 @@
 \color #cae8cd
 \end_branch
 \branch 2023-an-p2
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #cae8cd
 \end_branch
 \branch 2023-an-ps
-\selected 0
+\selected 1
 \filename_suffix 0
 \color #cae8cd
 \end_branch
@@ -150945,7 +150945,7 @@ status open
 
 
 \backslash
-capaan{Prova Bimestral}{2021}{28.11.2023 19h}{
+capaan{Prova Bimestral}{2023}{28.11.2023 19h}{
 \backslash
 ref{que:ultima-questao-an-p2-2023}}
 \end_layout
@@ -151598,6 +151598,683 @@ Rótulo para indicar a última questão.
 \begin_inset CommandInset label
 LatexCommand label
 name "que:ultima-questao-an-p2-2023"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch 2023-an-ps
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+capaan{Prova Bimestral}{2023}{12.12.2023 19h}{
+\backslash
+ref{que:ultima-questao-an-ps-2023}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+questao[2]{00}
+\end_layout
+
+\end_inset
+
+ Encontrar o 
+\emph on
+Circuito Equivalente de Thévenin
+\emph default
+ entre os pontos A e B, à esquerda.
+ Em seguida, utilizando o circuito equivalente, determinar 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2023/an/ps/teorema-de-thevenin.png
+	lyxscale 40
+	width 50text%
+	BoundingBox 0bp 0bp 737bp 598bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[3]{00}
+\end_layout
+
+\end_inset
+
+ Determinar 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ por 
+\emph on
+Análise Nodal
+\emph default
+.
+ Para tanto, pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{2,0}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações literais
+\series default
+ que descreve o circuito, por 
+\emph on
+Análise Nodal
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações numéricas 
+\series default
+correspondente e o valor da tensão no nó 
+\series bold
+A
+\series default
+ (
+\begin_inset Formula $V_{A}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ O valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2023/an/ps/analise-nodal.png
+	lyxscale 40
+	width 70text%
+	BoundingBox 0bp 0bp 782bp 494bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[2]{0}
+\end_layout
+
+\end_inset
+
+ Determinar 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ por 
+\emph on
+Análise de Malhas
+\emph default
+.
+ Para tanto, pede-se:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{1,0}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações literais
+\series default
+ que descreve o circuito, por 
+\emph on
+Análise de Malhas
+\emph default
+.
+ Escreva a resposta final no espaço reservado.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ Sistema de 
+\series bold
+equações numéricas 
+\series default
+correspondente e os valores de 
+\begin_inset Formula $I_{\alpha}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{\beta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+valor{0,5}
+\end_layout
+
+\end_inset
+
+ O valor de 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/2023/an/ps/analise-de-malhas.png
+	lyxscale 60
+	width 65text%
+	BoundingBox 0bp 0bp 757bp 397bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\alpha: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}\\
+\\
+\beta: & \underline{\hspace{5cm}}\,I_{\alpha}+\underline{\hspace{5cm}}\,I_{\beta}=\underline{\hspace{3cm}}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[3]{00}
+\end_layout
+
+\end_inset
+
+ Inicialmente, 
+\begin_inset Formula $C$
+\end_inset
+
+ encontra-se descarregado.
+ Nos instantes 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+, a chave é comutada para os pontos indicados, permanecendo lá até o próximo
+ instante.
+ Pede-se traçar o esboço de 
+\begin_inset Formula $v_{C}(t)\,\times\,t$
+\end_inset
+
+, 
+\begin_inset Formula $v_{R}(t)\,\times\,t$
+\end_inset
+
+ e 
+\begin_inset Formula $i_{C}(t)\,\times\,t$
+\end_inset
+
+ para 
+\begin_inset Formula $0\leqslant t\leqslant\six{400}{\us}$
+\end_inset
+
+, 
+\emph on
+\bar under
+indicando os valores dos pontos notáveis
+\emph default
+\bar default
+.
+ Ainda, indicar, no local reservado, os valores dos cálculos auxiliares.
+ 
+\emph on
+(Nota: considerar as referências de tensão e corrente no capacitor de acordo
+ com o apresentado nas aulas de teoria.)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2023/an/p2/carga-e-descarga-de-capacitor.png
+	lyxscale 60
+	width 80text%
+	BoundingBox 0bp 0bp 910bp 571bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Branch detalhes-enunciado
+inverted 0
+status collapsed
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$v_R(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[xscale=1, yscale=1.6]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzInit[xmin=0, xmax=15, ymin=-2, ymax=2]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawX[label=$t$]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+tkzDrawY[label=$i_C(t)$]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquestao[2]{00}
+\end_layout
+
+\end_inset
+
+ Determinar 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{x_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $I_{x_{2}}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{x_{3}}$
+\end_inset
+
+ para o circuito abaixo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename imagens/2023/an/ps/fonte-vinculada.png
+	lyxscale 60
+	width 80text%
+	BoundingBox 0bp 0bp 910bp 571bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+\size small
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+Rótulo para indicar a última questão.
+ Deixá-lo nesta última linha e não removê-lo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\size small
+(Certamente, não deverá haver o incremento de nenhum outro contador entre
+ o cabeçalho da última e este rótulo – como, por exemplo, o de seção ou
+ item.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "que:ultima-questao-an-ps-2023"
 
 \end_inset
 
